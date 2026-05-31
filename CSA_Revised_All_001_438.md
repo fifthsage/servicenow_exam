@@ -11,9 +11,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What is the function of user impersonation?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
+*해설:* 정답은 **A (Testing and visibility)** 입니다. 이 문항의 의도는 **Impersonation의 목적이 "디버깅/검증"인지 "권한 변경"인지**를 구분할 수 있는지 확인하는 데 있습니다. Impersonation(사용자 가장)은 관리자가 특정 사용자로 로그인한 것처럼 세션을 전환해, 그 사용자가 실제로 보는 화면/메뉴/레코드 접근 범위를 그대로 재현하는 기능입니다. 따라서 접근 불가 이슈 재현, ACL/Role 반영 결과 확인, 카탈로그 가시성 점검 같은 **테스트와 가시성 검증**에 사용됩니다. 반면 로깅을 상세화(B), 사용자 관점을 새로 생성(C), 애플리케이션 목록 잠금 해제(D)는 Impersonation의 기능이 아니므로 오답입니다.
 
 ---
 
@@ -26,9 +24,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which group of permissions is used to control Application and Module access?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which group of permissions is used to control Application and Module access?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -44,9 +40,7 @@ Range: Q1-Q438
 
 **Answer:** A,C,D,F
 
-*해설:* 정답은 **A,C,D,F**입니다. 이 문항은 'Which of the following are a type of client scripts supported in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
+*해설:* 정답은 **A,C,D,F**입니다. 이 문항은 'Which of the following are a type of client scripts supported in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
 
 ---
 
@@ -59,9 +53,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following modules can be used to view field settings for a table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following modules can be used to view field settings for a table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
 
 ---
 
@@ -73,9 +65,7 @@ Range: Q1-Q438
 
 **Answer:** A,C,E
 
-*해설:* 정답은 **A,C,E**입니다. 이 문항은 'What are the 5 provided Roles by ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **A,C,E**입니다. 이 문항은 'What are the 5 provided Roles by ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -88,9 +78,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'A Service Catalog may include which of the following components?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'A Service Catalog may include which of the following components?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -101,9 +89,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'UI Policy can make fields read-only, mandatory, or hidden.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'UI Policy can make fields read-only, mandatory, or hidden.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
 
 ---
 
@@ -114,9 +100,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'ServiceNow is a single-instance, multiple tenant architecture?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'ServiceNow is a single-instance, multiple tenant architecture?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -129,9 +113,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which statement is true about business rules?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which statement is true about business rules?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -144,9 +126,7 @@ Range: Q1-Q438
 
 **Answer:** A,D
 
-*해설:* 정답은 **A,D**입니다. 이 문항은 'What are the two aspects to LDAP Integration?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 인증(Authentication)은 본인 확인, 인가(Authorization)는 권한 결정입니다. LDAP/SSO는 대표적인 엔터프라이즈 인증 통합 방식입니다.
+*해설:* 정답은 **A,D**입니다. 이 문항은 'What are the two aspects to LDAP Integration?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 인증(Authentication)은 본인 확인, 인가(Authorization)는 권한 결정입니다. LDAP/SSO는 대표적인 엔터프라이즈 인증 통합 방식입니다.
 
 ---
 
@@ -158,9 +138,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What defines conditions that are evaluated against users to determine which users can create, read, write, and retire knowledge articles. A. User conditions' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What defines conditions that are evaluated against users to determine which users can create, read, write, and retire knowledge articles. A. User conditions' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -173,9 +151,7 @@ Range: Q1-Q438
 
 **Answer:** A,D
 
-*해설:* 정답은 **A,D**입니다. 이 문항은 'Reports can be created from which different places in the platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **A,D**입니다. 이 문항은 'Reports can be created from which different places in the platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -188,9 +164,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which of the following is used to initiate a flow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which of the following is used to initiate a flow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -203,9 +177,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'A group is stored in which table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'A group is stored in which table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -218,9 +190,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which technique is used to get information from a series of referenced fields from different tables?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which technique is used to get information from a series of referenced fields from different tables?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
 
 ---
 
@@ -230,9 +200,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Configuration will not affect what others see on their forms. A. True' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Configuration will not affect what others see on their forms. A. True' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -245,9 +213,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What refers to an application or system that accesses a remote service or another computer system, known as a server?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What refers to an application or system that accesses a remote service or another computer system, known as a server?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -261,9 +227,7 @@ Range: Q1-Q438
 
 **Answer:** A,C,D
 
-*해설:* 정답은 **A,C,D**입니다. 이 문항은 'Which of the following can be customized through the Basic Configuration UI 16 module?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A,C,D**입니다. 이 문항은 'Which of the following can be customized through the Basic Configuration UI 16 module?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -276,9 +240,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which tool is used to have conversations with logged-in users in real-time?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which tool is used to have conversations with logged-in users in real-time?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -291,9 +253,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What is the master table that contains a record for each table in the database?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What is the master table that contains a record for each table in the database?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -308,9 +268,7 @@ Range: Q1-Q438
 
 **Answer:** A,B,D
 
-*해설:* 정답은 **A,B,D**입니다. 이 문항은 'Access Control rules may be defined with which of the following permission requirements?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **A,B,D**입니다. 이 문항은 'Access Control rules may be defined with which of the following permission requirements?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -320,9 +278,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'UI Action can prompt that an Incident has been successfully submitted. A. True' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'UI Action can prompt that an Incident has been successfully submitted. A. True' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
 
 ---
 
@@ -335,9 +291,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which term best describes something that is created, has worked performed upon it, and is eventually moved to a state of closed?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which term best describes something that is created, has worked performed upon it, and is eventually moved to a state of closed?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -350,9 +304,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Where can Admins check which release is running on an ServiceNow instance?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Where can Admins check which release is running on an ServiceNow instance?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -365,9 +317,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What is the purpose of a Related List?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What is the purpose of a Related List?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
 
 ---
 
@@ -381,9 +331,7 @@ Range: Q1-Q438
 
 **Answer:** B,C,D
 
-*해설:* 정답은 **B,C,D**입니다. 이 문항은 'Which are valid Service Now User Authentication Methods?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 인증(Authentication)은 본인 확인, 인가(Authorization)는 권한 결정입니다. LDAP/SSO는 대표적인 엔터프라이즈 인증 통합 방식입니다.
+*해설:* 정답은 **B,C,D**입니다. 이 문항은 'Which are valid Service Now User Authentication Methods?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 인증(Authentication)은 본인 확인, 인가(Authorization)는 권한 결정입니다. LDAP/SSO는 대표적인 엔터프라이즈 인증 통합 방식입니다.
 
 ---
 
@@ -393,9 +341,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Data Policy can enforce mandatory data on import. A. True' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Data Policy can enforce mandatory data on import. A. True' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -408,9 +354,7 @@ Range: Q1-Q438
 
 **Answer:** B,C,D
 
-*해설:* 정답은 **B,C,D**입니다. 이 문항은 'What are the three components of a filter condition?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **B,C,D**입니다. 이 문항은 'What are the three components of a filter condition?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -420,9 +364,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Each knowledge bases can have unique lifecycle workflows, user criteria, category structures, and management assignments. A. True' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Each knowledge bases can have unique lifecycle workflows, user criteria, category structures, and management assignments. A. True' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -432,9 +374,7 @@ Range: Q1-Q438
 
 **Answer:** UI Policy는 필드 상태(읽기 전용/필수/숨김)를 제어하고, UI Action은 버튼/링크/컨텍스트 메뉴 동작을 정의합니다.
 
-*해설:* 정답은 **UI Policy는 필드 상태(읽기 전용/필수/숨김)를 제어하고, UI Action은 버튼/링크/컨텍스트 메뉴 동작을 정의합니다.**입니다. 이 문항은 'What is the difference between UI Policy and UI Action?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
+*해설:* 정답은 **UI Policy는 필드 상태(읽기 전용/필수/숨김)를 제어하고, UI Action은 버튼/링크/컨텍스트 메뉴 동작을 정의합니다.**입니다. 이 문항은 'What is the difference between UI Policy and UI Action?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
 
 ---
 
@@ -447,9 +387,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'The baseline Service Catalog homepage contains links to which of the following components?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'The baseline Service Catalog homepage contains links to which of the following components?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -462,9 +400,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What is a Dictionary Override?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What is a Dictionary Override?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -477,9 +413,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which type of tables may be extended by other tables, but do not extend another table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which type of tables may be extended by other tables, but do not extend another table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -492,9 +426,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'When working on a form, what is the difference between Insert and Update operations?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'When working on a form, what is the difference between Insert and Update operations?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -507,9 +439,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What displays a set of records from a table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What displays a set of records from a table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -522,9 +452,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'When using the Load Data and Transform Map process, what is the Mapping Assist used for?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'When using the Load Data and Transform Map process, what is the Mapping Assist used for?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -537,9 +465,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which one of the following statements describes the purpose of an Service Catalog workflow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which one of the following statements describes the purpose of an Service Catalog workflow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -552,9 +478,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What is the path an Administrator could take to view the fulfillment stage task list for an order placed by a user?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What is the path an Administrator could take to view the fulfillment stage task list for an order placed by a user?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -567,9 +491,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What is a characteristic of importing data into ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What is a characteristic of importing data into ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -581,9 +503,7 @@ Range: Q1-Q438
 
 **Answer:** C,D
 
-*해설:* 정답은 **C,D**입니다. 이 문항은 'What is (are) best practice(s) regarding users/groups/roles?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **C,D**입니다. 이 문항은 'What is (are) best practice(s) regarding users/groups/roles?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -595,9 +515,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What is a formatter? Select one of the following. A. A formatter allows you to configure applications on your instance' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What is a formatter? Select one of the following. A. A formatter allows you to configure applications on your instance' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -611,9 +529,7 @@ Range: Q1-Q438
 
 **Answer:** A,C,D,E
 
-*해설:* 정답은 **A,C,D,E**입니다. 이 문항은 'Which of the following concepts are associated with the ServiceNow CMDB?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A,C,D,E**입니다. 이 문항은 'Which of the following concepts are associated with the ServiceNow CMDB?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -626,9 +542,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What is the Import Set Table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What is the Import Set Table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -641,9 +555,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'The display sequence is controlled in a Service Catalog Item using which of the following?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'The display sequence is controlled in a Service Catalog Item using which of the following?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -656,9 +568,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'A User is stored in which table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'A User is stored in which table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -671,9 +581,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which application is used to change the number format per table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which application is used to change the number format per table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -686,9 +594,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What is a Record Producer?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What is a Record Producer?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -698,9 +604,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which of the following is true of Service Catalog Items in relation to the Service Catalog?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which of the following is true of Service Catalog Items in relation to the Service Catalog?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -713,9 +617,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What is a way that you can mark a knowledge article for review?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What is a way that you can mark a knowledge article for review?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -730,9 +632,7 @@ Range: Q1-Q438
 
 **Answer:** B,C,D
 
-*해설:* 정답은 **B,C,D**입니다. 이 문항은 'From the User menu, which actions can a user select?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
+*해설:* 정답은 **B,C,D**입니다. 이 문항은 'From the User menu, which actions can a user select?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
 
 ---
 
@@ -742,9 +642,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'A REQ number in the Service Catalog represents…' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'A REQ number in the Service Catalog represents…' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -757,9 +655,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which one of these applications is available to all users?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which one of these applications is available to all users?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -772,9 +668,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which of the following allows a user to edit field values in a list without opening the form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which of the following allows a user to edit field values in a list without opening the form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -788,9 +682,7 @@ Range: Q1-Q438
 
 **Answer:** A,C,E
 
-*해설:* 정답은 **A,C,E**입니다. 이 문항은 'Knowledge Base Search results can be sorted by which of the following?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A,C,E**입니다. 이 문항은 'Knowledge Base Search results can be sorted by which of the following?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -801,9 +693,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What is the purpose of flagging an article in a knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What is the purpose of flagging an article in a knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -816,9 +706,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following statements describes the contents of the Configuration Management Database (CMDB)?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following statements describes the contents of the Configuration Management Database (CMDB)?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -831,9 +719,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What are the four knowledge workflows available in the ServiceNow base instance?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What are the four knowledge workflows available in the ServiceNow base instance?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -848,9 +734,7 @@ Range: Q1-Q438
 
 **Answer:** A,D,F
 
-*해설:* 정답은 **A,D,F**입니다. 이 문항은 'Which are states that you can make a field on a form using UI Policy?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
+*해설:* 정답은 **A,D,F**입니다. 이 문항은 'Which are states that you can make a field on a form using UI Policy?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
 
 ---
 
@@ -863,9 +747,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'As it relates to ServiceNow reporting, which of the following statements describes what a metric can do?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'As it relates to ServiceNow reporting, which of the following statements describes what a metric can do?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -878,9 +760,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following statements is a recommendation from ServiceNow about Update Sets?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Update Set은 구성 변경사항을 인스턴스 간 이동하는 단위입니다. 기본적으로 데이터 레코드는 포함되지 않으므로 이관 전략을 분리해야 합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following statements is a recommendation from ServiceNow about Update Sets?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Update Set은 구성 변경사항을 인스턴스 간 이동하는 단위입니다. 기본적으로 데이터 레코드는 포함되지 않으므로 이관 전략을 분리해야 합니다.
 
 ---
 
@@ -893,9 +773,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which configuration allows you to use a script to coalesce data in Import Sets?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which configuration allows you to use a script to coalesce data in Import Sets?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -908,9 +786,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What module in the Service Catalog application does an Administrator access to begin creating a new item?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What module in the Service Catalog application does an Administrator access to begin creating a new item?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -923,9 +799,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What is generated from the Service Catalog once a user places an order for an item or service?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What is generated from the Service Catalog once a user places an order for an item or service?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -938,9 +812,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which one statement correctly describes Access Control rule evaluation?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which one statement correctly describes Access Control rule evaluation?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -953,9 +825,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following statements applies to a set of fields when they are coalesced during an import?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following statements applies to a set of fields when they are coalesced during an import?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -968,9 +838,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'How are Workflows moved between instances?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'How are Workflows moved between instances?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -982,9 +850,7 @@ Range: Q1-Q438
 
 **Answer:** A,D
 
-*해설:* 정답은 **A,D**입니다. 이 문항은 'Tables are made up of which of the following?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **A,D**입니다. 이 문항은 'Tables are made up of which of the following?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -997,9 +863,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which three Variable Types can be added to a Service Catalog Item?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which three Variable Types can be added to a Service Catalog Item?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -1010,9 +874,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Record numbers have to be manually incremented' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Record numbers have to be manually incremented' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -1027,9 +889,7 @@ Range: Q1-Q438
 
 **Answer:** B,D,F
 
-*해설:* 정답은 **B,D,F**입니다. 이 문항은 'What are the main UI component(s) of the ServiceNow Platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B,D,F**입니다. 이 문항은 'What are the main UI component(s) of the ServiceNow Platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -1042,9 +902,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Create Incident, Password Reset, and Report outage: what do these services in the Service Catalog have in common?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Create Incident, Password Reset, and Report outage: what do these services in the Service Catalog have in common?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
 
 ---
 
@@ -1057,9 +915,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'A knowledge article must be which of the following states to display to a user?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'A knowledge article must be which of the following states to display to a user?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -1069,9 +925,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Knowledge articles within a knowledge base are grouped by category. A. True' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Knowledge articles within a knowledge base are grouped by category. A. True' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -1081,9 +935,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'database live at the Data Center. A. True' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'database live at the Data Center. A. True' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -1096,9 +948,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'ServiceNow uses what term to describe all the data saved within a particular form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'ServiceNow uses what term to describe all the data saved within a particular form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -1111,9 +961,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which type of interface enables you to display multiple performance analytics, reporting and other widgets on a single screen?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which type of interface enables you to display multiple performance analytics, reporting and other widgets on a single screen?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -1126,9 +974,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What is the platform name for the User table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What is the platform name for the User table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -1141,9 +987,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What is a schema map?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What is a schema map?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -1156,9 +1000,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'A role is recorded in which table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'A role is recorded in which table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -1171,9 +1013,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which term refers to application menus and modules which you may want to access quickly and often?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which term refers to application menus and modules which you may want to access quickly and often?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -1186,9 +1026,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which of the following statements is true when a new table is created by extending another table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which of the following statements is true when a new table is created by extending another table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -1201,9 +1039,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following statements best describes the purpose of an Update Set?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following statements best describes the purpose of an Update Set?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -1216,9 +1052,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following statements describes a characteristic of role assignment?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following statements describes a characteristic of role assignment?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -1231,9 +1065,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which would NOT appear in the History section of the Application Navigator?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which would NOT appear in the History section of the Application Navigator?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -1243,9 +1075,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Business Rules are used to enforce mandatory data on a form. A. True' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Business Rules are used to enforce mandatory data on a form. A. True' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -1258,9 +1088,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Buttons, form links, and context menu items are all examples of what type of functionality?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Buttons, form links, and context menu items are all examples of what type of functionality?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
 
 ---
 
@@ -1273,9 +1101,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'How is the Event Log different from the Event Registry?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'How is the Event Log different from the Event Registry?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -1288,9 +1114,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which of the following statement describes the purpose of an Order Guide?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which of the following statement describes the purpose of an Order Guide?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -1303,9 +1127,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'For Administrators creating new Service Catalog items, what is a characteristic they should know about Service Catalog variables?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'For Administrators creating new Service Catalog items, what is a characteristic they should know about Service Catalog variables?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -1320,9 +1142,7 @@ Range: Q1-Q438
 
 **Answer:** A,B,C,D
 
-*해설:* 정답은 **A,B,C,D**입니다. 이 문항은 'When searching using the App Navigator search field, what can be returned?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **A,B,C,D**입니다. 이 문항은 'When searching using the App Navigator search field, what can be returned?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -1334,9 +1154,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'There are common types of Interfaces (Numeric Value) 6: There are six common types of interfaces' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'There are common types of Interfaces (Numeric Value) 6: There are six common types of interfaces' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -1349,9 +1167,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following statements is true about Column Context Menus?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following statements is true about Column Context Menus?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -1364,9 +1180,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Where would you go in ServiceNow to order services and products offered by various departments?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Where would you go in ServiceNow to order services and products offered by various departments?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -1374,9 +1188,7 @@ Range: Q1-Q438
 
 **Answer:** Agent
 
-*해설:* 정답은 **Agent**입니다. 이 문항은 'What is the name of the conversational bot platform that provides assistance to help users obtain information, make decisions, and perform common tasks?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **Agent**입니다. 이 문항은 'What is the name of the conversational bot platform that provides assistance to help users obtain information, make decisions, and perform common tasks?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -1389,9 +1201,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What information does the System Dictionary contain?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What information does the System Dictionary contain?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -1402,9 +1212,7 @@ Range: Q1-Q438
 
 **Answer:** A,B,C
 
-*해설:* 정답은 **A,B,C**입니다. 이 문항은 'What are the 6 methods available for user authentication?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 인증(Authentication)은 본인 확인, 인가(Authorization)는 권한 결정입니다. LDAP/SSO는 대표적인 엔터프라이즈 인증 통합 방식입니다.
+*해설:* 정답은 **A,B,C**입니다. 이 문항은 'What are the 6 methods available for user authentication?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 인증(Authentication)은 본인 확인, 인가(Authorization)는 권한 결정입니다. LDAP/SSO는 대표적인 엔터프라이즈 인증 통합 방식입니다.
 
 ---
 
@@ -1417,9 +1225,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'In what order should filter elements be specified?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'In what order should filter elements be specified?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -1432,9 +1238,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Table Access Control rules are processed in the following order:' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Table Access Control rules are processed in the following order:' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
 
 ---
 
@@ -1447,9 +1251,7 @@ Range: Q1-Q438
 
 **Answer:** A,D
 
-*해설:* 정답은 **A,D**입니다. 이 문항은 'What are the two pathways to view feedback left on a published article?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A,D**입니다. 이 문항은 'What are the two pathways to view feedback left on a published article?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -1462,9 +1264,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'When does the Submit button appear on a form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'When does the Submit button appear on a form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
 
 ---
 
@@ -1480,9 +1280,7 @@ Range: Q1-Q438
 
 **Answer:** A,B,E,F
 
-*해설:* 정답은 **A,B,E,F**입니다. 이 문항은 'What needs to be specified, when creating a Business Rule?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
+*해설:* 정답은 **A,B,E,F**입니다. 이 문항은 'What needs to be specified, when creating a Business Rule?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
 
 ---
 
@@ -1495,9 +1293,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'The ServiceNow Virtual Agent provides assistance within a messaging interface. Which capability allows end users to configure virtual Agent to intercept and help resolve submitted incidents?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'The ServiceNow Virtual Agent provides assistance within a messaging interface. Which capability allows end users to configure virtual Agent to intercept and help resolve submitted incidents?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -1510,9 +1306,7 @@ Range: Q1-Q438
 
 **Answer:** C,D,E
 
-*해설:* 정답은 **C,D,E**입니다. 이 문항은 'What are the three permission requirements that must evaluate to true for an access control rule to apply?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **C,D,E**입니다. 이 문항은 'What are the three permission requirements that must evaluate to true for an access control rule to apply?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -1525,9 +1319,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which module is used as the first step for importing data?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which module is used as the first step for importing data?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -1540,9 +1332,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What are the steps to retrieve an Update Set?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Update Set은 구성 변경사항을 인스턴스 간 이동하는 단위입니다. 기본적으로 데이터 레코드는 포함되지 않으므로 이관 전략을 분리해야 합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What are the steps to retrieve an Update Set?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Update Set은 구성 변경사항을 인스턴스 간 이동하는 단위입니다. 기본적으로 데이터 레코드는 포함되지 않으므로 이관 전략을 분리해야 합니다.
 
 ---
 
@@ -1555,9 +1345,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'On a Form header, what is the three bar icon called?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'On a Form header, what is the three bar icon called?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -1570,9 +1358,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which tool is used for creating dependencies between configuration items in the CMDB?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which tool is used for creating dependencies between configuration items in the CMDB?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -1585,9 +1371,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What is the purpose of the Event Registry?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What is the purpose of the Event Registry?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -1600,9 +1384,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which fields can be configured in reporting to perform arithmetic, coalesce, concatenation, and length?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which fields can be configured in reporting to perform arithmetic, coalesce, concatenation, and length?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -1617,9 +1399,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What type of field allows you to look up values from one other table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What type of field allows you to look up values from one other table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
 
 ---
 
@@ -1632,9 +1412,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'When using the Performance Analytics application in the Now Platform, what kind of KPI signals are used to make decisions that statistically support long term workflow stability?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'When using the Performance Analytics application in the Now Platform, what kind of KPI signals are used to make decisions that statistically support long term workflow stability?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -1648,9 +1426,7 @@ Range: Q1-Q438
 
 **Answer:** C,E
 
-*해설:* 정답은 **C,E**입니다. 이 문항은 'Which certificate-based authentication methods can be enabled so that users can log into the Service Portal?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 인증(Authentication)은 본인 확인, 인가(Authorization)는 권한 결정입니다. LDAP/SSO는 대표적인 엔터프라이즈 인증 통합 방식입니다.
+*해설:* 정답은 **C,E**입니다. 이 문항은 'Which certificate-based authentication methods can be enabled so that users can log into the Service Portal?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 인증(Authentication)은 본인 확인, 인가(Authorization)는 권한 결정입니다. LDAP/SSO는 대표적인 엔터프라이즈 인증 통합 방식입니다.
 
 ---
 
@@ -1663,9 +1439,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'How do you make a list filter available to everyone?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'How do you make a list filter available to everyone?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -1679,9 +1453,7 @@ Range: Q1-Q438
 
 **Answer:** E
 
-*해설:* 정답은 **E**입니다. 이 문항은 'Which feature allows you to automate business logic for a particular application or process such as approvals, tasks notifications, and record operations?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **E**입니다. 이 문항은 'Which feature allows you to automate business logic for a particular application or process such as approvals, tasks notifications, and record operations?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -1694,9 +1466,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Your company is giving all first line workers a special T-shirt as a recognition for their hard work. Management team wants a way for employees to order the T-shirt, with the ability to specify the preferred size and color. How would you ensure that only first line workers (non- managers) can submit the order?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Your company is giving all first line workers a special T-shirt as a recognition for their hard work. Management team wants a way for employees to order the T-shirt, with the ability to specify the preferred size and color. How would you ensure that only first line workers (non- managers) can submit the order?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -1710,9 +1480,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What icon do you use to change the label on a Favorite?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What icon do you use to change the label on a Favorite?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -1725,9 +1493,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What is a role in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What is a role in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -1740,9 +1506,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which icon would you double click, to expand and collapse the list of all Applications and Modules?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which icon would you double click, to expand and collapse the list of all Applications and Modules?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -1756,9 +1520,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'After finishing your work on High Security Settings, what do you do to return to normal admin security levels?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'After finishing your work on High Security Settings, what do you do to return to normal admin security levels?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
 
 ---
 
@@ -1771,9 +1533,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What kind of data can Import Sets use to populate tables in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What kind of data can Import Sets use to populate tables in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -1787,9 +1547,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What is a quick way to create a report from a list view?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What is a quick way to create a report from a list view?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -1804,9 +1562,7 @@ Range: Q1-Q438
 
 **Answer:** F
 
-*해설:* 정답은 **F**입니다. 이 문항은 'While showing a customer their incident form, they ask to change the Priority values to display their internal terminology P1, P2, P3, P4. They want it to be consistent across all Tasks. How would you do that? Right click on Priority and select what?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **F**입니다. 이 문항은 'While showing a customer their incident form, they ask to change the Priority values to display their internal terminology P1, P2, P3, P4. They want it to be consistent across all Tasks. How would you do that? Right click on Priority and select what?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -1820,9 +1576,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What do you need to do before you can use an Application-based trigger in your flow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What do you need to do before you can use an Application-based trigger in your flow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -1835,9 +1589,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which section of the ServiceNow UI allows you to perform a global search?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which section of the ServiceNow UI allows you to perform a global search?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -1852,9 +1604,7 @@ Range: Q1-Q438
 
 **Answer:** A,C,D,F
 
-*해설:* 정답은 **A,C,D,F**입니다. 이 문항은 'What are different types of Data Sources, which may be imported into ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **A,C,D,F**입니다. 이 문항은 'What are different types of Data Sources, which may be imported into ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -1867,9 +1617,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'IntegrationHub enables execution of third-party APIs as a part of a flow. These integrations are referred to as' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'IntegrationHub enables execution of third-party APIs as a part of a flow. These integrations are referred to as' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -1884,9 +1632,7 @@ Range: Q1-Q438
 
 **Answer:** A,D,E
 
-*해설:* 정답은 **A,D,E**입니다. 이 문항은 'The ServiceNow platform includes which types of interfaces?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **A,D,E**입니다. 이 문항은 'The ServiceNow platform includes which types of interfaces?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -1899,9 +1645,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'When moving multiple update sets at one time, what might you do to facilitate the move?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'When moving multiple update sets at one time, what might you do to facilitate the move?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -1914,9 +1658,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What import utility do you use when the field names on the import set match the name of the fields on the Target table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What import utility do you use when the field names on the import set match the name of the fields on the Target table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -1929,9 +1671,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which of the following steps can be used to import new data into ServiceNow from a spreadsheet?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which of the following steps can be used to import new data into ServiceNow from a spreadsheet?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -1944,9 +1684,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which tool should be used to populate commonly used fields in a form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which tool should be used to populate commonly used fields in a form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
 
 ---
 
@@ -1959,9 +1697,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What Is the purpose of the Fitter navigator In the Application Navigator?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What Is the purpose of the Fitter navigator In the Application Navigator?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -1976,9 +1712,7 @@ Range: Q1-Q438
 
 **Answer:** B,D
 
-*해설:* 정답은 **B,D**입니다. 이 문항은 'From a form, what would you click to add additional fields to the form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **B,D**입니다. 이 문항은 'From a form, what would you click to add additional fields to the form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -1992,9 +1726,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What controls the publishing and retiring process for knowledge articles?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What controls the publishing and retiring process for knowledge articles?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -2008,9 +1740,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'A user wants to create a set of filter conditions, where they want to show records which satisfy two conditions: Incidents where the state is Closed Incidents where Assignment Group is Network After clicking the Funnel icon, what should the user do?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'A user wants to create a set of filter conditions, where they want to show records which satisfy two conditions: Incidents where the state is Closed Incidents where Assignment Group is Network After clicking the Funnel icon, what should the user do?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -2023,9 +1753,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which of the following statements describes how data is organized in a table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which of the following statements describes how data is organized in a table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -2038,9 +1766,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which plugin allows users to install multiple applications, application-customizations. or plugins at once?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which plugin allows users to install multiple applications, application-customizations. or plugins at once?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -2053,9 +1779,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following is an accurate list of changes that are captured in an Update Set?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following is an accurate list of changes that are captured in an Update Set?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
 
 ---
 
@@ -2067,9 +1791,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'A change request has been approved and assigned to you as the system administrator to change the Incident number prefix from the default of "INC" to the company standard IN." What are the next steps to be taken'' A. Go to the Number Maintenance application and change the prefix to "IN" for incident' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'A change request has been approved and assigned to you as the system administrator to change the Incident number prefix from the default of "INC" to the company standard IN." What are the next steps to be taken'' A. Go to the Number Maintenance application and change the prefix to "IN" for incident' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -2084,9 +1806,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which tool is used to define relationships between fields in an import set table and a target table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which tool is used to define relationships between fields in an import set table and a target table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -2096,9 +1816,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities’ assignment group. For HR, the item will be used primarily for the Onboarding coordinators, for employee orientation sessions. For Facilities, the item will be used for anyone in the company who needs room set up services. However, both departments have their own service catalogs. What do you do, to support these requirements?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities’ assignment group. For HR, the item will be used primarily for the Onboarding coordinators, for employee orientation sessions. For Facilities, the item will be used for anyone in the company who needs room set up services. However, both departments have their own service catalogs. What do you do, to support these requirements?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -2108,9 +1826,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -2126,9 +1842,7 @@ Range: Q1-Q438
 
 **Answer:** A,B,E,F
 
-*해설:* 정답은 **A,B,E,F**입니다. 이 문항은 'Which of the following are not included in an Update Set, by default?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **A,B,E,F**입니다. 이 문항은 'Which of the following are not included in an Update Set, by default?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -2141,9 +1855,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'How can administrators utilize the same content for different notification channels?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'How can administrators utilize the same content for different notification channels?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -2156,9 +1868,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which one of the following statements is true?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which one of the following statements is true?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -2168,9 +1878,7 @@ Range: Q1-Q438
 
 **Answer:** D,E,F
 
-*해설:* 정답은 **D,E,F**입니다. 이 문항은 'When testing a catalog item, having a manager approval flows, which of these best practices would you follow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
+*해설:* 정답은 **D,E,F**입니다. 이 문항은 'When testing a catalog item, having a manager approval flows, which of these best practices would you follow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
 
 ---
 
@@ -2184,9 +1892,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What feature can track the amount of time that a task has been open, to ensure that tasks are completed within an allotted time?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What feature can track the amount of time that a task has been open, to ensure that tasks are completed within an allotted time?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -2199,9 +1905,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What is the name of the table relationship, where two or more tables are related in a bi- directional relationship, so that the related records are visible from both tables in a related list?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What is the name of the table relationship, where two or more tables are related in a bi- directional relationship, so that the related records are visible from both tables in a related list?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -2214,9 +1918,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What ServiceNow tables can Administrators define as "destinations" for imported data, when using Transform Maps in the System Import Sets application?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What ServiceNow tables can Administrators define as "destinations" for imported data, when using Transform Maps in the System Import Sets application?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -2230,9 +1932,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'When you need to orchestrate business processes across services with little technical user knowledge, which utility would you use?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'When you need to orchestrate business processes across services with little technical user knowledge, which utility would you use?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -2246,9 +1946,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'A new service catalog item is being developed, but should only be visible to managers inside the HR Department. What method would you use to fulfill this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'A new service catalog item is being developed, but should only be visible to managers inside the HR Department. What method would you use to fulfill this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -2261,9 +1959,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What is NOT an example of a UI Action?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What is NOT an example of a UI Action?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
 
 ---
 
@@ -2276,9 +1972,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What function do you use to add buttons, links, and context menu items on forms and lists?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What function do you use to add buttons, links, and context menu items on forms and lists?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
 
 ---
 
@@ -2291,9 +1985,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Where in Flow Designer can users access information about actions that are added to the flow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Where in Flow Designer can users access information about actions that are added to the flow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -2306,9 +1998,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which plugin needs to be activated in order to translate the content of a catalog item to multiple languages?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which plugin needs to be activated in order to translate the content of a catalog item to multiple languages?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -2322,9 +2012,7 @@ Range: Q1-Q438
 
 **Answer:** E
 
-*해설:* 정답은 **E**입니다. 이 문항은 'Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that is specific to the Incident table and the Major Incident field?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
+*해설:* 정답은 **E**입니다. 이 문항은 'Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that is specific to the Incident table and the Major Incident field?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
 
 ---
 
@@ -2337,9 +2025,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'ServiceNow contains a resource which provides the following: A standard and shared set of service related definitions across ServiceNow products and platform that will enable and support true service level reporting. A CMDB framework across our products and platform that will enable and support multiple configuration strategies. What resource do these statements describe?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'ServiceNow contains a resource which provides the following: A standard and shared set of service related definitions across ServiceNow products and platform that will enable and support true service level reporting. A CMDB framework across our products and platform that will enable and support multiple configuration strategies. What resource do these statements describe?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -2352,9 +2038,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What is specified in an Access Control rule?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What is specified in an Access Control rule?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
 
 ---
 
@@ -2368,9 +2052,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'As it reveals to IT employee what interface would you use, if you wanted to browse internal IT documentation, like troubleshooting scripts and FAQs?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'As it reveals to IT employee what interface would you use, if you wanted to browse internal IT documentation, like troubleshooting scripts and FAQs?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -2384,9 +2066,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which module would you use to create a new automation of business logic such as approvals, tasks, and notifications?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which module would you use to create a new automation of business logic such as approvals, tasks, and notifications?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -2402,9 +2082,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What field contains a record’s 32-character, unique identifier?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What field contains a record’s 32-character, unique identifier?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -2417,9 +2095,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which of the following is used to categorize, flag, and locate records?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which of the following is used to categorize, flag, and locate records?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -2432,9 +2108,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What is a sys_id?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What is a sys_id?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -2448,9 +2122,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which ServiceNow capability provides assistance to help users obtain information, make decisions, and perform common work tasks via a messaging interface?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which ServiceNow capability provides assistance to help users obtain information, make decisions, and perform common work tasks via a messaging interface?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -2463,9 +2135,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'New records, new groups, and modified configuration Items (Cls): what do they have in common?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'New records, new groups, and modified configuration Items (Cls): what do they have in common?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -2479,9 +2149,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What do you call any component that needs to be managed in order to deliver services?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What do you call any component that needs to be managed in order to deliver services?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -2495,9 +2163,7 @@ Range: Q1-Q438
 
 **Answer:** A,C,E
 
-*해설:* 정답은 **A,C,E**입니다. 이 문항은 'What are the components that make up a filter condition?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A,C,E**입니다. 이 문항은 'What are the components that make up a filter condition?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -2511,9 +2177,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'When designing a flow, how do you reference data from a record, in that flow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'When designing a flow, how do you reference data from a record, in that flow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -2527,9 +2191,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Your customer would like to create a new template to notify users who are affected by network outages at their site. Which module would you use to create a new notification?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Your customer would like to create a new template to notify users who are affected by network outages at their site. Which module would you use to create a new notification?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
 
 ---
 
@@ -2542,9 +2204,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'On a Business Rule, the When setting determines at what point the rule executes. What are the options for specifying that timing?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'On a Business Rule, the When setting determines at what point the rule executes. What are the options for specifying that timing?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -2558,9 +2218,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What do you activate when you want to add applications or functionality within your development instance?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What do you activate when you want to add applications or functionality within your development instance?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -2574,9 +2232,7 @@ Range: Q1-Q438
 
 **Answer:** E
 
-*해설:* 정답은 **E**입니다. 이 문항은 'What is a no-code approach to control the mandatory or read-only state of a form field?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
+*해설:* 정답은 **E**입니다. 이 문항은 'What is a no-code approach to control the mandatory or read-only state of a form field?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
 
 ---
 
@@ -2589,9 +2245,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What is the purpose of a Data Policy?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What is the purpose of a Data Policy?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -2604,9 +2258,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What would NOT appear in the Application Navigator if “service” is typed into the filter field?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What would NOT appear in the Application Navigator if “service” is typed into the filter field?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -2619,9 +2271,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Access Control rules may provide access security for which of the following database objects?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Access Control rules may provide access security for which of the following database objects?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -2631,9 +2281,7 @@ Range: Q1-Q438
 
 **Answer:** Performance Analytics는 시계열 스냅샷/추세 분석 중심이며, Reporting은 시점 기반 조회 중심입니다.
 
-*해설:* 정답은 **Performance Analytics는 시계열 스냅샷/추세 분석 중심이며, Reporting은 시점 기반 조회 중심입니다.**입니다. 이 문항은 'What is a key difference between Reporting and Performance Analytics?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **Performance Analytics는 시계열 스냅샷/추세 분석 중심이며, Reporting은 시점 기반 조회 중심입니다.**입니다. 이 문항은 'What is a key difference between Reporting and Performance Analytics?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -2646,9 +2294,7 @@ Range: Q1-Q438
 
 **Answer:** B,C
 
-*해설:* 정답은 **B,C**입니다. 이 문항은 'You are showing your customer a new form that you have created for their new application. They would like to add a field to the form. Where could you do that?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B,C**입니다. 이 문항은 'You are showing your customer a new form that you have created for their new application. They would like to add a field to the form. Where could you do that?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -2658,9 +2304,7 @@ Range: Q1-Q438
 
 **Answer:** E
 
-*해설:* 정답은 **E**입니다. 이 문항은 'A new Service Desk employee in Latin America complains that the create dates and times are incorrect on their Incident list. What would you suggest to fix this issue?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **E**입니다. 이 문항은 'A new Service Desk employee in Latin America complains that the create dates and times are incorrect on their Incident list. What would you suggest to fix this issue?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -2673,9 +2317,7 @@ Range: Q1-Q438
 
 **Answer:** A,B
 
-*해설:* 정답은 **A,B**입니다. 이 문항은 'What are two ways to generate an Event?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **A,B**입니다. 이 문항은 'What are two ways to generate an Event?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -2688,9 +2330,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'When impersonating a user for testing purposes, what is the best way to return the instance, logged in with your user account?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'When impersonating a user for testing purposes, what is the best way to return the instance, logged in with your user account?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
 
 ---
 
@@ -2706,9 +2346,7 @@ Range: Q1-Q438
 
 **Answer:** A,E,F,G
 
-*해설:* 정답은 **A,E,F,G**입니다. 이 문항은 'On the Reports page, what sections allow you to see which reports are visible to different audiences?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **A,E,F,G**입니다. 이 문항은 'On the Reports page, what sections allow you to see which reports are visible to different audiences?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -2721,9 +2359,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which core table in the ServiceNow platform provides a series of standard fields used on each of the tables that extend it, such as the Incident [incident] and Problem [problem] tables?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which core table in the ServiceNow platform provides a series of standard fields used on each of the tables that extend it, such as the Incident [incident] and Problem [problem] tables?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -2736,9 +2372,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'How are local flow variables accessed in the Flow Designer Data panel?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'How are local flow variables accessed in the Flow Designer Data panel?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -2751,9 +2385,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What is an Event in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What is an Event in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -2766,9 +2398,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What is the primary application used to load data into ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What is the primary application used to load data into ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -2781,9 +2411,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'In addition to the admin role, which one of the following roles allows a user to add or remove fields from a list?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'In addition to the admin role, which one of the following roles allows a user to add or remove fields from a list?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -2799,9 +2427,7 @@ Range: Q1-Q438
 
 **Answer:** A,E,G
 
-*해설:* 정답은 **A,E,G**입니다. 이 문항은 'What are three security modules often used by the System Administrator?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
+*해설:* 정답은 **A,E,G**입니다. 이 문항은 'What are three security modules often used by the System Administrator?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
 
 ---
 
@@ -2814,9 +2440,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What is the difference between a Ul Policy and Data Policy?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What is the difference between a Ul Policy and Data Policy?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -2832,9 +2456,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What is used frequently to move customizations from one instance to another?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Update Set은 구성 변경사항을 인스턴스 간 이동하는 단위입니다. 기본적으로 데이터 레코드는 포함되지 않으므로 이관 전략을 분리해야 합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What is used frequently to move customizations from one instance to another?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Update Set은 구성 변경사항을 인스턴스 간 이동하는 단위입니다. 기본적으로 데이터 레코드는 포함되지 않으므로 이관 전략을 분리해야 합니다.
 
 ---
 
@@ -2847,9 +2469,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'How is a group defined in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'How is a group defined in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -2862,9 +2482,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'When creating a global custom table named “abc”, what is the table name that is automatically assigned by the platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'When creating a global custom table named “abc”, what is the table name that is automatically assigned by the platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -2877,9 +2495,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which of the following protects applications by identifying and restricting access to available files and data?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which of the following protects applications by identifying and restricting access to available files and data?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
 
 ---
 
@@ -2893,9 +2509,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'When a user reports that they are not able to see modules on the application navigator, what can you do, to see what modules are visible to them?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'When a user reports that they are not able to see modules on the application navigator, what can you do, to see what modules are visible to them?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
 
 ---
 
@@ -2908,9 +2522,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following is NOT a type of Visual Task Board?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which one of the following is NOT a type of Visual Task Board?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -2924,9 +2536,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which ServiceNow resource is a framework that ensures the data your ServiceNow application requires maps correctly to the appropriate CMDB tables?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which ServiceNow resource is a framework that ensures the data your ServiceNow application requires maps correctly to the appropriate CMDB tables?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -2939,9 +2549,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What is the difference between a UI Policy and Data Policy?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What is the difference between a UI Policy and Data Policy?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
 
 ---
 
@@ -2954,9 +2562,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Group records are stored in which table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Group records are stored in which table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -2969,9 +2575,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What is a Notification?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What is a Notification?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -2984,9 +2588,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What are examples of Core tables in the ServiceNow platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What are examples of Core tables in the ServiceNow platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -3000,9 +2602,7 @@ Range: Q1-Q438
 
 **Answer:** B,D,E
 
-*해설:* 정답은 **B,D,E**입니다. 이 문항은 'Which data consistency settings can be achieved using UI Policy?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
+*해설:* 정답은 **B,D,E**입니다. 이 문항은 'Which data consistency settings can be achieved using UI Policy?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
 
 ---
 
@@ -3015,9 +2615,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which is the most efficient way to move large amounts of data between instances?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which is the most efficient way to move large amounts of data between instances?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -3030,9 +2628,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which module would you use to customize your instances banner image, text and colors? A Homepage Admin > Pages > Branding' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which module would you use to customize your instances banner image, text and colors? A Homepage Admin > Pages > Branding' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -3045,9 +2641,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What feature allows, you to limit who is able to contribute or read knowledge within a knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What feature allows, you to limit who is able to contribute or read knowledge within a knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -3059,9 +2653,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'An order for new office equipment has Men placed through the Service Catalog. How would you view the lists of requests after the orders have Men placed?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'An order for new office equipment has Men placed through the Service Catalog. How would you view the lists of requests after the orders have Men placed?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -3074,9 +2666,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'On a form header, what icon would you click to access Template features?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'On a form header, what icon would you click to access Template features?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -3090,9 +2680,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What component causes a flow to run after a record has been created or updated?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What component causes a flow to run after a record has been created or updated?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -3105,9 +2693,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What is the primary objective of the Display Business Rule?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What is the primary objective of the Display Business Rule?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -3120,9 +2706,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What module do you use to access the reports that are available to you?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What module do you use to access the reports that are available to you?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -3135,9 +2719,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'A task worker asks how they can monitor any updates occurring to recands assigned to him, like responses from customers, What do you suggest?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'A task worker asks how they can monitor any updates occurring to recands assigned to him, like responses from customers, What do you suggest?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -3151,9 +2733,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'When a flow runs an action, it generates a runtime value, which stays the same for the duration of the flow. What is the name of this runtime value?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'When a flow runs an action, it generates a runtime value, which stays the same for the duration of the flow. What is the name of this runtime value?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -3166,9 +2746,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which feature can be used to categorize a set of records from a list and make them visible to other users?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which feature can be used to categorize a set of records from a list and make them visible to other users?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -3181,9 +2759,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'User records are stored in which table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'User records are stored in which table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -3197,9 +2773,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'When looking at a long list of records, you want to quickly filter, to show only those which have Category of Hardware. How might you do that?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'When looking at a long list of records, you want to quickly filter, to show only those which have Category of Hardware. How might you do that?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -3212,9 +2786,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'If a user is on an Incident form and is alerted when they change the value of the Priority field, which type of script executes in the Platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'If a user is on an Incident form and is alerted when they change the value of the Priority field, which type of script executes in the Platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
 
 ---
 
@@ -3228,9 +2800,7 @@ Range: Q1-Q438
 
 **Answer:** A,E
 
-*해설:* 정답은 **A,E**입니다. 이 문항은 'Which role(s) are required to impersonate a user?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
+*해설:* 정답은 **A,E**입니다. 이 문항은 'Which role(s) are required to impersonate a user?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
 
 ---
 
@@ -3244,9 +2814,7 @@ Range: Q1-Q438
 
 **Answer:** D,E
 
-*해설:* 정답은 **D,E**입니다. 이 문항은 'If users would like to locate and assign a task to themselves in the Platform, What action could they perform from the list view to make the assignment?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
+*해설:* 정답은 **D,E**입니다. 이 문항은 'If users would like to locate and assign a task to themselves in the Platform, What action could they perform from the list view to make the assignment?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
 
 ---
 
@@ -3260,9 +2828,7 @@ Range: Q1-Q438
 
 **Answer:** A,B
 
-*해설:* 정답은 **A,B**입니다. 이 문항은 'An order from the Service Catalog has been placed. Two records in the Platform are created as a result. Which two records are associated with tins newly ordered item?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **A,B**입니다. 이 문항은 'An order from the Service Catalog has been placed. Two records in the Platform are created as a result. Which two records are associated with tins newly ordered item?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -3275,9 +2841,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'How would you navigate to the Schema map for a table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'How would you navigate to the Schema map for a table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -3290,9 +2854,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'When an administrator sets a policy that is applied to all data entered into the Platform (UI, Import Sets, or Web Services), where does this policy run by default?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'When an administrator sets a policy that is applied to all data entered into the Platform (UI, Import Sets, or Web Services), where does this policy run by default?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -3306,9 +2868,7 @@ Range: Q1-Q438
 
 **Answer:** A,B,D
 
-*해설:* 정답은 **A,B,D**입니다. 이 문항은 'When selecting the Target table for an import, which tables can you select?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **A,B,D**입니다. 이 문항은 'When selecting the Target table for an import, which tables can you select?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -3322,9 +2882,7 @@ Range: Q1-Q438
 
 **Answer:** C,D,E
 
-*해설:* 정답은 **C,D,E**입니다. 이 문항은 'On Access Control Definitions, what are ways you can set the permissions on a Table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **C,D,E**입니다. 이 문항은 'On Access Control Definitions, what are ways you can set the permissions on a Table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -3337,9 +2895,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What are the steps for importing data using an import set?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What are the steps for importing data using an import set?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -3352,9 +2908,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'When moving a homepage or dashboard between instances, what must you remember?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Update Set은 구성 변경사항을 인스턴스 간 이동하는 단위입니다. 기본적으로 데이터 레코드는 포함되지 않으므로 이관 전략을 분리해야 합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'When moving a homepage or dashboard between instances, what must you remember?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Update Set은 구성 변경사항을 인스턴스 간 이동하는 단위입니다. 기본적으로 데이터 레코드는 포함되지 않으므로 이관 전략을 분리해야 합니다.
 
 ---
 
@@ -3367,9 +2921,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What is the platform name for the Group table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What is the platform name for the Group table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -3383,9 +2935,7 @@ Range: Q1-Q438
 
 **Answer:** B,C,E
 
-*해설:* 정답은 **B,C,E**입니다. 이 문항은 'When adding a related list to a form, you choose the related list from the list callector, What is an example of a related list you might see on the list collector? :' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B,C,E**입니다. 이 문항은 'When adding a related list to a form, you choose the related list from the list callector, What is an example of a related list you might see on the list collector? :' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -3398,9 +2948,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What ServiceNow feature allows you to include data from a secondary related table on a report?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What ServiceNow feature allows you to include data from a secondary related table on a report?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
 
 ---
 
@@ -3413,9 +2961,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'On the Form header, which icon do you use to access form templates?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'On the Form header, which icon do you use to access form templates?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -3425,9 +2971,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What does ServiceNow recommend as a best practice regarding data imports?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What does ServiceNow recommend as a best practice regarding data imports?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -3440,9 +2984,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which type of scripts nun in the browser?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which type of scripts nun in the browser?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
 
 ---
 
@@ -3452,9 +2994,7 @@ Range: Q1-Q438
 
 **Answer:** C,D
 
-*해설:* 정답은 **C,D**입니다. 이 문항은 'When building an extended table from a base table, which fields do you need to create?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **C,D**입니다. 이 문항은 'When building an extended table from a base table, which fields do you need to create?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -3467,9 +3007,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which is the base table of the configuration management database hierarchy?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which is the base table of the configuration management database hierarchy?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -3479,9 +3017,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'A Service Catalog project will involve building 80 catalog items. For each of the catalog items, the following fields will be mandatory on the forms: *Requested for*Requested by *Approving manager* Delivery instructions All of the other variables will be specific to the individual catalog item. What features would you use when designing the catalog item form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'A Service Catalog project will involve building 80 catalog items. For each of the catalog items, the following fields will be mandatory on the forms: *Requested for*Requested by *Approving manager* Delivery instructions All of the other variables will be specific to the individual catalog item. What features would you use when designing the catalog item form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -3495,9 +3031,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What is the most common role that has access to almost all platform features, functions, and data?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What is the most common role that has access to almost all platform features, functions, and data?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -3511,9 +3045,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'If a knowledge base has no access details specified, what users are able to read articles in that knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'If a knowledge base has no access details specified, what users are able to read articles in that knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -3527,9 +3059,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What does Natural Language Query allow you to do on a list?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What does Natural Language Query allow you to do on a list?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -3544,9 +3074,7 @@ Range: Q1-Q438
 
 **Answer:** A,B,D,F
 
-*해설:* 정답은 **A,B,D,F**입니다. 이 문항은 'When a custom table is created, which access control rules are automatically created?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
+*해설:* 정답은 **A,B,D,F**입니다. 이 문항은 'When a custom table is created, which access control rules are automatically created?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
 
 ---
 
@@ -3560,9 +3088,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What role enables someone to authorize a request, with no other permissions on the platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What role enables someone to authorize a request, with no other permissions on the platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -3575,9 +3101,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What actions art taken to filter a long list of records to show only those which have “email” Short Description?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What actions art taken to filter a long list of records to show only those which have “email” Short Description?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -3590,9 +3114,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'The Report Designer contains different section for configuring your report. Which section is used to specify the name of the report, and the table or data source for the report. A. Properties' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'The Report Designer contains different section for configuring your report. Which section is used to specify the name of the report, and the table or data source for the report. A. Properties' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -3606,9 +3128,7 @@ Range: Q1-Q438
 
 **Answer:** B,C,E
 
-*해설:* 정답은 **B,C,E**입니다. 이 문항은 'When managing tags, you can adjust who is able to see iL What are the visibility options?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **B,C,E**입니다. 이 문항은 'When managing tags, you can adjust who is able to see iL What are the visibility options?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -3621,9 +3141,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What setting allows users to view a Knowledge Base article even if the are not logged in?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What setting allows users to view a Knowledge Base article even if the are not logged in?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -3637,9 +3155,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'In Flow Designer, where is the data from an action stored so it can be used in subsequent actions in the flow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'In Flow Designer, where is the data from an action stored so it can be used in subsequent actions in the flow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -3652,9 +3168,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What is the language used for scriptingin ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What is the language used for scriptingin ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -3667,9 +3181,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which element is used to track items not saved with a field, in a record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which element is used to track items not saved with a field, in a record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -3683,9 +3195,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What actions are taken to filter a long list of records to show only those with the Category of Hardware?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What actions are taken to filter a long list of records to show only those with the Category of Hardware?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -3695,9 +3205,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'You have heard about a new application released by SericeNow, You want to try it out, to- see if it might be useful for your company's ServiceNow implementation. What would be the best way to get hands-on experience with the new application?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'You have heard about a new application released by SericeNow, You want to try it out, to- see if it might be useful for your company's ServiceNow implementation. What would be the best way to get hands-on experience with the new application?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -3710,9 +3218,7 @@ Range: Q1-Q438
 
 **Answer:** A,D
 
-*해설:* 정답은 **A,D**입니다. 이 문항은 'Which modules can you use to create a new table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **A,D**입니다. 이 문항은 'Which modules can you use to create a new table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -3727,9 +3233,7 @@ Range: Q1-Q438
 
 **Answer:** A,B,C,F
 
-*해설:* 정답은 **A,B,C,F**입니다. 이 문항은 'What are examples of Ul Actions, relating to Lists?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A,B,C,F**입니다. 이 문항은 'What are examples of Ul Actions, relating to Lists?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -3742,9 +3246,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which field on every record contains a unique identifier for that record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which field on every record contains a unique identifier for that record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -3758,9 +3260,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which system property is added and set to true in order to see impersonation events in the System Log?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which system property is added and set to true in order to see impersonation events in the System Log?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
 
 ---
 
@@ -3774,9 +3274,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'When importing spreadsheet data into ServiceNow, what is the first step in the process?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'When importing spreadsheet data into ServiceNow, what is the first step in the process?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -3791,9 +3289,7 @@ Range: Q1-Q438
 
 **Answer:** A,D,F
 
-*해설:* 정답은 **A,D,F**입니다. 이 문항은 'What are the three key tables in an enterprise CMDB? . A. omadb_rel_ci' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A,D,F**입니다. 이 문항은 'What are the three key tables in an enterprise CMDB? . A. omadb_rel_ci' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -3806,9 +3302,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'On what part of the ServiceNow instance, would you find the option to access applications, like Incident Management?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'On what part of the ServiceNow instance, would you find the option to access applications, like Incident Management?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -3822,9 +3316,7 @@ Range: Q1-Q438
 
 **Answer:** A,C,D
 
-*해설:* 정답은 **A,C,D**입니다. 이 문항은 'When creating a new notification, what must you define?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A,C,D**입니다. 이 문항은 'When creating a new notification, what must you define?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -3837,9 +3329,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What table acts as a staging area for records imported from a data source?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What table acts as a staging area for records imported from a data source?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -3854,9 +3344,7 @@ Range: Q1-Q438
 
 **Answer:** F
 
-*해설:* 정답은 **F**입니다. 이 문항은 'On a form, which type of Geld has this icon which can be clicked, 10 S00 a preview of the associated record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **F**입니다. 이 문항은 'On a form, which type of Geld has this icon which can be clicked, 10 S00 a preview of the associated record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -3869,9 +3357,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which admin role is required to make changes to High Security Settings?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which admin role is required to make changes to High Security Settings?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -3885,9 +3371,7 @@ Range: Q1-Q438
 
 **Answer:** A,D
 
-*해설:* 정답은 **A,D**입니다. 이 문항은 'What action would an administrator perform on a list if they wanted to show the records in groups, based on the Category column?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A,D**입니다. 이 문항은 'What action would an administrator perform on a list if they wanted to show the records in groups, based on the Category column?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -3901,9 +3385,7 @@ Range: Q1-Q438
 
 **Answer:** A,B
 
-*해설:* 정답은 **A,B**입니다. 이 문항은 'If users would like to locate and assign a task to themselves in the Platform, what action could they perform from the list view to make the assignment?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
+*해설:* 정답은 **A,B**입니다. 이 문항은 'If users would like to locate and assign a task to themselves in the Platform, what action could they perform from the list view to make the assignment?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
 
 ---
 
@@ -3918,9 +3400,7 @@ Range: Q1-Q438
 
 **Answer:** B,D,E,F
 
-*해설:* 정답은 **B,D,E,F**입니다. 이 문항은 'What features are available in Knowledge Management, to support continuous improvement on the knowledge articles?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **B,D,E,F**입니다. 이 문항은 'What features are available in Knowledge Management, to support continuous improvement on the knowledge articles?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -3933,9 +3413,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'A form displays information about one record at the top, for example a User, Additional records, which are associated with that User, are displayed on tabs at the bottom of the form. What are those tabs called?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'A form displays information about one record at the top, for example a User, Additional records, which are associated with that User, are displayed on tabs at the bottom of the form. What are those tabs called?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -3949,9 +3427,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'A user is complaining that they are seeing a blank page, when they click Create New, from your custom Inventory application. You have confirmed that they can see the Inventory application, and the Create New module on the application navigator. What could be the cause of this issue?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'A user is complaining that they are seeing a blank page, when they click Create New, from your custom Inventory application. You have confirmed that they can see the Inventory application, and the Create New module on the application navigator. What could be the cause of this issue?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -3964,9 +3440,7 @@ Range: Q1-Q438
 
 **Answer:** E
 
-*해설:* 정답은 **E**입니다. 이 문항은 'You are looking at a list of Active incidents. You want to exclude incidents with the state of Resolved. How might you do that?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **E**입니다. 이 문항은 'You are looking at a list of Active incidents. You want to exclude incidents with the state of Resolved. How might you do that?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -3979,9 +3453,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which application is used primarily to load data into ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which application is used primarily to load data into ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -3996,9 +3468,7 @@ Range: Q1-Q438
 
 **Answer:** C,D
 
-*해설:* 정답은 **C,D**입니다. 이 문항은 'After you create a new table, what is the best practice regarding the navigation pane?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **C,D**입니다. 이 문항은 'After you create a new table, what is the best practice regarding the navigation pane?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -4012,9 +3482,7 @@ Range: Q1-Q438
 
 **Answer:** C,D,E
 
-*해설:* 정답은 **C,D,E**입니다. 이 문항은 'What are advantages of using Flow Designer?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **C,D,E**입니다. 이 문항은 'What are advantages of using Flow Designer?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -4029,9 +3497,7 @@ Range: Q1-Q438
 
 **Answer:** A,B,F
 
-*해설:* 정답은 **A,B,F**입니다. 이 문항은 'Which tables are available by default in a ServiceNow instance?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A,B,F**입니다. 이 문항은 'Which tables are available by default in a ServiceNow instance?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -4044,9 +3510,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'When using Flow Designer what is the Flow Execution initiated by?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'When using Flow Designer what is the Flow Execution initiated by?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -4059,9 +3523,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which set of steps is used to import spreadsheet data into a ServiceNow table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which set of steps is used to import spreadsheet data into a ServiceNow table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -4074,9 +3536,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'A colleague wants to rearrange the columns on their My Work list. Once the user has navigated to the list where should they navigate to select and arrange the columns?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'A colleague wants to rearrange the columns on their My Work list. Once the user has navigated to the list where should they navigate to select and arrange the columns?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -4090,9 +3550,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'A manager wants to view a snapshot of month-end Sales performance data, as compared to Sales targets. In addition, the manager wants to be able to see those monthly numbers trended over time, and forecasted into the future. What capability do you suggest for this manager?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'A manager wants to view a snapshot of month-end Sales performance data, as compared to Sales targets. In addition, the manager wants to be able to see those monthly numbers trended over time, and forecasted into the future. What capability do you suggest for this manager?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -4106,9 +3564,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What component of the ServiceNow infrastructure defines every table and field in the system?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What component of the ServiceNow infrastructure defines every table and field in the system?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -4122,9 +3578,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'A manager is complaining that they can’t get the data they need on a report because the data resides in two different tables. This data is used for many different reports in their department. You have checked to see if dot-walking will meet the requirement, and it is not possible. What else might you try to help this manager?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'A manager is complaining that they can’t get the data they need on a report because the data resides in two different tables. This data is used for many different reports in their department. You have checked to see if dot-walking will meet the requirement, and it is not possible. What else might you try to help this manager?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
 
 ---
 
@@ -4137,9 +3591,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which storefront is a single location for accessing pre-built spokes to quickly integrate with third-party services to build and share content?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which storefront is a single location for accessing pre-built spokes to quickly integrate with third-party services to build and share content?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -4153,9 +3605,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'When importing spreadsheet data into ServiceNow, in which step does the data get written to the receiving table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'When importing spreadsheet data into ServiceNow, in which step does the data get written to the receiving table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -4165,9 +3615,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'While testing a Catalog Item for ordering an expensive computer, the mandatory approval is being skipped for requester Bob, Smith, but not for any of the other requesters. What could explain the issue?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'While testing a Catalog Item for ordering an expensive computer, the mandatory approval is being skipped for requester Bob, Smith, but not for any of the other requesters. What could explain the issue?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -4180,9 +3628,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which ServiceNow utility provides a modern interactive graphical interface to visualize configuration items and their relationship?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which ServiceNow utility provides a modern interactive graphical interface to visualize configuration items and their relationship?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -4196,9 +3642,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which low components allow you to specify when a flow should be run?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which low components allow you to specify when a flow should be run?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -4211,9 +3655,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What section on a task record is used to see the most recent updates made to a record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What section on a task record is used to see the most recent updates made to a record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -4226,9 +3668,7 @@ Range: Q1-Q438
 
 **Answer:** A,B
 
-*해설:* 정답은 **A,B**입니다. 이 문항은 'What types of entities can receive task assignments, in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A,B**입니다. 이 문항은 'What types of entities can receive task assignments, in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -4241,9 +3681,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'You have been asked to create a way for users to order a new iPhone, but only if they get two levels of approval. The approvers and users should be automatically notified at each approval level. What feature would you use to manage the approvals and notifications?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'You have been asked to create a way for users to order a new iPhone, but only if they get two levels of approval. The approvers and users should be automatically notified at each approval level. What feature would you use to manage the approvals and notifications?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -4256,9 +3694,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'You are editing a new incident record and would like the Save" Dutton to be located on the Form header. Which action would need to be taken for that button to appear?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'You are editing a new incident record and would like the Save" Dutton to be located on the Form header. Which action would need to be taken for that button to appear?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -4272,9 +3708,7 @@ Range: Q1-Q438
 
 **Answer:** A,C
 
-*해설:* 정답은 **A,C**입니다. 이 문항은 'Farm a form, what would you click, to modify the order of the fields on the form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **A,C**입니다. 이 문항은 'Farm a form, what would you click, to modify the order of the fields on the form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -4287,9 +3721,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'The testing team needs to be able to perform activities in the test instance, as though they are a member of the Service Desk group. What role would they need to be able to switch between user accounts, without logging out and back in?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'The testing team needs to be able to perform activities in the test instance, as though they are a member of the Service Desk group. What role would they need to be able to switch between user accounts, without logging out and back in?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
 
 ---
 
@@ -4303,9 +3735,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'After finishing your work on High Security Settings, what is a possible way to return to normal admin security levels?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'After finishing your work on High Security Settings, what is a possible way to return to normal admin security levels?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
 
 ---
 
@@ -4319,9 +3749,7 @@ Range: Q1-Q438
 
 **Answer:** B,E
 
-*해설:* 정답은 **B,E**입니다. 이 문항은 'When you are viewing a record, like an incident, how can you detect if someone else is also actively working on the Incident?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **B,E**입니다. 이 문항은 'When you are viewing a record, like an incident, how can you detect if someone else is also actively working on the Incident?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -4335,9 +3763,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Groups are stored in what table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Groups are stored in what table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -4351,9 +3777,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'A customer has asked for the following updates to a form: *Make Resolution code mandatory, admin state is changed to Resolved.* Hide major incident check box, unless logged in user has Major incident Manager role What type of rules (s) would you use to implement this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'A customer has asked for the following updates to a form: *Make Resolution code mandatory, admin state is changed to Resolved.* Hide major incident check box, unless logged in user has Major incident Manager role What type of rules (s) would you use to implement this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -4367,9 +3791,7 @@ Range: Q1-Q438
 
 **Answer:** E
 
-*해설:* 정답은 **E**입니다. 이 문항은 'Access controls are evaluated in this order: *1. Match object against table ACL* 2, Match the object against field ACL Within step 1 above, what order are the table ACLs evaluated?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
+*해설:* 정답은 **E**입니다. 이 문항은 'Access controls are evaluated in this order: *1. Match object against table ACL* 2, Match the object against field ACL Within step 1 above, what order are the table ACLs evaluated?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
 
 ---
 
@@ -4383,9 +3805,7 @@ Range: Q1-Q438
 
 **Answer:** E
 
-*해설:* 정답은 **E**입니다. 이 문항은 'When importing data from a spreadsheet, which step defines where the incoming data columns will be written in the receiving table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **E**입니다. 이 문항은 'When importing data from a spreadsheet, which step defines where the incoming data columns will be written in the receiving table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -4398,9 +3818,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What tool is used to import data from various data sources, and map that data into ServiceMow tables?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What tool is used to import data from various data sources, and map that data into ServiceMow tables?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -4413,9 +3831,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which field (or fields) is used as a unique key during imports?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which field (or fields) is used as a unique key during imports?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -4429,9 +3845,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What is the definition of a group?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What is the definition of a group?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -4442,9 +3856,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Tables may be set up with Many to Many relationships. What is a classic example of a scenario where the tables would have many to many relationships?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Tables may be set up with Many to Many relationships. What is a classic example of a scenario where the tables would have many to many relationships?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -4457,9 +3869,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What access does a user need to be able to import anicies to a knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What access does a user need to be able to import anicies to a knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -4472,9 +3882,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What Service Catalog feature do you use to organize items into logical groups?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What Service Catalog feature do you use to organize items into logical groups?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -4487,9 +3895,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'The Report Designer contains different sections for configuring your report. Which section is used to adjust the look of your report, including colors, files, and legend layout?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'The Report Designer contains different sections for configuring your report. Which section is used to adjust the look of your report, including colors, files, and legend layout?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -4503,9 +3909,7 @@ Range: Q1-Q438
 
 **Answer:** E
 
-*해설:* 정답은 **E**입니다. 이 문항은 'A department manager asks an analyst to build some reports. Where do you recommend the analyst start?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **E**입니다. 이 문항은 'A department manager asks an analyst to build some reports. Where do you recommend the analyst start?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -4518,9 +3922,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'How is a user defined in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'How is a user defined in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
 
 ---
 
@@ -4533,9 +3935,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'To apply a UI Policy to all views, which field should be set to true in its definition record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'To apply a UI Policy to all views, which field should be set to true in its definition record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
 
 ---
 
@@ -4548,9 +3948,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which testing framework is used to test ServerNew Applications?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which testing framework is used to test ServerNew Applications?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -4564,9 +3962,7 @@ Range: Q1-Q438
 
 **Answer:** C,D
 
-*해설:* 정답은 **C,D**입니다. 이 문항은 'Which actions would you take to edit the title on an application menu?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **C,D**입니다. 이 문항은 'Which actions would you take to edit the title on an application menu?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -4580,9 +3976,7 @@ Range: Q1-Q438
 
 **Answer:** B,C,E
 
-*해설:* 정답은 **B,C,E**입니다. 이 문항은 'One related list, which buttons are commonly used for managing the records on the list?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B,C,E**입니다. 이 문항은 'One related list, which buttons are commonly used for managing the records on the list?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -4596,9 +3990,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which script can run when a record is displayed, inserted, updated, deleted, or when a table is queried?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which script can run when a record is displayed, inserted, updated, deleted, or when a table is queried?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
 
 ---
 
@@ -4611,9 +4003,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What is the result of the order in which access controls are evaluated?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What is the result of the order in which access controls are evaluated?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
 
 ---
 
@@ -4626,9 +4016,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which best describes a field in a SeniceNow table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which best describes a field in a SeniceNow table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -4641,9 +4029,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'On what part of the ServiceNow instance, would you find the option to Impersonate User?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'On what part of the ServiceNow instance, would you find the option to Impersonate User?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
 
 ---
 
@@ -4657,9 +4043,7 @@ Range: Q1-Q438
 
 **Answer:** E
 
-*해설:* 정답은 **E**입니다. 이 문항은 'Which helps to visualize configuration items and their relationships?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **E**입니다. 이 문항은 'Which helps to visualize configuration items and their relationships?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -4673,9 +4057,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Your customer requires that they be able to monitor which users are performing impersonations in their instance. What would you do to meet that requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Your customer requires that they be able to monitor which users are performing impersonations in their instance. What would you do to meet that requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
 
 ---
 
@@ -4689,9 +4071,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which allows the creation of a task-based record from Service Catalog?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which allows the creation of a task-based record from Service Catalog?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
 
 ---
 
@@ -4704,9 +4084,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'In what order are Access Controls evaluated?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'In what order are Access Controls evaluated?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
 
 ---
 
@@ -4720,9 +4098,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which feature ensures data consistency white importing data using import sets and web services?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which feature ensures data consistency white importing data using import sets and web services?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
 
 ---
 
@@ -4736,9 +4112,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'The wait time for end users is based on the round-trip between the client and the server. What activities are included in the round-trips?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'The wait time for end users is based on the round-trip between the client and the server. What activities are included in the round-trips?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -4751,9 +4125,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What section on a task record would you use to see the most recent update made to a record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What section on a task record would you use to see the most recent update made to a record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -4763,9 +4135,7 @@ Range: Q1-Q438
 
 **Answer:** glide.ui.enable_personalize_form.admin=true
 
-*해설:* 정답은 **glide.ui.enable_personalize_form.admin=true**입니다. 이 문항은 'Which action enables personalization in a form for the admin role, only?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **glide.ui.enable_personalize_form.admin=true**입니다. 이 문항은 'Which action enables personalization in a form for the admin role, only?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -4779,9 +4149,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'If you have the Impersonate role, what type of user are you not able to impersonate?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'If you have the Impersonate role, what type of user are you not able to impersonate?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
 
 ---
 
@@ -4795,9 +4163,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'When using the Data Pill Picker, use which keys to dot-walk (6 fields in other tables?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'When using the Data Pill Picker, use which keys to dot-walk (6 fields in other tables?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Reference 필드는 다른 테이블 레코드를 참조하며 Dot-Walking으로 참조 테이블의 필드까지 조회/조건에 활용할 수 있습니다.
 
 ---
 
@@ -4810,9 +4176,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Here is an example of the criteria set for a knowledge base: *Companies: ACME North America* Department: HR *Groups: ACME Manager* Match All: Yes In this example, what users would have access to this knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Here is an example of the criteria set for a knowledge base: *Companies: ACME North America* Department: HR *Groups: ACME Manager* Match All: Yes In this example, what users would have access to this knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -4824,9 +4188,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that applies to the entire Incident table (all rows and fields)?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that applies to the entire Incident table (all rows and fields)?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
 
 ---
 
@@ -4841,9 +4203,7 @@ Range: Q1-Q438
 
 **Answer:** B,C,D,F
 
-*해설:* 정답은 **B,C,D,F**입니다. 이 문항은 'What are benefits of assigning work tasks to a group, rather than to an individual?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B,C,D,F**입니다. 이 문항은 'What are benefits of assigning work tasks to a group, rather than to an individual?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -4856,9 +4216,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What resource can you use to view details of the tables and configuration items (CIs) associated with a particular use case?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What resource can you use to view details of the tables and configuration items (CIs) associated with a particular use case?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -4872,9 +4230,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which framework can automatically populate values for the priority and Category field based on the Short description field value?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which framework can automatically populate values for the priority and Category field based on the Short description field value?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
 
 ---
 
@@ -4887,9 +4243,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What is used to determine user access to knowledge bases or a knowledge article?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What is used to determine user access to knowledge bases or a knowledge article?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -4902,9 +4256,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'From a related list, what would a user click for personalize the layout of the columns?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'From a related list, what would a user click for personalize the layout of the columns?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -4918,9 +4270,7 @@ Range: Q1-Q438
 
 **Answer:** B,E
 
-*해설:* 정답은 **B,E**입니다. 이 문항은 'An IT user calls the service desk because his work needs to be completed on ask records. All he can see a Self Service on his homepage when he logs in to the ServiceNow instance. What issue could explain this?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **B,E**입니다. 이 문항은 'An IT user calls the service desk because his work needs to be completed on ask records. All he can see a Self Service on his homepage when he logs in to the ServiceNow instance. What issue could explain this?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -4933,9 +4283,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which statement correctly describes the differences between a Client Script and a Business Rule?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which statement correctly describes the differences between a Client Script and a Business Rule?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
 
 ---
 
@@ -4948,9 +4296,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which tab on the knowledge base record, would you use to identify the sets of users who are able to read articles in that knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which tab on the knowledge base record, would you use to identify the sets of users who are able to read articles in that knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -4963,9 +4309,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'When looking at a long list of records, you want to quickly filler, to show only those which have Shon Description containing email How might you do that?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'When looking at a long list of records, you want to quickly filler, to show only those which have Shon Description containing email How might you do that?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -4981,9 +4325,7 @@ Range: Q1-Q438
 
 **Answer:** A,B,D,G,H
 
-*해설:* 정답은 **A,B,D,G,H**입니다. 이 문항은 'What attributes can you manage, using System Properties > Basic Configuration UI16?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A,B,D,G,H**입니다. 이 문항은 'What attributes can you manage, using System Properties > Basic Configuration UI16?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -4996,9 +4338,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What framework can be used to manage the tables and Cis associated with a use case?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What framework can be used to manage the tables and Cis associated with a use case?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5011,9 +4351,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What access does a user need to be able to import articles to a knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What access does a user need to be able to import articles to a knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -5026,9 +4364,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which type of ServiceNow script runs on the web browser?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which type of ServiceNow script runs on the web browser?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
 
 ---
 
@@ -5042,9 +4378,7 @@ Range: Q1-Q438
 
 **Answer:** A,E
 
-*해설:* 정답은 **A,E**입니다. 이 문항은 'What would you do, on a list, if you wanted to show the records in groups, based on the column category?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **A,E**입니다. 이 문항은 'What would you do, on a list, if you wanted to show the records in groups, based on the column category?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -5057,9 +4391,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'The Employee On-boarding team has asked for a way for managers to order computers, monitors, business Cards, and cell phones for new employees. How would you proceed to meet this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'The Employee On-boarding team has asked for a way for managers to order computers, monitors, business Cards, and cell phones for new employees. How would you proceed to meet this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -5072,9 +4404,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which role can manage multiple knowledge bases?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which role can manage multiple knowledge bases?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -5087,9 +4417,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Which one of the following describes the primary operations performed against tables in the Service Now platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Which one of the following describes the primary operations performed against tables in the Service Now platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -5104,9 +4432,7 @@ Range: Q1-Q438
 
 **Answer:** A,E,F
 
-*해설:* 정답은 **A,E,F**입니다. 이 문항은 'The ServiceNow platform supports a wide variety of plus-and-play application. You can choose from the included workflow or build your own workflow. Which of following these workflows are included in the platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **A,E,F**입니다. 이 문항은 'The ServiceNow platform supports a wide variety of plus-and-play application. You can choose from the included workflow or build your own workflow. Which of following these workflows are included in the platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -5121,9 +4447,7 @@ Range: Q1-Q438
 
 **Answer:** A,B,C
 
-*해설:* 정답은 **A,B,C**입니다. 이 문항은 'Which tables are children of the Task table and come with the base system?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A,B,C**입니다. 이 문항은 'Which tables are children of the Task table and come with the base system?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5136,9 +4460,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'When would you use the following steps? *1, Homepage Admin > Pages* 2. Right click on Homepage record * 3. Select Unioad Portal Page' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Update Set은 구성 변경사항을 인스턴스 간 이동하는 단위입니다. 기본적으로 데이터 레코드는 포함되지 않으므로 이관 전략을 분리해야 합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'When would you use the following steps? *1, Homepage Admin > Pages* 2. Right click on Homepage record * 3. Select Unioad Portal Page' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Update Set은 구성 변경사항을 인스턴스 간 이동하는 단위입니다. 기본적으로 데이터 레코드는 포함되지 않으므로 이관 전략을 분리해야 합니다.
 
 ---
 
@@ -5151,9 +4473,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'On a list, what does each row show?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'On a list, what does each row show?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -5169,9 +4489,7 @@ Range: Q1-Q438
 
 **Answer:** A,B,E,F,G
 
-*해설:* 정답은 **A,B,E,F,G**입니다. 이 문항은 'ServiceNow contains over 25 different report types. What are some of the types?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **A,B,E,F,G**입니다. 이 문항은 'ServiceNow contains over 25 different report types. What are some of the types?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -5184,9 +4502,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'A Role is defined as what?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'A Role is defined as what?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -5199,9 +4515,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'While on an Incident record, how would you add a Tag for "Special Handling" to the record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'While on an Incident record, how would you add a Tag for "Special Handling" to the record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5214,9 +4528,7 @@ Range: Q1-Q438
 
 **Answer:** A,C
 
-*해설:* 정답은 **A,C**입니다. 이 문항은 'While showing a customer their incident form, they ask to change the Priority field title to display their internal terminology PValue. How would you do that?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A,C**입니다. 이 문항은 'While showing a customer their incident form, they ask to change the Priority field title to display their internal terminology PValue. How would you do that?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5230,9 +4542,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which component of a table contains a piece of data for one record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which component of a table contains a piece of data for one record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -5245,9 +4555,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which tool graphically displays an infrastructure view for a configuration item (CI) and its relationship with other CIs?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which tool graphically displays an infrastructure view for a configuration item (CI) and its relationship with other CIs?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5260,9 +4568,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What icon do you use to change the boon and color on a Favorite?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What icon do you use to change the boon and color on a Favorite?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5275,9 +4581,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What type of table has a name starting with u_or x_?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What type of table has a name starting with u_or x_?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -5290,9 +4594,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What policies are applied to all data entered into the platform (i.e., through a record form (UI), Import Sets, or Web Services)?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What policies are applied to all data entered into the platform (i.e., through a record form (UI), Import Sets, or Web Services)?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5308,9 +4610,7 @@ Range: Q1-Q438
 
 **Answer:** C,E,G
 
-*해설:* 정답은 **C,E,G**입니다. 이 문항은 'What are the three key tables in an enterprise CMDO? Choose 3 angwers' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **C,E,G**입니다. 이 문항은 'What are the three key tables in an enterprise CMDO? Choose 3 angwers' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5323,9 +4623,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which SericeNow utility gives a Service Desk agent the ability to trace from a Service having an issue, to see which Cis supporing that service have active issues?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which SericeNow utility gives a Service Desk agent the ability to trace from a Service having an issue, to see which Cis supporing that service have active issues?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5338,9 +4636,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'You are asked to create an option in the Service Catalog, which will allow a user to click Get Help and describe the issue they are having. These forms should create incident records, which are automatically routed to the Service Desk. Which method would you use?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'You are asked to create an option in the Service Catalog, which will allow a user to click Get Help and describe the issue they are having. These forms should create incident records, which are automatically routed to the Service Desk. Which method would you use?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -5353,9 +4649,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which ServiceNow capability allows you to provide knowledge articles, via a conversational messaging interface?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which ServiceNow capability allows you to provide knowledge articles, via a conversational messaging interface?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -5369,9 +4663,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What are the steps for applying an update set to an instance?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What are the steps for applying an update set to an instance?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5383,9 +4675,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 '‘Your customer has a Human Resources knowledge base, which is only accessible to members of the Human Resources department. A new procedure regarding employee quarterly reviews needs to be published to the quarterly review category of the HR knowledge base, but should only be visible for HR managers. How would you meet this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 '‘Your customer has a Human Resources knowledge base, which is only accessible to members of the Human Resources department. A new procedure regarding employee quarterly reviews needs to be published to the quarterly review category of the HR knowledge base, but should only be visible for HR managers. How would you meet this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
 
 ---
 
@@ -5396,9 +4686,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'How would you describe the relationship between the incident and Task table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'How would you describe the relationship between the incident and Task table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5412,9 +4700,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What process allows users to create, categorize, review approve and browse important information in a centralized location that is shared oy the entire organization?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What process allows users to create, categorize, review approve and browse important information in a centralized location that is shared oy the entire organization?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -5427,9 +4713,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'You have an existing customer, who is using workflows for their catalog items. Their existing purchasing policy is to require approval for any request that totals over 31000. However, management wants to change the approval threshold to 31500. Which workflow would you update to make this change?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'You have an existing customer, who is using workflows for their catalog items. Their existing purchasing policy is to require approval for any request that totals over 31000. However, management wants to change the approval threshold to 31500. Which workflow would you update to make this change?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -5442,9 +4726,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What contains the configuration changes made in an instance (i.e. changes in a form) and helps to implement the changes from the Dev environment to another environment?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What contains the configuration changes made in an instance (i.e. changes in a form) and helps to implement the changes from the Dev environment to another environment?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -5457,9 +4739,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What feature do you use to specify which users are able to access a Service Catalog Item?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What feature do you use to specify which users are able to access a Service Catalog Item?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -5473,9 +4753,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Security rules are defined to restrict the permission of users from viewing and interacting with data. What are these security rules called?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Security rules are defined to restrict the permission of users from viewing and interacting with data. What are these security rules called?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -5489,9 +4767,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'A subject matter expert routinely receives tasks which have been worked by first level support, before receiving the assignment What could you suggest. to make it easier for the expert to read only the work notes in the Activity log?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'A subject matter expert routinely receives tasks which have been worked by first level support, before receiving the assignment What could you suggest. to make it easier for the expert to read only the work notes in the Activity log?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -5504,9 +4780,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which feature enables business process owners to organize Flow Designer content into unified and digitized cross-enterprise processes via a digitized task board Interface?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which feature enables business process owners to organize Flow Designer content into unified and digitized cross-enterprise processes via a digitized task board Interface?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -5520,9 +4794,7 @@ Range: Q1-Q438
 
 **Answer:** A,D,E
 
-*해설:* 정답은 **A,D,E**입니다. 이 문항은 'What are advantages of using spokes for integrations?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A,D,E**입니다. 이 문항은 'What are advantages of using spokes for integrations?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -5535,9 +4807,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What module enables an administrator to define destinations for imported data on any ServiceNow table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What module enables an administrator to define destinations for imported data on any ServiceNow table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -5551,9 +4821,7 @@ Range: Q1-Q438
 
 **Answer:** B,D,E
 
-*해설:* 정답은 **B,D,E**입니다. 이 문항은 'Tables may have a One to Many relationships. From the Service Catalog, what are examples of tables having a one to many relationships?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **B,D,E**입니다. 이 문항은 'Tables may have a One to Many relationships. From the Service Catalog, what are examples of tables having a one to many relationships?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -5567,9 +4835,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What section on the notes tab, shows the history of the work documented on the record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What section on the notes tab, shows the history of the work documented on the record?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -5583,9 +4849,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'What ServiceNow feature can be triggered by events, and is used to inform users about activities or updates in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'What ServiceNow feature can be triggered by events, and is used to inform users about activities or updates in ServiceNow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -5598,9 +4862,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What is the name of the string that display filter criteria?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What is the name of the string that display filter criteria?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -5613,9 +4875,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'A customer requests the following data quality measures be added: *1. Incident numbers should be read-only on all lists and forms, for all users.* 2. Short Description field should be mandatory, on all records, across all applications, on insert. Which type of policy would you use to meet this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'A customer requests the following data quality measures be added: *1. Incident numbers should be read-only on all lists and forms, for all users.* 2. Short Description field should be mandatory, on all records, across all applications, on insert. Which type of policy would you use to meet this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5627,9 +4887,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'An administrator creates "customer_table_admin" and "customer_table_user" roles for the newly created "Customer Table". Which ACL rule would grant access to all rows and all fields to both the customer_table_admin and customer_table_user roles?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'An administrator creates "customer_table_admin" and "customer_table_user" roles for the newly created "Customer Table". Which ACL rule would grant access to all rows and all fields to both the customer_table_admin and customer_table_user roles?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -5643,9 +4901,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What are the components that make up a filer condition?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What are the components that make up a filer condition?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -5658,9 +4914,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'Roles can inherit permissions from other roles. Which role inherits all of the permissions of the catalog role and the user_critena_admm role plus has permissions to create Items and Services?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'Roles can inherit permissions from other roles. Which role inherits all of the permissions of the catalog role and the user_critena_admm role plus has permissions to create Items and Services?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -5675,9 +4929,7 @@ Range: Q1-Q438
 
 **Answer:** A,C,D
 
-*해설:* 정답은 **A,C,D**입니다. 이 문항은 'What are the benefits of building flows using Flow Designer?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **A,C,D**입니다. 이 문항은 'What are the benefits of building flows using Flow Designer?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -5690,9 +4942,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'As administrator, what must you do to access feature of High Security Settings?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'As administrator, what must you do to access feature of High Security Settings?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Impersonation(사용자 가장)은 관리자가 다른 사용자 권한/화면을 그대로 재현해 문제를 재현하고 접근 권한을 점검하는 기능입니다.
 
 ---
 
@@ -5705,9 +4955,7 @@ Range: Q1-Q438
 
 **Answer:** A,C,D
 
-*해설:* 정답은 **A,C,D**입니다. 이 문항은 'What are examples of UI Actions relating to forms?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
+*해설:* 정답은 **A,C,D**입니다. 이 문항은 'What are examples of UI Actions relating to forms?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
 
 ---
 
@@ -5721,9 +4969,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'The Report Designer contains different sections for configuring your report. Which section is used to specify grouping and calculations to be run against me data?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'The Report Designer contains different sections for configuring your report. Which section is used to specify grouping and calculations to be run against me data?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5736,9 +4982,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'When you set a policy that is applied to all data entered into the platform (UI, Import Sets, or Web Services), where does this policy run by default?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'When you set a policy that is applied to all data entered into the platform (UI, Import Sets, or Web Services), where does this policy run by default?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -5752,9 +4996,7 @@ Range: Q1-Q438
 
 **Answer:** B,D,E
 
-*해설:* 정답은 **B,D,E**입니다. 이 문항은 'A customer wants to be able to identify and track components of their infrastructure that support their ecommerce service. What ServiceNow products could support this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **B,D,E**입니다. 이 문항은 'A customer wants to be able to identify and track components of their infrastructure that support their ecommerce service. What ServiceNow products could support this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5768,9 +5010,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'On the knowledge base record, which tab would you use to define which users are able to write articles to the knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'On the knowledge base record, which tab would you use to define which users are able to write articles to the knowledge base?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -5783,9 +5023,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What is the best practice related to using the Default Update Set for moving customizations between instances?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Update Set은 구성 변경사항을 인스턴스 간 이동하는 단위입니다. 기본적으로 데이터 레코드는 포함되지 않으므로 이관 전략을 분리해야 합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What is the best practice related to using the Default Update Set for moving customizations between instances?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Update Set은 구성 변경사항을 인스턴스 간 이동하는 단위입니다. 기본적으로 데이터 레코드는 포함되지 않으므로 이관 전략을 분리해야 합니다.
 
 ---
 
@@ -5798,9 +5036,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'Which type of scripts run in the browser?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'Which type of scripts run in the browser?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
 
 ---
 
@@ -5810,9 +5046,7 @@ Range: Q1-Q438
 
 **Answer:** Base Class는 루트 테이블이고, Parent Class는 하위 테이블을 갖는 상위 테이블입니다.
 
-*해설:* 정답은 **Base Class는 루트 테이블이고, Parent Class는 하위 테이블을 갖는 상위 테이블입니다.**입니다. 이 문항은 'How would you distinguish between a Base Class table and a Parent Class table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **Base Class는 루트 테이블이고, Parent Class는 하위 테이블을 갖는 상위 테이블입니다.**입니다. 이 문항은 'How would you distinguish between a Base Class table and a Parent Class table?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -5825,9 +5059,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'On the Cl Dependency View, what enables you to trace from an infrastructure item, like a Server, to the Services that are dependent on that Server?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'On the Cl Dependency View, what enables you to trace from an infrastructure item, like a Server, to the Services that are dependent on that Server?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -5841,9 +5073,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'How would you define an Access Control, to allow a user with iti role to have permission to create incident records?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'How would you define an Access Control, to allow a user with iti role to have permission to create incident records?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -5857,9 +5087,7 @@ Range: Q1-Q438
 
 **Answer:** A,B,C
 
-*해설:* 정답은 **A,B,C**입니다. 이 문항은 'What options can you see, when you fight click on a Cl, from the Cl dependency view map?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A,B,C**입니다. 이 문항은 'What options can you see, when you fight click on a Cl, from the Cl dependency view map?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -5872,9 +5100,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What icon do you use to change the icon and color on a Favorite’?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What icon do you use to change the icon and color on a Favorite’?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5884,9 +5110,7 @@ Range: Q1-Q438
 
 **Answer:** A,B,C
 
-*해설:* 정답은 **A,B,C**입니다. 이 문항은 'You have been asked to configure a form so an employee could a tablet and select the standard accessary options to purchase with it. These standard options are: carrying case, screen cleaner, tablet stand, and screen protector. What approach would you take?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **A,B,C**입니다. 이 문항은 'You have been asked to configure a form so an employee could a tablet and select the standard accessary options to purchase with it. These standard options are: carrying case, screen cleaner, tablet stand, and screen protector. What approach would you take?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -5899,9 +5123,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'Which feature helps to automatically allocate a critical, high priority, service request to the appropriate assignment group or team member?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'Which feature helps to automatically allocate a critical, high priority, service request to the appropriate assignment group or team member?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
 
 ---
 
@@ -5914,9 +5136,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'A customer wants to use a client script to validate things on a form m order to make sure the submission makes sense. What type of client script would you recommend to meet this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'A customer wants to use a client script to validate things on a form m order to make sure the submission makes sense. What type of client script would you recommend to meet this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Client Script는 브라우저에서 실행되어 폼 입력 검증, 동적 필드 제어 등 사용자 인터랙션을 담당합니다.
 
 ---
 
@@ -5929,9 +5149,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What type of field has a drop down list, from which you can pick from pre-defined options?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What type of field has a drop down list, from which you can pick from pre-defined options?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -5945,9 +5163,7 @@ Range: Q1-Q438
 
 **Answer:** B,C,E
 
-*해설:* 정답은 **B,C,E**입니다. 이 문항은 'What are the main components of the Form Design interface?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B,C,E**입니다. 이 문항은 'What are the main components of the Form Design interface?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -5961,9 +5177,7 @@ Range: Q1-Q438
 
 **Answer:** B,C,D,F
 
-*해설:* 정답은 **B,C,D,F**입니다. 이 문항은 'Many actions are included with flow designer, what are some frequently used core actions? . A. Wait for Condition' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
+*해설:* 정답은 **B,C,D,F**입니다. 이 문항은 'Many actions are included with flow designer, what are some frequently used core actions? . A. Wait for Condition' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Flow Designer는 트리거-조건-액션 기반의 저코드 자동화 도구입니다. Data Pill로 이전 단계의 데이터를 다음 단계에 전달합니다.
 
 ---
 
@@ -5979,9 +5193,7 @@ Range: Q1-Q438
 
 **Answer:** A,C,F
 
-*해설:* 정답은 **A,C,F**입니다. 이 문항은 'What are the three key tables in an enterprise CMDB?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **A,C,F**입니다. 이 문항은 'What are the three key tables in an enterprise CMDB?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -5997,9 +5209,7 @@ Range: Q1-Q438
 
 **Answer:** B,C,D,G,H
 
-*해설:* 정답은 **B,C,D,G,H**입니다. 이 문항은 'For your implementation, the following tables. are extended fram each ofher: *Incident table is extended from Task table.* Super Incident table is extended from Incident table, In this situation, which table(s) are P arent, Child and Base tables?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **B,C,D,G,H**입니다. 이 문항은 'For your implementation, the following tables. are extended fram each ofher: *Incident table is extended from Task table.* Super Incident table is extended from Incident table, In this situation, which table(s) are P arent, Child and Base tables?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -6012,9 +5222,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What instance resource allows you to access guided tours, information about actions, and instructions an how to use inputs and outputs in your flaw?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What instance resource allows you to access guided tours, information about actions, and instructions an how to use inputs and outputs in your flaw?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -6028,9 +5236,7 @@ Range: Q1-Q438
 
 **Answer:** A,C
 
-*해설:* 정답은 **A,C**입니다. 이 문항은 'An IT user calls the service desk because they need to work on task records. All they can see is Self Service on their homepage when they login to the ServiceNow instance. What issue could explain this?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **A,C**입니다. 이 문항은 'An IT user calls the service desk because they need to work on task records. All they can see is Self Service on their homepage when they login to the ServiceNow instance. What issue could explain this?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -6040,9 +5246,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'When importing data, what happens to imported rows, if no coalesce field is specified?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'When importing data, what happens to imported rows, if no coalesce field is specified?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
 
@@ -6057,9 +5261,7 @@ Range: Q1-Q438
 
 **Answer:** B,C,F
 
-*해설:* 정답은 **B,C,F**입니다. 이 문항은 'A new employee joins the IT deployment and needs to perform work assigned to Network and Hardware groups. How would you set up their access?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
+*해설:* 정답은 **B,C,F**입니다. 이 문항은 'A new employee joins the IT deployment and needs to perform work assigned to Network and Hardware groups. How would you set up their access?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
 
 ---
 
@@ -6072,9 +5274,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'Which path would you take to access the table configuration page from a form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'Which path would you take to access the table configuration page from a form?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -6088,9 +5288,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What type of query allows you to filter list data using normal words, instead of the condition builder?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What type of query allows you to filter list data using normal words, instead of the condition builder?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -6103,9 +5301,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'What action will allow you to personalize layouts of columns in a list?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'What action will allow you to personalize layouts of columns in a list?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -6118,9 +5314,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'What capability allows users to create dashboards with widgets to visualize data over time in order to identify areas of improvement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'What capability allows users to create dashboards with widgets to visualize data over time in order to identify areas of improvement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -6134,9 +5328,7 @@ Range: Q1-Q438
 
 **Answer:** C,E
 
-*해설:* 정답은 **C,E**입니다. 이 문항은 'A customer has asked for the following updates to a form: *Make Resolution code mandatory, admin state is changed to Resolved.* Hide major incident check box, unless logged in user has Major incident Manager role. What type of rules (s) would you use to implement this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **C,E**입니다. 이 문항은 'A customer has asked for the following updates to a form: *Make Resolution code mandatory, admin state is changed to Resolved.* Hide major incident check box, unless logged in user has Major incident Manager role. What type of rules (s) would you use to implement this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -6150,9 +5342,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'What do you click when you have made modification to your report, and your want to see the results without saving?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'What do you click when you have made modification to your report, and your want to see the results without saving?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -6165,9 +5355,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'On a Business Rule, the When salting determines at what point the rule executes. What are the options for specifying that timing?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'On a Business Rule, the When salting determines at what point the rule executes. What are the options for specifying that timing?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -6181,9 +5369,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'On a filter condition, there is an element, which is based on the table, the user access rights, and columns on the table. What is this element called?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'On a filter condition, there is an element, which is based on the table, the user access rights, and columns on the table. What is this element called?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -6196,9 +5382,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'The customer has asked that your change the default layout of the task list. *Number* Task Type *Parent* Short Description *Assignment Group* Assignment * Updated After navigation to the list, where would you click, to meet this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'The customer has asked that your change the default layout of the task list. *Number* Task Type *Parent* Short Description *Assignment Group* Assignment * Updated After navigation to the list, where would you click, to meet this requirement?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -6211,9 +5395,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'On a filter condition, which component is always a choice list?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'On a filter condition, which component is always a choice list?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -6224,9 +5406,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'NO.19 UI Action can prompt that an Incident has been successfully submitted.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'NO.19 UI Action can prompt that an Incident has been successfully submitted.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. UI Action은 버튼, 링크, 컨텍스트 메뉴처럼 사용자가 실행하는 동작을 정의합니다.
 
 ---
 
@@ -6237,9 +5417,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'NO.22 Business Rules are used to enforce mandatory data on a form.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'NO.22 Business Rules are used to enforce mandatory data on a form.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -6250,9 +5428,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'NO.26 Knowledge articles within a knowledge base are grouped by category.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'NO.26 Knowledge articles within a knowledge base are grouped by category.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -6265,9 +5441,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'NO.38 What is the name of the table relationship, where two or more tables are related in a bi_x0002_directional relationship, so that the related records are visible from both tables in a related list?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'NO.38 What is the name of the table relationship, where two or more tables are related in a bi_x0002_directional relationship, so that the related records are visible from both tables in a related list?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -6275,9 +5449,7 @@ Range: Q1-Q438
 
 **Answer:** Server
 
-*해설:* 정답은 **Server**입니다. 이 문항은 'NO.44 _______________ is a computer program running as a service; a physical computer dedicated to running one or more services, or a system running a database.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **Server**입니다. 이 문항은 'NO.44 _______________ is a computer program running as a service; a physical computer dedicated to running one or more services, or a system running a database.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -6290,9 +5462,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'NO.54 What Is the purpose of the Filter navigator In the Application Navigator?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'NO.54 What Is the purpose of the Filter navigator In the Application Navigator?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -6305,9 +5475,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'NO.67 When creating a global custom table named "abc", what is the table name that is automatically assigned by the platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'NO.67 When creating a global custom table named "abc", what is the table name that is automatically assigned by the platform?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -6320,9 +5488,7 @@ Range: Q1-Q438
 
 **Answer:** BCD
 
-*해설:* 정답은 **BCD**입니다. 이 문항은 'NO.77 What are the three components of a filter condition?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **BCD**입니다. 이 문항은 'NO.77 What are the three components of a filter condition?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -6336,9 +5502,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 '- (A). The Service Desk > My Groups Work list shows active work tasks that are not yet assigned.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 '- (A). The Service Desk > My Groups Work list shows active work tasks that are not yet assigned.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -6352,9 +5516,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'NO.94 As an IT employee what interface would you use, if you wanted to browse internal IT documentation, like troubleshooting scripts and FAQs?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'NO.94 As an IT employee what interface would you use, if you wanted to browse internal IT documentation, like troubleshooting scripts and FAQs?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -6365,9 +5527,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'NO.98 Each knowledge bases can have unique lifecycle workflows, user criteria, category structures, and management assignments.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'NO.98 Each knowledge bases can have unique lifecycle workflows, user criteria, category structures, and management assignments.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -6380,9 +5540,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'NO.113 Your company is giving all first line workers a special T-shirt as a recognition for their hard work. Management team wants a way for employees to order the T-shirt, with the ability to specify the preferred size and color. How would you ensure that only first line workers (non-managers) can submit the order?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'NO.113 Your company is giving all first line workers a special T-shirt as a recognition for their hard work. Management team wants a way for employees to order the T-shirt, with the ability to specify the preferred size and color. How would you ensure that only first line workers (non-managers) can submit the order?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. Role은 권한 묶음입니다. 사용자에게 직접 주기보다 그룹에 역할을 부여하고 사용자를 그룹에 넣는 방식이 운영과 감사에 유리합니다.
 
 ---
 
@@ -6395,9 +5553,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'NO.126 Which one of the following statements describes the purpose of a Service Catalog workflow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'NO.126 Which one of the following statements describes the purpose of a Service Catalog workflow?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -6410,9 +5566,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'NO.133 A change request has been approved and assigned to you as the system administrator to change the Incident number prefix from the default of "INC" to the company standard IN." What are the next steps to be taken''' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'NO.133 A change request has been approved and assigned to you as the system administrator to change the Incident number prefix from the default of "INC" to the company standard IN." What are the next steps to be taken''' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Business Rule은 서버에서 레코드 저장 전/후 로직을 수행해 데이터 무결성과 자동 처리를 담당합니다.
 
 ---
 
@@ -6425,9 +5579,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'NO.136 What defines conditions that are evaluated against users to determine which users can create, read, write, and retire knowledge articles.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'NO.136 What defines conditions that are evaluated against users to determine which users can create, read, write, and retire knowledge articles.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -6440,9 +5592,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'NO.144 What is a formatter? Select one of the following.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'NO.144 What is a formatter? Select one of the following.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -6458,9 +5608,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'NO.148 What field contains a record's 32-character, unique identifier?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'NO.148 What field contains a record's 32-character, unique identifier?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -6471,9 +5619,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'NO.153 database live at the Data Center.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'NO.153 database live at the Data Center.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -6486,9 +5632,7 @@ Range: Q1-Q438
 
 **Answer:** D
 
-*해설:* 정답은 **D**입니다. 이 문항은 'NO.162 What would NOT appear in the Application Navigator if "service" is typed into the filter field?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
+*해설:* 정답은 **D**입니다. 이 문항은 'NO.162 What would NOT appear in the Application Navigator if "service" is typed into the filter field?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. Knowledge는 조직 지식을 문서화해 재사용하는 기능입니다. User Criteria로 읽기/작성 권한을 제어하고 워크플로로 게시 수명주기를 관리합니다.
 
 ---
 
@@ -6501,9 +5645,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'NO.165 A REQ number in the Service Catalog represents...' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'NO.165 A REQ number in the Service Catalog represents...' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Service Catalog는 사용자가 서비스/품목을 요청하는 창구입니다. Catalog Item은 개별 항목, Record Producer는 특정 테이블 레코드 생성, Order Guide는 여러 항목을 한 번에 주문합니다.
 
 ---
 
@@ -6516,9 +5658,7 @@ Range: Q1-Q438
 
 **Answer:** AD
 
-*해설:* 정답은 **AD**입니다. 이 문항은 'NO.168 What are the two aspects to LDAP Integration? (2)' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 인증(Authentication)은 본인 확인, 인가(Authorization)는 권한 결정입니다. LDAP/SSO는 대표적인 엔터프라이즈 인증 통합 방식입니다.
+*해설:* 정답은 **AD**입니다. 이 문항은 'NO.168 What are the two aspects to LDAP Integration? (2)' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 인증(Authentication)은 본인 확인, 인가(Authorization)는 권한 결정입니다. LDAP/SSO는 대표적인 엔터프라이즈 인증 통합 방식입니다.
 
 ---
 
@@ -6533,9 +5673,7 @@ Range: Q1-Q438
 
 **Answer:** ADF
 
-*해설:* 정답은 **ADF**입니다. 이 문항은 'NO.177 Which are states that you can make a field on a form using UI Policy?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
+*해설:* 정답은 **ADF**입니다. 이 문항은 'NO.177 Which are states that you can make a field on a form using UI Policy?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. UI Policy는 폼 화면의 필드 상태(필수/읽기 전용/숨김)를 코드 없이 제어합니다.
 
 ---
 
@@ -6546,9 +5684,7 @@ Range: Q1-Q438
 
 **Answer:** B
 
-*해설:* 정답은 **B**입니다. 이 문항은 'NO.201 Configuration will not affect what others see on their forms.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **B**입니다. 이 문항은 'NO.201 Configuration will not affect what others see on their forms.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -6561,9 +5697,7 @@ Range: Q1-Q438
 
 **Answer:** b
 
-*해설:* 정답은 **b**입니다. 이 문항은 'NO.206 Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities' assignment group. For HR, the item will be used primarily for the Onboarding coordinators, for employee orientation sessions. For Facilities, the item will be used for anyone in the company who needs room set up services. However, both departments have their own service catalogs. What do you do, to support these requirements?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
+*해설:* 정답은 **b**입니다. 이 문항은 'NO.206 Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities' assignment group. For HR, the item will be used primarily for the Onboarding coordinators, for employee orientation sessions. For Facilities, the item will be used for anyone in the company who needs room set up services. However, both departments have their own service catalogs. What do you do, to support these requirements?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 기능 이름이 아니라 실제 사용 목적을 기준으로 선택할 수 있는지 평가합니다. ACL(Access Control)은 객체(테이블/필드)와 작업(CRUD)에 대해 역할, 조건, 스크립트를 평가해 접근을 통제합니다.
 
 ---
 
@@ -6571,9 +5705,7 @@ Range: Q1-Q438
 
 **Answer:** BDF
 
-*해설:* 정답은 **BDF**입니다. 이 문항은 'NO.210 What are the main UI component(s) of the ServiceNow Platform? (3)' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
+*해설:* 정답은 **BDF**입니다. 이 문항은 'NO.210 What are the main UI component(s) of the ServiceNow Platform? (3)' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 핵심은 기능의 용도와 적용 맥락을 구분해 이해하는 것입니다. 이 문항은 ServiceNow의 핵심 관리 개념(데이터 구조, 권한, 자동화, 카탈로그, 리포팅) 중 하나를 점검합니다. 정답 암기보다 기능의 목적과 사용 위치를 함께 이해하는 것이 중요합니다.
 
 ---
 
@@ -6584,9 +5716,7 @@ Range: Q1-Q438
 
 **Answer:** A
 
-*해설:* 정답은 **A**입니다. 이 문항은 'NO.234 Data Policy can enforce mandatory data on import.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
+*해설:* 정답은 **A**입니다. 이 문항은 'NO.234 Data Policy can enforce mandatory data on import.' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제는 해당 기능이 실제로 어디서 어떻게 쓰이는지 판단하는지를 묻습니다. Import Set은 외부 데이터를 임시 적재하고 Transform Map으로 대상 테이블에 변환/적재합니다. Coalesce는 기존 레코드 매칭 키입니다.
 
 ---
 
@@ -6599,9 +5729,7 @@ Range: Q1-Q438
 
 **Answer:** AD
 
-*해설:* 정답은 **AD**입니다. 이 문항은 'NO.238 Tables are made up of which of the following?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
+*해설:* 정답은 **AD**입니다. 이 문항은 'NO.238 Tables are made up of which of the following?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항의 포인트는 비슷한 용어 사이에서 정확한 기능 목적을 가려내는 데 있습니다. 테이블은 레코드(행)와 필드(열)로 구성되며 Dictionary는 필드 정의를 관리합니다. sys_id는 레코드의 고유 32자 식별자입니다.
 
 ---
 
@@ -6616,9 +5744,7 @@ Range: Q1-Q438
 
 **Answer:** C
 
-*해설:* 정답은 **C**입니다. 이 문항은 'NO.239 There are _____ common types of Interfaces (Numeric Value) 6: There are six common types of interfaces' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
+*해설:* 정답은 **C**입니다. 이 문항은 'NO.239 There are _____ common types of Interfaces (Numeric Value) 6: There are six common types of interfaces' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문제의 의도는 기능 설명을 암기하는 수준을 넘어 적용 위치를 구분하는 데 있습니다. Reporting은 현재 데이터 조회 중심, Performance Analytics는 시계열 스냅샷과 추세/예측 분석 중심입니다.
 
 ---
 
@@ -6632,8 +5758,6 @@ Range: Q1-Q438
 
 **Answer:** AB
 
-*해설:* 정답은 **AB**입니다. 이 문항은 'NO.243 Which ServiceNow products can be used to discover and populate the CMDB?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다.
-
-*개념 설명:* CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
+*해설:* 정답은 **AB**입니다. 이 문항은 'NO.243 Which ServiceNow products can be used to discover and populate the CMDB?' 이해 여부를 확인합니다. 서비스나우 공식 문서의 핵심 개념(Platform Administration, Service Catalog, Flow Designer, Security/ACL, Knowledge, Import Sets)과 CSA 출제 범위를 기준으로 검토했습니다. 이 문항은 기능의 역할과 사용 시점을 연결해 이해했는지 확인합니다. CMDB는 서비스 제공에 필요한 구성항목(CI)과 관계를 저장합니다. 영향도 분석, 장애 추적, 변경 관리의 핵심 데이터 원천입니다.
 
 ---
