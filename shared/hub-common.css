@@ -38,7 +38,14 @@ body {
   padding: 10px 16px;
 }
 
-.top-home-link {
+.top-home-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.top-home-link,
+.top-home-links a {
   display: inline-flex;
   align-items: center;
   text-decoration: none;

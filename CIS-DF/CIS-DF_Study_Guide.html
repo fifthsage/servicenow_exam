@@ -8,6 +8,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="../shared/hub-common.css">
   <style>
     :root {
       --bg: #0d1117;
@@ -43,57 +44,15 @@
       color: var(--text);
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
+      padding-top: 48px;
     }
 
-    /* ── NAV ── */
-    .nav {
+    .top-home-bar {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       z-index: 100;
-      background: rgba(13, 17, 23, 0.92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      padding: 10px 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .nav-title {
-      font-weight: 700;
-      font-size: 14px;
-      background: linear-gradient(135deg, var(--accent), var(--csdm));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .nav-links {
-      margin-left: auto;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .nav-link {
-      text-decoration: none;
-      color: var(--blue);
-      font-size: 12px;
-      border: 1px solid rgba(88, 166, 255, 0.35);
-      border-radius: 8px;
-      padding: 4px 8px;
-      background: rgba(88, 166, 255, 0.1);
-      white-space: nowrap;
-    }
-
-    .nav-badge {
-      font-size: 11px;
-      padding: 2px 8px;
-      border-radius: 10px;
-      background: var(--surface2);
-      color: var(--text-dim);
     }
 
     /* ── TOC DRAWER ── */
@@ -553,7 +512,7 @@
     /* ── PROGRESS BAR ── */
     .progress-bar {
       position: fixed;
-      top: 41px;
+      top: 0;
       left: 0;
       right: 0;
       height: 3px;
@@ -587,14 +546,14 @@
 
 <body>
 
-  <!-- Nav -->
-  <div class="nav">
-    <span class="nav-title">CIS-DF Study Guide</span>
-    <div class="nav-links">
-      <a class="nav-link" href="index.html">CIS-DF 홈</a>
-      <a class="nav-link" href="../index.html">홈</a>
+  <!-- Common Top Header -->
+  <div class="top-home-bar">
+    <div class="top-home-inner">
+      <div class="top-home-links">
+        <a href="../index.html">홈</a>
+        <a href="index.html">CIS-DF 홈</a>
+      </div>
     </div>
-    <span class="nav-badge">75문제 · 90분</span>
   </div>
   <div class="progress-bar">
     <div class="progress-fill" id="progressFill"></div>
@@ -1389,6 +1348,17 @@
   </div>
 
   <script>
+    function syncProgressBarOffset() {
+      const header = document.querySelector('.top-home-bar');
+      const bar = document.querySelector('.progress-bar');
+      if (!header || !bar) return;
+      bar.style.top = `${header.offsetHeight}px`;
+    }
+
+    syncProgressBarOffset();
+    window.addEventListener('load', syncProgressBarOffset);
+    window.addEventListener('resize', syncProgressBarOffset);
+
     // Progress bar
     window.addEventListener('scroll', () => {
       const h = document.documentElement;
