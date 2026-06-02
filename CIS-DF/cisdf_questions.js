@@ -23,7 +23,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D (Design & Planning)"
+    "explanation": "정답: D. CSDM에서 Business Application, Information Object, Capability는 서비스 설계와 포트폴리오 관점의 데이터이므로 Design & Planning 도메인에 속합니다."
   },
   {
     "id": 2,
@@ -45,7 +45,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. IntegrationHub ETL은 CMDB 적재 시 IRE 흐름을 활용하도록 설계되어 중복 생성 위험을 줄이고, 단순 테이블 쓰기 방식보다 거버넌스를 유지하기 쉽습니다."
   },
   {
     "id": 3,
@@ -72,7 +72,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. Data Foundations Dashboard Playbook은 지표 저하가 미치는 다운스트림 영향(Insight)을 보여주고, 개선을 위한 권장 조치(Remediation options)를 안내합니다."
   },
   {
     "id": 4,
@@ -98,7 +98,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. CMDB/CSDM Data Foundations Dashboard는 기본 탑재가 아니라 ServiceNow Store에서 제공되는 무료 애플리케이션으로 설치해 사용합니다."
   },
   {
     "id": 5,
@@ -124,7 +124,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. Dynamic Reconciliation Rule 기능은 CMDB 360/Multisource CMDB 기능 세트에서 제공되므로 해당 기능 활성화가 선행되어야 합니다."
   },
   {
     "id": 6,
@@ -150,7 +150,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 문제 조건이 서버 1대가 여러 애플리케이션을 호스팅하는 구조이므로 Application Server 기준으로는 One-to-many 관계입니다."
   },
   {
     "id": 7,
@@ -176,7 +176,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 서버도 여러 앱을 호스팅하고 앱도 여러 서버에서 실행되므로 양방향으로 다수 연결되는 Many-to-many가 맞습니다."
   },
   {
     "id": 8,
@@ -198,7 +198,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 인프라 업그레이드 카탈로그 요청처럼 기술 서비스 관점의 요구사항을 시작하고 정의하는 책임은 Technology Service Owner 역할에 가깝습니다."
   },
   {
     "id": 9,
@@ -220,7 +220,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CSDM Walk 단계 정렬의 핵심 가치는 비즈니스 서비스 단위 영향도 파악이며, Incident/Problem/Change에서 서비스 영향 분석이 가능해집니다."
   },
   {
     "id": 10,
@@ -242,7 +242,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 오래된(Stale) CI는 최신 상태와의 불일치 문제이므로 CMDB Health의 Correctness 지표에서 관리합니다."
   },
   {
     "id": 11,
@@ -272,7 +272,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. Incident에서 CI를 선택하면 해당 CI의 지원 그룹 매핑을 바탕으로 Assignment Group이 자동으로 채워져 라우팅을 돕습니다."
   },
   {
     "id": 12,
@@ -298,7 +298,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CI Class Manager의 Attributes 영역에서 Added 탭은 해당 클래스에 직접 추가된 속성만 분리해 보여줍니다."
   },
   {
     "id": 13,
@@ -320,7 +320,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 장기간 갱신되지 않은 CI를 정리하는 표준 방식은 CMDB Data Manager의 Archive Policy로 보존/정리 규칙을 자동화하는 것입니다."
   },
   {
     "id": 14,
@@ -342,7 +342,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Store 앱 업그레이드 시 커스터마이즈 충돌 항목은 보통 skipped change로 기록되고, 기존 커스텀 정의를 자동 덮어쓰지 않습니다."
   },
   {
     "id": 15,
@@ -370,7 +370,7 @@ window.CISDF_QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "정답: A, C, D"
+    "explanation": "정답: A, C, D. Dynamic Rule Types에는 Most Reported, Last Updated, Smallest Value가 포함되며, Last Created는 기본 동적 타입에 해당하지 않습니다."
   },
   {
     "id": 16,
@@ -392,7 +392,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. 중복 CI 정리는 작업 큐 확인보다 CMDB Workspace의 De-duplication Dashboard를 사용하는 것이 우선이며, 분석과 처리 흐름이 통합되어 있습니다."
   },
   {
     "id": 17,
@@ -418,7 +418,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 신규 CI 클래스 추가는 CMDB 관리 권한(sn_cmdb_admin)과 사전(dictionary) 수준 변경 권한(personalize_dictionary)이 최소 조합입니다."
   },
   {
     "id": 18,
@@ -444,7 +444,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. CMDB 표준 관계 표현에서 애플리케이션은 서버 위에서 실행되므로 Application Runs on Server(역방향: Server Runs Application)가 맞습니다."
   },
   {
     "id": 19,
@@ -470,7 +470,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. CI Class Manager의 소유권 값을 Data Manager 정책에 반영하려면 그룹 참조 필드를 Managed by Group으로 맞춰야 일관되게 동작합니다."
   },
   {
     "id": 20,
@@ -492,7 +492,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CMDB Data Manager의 목적은 관계 규칙 강제나 암호화가 아니라 보존 정책 기반으로 아카이브/삭제를 자동화해 데이터 볼륨을 통제하는 것입니다."
   },
   {
     "id": 21,
@@ -520,7 +520,7 @@ window.CISDF_QUESTIONS = [
       "B",
       "D"
     ],
-    "explanation": "정답: A, B, D"
+    "explanation": "정답: A, B, D. Service Have Owners Identified와 같은 이슈는 Fix Data, Govern Data, Analyze Data 계열 플레이북으로 원인 파악과 보정이 가능하며, Report Data는 리포팅 성격입니다."
   },
   {
     "id": 22,
@@ -542,7 +542,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. 이 문항은 2번과 동일 맥락으로, IRE 기반 적재와 중복 방지/통제를 위해 IntegrationHub ETL이 권장됩니다."
   },
   {
     "id": 23,
@@ -569,7 +569,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. CSDM 정렬 시 변경 대상 서비스 영향도를 명확히 파악할 수 있고, 서비스/소유자 구조를 활용해 Change 라우팅 자동화가 쉬워집니다."
   },
   {
     "id": 24,
@@ -595,7 +595,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Legacy 상태값을 CSDM Life Cycle 체계로 매핑/운영할 때 실제 상태 항목 관리는 life_cycle_stage_status 테이블에서 수행합니다."
   },
   {
     "id": 25,
@@ -622,7 +622,7 @@ window.CISDF_QUESTIONS = [
       "B",
       "C"
     ],
-    "explanation": "정답: B, C"
+    "explanation": "정답: B, C. Data Foundations Dashboard는 품질 지표 추세를 모니터링하고 개선 액션을 제시해 완전성/정확성 향상에 도움을 주지만, Change 승인 자동화 도구는 아닙니다."
   },
   {
     "id": 26,
@@ -648,7 +648,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. CMDB 360/Multisource의 Saved Query는 CMDB Workspace 내 CMDB 360 탭의 Saved queries 영역에서 생성/조회합니다."
   },
   {
     "id": 27,
@@ -675,7 +675,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. 신규 클래스는 적절한 부모 클래스 아래 확장하는 것이 정석이며, 생성 전 CI Class Models 앱 기준으로 기존 클래스 존재 여부를 먼저 확인해야 중복 설계를 피할 수 있습니다."
   },
   {
     "id": 28,
@@ -701,7 +701,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 동일 클래스/속성을 여러 소스가 갱신할 때 권위 소스를 정하는 표준 방법은 Reconciliation Rule에서 데이터 소스 우선순위를 지정하는 것입니다."
   },
   {
     "id": 29,
@@ -727,7 +727,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. Import Set + Transform Map에서 IRE를 타도록 하려면 onBefore 스크립트 단계에서 변환 전 IRE 처리 로직(예: CMDBTransformUtil 호출)을 적용합니다."
   },
   {
     "id": 30,
@@ -749,7 +749,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CMDB 데이터 볼륨 관리는 만료/비활성 데이터의 수명주기를 제어하는 Archive Policy가 핵심이며, 스케줄 잡이나 일반 BR은 표준 통제 수단이 아닙니다."
   },
   {
     "id": 31,
@@ -771,7 +771,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Unified Map은 CMDB Workspace 기능이므로 접근 위치도 CMDB Workspace입니다."
   },
   {
     "id": 32,
@@ -798,7 +798,7 @@ window.CISDF_QUESTIONS = [
       "B",
       "D"
     ],
-    "explanation": "정답: B, D"
+    "explanation": "정답: B, D. Unified Map 필터 패널에서는 주로 Discovery source와 CI type 기준으로 노이즈를 줄여 서비스 구성을 분석합니다."
   },
   {
     "id": 33,
@@ -824,7 +824,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. Certification 정책은 담당자에게 CI 속성 검증/수정 작업을 생성해 실제 필드 값을 최신 상태로 정비하게 합니다."
   },
   {
     "id": 34,
@@ -846,7 +846,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. CMDB Workspace의 My Work에 올라오는 정책성 작업은 CMDB Data Manager가 생성하는 태스크입니다."
   },
   {
     "id": 35,
@@ -872,7 +872,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 위치 중복 이슈는 표준 플레이북대로 올바른 위치를 검증한 뒤 CI 참조를 정정하고 중복 Location을 정리하는 절차가 권장됩니다."
   },
   {
     "id": 36,
@@ -898,7 +898,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. CMDB Data Foundations Dashboard playbook은 누락 속성(예: serial number) 같은 품질 이슈를 원인-조치 흐름으로 해결하도록 구조화된 가이드를 제공합니다."
   },
   {
     "id": 37,
@@ -920,7 +920,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. PII/PCI 같은 규제 맥락의 데이터 정의는 CSDM Design 관점에서 Business Application과 Information Object에 명시해 감사 근거를 만듭니다."
   },
   {
     "id": 38,
@@ -947,7 +947,7 @@ window.CISDF_QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "정답: C, D"
+    "explanation": "정답: C, D. SCCM 데이터는 신규 삽입이 가능하고, 우선순위가 더 높은 Altiris는 SCCM이 만든 레코드의 속성 업데이트 권한을 가질 수 있습니다."
   },
   {
     "id": 39,
@@ -975,7 +975,7 @@ window.CISDF_QUESTIONS = [
       "B",
       "C"
     ],
-    "explanation": "정답: A, B, C"
+    "explanation": "정답: A, B, C. Data Foundations Dashboard는 최근 갱신 활동, IRE 처리 관점, 오퍼닝(고아 CI) 탐지 등 운영 지표를 지속 모니터링하는 데 가치가 있습니다."
   },
   {
     "id": 40,
@@ -997,7 +997,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. 하위 클래스(Windows Server)의 동적 규칙이 상위 클래스 규칙보다 우선 적용되므로 해당 CI에는 하위 클래스 규칙 결과값인 75가 기록됩니다."
   },
   {
     "id": 41,
@@ -1023,7 +1023,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CI Class Manager의 클래스 소유 그룹과 Data Manager 태스크 할당을 일치시키려면 Managed by group 필드를 기준으로 잡는 것이 권장됩니다."
   },
   {
     "id": 42,
@@ -1045,7 +1045,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Information Object는 Business Application이 사용하는 논리적 데이터(민감정보 분류, 규제 연관 데이터)를 기술하는 CSDM 아티팩트입니다."
   },
   {
     "id": 43,
@@ -1071,7 +1071,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 기능성 CMDB 운영의 핵심은 데이터 양이 아니라 거버넌스 체계와 지속적 건강도 모니터링을 통해 품질을 유지하는 것입니다."
   },
   {
     "id": 44,
@@ -1093,7 +1093,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. Service Graph Connector Central 플러그인 설치 후 관련 탭은 CMDB Workspace에 노출되어 소스 가시성과 운영을 지원합니다."
   },
   {
     "id": 45,
@@ -1120,7 +1120,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "B"
     ],
-    "explanation": "정답: A, B"
+    "explanation": "정답: A, B. CSDM Design & Planning 입력은 비즈니스/엔터프라이즈 관점 정합이 중요해 Business Relationship Manager와 Enterprise Architect 참여가 핵심입니다."
   },
   {
     "id": 46,
@@ -1142,7 +1142,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 지역별 건강도 집계를 보려면 CMDB Group을 Health 타입으로 지역 단위 구성해 해당 그룹 스코프로 점수를 관리합니다."
   },
   {
     "id": 47,
@@ -1168,7 +1168,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 플랫폼에서 CI 데이터 품질 운영의 실무 허브는 CMDB Workspace이며, Health/Data Manager/De-duplication 흐름을 통합 사용합니다."
   },
   {
     "id": 48,
@@ -1190,7 +1190,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 자주 다루는 클래스 접근을 빠르게 하려면 CI Class Manager의 Pinned Classes 기능으로 고정해 탐색 비용을 줄이는 것이 효과적입니다."
   },
   {
     "id": 49,
@@ -1216,7 +1216,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CMDB Health Dashboard에서 관리 대상 클래스를 선별하려면 Health Inclusion Rules로 포함/제외 범위를 정의합니다."
   },
   {
     "id": 50,
@@ -1242,7 +1242,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. IRE의 식별 규칙은 클래스 단위로 정의되며 CMDB CI Class Manager에서 해당 클래스의 Identification Rule을 구성합니다."
   },
   {
     "id": 51,
@@ -1268,7 +1268,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Data Manager의 삭제/아카이브 정책은 일반적으로 운영 종료 구간(End of Life/Retired) CI를 대상으로 수명주기 정리를 수행합니다."
   },
   {
     "id": 52,
@@ -1290,7 +1290,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 레거시 상태와 CSDM Life cycle stage/stage status 대응표는 Life cycle mappings에서 확인합니다."
   },
   {
     "id": 53,
@@ -1316,7 +1316,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. CI의 Support Group 자동 유지에는 CSDM의 Technology Service Offering 연결을 활용해 운영 소유/지원 정보를 일관되게 전파하는 방식이 권장됩니다."
   },
   {
     "id": 54,
@@ -1346,7 +1346,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "E"
     ],
-    "explanation": "정답: E"
+    "explanation": "정답: E. 인프라 CI-Technical Service Offering-Application Service 관계 설계/운영 가이드는 CSDM Service Delivery(Manage Technical Services) 도메인에 해당합니다."
   },
   {
     "id": 55,
@@ -1368,7 +1368,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. Dynamic CI Group 기반 Change 대상 지정은 Change Request의 Configuration Item 필드를 통해 연결해 일괄 영향 대상을 관리합니다."
   },
   {
     "id": 56,
@@ -1394,7 +1394,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 삭제 전 일정 기간 복구 가능성을 유지하려면 즉시 삭제(Delete) 대신 Archive 정책을 사용해야 합니다."
   },
   {
     "id": 57,
@@ -1421,7 +1421,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. Duplicate CI Remediator의 Main CI 선정은 보통 오래된 기준(Oldest Created)과 관계 풍부도(Most Related Items)를 활용해 참조 손실 위험을 줄입니다."
   },
   {
     "id": 58,
@@ -1448,7 +1448,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. Query Builder에서 앱 서비스와 인프라 연계는 CMDB Query로 구성하고, Incident 같은 비CMDB 데이터 연계를 위해 non-CMDB 테이블을 추가해야 합니다."
   },
   {
     "id": 59,
@@ -1470,7 +1470,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CMDB 360 라이선스가 없어도 IRE의 기본 Reconciliation Rule 엔진은 discovery source 기준 우선순위 통제를 계속 사용할 수 있습니다."
   },
   {
     "id": 60,
@@ -1496,7 +1496,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. Attestation은 CI가 여전히 존재/유효함을 확인받는 절차이고, Certification은 특정 속성값의 정확성을 검증/수정하는 절차입니다."
   },
   {
     "id": 61,
@@ -1518,7 +1518,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. CSDM 정렬 수준과 관련 데이터 품질 개선은 CSDM Data Foundations Dashboard가 목적에 맞는 전용 지표와 개선 포인트를 제공합니다."
   },
   {
     "id": 62,
@@ -1544,7 +1544,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 동일 클래스라도 메트릭별 평가 대상 수가 다르면 해당 메트릭에 별도 Health Inclusion Rule이 적용된 경우가 대표적입니다."
   },
   {
     "id": 63,
@@ -1570,7 +1570,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. 영향 사용자 파악은 CSDM의 서비스 소비 맥락(부서/위치별 Service Offering)을 보는 것이 가장 직접적이며, 단순 CI 이력만으로는 사용자 집단을 정확히 특정하기 어렵습니다."
   },
   {
     "id": 64,
@@ -1597,7 +1597,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. Asset-CI 동기화는 양방향 비즈니스 룰(Asset 변경 시 CI 반영, CI 변경 시 Asset 반영)이 활성화되어야 자동 일관성이 유지됩니다."
   },
   {
     "id": 65,
@@ -1619,7 +1619,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 보증만료일 같은 비탐지 속성은 Discovery로 채워지지 않으므로 외부 권위 데이터 소스에서 정기 Import로 보강하는 방식이 표준입니다."
   },
   {
     "id": 66,
@@ -1646,7 +1646,7 @@ window.CISDF_QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "정답: C, D"
+    "explanation": "정답: C, D. 클래스 재사용/확장은 기존 CI 계층을 따르는 것이 업그레이드 안정성과 기술부채 최소화에 유리하며, 먼저 CI Class Models로 표준 클래스 존재 여부를 확인해야 합니다."
   },
   {
     "id": 67,
@@ -1672,7 +1672,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Compliance 점수는 감사 기준(Audit)과 검증 대상 구성을 통해 의미가 생기므로 Certification Filter, Certification Template, Audit 구성이 필요합니다."
   },
   {
     "id": 68,
@@ -1698,7 +1698,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 식별 기준에 Version이 포함되어 있으면 버전 변경 시 기존 CI와 동일성 매칭이 실패할 수 있어 새 Apache Web Server CI가 생성될 수 있습니다."
   },
   {
     "id": 69,
@@ -1725,7 +1725,7 @@ window.CISDF_QUESTIONS = [
       "B",
       "D"
     ],
-    "explanation": "정답: B, D"
+    "explanation": "정답: B, D. ACC는 네트워크 접근이 제한된 보안 구역이나 간헐 접속 단말처럼 agentless 탐지가 어려운 환경에서 인벤토리 수집에 효과적입니다."
   },
   {
     "id": 70,
@@ -1751,7 +1751,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 취약점/보안 사고 우선순위 산정에는 기술 CI와 비즈니스 맥락 연결이 중요하므로 Application Service와 Business Application 관계 품질 개선 플레이북이 핵심입니다."
   },
   {
     "id": 71,
@@ -1778,7 +1778,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "B"
     ],
-    "explanation": "정답: A, B"
+    "explanation": "정답: A, B. CMDB의 본질적 가치는 운영 복원력 강화와 Incident/Change 의사결정 가속이며, 재무 데이터 수집 자체는 CMDB의 1차 목적이 아닙니다."
   },
   {
     "id": 72,
@@ -1808,7 +1808,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. SecOps가 비즈니스 애플리케이션 문맥의 운영 리스크를 보려면 어떤 데이터가 처리되는지 정의하는 Information Object가 필요합니다."
   },
   {
     "id": 73,
@@ -1835,7 +1835,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. Data Foundations Dashboard는 데이터 유효성/구성 상태를 점검하고, 자동 수정이 아니라 Playbook 기반 개선 경로를 제공합니다."
   },
   {
     "id": 74,
@@ -1861,7 +1861,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 비즈니스 소비자에게 Service Offering을 제시하는 SPM 맥락은 CSDM의 Service Consumption(Sell/Consume) 도메인과 정렬됩니다."
   },
   {
     "id": 75,
@@ -1887,7 +1887,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 고객 대면 서비스 우선 처리 기준은 서비스의 비즈니스 중요도를 반영해야 하므로 Service Offering의 Business Criticality가 가장 적합합니다."
   },
   {
     "id": 76,
@@ -1913,7 +1913,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CMDB 데이터에 대한 NLQ 기능은 CMDB Workspace에서 활용하도록 제공됩니다."
   },
   {
     "id": 77,
@@ -1939,7 +1939,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Import Set 적재 시 중복 방지를 위해 Transform 단계에서 CMDBTransformUtil을 호출해 IRE 경유 처리를 강제하는 것이 모범 방식입니다."
   },
   {
     "id": 78,
@@ -1965,7 +1965,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 자식 클래스 식별 실패 시 부모 클래스 식별 규칙을 이어서 시도하려면 Identifier Entry에서 부모 규칙 fallback 허용 옵션을 켜야 합니다."
   },
   {
     "id": 79,
@@ -1992,7 +1992,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "D"
     ],
-    "explanation": "정답: A, D"
+    "explanation": "정답: A, D. 애플리케이션 서비스와 인프라 관계는 CMDB Query로 가져오고, Incident 같은 비CMDB 데이터 연결을 위해 non-CMDB 테이블 추가가 필요합니다."
   },
   {
     "id": 80,
@@ -2022,7 +2022,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 불필요/노후 CI 정리와 수명주기 통제는 CMDB Data Manager의 정책(archive/delete/certification 등)으로 수행합니다."
   },
   {
     "id": 81,
@@ -2050,7 +2050,7 @@ window.CISDF_QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "정답: B, C, D"
+    "explanation": "정답: B, C, D. CMDB Workspace에서는 Data Manager 정책 생성, 중복 CI 정리, 클래스 관리 작업을 수행할 수 있으며 Discovery 실행은 별도 운영 흐름입니다."
   },
   {
     "id": 82,
@@ -2076,7 +2076,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 권장 필드 정의는 CI Class Manager에서, 누락값 기반 건강도/태스크 생성 제어는 Health Preferences에서 설정해 운영할 수 있습니다."
   },
   {
     "id": 83,
@@ -2103,7 +2103,7 @@ window.CISDF_QUESTIONS = [
       "B",
       "D"
     ],
-    "explanation": "정답: B, D"
+    "explanation": "정답: B, D. 서비스 인지형 CMDB는 변경 영향도 분석을 정확히 하고, 소유/지원 그룹 정보 기반으로 Assignment Group 자동 채움 등 동적 라우팅을 개선합니다."
   },
   {
     "id": 84,
@@ -2125,7 +2125,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. Life Cycle Sync 활성화 후에는 먼저 Discrepancy Report의 미완성 매핑을 해소해 레거시 값과 CSDM 표준 단계 간 정합성을 맞춰야 합니다."
   },
   {
     "id": 85,
@@ -2151,7 +2151,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Technical Service와 Technical Service Offering 정렬 품질은 CSDM 성숙도 기준에서 Walk 단계 지표로 주로 측정됩니다."
   },
   {
     "id": 86,
@@ -2178,7 +2178,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. IntegrationHub ETL은 외부 데이터를 CMDB 또는 비CMDB 테이블로 통합할 수 있고, CMDB 적재 시 IRE 처리 흐름을 활용해 정합성을 유지합니다."
   },
   {
     "id": 87,
@@ -2208,7 +2208,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. Staleness 계산은 마지막 업데이트 시점을 기준으로 하므로 sys_updated_on(Updated) 필드가 핵심 기준값입니다."
   },
   {
     "id": 88,
@@ -2234,7 +2234,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. CMDB Data Manager 정책의 작성/게시/운영 관리는 CMDB Workspace의 Management 탭에서 수행합니다."
   },
   {
     "id": 89,
@@ -2256,7 +2256,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CMDB 360 라이선스 없이도 IRE Reconciliation Rule 자체는 discovery source를 기준으로 계속 적용할 수 있습니다."
   },
   {
     "id": 90,
@@ -2282,7 +2282,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. 이 문항은 Server 클래스 규칙 기준으로 판단하므로 동적 규칙인 largest value가 적용되어 6020이 최종 반영됩니다."
   },
   {
     "id": 91,
@@ -2308,7 +2308,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 이 문항은 Windows Server 하위 클래스 기준이므로 하위 클래스 동적 규칙인 most reported가 우선 적용되어 4096이 반영됩니다."
   },
   {
     "id": 92,
@@ -2334,7 +2334,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. Reconciliation Rule에 ServiceNow가 허용 소스로 지정되어 있으므로 ServiceNow의 업데이트 시도는 허용됩니다."
   },
   {
     "id": 93,
@@ -2360,7 +2360,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 허용 소스가 ServiceNow, SCCM으로 제한된 규칙에서는 Altiris 업데이트는 권한이 없어 차단됩니다."
   },
   {
     "id": 94,
@@ -2386,7 +2386,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Reconciliation Rule이 ServiceNow 단일 소스인 경우 Altiris의 업데이트는 권위 소스가 아니므로 불가합니다."
   },
   {
     "id": 95,
@@ -2412,7 +2412,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 이 설정은 업데이트 권한 통제와 별개로 신규 삽입은 허용되는 시나리오이므로 Altiris insert는 가능으로 해석합니다."
   },
   {
     "id": 96,
@@ -2438,7 +2438,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. CMDB는 CI를 수명주기 전반에서 저장/관리하는 구성 데이터베이스이며, 나머지 보기는 속성/기초데이터/클래스 정의를 설명합니다."
   },
   {
     "id": 97,
@@ -2464,7 +2464,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Attributes는 CI를 설명하는 필드 값(예: 이름, 시리얼, OS)으로, CI 자체나 클래스 개념과 구분됩니다."
   },
   {
     "id": 98,
@@ -2490,7 +2490,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. Foundational Data는 사용자/그룹/위치처럼 CMDB와 ITSM 전반에서 참조되는 공통 기준 데이터입니다."
   },
   {
     "id": 99,
@@ -2516,7 +2516,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. Class는 공통 속성을 공유하는 CI 집합을 담는 테이블 단위 개념입니다."
   },
   {
     "id": 100,
@@ -2542,7 +2542,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. 식별 규칙이 이름 매치를 인정하고 IP 매치는 불충분한 조건이라면 CI one은 기존 레코드 업데이트, CI two는 신규 삽입으로 처리됩니다."
   },
   {
     "id": 101,
@@ -2564,7 +2564,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. SGC 기본 매핑을 커스터마이즈하면 표준 지원 범위를 벗어나 고객이 해당 커스텀 유지보수 책임을 부담하게 됩니다."
   },
   {
     "id": 102,
@@ -2590,7 +2590,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. 상위 우선순위 소스가 일정 기간 갱신하지 못할 때 하위 소스 업데이트를 허용하는 제어는 Data Refresh Rule로 구현합니다."
   },
   {
     "id": 103,
@@ -2618,7 +2618,7 @@ window.CISDF_QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "정답: B, C, D"
+    "explanation": "정답: B, C, D. 조건이 OS에 'Server' 또는 'Linux' 포함이므로 Windows Server 계열과 Linux 계열은 포함되고 AIX는 조건에 직접 부합하지 않습니다."
   },
   {
     "id": 104,
@@ -2644,7 +2644,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 상위 Server에서 더 구체적인 하위 Windows Server 클래스로 이동하는 것은 정밀 분류 방향의 Class upgrade입니다."
   },
   {
     "id": 105,
@@ -2666,7 +2666,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. CMDB Data Foundations Dashboard의 핵심 가치는 의사결정에 쓰이는 품질/운영 지표 가시화이며, 지표 정의 설정 자체는 주 기능이 아닙니다."
   },
   {
     "id": 106,
@@ -2688,7 +2688,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. IRE에서 생성된 중복 정리 작업은 CMDB Workspace의 My Work 영역에서 상태 타일을 통해 추적/처리합니다."
   },
   {
     "id": 107,
@@ -2710,7 +2710,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CSDM 정렬 운영에서는 Technical Service Offering의 Managed by Group이 CI 운영 소유값으로 반영되는 우선 소스로 사용됩니다."
   },
   {
     "id": 108,
@@ -2732,7 +2732,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. Health Inclusion Rules는 어떤 CI 집합을 규칙 평가 대상으로 볼지 스코프를 좁히는 데 쓰이며, 식별 대상 범위 관리 맥락으로 이해할 수 있습니다."
   },
   {
     "id": 109,
@@ -2758,7 +2758,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 커스텀 테이블은 업데이트 충돌과 기술부채를 줄이기 위해 사용자 정의 접두사 u_를 사용하며, CMDB 클래스는 u_cmdb_ci_ 패턴이 권장됩니다."
   },
   {
     "id": 110,
@@ -2785,7 +2785,7 @@ window.CISDF_QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "정답: C, D"
+    "explanation": "정답: C, D. 클래스별 식별 규칙은 CI Class Manager에서 관리하고, CI Identifiers 모듈에서도 식별자 항목을 직접 조회/수정할 수 있습니다."
   },
   {
     "id": 111,
@@ -2811,7 +2811,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 선택 CI와 연관된 Incident/Problem 같은 운영 레코드는 CMDB Workspace의 Related Items 패널에서 확인하는 것이 표준 흐름입니다."
   },
   {
     "id": 112,
@@ -2833,7 +2833,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 필수/핵심 데이터 누락 여부는 값 채워짐 수준을 보는 Completeness 스코어카드에서 진단합니다."
   },
   {
     "id": 113,
@@ -2863,7 +2863,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. 온라인 모니터링 시스템 같은 기술 운영 컴포넌트를 CSDM에 매핑할 때는 Service Delivery(Manage Technical Services) 도메인이 맞습니다."
   },
   {
     "id": 114,
@@ -2889,7 +2889,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. CI를 유일하게 식별하는 규칙 정의는 CI Class Manager의 Identification Rule 탭에서 수행합니다."
   },
   {
     "id": 115,
@@ -2915,7 +2915,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 자주 접근하는 클래스로 빠르게 돌아가려면 Pinned Classes 기능으로 탐색 경로를 고정하는 것이 가장 효율적입니다."
   },
   {
     "id": 116,
@@ -2941,7 +2941,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 어떤 데이터 소스가 CI 속성을 업데이트할 수 있는지의 권한/우선순위 제어는 Reconciliation Rules 탭에서 설정합니다."
   },
   {
     "id": 117,
@@ -2967,7 +2967,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 클래스 아이콘 같은 시각/기본 정보는 CI Class Manager의 Basic Info 탭에서 관리합니다."
   },
   {
     "id": 118,
@@ -2993,7 +2993,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. IRE 식별 과정에서 동일 CI가 2개 이상 매치되면 자동 업데이트를 중단하고 De-duplication Task를 생성합니다."
   },
   {
     "id": 119,
@@ -3015,7 +3015,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. Dynamic CI Group 기반 일괄 변경 대상 지정은 Change Request의 Configuration Item 필드에 해당 그룹을 지정하는 방식으로 처리합니다."
   },
   {
     "id": 120,
@@ -3042,7 +3042,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. 메인 CI 선정 시 오래된 기준(Oldest Created)과 관계가 많은 기준(Most Related Items)을 쓰면 참조 연속성을 보존하며 정리할 수 있습니다."
   },
   {
     "id": 121,
@@ -3069,7 +3069,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. 애플리케이션 서비스-인프라 관계는 CMDB Query로 구성하고, Incident 같은 비CMDB 데이터를 함께 보려면 non-CMDB 테이블 추가가 필요합니다."
   },
   {
     "id": 122,
@@ -3096,7 +3096,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. Data Foundations Dashboard는 데이터 유효성/구성 품질을 점검하고, 자동 수정보다 Playbook 기반의 개선 가이드를 제공합니다."
   },
   {
     "id": 123,
@@ -3122,7 +3122,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 비즈니스 소비자에게 서비스 오퍼링을 제공하는 SPM 맥락은 CSDM의 Service Consumption(Sell/Consume) 도메인에 해당합니다."
   },
   {
     "id": 124,
@@ -3148,7 +3148,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 고객 영향 서비스의 우선순위는 기술 속성보다 비즈니스 영향도를 반영하는 Service Offering의 Business Criticality로 결정하는 것이 적절합니다."
   },
   {
     "id": 125,
@@ -3174,7 +3174,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CMDB 데이터에 대한 자연어 질의(NLQ)는 CMDB Workspace에서 수행합니다."
   },
   {
     "id": 126,
@@ -3200,7 +3200,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Import Set 적재 시 중복 생성을 막으려면 Transform 단계에서 CMDBTransformUtil을 사용해 IRE 경유 처리를 적용하는 것이 모범 사례입니다."
   },
   {
     "id": 127,
@@ -3226,7 +3226,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. CSDM 관점에서 CI의 운영 지원 그룹 자동 정합은 Technology Management Service Offering 관계를 통해 Managed/Support 그룹을 동기화하는 방식이 권장됩니다."
   },
   {
     "id": 128,
@@ -3253,7 +3253,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "D"
     ],
-    "explanation": "정답: A, D"
+    "explanation": "정답: A, D. 이 유형은 121번과 동일하게 CMDB 관계는 CMDB Query로, Incident 연계는 non-CMDB 테이블 추가로 해결합니다."
   },
   {
     "id": 129,
@@ -3283,7 +3283,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. CI 데이터의 수명주기 관리와 불필요 레코드 제거는 CMDB Data Manager 정책으로 통제합니다."
   },
   {
     "id": 130,
@@ -3311,7 +3311,7 @@ window.CISDF_QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "정답: B, C, D"
+    "explanation": "정답: B, C, D. CMDB Workspace에서는 Data Manager 정책 생성, 중복 CI 정리, 클래스 관리를 수행할 수 있으며 Discovery 실행은 별도 영역입니다."
   },
   {
     "id": 131,
@@ -3337,7 +3337,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 권장 필드 구성은 CI Class Manager에서, 누락값 기반 모니터링/태스크 트리거는 Health Preferences에서 설정합니다."
   },
   {
     "id": 132,
@@ -3364,7 +3364,7 @@ window.CISDF_QUESTIONS = [
       "B",
       "D"
     ],
-    "explanation": "정답: B, D"
+    "explanation": "정답: B, D. 서비스 인지형 CMDB는 변경 영향도 분석을 강화하고, 지원 그룹 정보로 Assignment Group 자동 채움 등 동적 라우팅을 개선합니다."
   },
   {
     "id": 133,
@@ -3386,7 +3386,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. Life Cycle Sync 활성화 후에는 우선 Discrepancy Report의 불완전 매핑을 해소해 레거시 상태와 CSDM 표준 단계의 정합을 맞춰야 합니다."
   },
   {
     "id": 134,
@@ -3412,7 +3412,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Technical Service와 Technical Service Offering 정렬 정도는 CSDM Data Foundations의 Walk 탭 지표로 확인합니다."
   },
   {
     "id": 135,
@@ -3439,7 +3439,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. IntegrationHub ETL은 외부 데이터를 CMDB/비CMDB로 통합하며, CMDB 적재 시 IRE를 통해 식별/조정 규칙을 적용할 수 있습니다."
   },
   {
     "id": 136,
@@ -3469,7 +3469,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. Staleness는 마지막 갱신 시점 기준으로 산정되므로 sys_updated_on 필드를 사용합니다."
   },
   {
     "id": 137,
@@ -3499,7 +3499,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "E"
     ],
-    "explanation": "정답: E"
+    "explanation": "정답: E. 인프라 CI, Technical Service Offering, Application Service 간 운영 관계 가이드는 Service Delivery(Manage Technical Services) 도메인에서 다룹니다."
   },
   {
     "id": 138,
@@ -3526,7 +3526,7 @@ window.CISDF_QUESTIONS = [
       "B",
       "D"
     ],
-    "explanation": "정답: B, D"
+    "explanation": "정답: B, D. Dynamic CI Group과 연결된 Technical Service Offering에서 CI로 동기화되는 핵심 운영 그룹은 Managed by Group과 Support Group입니다."
   },
   {
     "id": 139,
@@ -3552,7 +3552,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 메트릭별 평가 모수가 다를 때는 해당 메트릭에 별도 Health Inclusion Rule이 적용된 경우가 대표적이며, 여기서는 orphan 메트릭이 그 사례입니다."
   },
   {
     "id": 140,
@@ -3582,7 +3582,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. 제조업 시나리오라도 'incoming systems'를 기술 운영 관점에서 매핑할 때는 Service Delivery(Manage Technical Services) 도메인을 사용합니다."
   },
   {
     "id": 141,
@@ -3608,7 +3608,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. Attestation은 CI 존재/유효성 확인, Data Certification은 CI 속성값의 정확성 검증과 보정을 목적으로 합니다."
   },
   {
     "id": 142,
@@ -3634,7 +3634,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 보안 우선순위 산정을 위해서는 기술 CI와 비즈니스 맥락 연결이 필요하므로 Application Service-Business Application 관계 품질 개선 플레이북이 핵심입니다."
   },
   {
     "id": 143,
@@ -3660,7 +3660,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Compliance scorecard에 패치 준수 결과를 의미 있게 반영하려면 Certification Filter, Template, Audit 구성이 선행되어야 합니다."
   },
   {
     "id": 144,
@@ -3682,7 +3682,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CMDB Workspace의 My Work에 생성되는 소유자/정비 태스크는 CMDB Data Manager가 정책 기반으로 발행합니다."
   },
   {
     "id": 145,
@@ -3708,7 +3708,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. Dynamic Reconciliation Rule은 CMDB 360/Multisource CMDB 기능이 활성화되어야 사용할 수 있습니다."
   },
   {
     "id": 146,
@@ -3734,7 +3734,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 서버 한 대가 여러 애플리케이션을 호스팅하는 조건에서는 Application Server 기준 One-to-many 관계입니다."
   },
   {
     "id": 147,
@@ -3760,7 +3760,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 서버도 여러 앱을 담고 앱도 여러 서버에 배치되는 이중화 구조이므로 Many-to-many 관계가 맞습니다."
   },
   {
     "id": 148,
@@ -3782,7 +3782,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 인프라 업그레이드 요청의 요구사항 정의와 요청 주도 역할은 CSDM 운영 맥락에서 Technology Service Owner가 담당합니다."
   },
   {
     "id": 149,
@@ -3804,7 +3804,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Stale CI는 최신성/정확성 문제이므로 CMDB Health의 Correctness 스코어카드에서 확인합니다."
   },
   {
     "id": 150,
@@ -3834,7 +3834,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. CI에 적절한 지원 그룹 연계가 있으면 Incident에서 CI 선택 시 Assignment Group이 자동으로 채워져 라우팅 정확도를 높입니다."
   },
   {
     "id": 151,
@@ -3856,7 +3856,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. SGC 기본 스크립트 변환을 커스터마이즈한 상태에서 업그레이드 충돌이 나면 skipped change가 생성되고 커스텀 정의는 자동 덮어쓰지 않습니다."
   },
   {
     "id": 152,
@@ -3884,7 +3884,7 @@ window.CISDF_QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "정답: A, C, D"
+    "explanation": "정답: A, C, D. Dynamic Rule Types에는 Most Reported, Last Updated, Smallest Value가 포함되며 Last Created는 기본 제공 동적 타입이 아닙니다."
   },
   {
     "id": 153,
@@ -3906,7 +3906,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. 중복 CI 정리는 CMDB Workspace의 De-duplication Dashboard를 중심으로 관리하는 것이 분석/처리 흐름 측면에서 가장 효율적입니다."
   },
   {
     "id": 154,
@@ -3928,7 +3928,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. Application Service 매핑은 변경 대상 CI가 비즈니스 서비스에 미치는 영향을 드러내므로 Change 영향 분석 품질을 높입니다."
   },
   {
     "id": 155,
@@ -3954,7 +3954,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Incident 같은 참조 필드에 노출할 Principal Class 지정은 CI Class Manager에서 클래스 속성으로 관리합니다."
   },
   {
     "id": 156,
@@ -3976,7 +3976,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. CI와 Asset 간 필드 동기화를 자동화하려면 AssetCI Field Mapping 모듈로 매핑 규칙을 설정하는 방식이 표준입니다."
   },
   {
     "id": 157,
@@ -4002,7 +4002,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. 표준 관계 표현은 Application runs on Server이며, 역방향으로 Server runs Application 관계로 읽습니다."
   },
   {
     "id": 158,
@@ -4024,7 +4024,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CMDB Data Manager의 핵심 목적은 보존 정책 기반 아카이브/삭제 자동화로 데이터 볼륨과 수명주기를 관리하는 것입니다."
   },
   {
     "id": 159,
@@ -4052,7 +4052,7 @@ window.CISDF_QUESTIONS = [
       "B",
       "D"
     ],
-    "explanation": "정답: A, B, D"
+    "explanation": "정답: A, B, D. Service Have Owners Identified 이슈 보정에는 Fix Data, Govern Data, Analyze Data 플레이북이 활용되며 Report Data는 분석/개선 실행 플레이북이 아닙니다."
   },
   {
     "id": 160,
@@ -4074,7 +4074,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. 중복 위험과 비인가 생성 통제를 위해서는 IRE 처리 경로를 잘 활용하는 IntegrationHub ETL이 권장됩니다."
   },
   {
     "id": 161,
@@ -4101,7 +4101,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. CSDM 정렬은 변경 영향 서비스를 명확히 파악하게 해주고, 서비스/소유 구조 기반으로 변경 라우팅 자동화에도 도움을 줍니다."
   },
   {
     "id": 162,
@@ -4127,7 +4127,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 레거시 상태를 CSDM Life Cycle 체계로 전환할 때 실제 stage status 값 관리는 life_cycle_stage_status 테이블에서 수행합니다."
   },
   {
     "id": 163,
@@ -4154,7 +4154,7 @@ window.CISDF_QUESTIONS = [
       "B",
       "C"
     ],
-    "explanation": "정답: B, C"
+    "explanation": "정답: B, C. Data Foundations Dashboard는 CMDB 상태 추세 모니터링과 실행 가능한 품질 개선 인사이트 제공에 강점이 있으며 Change 승인 자동화 도구는 아닙니다."
   },
   {
     "id": 164,
@@ -4181,7 +4181,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. 이 앱의 가치는 중요 데이터 유효성 검증과 Playbook 기반 리스크 완화 가이드 제공이며, 자동 치유 엔진 자체는 아닙니다."
   },
   {
     "id": 165,
@@ -4203,7 +4203,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Information Object는 Business Application이 다루는 논리 데이터(예: 규제/민감정보 맥락)를 기술하는 CSDM 아티팩트입니다."
   },
   {
     "id": 166,
@@ -4225,7 +4225,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. Service Graph Connector Central 플러그인 설치 후 관련 탭은 CMDB Workspace에서 소스 가시성/관리 목적으로 노출됩니다."
   },
   {
     "id": 167,
@@ -4247,7 +4247,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 지역별 건강도 점수는 Health 타입 CMDB Group을 지역 단위로 구성해 해당 그룹 스코프로 집계하는 방식이 권장됩니다."
   },
   {
     "id": 168,
@@ -4273,7 +4273,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 속성 업데이트 권한 데이터 소스 설정은 CI Class Manager의 Reconciliation Rules 탭에서 관리합니다."
   },
   {
     "id": 169,
@@ -4299,7 +4299,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 특정 CI 클래스/속성에 대해 어떤 소스가 업데이트 가능한지 결정하는 핵심 메커니즘은 Reconciliation Rule입니다."
   },
   {
     "id": 170,
@@ -4325,7 +4325,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 특정 소스의 insert 자체를 차단하는 제어는 IRE Data Source Rule 수준에서 설정합니다."
   },
   {
     "id": 171,
@@ -4351,7 +4351,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. Reconciliation Rule에 ServiceNow가 허용 소스로 정의되어 있으면 ServiceNow update는 정상 허용됩니다."
   },
   {
     "id": 172,
@@ -4377,7 +4377,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 허용 업데이트 소스가 ServiceNow, SCCM일 때 Altiris 업데이트는 비허용 소스이므로 차단됩니다."
   },
   {
     "id": 173,
@@ -4403,7 +4403,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 해당 규칙 맥락에서는 Altiris의 insert는 허용되고 update 권한만 제한되는 시나리오로 해석합니다."
   },
   {
     "id": 174,
@@ -4429,7 +4429,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. Multisource CMDB는 관련 시스템 속성(glide.identification_engine.multisource_enabled)을 true로 설정해 활성화하는 방식입니다."
   },
   {
     "id": 175,
@@ -4455,7 +4455,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 사용자/그룹/위치는 CMDB 자체 객체라기보다 여러 프로세스가 공통 참조하는 Foundational Data에 해당합니다."
   },
   {
     "id": 176,
@@ -4481,7 +4481,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 이름, 시리얼, OS처럼 CI를 설명하는 개별 데이터 항목은 Attributes입니다."
   },
   {
     "id": 177,
@@ -4507,7 +4507,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 공통 속성을 공유하는 CI 유형 집합을 담는 테이블 개념은 Class입니다."
   },
   {
     "id": 178,
@@ -4529,7 +4529,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 인프라 업그레이드 요청의 요구사항 정의/요청 시작 역할은 Technology Service Owner에 해당합니다."
   },
   {
     "id": 179,
@@ -4551,7 +4551,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. CMDB Workspace의 My Work에 올라오는 운영/정비 태스크는 CMDB Data Manager 정책 실행 결과로 생성됩니다."
   },
   {
     "id": 180,
@@ -4579,7 +4579,7 @@ window.CISDF_QUESTIONS = [
       "B",
       "C"
     ],
-    "explanation": "정답: A, B, C"
+    "explanation": "정답: A, B, C. Data Foundations Dashboard는 최근 활성 CI 갱신 지표, IRE 처리 지표, orphan 관련 지표 등 운영 가시성을 제공해 지속 모니터링 가치가 큽니다."
   },
   {
     "id": 181,
@@ -4601,7 +4601,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Information Object는 Business Application이 어떤 논리 데이터를 다루는지 정의해 규제/리스크 맥락 분석에 쓰입니다."
   },
   {
     "id": 182,
@@ -4623,7 +4623,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. Service Graph Connector Central 탭은 CMDB Workspace에 추가되어 소스별 CMDB 유입 가시성을 제공합니다."
   },
   {
     "id": 183,
@@ -4645,7 +4645,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. 지역별 건강도 산출은 Health 타입 CMDB Group을 지역 단위로 만들어 해당 그룹 기준으로 점수를 보는 방식이 맞습니다."
   },
   {
     "id": 184,
@@ -4671,7 +4671,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CMDB Health Dashboard에 표시할 클래스 범위 제어는 Health Inclusion Rules로 설정합니다."
   },
   {
     "id": 185,
@@ -4697,7 +4697,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Data Manager의 삭제/아카이브 정책은 일반적으로 End of Life 또는 Retired 상태 CI를 대상으로 적용합니다."
   },
   {
     "id": 186,
@@ -4719,7 +4719,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. 레거시 상태값과 CSDM lifecycle stage/stage status의 대응은 Life cycle mappings에서 검토합니다."
   },
   {
     "id": 187,
@@ -4745,7 +4745,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. CI Support Group 자동 유지에는 Technology Management Service Offering 연결을 활용해 운영 그룹 정보를 동기화하는 방식이 권장됩니다."
   },
   {
     "id": 188,
@@ -4767,7 +4767,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. Dynamic CI Group 기반 다중 CI 변경은 Change Request의 Configuration Item 필드에 그룹을 지정해 처리합니다."
   },
   {
     "id": 189,
@@ -4794,7 +4794,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. Data Foundations Dashboard는 중요 데이터 유효성 점검과 개선 Playbook 제공이 핵심이며 자동 치유 엔진은 아닙니다."
   },
   {
     "id": 190,
@@ -4816,7 +4816,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. Life Cycle Sync 이후에는 먼저 Discrepancy Report의 미완성 매핑을 해결해 정합성을 확보해야 합니다."
   },
   {
     "id": 191,
@@ -4842,7 +4842,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B"
+    "explanation": "정답: B. Technical Service/Offering 정렬 지표는 CSDM Data Foundations Dashboard의 Walk 탭에서 확인합니다."
   },
   {
     "id": 192,
@@ -4872,7 +4872,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. Staleness는 마지막 업데이트 시점 기준으로 계산되므로 sys_updated_on 필드가 기준값입니다."
   },
   {
     "id": 193,
@@ -4899,7 +4899,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "정답: A, C"
+    "explanation": "정답: A, C. IntegrationHub ETL은 외부 데이터 통합에 사용되며 CMDB 적재 시 IRE 식별/조정 흐름을 적용할 수 있습니다."
   },
   {
     "id": 194,
@@ -4925,7 +4925,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D"
+    "explanation": "정답: D. 고객 대면 서비스 우선순위는 운영팀 배정정보보다 Service Offering의 Business Criticality로 정하는 것이 CSDM 취지에 맞습니다."
   },
   {
     "id": 195,
@@ -4951,7 +4951,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C"
+    "explanation": "정답: C. CMDB 자연어 질의(NLQ)는 CMDB Workspace에서 수행하도록 제공됩니다."
   },
   {
     "id": 196,
@@ -4977,7 +4977,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. 식별 규칙 조건에서 name 매치는 기존 CI 업데이트를 유도하고, IP 기준은 조건 불충분으로 신규 삽입 시나리오가 됩니다."
   },
   {
     "id": 197,
@@ -5008,7 +5008,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "E"
     ],
-    "explanation": "정답: A, E"
+    "explanation": "정답: A, E. Managed by Group은 CI Class Manager와 Technology Management Offering에서 설정/동기화해 클래스 및 구성원 CI 운영 소유를 정렬할 수 있습니다."
   },
   {
     "id": 198,
@@ -5038,7 +5038,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B (Design & Planning)"
+    "explanation": "정답: B. Enterprise Architect는 비즈니스/애플리케이션 구조 설계 관점을 담당하므로 CSDM의 Design & Planning 도메인 참여가 핵심입니다."
   },
   {
     "id": 199,
@@ -5065,7 +5065,7 @@ window.CISDF_QUESTIONS = [
       "B",
       "D"
     ],
-    "explanation": "정답: B, D"
+    "explanation": "정답: B, D. CSDM 비정렬 상태는 커스텀 난립으로 기술부채를 키우고, 향후 제품/앱 정합성 저하로 확장성과 업그레이드 호환성 위험을 높입니다."
   },
   {
     "id": 200,
@@ -5095,7 +5095,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D (Service Delivery / Manage Technical Services)"
+    "explanation": "정답: D. 배포된 서비스 인스턴스와 탐지 가능한 기술 컴포넌트 관계는 Service Delivery(Manage Technical Services) 도메인에서 관리합니다."
   },
   {
     "id": 201,
@@ -5125,7 +5125,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B (Service Consumption)"
+    "explanation": "정답: B. Customer Service Management는 소비자/고객에게 제공되는 서비스 관점이므로 CSDM Service Consumption 도메인에 속합니다."
   },
   {
     "id": 202,
@@ -5151,7 +5151,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B (Application Service)"
+    "explanation": "정답: B. Application Service는 배포된 애플리케이션 스택과 그 의존성을 논리적으로 표현하는 대표 서비스 인스턴스 타입입니다."
   },
   {
     "id": 203,
@@ -5181,7 +5181,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B (Digital Portfolio Management)"
+    "explanation": "정답: B. 포트폴리오/서비스/오퍼링/제품을 라이프사이클 전반에서 통합 관리하는 워크스페이스 성격은 Digital Portfolio Management에 해당합니다."
   },
   {
     "id": 204,
@@ -5211,7 +5211,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "E"
     ],
-    "explanation": "정답: E (Service Builder)"
+    "explanation": "정답: E. Business/Technology Service와 Offerings를 폼/리스트보다 간결하게 생성·연결하는 전용 도구는 Service Builder입니다."
   },
   {
     "id": 205,
@@ -5241,7 +5241,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A (Application Service Wizard)"
+    "explanation": "정답: A. Application Service Wizard는 서비스 인스턴스를 Business Application, Tech Offering, Business Offering과 관계 맺도록 돕는 구성 워크플로입니다."
   },
   {
     "id": 206,
@@ -5268,7 +5268,7 @@ window.CISDF_QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "정답: C, D"
+    "explanation": "정답: C, D. CSDM 정렬 시 Change는 CI의 Change group, Incident는 CI의 Support group을 기반으로 Assignment Group 자동 채움이 가능합니다."
   },
   {
     "id": 207,
@@ -5295,7 +5295,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "B"
     ],
-    "explanation": "정답: A, B (※ Business Application은 비작동(Design) CI이므로 제외)"
+    "explanation": "정답: A, B. Incident/Change의 Configuration Item 필드에는 운영 대상 CI가 들어가며 Dynamic CI Group과 Application Service가 대표적입니다. Business Application은 설계 관점 객체라 직접 운영 CI로 쓰지 않습니다."
   },
   {
     "id": 208,
@@ -5331,7 +5331,7 @@ window.CISDF_QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "정답: B, C, D (Ingest, Govern, Insight)"
+    "explanation": "정답: B, C, D. 성공적인 데이터 파운데이션의 3축은 Ingest(유입), Govern(통제), Insight(가시화/개선)입니다."
   },
   {
     "id": 209,
@@ -5361,7 +5361,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "E"
     ],
-    "explanation": "정답: E (CSDM Data Foundations Dashboard)"
+    "explanation": "정답: E. CSDM 구현 정렬 수준을 모범사례 기준으로 시각화/리포팅해 개선을 유도하는 내장 도구는 CSDM Data Foundations Dashboard입니다."
   },
   {
     "id": 210,
@@ -5387,6 +5387,6 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A"
+    "explanation": "정답: A. CSDM은 CI 수명주기 관리를 위해 레거시 단일 상태필드보다 Life cycle stage와 stage status 조합 사용을 권장합니다."
   }
 ];

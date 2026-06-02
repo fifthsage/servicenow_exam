@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSA 출퇴근 학습 가이드</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../shared/hub-common.css">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --surface2: #1c2333;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-dim: #8b949e;
+      --accent: #ff6b6b;
+      --nav: #58a6ff;
+      --instance: #ffd166;
+      --configure: #06d6a0;
+      --data: #4cc9f0;
+      --catalog: #c77dff;
+      --insight: #f72585;
+      --utility: #90be6d;
+      --secure: #f9844a;
+      --tip-bg: #1a1f2e;
+      --tip-border: #f0a030;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      padding-top: 48px;
+    }
+
+    .top-home-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+
+    .toc-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 200;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--catalog));
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .toc-drawer {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      z-index: 199;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      max-height: 60vh;
+      overflow-y: auto;
+      display: none;
+      width: min(340px, calc(100vw - 40px));
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    .toc-drawer.open {
+      display: block;
+    }
+
+    .toc-drawer a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 8px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 13px;
+      transition: background 0.2s;
+    }
+
+    .toc-drawer a:hover {
+      background: var(--surface2);
+    }
+
+    .toc-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .toc-lv {
+      margin-left: auto;
+      font-size: 11px;
+      color: var(--text-dim);
+      font-weight: 600;
+    }
+
+    .cover {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 30%, rgba(88, 166, 255, 0.1), transparent 60%),
+        radial-gradient(ellipse at 80% 80%, rgba(199, 125, 255, 0.06), transparent 50%),
+        var(--bg);
+    }
+
+    .cover h1 {
+      font-size: clamp(32px, 7vw, 52px);
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #fff, #ccc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .cover .sub {
+      font-size: clamp(16px, 3.5vw, 22px);
+      font-weight: 500;
+      color: var(--nav);
+      margin-bottom: 24px;
+    }
+
+    .cover .desc {
+      font-size: 14px;
+      color: var(--text-dim);
+      max-width: 500px;
+      margin-bottom: 32px;
+    }
+
+    .exam-stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .stat {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 18px;
+      text-align: center;
+      min-width: 90px;
+    }
+
+    .stat-num {
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: var(--text-dim);
+      margin-top: 2px;
+      line-height: 1.4;
+    }
+
+    .domain-bars {
+      width: min(460px, 100%);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .dbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+    }
+
+    .dbar-fill {
+      height: 6px;
+      border-radius: 3px;
+      transition: width 0.8s ease;
+    }
+
+    .dbar-name {
+      width: 118px;
+      text-align: right;
+      color: var(--text-dim);
+    }
+
+    .dbar-lv {
+      width: 42px;
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    .section {
+      padding: 24px 16px;
+      max-width: 760px;
+      margin: 0 auto;
+      border-top: 1px solid var(--border);
+    }
+
+    .section:first-of-type {
+      margin-top: 48px;
+    }
+
+    .domain-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .domain-header h2 {
+      font-size: clamp(20px, 5vw, 28px);
+      font-weight: 900;
+    }
+
+    .pct-badge {
+      font-size: 13px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      color: var(--bg);
+    }
+
+    .domain-desc {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    .sub-header {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 24px 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .sub-header::before {
+      content: '▸';
+      font-size: 14px;
+      opacity: 0.5;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+
+    .card-title {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .bullet {
+      padding: 4px 0 4px 16px;
+      position: relative;
+      font-size: 14px;
+    }
+
+    .bullet::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--text-dim);
+    }
+
+    .bullet.sub {
+      padding-left: 32px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    .bullet.sub::before {
+      left: 16px;
+      content: '◦';
+    }
+
+    .bullet strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .key-point {
+      padding: 6px 0 6px 20px;
+      position: relative;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .key-point::before {
+      content: '★';
+      position: absolute;
+      left: 0;
+      font-size: 11px;
+      color: var(--accent);
+    }
+
+    .key-point .term {
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .key-point .sep {
+      color: var(--text-dim);
+      margin: 0 4px;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 12px 0;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      min-width: 440px;
+    }
+
+    thead th {
+      padding: 10px 12px;
+      font-weight: 700;
+      font-size: 12px;
+      text-align: left;
+      color: white;
+      white-space: nowrap;
+    }
+
+    tbody td {
+      padding: 10px 12px;
+      border-top: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    tbody tr:nth-child(even) {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    td strong {
+      color: var(--nav);
+    }
+
+    .tip-box {
+      background: var(--tip-bg);
+      border-left: 3px solid var(--tip-border);
+      border-radius: 0 10px 10px 0;
+      padding: 14px 16px;
+      margin: 16px 0;
+    }
+
+    .tip-box .tip-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--tip-border);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .tip-box .tip-item {
+      font-size: 13px;
+      padding: 3px 0 3px 16px;
+      position: relative;
+      color: var(--text);
+    }
+
+    .tip-box .tip-item::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--tip-border);
+    }
+
+    .th-nav {
+      background: var(--nav);
+      color: var(--bg);
+    }
+
+    .th-instance {
+      background: var(--instance);
+      color: var(--bg);
+    }
+
+    .th-config {
+      background: var(--configure);
+      color: var(--bg);
+    }
+
+    .th-data {
+      background: var(--data);
+      color: var(--bg);
+    }
+
+    .th-catalog {
+      background: var(--catalog);
+    }
+
+    .th-insight {
+      background: var(--insight);
+    }
+
+    .th-utility {
+      background: var(--utility);
+      color: var(--bg);
+    }
+
+    .th-secure {
+      background: var(--secure);
+      color: var(--bg);
+    }
+
+    .check-group {
+      margin-bottom: 16px;
+    }
+
+    .check-group-title {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .check-item {
+      padding: 5px 0 5px 28px;
+      position: relative;
+      font-size: 13px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .check-item::before {
+      content: '☐';
+      position: absolute;
+      left: 4px;
+      font-size: 15px;
+      color: var(--text-dim);
+    }
+
+    .check-item.checked::before {
+      content: '☑';
+      color: var(--configure);
+    }
+
+    .check-item.checked {
+      color: var(--text-dim);
+      text-decoration: line-through;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-dim);
+      font-size: 12px;
+    }
+
+    .cheer {
+      font-size: 24px;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--accent), var(--catalog));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      z-index: 101;
+      background: var(--surface);
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--accent), var(--catalog));
+      transition: width 0.1s;
+    }
+
+    @media (max-width: 480px) {
+      .section {
+        padding: 20px 14px;
+      }
+
+      table {
+        font-size: 12px;
+      }
+
+      thead th,
+      tbody td {
+        padding: 8px 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-home-bar">
+    <div class="top-home-inner">
+      <div class="top-home-links">
+        <a href="../index.html">홈</a>
+        <a href="index.html">CSA 홈</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <button class="toc-toggle" id="tocBtn"
+    onclick="document.getElementById('tocDrawer').classList.toggle('open')">☰</button>
+  <div class="toc-drawer" id="tocDrawer">
+    <a href="#navigation" onclick="closeToc()"><span class="toc-dot" style="background:var(--nav)"></span>플랫폼 탐색
+      기반<span class="toc-lv">M1</span></a>
+    <a href="#instance" onclick="closeToc()"><span class="toc-dot" style="background:var(--instance)"></span>인스턴스 구성
+      전략<span class="toc-lv">M2</span></a>
+    <a href="#configure" onclick="closeToc()"><span class="toc-dot" style="background:var(--configure)"></span>리스트/폼 구성
+      역량<span class="toc-lv">M3</span></a>
+    <a href="#data-security" onclick="closeToc()"><span class="toc-dot" style="background:var(--data)"></span>데이터 관리 및
+      접근통제<span class="toc-lv">M4</span></a>
+    <a href="#self-service" onclick="closeToc()"><span class="toc-dot" style="background:var(--catalog)"></span>셀프서비스와
+      자동화<span class="toc-lv">M5</span></a>
+    <a href="#productivity" onclick="closeToc()"><span class="toc-dot" style="background:var(--insight)"></span>시각화·알림·생산성
+      향상<span class="toc-lv">M6</span></a>
+    <a href="#utilities" onclick="closeToc()"><span class="toc-dot" style="background:var(--utility)"></span>스크립팅·업데이트
+      세트<span class="toc-lv">M7</span></a>
+    <a href="#security" onclick="closeToc()"><span class="toc-dot" style="background:var(--secure)"></span>인스턴스 보안
+      운영<span class="toc-lv">M8</span></a>
+    <a href="#checklist" onclick="closeToc()"><span class="toc-dot" style="background:var(--accent)"></span>시험 직전
+      체크리스트</a>
+  </div>
+
+  <div class="cover">
+    <h1>CSA</h1>
+    <div class="sub">System Administrator</div>
+    <div class="desc">첨부 스크립트(모듈 1~8)를 블루프린트 기반으로 재구성한 학습 가이드<br>핵심 개념, 실습 포인트, 지식 점검 축을 한 흐름으로 정리</div>
+
+    <div class="exam-stats">
+      <div class="stat">
+        <div class="stat-num">M1-8</div>
+        <div class="stat-label">학습 모듈</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">8+</div>
+        <div class="stat-label">핵심 실습 축</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">40+</div>
+        <div class="stat-label">체크 포인트</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" style="color:var(--accent)">2026</div>
+        <div class="stat-label">블루프린트<br>업데이트 기준</div>
+      </div>
+    </div>
+
+    <div class="domain-bars">
+      <div class="dbar"><span class="dbar-name">플랫폼 기초</span>
+        <div class="dbar-fill" style="width:28%;background:var(--nav)"></div><span class="dbar-lv"
+          style="color:var(--nav)">Core</span>
+      </div>
+      <div class="dbar"><span class="dbar-name">구성/데이터</span>
+        <div class="dbar-fill" style="width:34%;background:var(--configure)"></div><span class="dbar-lv"
+          style="color:var(--configure)">High</span>
+      </div>
+      <div class="dbar"><span class="dbar-name">셀프서비스/자동화</span>
+        <div class="dbar-fill" style="width:26%;background:var(--catalog)"></div><span class="dbar-lv"
+          style="color:var(--catalog)">High</span>
+      </div>
+      <div class="dbar"><span class="dbar-name">보안/운영</span>
+        <div class="dbar-fill" style="width:24%;background:var(--secure)"></div><span class="dbar-lv"
+          style="color:var(--secure)">Core</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="navigation">
+    <div class="domain-header">
+      <h2 style="color:var(--nav)">1. 플랫폼 탐색 기반 (Module 1)</h2>
+      <span class="pct-badge" style="background:var(--nav)">Foundation</span>
+    </div>
+    <p class="domain-desc">CSA의 출발점은 플랫폼 상호작용 도구를 빠르게 식별하고, 사용자 관점에서 어떤 UI가 어떤 목적에 적합한지 구분하는 것입니다.</p>
+
+    <div class="sub-header" style="color:var(--nav)">학습 목표</div>
+    <div class="bullet">Workspaces, Service Catalog, Dashboards, Lists, Forms, Knowledge Bases의 역할 분리</div>
+    <div class="bullet">Employee Center의 구성 요소를 업무 시나리오와 연결</div>
+    <div class="bullet">"어디에서 작업해야 하는가"를 문제 지문만 보고 판단</div>
+
+    <div class="sub-header" style="color:var(--nav)">학습 블루프린트 카드</div>
+    <div class="card">
+      <div class="card-title" style="color:var(--nav)">Blueprint Step A: UI 채널 매핑</div>
+      <div class="key-point"><span class="term">Workspace</span><span class="sep">—</span>역할 기반 운영자 중심 처리 화면</div>
+      <div class="key-point"><span class="term">Catalog/Portal</span><span class="sep">—</span>요청자 중심 셀프서비스 채널</div>
+      <div class="key-point"><span class="term">List/Form</span><span class="sep">—</span>데이터 조회/편집의 기본 단위</div>
+      <div class="key-point"><span class="term">Knowledge</span><span class="sep">—</span>해결 정보의 축적 및 재사용</div>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-title">시험 포인트</div>
+      <div class="tip-item">"직원 스스로 정보/서비스 접근" 시나리오면 Employee Center 우선</div>
+      <div class="tip-item">작업자(Agent/Fulfiller) 효율 문제는 Workspace가 정답일 확률이 높음</div>
+    </div>
+  </div>
+
+  <div class="section" id="instance">
+    <div class="domain-header">
+      <h2 style="color:var(--instance)">2. 인스턴스 구성 전략 (Module 2)</h2>
+      <span class="pct-badge" style="background:var(--instance)">High</span>
+    </div>
+    <p class="domain-desc">인스턴스 구분, 브랜딩, 플러그인 활성화, 스코프 이해는 CSA에서 반복 출제되는 운영 기본기입니다.</p>
+
+    <div class="sub-header" style="color:var(--instance)">핵심 개념 맵</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-instance">
+            <th>개념</th>
+            <th>핵심 의미</th>
+            <th>시험형 키워드</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Baseline implementation</strong></td>
+            <td>구성 전 기본 설치 상태</td>
+            <td>"초기 상태", "사전 구성"</td>
+          </tr>
+          <tr>
+            <td><strong>Instance</strong></td>
+            <td>조직별 독립된 단일 테넌트 환경</td>
+            <td>Production vs Non-production</td>
+          </tr>
+          <tr>
+            <td><strong>Update Set</strong></td>
+            <td>구성 변경 이동 패키지</td>
+            <td>개발→테스트→운영 승격</td>
+          </tr>
+          <tr>
+            <td><strong>Application Scope</strong></td>
+            <td>앱 간 접근 경계/격리</td>
+            <td>Globe 아이콘, 접근 제한</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sub-header" style="color:var(--instance)">실습형 블루프린트</div>
+    <div class="bullet">Theme Builder로 로고/색상/폰트 설정</div>
+    <div class="bullet">브라우저 탭 라벨로 Dev/Test/Prod 시각 구분</div>
+    <div class="bullet">플러그인 설치 시 데모 데이터 로드 여부 판단</div>
+    <div class="bullet">종속 플러그인 확인 후 활성화 순서 검토</div>
+
+    <div class="tip-box">
+      <div class="tip-title">시험 포인트</div>
+      <div class="tip-item">추가 기능 활성화 경로: Plugin / Store / ServiceNow 요청</div>
+      <div class="tip-item">새 기능 실험은 개인 개발자 또는 비프로덕션 인스턴스 사용</div>
+    </div>
+  </div>
+
+  <div class="section" id="configure">
+    <div class="domain-header">
+      <h2 style="color:var(--configure)">3. 리스트/폼 구성 역량 (Module 3)</h2>
+      <span class="pct-badge" style="background:var(--configure)">High</span>
+    </div>
+    <p class="domain-desc">리스트, 필터, 폼 구성은 CSA 실무형 문제의 중심입니다. 필드/연산자/값의 논리와 개인화 vs 전역구성을 구분해야 합니다.</p>
+
+    <div class="sub-header" style="color:var(--configure)">리스트 운영 체크</div>
+    <div class="key-point"><span class="term">List Controls</span><span class="sep">—</span>뷰 전환, 대량 작업, 필터링</div>
+    <div class="key-point"><span class="term">Column Options</span><span class="sep">—</span>열 단위 시각화/내보내기/레이아웃</div>
+    <div class="key-point"><span class="term">Right-click Context</span><span class="sep">—</span>셀 값 기준 빠른 필터/태그</div>
+    <div class="key-point"><span class="term">Dot-walking</span><span class="sep">—</span>참조 테이블 필드 확장 조회</div>
+
+    <div class="sub-header" style="color:var(--configure)">폼 구성 블루프린트</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-config">
+            <th>요소</th>
+            <th>활용 목적</th>
+            <th>주의점</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Section</strong></td>
+            <td>필드 논리 그룹화</td>
+            <td>과도한 분할은 가독성 저하</td>
+          </tr>
+          <tr>
+            <td><strong>Formatter</strong></td>
+            <td>Activity Stream 등 비필드 정보 표시</td>
+            <td>필드 값과 혼동하지 않기</td>
+          </tr>
+          <tr>
+            <td><strong>UI Action</strong></td>
+            <td>버튼/링크 기반 사용자 동작 정의</td>
+            <td>활성 여부와 조건 확인</td>
+          </tr>
+          <tr>
+            <td><strong>Related List</strong></td>
+            <td>연관 레코드 표시</td>
+            <td>레코드 저장 후 표시됨</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-title">시험 포인트</div>
+      <div class="tip-item">필터의 3요소는 Field, Operator, Value</div>
+      <div class="tip-item">Personalize List/Form은 개인 화면에만 적용</div>
+      <div class="tip-item">편집 가능한 동일 필드의 중복 배치는 데이터 문제를 유발할 수 있음</div>
+    </div>
+  </div>
+
+  <div class="section" id="data-security">
+    <div class="domain-header">
+      <h2 style="color:var(--data)">4. 데이터 관리 및 접근통제 (Module 4)</h2>
+      <span class="pct-badge" style="background:var(--data)">High</span>
+    </div>
+    <p class="domain-desc">테이블 구조, 임포트 세트, ACL 평가, CMDB/Discovery 개념을 함께 묻는 통합 문제가 많습니다.</p>
+
+    <div class="sub-header" style="color:var(--data)">데이터 구조 블루프린트</div>
+    <div class="bullet">Table - Record - Field - Value 계층 이해</div>
+    <div class="bullet">System Dictionary, Tables and Columns, Schema Map 사용 목적 구분</div>
+    <div class="bullet">sys_id(32자 GUID)와 Number Maintenance 역할 구분</div>
+
+    <div class="sub-header" style="color:var(--data)">Import Set 실행 흐름</div>
+    <div class="key-point"><span class="term">Data Source</span><span class="sep">—</span>외부 원천 정의</div>
+    <div class="key-point"><span class="term">Import Set Table</span><span class="sep">—</span>Staging 영역</div>
+    <div class="key-point"><span class="term">Transform Map</span><span class="sep">—</span>소스-타깃 매핑</div>
+    <div class="key-point"><span class="term">Target Table</span><span class="sep">—</span>최종 저장 위치</div>
+    <div class="key-point"><span class="term">Coalesce</span><span class="sep">—</span>중복 생성 방지 키</div>
+
+    <div class="sub-header" style="color:var(--data)">보안 계층 및 ACL 평가</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-data">
+            <th>층위</th>
+            <th>핵심 제어</th>
+            <th>학습 포인트</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>사용자/그룹/역할</strong></td>
+            <td>기본 인증/권한</td>
+            <td>역할 할당 구조</td>
+          </tr>
+          <tr>
+            <td><strong>애플리케이션/모듈</strong></td>
+            <td>메뉴 접근 제어</td>
+            <td>역할 기반 표시 제한</td>
+          </tr>
+          <tr>
+            <td><strong>ACL/속성</strong></td>
+            <td>테이블·필드 단위 권한</td>
+            <td>deny 우선, table.none/table.* 구분</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-title">시험 포인트</div>
+      <div class="tip-item">ACL은 거부 규칙이 허용 규칙보다 먼저 평가됨</div>
+      <div class="tip-item">Coalesce 미설정 시 재임포트 때 중복 레코드가 생성됨</div>
+      <div class="tip-item">CMDB 관계 분석은 Dependency Map/Service Mapping 시나리오와 연결됨</div>
+    </div>
+  </div>
+
+  <div class="section" id="self-service">
+    <div class="domain-header">
+      <h2 style="color:var(--catalog)">5. 셀프서비스와 자동화 (Module 5)</h2>
+      <span class="pct-badge" style="background:var(--catalog)">High</span>
+    </div>
+    <p class="domain-desc">Knowledge, Catalog, Workflow Studio를 묶어서 이해해야 요청-승인-이행 전체를 설명할 수 있습니다.</p>
+
+    <div class="sub-header" style="color:var(--catalog)">셀프서비스 채널 맵</div>
+    <div class="bullet">Employee Center: 직원 중심 통합 진입점</div>
+    <div class="bullet">Service Portal: 카탈로그/지식/요청 처리 포털</div>
+    <div class="bullet">Knowledge Portal: 문서 조회/피드백 중심</div>
+
+    <div class="sub-header" style="color:var(--catalog)">Knowledge 운영 블루프린트</div>
+    <div class="key-point"><span class="term">User Criteria</span><span class="sep">—</span>Can Read/Contribute 및 Cannot* 우선 적용</div>
+    <div class="key-point"><span class="term">Workflow</span><span class="sep">—</span>Approval Publish/Retire vs Instant Publish/Retire</div>
+    <div class="key-point"><span class="term">Guided Setup</span><span class="sep">—</span>요구사항 기반 단계 설정</div>
+
+    <div class="sub-header" style="color:var(--catalog)">Catalog + Flow 핵심</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-catalog">
+            <th>구성요소</th>
+            <th>기능</th>
+            <th>지식 점검 포인트</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Catalog Item</strong></td>
+            <td>주문 가능한 개별 항목</td>
+            <td>주문 시 RITM/SCTASK 생성</td>
+          </tr>
+          <tr>
+            <td><strong>Variable</strong></td>
+            <td>주문 시 사용자 입력 수집</td>
+            <td>질문/옵션의 실체</td>
+          </tr>
+          <tr>
+            <td><strong>Order Guide</strong></td>
+            <td>관련 항목 묶음 주문</td>
+            <td>단일 요청 다중 품목</td>
+          </tr>
+          <tr>
+            <td><strong>Flow (Trigger + Actions)</strong></td>
+            <td>승인/알림/이행 자동화</td>
+            <td>Data Pill로 후속 단계 데이터 전달</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section" id="productivity">
+    <div class="domain-header">
+      <h2 style="color:var(--insight)">6. 시각화·알림·생산성 향상 (Module 6)</h2>
+      <span class="pct-badge" style="background:var(--insight)">Core</span>
+    </div>
+    <p class="domain-desc">분석 결과를 공유 가능한 형태로 만들고, 필요한 사람에게 적시에 알리는 운영 루프를 학습합니다.</p>
+
+    <div class="sub-header" style="color:var(--insight)">Visualization Designer 구성 축</div>
+    <div class="bullet">Data, Type, Metrics, Presentation의 4축으로 설계</div>
+    <div class="bullet">기존 시각화를 복제 후 수정하는 방식이 안전</div>
+    <div class="bullet">Dashboard 위젯 공유로 팀 가시성 확보</div>
+
+    <div class="sub-header" style="color:var(--insight)">Notification 블루프린트</div>
+    <div class="key-point"><span class="term">When to send</span><span class="sep">—</span>삽입/업데이트/이벤트/스크립트 기반</div>
+    <div class="key-point"><span class="term">Who will receive</span><span class="sep">—</span>사용자/그룹, 비활성 사용자 제외</div>
+    <div class="key-point"><span class="term">What it will contain</span><span class="sep">—</span>메시지 본문 및 데이터</div>
+    <div class="key-point"><span class="term">Force delivery/Mandatory</span><span class="sep">—</span>필수 알림 강제 정책</div>
+
+    <div class="tip-box">
+      <div class="tip-title">시험 포인트</div>
+      <div class="tip-item">시각화 재사용: Duplicate, Share, Export 3가지 동작 구분</div>
+      <div class="tip-item">Notification 설정 질문은 언제/누구/무엇 탭으로 정리하면 빠르게 해결</div>
+    </div>
+  </div>
+
+  <div class="section" id="utilities">
+    <div class="domain-header">
+      <h2 style="color:var(--utility)">7. 스크립팅·업데이트 세트 (Module 7)</h2>
+      <span class="pct-badge" style="background:var(--utility)">Core</span>
+    </div>
+    <p class="domain-desc">클라이언트/서버 스크립트 구분과 Update Set 이동 절차는 실무와 시험 모두에서 필수입니다.</p>
+
+    <div class="sub-header" style="color:var(--utility)">스크립트/정책 사용 기준</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-utility">
+            <th>도구</th>
+            <th>목적</th>
+            <th>선택 기준</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Client Script</strong></td>
+            <td>브라우저 즉시 반응</td>
+            <td>UI 입력 반응, 실시간 검증</td>
+          </tr>
+          <tr>
+            <td><strong>Business Rule</strong></td>
+            <td>서버 측 데이터 처리</td>
+            <td>Insert/Update/Delete/Query 동작</td>
+          </tr>
+          <tr>
+            <td><strong>UI Policy</strong></td>
+            <td>Mandatory/Visible/Read only 제어</td>
+            <td>스크립트 최소화가 목표일 때</td>
+          </tr>
+          <tr>
+            <td><strong>Data Policy</strong></td>
+            <td>UI/Import 전반 데이터 무결성</td>
+            <td>채널 무관 일관 검증 필요 시</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sub-header" style="color:var(--utility)">Update Set 블루프린트</div>
+    <div class="bullet">원칙: Default 대신 Named Update Set 사용</div>
+    <div class="bullet">절차: Retrieve → Preview → Commit</div>
+    <div class="bullet">주의: Complete 처리 후 In-progress로 되돌리지 않기</div>
+    <div class="bullet">한계: 데이터 레코드는 Update Set으로 이동되지 않음 (필요 시 Export XML)</div>
+    <div class="bullet">충돌 방지: 생성 순서대로 커밋</div>
+
+    <div class="tip-box">
+      <div class="tip-title">시험 포인트</div>
+      <div class="tip-item">Update Set에 캡처되지 않는 대상은 데이터 레코드</div>
+      <div class="tip-item">애플리케이션 보호 메커니즘은 Application Scoping</div>
+    </div>
+  </div>
+
+  <div class="section" id="security">
+    <div class="domain-header">
+      <h2 style="color:var(--secure)">8. 인스턴스 보안 운영 (Module 8)</h2>
+      <span class="pct-badge" style="background:var(--secure)">Core</span>
+    </div>
+    <p class="domain-desc">Shared Responsibility Model과 Security Center 활용은 운영 관점 CSA의 핵심 마무리 영역입니다.</p>
+
+    <div class="sub-header" style="color:var(--secure)">Shared Responsibility 핵심</div>
+    <div class="bullet">고객: 접근제어, 역할, 보안설정, 패치 일정, 데이터 보호 운영</div>
+    <div class="bullet">ServiceNow: 인프라 보안, 플랫폼 제공, 규정 준수 기반 운영</div>
+
+    <div class="sub-header" style="color:var(--secure)">암호화·로깅·보안센터</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-secure">
+            <th>영역</th>
+            <th>핵심 포인트</th>
+            <th>지식 점검 축</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Encryption</strong></td>
+            <td>At rest / In transit 모두 고려</td>
+            <td>2가지 암호화 유형 구분</td>
+          </tr>
+          <tr>
+            <td><strong>Security Center</strong></td>
+            <td>Hardening, Scanner, Customer Actions, Metrics</td>
+            <td>Admin / Security Center viewer 접근</td>
+          </tr>
+          <tr>
+            <td><strong>Logging</strong></td>
+            <td>인프라 로그와 고객 앱 로그의 접근 주체가 다름</td>
+            <td>모니터링 책임 주체 구분</td>
+          </tr>
+          <tr>
+            <td><strong>Security Contacts</strong></td>
+            <td>Now Support 연락처 최신화</td>
+            <td>긴급 보안 커뮤니케이션 준비</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-title">시험 포인트</div>
+      <div class="tip-item">Scanner는 보안 설정 비교를 통해 취약 영역을 도출</div>
+      <div class="tip-item">Metrics는 위협 징후(예: 로그인 실패 급증) 모니터링에 활용</div>
+    </div>
+  </div>
+
+  <div class="section" id="checklist">
+    <div class="domain-header">
+      <h2 style="color:var(--accent)">9. 시험 직전 체크리스트</h2>
+    </div>
+    <p class="domain-desc">각 항목을 소리 내어 설명할 수 있으면 모듈 1~8 학습 축이 정리된 상태입니다.</p>
+
+    <div class="check-group">
+      <div class="check-group-title" style="background:rgba(88,166,255,0.15);color:var(--nav)">플랫폼/인스턴스</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Baseline implementation, Instance, Plugin의 관계를 설명할 수 있다.</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Application scoping과 Global scope 차이를 설명할 수 있다.</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Dev/Test/Prod 구분을 UI 브랜딩으로 설정하는 이유를 설명할 수 있다.</div>
+    </div>
+
+    <div class="check-group">
+      <div class="check-group-title" style="background:rgba(6,214,160,0.15);color:var(--configure)">리스트/폼/데이터</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">필터 3요소(Field, Operator, Value)를 정확히 말할 수 있다.</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">List personalization과 전역 레이아웃 변경을 구분할 수 있다.</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Import Set에서 Coalesce가 없는 경우의 문제를 설명할 수 있다.</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">ACL 평가에서 deny 우선 규칙을 예시로 설명할 수 있다.</div>
+    </div>
+
+    <div class="check-group">
+      <div class="check-group-title" style="background:rgba(199,125,255,0.15);color:var(--catalog)">셀프서비스/자동화</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Catalog Item 주문 후 생성되는 Request, RITM, Catalog Task를 구분할 수 있다.</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Flow는 Trigger 1개 + Actions 1개 이상 구조임을 설명할 수 있다.</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Data Pill과 Dot-walking의 데이터 전달 흐름을 말할 수 있다.</div>
+    </div>
+
+    <div class="check-group">
+      <div class="check-group-title" style="background:rgba(249,132,74,0.15);color:var(--secure)">운영/보안</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Update Set 적용 순서(Retrieve, Preview, Commit)를 기억한다.</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">암호화 두 유형(At rest, In transit)을 구분한다.</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Security Center의 Hardening/Scanner/Metrics 역할을 설명할 수 있다.</div>
+    </div>
+
+    <div class="card" style="border-color:var(--accent);margin-top:24px;">
+      <div class="card-title" style="color:var(--accent);font-size:16px;">최종 학습 루프</div>
+      <div class="bullet"><strong>1회독</strong>: 이 페이지에서 개념 맵 정리</div>
+      <div class="bullet"><strong>2회독</strong>: CSA 연습 모드로 지식 점검</div>
+      <div class="bullet"><strong>3회독</strong>: 오답 노트로 약한 영역만 반복</div>
+      <div class="bullet"><strong>시험 전</strong>: 체크리스트 전 항목을 5분 내 구두 설명</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="cheer">✨ 화이팅! 한 번에 합격하자! ✨</div>
+    <p>CSA (System Administrator) 출퇴근 학습 가이드</p>
+    <p style="margin-top:4px;">스크립트 기반 모듈 1~8 요약 + 실습 포인트 + 지식 점검 축 재구성</p>
+  </div>
+
+  <script>
+    function syncProgressBarOffset() {
+      const header = document.querySelector('.top-home-bar');
+      const bar = document.querySelector('.progress-bar');
+      if (!header || !bar) return;
+      bar.style.top = `${header.offsetHeight}px`;
+    }
+
+    syncProgressBarOffset();
+    window.addEventListener('load', syncProgressBarOffset);
+    window.addEventListener('resize', syncProgressBarOffset);
+
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+      document.getElementById('progressFill').style.width = pct + '%';
+    });
+
+    function closeToc() {
+      setTimeout(() => document.getElementById('tocDrawer').classList.remove('open'), 200);
+    }
+
+    document.addEventListener('click', (e) => {
+      const drawer = document.getElementById('tocDrawer');
+      const btn = document.getElementById('tocBtn');
+      if (!drawer.contains(e.target) && !btn.contains(e.target)) {
+        drawer.classList.remove('open');
+      }
+    });
+  </script>
+</body>
+
+</html>

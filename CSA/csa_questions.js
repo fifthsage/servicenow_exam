@@ -3169,7 +3169,7 @@ window.CSA_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "XML. CSV, and Excel"
+        "text": "XML, CSV, and Excel"
       },
       {
         "letter": "C",
@@ -3510,7 +3510,7 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 132,
-    "title": "What Is the purpose of the Fitter navigator In the Application Navigator?",
+    "title": "What is the purpose of the Filter navigator in the Application Navigator?",
     "options": [
       {
         "letter": "A",
@@ -3651,13 +3651,13 @@ window.CSA_QUESTIONS = [
       }
     ],
     "answer": [
-      "A"
+      "B"
     ],
-    "explanation": "정답은 **A**입니다. 데이터베이스에서 컬럼은 필드를 의미하고 레코드는 한 행을 의미합니다."
+    "explanation": "정답은 **B**입니다. 데이터베이스에서 컬럼은 필드를 의미하고 레코드는 한 행을 의미합니다."
   },
   {
     "id": 137,
-    "title": "Which plugin allows users to install multiple applications, application-customizations. or plugins at once?",
+    "title": "Which plugin allows users to install multiple applications, application customizations, or plugins at once?",
     "options": [
       {
         "letter": "A",
@@ -3904,7 +3904,7 @@ window.CSA_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "When an incident form is saved, the impact field is calculated by adding the Prion:, and Urgency values"
+        "text": "When an incident form is saved, the impact field is calculated by adding the Priority and Urgency values"
       },
       {
         "letter": "D",
@@ -4678,7 +4678,7 @@ window.CSA_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "UI RuIe"
+        "text": "UI Rule"
       },
       {
         "letter": "E",
@@ -5103,27 +5103,27 @@ window.CSA_QUESTIONS = [
       "A",
       "E"
     ],
-    "explanation": "정답은 **A,E,G**입니다. 관리자 관점에서 자주 쓰는 보안 모듈은 보안 관련 시스템 속성, ACL 설정, High Security Settings입니다. 다른 보기는 표준 보안 관리 모듈명으로 보기 어렵습니다."
+    "explanation": "정답은 **A,E**입니다. 관리자 관점에서 자주 쓰는 보안 모듈은 보안 관련 시스템 속성 및 ACL 설정입니다. 다른 보기는 표준 보안 관리 모듈명으로 보기 어렵습니다."
   },
   {
     "id": 188,
-    "title": "What is the difference between a Ul Policy and Data Policy?",
+    "title": "What is the difference between a UI Policy and Data Policy?",
     "options": [
       {
         "letter": "A",
-        "text": "Data Policies run only after Ul Policies run successfully"
+        "text": "Data Policies run only after UI Policies run successfully"
       },
       {
         "letter": "B",
-        "text": "Data Policies run regardless of how data is entered Into ServiceNow, while Ul Policies are used for form"
+        "text": "Data Policies run regardless of how data is entered into ServiceNow, while UI Policies are used for form UI"
       },
       {
         "letter": "C",
-        "text": "Data Policies can be converted into Ul Policies, but Ul Policies can not be converted into Data Policies"
+        "text": "Data Policies can be converted into UI Policies, but UI Policies cannot be converted into Data Policies"
       },
       {
         "letter": "D",
-        "text": "Data Policies run when data is entered through the form, by an Import Set or by web services, while Ul"
+        "text": "Data Policies run when data is entered through the form, by an Import Set, or by web services, while UI Policies run only on the form UI"
       }
     ],
     "answer": [
@@ -5269,9 +5269,9 @@ window.CSA_QUESTIONS = [
       }
     ],
     "answer": [
-      "B"
+      "D"
     ],
-    "explanation": "정답은 **B**로 유지했습니다. 다만 일반적으로는 사용자 가시 모듈 확인에 `Impersonate`가 더 자연스럽기 때문에, 현재 복원된 보기와 정답 조합은 신뢰도가 높지 않습니다. 현 문서에서는 source answer token을 따라 유지합니다."
+    "explanation": "정답은 **D**입니다. 사용자의 Application Navigator에 표시되는 모듈을 확인하려면 해당 사용자로 Impersonate하는 것이 가장 정확한 방법입니다."
   },
   {
     "id": 194,
@@ -5335,7 +5335,7 @@ window.CSA_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "Data Policies run when data is entered through the form, by an Import Set, or by web services, while UI"
+        "text": "Data Policies run when data is entered through the form, by an Import Set, or by web services, while UI Policies run only on the form UI"
       },
       {
         "letter": "B",
@@ -5343,7 +5343,7 @@ window.CSA_QUESTIONS = [
       },
       {
         "letter": "C",
-        "text": "Data Policies run regardless of how data is entered into ServiceNow, while UI Policies are used for form"
+        "text": "Data Policies run regardless of how data is entered into ServiceNow, while UI Policies are used for form UI"
       },
       {
         "letter": "D",
@@ -5493,11 +5493,11 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 202,
-    "title": "Which module would you use to customize your instances banner image, text and colors? A Homepage Admin > Pages > Branding",
+    "title": "Which module would you use to customize your instance's banner image, text, and colors?",
     "options": [
       {
         "letter": "A",
-        "text": "System Ul > Ul Pages > Branding"
+        "text": "System UI > UI Pages > Branding"
       },
       {
         "letter": "B",
@@ -5519,7 +5519,7 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 203,
-    "title": "What feature allows, you to limit who is able to contribute or read knowledge within a knowledge base?",
+    "title": "What feature allows you to limit who is able to contribute or read knowledge within a knowledge base?",
     "options": [
       {
         "letter": "A",
@@ -5545,7 +5545,7 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 204,
-    "title": "An order for new office equipment has Men placed through the Service Catalog. How would you view the lists of requests after the orders have Men placed?",
+    "title": "An order for new office equipment has been placed through the Service Catalog. How would you view the list of requests after the orders have been placed?",
     "options": [
       {
         "letter": "A",
@@ -5553,11 +5553,11 @@ window.CSA_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "In the Navigation Filter, type 'requests. Let' and press the Enter key."
+        "text": "In the Navigation Filter, type 'requests' and press the Enter key."
       },
       {
         "letter": "C",
-        "text": "All > Tables and Columns > Taste"
+        "text": "All > Tables and Columns > Table"
       },
       {
         "letter": "D",
@@ -5791,7 +5791,7 @@ window.CSA_QUESTIONS = [
     "options": [
       {
         "letter": "A",
-        "text": "On the Iist, locate and right click on the value Hardware, select Show Matching"
+        "text": "On the list, locate and right click on the value Hardware, select Show Matching"
       },
       {
         "letter": "B",
@@ -6260,7 +6260,7 @@ window.CSA_QUESTIONS = [
       },
       {
         "letter": "D",
-        "text": "Ul Policies and Client Scripts"
+        "text": "UI Policies and Client Scripts"
       }
     ],
     "answer": [
@@ -6773,7 +6773,7 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 248,
-    "title": "What are examples of Ul Actions, relating to Lists? Choose 4 answers",
+    "title": "What are examples of UI Actions relating to Lists? Choose 4 answers",
     "options": [
       {
         "letter": "A",
@@ -7783,23 +7783,23 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 282,
-    "title": "You are editing a new incident record and would like the Save\" Dutton to be located on the Form header. Which action would need to be taken for that button to appear?",
+    "title": "You are editing a new incident record and would like the Save button to be located on the Form header. Which action would need to be taken for that button to appear?",
     "options": [
       {
         "letter": "A",
-        "text": "All > System Properties > Ul Properties > Turn on the glide.ui.advanced* property"
+        "text": "All > System Properties > UI Properties > Turn on the glide.ui.advanced* property"
       },
       {
         "letter": "B",
-        "text": "Context Menu > Form Design > add the Save'' button"
+        "text": "Context Menu > Form Design > add the Save button"
       },
       {
         "letter": "C",
-        "text": "All > System Properties > Ul Properties > Turn on the Save\" button"
+        "text": "All > System Properties > UI Properties > Turn on the Save button"
       },
       {
         "letter": "D",
-        "text": "Context Menu > Form Layout > add the Save* button."
+        "text": "Context Menu > Form Layout > add the Save button"
       }
     ],
     "answer": [
@@ -8636,7 +8636,7 @@ window.CSA_QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Ul Policy"
+        "text": "UI Policy"
       },
       {
         "letter": "C",

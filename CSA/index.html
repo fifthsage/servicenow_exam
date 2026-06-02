@@ -20,8 +20,9 @@
   <div class="container">
     <header>
       <h1 class="title">CSA 통합 학습 허브</h1>
-      <p class="subtitle">CIS-DF와 동일한 구조/디자인의 연습·실전 퀴즈 페이지입니다.</p>
+      <p class="subtitle">CIS-DF와 동일한 구조/디자인으로 스터디 가이드, 연습·실전 퀴즈, 오답 노트를 제공합니다.</p>
       <div class="kpi">
+        <span>Study Guide</span>
         <span>Practice: Random 10</span>
         <span>Mock Exam: Random 75 / 90m</span>
         <span>Question Pool: 437</span>
@@ -30,20 +31,65 @@
 
     <section class="grid grid-2">
       <article class="card">
+        <span class="badge guide">Study Guide</span>
+        <h2>CSA 스터디 가이드</h2>
+        <p>모듈 1-8 스크립트를 기준으로 핵심 개념, 실습 포인트, 지식 점검 축을 구조화한 스터디 가이드입니다.</p>
+        <a class="btn guide" href="CSA_Study_Guide.html">가이드 열기</a>
+      </article>
+
+      <article class="card">
         <span class="badge practice">Practice</span>
         <h2>연습 문제 풀기</h2>
         <p>랜덤 10문항 출제. 모든 문항 응답 후 채점되며, 오답 또는 버튼으로 해설을 확인할 수 있습니다.</p>
-        <a class="btn practice" href="CSA_Integrated_Quiz.html?mode=practice">연습 시작</a>
+        <a class="btn practice" href="CSA_Integrated_Quiz.html?mode=practice">연습 풀기</a>
       </article>
 
       <article class="card">
         <span class="badge exam">Mock Exam</span>
         <h2>실전 문제 풀기</h2>
         <p>랜덤 75문항 / 90분 제한. 전체 완료 또는 시간 종료 시 채점됩니다.</p>
-        <a class="btn exam" href="CSA_Integrated_Quiz.html?mode=exam">실전 시작</a>
+        <a class="btn exam" href="CSA_Integrated_Quiz.html?mode=exam">실전 풀기</a>
+      </article>
+
+      <article class="card">
+        <span class="badge wrong">Wrong Note</span>
+        <h2>오답 노트 풀기</h2>
+        <p>저장된 오답만 다시 풉니다. 오답 모드가 비어 있으면 시작 화면에서 상태를 확인할 수 있습니다.</p>
+        <a class="btn wrong" href="CSA_Integrated_Quiz.html?mode=wrong" onclick="return startWrongNoteCsa(event)">오답 노트 풀기</a>
       </article>
     </section>
+
+    <p class="meta">권장 순서: 스터디 가이드 → 연습 모드 반복 → 실전 모드 → 오답 노트 재학습.</p>
   </div>
+
+  <script>
+    function startWrongNoteCsa(event) {
+      event.preventDefault();
+
+      var wrongKey = 'sn_quiz_wrong_csa';
+      var raw = window.localStorage.getItem(wrongKey);
+      var list = [];
+
+      if (raw) {
+        try {
+          var parsed = JSON.parse(raw);
+          if (Array.isArray(parsed)) {
+            list = parsed;
+          }
+        } catch (e) {
+          list = [];
+        }
+      }
+
+      if (list.length === 0) {
+        window.alert('저장된 오답이 없습니다.');
+        return false;
+      }
+
+      window.location.href = 'CSA_Integrated_Quiz.html?mode=wrong';
+      return false;
+    }
+  </script>
 </body>
 
 </html>

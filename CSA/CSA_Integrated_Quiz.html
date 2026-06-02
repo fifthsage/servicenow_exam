@@ -26,6 +26,15 @@
         <h1>CSA 통합 퀴즈</h1>
       </div>
 
+      <div id="invalid-screen" class="invalid-wrap">
+        <h2>잘못된 접근입니다</h2>
+        <p>유효한 모드 파라미터가 필요합니다.<br>예: ?mode=practice, ?mode=exam, ?mode=wrong</p>
+        <div class="actions result-actions">
+          <button class="btn primary" onclick="location.href='index.html'">CSA 홈으로 이동</button>
+          <button class="btn" onclick="location.href='../index.html'">메인 홈</button>
+        </div>
+      </div>
+
       <div id="start-screen">
         <p class="start-note">문제 풀에서 랜덤 출제합니다. 채점은 전체 완료 시 진행됩니다.</p>
         <div class="mode-grid">
@@ -39,8 +48,17 @@
             <p>랜덤 75문항. 90분 제한. 전부 응답 또는 시간 종료 시 채점.</p>
             <button onclick="startSession('exam')">실전 시작</button>
           </div>
+          <div class="mode wrong">
+            <h2>오답 모드</h2>
+            <p>저장된 오답만 다시 풉니다. 오답이 있을 때만 시작할 수 있습니다.</p>
+            <button id="wrong-mode-btn" onclick="startSession('wrong')" disabled>오답 없음</button>
+          </div>
         </div>
         <p id="pool-info" class="pool-info"></p>
+        <p id="wrong-info" class="pool-info">저장된 오답 0문항</p>
+        <div class="actions start-actions">
+          <button class="btn" id="wrong-reset-btn" onclick="clearWrongQuestions()" disabled>오답 초기화</button>
+        </div>
       </div>
 
       <div id="quiz-screen">
@@ -85,9 +103,11 @@
           <div id="review-list"></div>
         </div>
         <div class="actions result-actions">
-          <button class="btn primary" onclick="location.href='index.html'">CSA 홈으로 돌아가기</button>
-          <button class="btn" onclick="location.href='../index.html'">홈</button>
-          <button class="btn" onclick="location.reload()">다시 시작</button>
+          <div class="result-home-group">
+            <button class="btn" onclick="location.href='../index.html'">홈</button>
+            <button class="btn primary" onclick="location.href='index.html'">CSA 홈</button>
+          </div>
+          <button class="btn" onclick="restartCurrentMode()">다시 시작</button>
         </div>
       </div>
     </div>
@@ -98,7 +118,9 @@
   <script>
     window.initIntegratedQuiz({
       questions: window.CSA_QUESTIONS,
-      questionPrefix: 'Q'
+      questionPrefix: 'Q',
+      wrongStorageKey: 'sn_quiz_wrong_csa',
+      wrongModeFlagKey: 'sn_quiz_mode_wrong_csa'
     });
   </script>
 </body>

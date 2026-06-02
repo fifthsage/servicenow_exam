@@ -37,29 +37,65 @@
       </article>
 
       <article class="card">
+        <span class="badge final">Final Review</span>
+        <h2>시험 전 최종 정리</h2>
+        <p>기존 시험전/마지막 파일을 통합한 압축 요약본입니다. 시험 직전 마지막 점검에 사용하세요.</p>
+        <a class="btn final" href="CIS-DF_PreExam_Final_Review.html">최종 정리 보기</a>
+      </article>
+
+      <article class="card">
         <span class="badge practice">Practice</span>
         <h2>연습 문제 풀기</h2>
         <p>문제 풀에서 랜덤 10문항을 출제합니다. 모든 문제 응답 후 한 번에 채점됩니다.</p>
-        <a class="btn practice" href="CIS-DF_Integrated_Quiz.html?mode=practice">연습 시작</a>
+        <a class="btn practice" href="CIS-DF_Integrated_Quiz.html?mode=practice">연습 풀기</a>
       </article>
 
       <article class="card">
         <span class="badge exam">Mock Exam</span>
         <h2>실전 문제 풀기</h2>
         <p>랜덤 75문항, 제한 시간 90분으로 구성된 모드입니다. 종료 시 전체 점수를 확인합니다.</p>
-        <a class="btn exam" href="CIS-DF_Integrated_Quiz.html?mode=exam">실전 시작</a>
+        <a class="btn exam" href="CIS-DF_Integrated_Quiz.html?mode=exam">실전 풀기</a>
       </article>
 
       <article class="card">
-        <span class="badge final">Final Review</span>
-        <h2>시험 전 최종 정리</h2>
-        <p>기존 시험전/마지막 파일을 통합한 압축 요약본입니다. 시험 직전 마지막 점검에 사용하세요.</p>
-        <a class="btn final" href="CIS-DF_PreExam_Final_Review.html">최종 정리 보기</a>
+        <span class="badge wrong">Wrong Note</span>
+        <h2>오답 노트 풀기</h2>
+        <p>기존 풀이에서 저장된 오답만 재학습하는 모드입니다. 연습/실전 이후 바로 반복 점검할 수 있습니다.</p>
+        <a class="btn wrong" href="CIS-DF_Integrated_Quiz.html?mode=wrong" onclick="return startWrongNoteCisdf(event)">오답 노트 풀기</a>
       </article>
     </section>
 
     <p class="meta">권장 순서: 스터디 가이드 → 연습 모드 반복 → 실전 1~2회 → 최종 정리.</p>
   </div>
+
+  <script>
+    function startWrongNoteCisdf(event) {
+      event.preventDefault();
+
+      var wrongKey = 'sn_quiz_wrong_cisdf';
+      var raw = window.localStorage.getItem(wrongKey);
+      var list = [];
+
+      if (raw) {
+        try {
+          var parsed = JSON.parse(raw);
+          if (Array.isArray(parsed)) {
+            list = parsed;
+          }
+        } catch (e) {
+          list = [];
+        }
+      }
+
+      if (list.length === 0) {
+        window.alert('저장된 오답이 없습니다.');
+        return false;
+      }
+
+      window.location.href = 'CIS-DF_Integrated_Quiz.html?mode=wrong';
+      return false;
+    }
+  </script>
 </body>
 
 </html>
