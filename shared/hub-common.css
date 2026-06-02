@@ -26,6 +26,11 @@ body {
 }
 
 .top-home-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   border-bottom: 1px solid var(--border);
   background: rgba(13, 17, 23, 0.92);
   backdrop-filter: blur(10px);
@@ -62,6 +67,10 @@ body {
   max-width: 980px;
   margin: 0 auto;
   padding: 32px 16px 56px;
+}
+
+.top-home-bar + .container {
+  padding-top: 80px;
 }
 
 header {
@@ -220,6 +229,10 @@ a.btn.final {
 @media (max-width: 640px) {
   .container {
     padding: 20px 12px 36px;
+  }
+
+  .top-home-bar + .container {
+    padding-top: 68px;
   }
 
   .top-home-inner {

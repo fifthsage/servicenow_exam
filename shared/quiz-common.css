@@ -23,6 +23,11 @@ body {
 }
 
 .top-home-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   border-bottom: 1px solid var(--border);
   background: rgba(13, 17, 23, 0.92);
   backdrop-filter: blur(10px);
@@ -53,40 +58,44 @@ body {
   border-radius: 10px;
   background: rgba(88, 166, 255, 0.16);
   padding: 6px 10px;
+}
 
-  .start-note {
-    margin: 0;
-    color: var(--text-dim);
-    font-size: 14px;
-  }
+.start-note {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: 14px;
+}
 
-  .pool-info {
-    margin: 2px 0 0;
-    color: var(--text-dim);
-    font-size: 12px;
-  }
+.pool-info {
+  margin: 2px 0 0;
+  color: var(--text-dim);
+  font-size: 12px;
 }
 
 .wrap {
   max-width: 940px;
   margin: 0 auto;
-
-  #submit-btn {
-    display: none;
-  }
   padding: 18px 14px 52px;
+}
+
+.top-home-bar + .wrap {
+  padding-top: 66px;
+}
+
+#submit-btn {
+  display: none;
 }
 
 .panel {
   border: 1px solid var(--border);
   border-radius: 14px;
   background: var(--surface);
-
-  .actions.result-actions {
-    justify-content: center;
-    margin-top: 16px;
-  }
   padding: 16px;
+}
+
+.actions.result-actions {
+  justify-content: center;
+  margin-top: 16px;
 }
 
 .top {
@@ -377,5 +386,9 @@ body {
 
   .top-home-inner {
     padding: 10px 12px;
+  }
+
+  .top-home-bar + .wrap {
+    padding-top: 62px;
   }
 }
