@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSA 시험 응시 방법</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../shared/hub-common.css">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-dim: #8b949e;
+      --blue: #58a6ff;
+      --green: #06d6a0;
+      --orange: #ff9f43;
+      --red: #ff6b6b;
+      --purple: #c77dff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', -apple-system, sans-serif;
+      background: radial-gradient(ellipse at 15% 20%, rgba(88, 166, 255, 0.12), transparent 40%),
+        radial-gradient(ellipse at 85% 70%, rgba(199, 125, 255, 0.1), transparent 45%), var(--bg);
+      color: var(--text);
+      padding-top: 48px;
+    }
+
+    .top-home-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 24px 14px 60px;
+    }
+
+    .top-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      background: linear-gradient(145deg, rgba(28, 35, 51, 0.8), rgba(22, 27, 34, 0.9));
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(24px, 5vw, 34px);
+    }
+
+    .sub {
+      margin-top: 8px;
+      color: var(--text-dim);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .kpis {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .kpis span {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #b9c6d3;
+    }
+
+    .section {
+      margin-top: 14px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface);
+      padding: 16px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--blue);
+      display: inline-block;
+    }
+
+    .dot.green {
+      background: var(--green);
+    }
+
+    .dot.orange {
+      background: var(--orange);
+    }
+
+    .dot.purple {
+      background: var(--purple);
+    }
+
+    .dot.red {
+      background: var(--red);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 7px 0;
+      line-height: 1.55;
+      font-size: 14px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .step {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.02);
+      padding: 10px 12px;
+    }
+
+    .step strong {
+      color: var(--blue);
+      display: inline-block;
+      margin-right: 6px;
+    }
+
+    .step a {
+      color: #cfe4ff;
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(207, 228, 255, 0.45);
+    }
+
+    .info-box {
+      margin-top: 10px;
+      border-left: 4px solid var(--orange);
+      background: rgba(255, 159, 67, 0.12);
+      border-radius: 0 10px 10px 0;
+      padding: 10px 12px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #ffe4c2;
+    }
+
+    .warn-box {
+      margin-top: 10px;
+      border-left: 4px solid var(--red);
+      background: rgba(255, 107, 107, 0.14);
+      border-radius: 0 10px 10px 0;
+      padding: 10px 12px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #ffd7d7;
+    }
+
+    .check {
+      padding-left: 26px;
+      position: relative;
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .check::before {
+      content: '☐';
+      position: absolute;
+      left: 2px;
+      color: var(--text-dim);
+    }
+
+    .link-list a {
+      color: #cfe4ff;
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(207, 228, 255, 0.45);
+    }
+
+    .footer {
+      margin-top: 18px;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 12px;
+      border-top: 1px solid var(--border);
+      padding-top: 14px;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-home-bar">
+    <div class="top-home-inner">
+      <div class="top-home-links">
+        <a href="../index.html">홈</a>
+        <a href="index.html">CSA 홈</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="top-card">
+      <h1>CSA 시험 응시 방법</h1>
+      <p class="sub">ServiceNow University 경로를 기준으로, CSA 응시 전제 조건 확인부터 바우처 적용/시험 예약까지 한 번에 진행할 수 있도록 정리한 실무형 가이드입니다.</p>
+      <div class="kpis">
+        <span>Exam: CSA Mainline</span>
+        <span>Blueprint: KB0011554</span>
+        <span>Policy: Always Verify</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2><span class="dot"></span>1) 응시 전제 조건 정리</h2>
+      <ul>
+        <li><strong>공식 권장 경험(확인됨):</strong> 데이터베이스 개념/시스템 관리 경험, 관리 모듈 접근 권한, IT Help Desk 프로세스 이해, 실무 경험 약 3~6개월.</li>
+        <li><strong>핵심 역량:</strong> 플랫폼 탐색, 애플리케이션 구성, 데이터 관리, 셀프서비스/자동화, 기본 커스터마이징.</li>
+        <li><strong>권장 학습 경로:</strong> ServiceNow University의 Administrator 관련 Learning Path/On-Demand를 먼저 완료하고 응시.</li>
+      </ul>
+      <div class="info-box">권장 사항은 "필수 사전 자격"과 다를 수 있습니다. 실제 응시 가능 여부는 계정/프로그램(고객·파트너·직원) 정책을 최종 확인하세요.</div>
+    </section>
+
+    <section class="section">
+      <h2><span class="dot green"></span>2) 바우처 준비 (중요)</h2>
+      <ul>
+        <li>바우처는 개인/조직/프로모션 조건에 따라 제공 방식이 다릅니다.</li>
+        <li>학습 경로 완료 후 발급되는 경우, 이메일/Now Learning 알림에서 코드 수신 여부를 확인합니다.</li>
+        <li>조직 구매형(학습 크레딧/교육 패키지)일 경우, 내부 교육 담당자에게 코드 발급 채널을 확인합니다.</li>
+      </ul>
+      <div class="warn-box">바우처 정책은 수시로 변경될 수 있습니다. 만료일, 재사용 가능 여부, 환불/취소 조건을 시험 예약 전에 반드시 확인하세요.</div>
+    </section>
+
+    <section class="section">
+      <h2><span class="dot orange"></span>3) 시험 예약 절차 (실행 순서)</h2>
+      <div class="timeline">
+        <div class="step"><strong>Step 1</strong> ServiceNow University 로그인 후 <a href="https://learning.servicenow.com/lxp/en/now-platform/certified-system-administrator-csa?id=learning_content_prev&course_id=bc49278a47f8b21019dfe23c326d4390" target="_blank" rel="noopener noreferrer">CSA Learning Content</a>, <a href="https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&achievement_id=0e97835c47ea2e10c00af235126d431b&s=1&ssa=3" target="_blank" rel="noopener noreferrer">Get Certified</a>, <a href="https://learning.servicenow.com/lxp/en/credentials/certified-system-administrator-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011554" target="_blank" rel="noopener noreferrer">CSA Blueprint</a>에서 최신 정책(시험 옵션, 언어, 가격)을 확인.</div>
+        <div class="step"><strong>Step 2</strong> <a href="https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&achievement_id=0e97835c47ea2e10c00af235126d431b&s=1&ssa=3" target="_blank" rel="noopener noreferrer">Get Certified 페이지</a>의 Schedule Exam 경로로 진입해 시험 전달 파트너(예: Webassessor/Kryterion 계열) 계정을 연동 또는 신규 생성.</div>
+        <div class="step"><strong>Step 3</strong> 시험 유형(온라인 감독형/테스트센터)을 선택하고 가능 시간대를 조회.</div>
+        <div class="step"><strong>Step 4</strong> 결제 단계에서 바우처 코드가 있으면 먼저 적용하고 최종 금액 확인.</div>
+        <div class="step"><strong>Step 5</strong> 예약 완료 메일 수신 후, 응시 규정(신분증, 시스템 체크, 접속 시간)을 캘린더에 등록.</div>
+        <div class="step"><strong>Step 6</strong> 시험 24~48시간 전 시스템 사전 점검(웹캠/마이크/네트워크/브라우저 요구사항) 수행. 정책 확인이 필요하면 <a href="https://www.servicenow.com/services/training-and-certification.html" target="_blank" rel="noopener noreferrer">Training &amp; Certification</a> 페이지를 재확인.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2><span class="dot purple"></span>4) 시험 전 체크리스트</h2>
+      <div class="check">Now Learning 계정 이름과 신분증 이름 표기가 일치한다.</div>
+      <div class="check">바우처 코드 만료일과 적용 범위를 확인했다.</div>
+      <div class="check">온라인 감독 시험 환경(카메라, 방 환경, 신분증)을 사전 점검했다.</div>
+      <div class="check">시험 취소/변경 가능 시점(마감 시간)을 확인했다.</div>
+      <div class="check">CSA 핵심 영역(리스트/폼/ACL/카탈로그/플로우/업데이트 세트)을 최소 1회 복습했다.</div>
+    </section>
+
+    <section class="section link-list">
+      <h2><span class="dot red"></span>5) 공식 확인 링크</h2>
+      <ul>
+        <li><a href="https://learning.servicenow.com/lxp/en/now-platform/certified-system-administrator-csa?id=learning_content_prev&course_id=bc49278a47f8b21019dfe23c326d4390" target="_blank" rel="noopener noreferrer">ServiceNow University - Certified System Administrator (CSA) Learning Content</a></li>
+        <li><a href="https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&achievement_id=0e97835c47ea2e10c00af235126d431b&s=1&ssa=3" target="_blank" rel="noopener noreferrer">Now Learning - Get Certified (CSA Achievement)</a></li>
+        <li><a href="https://learning.servicenow.com/lxp/en/credentials/certified-system-administrator-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011554" target="_blank" rel="noopener noreferrer">CSA Mainline Exam Blueprint (KB0011554)</a></li>
+        <li><a href="https://learning.servicenow.com/now/lxp/home" target="_blank" rel="noopener noreferrer">ServiceNow University Home</a></li>
+        <li><a href="https://www.servicenow.com/services/training-and-certification.html" target="_blank" rel="noopener noreferrer">ServiceNow Training & Certification</a></li>
+      </ul>
+      <div class="info-box">정책/요금/바우처 조건은 지역/프로그램별로 달라질 수 있으므로, 예약 직전 링크에서 재확인하는 것을 권장합니다.</div>
+    </section>
+
+    <div class="footer">
+      <div>CSA 응시 준비 가이드</div>
+      <div>학습 완료 → 바우처/정책 확인 → 시험 예약 → 사전 환경 점검</div>
+    </div>
+  </div>
+</body>
+
+</html>
