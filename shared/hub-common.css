@@ -1,0 +1,225 @@
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --surface2: #1c2333;
+  --border: #30363d;
+  --text: #e6edf3;
+  --text-dim: #8b949e;
+  --blue: #58a6ff;
+  --green: #06d6a0;
+  --yellow: #ffd166;
+  --purple: #c77dff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', -apple-system, sans-serif;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at 20% 20%, rgba(255, 107, 107, 0.1), transparent 45%),
+    radial-gradient(ellipse at 80% 70%, rgba(88, 166, 255, 0.1), transparent 45%),
+    var(--bg);
+  color: var(--text);
+}
+
+.top-home-bar {
+  border-bottom: 1px solid var(--border);
+  background: rgba(13, 17, 23, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.top-home-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 10px 16px;
+}
+
+.top-home-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid rgba(88, 166, 255, 0.45);
+  border-radius: 10px;
+  padding: 7px 11px;
+  color: #ddebff;
+  background: rgba(88, 166, 255, 0.16);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 16px 56px;
+}
+
+header {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px 24px;
+  background: linear-gradient(145deg, rgba(28, 35, 51, 0.8), rgba(22, 27, 34, 0.85));
+  margin-bottom: 22px;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(26px, 5vw, 40px);
+  font-weight: 900;
+  line-height: 1.15;
+  background: linear-gradient(135deg, #fff, #c7d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  color: var(--text-dim);
+  font-size: 14px;
+}
+
+.kpi {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.kpi span {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #b9c6d3;
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+}
+
+.grid.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.grid.grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 180px;
+}
+
+.badge {
+  display: inline-flex;
+  width: fit-content;
+  border-radius: 99px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge.csa,
+.badge.practice {
+  background: rgba(6, 214, 160, 0.16);
+  color: var(--green);
+}
+
+.badge.cisdf,
+.badge.exam {
+  background: rgba(255, 209, 102, 0.14);
+  color: var(--yellow);
+}
+
+.badge.guide {
+  background: rgba(199, 125, 255, 0.14);
+  color: var(--purple);
+}
+
+.badge.final {
+  background: rgba(88, 166, 255, 0.14);
+  color: var(--blue);
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: 13px;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+a.btn {
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 700;
+  font-size: 13px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+a.btn.csa,
+a.btn.practice {
+  color: #dcfff5;
+  background: rgba(6, 214, 160, 0.2);
+  border-color: rgba(6, 214, 160, 0.4);
+}
+
+a.btn.cisdf,
+a.btn.exam {
+  color: #fff7de;
+  background: rgba(255, 209, 102, 0.2);
+  border-color: rgba(255, 209, 102, 0.4);
+}
+
+a.btn.guide {
+  color: #f1e8ff;
+  background: rgba(199, 125, 255, 0.2);
+  border-color: rgba(199, 125, 255, 0.4);
+}
+
+a.btn.final {
+  color: #ddebff;
+  background: rgba(88, 166, 255, 0.2);
+  border-color: rgba(88, 166, 255, 0.45);
+}
+
+.meta {
+  margin-top: 18px;
+  font-size: 12px;
+  color: var(--text-dim);
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 20px 12px 36px;
+  }
+
+  .top-home-inner {
+    padding: 10px 12px;
+  }
+
+  header {
+    padding: 20px 16px;
+  }
+}

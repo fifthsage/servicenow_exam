@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIS-DF 출퇴근 학습 가이드</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --surface2: #1c2333;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-dim: #8b949e;
+      --accent: #ff6b6b;
+      --gov: #ff6b6b;
+      --ing: #4cc9f0;
+      --ins: #06d6a0;
+      --cfg: #ffd166;
+      --csdm: #c77dff;
+      --blue: #58a6ff;
+      --tip-bg: #1a1f2e;
+      --tip-border: #f0a030;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(13, 17, 23, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-title {
+      font-weight: 700;
+      font-size: 14px;
+      background: linear-gradient(135deg, var(--accent), var(--csdm));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-links {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--blue);
+      font-size: 12px;
+      border: 1px solid rgba(88, 166, 255, 0.35);
+      border-radius: 8px;
+      padding: 4px 8px;
+      background: rgba(88, 166, 255, 0.1);
+      white-space: nowrap;
+    }
+
+    .nav-badge {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 10px;
+      background: var(--surface2);
+      color: var(--text-dim);
+    }
+
+    /* ── TOC DRAWER ── */
+    .toc-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 200;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--csdm));
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .toc-drawer {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      z-index: 199;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      max-height: 60vh;
+      overflow-y: auto;
+      display: none;
+      width: min(320px, calc(100vw - 40px));
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    .toc-drawer.open {
+      display: block;
+    }
+
+    .toc-drawer a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 8px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 13px;
+      transition: background 0.2s;
+    }
+
+    .toc-drawer a:hover {
+      background: var(--surface2);
+    }
+
+    .toc-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .toc-pct {
+      margin-left: auto;
+      font-size: 11px;
+      color: var(--text-dim);
+      font-weight: 500;
+    }
+
+    /* ── COVER ── */
+    .cover {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 30%, rgba(255, 107, 107, 0.08), transparent 60%),
+        radial-gradient(ellipse at 80% 80%, rgba(199, 125, 255, 0.06), transparent 50%),
+        var(--bg);
+    }
+
+    .cover h1 {
+      font-size: clamp(32px, 7vw, 52px);
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #fff, #ccc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .cover .sub {
+      font-size: clamp(16px, 3.5vw, 22px);
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+
+    .cover .desc {
+      font-size: 14px;
+      color: var(--text-dim);
+      max-width: 400px;
+      margin-bottom: 32px;
+    }
+
+    .exam-stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .stat {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 18px;
+      text-align: center;
+      min-width: 90px;
+    }
+
+    .stat-num {
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: var(--text-dim);
+      margin-top: 2px;
+    }
+
+    .domain-bars {
+      width: min(400px, 100%);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .dbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+    }
+
+    .dbar-fill {
+      height: 6px;
+      border-radius: 3px;
+      transition: width 0.8s ease;
+    }
+
+    .dbar-name {
+      width: 80px;
+      text-align: right;
+      color: var(--text-dim);
+    }
+
+    .dbar-pct {
+      width: 32px;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    /* ── SECTIONS ── */
+    .section {
+      padding: 24px 16px;
+      max-width: 720px;
+      margin: 0 auto;
+      border-top: 1px solid var(--border);
+    }
+
+    .section:first-of-type {
+      margin-top: 48px;
+    }
+
+    .domain-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .domain-header h2 {
+      font-size: clamp(20px, 5vw, 28px);
+      font-weight: 900;
+    }
+
+    .pct-badge {
+      font-size: 13px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      color: var(--bg);
+    }
+
+    .domain-desc {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    /* ── SUB SECTIONS ── */
+    .sub-header {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 24px 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .sub-header::before {
+      content: '▸';
+      font-size: 14px;
+      opacity: 0.5;
+    }
+
+    /* ── CARDS ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+
+    .card-title {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ── BULLETS ── */
+    .bullet {
+      padding: 4px 0 4px 16px;
+      position: relative;
+      font-size: 14px;
+    }
+
+    .bullet::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--text-dim);
+    }
+
+    .bullet.sub {
+      padding-left: 32px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    .bullet.sub::before {
+      left: 16px;
+      content: '◦';
+    }
+
+    .bullet strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .key-point {
+      padding: 6px 0 6px 20px;
+      position: relative;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .key-point::before {
+      content: '★';
+      position: absolute;
+      left: 0;
+      font-size: 11px;
+      color: var(--accent);
+    }
+
+    .key-point .term {
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .key-point .sep {
+      color: var(--text-dim);
+      margin: 0 4px;
+    }
+
+    /* ── TABLES ── */
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 12px 0;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      min-width: 420px;
+    }
+
+    thead th {
+      padding: 10px 12px;
+      font-weight: 700;
+      font-size: 12px;
+      text-align: left;
+      color: white;
+      white-space: nowrap;
+    }
+
+    tbody td {
+      padding: 10px 12px;
+      border-top: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    tbody tr:nth-child(even) {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    td strong {
+      color: var(--blue);
+    }
+
+    /* ── TIP BOX ── */
+    .tip-box {
+      background: var(--tip-bg);
+      border-left: 3px solid var(--tip-border);
+      border-radius: 0 10px 10px 0;
+      padding: 14px 16px;
+      margin: 16px 0;
+    }
+
+    .tip-box .tip-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--tip-border);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .tip-box .tip-item {
+      font-size: 13px;
+      padding: 3px 0 3px 16px;
+      position: relative;
+      color: var(--text);
+    }
+
+    .tip-box .tip-item::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--tip-border);
+    }
+
+    /* ── COMPARE TABLE COLORED HEADERS ── */
+    .th-gov {
+      background: var(--gov);
+    }
+
+    .th-ing {
+      background: var(--ing);
+      color: var(--bg);
+    }
+
+    .th-ins {
+      background: var(--ins);
+      color: var(--bg);
+    }
+
+    .th-cfg {
+      background: var(--cfg);
+      color: var(--bg);
+    }
+
+    .th-csdm {
+      background: var(--csdm);
+    }
+
+    .th-blue {
+      background: var(--blue);
+      color: var(--bg);
+    }
+
+    /* ── CHECKLIST ── */
+    .check-group {
+      margin-bottom: 16px;
+    }
+
+    .check-group-title {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .check-item {
+      padding: 5px 0 5px 28px;
+      position: relative;
+      font-size: 13px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .check-item::before {
+      content: '☐';
+      position: absolute;
+      left: 4px;
+      font-size: 15px;
+      color: var(--text-dim);
+    }
+
+    .check-item.checked::before {
+      content: '☑';
+      color: var(--ins);
+    }
+
+    .check-item.checked {
+      color: var(--text-dim);
+      text-decoration: line-through;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-dim);
+      font-size: 12px;
+    }
+
+    .cheer {
+      font-size: 24px;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--accent), var(--csdm));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    /* ── PROGRESS BAR ── */
+    .progress-bar {
+      position: fixed;
+      top: 41px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      z-index: 101;
+      background: var(--surface);
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--accent), var(--csdm));
+      transition: width 0.1s;
+    }
+
+    @media (max-width: 480px) {
+      .section {
+        padding: 20px 14px;
+      }
+
+      table {
+        font-size: 12px;
+      }
+
+      thead th,
+      tbody td {
+        padding: 8px 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Nav -->
+  <div class="nav">
+    <span class="nav-title">CIS-DF Study Guide</span>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">CIS-DF 홈</a>
+      <a class="nav-link" href="../index.html">홈</a>
+    </div>
+    <span class="nav-badge">75문제 · 90분</span>
+  </div>
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <!-- TOC Toggle -->
+  <button class="toc-toggle" id="tocBtn"
+    onclick="document.getElementById('tocDrawer').classList.toggle('open')">☰</button>
+  <div class="toc-drawer" id="tocDrawer">
+    <a href="#governance" onclick="closeToc()"><span class="toc-dot"
+        style="background:var(--gov)"></span>Governance<span class="toc-pct">35%</span></a>
+    <a href="#ingestion" onclick="closeToc()"><span class="toc-dot" style="background:var(--ing)"></span>Ingestion &
+      IRE<span class="toc-pct">19%</span></a>
+    <a href="#insight" onclick="closeToc()"><span class="toc-dot" style="background:var(--ins)"></span>Insight<span
+        class="toc-pct">20%</span></a>
+    <a href="#configuration" onclick="closeToc()"><span class="toc-dot"
+        style="background:var(--cfg)"></span>Configuration<span class="toc-pct">15%</span></a>
+    <a href="#csdm" onclick="closeToc()"><span class="toc-dot" style="background:var(--csdm)"></span>CSDM
+      Fundamentals<span class="toc-pct">11%</span></a>
+    <a href="#compare" onclick="closeToc()"><span class="toc-dot" style="background:var(--blue)"></span>빈출 비교 테이블</a>
+    <a href="#checklist" onclick="closeToc()"><span class="toc-dot" style="background:var(--accent)"></span>시험 직전
+      체크리스트</a>
+  </div>
+
+  <!-- ═══════ COVER ═══════ -->
+  <div class="cover">
+    <h1>CIS-DF</h1>
+    <div class="sub">Data Foundations</div>
+    <div class="desc">CMDB & CSDM · 출퇴근 학습 가이드<br>5일 완성 · 시나리오 기반 출제</div>
+
+    <div class="exam-stats">
+      <div class="stat">
+        <div class="stat-num" style="color:var(--ins)">FREE</div>
+        <div class="stat-label">첫 시도 무료<br>(~2026.06)</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">75</div>
+        <div class="stat-label">문제 수</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">90</div>
+        <div class="stat-label">분</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" style="color:var(--accent)">$350</div>
+        <div class="stat-label">재시험 비용</div>
+      </div>
+    </div>
+
+    <div class="domain-bars">
+      <div class="dbar"><span class="dbar-name">Governance</span>
+        <div class="dbar-fill" style="width:35%;background:var(--gov)"></div><span class="dbar-pct"
+          style="color:var(--gov)">35%</span>
+      </div>
+      <div class="dbar"><span class="dbar-name">Insight</span>
+        <div class="dbar-fill" style="width:20%;background:var(--ins)"></div><span class="dbar-pct"
+          style="color:var(--ins)">20%</span>
+      </div>
+      <div class="dbar"><span class="dbar-name">Ingestion</span>
+        <div class="dbar-fill" style="width:19%;background:var(--ing)"></div><span class="dbar-pct"
+          style="color:var(--ing)">19%</span>
+      </div>
+      <div class="dbar"><span class="dbar-name">Config</span>
+        <div class="dbar-fill" style="width:15%;background:var(--cfg)"></div><span class="dbar-pct"
+          style="color:var(--cfg)">15%</span>
+      </div>
+      <div class="dbar"><span class="dbar-name">CSDM</span>
+        <div class="dbar-fill" style="width:11%;background:var(--csdm)"></div><span class="dbar-pct"
+          style="color:var(--csdm)">11%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ 1. GOVERNANCE ═══════ -->
+  <div class="section" id="governance">
+    <div class="domain-header">
+      <h2 style="color:var(--gov)">1. Governance</h2>
+      <span class="pct-badge" style="background:var(--gov)">35%</span>
+    </div>
+    <p class="domain-desc">시험 최대 비중. CMDB 데이터의 장기적 신뢰성과 품질 관리를 검증합니다.</p>
+
+    <div class="sub-header" style="color:var(--gov)">CMDB Health — 3C 모델</div>
+    <p style="font-size:14px;color:var(--text-dim);margin-bottom:12px;">CMDB 건강도를 측정하는 세 가지 핵심 지표. <strong
+        style="color:var(--accent)">각각의 차이를 반드시 구분</strong>해야 합니다.</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-gov">
+            <th>지표</th>
+            <th>의미</th>
+            <th>측정 대상</th>
+            <th>예시</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Completeness</strong><br>완전성</td>
+            <td>필수 속성이 채워져 있는지</td>
+            <td>Required / Recommended 필드</td>
+            <td>Server에 OS 버전, IP 미입력</td>
+          </tr>
+          <tr>
+            <td><strong>Correctness</strong><br>정확성</td>
+            <td>데이터가 정확하고 최신인지</td>
+            <td>Stale CI, Orphan CI, Duplicate CI</td>
+            <td>60일 이상 미갱신 CI</td>
+          </tr>
+          <tr>
+            <td><strong>Compliance</strong><br>준수성</td>
+            <td>조직 정책/표준 준수 여부</td>
+            <td>Audit 규칙, Desired State</td>
+            <td>Prod 서버 16GB RAM 미충족</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-title">⚠ 시험 포인트</div>
+      <div class="tip-item">Staleness = <strong>Correctness</strong> 영역 (Completeness 아님!)</div>
+      <div class="tip-item">Orphan CI (부모 없는 Dependent CI) = <strong>Correctness</strong> 영역</div>
+      <div class="tip-item">Compliance는 <strong>Audit + Desired State</strong> 기반 논리적 조건 검사</div>
+      <div class="tip-item">CMDB Health Dashboard에서 3C 스코어 모니터링</div>
+    </div>
+
+    <div class="sub-header" style="color:var(--gov)">Correctness 세부 유형</div>
+    <div class="key-point"><span class="term">Stale CI</span><span class="sep">—</span>X일(기본 60일) 동안 업데이트되지 않은 CI. Audit
+      기반 감지</div>
+    <div class="key-point"><span class="term">Orphan CI</span><span class="sep">—</span>부모(Parent)를 잃은 Dependent CI. 예:
+      NIC의 Server 삭제됨</div>
+    <div class="key-point"><span class="term">Duplicate CI</span><span class="sep">—</span>IRE 식별 규칙에 의해 동일하다고 판단된 2개 이상
+      CI</div>
+    <div class="key-point"><span class="term">Logical Orphan</span><span class="sep">—</span>필수 데이터 논리적 누락. 예: VM인데
+      "Virtual" 플래그 미설정</div>
+    <div class="key-point"><span class="term">Relationship Orphan</span><span class="sep">—</span>Dependent CI가 Parent와의
+      관계 상실</div>
+
+    <div class="sub-header" style="color:var(--gov)">CMDB Data Manager</div>
+    <p style="font-size:14px;color:var(--text-dim);margin-bottom:8px;">CMDB를 대규모로 관리하기 위한 정책(Policy) 기반 도구</p>
+    <div class="bullet"><strong>Life Cycle 정책</strong>: CI의 Retire → Archive → Delete 흐름을 자동화</div>
+    <div class="bullet"><strong>필터 조건</strong>: 특정 클래스/속성 값 기반으로 대상 CI 선별</div>
+    <div class="bullet"><strong>일괄 처리</strong>: 대량 CI에 일관된 정책 적용</div>
+    <div class="bullet"><strong>Attestation</strong>: CI 소유자에게 데이터 정확성을 주기적으로 확인 요청</div>
+
+    <div class="tip-box">
+      <div class="tip-title">⚠ 시험 포인트</div>
+      <div class="tip-item">"대규모 CMDB 관리" 시나리오 → Data Manager가 정답</div>
+      <div class="tip-item">Lifecycle: Operational → Non-Operational → Retired → Archived → Deleted</div>
+      <div class="tip-item">Data Manager vs 수동 수정 — 대량 작업은 항상 Data Manager 우선</div>
+    </div>
+
+    <div class="sub-header" style="color:var(--gov)">중복 CI (Duplicate) 관리</div>
+    <div class="bullet"><strong>De-duplication Task</strong>: IRE가 하나의 payload에서 2개 이상 매치 → 자동 생성</div>
+    <div class="bullet sub">IRE는 레코드를 업데이트하지 않고 <strong>중단(Halt)</strong></div>
+    <div class="bullet sub">수동 검토 후 병합(Merge) 또는 유지 결정</div>
+    <div class="bullet"><strong>De-duplication Wizard</strong>: 수동으로 중복 CI 식별 및 병합</div>
+    <div class="bullet"><strong>Bulk Remediation</strong>: 대량 중복 일괄 처리</div>
+    <div class="bullet"><strong>Remediation Playbook</strong>: 데이터 품질 개선 가이드라인/절차</div>
+
+    <div class="sub-header" style="color:var(--gov)">CMDB Workspace & 역할</div>
+    <div class="bullet"><strong>CMDB Workspace</strong>: Health Dashboard, Data Manager, Query Builder를 통합 제공</div>
+    <div class="bullet"><strong>CMDB Manager</strong>: 전반적인 CMDB 거버넌스 책임자</div>
+    <div class="bullet"><strong>Data Manager Admin</strong>: Data Manager 정책 관리</div>
+    <div class="bullet"><strong>CI Owner</strong>: 특정 CI의 데이터 품질 책임</div>
+
+    <div class="sub-header" style="color:var(--gov)">Data Certification & Ownership</div>
+    <div class="bullet">데이터 인증: CI 데이터의 정확성을 공식적으로 검증하는 프로세스</div>
+    <div class="bullet">소유권: "누가 이 CI를 관리하는가"를 명확히 정의</div>
+    <div class="bullet">주기적 검토: CI Owner가 정기적으로 데이터를 검토하고 인증</div>
+    <div class="bullet"><strong>핵심 원칙</strong>: 데이터 기반은 구조뿐 아니라 프로세스와 책임(Accountability)</div>
+  </div>
+
+  <!-- ═══════ 2. INGESTION & IRE ═══════ -->
+  <div class="section" id="ingestion">
+    <div class="domain-header">
+      <h2 style="color:var(--ing)">2. Ingestion & IRE</h2>
+      <span class="pct-badge" style="background:var(--ing);color:var(--bg)">19%</span>
+    </div>
+    <p class="domain-desc">CMDB로 데이터가 들어오는 경로와 IRE의 동작을 이해해야 합니다.</p>
+
+    <div class="sub-header" style="color:var(--ing)">IRE (Identification and Reconciliation Engine)</div>
+    <p style="font-size:14px;color:var(--text-dim);margin-bottom:12px;">CMDB에 데이터가 들어올 때의 <strong
+        style="color:var(--ing)">관문(Gatekeeper)</strong>. 모든 데이터 소스에서 들어오는 데이터를 식별하고 조정합니다.</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-ing">
+            <th>구분</th>
+            <th>Identification (식별)</th>
+            <th>Reconciliation (조정)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>목적</strong></td>
+            <td>새 CI인지, 기존 CI인지 판별</td>
+            <td>여러 소스 중 어떤 값을 사용할지 결정</td>
+          </tr>
+          <tr>
+            <td><strong>규칙</strong></td>
+            <td>Identification Rules</td>
+            <td>Reconciliation Rules<br>(Data Source Priority)</td>
+          </tr>
+          <tr>
+            <td><strong>핵심 질문</strong></td>
+            <td>"이 CI가 이미 존재하는가?"</td>
+            <td>"어떤 소스의 값이 우선인가?"</td>
+          </tr>
+          <tr>
+            <td><strong>결과</strong></td>
+            <td>Match → Update<br>No Match → Insert<br>2+ Match → De-dup Task</td>
+            <td>우선순위 높은 소스의 값으로 속성 업데이트</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sub-header" style="color:var(--ing)">Identification Rules 세부</div>
+    <div class="bullet"><strong>Independent CI</strong>: 단독 존재 가능 (Server, Switch, Application)</div>
+    <div class="bullet sub">고유 속성(Serial Number, Name + IP 등)으로 식별</div>
+    <div class="bullet"><strong>Dependent CI</strong>: 부모 없이 존재 불가 (NIC, Hard Drive, CPU)</div>
+    <div class="bullet sub"><strong style="color:var(--accent)">Parent ID + Local Attribute</strong>로 식별 (시험 빈출!)</div>
+    <div class="bullet"><strong>Identifier Entry</strong>: 식별에 사용할 속성 조합 정의</div>
+    <div class="bullet sub">여러 Entry 가능 — OR 관계로 순차 평가</div>
+    <div class="bullet"><strong>매치 결과</strong></div>
+    <div class="bullet sub">0 Match → 새 CI 생성 (Insert)</div>
+    <div class="bullet sub">1 Match → 기존 CI 업데이트</div>
+    <div class="bullet sub"><strong style="color:var(--accent)">2+ Match → De-duplication Task 생성, 업데이트 중단!</strong>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-title">⚠ 시험 포인트</div>
+      <div class="tip-item">"Dependent CI 식별 방법은?" → <strong>Parent ID + Local Attribute</strong></div>
+      <div class="tip-item">IRE 2개 이상 매치 → 업데이트 X, De-dup Task 생성</div>
+      <div class="tip-item">Identification Rule은 CMDB에 데이터가 들어오기 전에 평가</div>
+      <div class="tip-item">Reconciliation은 식별 후, 어떤 소스의 데이터를 사용할지 결정</div>
+    </div>
+
+    <div class="sub-header" style="color:var(--ing)">데이터 수집 방법 비교</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-ing">
+            <th>방법</th>
+            <th>특징</th>
+            <th>사용 시점</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Discovery</strong></td>
+            <td>네트워크 스캔 자동 수집<br>Agentless (SSH/WMI)</td>
+            <td>인프라 CI 자동 탐색<br>(Server, Network)</td>
+          </tr>
+          <tr>
+            <td><strong>SGC</strong><br>(Service Graph Connector)</td>
+            <td>ServiceNow 인증 커넥터<br>IRE 매핑 내장, 업그레이드 안전</td>
+            <td><strong style="color:var(--accent)">항상 Import Set보다 우선!</strong><br>클라우드, 3rd party 연동</td>
+          </tr>
+          <tr>
+            <td><strong>Import Set</strong></td>
+            <td>수동/커스텀 데이터 로드<br>Transform Map으로 매핑</td>
+            <td>SGC 없는 소스<br>레거시 시스템 연동</td>
+          </tr>
+          <tr>
+            <td><strong>REST API</strong></td>
+            <td>프로그래밍 방식 데이터 입력</td>
+            <td>자동화 파이프라인<br>실시간 동기화</td>
+          </tr>
+          <tr>
+            <td><strong>IntegrationHub</strong></td>
+            <td>Flow Designer + Spoke</td>
+            <td>이벤트 기반 자동화</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-title">⚠ 핵심 원칙</div>
+      <div class="tip-item"><strong>SGC > Import Set</strong> — 인증된 IRE 매핑 + 클래스 구조 포함이므로 항상 우선</div>
+      <div class="tip-item">Discoverable CI vs Non-discoverable CI 구분 필수</div>
+      <div class="tip-item">Multisource CMDB: 같은 CI에 여러 소스 → Reconciliation Rules로 우선순위 결정</div>
+    </div>
+  </div>
+
+  <!-- ═══════ 3. INSIGHT ═══════ -->
+  <div class="section" id="insight">
+    <div class="domain-header">
+      <h2 style="color:var(--ins)">3. Insight</h2>
+      <span class="pct-badge" style="background:var(--ins);color:var(--bg)">20%</span>
+    </div>
+    <p class="domain-desc">거버넌스된 CMDB 데이터에서 가치와 가시성을 추출하는 영역입니다.</p>
+
+    <div class="sub-header" style="color:var(--ins)">CMDB Query Builder</div>
+    <div class="bullet">CI 간 <strong>복잡한 조인(Join)과 관계</strong>를 시각적으로 구축</div>
+    <div class="bullet">여러 클래스를 넘나드는 쿼리 작성 가능</div>
+    <div class="bullet">결과를 리포트/대시보드에 활용</div>
+    <div class="bullet">관계(Relationship) 기반 필터링으로 영향 분석 활용</div>
+
+    <div class="sub-header" style="color:var(--ins)">CMDB 360</div>
+    <div class="bullet">단일 CI에 대한 <strong>360도 뷰</strong> 제공</div>
+    <div class="bullet">관련된 모든 관계, 이벤트, 변경 이력을 한 화면에서 확인</div>
+    <div class="bullet">건강도, 관계 맵, 연관 인시던트/변경 종합 파악</div>
+
+    <div class="sub-header" style="color:var(--ins)">Dependency Map / Unified Map</div>
+    <div class="bullet">CI 간 <strong>의존성(Dependency)</strong>을 시각적으로 표시</div>
+    <div class="bullet">서비스 영향도 분석(Impact Analysis)에 핵심</div>
+    <div class="bullet"><strong>Unified Map</strong>: CMDB 관계를 하나의 통합 뷰로 제공</div>
+    <div class="bullet">장애 발생 시 영향받는 서비스/CI를 즉시 파악</div>
+
+    <div class="sub-header" style="color:var(--ins)">NLQ (Natural Language Query)</div>
+    <div class="bullet">자연어로 CMDB 데이터를 조회</div>
+    <div class="bullet">예: "Show me all Windows servers in production"</div>
+    <div class="bullet">기술적 쿼리 지식 없이도 데이터 접근 가능</div>
+
+    <div class="sub-header" style="color:var(--ins)">CSDM Data Foundations Dashboard</div>
+    <div class="bullet">CSDM 성숙도(Maturity Level) 측정 및 개선 도구</div>
+    <div class="bullet">각 CSDM 도메인별 데이터 품질 점수 확인</div>
+    <div class="bullet">부족한 도메인을 가시적으로 파악</div>
+
+    <div class="sub-header" style="color:var(--ins)">지표(Indicators) & Analytics</div>
+    <div class="bullet"><strong>Performance Analytics (PA)</strong>: CMDB 건강도 추세를 시계열 분석</div>
+    <div class="bullet"><strong>KPI</strong>: 목표 대비 CMDB 품질 측정</div>
+    <div class="bullet"><strong>Dashboard</strong>: 실시간 CMDB 상태 모니터링</div>
+
+    <div class="tip-box">
+      <div class="tip-title">⚠ 시험 시나리오 매핑</div>
+      <div class="tip-item">"복잡한 관계 쿼리" → <strong>Query Builder</strong></div>
+      <div class="tip-item">"단일 CI의 모든 정보를 한눈에" → <strong>CMDB 360</strong></div>
+      <div class="tip-item">"영향도 분석" → <strong>Dependency Map</strong></div>
+      <div class="tip-item">"CSDM 준수 수준 측정" → <strong>CSDM Data Foundations Dashboard</strong></div>
+    </div>
+  </div>
+
+  <!-- ═══════ 4. CONFIGURATION ═══════ -->
+  <div class="section" id="configuration">
+    <div class="domain-header">
+      <h2 style="color:var(--cfg)">4. Configuration</h2>
+      <span class="pct-badge" style="background:var(--cfg);color:var(--bg)">15%</span>
+    </div>
+    <p class="domain-desc">CMDB의 구조적 설정과 관리 방법을 다룹니다.</p>
+
+    <div class="sub-header" style="color:var(--cfg)">CI Class Manager</div>
+    <div class="bullet">CMDB의 <strong>클래스 계층구조, 테이블, 속성</strong> 관리</div>
+    <div class="bullet">클래스 추가/수정, 속성 설정, 계층 관리</div>
+    <div class="bullet"><strong>Required 속성</strong>: System Dictionary에서 Mandatory 설정 (글로벌)</div>
+    <div class="bullet"><strong>Recommended 속성</strong>: CI Class Manager에서 설정 (Soft Check)</div>
+
+    <div class="tip-box">
+      <div class="tip-title">⚠ Required vs Recommended 구분</div>
+      <div class="tip-item"><strong>Required</strong>: System Dictionary 설정, 글로벌 적용, 빈 값이면 저장 불가</div>
+      <div class="tip-item"><strong>Recommended</strong>: CI Class Manager 설정, 저장은 가능하지만 Completeness 감소</div>
+      <div class="tip-item">"CI가 저장 안 됨" → Required 미충족</div>
+      <div class="tip-item">"Health 스코어 떨어짐" → Recommended 미충족</div>
+    </div>
+
+    <div class="sub-header" style="color:var(--cfg)">CMDB 아키텍처 핵심</div>
+    <div class="bullet"><strong>cmdb_ci</strong>: 모든 CI의 기본(Base) 테이블</div>
+    <div class="bullet"><strong>cmdb_rel_ci</strong>: CI 간 관계(Relationship) 테이블</div>
+    <div class="bullet">상속: 하위 클래스는 상위 클래스의 모든 속성을 상속</div>
+    <div class="bullet"><strong>Principal Class</strong>: Reference 필드에서 보여주는 CI 범위 제한</div>
+    <div class="bullet sub">예: Incident 폼의 CI 선택 시 Server, App, DB만 표시</div>
+
+    <div class="sub-header" style="color:var(--cfg)">관계 유형 (Relationship Types)</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-cfg">
+            <th>관계</th>
+            <th>방향</th>
+            <th>예시</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Depends on</strong></td>
+            <td>A depends on B</td>
+            <td>Application depends on Server</td>
+          </tr>
+          <tr>
+            <td><strong>Runs on</strong></td>
+            <td>A runs on B</td>
+            <td>App Server runs on VM</td>
+          </tr>
+          <tr>
+            <td><strong>Hosted on</strong></td>
+            <td>A hosted on B</td>
+            <td>Database hosted on Server</td>
+          </tr>
+          <tr>
+            <td><strong>Contains</strong></td>
+            <td>A contains B</td>
+            <td>Rack contains Server</td>
+          </tr>
+          <tr>
+            <td><strong>Members of</strong></td>
+            <td>A member of B</td>
+            <td>Server member of Cluster</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sub-header" style="color:var(--cfg)">CI Reclassification</div>
+    <div class="bullet">CI의 클래스를 변경하는 프로세스 (예: "Computer" → "Linux Server")</div>
+    <div class="bullet">Discovery가 더 정확한 정보를 가져올 때 자동 발생 가능</div>
+    <div class="bullet">IRE 규칙에 의해 관리됨</div>
+  </div>
+
+  <!-- ═══════ 5. CSDM ═══════ -->
+  <div class="section" id="csdm">
+    <div class="domain-header">
+      <h2 style="color:var(--csdm)">5. CSDM Fundamentals</h2>
+      <span class="pct-badge" style="background:var(--csdm)">11%</span>
+    </div>
+    <p class="domain-desc">Common Service Data Model — 비즈니스 전략을 기술 구현에 연결하는 프레임워크. 비중 11%이지만 다른 영역과 밀접하게 연관됩니다.</p>
+
+    <div class="sub-header" style="color:var(--csdm)">CSDM 5.0 — 7개 도메인</div>
+    <p style="font-size:14px;color:var(--text-dim);margin-bottom:12px;"><strong style="color:var(--accent)">모두 암기
+        필수!</strong> 특히 신규 추가된 Ideation & Strategy, Build & Integration</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-csdm">
+            <th>도메인</th>
+            <th>설명</th>
+            <th>핵심 테이블/개념</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Ideation & Strategy</strong></td>
+            <td>비즈니스 전략/아이디어 수집</td>
+            <td>Strategic Portfolio, Demand</td>
+          </tr>
+          <tr>
+            <td><strong>Design</strong></td>
+            <td>서비스 설계/아키텍처 정의</td>
+            <td>Business Capability, Information Object</td>
+          </tr>
+          <tr>
+            <td><strong>Build & Integration</strong></td>
+            <td>서비스 구축 및 통합</td>
+            <td>Application, Dev Environment</td>
+          </tr>
+          <tr>
+            <td><strong>Deliver & Support</strong></td>
+            <td>서비스 전달/운영 지원</td>
+            <td>Application Service, Business Service</td>
+          </tr>
+          <tr>
+            <td><strong>Detect & Correct</strong></td>
+            <td>문제 감지 및 수정</td>
+            <td>Incident, Problem, Change</td>
+          </tr>
+          <tr>
+            <td><strong>Manage Portfolio</strong></td>
+            <td>포트폴리오 관리</td>
+            <td>Business Application, Technical Service</td>
+          </tr>
+          <tr>
+            <td><strong>Foundation</strong></td>
+            <td>CMDB 기본 인프라 데이터</td>
+            <td>Hardware, Location, Network Gear</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sub-header" style="color:var(--csdm)">CSDM 성숙도 5단계</div>
+    <div class="key-point"><span class="term">Foundation</span><span class="sep">—</span>CMDB 기본 설정, 기본 CI 클래스 정의, 데이터
+      소스 연결</div>
+    <div class="key-point"><span class="term">Crawl</span><span class="sep">—</span>핵심 테이블 채우기. Business App, App
+      Service 등 기본 매핑</div>
+    <div class="key-point"><span class="term">Walk</span><span class="sep">—</span>관계 구축, 서비스 맵핑 확장, Health 모니터링 시작
+    </div>
+    <div class="key-point"><span class="term">Run</span><span class="sep">—</span>전체 CSDM 도메인 활용, 자동화된 거버넌스, KPI 기반 관리
+    </div>
+    <div class="key-point"><span class="term">Fly</span><span class="sep">—</span>완전한 CSDM 성숙, 전사적 데이터 기반 의사결정, 지속적 개선
+    </div>
+
+    <div class="sub-header" style="color:var(--csdm)">Business Application vs Application Service</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-csdm">
+            <th>구분</th>
+            <th>Business Application</th>
+            <th>Application Service</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>테이블</strong></td>
+            <td>cmdb_ci_business_app</td>
+            <td>cmdb_ci_service_auto</td>
+          </tr>
+          <tr>
+            <td><strong>성격</strong></td>
+            <td><strong style="color:var(--accent)">비운영</strong><br>인벤토리/카탈로그 레코드</td>
+            <td><strong style="color:var(--ins)">운영</strong><br>실제 실행 중인 서비스</td>
+          </tr>
+          <tr>
+            <td><strong>예시</strong></td>
+            <td>"Zoom" (도구 자체)</td>
+            <td>"Zoom Production Instance"</td>
+          </tr>
+          <tr>
+            <td><strong>목적</strong></td>
+            <td>포트폴리오 관리, 비용/소유권 추적</td>
+            <td>모니터링, 인시던트 연결, 영향도 분석</td>
+          </tr>
+          <tr>
+            <td><strong>도메인</strong></td>
+            <td>Manage Portfolio</td>
+            <td>Deliver & Support</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-title">⚠ 시험 포인트</div>
+      <div class="tip-item">"비운영, 카탈로그 역할" → <strong>Business Application</strong></div>
+      <div class="tip-item">"운영 중, 모니터링 대상" → <strong>Application Service</strong></div>
+      <div class="tip-item">Business App은 여러 Application Service를 가질 수 있음 (1:N)</div>
+      <div class="tip-item">"올바른 CSDM 도메인을 매핑하라" 유형 빈출</div>
+      <div class="tip-item">CSDM 5.0의 7개 도메인 + 신규 레이어(Ideation, Build) 암기 필수</div>
+    </div>
+  </div>
+
+  <!-- ═══════ 6. 비교 테이블 ═══════ -->
+  <div class="section" id="compare">
+    <div class="domain-header">
+      <h2 style="color:var(--blue)">6. 빈출 비교 테이블</h2>
+    </div>
+    <p class="domain-desc">시험에서 자주 혼동되는 개념들을 정리한 비교표입니다.</p>
+
+    <div class="sub-header" style="color:var(--blue)">SGC vs Import Set</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-blue">
+            <th>항목</th>
+            <th>Service Graph Connector</th>
+            <th>Import Set</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>IRE 매핑</strong></td>
+            <td>✅ 내장 (Pre-built)</td>
+            <td>❌ 수동 설정 필요</td>
+          </tr>
+          <tr>
+            <td><strong>업그레이드 안전</strong></td>
+            <td>✅ 안전</td>
+            <td>❌ 커스텀이므로 위험</td>
+          </tr>
+          <tr>
+            <td><strong>클래스 구조</strong></td>
+            <td>ServiceNow 인증</td>
+            <td>수동 매핑 필요</td>
+          </tr>
+          <tr>
+            <td><strong>우선 사용</strong></td>
+            <td>★ 항상 우선</td>
+            <td>SGC 없을 때만</td>
+          </tr>
+          <tr>
+            <td><strong>유지보수</strong></td>
+            <td>낮음 (자동 업데이트)</td>
+            <td>높음 (수동 관리)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sub-header" style="color:var(--blue)">Independent CI vs Dependent CI</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-blue">
+            <th>항목</th>
+            <th>Independent CI</th>
+            <th>Dependent CI</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>정의</strong></td>
+            <td>단독으로 존재 가능</td>
+            <td>부모 없이 존재 불가</td>
+          </tr>
+          <tr>
+            <td><strong>예시</strong></td>
+            <td>Server, Switch, Application</td>
+            <td>NIC, Hard Drive, CPU</td>
+          </tr>
+          <tr>
+            <td><strong>식별 방법</strong></td>
+            <td>고유 속성 조합<br>(Serial#, Name+IP)</td>
+            <td><strong style="color:var(--accent)">Parent ID + Local Attribute</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Orphan</strong></td>
+            <td>해당 없음</td>
+            <td>✅ 부모 삭제 시 Orphan</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sub-header" style="color:var(--blue)">CMDB Health 측정 항목</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-blue">
+            <th>유형</th>
+            <th>Health 영역</th>
+            <th>감지 방법</th>
+            <th>조치</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Stale CI</strong></td>
+            <td>Correctness</td>
+            <td>Last Update > X일</td>
+            <td>Discovery 재실행</td>
+          </tr>
+          <tr>
+            <td><strong>Orphan CI</strong></td>
+            <td>Correctness</td>
+            <td>Parent 관계 누락</td>
+            <td>재연결/삭제</td>
+          </tr>
+          <tr>
+            <td><strong>Duplicate</strong></td>
+            <td>Correctness</td>
+            <td>IRE 2+ Match</td>
+            <td>De-dup Task → 병합</td>
+          </tr>
+          <tr>
+            <td><strong>Missing Field</strong></td>
+            <td>Completeness</td>
+            <td>Required/Recommended 비어있음</td>
+            <td>데이터 보강</td>
+          </tr>
+          <tr>
+            <td><strong>정책 미준수</strong></td>
+            <td>Compliance</td>
+            <td>Audit / Desired State 위반</td>
+            <td>CI 속성 수정</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sub-header" style="color:var(--blue)">핵심 CMDB 도구 비교</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr class="th-blue">
+            <th>도구</th>
+            <th>용도</th>
+            <th>시나리오 키워드</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>CI Class Manager</strong></td>
+            <td>클래스 구조/속성 관리</td>
+            <td>새 CI 타입, 속성 정의</td>
+          </tr>
+          <tr>
+            <td><strong>Query Builder</strong></td>
+            <td>복잡한 관계 쿼리</td>
+            <td>다중 클래스 조인, 리포트</td>
+          </tr>
+          <tr>
+            <td><strong>CMDB 360</strong></td>
+            <td>단일 CI 종합 뷰</td>
+            <td>특정 CI 전체 정보</td>
+          </tr>
+          <tr>
+            <td><strong>Data Manager</strong></td>
+            <td>대규모 정책 관리</td>
+            <td>Lifecycle, 일괄 처리</td>
+          </tr>
+          <tr>
+            <td><strong>Health Dashboard</strong></td>
+            <td>건강도 모니터링</td>
+            <td>3C 스코어, 트렌드</td>
+          </tr>
+          <tr>
+            <td><strong>Dependency Map</strong></td>
+            <td>CI 의존성 시각화</td>
+            <td>영향도 분석, 장애 추적</td>
+          </tr>
+          <tr>
+            <td><strong>CSDM Dashboard</strong></td>
+            <td>CSDM 성숙도 측정</td>
+            <td>도메인별 준수 수준</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════ 7. CHECKLIST ═══════ -->
+  <div class="section" id="checklist">
+    <div class="domain-header">
+      <h2 style="color:var(--accent)">7. 시험 직전 체크리스트</h2>
+    </div>
+    <p class="domain-desc">각 항목을 스스로 설명할 수 있는지 확인하세요. 탭하면 체크됩니다.</p>
+
+    <div class="check-group">
+      <div class="check-group-title" style="background:rgba(255,107,107,0.15);color:var(--gov)">Governance (35%)</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">CMDB Health 3C 각각의 의미와 예시</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Stale, Orphan, Duplicate, Logical Orphan의 차이
+      </div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Data Manager의 역할과 Lifecycle 정책</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">De-duplication Task 생성 조건 (IRE 2+ Match)</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Data Certification과 CI Ownership 개념</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Remediation Playbook의 목적</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">CMDB Workspace의 주요 기능</div>
+    </div>
+
+    <div class="check-group">
+      <div class="check-group-title" style="background:rgba(76,201,240,0.15);color:var(--ing)">Ingestion & IRE (19%)
+      </div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">IRE의 Identification vs Reconciliation 차이</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Independent CI vs Dependent CI 식별 방법</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">SGC > Import Set 우선순위와 이유</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Discoverable vs Non-discoverable CI</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Multisource CMDB 조정 개념</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">데이터 수집 5가지 방법과 사용 시점</div>
+    </div>
+
+    <div class="check-group">
+      <div class="check-group-title" style="background:rgba(6,214,160,0.15);color:var(--ins)">Insight (20%)</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Query Builder: 복잡한 조인 쿼리의 정답</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">CMDB 360: 단일 CI 종합 뷰의 정답</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Dependency Map: 영향도 분석의 정답</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">NLQ: 자연어 CMDB 조회</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">CSDM Data Foundations Dashboard 용도</div>
+    </div>
+
+    <div class="check-group">
+      <div class="check-group-title" style="background:rgba(255,209,102,0.15);color:var(--cfg)">Configuration (15%)
+      </div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">CI Class Manager 역할</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Required vs Recommended 차이</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Principal Class 필터의 역할</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">cmdb_ci / cmdb_rel_ci 테이블</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">CI Reclassification 개념</div>
+    </div>
+
+    <div class="check-group">
+      <div class="check-group-title" style="background:rgba(199,125,255,0.15);color:var(--csdm)">CSDM Fundamentals (11%)
+      </div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">CSDM 5.0의 7개 도메인 암기</div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">성숙도 5단계: Foundation → Crawl → Walk → Run → Fly
+      </div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">Business Application vs Application Service 차이
+      </div>
+      <div class="check-item" onclick="this.classList.toggle('checked')">시나리오별 CSDM 도메인 매핑 연습</div>
+    </div>
+
+    <div class="card" style="border-color:var(--accent);margin-top:24px;">
+      <div class="card-title" style="color:var(--accent);font-size:16px;">💡 최종 팁</div>
+      <div style="margin-top:8px;">
+        <div class="bullet"><strong>"어떻게(How)"보다 "왜(Why)"</strong>를 생각하라 — 거버넌스, 기술 부채 최소화 관점</div>
+        <div class="bullet"><strong>IRE 동작 흐름</strong>을 완벽히 이해하라 — 시험의 핵심 축</div>
+        <div class="bullet"><strong>CSDM은 실제 모델</strong> — 도메인과 레이어를 시나리오에 적극 매핑</div>
+        <div class="bullet">"대규모 관리" → <strong>Data Manager</strong>, "단일 CI" → <strong>CMDB 360</strong></div>
+        <div class="bullet">Health 지표 → <strong>3C 중 어디에 해당하는지</strong> 빠르게 분류</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="cheer">✨ 화이팅! 한 번에 합격하자! ✨</div>
+    <p>CIS-DF (Data Foundations) 출퇴근 학습 가이드</p>
+    <p style="margin-top:4px;">첫 시도 무료 (~2026.06.30) · 재시험 $350</p>
+  </div>
+
+  <script>
+    // Progress bar
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+      document.getElementById('progressFill').style.width = pct + '%';
+    });
+
+    // Close TOC on click outside
+    function closeToc() {
+      setTimeout(() => document.getElementById('tocDrawer').classList.remove('open'), 200);
+    }
+    document.addEventListener('click', (e) => {
+      const drawer = document.getElementById('tocDrawer');
+      const btn = document.getElementById('tocBtn');
+      if (!drawer.contains(e.target) && !btn.contains(e.target)) {
+        drawer.classList.remove('open');
+      }
+    });
+  </script>
+</body>
+
+</html>
