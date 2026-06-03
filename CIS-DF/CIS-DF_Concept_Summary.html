@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS-DF 개념정리</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../shared/hub-common.css">
+    <style>
+        :root {
+            --panel: #141922;
+            --panel-2: #1a2130;
+            --line: #2b3340;
+            --accent-red: #ff6b6b;
+            --accent-blue: #58a6ff;
+            --accent-green: #06d6a0;
+            --accent-yellow: #ffd166;
+        }
+
+        .container {
+            max-width: 980px;
+            padding-bottom: 80px;
+        }
+
+        .hero {
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            background:
+                radial-gradient(circle at 10% 20%, rgba(255, 107, 107, 0.15), transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(88, 166, 255, 0.12), transparent 45%),
+                linear-gradient(140deg, rgba(22, 27, 34, 0.96), rgba(17, 23, 33, 0.98));
+            padding: 22px;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: clamp(25px, 5.5vw, 38px);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            margin: 10px 0 0;
+            color: var(--text-dim);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 8px;
+            margin-top: 14px;
+        }
+
+        .quick-nav a {
+            text-decoration: none;
+            border: 1px solid rgba(88, 166, 255, 0.45);
+            border-radius: 10px;
+            background: rgba(88, 166, 255, 0.16);
+            color: #ddebff;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 9px 10px;
+            text-align: center;
+        }
+
+        .section-card {
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            background: var(--panel);
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+
+        .section-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .section-head h2 {
+            margin: 0;
+            font-size: 19px;
+            line-height: 1.35;
+        }
+
+        .weight {
+            border-radius: 999px;
+            padding: 4px 10px;
+            font-size: 11px;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+        }
+
+        .weight.high {
+            color: #ffd6d6;
+            background: rgba(255, 107, 107, 0.18);
+            border: 1px solid rgba(255, 107, 107, 0.45);
+        }
+
+        .weight.mid {
+            color: #ddebff;
+            background: rgba(88, 166, 255, 0.18);
+            border: 1px solid rgba(88, 166, 255, 0.45);
+        }
+
+        .weight.core {
+            color: #d8fff4;
+            background: rgba(6, 214, 160, 0.18);
+            border: 1px solid rgba(6, 214, 160, 0.42);
+        }
+
+        .summary {
+            margin: 0 0 10px;
+            color: var(--text-dim);
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .line {
+            margin: 6px 0;
+            padding-left: 14px;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        .line::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #7e8aa0;
+        }
+
+        .line strong {
+            color: var(--accent-red);
+        }
+
+        .keyword-box {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #334052;
+            border-radius: 10px;
+            background: var(--panel-2);
+        }
+
+        .keyword-box .label {
+            font-size: 11px;
+            font-family: 'JetBrains Mono', monospace;
+            color: #c9d4e2;
+            margin-bottom: 5px;
+        }
+
+        .keyword-box .words {
+            font-size: 12px;
+            color: #d7e2ef;
+            line-height: 1.6;
+        }
+
+        .exam-pattern {
+            border: 1px solid rgba(255, 209, 102, 0.5);
+            border-radius: 12px;
+            background: rgba(255, 209, 102, 0.12);
+            padding: 12px;
+            margin-top: 8px;
+        }
+
+        .exam-pattern h3 {
+            margin: 0 0 8px;
+            font-size: 15px;
+            color: #ffe7aa;
+        }
+
+        .exam-pattern p {
+            margin: 6px 0;
+            font-size: 13px;
+            color: #fff0ca;
+            line-height: 1.55;
+        }
+
+        .cross-map {
+            overflow-x: auto;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            margin-top: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 700px;
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid var(--line);
+            padding: 10px;
+            font-size: 12px;
+            vertical-align: top;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        th {
+            background: #1a2231;
+            color: #dce9f7;
+            font-size: 11px;
+            letter-spacing: 0.2px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .cta {
+            margin-top: 12px;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            background: var(--panel);
+            padding: 14px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cta p {
+            margin: 0;
+            color: var(--text-dim);
+            font-size: 13px;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .cta-group a {
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 9px 11px;
+            border: 1px solid transparent;
+        }
+
+        .cta-group a.main {
+            color: #ddebff;
+            background: rgba(88, 166, 255, 0.2);
+            border-color: rgba(88, 166, 255, 0.45);
+        }
+
+        .cta-group a.alt {
+            color: #ffd6d6;
+            background: rgba(255, 107, 107, 0.2);
+            border-color: rgba(255, 107, 107, 0.45);
+        }
+
+        @media (max-width: 640px) {
+            .hero {
+                padding: 16px;
+            }
+
+            .section-card {
+                padding: 14px;
+            }
+
+            .cta {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-home-bar">
+        <div class="top-home-inner">
+            <div class="top-home-links">
+                <a href="../index.html">홈</a>
+                <a href="index.html">CIS-DF 홈</a>
+                <a href="CIS-DF_Integrated_Quiz.html?mode=practice">연습 퀴즈</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <section class="hero">
+            <h1>개념정리</h1>
+            <p>서비스나우를 처음 접하는 사람도 시험과 실무 맥락을 동시에 이해할 수 있도록 구성한 블루프린트형 스터디 가이드입니다. 핵심 개념, 실제 역할, 그리고 영어 지문 키워드를 함께 보면서 빠르게
+                정리하세요.</p>
+            <p class="summary">이 페이지의 흐름: 1) CMDB 목적 2) CSDM 구조 3) 클래스 모델 4) IRE 원리 5) 품질/거버넌스 도구 6) 시험 문장 패턴.</p>
+            <div class="quick-nav">
+                <a href="#s1">CMDB 가치와 3대 기둥</a>
+                <a href="#s2">CSDM 구조와 도메인</a>
+                <a href="#s3">CI/Asset/클래스 모델링</a>
+                <a href="#s4">IRE 식별/조정</a>
+                <a href="#s5">Data Foundations/거버넌스</a>
+                <a href="#s6">실전 문장 패턴</a>
+            </div>
+        </section>
+
+        <section id="s1" class="section-card">
+            <div class="section-head">
+                <h2>1. CMDB 가치와 3대 기둥</h2>
+                <span class="weight core">CORE</span>
+            </div>
+            <p class="summary">우선 CMDB가 왜 필요한지부터 정리하세요. 가장 쉬운 출발점은, CMDB가 인벤토리가 아니라 서비스 영향과 의사결정 기반이라는 점입니다.</p>
+            <p class="line"><strong>Ingest</strong>: 어떤 소스 데이터를 CMDB에 넣을지, 어떤 CI를 생성할지 설계합니다.</p>
+            <p class="line"><strong>Govern</strong>: 중복/누락/오래된 데이터를 막아 신뢰도를 유지합니다.</p>
+            <p class="line"><strong>Insight</strong>: CMDB 데이터를 기반으로 문제 영향도, 변경 리스크, 자동 보고를 지원합니다.</p>
+            <p class="line">학습 포인트: 먼저 해결하려는 운영 문제를 정하고, 그 문제를 지원하는 데이터만 CMDB에 담는 것이 실제 성공 전략입니다.</p>
+            <div class="keyword-box">
+                <div class="label">EXAM KEYWORDS</div>
+                <div class="words">trustworthy CMDB, organizational buy-in, downstream impact, stale CIs, actionable
+                    insights</div>
+            </div>
+        </section>
+
+        <section id="s2" class="section-card">
+            <div class="section-head">
+                <h2>2. CSDM 구조와 도메인</h2>
+                <span class="weight high">HIGH</span>
+            </div>
+            <p class="summary">CSDM은 CMDB를 어떻게 나눌지, 어떤 관계를 쌓을지 알려주는 청사진입니다. 처음에는 도메인별 역할과 데이터 흐름을 이해하는 데 집중하세요.</p>
+            <p class="line"><strong>Design & Planning</strong>: Business Application, Information Object, Capability를
+                정의해 비즈니스 관점을 정리합니다.</p>
+            <p class="line"><strong>Service Delivery</strong>: Application Service와 Technical Service를 구분하고, 서비스 제공 경로를
+                모델링합니다.</p>
+            <p class="line"><strong>Service Consumption</strong>: Business Service/Service Offering을 통해 소비 관점에서 서비스를
+                묶습니다.</p>
+            <p class="line"><strong>Foundation</strong>: User, Group, Location 같은 공통 데이터가 전체 모델의 기준이 됩니다.</p>
+            <p class="line">학습 포인트: CSDM은 표준 데이터 모델입니다. 실제 질문에서는 도메인 이름 대신 '무엇을 설명하는가'를 물을 때가 많습니다.</p>
+            <div class="keyword-box">
+                <div class="label">EXAM KEYWORDS</div>
+                <div class="words">Design & Planning, Service Delivery, Business Application, Information Object,
+                    Service Offering, Foundation data</div>
+            </div>
+        </section>
+
+        <section id="s3" class="section-card">
+            <div class="section-head">
+                <h2>3. CI/Asset/클래스 모델링</h2>
+                <span class="weight high">HIGH</span>
+            </div>
+            <p class="summary">초보자는 먼저 CI와 Asset의 차이를 구분하고, 이미 있는 클래스 모델을 확장하는 흐름을 이해해야 합니다.</p>
+            <p class="line"><strong>CI</strong>: 서비스 운영에서 사용하는 구성 요소를 나타내는 기술 객체입니다.</p>
+            <p class="line"><strong>Asset</strong>: 구매, 비용, 수명주기 관점이 중요한 재무 객체입니다.</p>
+            <p class="line">일반적으로 모든 Asset이 CI는 아니고, CI는 반드시 Asset이 아닙니다.</p>
+            <p class="line">기존 CI Class Model을 먼저 확인하고, 없는 경우에만 신규 클래스를 만들어야 안전합니다.</p>
+            <p class="line">문제 풀이 법칙: 관계 문장은 항상 '누가/무엇이 어떻게 연결되는지' 먼저 읽습니다.</p>
+            <div class="keyword-box">
+                <div class="label">EXAM KEYWORDS</div>
+                <div class="words">Configuration Item, Asset lifecycle, parent class, child class, principal class, CI
+                    Class Manager</div>
+            </div>
+        </section>
+
+        <section id="s4" class="section-card">
+            <div class="section-head">
+                <h2>4. IRE: 식별(Identification)과 조정(Reconciliation)</h2>
+                <span class="weight high">HIGH</span>
+            </div>
+            <p class="summary">입력된 데이터가 어떤 CI를 가리키는지 먼저 찾고, 누가 최종 값을 쓰는지를 정하는 단계입니다.</p>
+            <p class="line"><strong>Identification Rule</strong>: 새로운 데이터가 기존 CI와 같은 지를 판별하는 규칙입니다.</p>
+            <p class="line"><strong>Duplicate CI</strong>: 하나의 실제 항목이 여러 레코드로 중복된 상태입니다.</p>
+            <p class="line"><strong>Overloaded CI</strong>: 서로 다른 실제 항목이 하나의 레코드로 합쳐진 상태입니다.</p>
+            <p class="line"><strong>Reconciliation Rule</strong>: 어떤 소스가 속성 값을 최종적으로 결정할지 우선순위를 설정합니다.</p>
+            <p class="line">학습 포인트: Identification 먼저, Reconciliation 나중. 우선순위 숫자 방향을 반드시 확인하세요.</p>
+            <p class="line">Import Sets/Transform Map 문제는 IRE 우회와 onBefore/CMDBTransformUtil 패턴을 연결해서 풀면 쉽습니다.</p>
+            <div class="keyword-box">
+                <div class="label">EXAM KEYWORDS</div>
+                <div class="words">IRE API, identification rule, reconciliation rule, authoritative source, data refresh
+                    rule, CMDBTransformUtil, onBefore</div>
+            </div>
+        </section>
+
+        <section id="s5" class="section-card">
+            <div class="section-head">
+                <h2>5. Data Foundations와 거버넌스 도구</h2>
+                <span class="weight mid">MID</span>
+            </div>
+            <p class="summary">어떤 품질 문제를 어떤 도구로 해결할지 빠르게 매칭하는 연습이 중요합니다. 도구 이름보다 '이 문제를 이렇게 개선한다'는 흐름을 기억하세요.</p>
+            <p class="line"><strong>CMDB Health Dashboard</strong>: Completeness, Correctness, Compliance를 한눈에 보여주는 품질
+                대시보드입니다.</p>
+            <p class="line"><strong>CMDB Data Foundations Dashboard</strong>: 플레이북 기반으로 단계별 개선 과제를 제안합니다.</p>
+            <p class="line"><strong>CMDB Data Manager</strong>: Certification/Attestation과 Archive 정책을 통해 데이터 수명주기를
+                관리합니다.</p>
+            <p class="line"><strong>De-duplication Dashboard/Template</strong>: 중복 CI를 찾아 정리하는 자동화 도구입니다.</p>
+            <p class="line">학습 포인트: 품질 문제를 확인한 뒤, 적절한 거버넌스 도구를 연결하는 연습을 하세요.</p>
+            <div class="keyword-box">
+                <div class="label">EXAM KEYWORDS</div>
+                <div class="words">3C, playbook, certification, attestation, archive policy, de-duplication, managed by
+                    group</div>
+            </div>
+        </section>
+
+        <section id="s6" class="section-card">
+            <div class="section-head">
+                <h2>6. 실전 문장 패턴 (영어 지문 대응)</h2>
+                <span class="weight core">CORE</span>
+            </div>
+            <p class="summary">영어 지문을 빠르게 해석하려면, '무엇을 묻는가'를 먼저 찾고 '어떤 개념을 쓸 것인가'를 연결해야 합니다.</p>
+            <div class="exam-pattern">
+                <h3>자주 나오는 질문 프레임</h3>
+                <p><strong>recommended method / preferred way</strong>: 표준 거버넌스/모델 경로를 묻는 문제입니다.</p>
+                <p><strong>choose all that apply</strong>: 옵션별 장점과 조건을 정확히 구분해 선택합니다.</p>
+                <p><strong>which field / which tab / where can</strong>: 설정 위치나 메뉴를 묻는 문제로, 도구 이름보다 UI 흐름을 떠올려야 유리합니다.
+                </p>
+                <p><strong>authoritative source / priority / order</strong>: IRE 우선순위와 최종 값 결정 흐름을 해석하는 문제입니다.</p>
+            </div>
+            <div class="cross-map">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>질문 신호어</th>
+                            <th>바로 떠올릴 개념</th>
+                            <th>대표 오답 패턴</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>duplicate / stale / quality</td>
+                            <td>Health 3C, Data Manager, De-duplication</td>
+                            <td>단순 스케줄 잡/BR로 해결 가능하다고 단정</td>
+                        </tr>
+                        <tr>
+                            <td>ingest + prevent duplicate</td>
+                            <td>IRE 경유 적재, IntegrationHub ETL, onBefore 패턴</td>
+                            <td>테이블 직접 적재를 권장 답으로 선택</td>
+                        </tr>
+                        <tr>
+                            <td>ownership / assignment / group</td>
+                            <td>Managed by Group, Support Group 전파 경로</td>
+                            <td>Approval Group/Change Group과 혼동</td>
+                        </tr>
+                        <tr>
+                            <td>CSDM domain</td>
+                            <td>Design vs Service Delivery 구분</td>
+                            <td>도메인 이름은 맞지만 객체 레벨이 다름</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="cta">
+            <p>이 개념정리를 기준으로 퀴즈 해설에 연계 섹션과 영어 키워드가 자동 표시됩니다.</p>
+            <div class="cta-group">
+                <a class="main" href="CIS-DF_Integrated_Quiz.html?mode=practice">연습 모드에서 확인</a>
+                <a class="alt" href="CIS-DF_PreExam_Final_Review.html">시험 전 최종 정리</a>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

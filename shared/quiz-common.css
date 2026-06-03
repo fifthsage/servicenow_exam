@@ -444,6 +444,7 @@ body {
   margin-top: 8px;
   font-size: 13px;
   line-height: 1.5;
+  white-space: pre-line;
   color: #d5deea;
   border-top: 1px dashed var(--border);
   padding-top: 8px;

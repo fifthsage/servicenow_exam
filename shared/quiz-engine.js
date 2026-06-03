@@ -3,6 +3,12 @@
     var allQuestions = Array.isArray(config.questions) ? config.questions : [];
     var questionPrefix = config.questionPrefix || 'Q';
     var noExplanationText = config.noExplanationText || '해설 정보가 없습니다.';
+    var formatExplanation = typeof config.formatExplanation === 'function'
+      ? config.formatExplanation
+      : null;
+    var buildExplanationAppendix = typeof config.buildExplanationAppendix === 'function'
+      ? config.buildExplanationAppendix
+      : null;
     var wrongStorageKey = config.wrongStorageKey || ('sn_quiz_wrong_' + window.location.pathname);
     var wrongModeFlagKey = config.wrongModeFlagKey || (wrongStorageKey + '_mode');
 
@@ -238,6 +244,31 @@
       return expected.slice().sort().join(',') === actual.slice().sort().join(',');
     }
 
+    function getExplanationText(question, index) {
+      var base = question && question.explanation ? String(question.explanation) : noExplanationText;
+      if (formatExplanation) {
+        try {
+          base = String(formatExplanation(base, question, index, mode) || base);
+        } catch (e) {
+          // Keep original explanation when formatter fails.
+        }
+      }
+      if (!buildExplanationAppendix) {
+        return base;
+      }
+      var appendix = '';
+      try {
+        appendix = buildExplanationAppendix(question, index, mode) || '';
+      } catch (e) {
+        appendix = '';
+      }
+      appendix = String(appendix || '').trim();
+      if (!appendix) {
+        return base;
+      }
+      return base + '\n\n' + appendix;
+    }
+
     function renderQuestion() {
       var q = sessionQuestions[currentIndex];
       var picked = answers[currentIndex];
@@ -284,10 +315,11 @@
         var isInWrongSet = wrongQuestionIds.has(normalizeQuestionId(q.id));
         var card = document.createElement('div');
         card.className = 'review-item';
-        card.innerHTML = '\n      <div class="review-head">\n        <div class="review-q">' + questionPrefix + (i + 1) + '. ' + q.title + '</div>\n        <span class="review-badge ' + (ok ? 'ok' : 'ng') + '">' + (ok ? '정답' : '오답') + '</span>\n      </div>\n      <div class="review-meta">내 답: ' + (user.join(',') || '(미응답)') + ' / 정답: ' + q.answer.join(',') + '</div>\n      <div class="review-actions">\n        <button class="explain-btn">해설 보기</button>\n        ' + (isInWrongSet ? '<button class="remove-wrong-btn">오답에서 제거</button>' : '') + '\n      </div>\n      <div class="explain" style="display:none;">' + (q.explanation || noExplanationText) + '</div>\n    ';
+        card.innerHTML = '\n      <div class="review-head">\n        <div class="review-q">' + questionPrefix + (i + 1) + '. ' + q.title + '</div>\n        <span class="review-badge ' + (ok ? 'ok' : 'ng') + '">' + (ok ? '정답' : '오답') + '</span>\n      </div>\n      <div class="review-meta">내 답: ' + (user.join(',') || '(미응답)') + ' / 정답: ' + q.answer.join(',') + '</div>\n      <div class="review-actions">\n        <button class="explain-btn">해설 보기</button>\n        ' + (isInWrongSet ? '<button class="remove-wrong-btn">오답에서 제거</button>' : '') + '\n      </div>\n      <div class="explain" style="display:none;"></div>\n    ';
 
         var btn = card.querySelector('.explain-btn');
         var ex = card.querySelector('.explain');
+        ex.textContent = getExplanationText(q, i);
         btn.addEventListener('click', function () {
           var showing = ex.style.display === 'block';
           ex.style.display = showing ? 'none' : 'block';
