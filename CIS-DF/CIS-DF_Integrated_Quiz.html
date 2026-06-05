@@ -269,7 +269,6 @@
     function buildCisdfExplanationAppendix(question) {
       var meta = getCisdfExplanationMeta(question);
       return [
-        '[개념정리 연계] ' + meta.section,
         '[Exam Keywords] ' + meta.keywords.join(', '),
         '[Tip] 영어 지문에서 위 키워드를 먼저 체크하고, 질문이 "정의/목적/추천" 중 무엇을 묻는지 구분하면 정답률이 올라갑니다.'
       ].join('\n');
