@@ -1,9 +1,3 @@
-지금까지 학습하신 **CIS-DF (Certified Implementation Specialist - Data Foundations)** 교육 과정의 전 모듈 스크립트를 실제 시험 출제 기준과 아키텍처 흐름에 맞춰 완벽하게 재구성한 '핵심 거버넌스 마스터 핸드북'입니다.
-
-시험장 들어가기 직전까지 다회독하시며 키워드를 눈에 익히시면 고득점 합격에 결정적인 도움이 될 것입니다.
-
----
-
 # 📘 CIS-DF 자격증 대비 CMDB & CSDM 전 모듈 마스터 핸드북
 
 ---
@@ -47,7 +41,6 @@ ServiceNow 데이터 거버넌스 라이프사이클의 핵심 순환 고리입�
 * **기본 테이블 (Base Table - `[cmdb_ci]`):** 모든 CI의 기본 속성을 저장하는 핵심 테이블입니다. 모든 하드웨어 및 애플리케이션 클래스는 이 테이블을 확장(Extend)하여 계층 구조를 형성합니다.
 * **부모(Parent) 및 자식(Child) 클래스 관계:** 다른 테이블을 확장하는 테이블을 '자식', 확장되는 테이블을 '부모'라고 합니다.
 * *예시:* `Computer` 테이블은 `Server` 테이블의 부모이며, `Server` 테이블은 `Windows Server` 테이블의 부모가 됩니다. 계층 구조 아래로 내려갈수록 속성이 구체화됩니다.
-
 
 * **주요 클래스 (Principal Class):** 인시던트, 문제, 변경 티켓의 '구성 항목(CI)' 검색 필드에 표시될 수 있는 CI 클래스를 특정 카테고리로 제한(필터링)하여 사용자의 혼란을 줄이는 기능입니다.
 
@@ -110,11 +103,10 @@ ServiceNow 데이터 거버넌스 라이프사이클의 핵심 순환 고리입�
 * **정의:** 단순 소스 우선순위(정적)를 넘어, Multisource 데이터를 기반으로 값 자체를 비교 평가하여 업데이트할 데이터를 결정하는 규칙입니다.
 * **유형:** First Reported, Most Reported, Last Reported, 그리고 숫자형 필드에만 적용 가능한 **Largest Value / Smallest Value**.
 * **규칙 간 우선순위 (Precedence - ★시험 단골 시나리오):**
+
 1. 동일 속성에 대해 정적 규칙과 동적 규칙이 충돌하면 **동적 조정 규칙(Dynamic)이 항상 우선**합니다.
 2. 부모 클래스의 규칙보다 **더 구체적인 자식 클래스의 규칙이 우선**합니다.
 3. 자식 클래스에 규칙이 없으면 부모 클래스의 규칙을 상속받습니다.
-
-
 
 ---
 
@@ -124,7 +116,6 @@ ServiceNow 데이터 거버넌스 라이프사이클의 핵심 순환 고리입�
 
 * **ServiceNow Discovery:** 에이전트 설치가 없는 **에이전트리스(Agentless)**, **수평적(Horizontal)**, **IP 대역 기반** 솔루션입니다. 실시간이 아닌 **일정(Schedule) 기반**으로 작동하며, 방화벽 내부 통제를 위해 **MID Server** 브릿지를 활용합니다. (유료)
 * *작동 4단계 순서:* **스캔(Scan) ➔ 분류(Classification) ➔ 식별(Identification) ➔ 탐색(Exploration)**
-
 
 * **Service Mapping:** 비즈니스 서비스 관점에서 인프라의 종속성을 파악하는 **하향식(Top-Down)** 솔루션입니다. 런타임 환경의 배포판 시스템 스택인 **애플리케이션 서비스(`[cmdb_ci_service_auto]`)** 맵을 자동으로 생성합니다. (유료)
 * **Agent Client Collector (ACC):** 대상 호스트에 직접 가벼운 에이전트를 설치하는 솔루션입니다. 일정 기반이 아닌 **실시간(Near real-time)** 수집을 지원하며, 에이전트 없이는 수집이 불가능한 **'실제 소프트웨어 사용량(Software utilization)'** 데이터를 긁어와 SAM을 지원하는 것이 독점적 특권입니다. 원격 접속이 차단된 폐쇄 보안망 환경에 필수적입니다. (유료)
@@ -145,10 +136,11 @@ ServiceNow 데이터 거버넌스 라이프사이클의 핵심 순환 고리입�
 * **Change Group (변경 그룹):** ITSM 변경 요청 할당 그룹 매핑용.
 
 > **👑 그룹 필드 상속 우선순위 (Precedence):**
+>
 > * **1순위 (최상위): Technology Management Offering (기술 관리 오퍼링) 설정.** 오퍼링 레코드에 그룹을 지정해 두면 백그라운드 비즈니스 규칙(`CSDM - Sync Group Attributes`)에 의해 하부 Dynamic CI Group 및 개별 CI들로 값이 동적 실시간 상속되어 덮어씁니다.
 > * **2순위 (하위): CI Class Manager 설정.** 클래스 자체에 기본값으로 정적 매핑하는 방식으로, 오퍼링 설정이 들어오는 순간 밀려나서 덮어씌워집니다.
-> 
-> 
+>
+>
 
 ---
 
@@ -160,16 +152,12 @@ ServiceNow 데이터 거버넌스 라이프사이클의 핵심 순환 고리입�
 * *하위 지표:* **Required (필수), Recommended (권장)** 필드.
 * `Required` 필드는 Dictionary(사전) 레벨 강제라 누락 시 IRE 가동 실패(Error)를 유발하므로, 시스템 중단을 피하려면 시스템 속성 **`glide.required.attribute.enabled = false`** 처리가 필요할 수 있습니다. 반면 `Recommended` 필드는 Health Preferences 설정 탭에서 빌딩하며, 누락되어도 시스템 오류를 내지 않는 순수 가시성 지표입니다.
 
-
 * **Compliance (준수성):** 표준 정책 준수 여부 평가.
 * *하위 지표:* **Desired State (원하는 상태) 감사, Scripted Audits (스크립트 감사)**.
 * 대시보드 연동을 위해 템플릿의 Audit Type은 반드시 'Desired State'여야 합니다. 구성 4단계 순서는 `Certification Filter` (범위 스코프) ➔ `Certification Template` (조건 정의) ➔ `Audit` (비교 작업 실행) ➔ `Compliance Score Calculation Job` (최종 점수 계산 잡 - `admin` 역할 실행 필수)입니다.
 
-
 * **Correctness (정확성):** 실제 환경과의 일관성 및 최신성 평가.
 * *하위 지표:* **Duplicate (중복), Orphan (고아 - 필수 관계선 누락, 클래스당 1개만 허용), Staleness (오래됨 - 기본 60일 기준, `sys_updated_on` 필드 타임스탬프 기반 연산)**.
-
-
 
 > **⚠️ 대시보드 계산 함정:** 스코어카드의 전체 점수(Overall Score)는 하위 지표들의 단순 평균이 아닙니다. **정의된 '모든' 하위 지표 관문을 '동시에 모두 통과'한 깨끗한 CI의 최종 비율**을 산출하므로, 단순 합산 평균보다 항상 점수가 낮게 떨어지는 특성이 있습니다. 또한 대시보드 백엔드 스케줄 잡은 **기본적으로 비활성화**되어 있으므로 수동 가동해야 합니다.
 
@@ -242,17 +230,13 @@ CI의 대규모 수명주기 종료(End of Life) 액션을 자동화하는 프�
 * *핵심 엔티티:* **Business Application**, Business Capability, Information Object.
 * *핵심 페르소나:* **Enterprise Architect (EA)**. (물리적 실체나 IP가 없는 개념 구역).
 
-
 * **Manage Technical Services (운영):** 실제 개발이 끝나 서버 인프라에 라이브 배포된 서비스 인스턴스와 기술적 의존성을 통제하는 실시간 운영 레이어.
 * *핵심 엔티티:* **Application Service**, Dynamic CI Group. (Discovery 엔진이 매일 밤 스캔하는 주 대상 도메인).
 * *핵심 페르소나:* ITOM/디커버리 엔지니어, 서비스 딜리버리 매니저.
 
-
 * **Sell / Consume (소비):** 외부 고객이나 내부 직원이 포털을 통해 최종 서비스 가치를 요청하고 혜택을 누리는 프런트엔드 비즈니스 레이어.
 * *핵심 엔티티:* **Business Service**, **Business Service Offering**, Technical Service Offering.
 * *핵심 제품군:* **Customer Service Management (CSM)** 솔루션, ITSM Service Catalog 포털.
-
-
 
 ### 2. CSDM 도입 성공 성숙도 모델 파이프라인 (Crawl to Fly)
 
