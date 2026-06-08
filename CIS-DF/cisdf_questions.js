@@ -2197,8 +2197,8 @@ window.CISDF_QUESTIONS = [
       { "letter": "C", "text": "It structures dedicated reports detailing all orphaned CIs missing essential relational dependencies within the configuration database." },
       { "letter": "D", "text": "It generates failure remediation task sheets for all individual configuration records that completely failed the core CMDB Health Dashboard audit rules." }
     ],
-    "answer": ["A", "B", "C"],
-    "explanation": "정답: A, B, C. ServiceNow 데이터 거버넌스 표준 아키텍처에 따라, 스토어 전용 앱인 CMDB Data Foundations Dashboard는 최근 90일 이내 데이터 최신성(A), 수집 데이터의 IRE 엔진 통과율(B), 그리고 관계 끊어진 고아 자산 식별(C)을 3대 핵심 메트릭 지표로 관리합니다. 전통적인 플랫폼 순정 기능인 CMDB 헬스 대시보드의 감사 규칙 실패 자산 목록(D)은 이 대시보드가 집계하는 고유 영역이 아니므로 오답입니다."
+    "answer": ["A", "B"],
+    "explanation": "정답: A, B > ServiceNow 데이터 거버넌스 표준 아키텍처에 따라, 스토어 전용 앱인 CMDB Data Foundations Dashboard는 '데이터 관리 프랙티스' 탭을 통해 최근 90일 이내 데이터 최신성(A)과 수집 데이터의 IRE 엔진 통과율(B) 등을 핵심 메트릭 지표로 추적합니다. 반면, 필수 관계가 끊어진 고아 자산 식별 전용 보고서(C)와 핵심 감사 규칙 실패에 따른 개별 수정 작업(Task) 시트 생성(D)은 모두 전통적인 플랫폼 순정 기능인 **'CMDB Health Dashboard'의 고유 영역(Correctness 지표 등)**이므로 오답입니다"
   },
   {
     "id": 181,
