@@ -2376,16 +2376,15 @@ window.CISDF_QUESTIONS = [
     "explanation": "정답: C. ServiceNow 차세대 UX 및 AI 거버넌스 표준 명세에 따라, 사용자가 복잡한 쿼리 빌더 코딩 없이 일상적인 대화형 언어로 CMDB 자산을 실시간 탐색할 수 있는 'Natural Language Query (NLQ)' 입력 컴포넌트는 통합 운영 허브인 'CMDB Workspace' 메인 화면에 내이티브하게 배치되어 작동합니다(C). 라이프사이클 정책을 다루는 Data Manager(A), 스키마 설정을 다루는 Class Manager(B), 품질 점수만 리포팅하는 Health Dashboard(D)는 이 지능형 동적 NLQ 검색 인터페이스를 호스팅하지 않으므로 오답입니다."
   },
   {
-    "id": 196,
-    "title": "The CMDB Administrator configured an Identification Rule hierarchy for a hardware class with two distinct entries ordered by priority—Priority 100: Name, Priority 200: IP Address. During data ingestion, Payload CI_One triggers a perfect match on an existing record's Name attribute, while Payload CI_Two triggers a match exclusively on an existing record's IP Address attribute while its Name is entirely different. Which lifecycle outcome is correct?",
+    "id": 106,
+    "title": "The CMDB Configuration Management team wants to manage and remediate de-duplication tasks that are automatically generated when redundant data is ingested into the CMDB through the Identification and Reconciliation Engine (IRE). In which specific section of the CMDB Workspace can they locate and execute these de-duplication tasks?",
     "options": [
-      { "letter": "A", "text": "CI_One will successfully execute an update on the matched existing record, whereas CI_Two will fail the weak identifier criteria evaluation and be inserted as a brand new configuration item." },
-      { "letter": "B", "text": "CI_One will bypass the rule to be inserted as a new configuration item, while CI_Two will be granted authority to overwrite and update the existing record based on the IP address match." },
-      { "letter": "C", "text": "Both incoming payloads systematically satisfy criteria entry rules independently, resulting in both CI_One and CI_Two updating their respective matched existing configuration items." },
-      { "letter": "D", "text": "The IRE engine will flag the overlapping attribute telemetry as a conflict constraint, causing both CI_One and CI_Two to be clean inserted as dual new records." }
+      { "letter": "A", "text": "The Import Action tile located under the Home tab" },
+      { "letter": "B", "text": "The Total Status tile located under the My Work tab" },
+      { "letter": "C", "text": "The CMDB Feature Adoption tile located under the Insights tab" }
     ],
     "answer": ["A"],
-    "explanation": "정답: A. ServiceNow IRE(식별 및 조정 엔진)의 표준 순차 평가 매커니즘에 따라, 최상위 식별 자원인 Name이 매칭된 CI_One은 신뢰도가 확보되었으므로 기존 레코드를 안전하게 업데이트(A)합니다. 반면, 하위 종속 속성인 IP 주소만 단독 매칭된 CI_Two는 다른 주요 속성 불일치로 인해 식별 정합성이 불충분하므로 기존 자산 장부를 오염시키지 않기 위해 새로운 CI로 안전하게 격리 분리 삽입(A) 처리됩니다. 따라서 무차별 업데이트나 무차별 신규 생성을 선언한 나머지 선지들은 오답입니다."
+    "explanation": "정답: A. ServiceNow 공식 문서에 따르면, IRE가 감지한 중복 제거 작업(De-duplication tasks)과 같은 핵심 CMDB Health 관련 조치 항목은 관리자가 가장 먼저 인지하고 실행할 수 있도록 CMDB Workspace 랜딩 페이지인 'Home 탭'의 'Important Actions' 타일에 전면 배치됩니다. (지문에 'Import Action'으로 오타가 존재하나 위치상 A가 정답입니다.) 반면 'My Work' 탭은 CMDB Data Manager가 정책 기반으로 자동 생성하는 데이터 인증(Attestation) 등 수명 주기 작업을 관리하는 곳이므로 오답입니다."
   },
   {
     "id": 197,
