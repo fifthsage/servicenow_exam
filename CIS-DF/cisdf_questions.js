@@ -1322,8 +1322,8 @@ window.CISDF_QUESTIONS = [
       { "letter": "B", "text": "The Total Status tile located under the My Work tab" },
       { "letter": "C", "text": "The CMDB Feature Adoption tile located under the Insights tab" }
     ],
-    "answer": ["B"],
-    "explanation": "정답: B. ServiceNow CMDB Workspace 아키텍처 가이드라인에 따라, IRE가 데이터 무결성을 보호하기 위해 발행한 '중복 제거 태스크(De-duplication Tasks)'는 어드민이 직접 조치해야 하는 업무 티켓에 해당하므로 'My Work' 탭의 'Total Status' 타일을 통해 진입하여 데이터 보정 마법사(Remediation)를 구동해야 합니다. 데이터 유입 관리를 담당하는 Home 탭(A)이나 기능 도입 수준을 평가하는 Insights 탭(C)은 개별 티켓 조치 인터페이스를 제공하지 않으므로 오답입니다."
+    "answer": ["A"],
+    "explanation": "정답: A. ServiceNow 공식 문서에 따르면, IRE가 감지한 중복 제거 작업(De-duplication tasks)과 같은 핵심 CMDB Health 관련 조치 항목은 관리자가 가장 먼저 인지하고 실행할 수 있도록 CMDB Workspace 랜딩 페이지인 'Home 탭'의 'Important Actions' 타일에 전면 배치됩니다. (지문에 'Import Action'으로 오타가 존재하나 위치상 A가 정답입니다.) 반면 'My Work' 탭은 CMDB Data Manager가 정책 기반으로 자동 생성하는 데이터 인증(Attestation) 등 수명 주기 작업을 관리하는 곳이므로 오답입니다."
   },
   {
     "id": 107,
@@ -2376,15 +2376,16 @@ window.CISDF_QUESTIONS = [
     "explanation": "정답: C. ServiceNow 차세대 UX 및 AI 거버넌스 표준 명세에 따라, 사용자가 복잡한 쿼리 빌더 코딩 없이 일상적인 대화형 언어로 CMDB 자산을 실시간 탐색할 수 있는 'Natural Language Query (NLQ)' 입력 컴포넌트는 통합 운영 허브인 'CMDB Workspace' 메인 화면에 내이티브하게 배치되어 작동합니다(C). 라이프사이클 정책을 다루는 Data Manager(A), 스키마 설정을 다루는 Class Manager(B), 품질 점수만 리포팅하는 Health Dashboard(D)는 이 지능형 동적 NLQ 검색 인터페이스를 호스팅하지 않으므로 오답입니다."
   },
   {
-    "id": 106,
-    "title": "The CMDB Configuration Management team wants to manage and remediate de-duplication tasks that are automatically generated when redundant data is ingested into the CMDB through the Identification and Reconciliation Engine (IRE). In which specific section of the CMDB Workspace can they locate and execute these de-duplication tasks?",
+    "id": 196,
+    "title": "The CMDB Administrator configured an Identification Rule hierarchy for a hardware class with two distinct entries ordered by priority—Priority 100: Name, Priority 200: IP Address. During data ingestion, Payload CI_One triggers a perfect match on an existing record's Name attribute, while Payload CI_Two triggers a match exclusively on an existing record's IP Address attribute while its Name is entirely different. Which lifecycle outcome is correct?",
     "options": [
-      { "letter": "A", "text": "The Import Action tile located under the Home tab" },
-      { "letter": "B", "text": "The Total Status tile located under the My Work tab" },
-      { "letter": "C", "text": "The CMDB Feature Adoption tile located under the Insights tab" }
+      { "letter": "A", "text": "CI_One will successfully execute an update on the matched existing record, whereas CI_Two will fail the weak identifier criteria evaluation and be inserted as a brand new configuration item." },
+      { "letter": "B", "text": "CI_One will bypass the rule to be inserted as a new configuration item, while CI_Two will be granted authority to overwrite and update the existing record based on the IP address match." },
+      { "letter": "C", "text": "Both incoming payloads systematically satisfy criteria entry rules independently, resulting in both CI_One and CI_Two updating their respective matched existing configuration items." },
+      { "letter": "D", "text": "The IRE engine will flag the overlapping attribute telemetry as a conflict constraint, causing both CI_One and CI_Two to be clean inserted as dual new records." }
     ],
-    "answer": ["A"],
-    "explanation": "정답: A. ServiceNow 공식 문서에 따르면, IRE가 감지한 중복 제거 작업(De-duplication tasks)과 같은 핵심 CMDB Health 관련 조치 항목은 관리자가 가장 먼저 인지하고 실행할 수 있도록 CMDB Workspace 랜딩 페이지인 'Home 탭'의 'Important Actions' 타일에 전면 배치됩니다. (지문에 'Import Action'으로 오타가 존재하나 위치상 A가 정답입니다.) 반면 'My Work' 탭은 CMDB Data Manager가 정책 기반으로 자동 생성하는 데이터 인증(Attestation) 등 수명 주기 작업을 관리하는 곳이므로 오답입니다."
+    "answer": ["C"],
+    "explanation": "정답: C. ServiceNow IRE(식별 및 조정 엔진)는 식별 규칙(Identifier Entries)을 우선순위(Priority)에 따라 기계적으로 순차 평가합니다(Waterfall 방식). 첫 번째 규칙에서 실패하더라도 다음 우선순위 규칙에서 일치 항목을 찾으면 매칭으로 간주합니다. CI_One은 Priority 100(Name)을 충족하여 기존 레코드를 업데이트합니다. CI_Two는 Name이 일치하지 않아 Priority 100을 통과하지 못하지만, Priority 200(IP Address)을 충족하므로 이 역시 성공적인 식별로 처리되어 기존 레코드를 업데이트하게 됩니다. (IRE에는 상위 속성이 다르다고 매칭을 스스로 거부하고 신규 삽입하는 '취약 식별자 평가(weak identifier criteria evaluation)'와 같은 가상의 보호 로직이 없으며, 이것이 IP 주소를 단독 식별 규칙으로 사용하면 안 되는 주된 이유입니다.)"
   },
   {
     "id": 197,
