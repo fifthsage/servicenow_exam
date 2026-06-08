@@ -1112,7 +1112,7 @@ window.CISDF_QUESTIONS = [
   },
   {
     "id": 90,
-    "title": "The Server class uses a dynamic reconciliation rule that selects the largest value for the RAM field, while its child class, Windows Server, uses a rule that selects the most reported value. Based on the RAM values available from different discovery sources in the Multisource CMDB for a given Server, which RAM value will ultimately be written to the CMDB for that Server record? • Tivoli RAM: 4096 | ServiceNow RAM: 4096 | LANDesk RAM: 2048 | Altiris RAM: 6020",
+    "title": "The Server class uses a dynamic reconciliation rule that selects the largest value for the RAM field, while its child class, Windows Server, uses a rule that selects the most reported value. Based on the RAM values available from different discovery sources in the Multisource CMDB for a given Server, which RAM value will ultimately be written to the CMDB for that Server record?\n\n• Tivoli RAM: 4096 | ServiceNow RAM: 4096 | LANDesk RAM: 2048 | Altiris RAM: 6020",
     "options": [
       { "letter": "A", "text": "6020" },
       { "letter": "B", "text": "2048" },
@@ -1124,7 +1124,7 @@ window.CISDF_QUESTIONS = [
   },
   {
     "id": 91,
-    "title": "The Server class uses a dynamic reconciliation rule that selects the largest value for the RAM field, while the Windows Server class uses a rule that selects the most reported value. Based on the RAM values available from different discovery sources in the Multisource CMDB for a given Windows Server, which RAM value will ultimately be written to the CMDB for that Windows Server record? • Tivoli RAM: 4096 | ServiceNow RAM: 4096 | LANDesk RAM: 2048 | Altiris RAM: 6020",
+    "title": "The Server class uses a dynamic reconciliation rule that selects the largest value for the RAM field, while the Windows Server class uses a rule that selects the most reported value. Based on the RAM values available from different discovery sources in the Multisource CMDB for a given Windows Server, which RAM value will ultimately be written to the CMDB for that Windows Server record?\n\n• Tivoli RAM: 4096 | ServiceNow RAM: 4096 | LANDesk RAM: 2048 | Altiris RAM: 6020",
     "options": [
       { "letter": "A", "text": "6020" },
       { "letter": "B", "text": "2048" },
@@ -1232,7 +1232,7 @@ window.CISDF_QUESTIONS = [
   },
   {
     "id": 100,
-    "title": "An Identification Rule for a CI class is defined with two sequential Identifier Entries: Priority 100 uses the 'Name' attribute, and Priority 200 uses the 'IP Address' attribute (requiring strict compound verification). Two new CI records are subsequently imported into the system. • CI one: The name matches an existing CI record in the CMDB. • CI two: The IP address matches an existing CI record in the CMDB, but no name or MAC address matches. Which outcome is correct based on the ServiceNow IRE processing?",
+    "title": "An Identification Rule for a CI class is defined with two sequential Identifier Entries: Priority 100 uses the 'Name' attribute, and Priority 200 uses the 'IP Address' attribute (requiring strict compound verification). Two new CI records are subsequently imported into the system.\n\n• CI one: The name matches an existing CI record in the CMDB.\n• CI two: The IP address matches an existing CI record in the CMDB, but no name or MAC address matches.\n\nWhich outcome is correct based on the ServiceNow IRE processing?",
     "options": [
       { "letter": "A", "text": "CI one will update the existing CI, and CI two will be inserted as a brand new CI." },
       { "letter": "B", "text": "CI one will be inserted as a brand new CI, and CI two will update the existing CI." },
@@ -1267,7 +1267,7 @@ window.CISDF_QUESTIONS = [
   },
   {
     "id": 103,
-    "title": "A CMDB Configuration Management manager creates a data filter for a certification policy in CMDB Data Manager with the following configuration: • Target Table: Server [cmdb_ci_server] • Filter Condition: [Operating System] [contains] [Server] OR [Operating System] [contains] [Linux]. Which operating systems dynamically populated on the target table will be affected by this policy? (Choose multiple)",
+    "title": "A CMDB Configuration Management manager creates a data filter for a certification policy in CMDB Data Manager with the following configuration:\n\n• Target Table: Server [cmdb_ci_server]\n• Filter Condition: [Operating System] [contains] [Server] OR [Operating System] [contains] [Linux].\n\nWhich operating systems dynamically populated on the target table will be affected by this policy? (Choose multiple)",
     "options": [
       { "letter": "A", "text": "AIX 7.2" },
       { "letter": "B", "text": "Windows Server 2022 Datacenter" },
@@ -1327,7 +1327,7 @@ window.CISDF_QUESTIONS = [
   },
   {
     "id": 107,
-    "title": "An organization aligns its CMDB governance with the CSDM 4.0 framework. A CMDB Administrator is evaluating conflicting group ownership values defined across different architectural layers for a specific class of CIs: • CI Class Manager Default [Managed by Group] = Enterprise IT Services • Associated Technical Service Offering [Managed by Group] = Windows Support • CI Attribute [Change Group] = Change Management Team Based on CSDM data-synchronization best practices, what will be the final updated [Managed by Group] value on the infrastructure CIs of this class?",
+    "title": "An organization aligns its CMDB governance with the CSDM 4.0 framework. A CMDB Administrator is evaluating conflicting group ownership values defined across different architectural layers for a specific class of CIs:\n\n• CI Class Manager Default [Managed by Group] = Enterprise IT Services\n• Associated Technical Service Offering [Managed by Group] = Windows Support\n• CI Attribute [Change Group] = Change Management Team\n\n Based on CSDM data-synchronization best practices, what will be the final updated [Managed by Group] value on the infrastructure CIs of this class?",
     "options": [
       { "letter": "A", "text": "Enterprise IT Services" },
       { "letter": "B", "text": "Change Management Team" },
