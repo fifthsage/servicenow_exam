@@ -5,10 +5,19 @@
   --border: #30363d;
   --text: #e6edf3;
   --text-dim: #8b949e;
-  --blue: #58a6ff;
+  --blue: #79c0ff;
   --green: #06d6a0;
   --yellow: #ffd166;
   --purple: #c77dff;
+}
+
+a {
+  color: var(--blue);
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 * {
