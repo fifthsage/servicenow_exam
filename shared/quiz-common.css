@@ -166,7 +166,8 @@ body {
 }
 
 .practice button,
-.all button {
+.all button,
+.all-random button {
   background: rgba(88, 166, 255, 0.2);
   color: #ddebff;
   border-color: rgba(88, 166, 255, 0.5);

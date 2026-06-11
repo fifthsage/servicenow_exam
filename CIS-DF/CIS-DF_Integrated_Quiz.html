@@ -49,9 +49,14 @@
             <button onclick="startSession('exam')">실전 시작</button>
           </div>
           <div class="mode all">
-            <h2>전체 모드</h2>
-            <p>모든 문항 랜덤 출제. 시간 제한 없음. 전체 범위를 학습합니다.</p>
-            <button onclick="startSession('all')">전체 시작</button>
+            <h2>전체 모드 (순차)</h2>
+            <p>1번부터 마지막 문항까지 순서대로 학습합니다.</p>
+            <button onclick="startSession('all')">순차 시작</button>
+          </div>
+          <div class="mode all-random">
+            <h2>전체 모드 (랜덤)</h2>
+            <p>전체 문항을 무작위로 섞어서 학습합니다.</p>
+            <button onclick="startSession('all_random')">랜덤 시작</button>
           </div>
         </div>
         <p id="pool-info" class="pool-info"></p>

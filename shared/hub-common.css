@@ -195,6 +195,16 @@ header {
   flex-grow: 1;
 }
 
+.card-actions {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.card-actions .btn {
+  flex: 1;
+}
+
 a.btn {
   text-decoration: none;
   border: 1px solid transparent;

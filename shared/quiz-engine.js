@@ -353,7 +353,7 @@
     function startSession(selectedMode) {
       mode = selectedMode;
       setWrongModeFlag(mode === 'wrong');
-      var limit = mode === 'exam' ? 75 : (mode === 'all' ? allQuestions.length : 10);
+      var limit = mode === 'exam' ? 75 : ((mode === 'all' || mode === 'all_random') ? allQuestions.length : 10);
       var duration = mode === 'exam' ? 90 * 60 : null;
 
       if (mode === 'wrong') {
@@ -364,6 +364,8 @@
           return;
         }
       } else if (mode === 'all') {
+        sessionQuestions = allQuestions;
+      } else if (mode === 'all_random') {
         sessionQuestions = shuffle(allQuestions);
       } else {
         sessionQuestions = shuffle(allQuestions).slice(0, Math.min(limit, allQuestions.length));
@@ -380,7 +382,13 @@
       document.getElementById('quiz-screen').style.display = 'block';
       document.getElementById('practice-review').style.display = 'none';
 
-      document.getElementById('mode-label').textContent = mode === 'exam' ? '실전' : (mode === 'wrong' ? '오답' : (mode === 'all' ? '전체' : '연습'));
+      var label = '연습';
+      if (mode === 'exam') label = '실전';
+      else if (mode === 'wrong') label = '오답';
+      else if (mode === 'all') label = '전체(순차)';
+      else if (mode === 'all_random') label = '전체(랜덤)';
+
+      document.getElementById('mode-label').textContent = label;
       if (mode === 'exam') {
         startTimer();
       } else {
