@@ -165,7 +165,7 @@
     function getModeFromQuery() {
       var q = new URLSearchParams(window.location.search);
       var m = q.get('mode');
-      return m === 'exam' || m === 'practice' || m === 'wrong' ? m : null;
+      return m === 'exam' || m === 'practice' || m === 'wrong' || m === 'all' ? m : null;
     }
 
     function showInvalidAccess() {
@@ -353,7 +353,7 @@
     function startSession(selectedMode) {
       mode = selectedMode;
       setWrongModeFlag(mode === 'wrong');
-      var limit = mode === 'exam' ? 75 : 10;
+      var limit = mode === 'exam' ? 75 : (mode === 'all' ? allQuestions.length : 10);
       var duration = mode === 'exam' ? 90 * 60 : null;
 
       if (mode === 'wrong') {
@@ -363,6 +363,8 @@
           updateWrongModeUI();
           return;
         }
+      } else if (mode === 'all') {
+        sessionQuestions = shuffle(allQuestions);
       } else {
         sessionQuestions = shuffle(allQuestions).slice(0, Math.min(limit, allQuestions.length));
       }
@@ -378,7 +380,7 @@
       document.getElementById('quiz-screen').style.display = 'block';
       document.getElementById('practice-review').style.display = 'none';
 
-      document.getElementById('mode-label').textContent = mode === 'exam' ? '실전' : (mode === 'wrong' ? '오답' : '연습');
+      document.getElementById('mode-label').textContent = mode === 'exam' ? '실전' : (mode === 'wrong' ? '오답' : (mode === 'all' ? '전체' : '연습'));
       if (mode === 'exam') {
         startTimer();
       } else {
@@ -440,10 +442,10 @@
       document.getElementById('result-score').textContent = correct + ' / ' + total;
       document.getElementById('result-percent').textContent = '정답률 ' + percent + '%';
 
-      var modeText = mode === 'exam' ? '실전 모드' : (mode === 'wrong' ? '오답 모드' : '연습 모드');
+      var modeText = mode === 'exam' ? '실전 모드' : (mode === 'wrong' ? '오답 모드' : (mode === 'all' ? '전체 모드' : '연습 모드'));
       document.getElementById('result-summary').textContent = modeText + '를 완료했습니다. ' + total + '문항 중 ' + correct + '문항 정답입니다.';
 
-      if (mode === 'practice' || mode === 'wrong') {
+      if (mode === 'practice' || mode === 'wrong' || mode === 'all') {
         renderPracticeReview();
       } else {
         document.getElementById('practice-review').style.display = 'none';

@@ -156,7 +156,8 @@ body {
   cursor: pointer;
 }
 
-.practice button {
+.practice button,
+.all button {
   background: rgba(88, 166, 255, 0.2);
   color: #ddebff;
   border-color: rgba(88, 166, 255, 0.5);

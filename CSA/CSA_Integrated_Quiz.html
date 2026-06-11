@@ -28,7 +28,7 @@
 
       <div id="invalid-screen" class="invalid-wrap">
         <h2>잘못된 접근입니다</h2>
-        <p>유효한 모드 파라미터가 필요합니다.<br>예: ?mode=practice, ?mode=exam, ?mode=wrong</p>
+        <p>유효한 모드 파라미터가 필요합니다.<br>예: ?mode=practice, ?mode=exam, ?mode=wrong, ?mode=all</p>
         <div class="actions result-actions">
           <button class="btn primary" onclick="location.href='index.html'">CSA 홈으로 이동</button>
           <button class="btn" onclick="location.href='../index.html'">메인 홈</button>
@@ -47,6 +47,11 @@
             <h2>실전 모드</h2>
             <p>랜덤 75문항. 90분 제한. 전부 응답 또는 시간 종료 시 채점.</p>
             <button onclick="startSession('exam')">실전 시작</button>
+          </div>
+          <div class="mode all">
+            <h2>전체 모드</h2>
+            <p>모든 문항 랜덤 출제. 시간 제한 없음. 전체 범위를 학습합니다.</p>
+            <button onclick="startSession('all')">전체 시작</button>
           </div>
           <div class="mode wrong">
             <h2>오답 모드</h2>
