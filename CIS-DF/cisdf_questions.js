@@ -154,7 +154,7 @@ window.CISDF_QUESTIONS = [
   },
   {
     "id": 7,
-    "title": "A Data Center Manager is defining the relationship between Application Servers and Applications in the CMDB. The company environment has the following characteristics:\n- Multiple Application Servers\n- Each server can host multiple Applications\n- Each Application can run on multiple servers.\nWhich describes the relationship?",
+    "title": "A Data Center Manager is defining the relationship between Application Servers and Applications in the CMDB. The company environment has the following characteristics:\n\n- Multiple Application Servers\n- Each server can host multiple Applications\n- Each Application can run on multiple servers.\n\nWhich describes the relationship?",
     "options": [
       {
         "letter": "A",
@@ -1524,7 +1524,7 @@ window.CISDF_QUESTIONS = [
   },
   {
     "id": 62,
-    "title": "Scenario:\n1. A healthcare provider experiences a critical incident.\n2. The incident affects the patient management system (Application Service).\n3. The IT Service Desk needs to immediately determine which users and business units are impacted.\n\nWhich CSDM-related data should be used to accurately determine the impacted users?",
+    "title": "Scenario:\n\n1. A healthcare provider experiences a critical incident.\n2. The incident affects the patient management system (Application Service).\n3. The IT Service Desk needs to immediately determine which users and business units are impacted.\n\nWhich CSDM-related data should be used to accurately determine the impacted users?",
     "options": [
       {
         "letter": "A",
@@ -2214,7 +2214,7 @@ window.CISDF_QUESTIONS = [
   },
   {
     "id": 88,
-    "title": "The Server class uses a dynamic reconciliation rule that selects the largest value for the RAM field, while its child class, Windows Server, uses a rule that selects the most reported value. Based on the RAM values available from different discovery sources in the Multisource CMDB for a given Server, which RAM value will ultimately be written to the CMDB for that Server record?\n\n• Tivoli RAM: 4096 | ServiceNow RAM: 4096 | LANDesk RAM: 2048 | Altiris RAM: 6020",
+    "title": "The Server class uses a dynamic reconciliation rule that selects the largest value for the RAM field, while its child class, Windows Server, uses a rule that selects the most reported value. Based on the RAM values available from different discovery sources in the Multisource CMDB for a given Server, which RAM value will ultimately be written to the CMDB for that Server record?\n\n• Tivoli RAM: 4096 | ServiceNow RAM: 4096 | LANDesk RAM: 2048 | Altiris RAM: 6020\n\n",
     "options": [
       {
         "letter": "A",
@@ -2240,7 +2240,7 @@ window.CISDF_QUESTIONS = [
   },
   {
     "id": 89,
-    "title": "The Server class uses a dynamic reconciliation rule that selects the largest value for the RAM field, while the Windows Server class uses a rule that selects the most reported value. Based on the RAM values available from different discovery sources in the Multisource CMDB for a given Windows Server, which RAM value will ultimately be written to the CMDB for that Windows Server record?\n\n• Tivoli RAM: 4096 | ServiceNow RAM: 4096 | LANDesk RAM: 2048 | Altiris RAM: 6020",
+    "title": "The Server class uses a dynamic reconciliation rule that selects the largest value for the RAM field, while the Windows Server class uses a rule that selects the most reported value. Based on the RAM values available from different discovery sources in the Multisource CMDB for a given Windows Server, which RAM value will ultimately be written to the CMDB for that Windows Server record?\n\n• Tivoli RAM: 4096 | ServiceNow RAM: 4096 | LANDesk RAM: 2048 | Altiris RAM: 6020\n\n",
     "options": [
       {
         "letter": "A",
