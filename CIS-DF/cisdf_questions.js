@@ -3313,10 +3313,9 @@ window.CISDF_QUESTIONS = [
     ],
     "answer": [
       "A",
-      "C",
       "D"
     ],
-    "explanation": "정답: A, C, D. ServiceNow CMDB 360 아키텍처 명세에 따라, 다중 소스 데이터를 실시간 컨텍스트로 중재하는 공식 동적 규칙 유형(Dynamic Rule Types)은 'First Reported', 'Last Updated'(C), 'Most Reported'(A), 'Smallest Value'(D), 'Largest Value' 총 5가지만 존재합니다. 수집 소스 데이터의 트랜잭션은 기본적으로 기존 속성의 수정/업데이트를 기반으로 흐르기 때문에, 레코드 최초 생성 시점을 논하는 'Last Created'(B) 유형은 마법사 UI 옵션에 존재하지 않는 허구의 개념이므로 오답입니다."
+    "explanation": "정답: A, D. ServiceNow CMDB 360(Multisource CMDB) 아키텍처 명세에 따라, 플랫폼 마법사 UI에서 공식적으로 제공하는 동적 화해 규칙 유형(Dynamic Rule Types)은 오직 'First Reported', 'Most Reported', 'Last Reported', 'Largest Value', 'Smallest Value' 총 5가지만 존재합니다. 시간 및 빈도 기준의 유형은 모두 'Reported'라는 용어를 사용하므로, 출제자가 임의로 변형한 'Last Created'(B)와 'Last Updated'(C)는 플랫폼 인터페이스에 존재하지 않는 허구의 오답 선지입니다. 따라서 제공된 보기 중 올바른 동적 규칙 유형은 A번과 D번뿐입니다."
   },
   {
     "id": 131,
