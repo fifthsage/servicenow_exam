@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ServiceNow 시험 노쇼(No-Show) 구제 가이드</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="hub-common.css">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-dim: #8b949e;
+      --blue: #58a6ff;
+      --green: #06d6a0;
+      --orange: #ff9f43;
+      --red: #ff6b6b;
+      --purple: #c77dff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', -apple-system, sans-serif;
+      background: radial-gradient(ellipse at 15% 20%, rgba(255, 107, 107, 0.1), transparent 40%),
+        radial-gradient(ellipse at 85% 70%, rgba(88, 166, 255, 0.05), transparent 45%), var(--bg);
+      color: var(--text);
+      padding-top: 48px;
+    }
+
+    .top-home-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 24px 14px 60px;
+    }
+
+    .top-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      background: linear-gradient(145deg, rgba(255, 107, 107, 0.1), rgba(22, 27, 34, 0.9));
+      border-left: 6px solid var(--red);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(22px, 5vw, 30px);
+      color: #fff;
+    }
+
+    .sub {
+      margin-top: 10px;
+      color: #ffd7d7;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .section {
+      margin-top: 20px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface);
+      padding: 20px;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 19px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--red);
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    ol,
+    ul {
+      padding-left: 24px;
+      margin: 12px 0;
+    }
+
+    li {
+      margin: 10px 0;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    strong {
+      color: var(--orange);
+    }
+
+    .info-box {
+      margin-top: 12px;
+      border-left: 4px solid var(--blue);
+      background: rgba(88, 166, 255, 0.1);
+      border-radius: 0 10px 10px 0;
+      padding: 14px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .template-box {
+      margin-top: 16px;
+      background: #000;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    pre {
+      margin: 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: #d1d5db;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 18px;
+      background: var(--blue);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: transform 0.2s, background 0.2s;
+      margin-top: 10px;
+    }
+
+    .btn-link:hover {
+      background: #4691e6;
+      transform: translateY(-2px);
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: var(--blue);
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-home-bar">
+    <div class="top-home-inner">
+      <div class="top-home-links">
+        <a href="../index.html">홈</a>
+        <a onclick="history.back()">이전 페이지로 돌아가기</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <header class="top-card">
+      <h1>💡 성명 불일치로 인한 노쇼(No-Show) 구제 가이드</h1>
+      <p class="sub">이름 오기입으로 인해 시험 응시가 거부되어 '노쇼' 처리된 경우, 무료 응시 기회를 복구받기 위한 절차를 안내합니다.</p>
+    </header>
+
+    <section class="section">
+      <h2><span class="dot"></span>1단계: 🏃‍♂️ 3단계 구제 절차 요약</h2>
+      <ol>
+        <li><strong>이름 수정 (완료):</strong> Now Learning 프로필 영문 이름을 정부 발행 신분증(여권)과 정확히 일치하도록 수정합니다. (Pearson VUE 계정에도 자동
+          반영됩니다.)</li>
+        <li><strong>증빙 확보:</strong> 시험 당일 현장 방문을 증명할 수 있는 자료(시험장 앞 사진, 예약 확정 메일, 대기표 등)가 있다면 케이스에 첨부할 준비를 합니다.</li>
+        <li><strong>고객지원 문의(Support Case) 접수:</strong> 아래 공식 링크를 통해 "단순 결석이 아닌 이름 오기입으로 인한 입실 거부"임을 밝히고 예외적 복구를 요청합니다.
+        </li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2><span class="dot"></span>2단계: 🔗 실제 케이스 오픈(Case Open) 링크</h2>
+      <p>ServiceNow University 공식 고객지원 페이지로 이동하여 직접 문의를 등록하셔야 합니다.</p>
+      <a href="https://learning.servicenow.com/lxp/en/pages/now-learning-help-center?id=nl_kb_home" target="_blank"
+        rel="noopener noreferrer" class="btn-link">ServiceNow University Help Center 바로가기</a>
+      <div class="info-box">
+        <strong>💡 접수 시 설정 팁:</strong>
+        <ul>
+          <li><strong>Case category:</strong> <code>Credentials</code> 선택</li>
+          <li><strong>Case subcategory:</strong> <code>Vouchers</code> 선택</li>
+          <li><strong>첨부파일 (Attachments):</strong> 준비한 현장 증빙 사진 등 추가</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2><span class="dot"></span>3단계: 📝 접수 시 사용할 영문 본문 (템플릿)</h2>
+      <p>아래 내용을 복사하여 Description(본문)란에 입력하세요. <code>[ ]</code> 부분은 본인의 정보로 수정해야 합니다.</p>
+      <div class="template-box">
+        <pre><code>Dear ServiceNow Support Team,
+
+I am writing to request the restoration of my free exam eligibility for the exam, which was marked as a "No-Show."
+
+At the test center, I was turned away because my registered name did not perfectly match my passport. I have now successfully updated my profile name to match my legal ID. Since this was an honest mistake and I actually attended the test center, I kindly request you to exceptionally restore my exam eligibility.
+
+* Exam Name: [CSA 또는 CIS-DF 등 시험명]
+* My Updated Legal Name: [본인의 영문 이름]
+* Now Learning Email Account: [본인의 계정 이메일]
+* Originally Scheduled Exam Date: [시험 예약 날짜 (YYYY-MM-DD)]
+
+Thank you.
+Best regards,
+[본인의 영문 이름]</code></pre>
+      </div>
+    </section>
+
+    <a onclick="history.back()" class="back-link">← 이전 페이지로 돌아가기</a>
+
+    <footer class="footer">
+      <div>ServiceNow Certification Support Guide</div>
+      <div>본 가이드는 실제 합격자들의 경험을 바탕으로 작성되었습니다.</div>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -89,6 +89,11 @@
       padding: 16px;
     }
 
+    .section.critical {
+      border: 1px solid rgba(255, 107, 107, 0.4);
+      background: linear-gradient(145deg, rgba(255, 107, 107, 0.08), var(--surface));
+    }
+
     h2 {
       margin: 0 0 10px;
       font-size: 18px;
@@ -208,6 +213,80 @@
       padding-top: 14px;
       line-height: 1.7;
     }
+
+    /* Recovery Guide Styles */
+    .recovery-guide {
+      margin-top: 12px;
+      border-left: 4px solid var(--red);
+      background: rgba(255, 107, 107, 0.14);
+      border-radius: 0 10px 10px 0;
+      overflow: hidden;
+    }
+
+    .recovery-guide summary {
+      padding: 10px 14px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffd7d7;
+      outline: none;
+      transition: background 0.2s;
+    }
+
+    .recovery-guide summary:hover {
+      background: rgba(255, 107, 107, 0.1);
+    }
+
+    .recovery-content {
+      padding: 4px 14px 16px;
+      border-top: 1px solid rgba(255, 107, 107, 0.2);
+    }
+
+    .recovery-content p {
+      margin: 12px 0 8px;
+      font-size: 14px;
+      color: #ffd7d7;
+    }
+
+    .recovery-content h3 {
+      font-size: 15px;
+      margin: 18px 0 8px;
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 107, 107, 0.3);
+      padding-bottom: 4px;
+      display: inline-block;
+    }
+
+    .recovery-content ul,
+    .recovery-content ol {
+      margin: 8px 0;
+      padding-left: 20px;
+      color: #ffd7d7;
+    }
+
+    .recovery-content li {
+      margin: 6px 0;
+      font-size: 13.5px;
+    }
+
+    .recovery-template pre {
+      background: #000;
+      padding: 12px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      border: 1px solid rgba(255, 107, 107, 0.2);
+      color: #ffd7d7;
+      line-height: 1.5;
+      margin: 8px 0;
+    }
+
+    .recovery-link a {
+      color: var(--blue);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(88, 166, 255, 0.4);
+    }
   </style>
 </head>
 
@@ -224,7 +303,8 @@
   <div class="container">
     <section class="top-card">
       <h1>CIS-DF 시험 응시 방법</h1>
-      <p class="sub">ServiceNow University의 Discovery Foundations 학습 흐름(모듈, 랩, 지식 점검, 캡스톤)을 기준으로 응시 준비부터 바우처/일정 확인까지 정리한 가이드입니다.</p>
+      <p class="sub">ServiceNow University의 Discovery Foundations 학습 흐름(모듈, 랩, 지식 점검, 캡스톤)을 기준으로 응시 준비부터 바우처/일정 확인까지 정리한
+        가이드입니다.</p>
       <div class="kpis">
         <span>Exam: CIS-DF</span>
         <span>Track: Discovery Foundations</span>
@@ -235,7 +315,8 @@
     <section class="section">
       <h2><span class="dot"></span>1) 응시 전제 조건 정리</h2>
       <ul>
-        <li><strong>학습 전제:</strong> ServiceNow University의 Discovery Foundations 과정에서 모듈 학습 + 지식 점검 + 랩을 완료한 뒤 응시하는 흐름이 일반적입니다.</li>
+        <li><strong>학습 전제:</strong> ServiceNow University의 Discovery Foundations 과정에서 모듈 학습 + 지식 점검 + 랩을 완료한 뒤 응시하는 흐름이
+          일반적입니다.</li>
         <li><strong>권장 준비:</strong> CMDB, CSDM, Discovery, IRE, Data Governance 관련 실습을 최소 1회 이상 수행해 개념-화면 연결까지 확인.</li>
         <li><strong>실무 관점:</strong> 단순 암기보다 시나리오 기반 판단(어떤 기능을 언제 쓰는지)이 더 중요합니다.</li>
       </ul>
@@ -255,33 +336,75 @@
     <section class="section">
       <h2><span class="dot orange"></span>3) 시험 예약 절차 (실행 순서)</h2>
       <div class="timeline">
-        <div class="step"><strong>Step 1</strong> ServiceNow University 로그인 후 <a href="https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&achievement_id=0e97835c47ea2e10c00af235126d431b&s=1&ssa=3" target="_blank" rel="noopener noreferrer">Get Certified</a>와 <a href="https://learning.servicenow.com/now/lxp/home" target="_blank" rel="noopener noreferrer">University Home</a>에서 CIS-DF 관련 Credential/Blueprint 노출 여부와 최신 정책을 확인.</div>
-        <div class="step"><strong>Step 2</strong> <a href="https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&achievement_id=0e97835c47ea2e10c00af235126d431b&s=1&ssa=3" target="_blank" rel="noopener noreferrer">Get Certified 페이지</a>의 Schedule Exam 경로로 시험 예약 시스템에 이동하고 계정을 연동/생성.</div>
+        <div class="step"><strong>Step 1</strong> ServiceNow University 로그인 후 <a
+            href="https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&achievement_id=0e97835c47ea2e10c00af235126d431b&s=1&ssa=3"
+            target="_blank" rel="noopener noreferrer">Get Certified</a>와 <a
+            href="https://learning.servicenow.com/now/lxp/home" target="_blank" rel="noopener noreferrer">University
+            Home</a>에서 CIS-DF 관련 Credential/Blueprint 노출 여부와 최신 정책을 확인.</div>
+        <div class="step"><strong>Step 2</strong> <a
+            href="https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&achievement_id=0e97835c47ea2e10c00af235126d431b&s=1&ssa=3"
+            target="_blank" rel="noopener noreferrer">Get Certified 페이지</a>의 Schedule Exam 경로로 시험 예약 시스템에 이동하고 계정을
+          연동/생성.</div>
         <div class="step"><strong>Step 3</strong> 온라인 감독형 또는 시험센터 방식 중 하나를 선택하고 가능한 시간 슬롯 조회.</div>
         <div class="step"><strong>Step 4</strong> 결제 단계에서 바우처 코드가 있으면 적용 후 금액/통화/조건 확인.</div>
         <div class="step"><strong>Step 5</strong> 예약 확정 메일을 받은 뒤 신분증 요건, 시험 규정, 시스템 테스트 안내를 체크.</div>
-        <div class="step"><strong>Step 6</strong> 시험 전날 CMDB/Discovery/CSDM 핵심 시나리오를 마지막으로 정리. 정책이 불명확하면 <a href="https://www.servicenow.com/services/training-and-certification.html" target="_blank" rel="noopener noreferrer">Training &amp; Certification</a> 페이지도 함께 확인.</div>
+        <div class="step"><strong>Step 6</strong> 시험 전날 CMDB/Discovery/CSDM 핵심 시나리오를 마지막으로 정리. 정책이 불명확하면 <a
+            href="https://www.servicenow.com/services/training-and-certification.html" target="_blank"
+            rel="noopener noreferrer">Training &amp; Certification</a> 페이지도 함께 확인.</div>
       </div>
     </section>
 
+    <section class="section critical">
+      <h2><span class="dot red"></span>4) 시험 일정 변경 및 성명 업데이트 (중요)</h2>
+      <ul>
+        <li><strong>일정 재조정 및 취소 (Reschedule / Cancel) 규정:</strong>
+          <ul>
+            <li><strong>72시간(3일) 이전:</strong> 추가 비용 없이 일정 재조정 또는 취소 가능.</li>
+            <li><strong>24시간 ~ 72시간 이내:</strong> 일정 변경/취소 시 변경 수수료(약 $25) 부과.</li>
+            <li><strong>24시간 미만:</strong> 변경/취소 <strong>절대 불가</strong>. 미응시 시 노쇼(No-Show) 처리되며 바우처는 소멸됩니다.</li>
+          </ul>
+        </li>
+        <li><strong>등록 성명 업데이트 (Update Name) 주의사항:</strong>
+          <ul>
+            <li><strong>신분증 일치 필수:</strong> 주민등록증, 운전면허증, 여권 등 정부 발급 신분증과 시험 프로필의 성명이 반드시 일치해야 합니다.</li>
+            <li><strong>수정 반영 시간:</strong> 이름 수정(Legal Name Change) 요청은 시스템 반영 및 동기화에 <strong>24~48시간(영업일 기준)</strong>이
+              소요됩니다.</li>
+            <li><strong>권장 조치:</strong> 이름이 잘못된 경우 현장에서 수정이 어려울 수 있으므로, 시험 최소 2일 전에는 수정을 완료해야 안전합니다.</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="warn-box">이름 불일치로 인해 응시가 거부되거나, 24시간 이내 일정 변경 시도로 인해 노쇼 처리될 경우 환불이 불가능합니다. (이미 노쇼 처리된 경우: <a
+          href="../shared/NoShow_Recovery_Guide.html"
+          style="color: #fff; font-weight: 700; text-decoration: underline;">[노쇼 구제 가이드]</a> 참고)</div>
+    </section>
+
     <section class="section">
-      <h2><span class="dot purple"></span>4) 응시 전 최종 체크리스트</h2>
+      <h2><span class="dot purple"></span>5) 응시 전 최종 체크리스트</h2>
       <div class="check">모듈 학습 + 랩 + 지식 점검 + 최종 정리까지 1회 이상 완료했다.</div>
       <div class="check">CMDB Health, IRE, CSDM, Discovery/Service Mapping 차이를 설명할 수 있다.</div>
-      <div class="check">바우처 유효기간, 적용 시험, 환불/취소 정책을 확인했다.</div>
+      <div class="check"><strong>시험 프로필의 이름이 정부 발급 신분증(여권/주민등록증 등)과 정확히 일치한다.</strong></div>
+      <div class="check">바우처 유효기간 및 일정 변경/취소 마감 시간(최소 24시간 전)을 확인했다.</div>
       <div class="check">온라인 감독형 응시 시 카메라/마이크/네트워크 점검을 완료했다.</div>
       <div class="check">시험 시작 30분 전 로그인/환경 점검 시간을 확보했다.</div>
     </section>
 
     <section class="section link-list">
-      <h2><span class="dot red"></span>5) 공식 확인 링크</h2>
+      <h2><span class="dot red"></span>6) 공식 확인 링크</h2>
       <ul>
-        <li><a href="https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&achievement_id=0e97835c47ea2e10c00af235126d431b&s=1&ssa=3" target="_blank" rel="noopener noreferrer">Now Learning - Get Certified (Credential Entry)</a></li>
-        <li><a href="https://learning.servicenow.com/lxp/en/now-platform/certified-system-administrator-csa?id=learning_content_prev&course_id=bc49278a47f8b21019dfe23c326d4390" target="_blank" rel="noopener noreferrer">ServiceNow University - CSA Learning Content (참고용 시험 운영 흐름)</a></li>
-        <li><a href="https://learning.servicenow.com/now/lxp/home" target="_blank" rel="noopener noreferrer">ServiceNow University Home</a></li>
-        <li><a href="https://www.servicenow.com/services/training-and-certification.html" target="_blank" rel="noopener noreferrer">ServiceNow Training & Certification</a></li>
+        <li><a
+            href="https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&achievement_id=0e97835c47ea2e10c00af235126d431b&s=1&ssa=3"
+            target="_blank" rel="noopener noreferrer">Now Learning - Get Certified (Credential Entry)</a></li>
+        <li><a
+            href="https://learning.servicenow.com/lxp/en/now-platform/certified-system-administrator-csa?id=learning_content_prev&course_id=bc49278a47f8b21019dfe23c326d4390"
+            target="_blank" rel="noopener noreferrer">ServiceNow University - CSA Learning Content (참고용 시험 운영 흐름)</a>
+        </li>
+        <li><a href="https://learning.servicenow.com/now/lxp/home" target="_blank" rel="noopener noreferrer">ServiceNow
+            University Home</a></li>
+        <li><a href="https://www.servicenow.com/services/training-and-certification.html" target="_blank"
+            rel="noopener noreferrer">ServiceNow Training & Certification</a></li>
       </ul>
-      <div class="info-box">CIS-DF 전용 블루프린트/가격/바우처 정책 페이지가 계정 상태에 따라 다르게 노출될 수 있으므로, 로그인 후 Credential 페이지에서 직접 확인하는 방식이 가장 정확합니다.</div>
+      <div class="info-box">CIS-DF 전용 블루프린트/가격/바우처 정책 페이지가 계정 상태에 따라 다르게 노출될 수 있으므로, 로그인 후 Credential 페이지에서 직접 확인하는 방식이
+        가장 정확합니다.</div>
     </section>
 
     <div class="footer">
