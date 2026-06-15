@@ -165,7 +165,7 @@
     function getModeFromQuery() {
       var q = new URLSearchParams(window.location.search);
       var m = q.get('mode');
-      return m === 'exam' || m === 'practice' || m === 'wrong' || m === 'all' ? m : null;
+      return (m === 'exam' || m === 'practice' || m === 'wrong' || m === 'all' || m === 'all_random') ? m : null;
     }
 
     function showInvalidAccess() {
