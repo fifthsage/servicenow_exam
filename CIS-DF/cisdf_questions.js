@@ -4353,5 +4353,135 @@ window.CISDF_QUESTIONS = [
       "A"
     ],
     "explanation": "정답: A. CSDM 5.0은 보다 직관적인 명칭 사용을 위해 도메인 이름을 변경했습니다. 과거 4.0에서 IT 내부 인프라와 기술적 의존성을 관리하던 'Manage Technical Services' 도메인은 이제 'Service Delivery'라는 명칭으로 통합되었습니다. 마찬가지로 Sell/Consume은 Service Consumption으로, Design은 Design & Planning으로, Build는 Build & Integration으로 변경되었습니다."
+  },
+  {
+    "id": 170,
+    "title": "In CSDM 5.0, the cmdb_ci_service_auto table has been relabeled to support a broader range of service types beyond IT. What is the new label for this table?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Application Service"
+      },
+      {
+        "letter": "B",
+        "text": "Service Instance"
+      },
+      {
+        "letter": "C",
+        "text": "Digital Product Instance"
+      },
+      {
+        "letter": "D",
+        "text": "Business Service"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": "정답: B. CSDM 5.0에서 cmdb_ci_service_auto 테이블은 기존의 Application Service 대신 Service Instance로 명칭이 변경되었습니다. 이는 AI, 네트워크, 시설(Facility) 등 비-IT 영역의 서비스 인스턴스까지 포괄적으로 관리하기 위한 변화입니다."
+  },
+  {
+    "id": 171,
+    "title": "Which new CI classes were introduced in CSDM 5.0 to specifically manage and govern AI-powered services and their dependencies?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "AI Server, AI Cluster, AI Database"
+      },
+      {
+        "letter": "B",
+        "text": "AI Function, AI Application, AI Model"
+      },
+      {
+        "letter": "C",
+        "text": "Bot CI, Agent CI, Engine CI"
+      },
+      {
+        "letter": "D",
+        "text": "GenAI Endpoint, LLM Instance"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": "정답: B. CSDM 5.0은 AI 거버넌스를 위해 AI Function(외부 서비스), AI Application(내부 구축 앱), AI Model 클래스를 도입했습니다. 이를 통해 Now Assist와 같은 AI 에이전트의 기술적 의존성을 CMDB에서 추적할 수 있습니다."
+  },
+  {
+    "id": 172,
+    "title": "In the CSDM 5.0 Build & Integration domain, what is the primary business value of tracking the Software Bill of Materials (SBOM)?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To automate software license purchasing"
+      },
+      {
+        "letter": "B",
+        "text": "To improve software development velocity"
+      },
+      {
+        "letter": "C",
+        "text": "To enhance vulnerability management and software supply chain security"
+      },
+      {
+        "letter": "D",
+        "text": "To monitor real-time CPU usage of software"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": "정답: C. SBOM은 디지털 제품을 구성하는 모든 소프트웨어 컴포넌트의 명세서 역할을 합니다. 이를 통해 보안 취약점 발생 시 즉각적인 영향도 분석이 가능하며, 소프트웨어 공급망의 보안성을 강화하는 것이 핵심 목적입니다."
+  },
+  {
+    "id": 173,
+    "title": "The CSDM 5.0 Digital System Model breaks down a digital product into four distinct layers. Which of the following correctly lists these layers?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Strategy, Build, Deliver, Consume"
+      },
+      {
+        "letter": "B",
+        "text": "Hardware, Software, Network, Database"
+      },
+      {
+        "letter": "C",
+        "text": "Business Process, Service (Logical), Functional, Infrastructure"
+      },
+      {
+        "letter": "D",
+        "text": "Idea, Design, Code, Operation"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": "정답: C. CSDM 5.0의 Digital System Model은 제품을 비즈니스 프로세스, 서비스(논리), 기능, 인프라의 4개 계층으로 나누어 수직/수평적 종속성을 가시화합니다."
+  },
+  {
+    "id": 174,
+    "title": "In CSDM 5.0, which domain was split from the Design domain to focus exclusively on the governance, value, and performance measurement of digital products and services?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ideation & Strategy"
+      },
+      {
+        "letter": "B",
+        "text": "Manage Portfolios"
+      },
+      {
+        "letter": "C",
+        "text": "Service Consumption"
+      },
+      {
+        "letter": "D",
+        "text": "Build & Integration"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": "정답: B. CSDM 5.0에서 Manage Portfolios 도메인은 기존 Design 도메인에서 분리되었습니다. 이 도메인은 DPM(Digital Portfolio Management)과 연동하여 서비스와 제품의 비즈니스 가치 및 성과를 전문적으로 관리합니다."
   }
 ];
