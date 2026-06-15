@@ -221,26 +221,27 @@ CI의 대규모 수명주기 종료(End of Life) 액션을 자동화하는 프�
 
 ---
 
-## 7. CSDM 4.0 표준 성숙도 및 도메인 페르소나 매핑
+## 7. CSDM 5.0 표준 성숙도 및 도메인 페르소나 매핑
 
-### 1. CSDM 4대 핵심 데이터 도메인
+### 1. CSDM 5.0의 7대 핵심 데이터 도메인
 
-* **Foundation (기반):** 사용자, 조직, 위치, 그룹 등 플랫폼 전체 비즈니스의 뼈대가 되는 참조 마스터 공간 (CMDB 내부에 저장되지 않음).
-* **Design (디자인):** 시스템의 추상적인 설계도 및 기획서 장부 레이어.
-* *핵심 엔티티:* **Business Application**, Business Capability, Information Object.
-* *핵심 페르소나:* **Enterprise Architect (EA)**. (물리적 실체나 IP가 없는 개념 구역).
+CSDM 5.0에서는 기존 5개 도메인에서 **Ideation & Strategy**와 **Manage Portfolios**가 추가되어 총 7개 도메인 체계로 확장되었습니다.
 
-* **Manage Technical Services (운영):** 실제 개발이 끝나 서버 인프라에 라이브 배포된 서비스 인스턴스와 기술적 의존성을 통제하는 실시간 운영 레이어.
-* *핵심 엔티티:* **Application Service**, Dynamic CI Group. (Discovery 엔진이 매일 밤 스캔하는 주 대상 도메인).
-* *핵심 페르소나:* ITOM/디커버리 엔지니어, 서비스 딜리버리 매니저.
+* **Foundation (기반):** 사용자, 조직, 위치, 그룹 등 플랫폼 전체 비즈니스의 뼈대가 되는 참조 마스터 공간.
+* **Ideation & Strategy (아이디어 및 전략 - 신규):** 디지털 제품의 아이디어 제안, 전략적 우선순위, 목표 설정을 담당하며 Strategic Portfolio Management(SPM)와 연동됩니다.
+* **Design & Planning (디자인 및 기획 - 구 Design):** 시스템의 추상적인 설계도 및 기획서 장부 레이어.
+    * *핵심 엔티티:* **Business Application**, Information Object.
+    * *핵심 페르소나:* Enterprise Architect (EA).
+* **Build & Integration (구축 및 통합 - 구 Build):** 개발 및 통합 단계를 관리하며 DevOps 및 SBOM(Software Bill of Materials) 정보를 포함합니다.
+* **Service Delivery (서비스 인도 - 구 Manage Technical Services):** 실제 운영 환경에 배포된 서비스 인스턴스와 기술적 의존성을 통제하는 실시간 운영 레이어.
+    * *핵심 엔티티:* **Application Service**, Dynamic CI Group.
+* **Service Consumption (서비스 소비 - 구 Sell/Consume):** 고객이나 직원이 포털을 통해 서비스를 요청하고 혜택을 누리는 비즈니스 레이어.
+    * *핵심 엔티티:* **Business Service**, **Technology Management Offering (구 Technical Service Offering)**.
+* **Manage Portfolios (포트폴리오 관리 - 신규):** 전체 디지털 제품 포트폴리오의 가치와 성과를 통합 관리하는 도메인입니다.
 
-* **Sell / Consume (소비):** 외부 고객이나 내부 직원이 포털을 통해 최종 서비스 가치를 요청하고 혜택을 누리는 프런트엔드 비즈니스 레이어.
-* *핵심 엔티티:* **Business Service**, **Business Service Offering**, Technical Service Offering.
-* *핵심 제품군:* **Customer Service Management (CSM)** 솔루션, ITSM Service Catalog 포털.
+### 2. CSDM 도입 성공 성숙도 모델 (Crawl to Fly)
 
-### 2. CSDM 도입 성공 성숙도 모델 파이프라인 (Crawl to Fly)
-
-* **Crawl (기어 가기 - 1단계):** 기본 하드웨어 호스트 CI 식별 및 비즈니스 애플리케이션(Business App)의 단순 마스터 목록 확보 단계.
-* **Walk (걷기 - 2단계):** 인프라 자산들을 운영 엔지니어링 조직과 묶어주는 **`Technical Service` 및 `Technical Service Offering` 거버넌스를 수립**하고 `Support Group` 등의 비검색 속성 동기화를 완성하는 단계.
-* **Run (뛰기 - 3단계):** 실제 매출과 직결되는 대고객 `Business Service / Offering` 및 이들을 기술 인프라와 중재해 주는 배포판 인스턴스인 `Application Service` 간의 비즈니스 종속성 관제를 정착시키는 단계.
-* **Fly (날기 - 4단계):** 전사 엔터프라이즈 자산의 투자 비용 대비 비즈니스 가치 효과를 총괄 분석하고, 표준 라이프사이클 2단계 필드(`Life cycle stage & stage status`)를 완벽히 정착시켜 거버넌스를 완성하는 최종 단계.
+* **Crawl (기어 가기):** 기본 인프라 식별 및 비즈니스 애플리케이션 목록 확보.
+* **Walk (걷기):** 기술 서비스 운영 체계(**Technology Management Service & Offering**) 수립 및 지원 그룹(**Support Group**) 등 운영 속성 동기화 완성.
+* **Run (뛰기):** 비즈니스 가치와 연결된 **Service Consumption** 단계 정착 및 비즈니스 영향도 분석.
+* **Fly (날기):** 전사적 자산 가치 최적화 및 표준 라이프사이클 필드(`Life cycle stage & stage status`) 정착 완성.
