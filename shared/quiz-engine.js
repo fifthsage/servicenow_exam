@@ -453,7 +453,7 @@
       var modeText = mode === 'exam' ? '실전 모드' : (mode === 'wrong' ? '오답 모드' : (mode === 'all' ? '전체 모드' : '연습 모드'));
       document.getElementById('result-summary').textContent = modeText + '를 완료했습니다. ' + total + '문항 중 ' + correct + '문항 정답입니다.';
 
-      if (mode === 'practice' || mode === 'wrong' || mode === 'all') {
+      if (mode === 'practice' || mode === 'wrong' || mode === 'all' || mode === 'all_random') {
         renderPracticeReview();
       } else {
         document.getElementById('practice-review').style.display = 'none';
