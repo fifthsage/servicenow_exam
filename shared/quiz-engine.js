@@ -347,7 +347,7 @@
       var wrongList = allQuestions.filter(function (q) {
         return wrongQuestionIds.has(normalizeQuestionId(q.id));
       });
-      return shuffle(wrongList);
+      return wrongList;
     }
 
     function startSession(selectedMode) {
