@@ -220,7 +220,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A. 최신 CSDM 4.0/5.0 프레임워크에 따르면, Walk(걷기) 단계는 'Service Delivery (구 Manage Technical Services)' 도메인을 확립하는 단계입니다. 이 단계의 핵심은 기술 지원 팀의 구조를 OLA(Operational Level Agreements) 및 약속(Commitments)에 따라 체계적으로 계층화(stratification)하는 것입니다. 반면 Business Service에 대한 영향도 분석(C)은 'Service Consumption(구 Run)' 단계의 이점이며, APM 연동(B)은 'Fly' 단계의 이점입니다."
+    "explanation": "정답: A. 최신 CSDM 5.0 프레임워크에 따르면, Walk(걷기) 단계는 'Service Delivery (구 Manage Technical Services)' 도메인을 확립하는 단계입니다. 이 단계의 핵심은 기술 지원 팀의 구조를 OLA(Operational Level Agreements) 및 약속(Commitments)에 따라 체계적으로 계층화(stratification)하는 것입니다. 반면 Business Service에 대한 영향도 분석(C)은 'Service Consumption(구 Run)' 단계의 이점이며, APM 연동(B)은 'Fly' 단계의 이점입니다."
   },
   {
     "id": 10,
@@ -1047,7 +1047,7 @@ window.CISDF_QUESTIONS = [
       "B",
       "D"
     ],
-    "explanation": "정답: B, D. CSDM 4.0 가이드라인에 따르면, 'Design(설계)' 도메인은 Business Capability 및 Business Application과 같은 개념적 아키텍처 자산을 정의하는 영역입니다. 이 단계의 마스터 데이터를 수립하고 관리하는 핵심 페르소나는 전사 아키텍처를 설계하는 'Enterprise Architect(B)'와 해당 애플리케이션의 비즈니스 수명 주기를 관리하는 'Application Owner(D)'입니다. Business Relationship Manager(A)는 Service Consumption (구 Sell/Consume) 도메인 소속이며, Application Service Owner(C)는 Service Delivery (구 Manage Technical Services) 도메인 소속이므로 오답입니다."
+    "explanation": "정답: B, D. CSDM 5.0 가이드라인에 따르면, 'Design(설계)' 도메인은 Business Capability 및 Business Application과 같은 개념적 아키텍처 자산을 정의하는 영역입니다. 이 단계의 마스터 데이터를 수립하고 관리하는 핵심 페르소나는 전사 아키텍처를 설계하는 'Enterprise Architect(B)'와 해당 애플리케이션의 비즈니스 수명 주기를 관리하는 'Application Owner(D)'입니다. Business Relationship Manager(A)는 Service Consumption (구 Sell/Consume) 도메인 소속이며, Application Service Owner(C)는 Service Delivery (구 Manage Technical Services) 도메인 소속이므로 오답입니다."
   },
   {
     "id": 43,
@@ -1225,7 +1225,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "E"
     ],
-    "explanation": "정답: E. ServiceNow CSDM 4.0 가이드라인에 따르면, 실제 운영 환경에 배포된 하부 인프라 자산(Infrastructure CIs), 가동 중인 소프트웨어 인스턴스(Application Services), 그리고 이를 유지보수하는 기술 지원 단위(Technology Management Offering (구 Technical Service Offering)s) 간의 유기적인 의존 관계 체계를 정의하고 제어하는 영역은 'Service Delivery (구 Manage Technical Services)(과거 명칭: Service Delivery)' 도메인입니다. 이 도메인은 실시간 장애 영향도 분석 및 헬프데스크 라우팅의 기준이 되는 핵심 운영계를 담당합니다. 아키텍처 설계를 다루는 Design(C)이나 서비스 소비를 다루는 Sell or Consume(A) 도메인은 부합하지 않으므로 오답입니다."
+    "explanation": "정답: E. ServiceNow CSDM 5.0 가이드라인에 따르면, 실제 운영 환경에 배포된 하부 인프라 자산(Infrastructure CIs), 가동 중인 소프트웨어 인스턴스(Application Services), 그리고 이를 유지보수하는 기술 지원 단위(Technology Management Offering (구 Technical Service Offering)s) 간의 유기적인 의존 관계 체계를 정의하고 제어하는 영역은 'Service Delivery (구 Manage Technical Services)(과거 명칭: Service Delivery)' 도메인입니다. 이 도메인은 실시간 장애 영향도 분석 및 헬프데스크 라우팅의 기준이 되는 핵심 운영계를 담당합니다. 아키텍처 설계를 다루는 Design(C)이나 서비스 소비를 다루는 Sell or Consume(A) 도메인은 부합하지 않으므로 오답입니다."
   },
   {
     "id": 50,
@@ -1396,7 +1396,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A. ServiceNow CSDM 4.0 프레임워크에서 기술적 장애를 비즈니스 및 사용자 영향도로 번역하는 가장 직접적인 매개체는 'Sell or Consume(판매/소비)' 도메인의 'Service Offering'입니다. 서비스 오퍼링은 특정 부서(Department)나 물리적 위치(Location) 단위로 구독자(Subscribers)를 매핑하여 관리하기 때문에, 시스템 장애 시 어떤 현업 사용자 집단이 타격을 입었는지 즉각 특정할 수 있습니다. 장애가 발생한 기술 자산 자체를 나타내는 Affected CIs(B)나 시스템 환경 정보(C)는 영향을 받는 인간 사용자 범위를 특정해 주지 못하므로 오답입니다."
+    "explanation": "정답: A. ServiceNow CSDM 5.0 프레임워크에서 기술적 장애를 비즈니스 및 사용자 영향도로 번역하는 가장 직접적인 매개체는 'Sell or Consume(판매/소비)' 도메인의 'Service Offering'입니다. 서비스 오퍼링은 특정 부서(Department)나 물리적 위치(Location) 단위로 구독자(Subscribers)를 매핑하여 관리하기 때문에, 시스템 장애 시 어떤 현업 사용자 집단이 타격을 입었는지 즉각 특정할 수 있습니다. 장애가 발생한 기술 자산 자체를 나타내는 Affected CIs(B)나 시스템 환경 정보(C)는 영향을 받는 인간 사용자 범위를 특정해 주지 못하므로 오답입니다."
   },
   {
     "id": 57,
@@ -1608,7 +1608,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "정답: C. ServiceNow CSDM 4.0 프레임워크에서 'Information Object(정보 객체)'는 비즈니스 애플리케이션이 다루는 논리적 데이터 유형(PII, PCI, 금융 정보 등)을 정의하는 엔티티입니다. SecOps나 GRC 팀이 애플리케이션 컨텍스트 내에서 데이터 민감도에 따른 '운영 리스크(Operational Risk)'를 평가하고 패치 우선순위를 산정하기 위해서는 이 정보 객체 레이어의 매핑이 반드시 필요하므로 C가 참입니다. 이벤트 자동화(A)는 Run 도메인, 자산 관리(B)는 Foundation 도메인, 고객 포털 및 케이스 관리(D, E)는 Sell or Consume 도메인의 영역이므로 오답입니다."
+    "explanation": "정답: C. ServiceNow CSDM 5.0 프레임워크에서 'Information Object(정보 객체)'는 비즈니스 애플리케이션이 다루는 논리적 데이터 유형(PII, PCI, 금융 정보 등)을 정의하는 엔티티입니다. SecOps나 GRC 팀이 애플리케이션 컨텍스트 내에서 데이터 민감도에 따른 '운영 리스크(Operational Risk)'를 평가하고 패치 우선순위를 산정하기 위해서는 이 정보 객체 레이어의 매핑이 반드시 필요하므로 C가 참입니다. 이벤트 자동화(A)는 Run 도메인, 자산 관리(B)는 Foundation 도메인, 고객 포털 및 케이스 관리(D, E)는 Sell or Consume 도메인의 영역이므로 오답입니다."
   },
   {
     "id": 65,
@@ -1661,7 +1661,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B. ServiceNow CSDM 4.0 프레임워크에서 Service Portfolio Management(SPM)를 활용하여 현업 및 비즈니스 소비자(Business Consumers)에게 최종 비즈니스 서비스 오퍼링을 노출하고 구독/소비하도록 통제하는 영역은 'Sell or Consume(과거 명칭: Service Consumption)' 도메인입니다. 이 도메인은 서비스 카탈로그 및 비즈니스 서비스 오퍼링 테이블을 품고 있는 최상위 현업 접점 레이어입니다. 개발을 다루는 Build(A), 개념 도면을 다루는 Design(C), IT 내부 인프라 운영을 다루는 Service Delivery (구 Manage Technical Services)(D)는 소비자 관점의 노출 영역이 아니므로 오답입니다."
+    "explanation": "정답: B. ServiceNow CSDM 5.0 프레임워크에서 Service Portfolio Management(SPM)를 활용하여 현업 및 비즈니스 소비자(Business Consumers)에게 최종 비즈니스 서비스 오퍼링을 노출하고 구독/소비하도록 통제하는 영역은 'Sell or Consume(과거 명칭: Service Consumption)' 도메인입니다. 이 도메인은 서비스 카탈로그 및 비즈니스 서비스 오퍼링 테이블을 품고 있는 최상위 현업 접점 레이어입니다. 개발을 다루는 Build(A), 개념 도면을 다루는 Design(C), IT 내부 인프라 운영을 다루는 Service Delivery (구 Manage Technical Services)(D)는 소비자 관점의 노출 영역이 아니므로 오답입니다."
   },
   {
     "id": 67,
@@ -1687,7 +1687,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D. ServiceNow CSDM 4.0 프레임워크에서 특정 서비스 장애가 기업 매출에 미치는 타격(Revenue Loss)의 경중을 판별하고 인시던트 우선순위를 제어하는 표준 속성은 Service Offering 테이블에 존재하는 'Business Criticality(비즈니스 중요도)'입니다. 이를 Mission Critical 또는 High 등으로 설정해 두면, 하부 자산 장애 시 티켓의 영향도와 우선순위가 자동 격상되어 신속한 복구를 유도합니다. 담당 팀을 지정하는 Assignment Group(A)이나 단순 기술 레이어 분류 태그인 Service Classification(C)은 비즈니스 중요도 컨텍스트를 제공하지 못하므로 오답입니다."
+    "explanation": "정답: D. ServiceNow CSDM 5.0 프레임워크에서 특정 서비스 장애가 기업 매출에 미치는 타격(Revenue Loss)의 경중을 판별하고 인시던트 우선순위를 제어하는 표준 속성은 Service Offering 테이블에 존재하는 'Business Criticality(비즈니스 중요도)'입니다. 이를 Mission Critical 또는 High 등으로 설정해 두면, 하부 자산 장애 시 티켓의 영향도와 우선순위가 자동 격상되어 신속한 복구를 유도합니다. 담당 팀을 지정하는 Assignment Group(A)이나 단순 기술 레이어 분류 태그인 Service Classification(C)은 비즈니스 중요도 컨텍스트를 제공하지 못하므로 오답입니다."
   },
   {
     "id": 68,
@@ -1875,7 +1875,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B. ServiceNow CSDM 4.0 성숙도 프레임워크 가이드라인에 따라, IT 내부의 소유권 및 지원 조직 체계를 뜻하는 'Technology Management Service (구 Technical Service)'와 'Technology Management Offering (구 Technical Service Offering)'의 구축 정합성을 진단하는 영역은 'Walk(걸어가기)' 단계의 고유 지표입니다. 기초 자산을 다루는 Crawl(A), 대고객 비즈니스 서비스를 다루는 Run(D), 고급 데이터 거버넌스를 다루는 Fly(C) 탭은 검진 대상 도메인이 다르므로 오답입니다."
+    "explanation": "정답: B. ServiceNow CSDM 5.0 성숙도 프레임워크 가이드라인에 따라, IT 내부의 소유권 및 지원 조직 체계를 뜻하는 'Technology Management Service (구 Technical Service)'와 'Technology Management Offering (구 Technical Service Offering)'의 구축 정합성을 진단하는 영역은 'Walk(걸어가기)' 단계의 고유 지표입니다. 기초 자산을 다루는 Crawl(A), 대고객 비즈니스 서비스를 다루는 Run(D), 고급 데이터 거버넌스를 다루는 Fly(C) 탭은 검진 대상 도메인이 다르므로 오답입니다."
   },
   {
     "id": 75,
@@ -2368,7 +2368,7 @@ window.CISDF_QUESTIONS = [
   },
   {
     "id": 94,
-    "title": "An organization aligns its CMDB governance with the CSDM 4.0 framework. A CMDB Administrator is evaluating conflicting group ownership values defined across different architectural layers for a specific class of CIs:\n\n• CI Class Manager Default [Managed by Group] = Enterprise IT Services\n• Associated Technology Management Offering (구 Technical Service Offering) [Managed by Group] = Windows Support\n• CI Attribute [Change Group] = Change Management Team\n\n Based on CSDM data-synchronization best practices, what will be the final updated [Managed by Group] value on the infrastructure CIs of this class?",
+    "title": "An organization aligns its CMDB governance with the CSDM 5.0 framework. A CMDB Administrator is evaluating conflicting group ownership values defined across different architectural layers for a specific class of CIs:\n\n• CI Class Manager Default [Managed by Group] = Enterprise IT Services\n• Associated Technology Management Offering (구 Technical Service Offering) [Managed by Group] = Windows Support\n• CI Attribute [Change Group] = Change Management Team\n\n Based on CSDM data-synchronization best practices, what will be the final updated [Managed by Group] value on the infrastructure CIs of this class?",
     "options": [
       {
         "letter": "A",
@@ -2513,7 +2513,7 @@ window.CISDF_QUESTIONS = [
   },
   {
     "id": 100,
-    "title": "A platform owner is aligning the corporate CMDB architecture with the CSDM 4.0 framework and needs to map product online monitoring systems used exclusively by the IT operations team. Which CSDM domain should the platform owner utilize to properly host these technical monitoring infrastructure services?",
+    "title": "A platform owner is aligning the corporate CMDB architecture with the CSDM 5.0 framework and needs to map product online monitoring systems used exclusively by the IT operations team. Which CSDM domain should the platform owner utilize to properly host these technical monitoring infrastructure services?",
     "options": [
       {
         "letter": "A",
@@ -2539,7 +2539,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "정답: A. ServiceNow CSDM 4.0 표준 가이드라인에 따라, IT 운영 팀이 시스템 관제 및 성능 감시를 위해 내부적으로 사용하는 'Product Online Monitoring Systems'는 대표적인 기술 서비스(Technology Management Service (구 Technical Service)) 모델에 해당합니다. 따라서 'IT를 위한 IT 관리'를 전담하는 'Service Delivery (구 Manage Technical Services)' 도메인에 매핑하는 것이 아키텍처 표준입니다. 기초 데이터를 다루는 Foundation(B), 개발 단계를 다루는 Build(C), 현업 소비 장소인 Consumption(D), 개념 설계를 담당하는 Design(E) 도메인은 모두 오답입니다."
+    "explanation": "정답: A. ServiceNow CSDM 5.0 표준 가이드라인에 따라, IT 운영 팀이 시스템 관제 및 성능 감시를 위해 내부적으로 사용하는 'Product Online Monitoring Systems'는 대표적인 기술 서비스(Technology Management Service (구 Technical Service)) 모델에 해당합니다. 따라서 'IT를 위한 IT 관리'를 전담하는 'Service Delivery (구 Manage Technical Services)' 도메인에 매핑하는 것이 아키텍처 표준입니다. 기초 데이터를 다루는 Foundation(B), 개발 단계를 다루는 Build(C), 현업 소비 장소인 Consumption(D), 개념 설계를 담당하는 Design(E) 도메인은 모두 오답입니다."
   },
   {
     "id": 101,
@@ -2776,7 +2776,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "정답: B. ServiceNow CSDM 4.0 거버넌스 원칙에 따라, 최종 비즈니스 사용자(Business Consumers)에게 서비스 오퍼링을 노출하여 실제 요청 및 소비를 발생시키는 단계를 관할하는 영역은 'Service Consumption (구 Sell/Consume)' 도메인이 유일합니다. 개념적 기획서와 구조를 정의하는 Design(C) 단계나 내부 IT 인프라 운영을 제어하는 Service Delivery(D) 단계는 소비자와의 직접적인 소비 계약 및 청구 거래가 일어나는 주소지가 아니므로 오답입니다."
+    "explanation": "정답: B. ServiceNow CSDM 5.0 거버넌스 원칙에 따라, 최종 비즈니스 사용자(Business Consumers)에게 서비스 오퍼링을 노출하여 실제 요청 및 소비를 발생시키는 단계를 관할하는 영역은 'Service Consumption (구 Sell/Consume)' 도메인이 유일합니다. 개념적 기획서와 구조를 정의하는 Design(C) 단계나 내부 IT 인프라 운영을 제어하는 Service Delivery(D) 단계는 소비자와의 직접적인 소비 계약 및 청구 거래가 일어나는 주소지가 아니므로 오답입니다."
   },
   {
     "id": 110,
@@ -2832,7 +2832,7 @@ window.CISDF_QUESTIONS = [
   },
   {
     "id": 112,
-    "title": "A CMDB Administrator identifies that multiple infrastructure Configuration Items (CIs) lack a designated Support Group. According to CSDM 4.0 data governance best practices, how should the Support Group attribute be automatically populated and dynamically maintained on these infrastructure records?",
+    "title": "A CMDB Administrator identifies that multiple infrastructure Configuration Items (CIs) lack a designated Support Group. According to CSDM 5.0 data governance best practices, how should the Support Group attribute be automatically populated and dynamically maintained on these infrastructure records?",
     "options": [
       {
         "letter": "A",
@@ -2854,7 +2854,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "정답: D. ServiceNow CSDM 4.0 표준 아키텍처 가이드라인에 따라, 인프라 자산(CI)의 실질적인 운영 및 장애 배정을 제어하는 'Support Group' 필드는 해당 자산이 귀속되어 실제 운영 계약을 수행하는 'Technology Management Offering (구 Technical Service Offering)' 레코드로부터 동적으로 동기화(Dynamic Group Sync) 및 상속받는 것이 마스터 표준입니다. 연결 통로인 Dynamic CI Group(A)이나 추상적 부모 레이어인 Technology Management Service (구 Technical Service)(B)는 속성의 진실의 원천이 아니며, Class Manager 설정(C)은 범용 기본값에 불과하여 서비스 기반 동기화 대상에서 밀려나므로 오답입니다."
+    "explanation": "정답: D. ServiceNow CSDM 5.0 표준 아키텍처 가이드라인에 따라, 인프라 자산(CI)의 실질적인 운영 및 장애 배정을 제어하는 'Support Group' 필드는 해당 자산이 귀속되어 실제 운영 계약을 수행하는 'Technology Management Offering (구 Technical Service Offering)' 레코드로부터 동적으로 동기화(Dynamic Group Sync) 및 상속받는 것이 마스터 표준입니다. 연결 통로인 Dynamic CI Group(A)이나 추상적 부모 레이어인 Technology Management Service (구 Technical Service)(B)는 속성의 진실의 원천이 아니며, Class Manager 설정(C)은 범용 기본값에 불과하여 서비스 기반 동기화 대상에서 밀려나므로 오답입니다."
   },
   {
     "id": 113,
@@ -2939,7 +2939,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "E"
     ],
-    "explanation": "정답: E. ServiceNow CSDM 4.0 아키텍처 가이드라인에 따라, 실제 가동 중인 인프라 자산(Infrastructure CIs)과 이들이 형성하는 실시간 서비스 인스턴스(Application Services), 그리고 이를 지원하는 IT 내부 엔지니어 조직(Technology Management Offering (구 Technical Service Offering)s) 간의 수직적 운영 관계성을 제어하는 전담 구역은 'Service Delivery (구 Manage Technical Services)' 도메인입니다. 개념적 기획서와 메타데이터만 정의하는 Design(C) 단계나 대고객 판매 접점인 Service Consumption(A) 단계는 실전 런타임 자산들의 물리적 관계선을 통제하는 주소지가 아니므로 오답입니다."
+    "explanation": "정답: E. ServiceNow CSDM 5.0 아키텍처 가이드라인에 따라, 실제 가동 중인 인프라 자산(Infrastructure CIs)과 이들이 형성하는 실시간 서비스 인스턴스(Application Services), 그리고 이를 지원하는 IT 내부 엔지니어 조직(Technology Management Offering (구 Technical Service Offering)s) 간의 수직적 운영 관계성을 제어하는 전담 구역은 'Service Delivery (구 Manage Technical Services)' 도메인입니다. 개념적 기획서와 메타데이터만 정의하는 Design(C) 단계나 대고객 판매 접점인 Service Consumption(A) 단계는 실전 런타임 자산들의 물리적 관계선을 통제하는 주소지가 아니므로 오답입니다."
   },
   {
     "id": 116,
@@ -2966,7 +2966,7 @@ window.CISDF_QUESTIONS = [
       "B",
       "D"
     ],
-    "explanation": "정답: B, D. ServiceNow CSDM 4.0 및 ITIL 거버넌스 아키텍처에 따라, Technology Management Offering (구 Technical Service Offering)이 Dynamic CI Group 관계선을 통해 하위 인프라 자산들과 정렬될 때, 플랫폼의 내장 동기화 엔진(Dynamic Group Sync)은 실시간 운영계 핵심 데이터인 'Managed by Group'(B)과 'Support Group'(D) 필드만을 자동 전파 및 동기화합니다. 재무적 소유권을 다루는 Owned by Group(A)이나 컴플라이언스 변경 승인을 제어하는 Approval Group(C)은 개별 자산 또는 별도 자산 도메인의 고유 권한을 보장하기 위해 자동 동기화 파이프라인에서 제외되므로 오답입니다."
+    "explanation": "정답: B, D. ServiceNow CSDM 5.0 및 ITIL 거버넌스 아키텍처에 따라, Technology Management Offering (구 Technical Service Offering)이 Dynamic CI Group 관계선을 통해 하위 인프라 자산들과 정렬될 때, 플랫폼의 내장 동기화 엔진(Dynamic Group Sync)은 실시간 운영계 핵심 데이터인 'Managed by Group'(B)과 'Support Group'(D) 필드만을 자동 전파 및 동기화합니다. 재무적 소유권을 다루는 Owned by Group(A)이나 컴플라이언스 변경 승인을 제어하는 Approval Group(C)은 개별 자산 또는 별도 자산 도메인의 고유 권한을 보장하기 위해 자동 동기화 파이프라인에서 제외되므로 오답입니다."
   },
   {
     "id": 117,
@@ -3767,7 +3767,7 @@ window.CISDF_QUESTIONS = [
   },
   {
     "id": 149,
-    "title": "A CMDB Administrator is aligning their configuration infrastructure with CSDM 4.0 data governance best practices using the Life Cycle Control framework. Immediately after clicking the 'Enable Life Cycle Sync' system toggle, which of the following operational actions represents the mandatory next step before full production deployment?",
+    "title": "A CMDB Administrator is aligning their configuration infrastructure with CSDM 5.0 data governance best practices using the Life Cycle Control framework. Immediately after clicking the 'Enable Life Cycle Sync' system toggle, which of the following operational actions represents the mandatory next step before full production deployment?",
     "options": [
       {
         "letter": "A",
