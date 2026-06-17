@@ -357,19 +357,23 @@
       var duration = mode === 'exam' ? 90 * 60 : null;
 
       if (mode === 'wrong') {
-        sessionQuestions = getWrongSessionQuestions();
+        sessionQuestions = getWrongSessionQuestions().map(function(q) { return Object.assign({}, q); });
         if (sessionQuestions.length === 0) {
           window.alert('저장된 오답이 없습니다.');
           updateWrongModeUI();
           return;
         }
       } else if (mode === 'all') {
-        sessionQuestions = allQuestions;
+        sessionQuestions = allQuestions.map(function(q) { return Object.assign({}, q); });
       } else if (mode === 'all_random') {
-        sessionQuestions = shuffle(allQuestions);
+        sessionQuestions = shuffle(allQuestions.map(function(q) { return Object.assign({}, q); }));
       } else {
-        sessionQuestions = shuffle(allQuestions).slice(0, Math.min(limit, allQuestions.length));
+        sessionQuestions = shuffle(allQuestions.map(function(q) { return Object.assign({}, q); })).slice(0, Math.min(limit, allQuestions.length));
       }
+
+      sessionQuestions.forEach(function(q) {
+        q.options = shuffle(q.options);
+      });
 
       answers = Array.from({ length: sessionQuestions.length }, function () {
         return [];
