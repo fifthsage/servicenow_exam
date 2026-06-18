@@ -162,6 +162,15 @@
       return clone;
     }
 
+    function deepCloneQuestion(q) {
+      var cloned = Object.assign({}, q);
+      cloned.options = q.options.map(function (o) {
+        return Object.assign({}, o);
+      });
+      cloned.answer = q.answer.slice();
+      return cloned;
+    }
+
     function getModeFromQuery() {
       var q = new URLSearchParams(window.location.search);
       var m = q.get('mode');
@@ -246,6 +255,10 @@
 
     function getExplanationText(question, index) {
       var base = question && question.explanation ? String(question.explanation) : noExplanationText;
+      
+      // Remove legacy answer prefix if present (e.g., "정답: A. ", "Answer: **A**.")
+      base = base.replace(/^(정답|Answer):\s*(\*\*?[A-Z\s,]+\*\*?|[A-Z\s,]+)[.\s]*/i, '');
+
       if (formatExplanation) {
         try {
           base = String(formatExplanation(base, question, index, mode) || base);
@@ -253,6 +266,16 @@
           // Keep original explanation when formatter fails.
         }
       }
+
+      // Prepend dynamic answer labels
+      var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      var currentAnswerLabels = (question.answer || []).map(function(id) {
+        var optIdx = question.options.findIndex(function(o) { return (o.id || o.letter) === id; });
+        return optIdx >= 0 ? alphabet[optIdx] : '?';
+      }).sort().join(', ');
+      
+      base = '정답: ' + currentAnswerLabels + '\n\n' + base;
+
       if (!buildExplanationAppendix) {
         return base;
       }
@@ -271,17 +294,20 @@
 
     function renderQuestion() {
       var q = sessionQuestions[currentIndex];
-      var picked = answers[currentIndex];
+      var picked = answers[currentIndex]; // These are IDs
       var multi = q.answer.length > 1;
+      var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
       document.getElementById('q-counter').textContent = (currentIndex + 1) + ' / ' + sessionQuestions.length;
       document.getElementById('progress').style.width = (((currentIndex + 1) / sessionQuestions.length) * 100) + '%';
       document.getElementById('q-title').textContent = questionPrefix + (currentIndex + 1) + '. ' + q.title;
 
       var inputType = multi ? 'checkbox' : 'radio';
-      document.getElementById('options').innerHTML = q.options.map(function (o) {
-        var checked = picked.includes(o.letter) ? 'checked' : '';
-        return '<div class="option"><label><input type="' + inputType + '" name="answer" value="' + o.letter + '" ' + checked + '> ' + o.letter + '. ' + o.text + '</label></div>';
+      document.getElementById('options').innerHTML = q.options.map(function (o, idx) {
+        var label = alphabet[idx];
+        var id = o.id || o.letter;
+        var checked = picked.includes(id) ? 'checked' : '';
+        return '<div class="option"><label><input type="' + inputType + '" name="answer" value="' + id + '" ' + checked + '> ' + label + '. ' + o.text + '</label></div>';
       }).join('');
 
       document.getElementById('prev-btn').disabled = currentIndex === 0;
@@ -307,15 +333,27 @@
     function renderPracticeReview() {
       var wrap = document.getElementById('practice-review');
       var list = document.getElementById('review-list');
+      var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
       list.innerHTML = '';
 
       sessionQuestions.forEach(function (q, i) {
         var user = answers[i] || [];
         var ok = equalAnswers(q.answer, user);
         var isInWrongSet = wrongQuestionIds.has(normalizeQuestionId(q.id));
+        
+        var userLabels = user.map(function(id) {
+          var optIdx = q.options.findIndex(function(o) { return (o.id || o.letter) === id; });
+          return optIdx >= 0 ? alphabet[optIdx] : '?';
+        }).sort().join(', ');
+
+        var correctLabels = q.answer.map(function(id) {
+          var optIdx = q.options.findIndex(function(o) { return (o.id || o.letter) === id; });
+          return optIdx >= 0 ? alphabet[optIdx] : '?';
+        }).sort().join(', ');
+
         var card = document.createElement('div');
         card.className = 'review-item';
-        card.innerHTML = '\n      <div class="review-head">\n        <div class="review-q">' + questionPrefix + (i + 1) + '. ' + q.title + '</div>\n        <span class="review-badge ' + (ok ? 'ok' : 'ng') + '">' + (ok ? '정답' : '오답') + '</span>\n      </div>\n      <div class="review-meta">내 답: ' + (user.join(',') || '(미응답)') + ' / 정답: ' + q.answer.join(',') + '</div>\n      <div class="review-actions">\n        <button class="explain-btn">해설 보기</button>\n        ' + (isInWrongSet ? '<button class="remove-wrong-btn">오답에서 제거</button>' : '') + '\n      </div>\n      <div class="explain" style="display:none;"></div>\n    ';
+        card.innerHTML = '\n      <div class="review-head">\n        <div class="review-q">' + questionPrefix + (i + 1) + '. ' + q.title + '</div>\n        <span class="review-badge ' + (ok ? 'ok' : 'ng') + '">' + (ok ? '정답' : '오답') + '</span>\n      </div>\n      <div class="review-meta">내 답: ' + (userLabels || '(미응답)') + ' / 정답: ' + correctLabels + '</div>\n      <div class="review-actions">\n        <button class="explain-btn">해설 보기</button>\n        ' + (isInWrongSet ? '<button class="remove-wrong-btn">오답에서 제거</button>' : '') + '\n      </div>\n      <div class="explain" style="display:none;"></div>\n    ';
 
         var btn = card.querySelector('.explain-btn');
         var ex = card.querySelector('.explain');
@@ -357,18 +395,18 @@
       var duration = mode === 'exam' ? 90 * 60 : null;
 
       if (mode === 'wrong') {
-        sessionQuestions = getWrongSessionQuestions().map(function(q) { return Object.assign({}, q); });
+        sessionQuestions = getWrongSessionQuestions().map(deepCloneQuestion);
         if (sessionQuestions.length === 0) {
           window.alert('저장된 오답이 없습니다.');
           updateWrongModeUI();
           return;
         }
       } else if (mode === 'all') {
-        sessionQuestions = allQuestions.map(function(q) { return Object.assign({}, q); });
+        sessionQuestions = allQuestions.map(deepCloneQuestion);
       } else if (mode === 'all_random') {
-        sessionQuestions = shuffle(allQuestions.map(function(q) { return Object.assign({}, q); }));
+        sessionQuestions = shuffle(allQuestions.map(deepCloneQuestion));
       } else {
-        sessionQuestions = shuffle(allQuestions.map(function(q) { return Object.assign({}, q); })).slice(0, Math.min(limit, allQuestions.length));
+        sessionQuestions = shuffle(allQuestions.map(deepCloneQuestion)).slice(0, Math.min(limit, allQuestions.length));
       }
 
       sessionQuestions.forEach(function(q) {
