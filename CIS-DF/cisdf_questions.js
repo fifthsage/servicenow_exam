@@ -4483,5 +4483,296 @@
       "B"
     ],
     "explanation": "CSDM 5.0에서 Manage Portfolios 도메인은 기존 Design 도메인에서 분리되었습니다. 이 도메인은 DPM(Digital Portfolio Management)과 연동하여 서비스와 제품의 비즈니스 가치 및 성과를 전문적으로 관리합니다."
+  },
+  {
+    "id": 175,
+    "title": "The following reclassification properties are configured:\n- glide.class.downgrade.enabled=true\n- glide.identification_engine.update_without_downgrade_enabled=true\n\nGiven this configuration, what will occur during a reclassification request for a Windows Server CI?",
+    "options": [
+      { "id": "A", "text": "A Windows Server IS allowed to be downgraded" },
+      { "id": "B", "text": "A Windows Server IS NOT allowed to be downgraded" },
+      { "id": "C", "text": "The Windows Server CI attributes CAN be updated" },
+      { "id": "D", "text": "The Windows Server CI attributes CANNOT be updated" }
+    ],
+    "answer": ["B", "C"],
+    "explanation": "글로벌 속성인 'glide.identification_engine.update_without_downgrade_enabled'는 'glide.class.downgrade.enabled'보다 우선순위가 높습니다. 따라서 클래스 재분류(다운그레이드)는 허용되지 않지만, CI 속성에 대한 업데이트는 허용됩니다."
+  },
+  {
+    "id": 176,
+    "title": "The following reclassification properties are configured:\n- glide.class.downgrade.enabled=true\n- glide.identification_engine.update_without_downgrade_enabled=false\n\nAnd a Reclassification Restriction Rule is defined:\n- Type: Downgrade\n- Source table: Server\n- Target table: Computer\n\nWhat will occur during a reclassification request to downgrade a Windows Server to a Computer?",
+    "options": [
+      { "id": "A", "text": "A Windows Server IS allowed to be downgraded to a Computer record" },
+      { "id": "B", "text": "A Windows Server IS NOT allowed to be downgraded to a Computer record" },
+      { "id": "C", "text": "The Windows Server CI attributes CAN be updated" },
+      { "id": "D", "text": "The Windows Server CI attributes CANNOT be updated" }
+    ],
+    "answer": ["B", "C"],
+    "explanation": "재분류 제한 규칙(Reclassification restriction rules)은 글로벌 속성인 'glide.class.downgrade.enabled'보다 우선하여 적용됩니다. 규칙에 의해 다운그레이드 재분류는 차단되지만, CI 속성 업데이트는 여전히 가능합니다."
+  },
+  {
+    "id": 177,
+    "title": "The following reclassification properties are configured:\n- glide.class.downgrade.enabled=true\n- glide.identification_engine.update_without_downgrade_enabled=false\n\nAnd a Reclassification Restriction Rule is defined:\n- Type: Downgrade\n- Source table: Server\n- Target table: Computer\n\nWhat will occur during a reclassification request to downgrade an IP Router to a Network Gear record (no specific rule defined for this pair)?",
+    "options": [
+      { "id": "A", "text": "An IP Router IS allowed to be downgraded to a Network Gear record" },
+      { "id": "B", "text": "An IP Router IS NOT allowed to be downgraded to a Network Gear record" },
+      { "id": "C", "text": "The IP Router CI attributes CAN be updated" },
+      { "id": "D", "text": "The IP Router CI attributes CANNOT be updated" }
+    ],
+    "answer": ["A", "C"],
+    "explanation": "IP Router와 Network Gear 클래스 쌍에 대해 정의된 구체적인 재분류 제한 규칙이 없으므로, 글로벌 속성인 'glide.class.downgrade.enabled'가 적용됩니다. 이에 따라 다운그레이드 재분류와 CI 속성 업데이트가 모두 허용됩니다."
+  },
+  {
+    "id": 178,
+    "title": "Which of the following types of data is collected after implementing ServiceNow Discovery? (Select three)",
+    "options": [
+      { "id": "A", "text": "Operating System" },
+      { "id": "B", "text": "Support Group" },
+      { "id": "C", "text": "RAM" },
+      { "id": "D", "text": "MAC Address" },
+      { "id": "E", "text": "Managed by Group" }
+    ],
+    "answer": ["A", "C", "D"],
+    "explanation": "운영 체제(Operating System), RAM, MAC 주소는 Discovery를 통해 수집되는 기술 데이터 포인트입니다. 반면 Support Group과 Managed by Group은 Discovery로 탐지할 수 없는 속성이며, 다른 방법을 통해 입력되어야 합니다."
+  },
+  {
+    "id": 179,
+    "title": "Which of the following are huge value adds in implementing Service Mapping? (Select two)",
+    "options": [
+      { "id": "A", "text": "Provides insights into the potential impact of changes" },
+      { "id": "B", "text": "Helps identify the root cause of incidents faster, reducing service downtime" },
+      { "id": "C", "text": "Provides an up to date inventory of all infrastructure in an enterprise environment reducing compliance risk" },
+      { "id": "D", "text": "Gives visibility to all installed software in an enterprise supporting corporate software asset management initiatives" }
+    ],
+    "answer": ["A", "B"],
+    "explanation": "Service Mapping은 인프라 구성 요소를 특정 비즈니스 서비스에 매핑하는 데 중점을 두며, 이를 통해 변경 사항의 잠재적 영향 분석과 인시던트 근본 원인 파악을 가속화하여 다운타임을 줄여줍니다."
+  },
+  {
+    "id": 180,
+    "title": "Which of the following is a lightweight agent-based solution designed to perform discovery and real-time monitoring of infrastructure components, including servers, cloud resources, and applications across an organization?",
+    "options": [
+      { "id": "A", "text": "Agent Client Collector" },
+      { "id": "B", "text": "Service Graph Connectors" },
+      { "id": "C", "text": "ServiceNow Discovery" },
+      { "id": "D", "text": "IntegrationHub ETL" }
+    ],
+    "answer": ["A"],
+    "explanation": "Agent Client Collector(ACC)는 ServiceNow에서 제공하는 경량 에이전트 기반 솔루션으로, 조직 전반의 서버, 클라우드 리소스 및 애플리케이션에 대한 실시간 모니터링과 디스커버리를 수행합니다."
+  },
+  {
+    "id": 181,
+    "title": "Which of the following ServiceNow solutions can be used to integrate third-party data into the CMDB or non-CMDB tables while ensuring data integrity? (Select two)",
+    "options": [
+      { "id": "A", "text": "Agent Client Collector" },
+      { "id": "B", "text": "Service Graph Connectors" },
+      { "id": "C", "text": "ServiceNow Discovery" },
+      { "id": "D", "text": "IntegrationHub ETL" }
+    ],
+    "answer": ["B", "D"],
+    "explanation": "Service Graph Connectors와 IntegrationHub ETL은 데이터 무결성을 보장하면서 서드파티 데이터를 ServiceNow CMDB 또는 일반 테이블에 통합하는 데 사용되는 핵심 도구입니다. 두 도구 모두 식별 및 조정 엔진(IRE)을 활용합니다."
+  },
+  {
+    "id": 182,
+    "title": "When using import sets and transform maps to integrate data into the CMDB, it is recommended to add which type of script to ensure the incoming data passes through the Identification and Reconciliation Engine (IRE)?",
+    "options": [
+      { "id": "A", "text": "onBefore" },
+      { "id": "B", "text": "onStart" },
+      { "id": "C", "text": "onComplete" },
+      { "id": "D", "text": "onAfter" }
+    ],
+    "answer": ["A"],
+    "explanation": "데이터가 IRE를 거치도록 하려면 변환 맵(Transform Map) 내에 'onBefore' 스크립트를 작성하여 CMDBTransformUtil API를 호출해야 합니다."
+  },
+  {
+    "id": 183,
+    "title": "A CMDB administrator is managing group data from both the CI Class Manager and a Technology Management Offering for a specific class. If different values are set for the 'Managed by Group', which takes precedence?",
+    "options": [
+      { "id": "A", "text": "Value from CI Class Manager" },
+      { "id": "B", "text": "Value from Technology Management Offering" }
+    ],
+    "answer": ["B"],
+    "explanation": "CSDM 가이드라인에 따라, 기술 서비스 오퍼링(Technology Management Offering)에 구성된 값이 CI Class Manager에 설정된 기본값보다 우선하여 적용됩니다."
+  },
+  {
+    "id": 184,
+    "title": "Which foundation data can be managed through a Technology Management Offering and automatically synchronized with the underlying CIs it manages?",
+    "options": [
+      { "id": "A", "text": "Change group, Managed by group, and Support group" },
+      { "id": "B", "text": "Owned by, Managed by, Assigned to" },
+      { "id": "C", "text": "Change group, Managed by group, and Approval group" },
+      { "id": "D", "text": "Owned by, Managed by, Supported by" }
+    ],
+    "answer": ["A"],
+    "explanation": "Change group, Managed by group, Support group은 기술 서비스 오퍼링을 통해 관리될 때 하위 CI들과 자동으로 동기화되는 핵심 기반 데이터입니다."
+  },
+  {
+    "id": 185,
+    "title": "When a CI is added to the CMDB through ServiceNow Discovery or Asset Management, which of the following statements is true regarding the record’s Discovery Source field? (Choose two)",
+    "options": [
+      { "id": "A", "text": "CIs discovered by ServiceNow Discovery have a discovery source field of ServiceNow." },
+      { "id": "B", "text": "CIs discovered by ServiceNow Discovery have a discovery source field of Service Mapping." },
+      { "id": "C", "text": "CIs added to the CMDB through the Asset Management process have a discovery source field of SNAssetManagement." },
+      { "id": "D", "text": "CIs added to the CMDB through the Asset Management process have a discovery source field of AssetManagement" }
+    ],
+    "answer": ["A", "C"],
+    "explanation": "ServiceNow Discovery는 Discovery Source 필드를 'ServiceNow'로 설정하고, 자산 관리 프로세스를 통해 추가된 자산은 'SNAssetManagement'로 설정됩니다."
+  },
+  {
+    "id": 186,
+    "title": "Match the following descriptions to the correct items in CI Class Manager.",
+    "options": [
+      { "id": "A", "text": "Where do you configure data sources authorized to update CI Attributes?" },
+      { "id": "B", "text": "Where do you configure an icon for a specific class?" },
+      { "id": "C", "text": "What feature allows for easy navigation back to a frequently accessed class?" },
+      { "id": "D", "text": "Where do you go to configure a rule to uniquely identify CIs?" }
+    ],
+    "answer": ["A", "B", "C", "D"],
+    "explanation": "CI Class Manager에서: Reconciliation Rules 탭은 승인된 데이터 소스를 구성하고, Basic Info 탭은 클래스 아이콘/설정을 담당하며, Pinned Classes는 빠른 탐색을 지원하고, Identification Rule 탭은 CI를 고유하게 식별하는 규칙을 정의합니다."
+  },
+  {
+    "id": 187,
+    "title": "Reconciliation rules are configured to control which of the following?",
+    "options": [
+      { "id": "A", "text": "Updates to a CI" },
+      { "id": "B", "text": "Inserts of a CI" },
+      { "id": "C", "text": "Deletion of a CI" },
+      { "id": "D", "text": "Reading of a CI" }
+    ],
+    "answer": ["A"],
+    "explanation": "조정 규칙(Reconciliation rules)은 서로 다른 데이터 소스들로부터 유입되는 CI 속성에 대한 업데이트(수정) 권한을 제어하도록 설계되었습니다."
+  },
+  {
+    "id": 188,
+    "title": "Match the term with the correct description.",
+    "options": [
+      { "id": "A", "text": "Reconciliation Rule" },
+      { "id": "B", "text": "IRE Data Source Rule" },
+      { "id": "C", "text": "De-duplication Task" },
+      { "id": "D", "text": "Identification Rules" }
+    ],
+    "answer": ["A", "B", "C", "D"],
+    "explanation": "조정 규칙(Reconciliation Rules)은 속성 업데이트를 관리하고, IRE 데이터 소스 규칙(Data Source Rules)은 CI 삽입을 제어하며, 중복 제거 작업(De-duplication Tasks)은 중복 레코드를 처리하고, 식별 규칙(Identification Rules)은 CI의 고유성을 정의합니다."
+  },
+  {
+    "id": 189,
+    "title": "The Server class uses a dynamic reconciliation rule that selects the largest value for the RAM field. Given sources: Tivoli RAM: 4096 | ServiceNow RAM: 4096 | LANDesk RAM: 2048 | Altiris RAM: 6020. Which RAM value will be written to the CMDB?",
+    "options": [
+      { "id": "A", "text": "6020" },
+      { "id": "B", "text": "2048" },
+      { "id": "C", "text": "4096" },
+      { "id": "D", "text": "1024" }
+    ],
+    "answer": ["A"],
+    "explanation": "동적 조정 규칙이 'Largest Value(가장 큰 값)'로 설정되어 있으므로, 사용 가능한 소스 중 가장 높은 RAM 값인 6020이 선택되어 기록됩니다."
+  },
+  {
+    "id": 190,
+    "title": "Which of the following are true with respect to the Multisource CMDB? (Choose 2)",
+    "options": [
+      { "id": "A", "text": "Is active by default on base systems" },
+      { "id": "B", "text": "Activate the Multisource CMDB by setting the property, glide.identification_engine.multisource_enabled, to true and installing the ITOM Discovery License plugin" },
+      { "id": "C", "text": "De-activate the Multisource CMDB by installing the CMDB CI Class Models plugin" },
+      { "id": "D", "text": "Must be activated on base systems" }
+    ],
+    "answer": ["B", "D"],
+    "explanation": "Multisource CMDB는 기본적으로 활성화되어 있지 않으며, 'glide.identification_engine.multisource_enabled' 속성을 true로 설정하고 적절한 ITOM Discovery 라이선스 플러그인을 설치하여 명시적으로 활성화해야 합니다."
+  },
+  {
+    "id": 191,
+    "title": "The Windows Server class uses a dynamic reconciliation rule that selects the most reported value for the RAM field. Given sources: Tivoli RAM: 4096 | ServiceNow RAM: 4096 | LANDesk RAM: 2048 | Altiris RAM: 6020. Which RAM value will be written to the CMDB?",
+    "options": [
+      { "id": "A", "text": "6020" },
+      { "id": "B", "text": "2048" },
+      { "id": "C", "text": "4096" },
+      { "id": "D", "text": "1024" }
+    ],
+    "answer": ["C"],
+    "explanation": "'Most reported(최빈값)' 로직은 가장 자주 나타나는 값을 선택합니다. 이 시나리오에서는 4096이 두 번(Tivoli, ServiceNow) 나타나므로 최빈값인 4096이 선택됩니다."
+  },
+  {
+    "id": 192,
+    "title": "Which of the following can be configured to prevent inserts into the CMDB from an unwanted data source?",
+    "options": [
+      { "id": "A", "text": "Identification Rule" },
+      { "id": "B", "text": "Reconciliation Rule" },
+      { "id": "C", "text": "Dynamic Reconciliation Rule" },
+      { "id": "D", "text": "Data Refresh Rule" },
+      { "id": "E", "text": "IRE Data Source Rule" }
+    ],
+    "answer": ["E"],
+    "explanation": "IRE 데이터 소스 규칙(IRE Data Source Rules)은 특정 데이터 소스가 특정 CMDB 클래스에 신규 레코드를 삽입(Insert)하는 것을 제어하거나 차단하기 위해 사용되는 전용 규칙입니다."
+  },
+  {
+    "id": 193,
+    "title": "The Unified Map combines many of the features from which of the following maps? (Choose two)",
+    "options": [
+      { "id": "A", "text": "Application Service" },
+      { "id": "B", "text": "Dependency View" },
+      { "id": "C", "text": "Geolocation" },
+      { "id": "D", "text": "Dynamic" }
+    ],
+    "answer": ["A", "B"],
+    "explanation": "통합 맵(Unified Map)은 애플리케이션 서비스 맵과 의존성 뷰(Dependency View)의 기능을 통합하여 CI 간의 관계를 종합적으로 시각화해 줍니다."
+  },
+  {
+    "id": 194,
+    "title": "The Unified Map is accessible from which application?",
+    "options": [
+      { "id": "A", "text": "ServiceNow Discovery" },
+      { "id": "B", "text": "CMDB Workspace" },
+      { "id": "C", "text": "CI Class Manager" },
+      { "id": "D", "text": "Data Manager" },
+      { "id": "E", "text": "CMDB Health Dashboard" }
+    ],
+    "answer": ["B"],
+    "explanation": "통합 맵(Unified Map)은 CMDB Workspace 내부에 통합되어 있어 해당 워크스페이스에서 직접 접근하고 사용할 수 있습니다."
+  },
+  {
+    "id": 195,
+    "title": "Which ServiceNow management tool would you use to find data centers not connected to any configuration item?",
+    "options": [
+      { "id": "A", "text": "CI Class Manager" },
+      { "id": "B", "text": "CMDB Health Dashboard" },
+      { "id": "C", "text": "Data Manager" },
+      { "id": "D", "text": "Unified Map" },
+      { "id": "E", "text": "CMDB Query Builder" }
+    ],
+    "answer": ["E"],
+    "explanation": "CMDB Query Builder를 사용하면 복잡한 데이터베이스 쿼리를 시각적으로 설계할 수 있으며, 특정 CI(예: 데이터 센터)와 연결 관계가 없는 항목들을 식별하는 데 매우 유용합니다."
+  },
+  {
+    "id": 196,
+    "title": "Intelligent Search uses which of the following languages?",
+    "options": [
+      { "id": "A", "text": "NLQ" },
+      { "id": "B", "text": "SQL" },
+      { "id": "C", "text": "MySQL" },
+      { "id": "D", "text": "JSON" }
+    ],
+    "answer": ["A"],
+    "explanation": "지능형 검색(Intelligent Search)은 자연어 쿼리(NLQ, Natural Language Query)를 활용하여 사용자가 일상적인 용어로 검색할 수 있도록 지원합니다."
+  },
+  {
+    "id": 197,
+    "title": "Remediation Playbooks that can be used to fix common CMDB and CSDM issues are accessible from which management tool?",
+    "options": [
+      { "id": "A", "text": "CMDB and CSDM Data Foundations Dashboards" },
+      { "id": "B", "text": "Data Manager" },
+      { "id": "C", "text": "CMDB Query Builder" },
+      { "id": "D", "text": "CI Class Manager" }
+    ],
+    "answer": ["A"],
+    "explanation": "공통적인 CMDB 및 CSDM 이슈를 해결하는 데 도움을 주는 치유 플레이북(Remediation Playbooks)은 CMDB/CSDM Data Foundations Dashboard 스토어 앱을 통해 제공됩니다."
+  },
+  {
+    "id": 198,
+    "title": "To assist incident and change routing, which of the following fields from the CI record map to the incident and change assignment group fields? (Choose two)",
+    "options": [
+      { "id": "A", "text": "Support Group" },
+      { "id": "B", "text": "Change Group" },
+      { "id": "C", "text": "Managed By Group" },
+      { "id": "D", "text": "Assignment Group" },
+      { "id": "E", "text": "Operational Group" }
+    ],
+    "answer": ["A", "B"],
+    "explanation": "'Support Group' 필드는 인시던트(Incident)의 담당 그룹으로, 'Change Group' 필드는 변경(Change) 요청의 담당 그룹으로 자동 매핑되어 효율적인 티켓 라우팅을 돕습니다."
   }
 ];

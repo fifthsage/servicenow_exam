@@ -9,6 +9,7 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../shared/hub-common.css">
+  <script src="cisdf_questions.js"></script>
 </head>
 
 <body>
@@ -25,9 +26,14 @@
         <span>Exam How-to</span>
         <span>Practice: Random 10</span>
         <span>Mock Exam: Random 75 / 90m</span>
-        <span>Question Pool: 210</span>
+        <span id="question-pool-count">Question Pool: -</span>
       </div>
     </header>
+
+    <div class="info-box"
+      style="background-color: #eefbff; border: 1px solid #b3e5fc; padding: 15px; border-radius: 8px; margin-bottom: 20px; color: #0277bd; font-size: 0.95rem;">
+      <strong>📢 안내:</strong> 회사 공유 폴더에 JOY님이 AI로 제작한 6부작 팟캐스트 학습 파일이 업로드되어 있습니다.
+    </div>
 
     <section class="grid grid-4">
       <article class="card">
@@ -114,6 +120,14 @@
       window.location.href = 'CIS-DF_Integrated_Quiz.html?mode=wrong';
       return false;
     }
+
+    // Update dynamic question count
+    (function () {
+      var countSpan = document.getElementById('question-pool-count');
+      if (countSpan && window.CISDF_QUESTIONS) {
+        countSpan.textContent = 'Question Pool: ' + window.CISDF_QUESTIONS.length;
+      }
+    })();
   </script>
 </body>
 
