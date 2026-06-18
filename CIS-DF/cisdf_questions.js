@@ -3055,7 +3055,7 @@
         "id": "A"
       },
       {
-        "text": "Certification Filter, Certification Template, and Compliance Audit configuration",
+        "text": "Certification Filter, Certification Template, Audit configuration, and Compliance Score Calculation Job",
         "id": "B"
       },
       {
