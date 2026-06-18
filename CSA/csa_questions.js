@@ -1,4 +1,4 @@
-window.CSA_QUESTIONS = [
+﻿window.CSA_QUESTIONS = [
   {
     "id": 1,
     "title": "What is the function of user impersonation?",
@@ -2286,7 +2286,7 @@ window.CSA_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**서비스 카탈로그(Service Catalog)**는 기업 내 다양한 부서(IT, HR, 시설 관리 등)가 제공하는 서비스와 제품을 사용자가 쇼핑하듯 요청할 수 있는 중앙 허브입니다.\n*   **CSDM 연관**: CSDM 4.0의 **Sell/Consume** 도메인에 해당하며, 기술적 복잡성을 배제하고 비즈니스 가치 관점에서 사용자에게 오퍼링을 노출합니다.\n*   **구성**: 카탈로그 아이템, 오더 가이드, 레코드 프로듀서 등으로 이루어지며 승인 및 이행 워크플로우와 연결됩니다."
+    "explanation": "**서비스 카탈로그(Service Catalog)**는 기업 내 다양한 부서(IT, HR, 시설 관리 등)가 제공하는 서비스와 제품을 사용자가 쇼핑하듯 요청할 수 있는 중앙 허브입니다.\n*   **CSDM 연관**: CSDM 5.0의 **Service Consumption (구 Sell/Consume)** 도메인에 해당하며, 기술적 복잡성을 배제하고 비즈니스 가치 관점에서 사용자에게 오퍼링을 노출합니다.\n*   **구성**: 카탈로그 아이템, 오더 가이드, 레코드 프로듀서 등으로 이루어지며 승인 및 이행 워크플로우와 연결됩니다."
   },
   {
     "id": 86,
@@ -8307,7 +8307,7 @@ window.CSA_QUESTIONS = [
     "answer": [
       "E"
     ],
-    "explanation": "**디펜던시 뷰(Dependency View)**는 CMDB 내의 구성 항목(CI)들 사이의 복잡한 의존 관계를 그래픽 인터페이스로 시각화해주는 플랫폼 도구입니다.\n*   **가치**: 특정 서버나 네트워크 장비에 이슈가 발생했을 때, 어떤 상위 비즈니스 서비스들이 영향을 받는지 파악하는 **영향도 분석(Impact Analysis)**에 핵심적인 역할을 합니다.\n*   **CSDM 연관**: 하부 인프라(Technical Service)와 상부 비즈니스 가치(Business Service) 사이의 연결 고리를 명확히 보여줍니다."
+    "explanation": "**디펜던시 뷰(Dependency View)**는 CMDB 내의 구성 항목(CI)들 사이의 복잡한 의존 관계를 그래픽 인터페이스로 시각화해주는 플랫폼 도구입니다.\n*   **가치**: 특정 서버나 네트워크 장비에 이슈가 발생했을 때, 어떤 상위 비즈니스 서비스들이 영향을 받는지 파악하는 **영향도 분석(Impact Analysis)**에 핵심적인 역할을 합니다.\n*   **CSDM 연관**: 하부 인프라(Technology Management Service (구Technical Service))와 상부 비즈니스 가치(Business Service) 사이의 연결 고리를 명확히 보여줍니다."
   },
   {
     "id": 298,
@@ -10285,7 +10285,7 @@ window.CSA_QUESTIONS = [
       "D",
       "E"
     ],
-    "explanation": "비즈니스 서비스(예: 전자상거래)를 지탱하는 하부 인프라를 체계적으로 추적하려면 다음 제품군의 유기적 연동이 필수적입니다.\n1.  **CMDB (B)**: 모든 구성 항목(CI)과 그들 간의 관계 정보를 저장하는 중앙 데이터베이스입니다.\n2.  **Discovery (D)**: 네트워크를 스캔하여 서버, 장비, 소프트웨어 등 기술적 CI를 자동으로 식별하고 CMDB를 채웁니다 (Bottom-up).\n3.  **Service Mapping (E)**: 비즈니스 서비스 관점에서 어떤 기술적 CI들이 유기적으로 연결되어 있는지 하향식으로 가시화합니다 (Top-down).\n*   **CSDM 연관**: 이는 CSDM의 **Manage Technical Services**와 **Sell/Consume** 도메인을 연결하는 핵심 아키텍처 활동입니다."
+    "explanation": "비즈니스 서비스(예: 전자상거래)를 지탱하는 하부 인프라를 체계적으로 추적하려면 다음 제품군의 유기적 연동이 필수적입니다.\n1.  **CMDB (B)**: 모든 구성 항목(CI)과 그들 간의 관계 정보를 저장하는 중앙 데이터베이스입니다.\n2.  **Discovery (D)**: 네트워크를 스캔하여 서버, 장비, 소프트웨어 등 기술적 CI를 자동으로 식별하고 CMDB를 채웁니다 (Bottom-up).\n3.  **Service Mapping (E)**: 비즈니스 서비스 관점에서 어떤 기술적 CI들이 유기적으로 연결되어 있는지 하향식으로 가시화합니다 (Top-down).\n*   **CSDM 연관**: 이는 CSDM의 **Service Delivery (구 Manage Technical Services)**와 **Service Consumption (구 Sell/Consume)** 도메인을 연결하는 핵심 아키텍처 활동입니다."
   },
   {
     "id": 368,
@@ -10411,7 +10411,7 @@ window.CSA_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "**디펜던시 뷰(Dependency View)**가 기술적 구성 항목(CI)들 사이의 연결 고리를 시각화할 수 있는 데이터 근거는 **관계(Relationships)** 정보입니다.\n*   **데이터 테이블**: CI 간의 의존 관계는 **`cmdb_rel_ci`** 테이블에 정의되어 저장됩니다.\n*   **가시성**: '호스팅함(Runs on)', '종속됨(Depends on)' 등의 관계 유형을 통해 서버 장애가 어떤 애플리케이션 서비스에 영향을 주는지 하향식(Top-down) 또는 상향식(Bottom-up)으로 추적할 수 있게 해줍니다.\n*   **CSDM 연관**: 이는 CSDM의 **Manage Technical Services** 도메인에서 인프라의 가동 상태를 서비스 가치와 연결하는 핵심 메커니즘입니다."
+    "explanation": "**디펜던시 뷰(Dependency View)**가 기술적 구성 항목(CI)들 사이의 연결 고리를 시각화할 수 있는 데이터 근거는 **관계(Relationships)** 정보입니다.\n*   **데이터 테이블**: CI 간의 의존 관계는 **`cmdb_rel_ci`** 테이블에 정의되어 저장됩니다.\n*   **가시성**: '호스팅함(Runs on)', '종속됨(Depends on)' 등의 관계 유형을 통해 서버 장애가 어떤 애플리케이션 서비스에 영향을 주는지 하향식(Top-down) 또는 상향식(Bottom-up)으로 추적할 수 있게 해줍니다.\n*   **CSDM 연관**: 이는 CSDM의 **Service Delivery (구 Manage Technical Services)** 도메인에서 인프라의 가동 상태를 서비스 가치와 연결하는 핵심 메커니즘입니다."
   },
   {
     "id": 373,

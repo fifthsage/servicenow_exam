@@ -113,4 +113,5 @@
 > 1. UI Policy는 브라우저 전용이지만, Data Policy는 모든 경로(API 포함)를 강제합니다.
 > 2. 리스트의 **톱니바퀴(Gear)**는 개인화, **Configure > List Layout**은 시스템 전역 구성입니다.
 > 3. 모든 태스크(`task`) 테이블의 부모는 `task`이며, 모든 CI(`cmdb_ci`)의 뿌리는 `cmdb`입니다.
+> 4. **CSDM 5.0 (2026 표준)**: Application Service는 이제 **Service Instance**로 불리며, 제품 수명 주기를 7개 도메인으로 관리합니다.
 >
