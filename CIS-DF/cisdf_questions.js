@@ -1,4 +1,4 @@
-﻿window.CISDF_QUESTIONS = [
+window.CISDF_QUESTIONS = [
   {
     "id": 1,
     "title": "Which CSDM domain are business applications, information objects, and capabilities part of?",
@@ -4617,12 +4617,12 @@
   },
   {
     "id": 186,
-    "title": "Match the following descriptions to the correct items in CI Class Manager.",
+    "title": "Match the following descriptions to the correct items in CI Class Manager. (Select all correct pairings below)",
     "options": [
-      { "id": "A", "text": "Where do you configure data sources authorized to update CI Attributes?" },
-      { "id": "B", "text": "Where do you configure an icon for a specific class?" },
-      { "id": "C", "text": "What feature allows for easy navigation back to a frequently accessed class?" },
-      { "id": "D", "text": "Where do you go to configure a rule to uniquely identify CIs?" }
+      { "id": "A", "text": "Reconciliation Rules - Where you configure data sources authorized to update CI Attributes" },
+      { "id": "B", "text": "Basic Info - Where you configure an icon for a specific class" },
+      { "id": "C", "text": "Pinned Classes - What feature allows for easy navigation back to a frequently accessed class" },
+      { "id": "D", "text": "Identification Rules - Where you go to configure a rule to uniquely identify CIs" }
     ],
     "answer": ["A", "B", "C", "D"],
     "explanation": "CI Class Manager에서: Reconciliation Rules 탭은 승인된 데이터 소스를 구성하고, Basic Info 탭은 클래스 아이콘/설정을 담당하며, Pinned Classes는 빠른 탐색을 지원하고, Identification Rule 탭은 CI를 고유하게 식별하는 규칙을 정의합니다."
@@ -4641,12 +4641,12 @@
   },
   {
     "id": 188,
-    "title": "Match the term with the correct description.",
+    "title": "Match the term with the correct description. (Select all correct pairings below)",
     "options": [
-      { "id": "A", "text": "Reconciliation Rule" },
-      { "id": "B", "text": "IRE Data Source Rule" },
-      { "id": "C", "text": "De-duplication Task" },
-      { "id": "D", "text": "Identification Rules" }
+      { "id": "A", "text": "Reconciliation Rules - Manage attribute updates (속성 업데이트 관리)" },
+      { "id": "B", "text": "IRE Data Source Rules - Control CI insert (CI 삽입 제어)" },
+      { "id": "C", "text": "De-duplication Tasks - Process duplicate records (중복 레코드 처리)" },
+      { "id": "D", "text": "Identification Rules - Define CI uniqueness (CI의 고유성 정의)" }
     ],
     "answer": ["A", "B", "C", "D"],
     "explanation": "조정 규칙(Reconciliation Rules)은 속성 업데이트를 관리하고, IRE 데이터 소스 규칙(Data Source Rules)은 CI 삽입을 제어하며, 중복 제거 작업(De-duplication Tasks)은 중복 레코드를 처리하고, 식별 규칙(Identification Rules)은 CI의 고유성을 정의합니다."
