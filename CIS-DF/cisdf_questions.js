@@ -4774,5 +4774,263 @@ window.CISDF_QUESTIONS = [
     ],
     "answer": ["A", "B"],
     "explanation": "'Support Group' 필드는 인시던트(Incident)의 담당 그룹으로, 'Change Group' 필드는 변경(Change) 요청의 담당 그룹으로 자동 매핑되어 효율적인 티켓 라우팅을 돕습니다."
+  },
+  {
+    "id": 199,
+    "title": "The Logistics Company has created a Health Inclusion Rule to gain better insight into the data in their CMDB. Which of the following best describes the purpose of this rule?",
+    "options": [
+      { "id": "A", "text": "Allows them to test for required fields that are missing data" },
+      { "id": "B", "text": "Allows them to filter which CI classes are calculated as part of the CMDB Health Dashboard" },
+      { "id": "C", "text": "Allows them to identify and filter duplicate CIs" },
+      { "id": "D", "text": "Allows them to validate the CMDB is configured to populate data for incomplete fields" }
+    ],
+    "answer": ["B"],
+    "explanation": "Health Inclusion Rule은 조직이 CMDB Health Dashboard 계산에 포함할 CI와 해당 클래스를 필터링할 수 있도록 지원합니다. 이를 통해 관리 준비가 되지 않았거나 소유자가 없는 CI 데이터가 대시보드에 불필요하게 표시되는 것을 방지합니다."
+  },
+  {
+    "id": 200,
+    "title": "If a CMDB administrator wants to turn on task creation for each CI that fails the health test for recommended fields, where in ServiceNow is this configured?",
+    "options": [
+      { "id": "A", "text": "CI Class Manager" },
+      { "id": "B", "text": "CMDB Health Dashboard" },
+      { "id": "C", "text": "Health Metrics" },
+      { "id": "D", "text": "System Properties" }
+    ],
+    "answer": ["C"],
+    "explanation": "추천 필드(Recommended fields)에 대한 태스크 생성 기능은 CMDB Health Metrics 메뉴에서 설정합니다. Configuration > Health Preferences > Health Metrics로 이동한 뒤 Metric을 Recommended로 선택하고, Create Task를 활성화한 후 담당 그룹을 지정할 수 있습니다."
+  },
+  {
+    "id": 201,
+    "title": "Cloud Dimensions is reviewing the metrics provided by their CMDB Correctness Scorecard. In reviewing the Duplicate metric for the Server class, it displays Healthy CIs/Evaluated 700/800. Which of the following is true regarding the duplicate server records calculated on the Duplicate metric?",
+    "options": [
+      { "id": "A", "text": "700 server records are duplicates in the CMDB" },
+      { "id": "B", "text": "800 server records are duplicates in the CMDB" },
+      { "id": "C", "text": "100 server records are duplicates in the CMDB" },
+      { "id": "D", "text": "700 Linux and 800 Windows server records are duplicates in the CMDB" }
+    ],
+    "answer": ["C"],
+    "explanation": "700/800 지표에서 앞의 700은 평가 대상인 전체 800개의 서버 CI 중 중복되지 않은 건강한(Healthy) CI의 수입니다. 따라서 전체 평가 대상에서 건강한 개수를 제외한 100개(800 - 700)가 중복 레코드가 됩니다."
+  },
+  {
+    "id": 202,
+    "title": "Cloud Dimensions is reviewing the metrics provided by their CMDB Correctness Scorecard. In reviewing the Duplicate metric for the Server class, it displays Healthy CIs/Evaluated at 700/800. Which of the following is true regarding the scope of server records calculated on the Duplicate metric?",
+    "options": [
+      { "id": "A", "text": "800 server records exist in the CMDB" },
+      { "id": "B", "text": "700 server records exist in the CMDB" },
+      { "id": "C", "text": "100 server records exist in the CMDB" },
+      { "id": "D", "text": "700 Linux and 800 Windows server records exist in the CMDB" }
+    ],
+    "answer": ["A"],
+    "explanation": "700/800 지표에서 분모인 800은 해당 중복 메트릭에서 평가 대상이 된 전체 서버 레코드의 범위(Scope)를 나타냅니다."
+  },
+  {
+    "id": 203,
+    "title": "Cloud Dimensions is reviewing the metrics provided by the CMDB Correctness Scorecard. In reviewing the Duplicate metric for the Server class, it displays 1200/5000. In reviewing the Orphan metric, it displays 900/4200. Which of the following might be configured to display the difference in the scope of Server CIs (5000 vs 4200) used in both metrics?",
+    "options": [
+      { "id": "A", "text": "The Orphan metric has a Health Inclusion rule configured for the Server class" },
+      { "id": "B", "text": "The Duplicate metric has a Health Inclusion rule configured for the Server class" },
+      { "id": "C", "text": "The Orphan metric has a CMDB Group configured for the Server class" },
+      { "id": "D", "text": "The Duplicate metric has a CMDB Group configured for the Server class" }
+    ],
+    "answer": ["A"],
+    "explanation": "Health Inclusion Rule은 CMDB 헬스 대시보드에 나타나는 개별 메트릭 계산에 포함될 CI 범위를 필터링하는 데 쓰입니다. Orphan 메트릭에 Server 클래스용 Health Inclusion Rule을 적용했기 때문에 해당 메트릭의 평가 대상 범위가 4200개로 줄어든 것입니다."
+  },
+  {
+    "id": 204,
+    "title": "How many Orphan rules are provided in a base system?",
+    "options": [
+      { "id": "A", "text": "0" },
+      { "id": "B", "text": "1" },
+      { "id": "C", "text": "Depends on the plugins enabled" },
+      { "id": "D", "text": "Depends on the CIs discovered" }
+    ],
+    "answer": ["A"],
+    "explanation": "기본 제공 시스템(Base system) 환경에는 사전에 정의되거나 제공되는 고립 규칙(Orphan rules)이 기본적으로 존재하지 않습니다(0개)."
+  },
+  {
+    "id": 205,
+    "title": "What is the effective duration for the default Staleness rule in a base system?",
+    "options": [
+      { "id": "A", "text": "24 hours" },
+      { "id": "B", "text": "7 days" },
+      { "id": "C", "text": "30 days" },
+      { "id": "D", "text": "60 days" }
+    ],
+    "answer": ["D"],
+    "explanation": "기본 제공 시스템 환경에서 제공되는 기본 노후화 규칙(Staleness rule)의 유효 기준 기간은 60일로 설정되어 있습니다."
+  },
+  {
+    "id": 206,
+    "title": "The Staleness metric calculation is based on which of the following fields?",
+    "options": [
+      { "id": "A", "text": "Most recent discovery <last_discovered>" },
+      { "id": "B", "text": "Created <sys_created_on>" },
+      { "id": "C", "text": "Updated <sys_update_on>" },
+      { "id": "D", "text": "First Discovered <first_discovered>" },
+      { "id": "E", "text": "Discovery Source <discovery_source>" }
+    ],
+    "answer": ["C"],
+    "explanation": "노후화 메트릭(Staleness metric)은 레코드가 마지막으로 수정되거나 업데이트된 시간 정보가 담긴 Updated <sys_update_on> 타임스탬프 필드를 기준으로 계산됩니다."
+  },
+  {
+    "id": 207,
+    "title": "Which of the following audit types are used in the calculation for the Compliance Scorecard results? (Select all that apply)",
+    "options": [
+      { "id": "A", "text": "Compliance" },
+      { "id": "B", "text": "Compliance Architecture" },
+      { "id": "C", "text": "Desired State" },
+      { "id": "D", "text": "Scripted Audit" }
+    ],
+    "answer": ["C", "D"],
+    "explanation": "컴플라이언스 스코어카드(Compliance Scorecard) 결과 산출에는 오직 Desired State(원하는 상태) 감사와 Scripted Audit(스크립트 기반 감사) 두 가지 유형만 사용됩니다."
+  },
+  {
+    "id": 208,
+    "title": "Which of the following are used when configuring a Desired State audit? (Select all that apply)",
+    "options": [
+      { "id": "A", "text": "Certification Templates" },
+      { "id": "B", "text": "Certification Filters" },
+      { "id": "C", "text": "Audit" },
+      { "id": "D", "text": "Recommended Fields" },
+      { "id": "E", "text": "Duplicates" },
+      { "id": "F", "text": "Policies" }
+    ],
+    "answer": ["A", "B", "C"],
+    "explanation": "Desired State 감사를 구성하는 요소로는 Certification Templates(인증 템플릿), Certification Filters(인증 필터), 그리고 Audit(감사 레코드)이 쓰입니다. Policies(정책)는 데이터 매니저(Data Manager)에서 사용되는 설정입니다."
+  },
+  {
+    "id": 209,
+    "title": "Which of the following reclassification behaviors might cause CI attributes and their data to be excluded during the reclassification process? (Choose two)",
+    "options": [
+      { "id": "A", "text": "Upgrade" },
+      { "id": "B", "text": "Downgrade" },
+      { "id": "C", "text": "Promotion" },
+      { "id": "D", "text": "Switch" }
+    ],
+    "answer": ["B", "D"],
+    "explanation": "CI 재분류(Reclassification) 프로세스 과정에서 클래스 계층 구조 하위로 내리는 Downgrade(강등)나 완전히 다른 계층으로 변경하는 Switch(전환)가 발생할 경우, 기존의 특정 속성과 데이터가 누락되거나 손실될 수 있습니다."
+  },
+  {
+    "id": 210,
+    "title": "Which results in a reclassification task being generated?",
+    "options": [
+      { "id": "A", "text": "glide.class.downgrade.enabled set to true and during discovery a Windows server is classified as a Linux server." },
+      { "id": "B", "text": "glide.class.upgrade.enabled set to false and during discovery a Server is classified as a Windows server." }
+    ],
+    "answer": ["B"],
+    "explanation": "재분류 태스크(Reclassification task)는 해당 재분류 방향에 상응하는 시스템 속성(Property) 값이 false로 설정되어 자동 분류가 차단되었을 때 생성됩니다. 예를 들어 상위 개념인 Server가 Windows Server로 바뀐 것은 Upgrade 유형이며, `glide.class.upgrade.enabled` 값이 false이므로 시스템이 자동으로 처리하지 않고 사람이 검토하도록 재분류 태스크를 트리거합니다."
+  },
+  {
+    "id": 211,
+    "title": "Which are valid Data Manager policy types? (Choose five)",
+    "options": [
+      { "id": "A", "text": "Retirement" },
+      { "id": "B", "text": "Certification" },
+      { "id": "C", "text": "Attestation" },
+      { "id": "D", "text": "Deletion" },
+      { "id": "E", "text": "Archiving" },
+      { "id": "F", "text": "De-duplication" },
+      { "id": "G", "text": "Reclassification" }
+    ],
+    "answer": ["A", "B", "C", "D", "E"],
+    "explanation": "ServiceNow Data Manager에서 공식 지원하는 정책 유형은 Retirement(은퇴), Certification(인증), Attestation(증명), Deletion(삭제), Archiving(보관)의 총 5가지입니다. 중복 제거(De-duplication)와 재분류(Reclassification)는 별도의 다른 전용 기능을 이용해 처리합니다."
+  },
+  {
+    "id": 212,
+    "title": "A remediation workflow is directly referenced from which of the following?",
+    "options": [
+      { "id": "A", "text": "Remediation Task" },
+      { "id": "B", "text": "CMDB Remediation Rule" },
+      { "id": "C", "text": "CI Class Manager" },
+      { "id": "D", "text": "Scheduled Job" }
+    ],
+    "answer": ["B"],
+    "explanation": "조치 워크플로우(Remediation workflow)는 CMDB 조치 규칙(Remediation Rule)에 직접 정의되어 연결됩니다. 조치 태스크(Remediation Task)는 사용자가 수동 또는 자동화 프로세스를 통해 해당 조치 규칙과 워크플로우를 실행하도록 매개하는 주체입니다."
+  },
+  {
+    "id": 213,
+    "title": "Which of the following are used as recommendations in the Duplicate CI Remediator wizard to suggest which duplicate is the Main CI? (Choose three)",
+    "options": [
+      { "id": "A", "text": "Most Relationships" },
+      { "id": "B", "text": "Most Recent Updated" },
+      { "id": "C", "text": "Oldest Created" },
+      { "id": "D", "text": "Least Recent Updated" },
+      { "id": "E", "text": "Newest Created" },
+      { "id": "F", "text": "Least Relationships" }
+    ],
+    "answer": ["A", "B", "C"],
+    "explanation": "Duplicate CI Remediator 마법사에서 어떤 복제본을 대표 마스터 CI(Main CI)로 사용할지 제안할 때는 가장 많은 관계성 보유(Most Relationships), 가장 최근 수정(Most Recent Updated), 가장 먼저 생성됨(Oldest Created)의 세 가지 권장 기준이 반영됩니다."
+  },
+  {
+    "id": 214,
+    "title": "During ServiceNow Discovery, if a new CI is discovered and duplicates are found in the CMDB, which of the following is true?",
+    "options": [
+      { "id": "A", "text": "The oldest CI, based on Creation Date is updated" },
+      { "id": "B", "text": "The oldest CI, based on Last Updated is updated" },
+      { "id": "C", "text": "The newest CI, based on Creation Date is updated" },
+      { "id": "D", "text": "The newest CI, based on Last Updated is updated" }
+    ],
+    "answer": ["A"],
+    "explanation": "ServiceNow Discovery를 진행하는 중 새로운 대상 장비를 발견했으나 CMDB 상에 이미 중복 데이터가 존재할 경우, 생성 날짜(Creation Date) 기준으로 가장 오래된 CI가 디스커버리에 의해 식별되어 최종 업데이트를 받습니다."
+  },
+  {
+    "id": 215,
+    "title": "CI Attestation is the confirmation of which of the following?",
+    "options": [
+      { "id": "A", "text": "CI exists" },
+      { "id": "B", "text": "CI does not exist" },
+      { "id": "C", "text": "CI has dependent CIs" },
+      { "id": "D", "text": "CI does not have dependent CIs" }
+    ],
+    "answer": ["A"],
+    "explanation": "CI Attestation(CI 증명)은 해당 데이터가 가리키는 실제 IT 구성 항목 자산이 현실 세계에 실제로 존재함(CI exists)을 확인하고 보증하는 프로세스입니다."
+  },
+  {
+    "id": 216,
+    "title": "You have 10 servers part of a CMDB group. (Servers 1-10). What will be the overall scorecard percentage for the group on the CMDB Health Dashboard Correctness scorecard given the following information?\n- Server 1 fails the non-duplicate metric\n- Server 2 fails the non-orphan metric\n- Server 3 fails the non-stale metric\nThe remaining servers pass all three metrics.",
+    "options": [
+      { "id": "A", "text": "90%" },
+      { "id": "B", "text": "70%" },
+      { "id": "C", "text": "30%" },
+      { "id": "D", "text": "10%" }
+    ],
+    "answer": ["B"],
+    "explanation": "전체 Correctness 스코어카드는 그룹 내 CI가 하위의 '모든' 메트릭(중복 없음, 고립 없음, 노후화 없음)을 결함 없이 통과해야 정상 건수로 판단합니다. 10대 중 Server 1, 2, 3 총 3대가 각기 다른 메트릭에 결함이 발생했으므로 모든 메트릭을 통과한 정상 CI는 7대뿐이어서 최종 70%가 기록됩니다."
+  },
+  {
+    "id": 217,
+    "title": "You have 10 servers part of a CMDB group. (Servers 1-10). What will be the percentage listed on the Correctness scorecard - non-duplicate metric for the group given the following information?\n- Server 1 fails the non-duplicate metric\n- Server 2 fails the non-duplicate metric\n- Server 3 fails the non-stale metric\n- Server 4 fails the non-orphan metric\nThe remaining servers pass all three metrics.",
+    "options": [
+      { "id": "A", "text": "90%" },
+      { "id": "B", "text": "80%" },
+      { "id": "C", "text": "60%" },
+      { "id": "D", "text": "20%" }
+    ],
+    "answer": ["B"],
+    "explanation": "질문은 전체 Correctness가 아닌 개별 하위 지표인 '중복 없음(non-duplicate)' 메트릭만의 비율을 묻고 있습니다. 10대 중 오직 Server 1과 Server 2만 중복 메트릭에서 실패로 분류되었으며(Server 3, 4는 다른 메트릭 결함), 나머지 8대는 중복 검사를 무사히 통과했으므로 80%가 정답입니다."
+  },
+  {
+    "id": 218,
+    "title": "You have 20 servers part of a CMDB group. (Servers 1-20). Five of the servers have duplicate server records. Given the following information, what will the Correctness scorecard - non-duplicate metric display for the group after the scorecard is executed?\n- Server 1-4 have duplicate records, and the duplicate records do not have their discovery source field populated.\n- Server 5 has a duplicate record, and both records have their discovery source field populated.\nThe remaining servers have no duplicate records.",
+    "options": [
+      { "id": "A", "text": "Non-Duplicate CIs 12/20" },
+      { "id": "B", "text": "Non-Duplicate CIs 10/20%" },
+      { "id": "C", "text": "Non-Duplicate CIs 16/20" },
+      { "id": "D", "text": "Non-Duplicate CIs 15/20" }
+    ],
+    "answer": ["A"],
+    "explanation": "20개 중 12개의 레코드가 중복되지 않은(Non-Duplicate) 정상 데이터로 판정됩니다. Server 1~4는 중복 레코드가 존재하고 discovery source 필드가 없어 총 8개의 레코드가 중복 결함 항목으로 잡힙니다. 반면 Server 5는 중복 관계임에도 양쪽 모두에 discovery source 필드가 유효하게 채워져 있으므로 IRE(식별 및 조정 엔진)에 의해 유효하게 취급되어 중복 플래그에서 제외됩니다. 따라서 정상 처리된 결과물은 12/20이 됩니다."
+  },
+  {
+    "id": 219,
+    "title": "Now Assist for CMDB—Automated Duplicate CI Management leverages which of the following to improve the management of duplicate CIs leveraging AI detection and remediation?",
+    "options": [
+      { "id": "A", "text": "De-Duplication Templates" },
+      { "id": "B", "text": "CMDB Health Dashboard" },
+      { "id": "C", "text": "CMDB Workspace" },
+      { "id": "D", "text": "Duplicate CI Remediator" }
+    ],
+    "answer": ["A"],
+    "explanation": "Now Assist for CMDB의 AI 기반 자동화 중복 CI 관리 기능은 감지 및 조치 워크플로우를 고도화하기 위해 De-Duplication Templates(중복 제거 템플릿) 기술을 활용합니다."
   }
 ];
