@@ -495,7 +495,7 @@ window.CISDF_QUESTIONS = [
   },
   {
     "id": 21,
-    "title": "A CMDB Administrator wants to run the Services Have Owners Identified playbook to remediate issues shown in the CMDB Data Foundations Dashboard. Which remediation playbooks would be used? (Choose all that apply)",
+    "title": "A CMDB Administrator wants to run the Services Have Owners Identified playbook to remediate issues shown in the CMDB Data Foundations Dashboard. Which remediation playbooks would be used? (Choose two.)",
     "options": [
       {
         "text": "Fix Data",
@@ -516,10 +516,9 @@ window.CISDF_QUESTIONS = [
     ],
     "answer": [
       "A",
-      "B",
       "D"
     ],
-    "explanation": "ServiceNow의 CMDB Data Foundations 대시보드에서 제공하는 모든 'Get-Well Playbook'은 데이터 정제를 유기적으로 완수하기 위해 항상 3가지 핵심 플레이(Plays)로 구성됩니다. 첫째, 누락 데이터를 식별하는 'Analyze Data(D)', 둘째, 빈 속성을 채워 넣는 'Fix Data(A)', 셋째, 정기적 인증이나 정책을 통해 재발을 막는 'Govern Data(B)'입니다. Report Data(C)는 플레이북의 표준 조치 단계에 해당하지 않는 가짜 옵션입니다."
+    "explanation": "ServiceNow의 CMDB Data Foundations 대시보드에서 제공하는 'Services Have Owners Identified' 플레이북은 누락된 서비스 소유자 정보를 식별하고 채워 넣는 데 초점을 맞춘 복구 플레이북입니다. 실제 시험에서는 이 플레이북에서 활용되는 핵심 복구 플레이(Remediation plays)로 'Fix Data'(A)와 'Analyze Data'(D) 두 가지를 고르는 형태로 출제됩니다. 'Govern Data' 역시 거버넌스 단계에 포함되나, 직접적인 복구 활동을 지칭할 때는 통상 'Analyze Data'와 'Fix Data' 두 가지가 정답으로 취급됩니다."
   },
   {
     "id": 22,
