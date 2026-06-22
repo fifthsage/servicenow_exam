@@ -5031,5 +5031,137 @@ window.CISDF_QUESTIONS = [
     ],
     "answer": ["A"],
     "explanation": "Now Assist for CMDB의 AI 기반 자동화 중복 CI 관리 기능은 감지 및 조치 워크플로우를 고도화하기 위해 De-Duplication Templates(중복 제거 템플릿) 기술을 활용합니다."
+  },
+  {
+    "id": 220,
+    "title": "Match each ServiceNow CMDB core term to its correct definition.\n\n[Terms]\n1. CMDB (Configuration Management Database)\n2. Class\n3. Attributes\n4. Foundational Data\n\n[Definitions]\na. A comprehensive centralized database used to store and manage configuration records throughout their entire operational lifecycle\nb. A specific database table that contains a distinct type or group of CIs sharing common behavioral and schema attributes\nc. Specific information elements or data fields that further describe a CI, such as name, serial number, or OS version\nd. Common reference data—such as users, groups, and locations—that is not infrastructure data itself but is referenced across CMDB and ITSM processes",
+    "options": [
+      { "id": "A", "text": "1-a, 2-b, 3-c, 4-d" },
+      { "id": "B", "text": "1-b, 2-a, 3-d, 4-c" },
+      { "id": "C", "text": "1-a, 2-c, 3-b, 4-d" },
+      { "id": "D", "text": "1-d, 2-b, 3-c, 4-a" }
+    ],
+    "answer": ["A"],
+    "explanation": "ServiceNow University 교육 과정 매칭 문제로, CMDB(a), Class(b), Attributes(c), Foundational Data(d)의 공식 정의를 올바르게 설명하고 있습니다."
+  },
+  {
+    "id": 221,
+    "title": "Match each CI class to its corresponding system table name in the ServiceNow CMDB.\n\n[CI Classes]\n1. Configuration Item\n2. Hardware\n3. Server\n4. Application Service\n\n[Table Mappings]\na. Stored in [cmdb_ci], the top-level parent base table for all CIs\nb. Stored in [cmdb_ci_hardware], which holds serial number, model ID, and manufacturer attributes\nc. Stored in [cmdb_ci_server], a child of Hardware, primarily managing hostname and OS information\nd. Stored in [cmdb_ci_service_auto], holding Entry Point and Environment attributes and forming the service map",
+    "options": [
+      { "id": "A", "text": "1-a, 2-b, 3-c, 4-d" },
+      { "id": "B", "text": "1-a, 2-c, 3-b, 4-d" },
+      { "id": "C", "text": "1-b, 2-a, 3-d, 4-c" },
+      { "id": "D", "text": "1-d, 2-b, 3-c, 4-a" }
+    ],
+    "answer": ["A"],
+    "explanation": "각 CI 클래스는 상속 관계에 따라 특정 테이블에 저장됩니다. cmdb_ci(a)는 최상위 베이스 테이블이며, cmdb_ci_hardware(b)는 하드웨어 클래스, cmdb_ci_server(c)는 서버 클래스, cmdb_ci_service_auto(d)는 애플리케이션 서비스 테이블입니다."
+  },
+  {
+    "id": 222,
+    "title": "Match each ServiceNow Discovery phase to its correct activity.\n\n[Phases]\n1. Scanning\n2. Classification\n3. Identification\n4. Exploration\n\n[Activities]\na. Collects detailed information about installed software, hardware components, and CI relationships\nb. Uses the Shazzam probe to scan the IP range for active devices by checking open TCP/UDP ports\nc. Sends Classifier probes to determine the OS version and appropriate device type category (Windows, Linux, etc.)\nd. Compares collected unique attributes (serial number, MAC address, etc.) against IRE identification rules to update an existing record or create a new one",
+    "options": [
+      { "id": "A", "text": "1-b, 2-c, 3-d, 4-a" },
+      { "id": "B", "text": "1-b, 2-a, 3-d, 4-c" },
+      { "id": "C", "text": "1-c, 2-b, 3-d, 4-a" },
+      { "id": "D", "text": "1-c, 2-a, 3-b, 4-d" }
+    ],
+    "answer": ["A"],
+    "explanation": "Scanning은 Shazzam 프로브를 활용해 활성 포트를 검사하며(b), Classification은 OS와 기기 유형을 분류하고(c), Identification은 IRE 식별 규칙으로 중복을 방지하며 기기 생성 여부를 결정하고(d), Exploration은 상세 속성 및 관계를 최종 탐색(a)합니다."
+  },
+  {
+    "id": 223,
+    "title": "Match each CSDM 5.0 domain to its representative entities.\n\n[Domains]\n1. Foundation\n2. Design & Planning\n3. Service Delivery\n4. Service Consumption\n\n[Representative Entities]\na. Location, User, Group, and other platform-wide foundational master reference records\nb. Business Application, Information Object, and other non-operational design and planning artifacts\nc. Application Service, Dynamic CI Group, and other deployed operational infrastructure instances\nd. Business Service, Technology Management Offering, and other consumer-facing service portfolio items",
+    "options": [
+      { "id": "A", "text": "1-a, 2-b, 3-c, 4-d" },
+      { "id": "B", "text": "1-b, 2-a, 3-d, 4-c" },
+      { "id": "C", "text": "1-a, 2-c, 3-b, 4-d" },
+      { "id": "D", "text": "1-d, 2-b, 3-c, 4-a" }
+    ],
+    "answer": ["A"],
+    "explanation": "Foundation은 Location/User(a) 등 기본 프레임이며, Design & Planning은 아키텍처 관점의 Business Application(b)을 다룹니다. Service Delivery는 운영 환경의 Application Service(c)를 포함하며, Service Consumption은 고객이 구독/신청하는 Business Service와 Service Offering(d)을 매핑합니다."
+  },
+  {
+    "id": 224,
+    "title": "Match each CMDB Health Dashboard sub-metric to its correct measurement criteria.\n\n[Sub-Metrics]\n1. Completeness - Recommended\n2. Compliance - Desired State\n3. Correctness - Staleness\n4. Correctness - Orphan\n\n[Measurement Criteria]\na. Classifies CIs that have not been updated (sys_updated_on) by Discovery or any source for a set period (default 60 days)\nb. Checks whether fields registered as 'Recommended' in CI Class Manager are populated, without blocking record creation\nc. Compares actual CI values against audit template conditions to verify that a CI group conforms to a defined standard configuration policy\nd. Classifies CIs that have lost required relationship links and exist without the necessary connection to parent or dependent records",
+    "options": [
+      { "id": "A", "text": "1-b, 2-c, 3-a, 4-d" },
+      { "id": "B", "text": "1-b, 2-a, 3-c, 4-d" },
+      { "id": "C", "text": "1-a, 2-c, 3-b, 4-d" },
+      { "id": "D", "text": "1-c, 2-b, 3-d, 4-a" }
+    ],
+    "answer": ["A"],
+    "explanation": "Recommended 지표는 권장 필드 누락(b), Desired State는 정책 준수 감사(c), Staleness는 갱신되지 않은 오래된 CI(a), Orphan은 관계선이 끊긴 고아 CI(d)를 분류합니다."
+  },
+  {
+    "id": 225,
+    "title": "Match each CI Reclassification type to its correct definition.\n\n[Reclassification Types]\n1. Upgrade\n2. Downgrade\n3. Switch\n\n[Definitions]\na. Moving a CI to a different child class branch under the same parent, with a risk of data loss for fields specific to the original child class (e.g., Windows Server to Linux Server)\nb. Moving a CI from a parent class to a more specific child class, with no risk of data loss (e.g., Computer to Server)\nc. Moving a CI from a child class up to a less specific parent class, with a risk of losing data stored in child-class-specific fields (e.g., Server to Computer)",
+    "options": [
+      { "id": "A", "text": "1-b, 2-c, 3-a" },
+      { "id": "B", "text": "1-a, 2-b, 3-c" },
+      { "id": "C", "text": "1-c, 2-b, 3-a" },
+      { "id": "D", "text": "1-b, 2-a, 3-c" }
+    ],
+    "answer": ["A"],
+    "explanation": "Upgrade는 더 구체적인 자식 클래스로 이동하므로 정보 손실이 없고(b), Downgrade는 상위 부모로 가면서 자식만의 세부 필드가 누락될 위험이 있으며(c), Switch는 다른 자식 분기로 변경 시 필드가 유실될 위험이 발생(a)합니다."
+  },
+  {
+    "id": 226,
+    "title": "Match each ServiceNow CMDB configuration rule or setting to its correct description.\n\n[Rules / Settings]\n1. Principal Class\n2. Suggested Relationships\n3. Identification Rules\n4. Reconciliation Rules\n\n[Descriptions]\na. Restricts the CI classes displayed in search fields on Incident, Change, and other ITSM forms to reduce user confusion\nb. Pre-recommends standard relationship types (e.g., Hosts, Runs on) when a user manually creates a relationship to prevent incorrect associations\nc. Defines the attributes (e.g., serial number, MAC address) used by the IRE to match incoming data against existing CMDB records and prevent duplicate CI creation\nd. Controls which data source has authority to update a specific CI attribute when multiple sources attempt to write to the same field, based on an Order value (lower = higher priority)",
+    "options": [
+      { "id": "A", "text": "1-a, 2-b, 3-c, 4-d" },
+      { "id": "B", "text": "1-b, 2-a, 3-d, 4-c" },
+      { "id": "C", "text": "1-c, 2-b, 3-a, 4-d" },
+      { "id": "D", "text": "1-d, 2-c, 3-b, 4-a" }
+    ],
+    "answer": ["A"],
+    "explanation": "Principal Class는 검색용 필터 목록(a)을 설정하고, Suggested Relationships는 관계 종류 가이드(b)를 제시하며, Identification Rules는 중복 식별 기준(c), Reconciliation Rules는 소스 신뢰도 제어(d)를 설정합니다."
+  },
+  {
+    "id": 227,
+    "title": "Match each ServiceNow CMDB/CSDM role to its primary responsibility.\n\n[Roles]\n1. CMDB Administrator\n2. Configuration Manager\n3. CI Analyst\n4. Service Owner\n\n[Primary Responsibilities]\na. Configures CI Class Manager, IRE identification and reconciliation rules, Discovery integrations, and maintains the overall technical data model\nb. Establishes configuration management process policies, oversees enterprise-wide data quality governance, and coordinates the Configuration Control Board (CCB)\nc. Resolves day-to-day data integrity tasks such as duplicate CI remediation, orphan and stale CI cleanup, and CMDB Health metric remediation\nd. Owns the lifecycle and business value of a specific service portfolio, validates service offering mappings, and reviews service map accuracy",
+    "options": [
+      { "id": "A", "text": "1-a, 2-b, 3-c, 4-d" },
+      { "id": "B", "text": "1-b, 2-a, 3-d, 4-c" },
+      { "id": "C", "text": "1-a, 2-c, 3-b, 4-d" },
+      { "id": "D", "text": "1-d, 2-b, 3-c, 4-a" }
+    ],
+    "answer": ["A"],
+    "explanation": "ServiceNow CMDB/CSDM 운영 체계의 역할 정의 매칭으로, 기술 인프라 담당(CMDB Admin - a), 프로세스 및 정책 총괄(Configuration Manager - b), 실무 데이터 분석 및 복구 태스크 수행(CI Analyst - c), 서비스의 비즈니스 가치 및 품질 보증(Service Owner - d)을 올바르게 설명합니다."
+  },
+  {
+    "id": 228,
+    "title": "Match each target device type to the Discovery protocol and credential type used to scan it.\n\n[Device Types]\n1. Windows Server\n2. Linux / Unix Server\n3. Network Switch / Router\n4. VMware vCenter / ESXi Hypervisor\n\n[Protocol & Credential]\na. Uses WMI (Windows Management Instrumentation) or WinRM protocol; requires local or domain Administrator credentials\nb. Uses SSH (Secure Shell) protocol; requires a user account with password or an SSH private key (sudo privilege recommended)\nc. Uses SNMP (Simple Network Management Protocol); requires a read-only SNMP community string\nd. Uses VMware API over HTTPS; requires a user account with read-only access to the vCenter console or the ESXi hypervisor",
+    "options": [
+      { "id": "A", "text": "1-a, 2-b, 3-c, 4-d" },
+      { "id": "B", "text": "1-b, 2-a, 3-d, 4-c" },
+      { "id": "C", "text": "1-a, 2-c, 3-b, 4-d" },
+      { "id": "D", "text": "1-d, 2-b, 3-c, 4-a" }
+    ],
+    "answer": ["A"],
+    "explanation": "각 탐색 대상별 프로토콜 매치 문제로, Windows는 WMI/WinRM(a), Linux/Unix는 SSH(b), 네트워크 장비는 SNMP(c), 가상화 서버는 VMware API(d)를 사용합니다."
+  },
+  {
+    "id": 229,
+    "title": "Match each MID Server communication component to its correct description.\n\n[Components]\n1. MID Server Connection\n2. ECC Queue\n3. Output Queue\n4. Input Queue\n\n[Descriptions]\na. The MID Server initiates an outbound HTTPS connection (port 443) to the instance, requiring no inbound firewall ports to be opened toward the internal network\nb. A database staging table ([ecc_queue]) that temporarily buffers asynchronous messages between the instance and MID Server\nc. The direction in which the instance sends scan range instructions or command execution requests to the MID Server\nd. The direction in which the MID Server returns collected XML payload data from target devices back to the instance",
+    "options": [
+      { "id": "A", "text": "1-a, 2-b, 3-c, 4-d" },
+      { "id": "B", "text": "1-b, 2-a, 3-d, 4-c" },
+      { "id": "C", "text": "1-a, 2-c, 3-b, 4-d" },
+      { "id": "D", "text": "1-d, 2-b, 3-c, 4-a" }
+    ],
+    "answer": ["A"],
+    "explanation": "MID Server 통신 구조 매칭으로, MID Server는 아웃바운드 443 포트로 통신하며(a), ecc_queue 테이블이 완충 지대 역할을 하고(b), Output 큐는 인스턴스에서 MID 서버로 향하는 명령 지시(c), Input 큐는 수집된 결과의 보고(d)를 의미합니다."
+  },
+  {
+    "id": 230,
+    "title": "Match each ServiceNow CMDB data ingestion method to the sentence that best describes it.\n\n[Methods]\n1. Discovery\n2. Service Mapping\n3. Service Graph Connectors\n4. Import Sets\n\n[Descriptions]\na. An agentless, horizontal process that scans IP address ranges, identifies active devices, and automatically collects OS, software, and hardware attributes to populate CIs in the CMDB\nb. A top-down process that starts from a business application entry point, traces runtime dependencies, and builds an Application Service map showing how infrastructure CIs support a business service\nc. ServiceNow-designed and certified integration apps for ingesting data from third-party sources (e.g., AWS, Azure, SCCM) that include built-in IRE mapping to prevent duplicate CIs\nd. A traditional data load mechanism that stages data from files (Excel, CSV) or external databases into a temporary staging table, then maps and transforms it to the target table using a Transform Map and Coalesce field configuration",
+    "options": [
+      { "id": "A", "text": "1-a, 2-b, 3-c, 4-d" },
+      { "id": "B", "text": "1-b, 2-a, 3-d, 4-c" },
+      { "id": "C", "text": "1-a, 2-c, 3-b, 4-d" },
+      { "id": "D", "text": "1-d, 2-b, 3-c, 4-a" }
+    ],
+    "answer": ["A"],
+    "explanation": "ServiceNow University 교육 과정 및 자격증 시험에서 출제되는 데이터 수집 방법별 표준 문장 정의를 짝짓는 문제입니다. Discovery는 IP 대역 기반 수평적 에이전트리스 스캔(a), Service Mapping은 비즈니스 관점 하향식 종속성 매핑(b), Service Graph Connectors는 IRE가 내장된 서드파티 연동 표준 앱(c), Import Sets는 스테이징 테이블과 Transform Map을 활용하는 수동 데이터 로더(d)입니다."
   }
 ];
