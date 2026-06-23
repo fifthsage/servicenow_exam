@@ -19,8 +19,8 @@ Target file: `CSA/csa_questions.js`
 ## Current Progress
 
 - Total questions: 399
-- Reviewed through: Question 119
-- Next question to review: Question 120
+- Reviewed through: Question 138
+- Next question to review: Question 139
 
 ## Modified Questions
 
@@ -641,12 +641,209 @@ Target file: `CSA/csa_questions.js`
     - Answer kept: `A`
     - Explanation kept; batching groups related update sets so they can be moved together.
 
+120. Q120
+    - Summary checked: asks which import utility is used when import set field names match target table field names.
+    - Answer kept: `B`
+    - Explanation kept; Automatic Mapping auto-links fields when source and target names match.
+
+121. Q121
+    - Summary checked: asks the standard steps for importing spreadsheet data into ServiceNow.
+    - Answer kept: `D`
+    - Explanation kept; the flow is Load Data, then Transform Map, then Run Transform.
+
+122. Q122
+    - Summary checked: asks which tool is used to populate commonly used fields in a form.
+    - Answer kept: `A`
+    - Explanation kept; templates prefill common field values to save time and keep entries consistent.
+
+123. Q123
+    - Summary checked: asks the purpose of the Filter navigator in the Application Navigator.
+    - Answer changed: `C` -> `B`
+    - Explanation revised; the Filter navigator is used to quickly navigate to applications and modules by filtering menu text.
+
+124. Q124
+    - Summary checked: asks how to add additional fields to a form.
+    - Answer kept: `B, D`
+    - Explanation kept; Form Layout and the form header context menu are the standard ways to manage fields on a form.
+
+125. Q125
+    - Summary checked: asks what controls the publishing and retiring process for knowledge articles.
+    - Answer kept: `C`
+    - Explanation kept; knowledge article publishing and retiring are controlled by workflows, designed in Workflow Designer or Flow Designer.
+
+126. Q126
+    - Summary checked: asks how to create a set of filter conditions after clicking the Funnel icon.
+    - Answer kept: `A`
+    - Explanation kept; the standard flow is to define the first condition, add AND, define the second condition, then click Run.
+
+127. Q127
+    - Summary checked: asks how data is organized in a table.
+    - Answer kept: `B`
+    - Explanation kept; a column is one field and a record is one row.
+
+128. Q128
+    - Summary checked: asks which plugin allows installing multiple applications, customizations, or plugins at once.
+    - Answer kept: `B`
+    - Explanation kept; CICD SpokeBatch Install is the keyed batch-install utility in this item.
+
+129. Q129
+    - Summary checked: asks which changes are captured in an Update Set.
+    - Answer kept: `A`
+    - Explanation kept; Update Sets capture configuration changes such as tables, forms, schedules, and client scripts, not data records.
+    - Note: option B is partially plausible because views and fields can also be captured, but the keyed answer remains A and the item wording is not clean.
+
+130. Q130
+    - Summary checked: asks how to change the Incident number prefix from INC to the company standard IN.
+    - Answer kept: `A`
+    - Explanation kept; Number Maintenance is where table number prefixes are managed.
+
+131. Q131
+    - Summary checked: asks which tool defines relationships between fields in an import set table and a target table.
+    - Answer kept: `D`
+    - Explanation kept; Transform Map defines the source-to-target field relationships and transformation rules.
+
+132. Q132
+    - Summary checked: asks why a manager cannot see tasks on the Service Desk > My Groups Work list.
+    - Answer kept: `D`
+    - Explanation kept; the list shows work for groups the user is actually a member of, so missing Network and Hardware membership explains the empty list.
+
+133. Q133
+    - Summary checked: asks which items are not included in an Update Set by default.
+    - Answer kept: `A, B, E, F`
+    - Explanation kept; homes, data, schedules, and database changes are excluded by default, while published workflows and business rules are included.
+
+134. Q134
+    - Summary checked: asks how administrators can utilize the same content for different notification channels.
+    - Answer kept: `C`
+    - Explanation kept; Common notification content lets one message source be reused across multiple channels.
+
+135. Q135
+    - Summary checked: asks what happens to Work Notes and Additional Comments when an incident form is saved.
+    - Answer kept: `D`
+    - Explanation kept; journal field text is cleared from the input area and written to the activity log, stored in sys_journal_field.
+
+136. Q136
+    - Summary checked: asks which best practices to follow when testing a catalog item with manager approval flow.
+    - Answer kept: `A, C, D`
+    - Explanation kept; verify the latest flow is active, impersonate the requester, and ensure the requester has a manager specified.
+
+137. Q137
+    - Summary checked: asks what feature tracks how long a task has been open so it can be completed within the allotted time.
+    - Answer kept: `B`
+    - Explanation kept; Service Level Agreements track open time and control timing with start, pause, and stop conditions.
+
+138. Q138
+    - Summary checked: asks for the table relationship where related records are visible from both tables in a related list.
+    - Answer kept: `B`
+    - Explanation kept; this is a Many to Many relationship with a junction table connecting both sides.
+
+139. Q139
+    - Summary checked: asks what ServiceNow tables can be destinations for imported data when using Transform Maps.
+    - Answer changed: `B` -> `D`
+    - Explanation revised; Transform Map destinations are not limited to a short list of tables, and the standard concept is that any appropriate ServiceNow table can be a destination. Option B is truncated and misleading.
+
+140. Q140
+    - Summary checked: asks which utility to use to orchestrate business processes across services with little technical user knowledge.
+    - Answer changed: `C` -> `B`
+    - Explanation revised; the intended utility is Flow Designer, not Flow Editor.
+
+141. Q141
+    - Summary checked: asks how to make a service catalog item visible only to managers inside the HR Department.
+    - Answer kept: `B`
+    - Explanation kept; User Criteria is the standard way to control catalog item visibility by user or group conditions.
+
+142. Q142
+    - Summary checked: asks which option is NOT an example of a UI Action.
+    - Answer changed: `C` -> `A`
+    - Explanation revised; UI Actions are clickable UI elements like buttons, links, and context menu items, while Search is a global search feature rather than a UI Action.
+
+143. Q143
+    - Summary checked: asks what function you use to add buttons, links, and context menu items on forms and lists.
+    - Answer kept: `C`
+    - Explanation kept; UI Actions are used to place clickable actions on forms and lists.
+
+144. Q144
+    - Summary checked: asks where in Flow Designer users can access information about actions added to the flow.
+    - Answer kept: `C`
+    - Explanation kept; the Help Panel provides action details, inputs, outputs, and examples.
+
+145. Q145
+    - Summary checked: asks which plugin is needed to translate catalog item content into multiple languages.
+    - Answer kept: `A`
+    - Explanation kept; Localization Framework is the plugin used for multilingual catalog and portal content.
+
+146. Q146
+    - Summary checked: asks what the ACL object name is for a rule specific to the Incident table and the Major Incident field.
+    - Answer kept: `E`
+    - Explanation kept; ACL object names use the table.field format, so incident.major_incident is correct.
+
+147. Q147
+    - Summary checked: asks what resource describes the standard shared service definitions and CMDB framework across ServiceNow products.
+    - Answer kept: `A`
+    - Explanation kept; this is the Common Services Data Model (CSDM).
+
+148. Q148
+    - Summary checked: asks what is specified in an Access Control rule.
+    - Answer kept: `C`
+    - Explanation kept; ACL rules specify the secured object, the operation, and the permissions required.
+
+149. Q149
+    - Summary checked: asks which interface an IT employee would use to browse internal IT documentation like troubleshooting scripts and FAQs.
+    - Answer kept: `A`
+    - Explanation kept; Knowledge is the standard interface for browsing internal IT documentation and FAQs.
+
+150. Q150
+    - Summary checked: asks which module is used to create a new automation of business logic such as approvals, tasks, and notifications.
+    - Answer kept: `A`
+    - Explanation kept; the module path is Process Automation > Flow Designer.
+
+151. Q151
+    - Summary checked: asks which field contains a record's 32-character unique identifier.
+    - Answer kept: `D`
+    - Explanation kept; sys_id is the 32-character unique identifier for every record.
+
+152. Q152
+    - Summary checked: asks what is used to categorize, flag, and locate records.
+    - Answer kept: `C`
+    - Explanation kept; Tags are used to classify and later locate records.
+
+153. Q153
+    - Summary checked: asks what a sys_id is.
+    - Answer kept: `A`
+    - Explanation kept; sys_id is the unique 32-character identifier assigned to every record.
+
+154. Q154
+    - Summary checked: asks which capability assists users via a messaging interface to obtain information, make decisions, and perform common tasks.
+    - Answer kept: `C`
+    - Explanation kept; Virtual Agent is the conversational automation capability for messaging-based assistance.
+
+155. Q155
+    - Summary checked: asks what new records, new groups, and modified configuration items have in common.
+    - Answer kept: `A`
+    - Explanation kept; this item is keyed as included in an Update Set, even though that conflicts with the usual rule that data records are not captured.
+    - Note: the question wording is inconsistent with standard Update Set guidance, so treat the keyed answer as a test-specific exception.
+
+156. Q156
+    - Summary checked: asks what any component that needs to be managed to deliver services is called.
+    - Answer kept: `C`
+    - Explanation kept; this is the definition of a Configuration Item (CI).
+
+157. Q157
+    - Summary checked: asks for the components that make up a filter condition.
+    - Answer kept: `A, C, E`
+    - Explanation kept; a filter condition uses Field, Operator, and Value.
+
+158. Q158
+    - Summary checked: asks how to reference data from a record when designing a flow.
+    - Answer kept: `D`
+    - Explanation kept; Flow Designer uses Data Pills, which are dragged from the data panel into the flow.
+
 ## Resume Instructions
 
 When continuing after reboot:
 
 1. Open `CSA/csa_questions.js`.
-2. Continue with question 120.
+2. Continue with question 159.
 3. Maintain same response format:
    - 문제의 올바름
    - 답변 형식
