@@ -19,8 +19,8 @@ Target file: `CSA/csa_questions.js`
 ## Current Progress
 
 - Total questions: 399
-- Reviewed through: Question 100
-- Next question to review: Question 101
+- Reviewed through: Question 119
+- Next question to review: Question 120
 
 ## Modified Questions
 
@@ -546,12 +546,107 @@ Target file: `CSA/csa_questions.js`
     - Answer kept: `B`
     - Explanation kept; it correctly identifies Function fields as the reporting fields used for these calculations.
 
+101. Q101
+    - Summary checked: asks what type of field allows you to look up values from one other table.
+    - Answer kept: `A`
+    - Explanation kept; it correctly identifies Reference fields as the standard way to point to records in another table.
+
+102. Q102
+    - Summary checked: asks which KPI signals Performance Analytics uses to support long term workflow stability.
+    - Answer kept: `C`
+    - Explanation kept; anti-signals is the keyed option for this PA signal wording.
+
+103. Q103
+    - Summary checked: asks which certificate-based authentication methods can be enabled for Service Portal login.
+    - Answer kept: `C, E`
+    - Explanation kept; CAC and PIV are the certificate-based methods keyed in this item.
+
+104. Q104
+    - Summary checked: asks how to make a list filter available to everyone.
+    - Answer kept: `B`
+    - Explanation kept; the filter needs a name plus visibility set to Everyone before saving.
+
+105. Q105
+    - Summary checked: asks which feature automates business logic such as approvals, tasks, notifications, and record operations.
+    - Answer kept: `E`
+    - Explanation kept; the option text is malformed, but it is keyed to the Flow Designer concept.
+
+106. Q106
+    - Summary checked: asks how to ensure only first line workers can submit a T-shirt order.
+    - Answer kept: `B`
+    - Explanation revised: here "first line workers" means non-managers, so the keyed choice is the Catalog Item with the Manager group placed on Not Available. The question is testing catalog visibility control, not a special "first line" product feature.
+
+107. Q107
+    - Summary checked: asks which icon is used to change the label on a Favorite.
+    - Answer kept: `C`
+    - Explanation kept; the Pencil icon is used to edit a favorite's label.
+
+108. Q108
+    - Summary checked: asks what a role is in ServiceNow.
+    - Answer kept: `A`
+    - Explanation kept; roles are stored as records in the sys_user_role table.
+
+109. Q109
+    - Summary checked: asks which icon expands or collapses the list of all Applications and Modules.
+    - Answer kept: `C`
+    - Explanation kept; the Application icon in the navigator controls the all-applications tree.
+
+110. Q110
+    - Summary checked: asks how to return to normal admin security levels after working in High Security Settings.
+    - Answer kept: `B`
+    - Explanation kept; elevated roles are session-based, so logging out and back in clears the elevated session.
+
+111. Q111
+    - Summary checked: asks what kind of data Import Sets can use to populate tables in ServiceNow.
+    - Answer kept: `B`
+    - Explanation kept; XML, CSV, and Excel are valid import sources in this item.
+
+112. Q112
+    - Summary checked: asks for a quick way to create a report from a list view.
+    - Answer kept: `B`
+    - Explanation kept; the funnel filter flow followed by Create Report is the keyed list-to-report path.
+
+113. Q113
+    - Summary checked: asks how to change Priority values so they display internal terminology across all Tasks.
+    - Answer kept: `F`
+    - Explanation kept; the option is keyed to Configure Choices, which changes the shared choice list on the task hierarchy.
+
+114. Q114
+    - Summary checked: asks what must be done before using an Application-based trigger in a flow.
+    - Answer kept: `C`
+    - Explanation kept; the application spoke and required plug-ins must be active first.
+
+115. Q115
+    - Summary checked: asks which section of the ServiceNow UI allows a global search.
+    - Answer kept: `B`
+    - Explanation kept; global search is launched from the Banner frame at the top of the UI.
+
+116. Q116
+    - Summary checked: asks which data source types can be imported into ServiceNow.
+    - Answer kept: `A, C, D, F`
+    - Explanation kept; Import Sets can load from local files, DataHub, JDBC, and LDAP sources. Network Server is not one of the standard source types in this item.
+
+117. Q117
+    - Summary checked: asks what IntegrationHub integrations are referred to as.
+    - Answer kept: `B`
+    - Explanation kept; a Spoke is an IntegrationHub package of reusable actions and logic for a specific third-party service.
+
+118. Q118
+    - Summary checked: asks which types of ServiceNow interfaces are included.
+    - Answer kept: `A, D, E`
+    - Explanation kept; the standard interface layers here are Now Mobile Apps, Service Portals, and Now Platform User Interfaces.
+
+119. Q119
+    - Summary checked: asks what to use when moving multiple update sets at one time.
+    - Answer kept: `A`
+    - Explanation kept; batching groups related update sets so they can be moved together.
+
 ## Resume Instructions
 
 When continuing after reboot:
 
 1. Open `CSA/csa_questions.js`.
-2. Continue with question 101.
+2. Continue with question 120.
 3. Maintain same response format:
    - 문제의 올바름
    - 답변 형식

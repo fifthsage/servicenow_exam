@@ -4358,7 +4358,7 @@ window.CISDF_QUESTIONS = [
     "title": "In CSDM 5.0, the cmdb_ci_service_auto table has been relabeled to support a broader range of service types beyond IT. What is the new label for this table?",
     "options": [
       {
-        "text": "Service Instance (구Application Service)",
+        "text": "Application Service",
         "id": "A"
       },
       {
@@ -4377,7 +4377,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "CSDM 5.0에서 cmdb_ci_service_auto 테이블은 기존의 Service Instance (구Application Service) 대신 Service Instance로 명칭이 변경되었습니다. 이는 AI, 네트워크, 시설(Facility) 등 비-IT 영역의 서비스 인스턴스까지 포괄적으로 관리하기 위한 변화입니다."
+    "explanation": "CSDM 5.0에서 cmdb_ci_service_auto 테이블의 새 명칭은 **Service Instance**입니다. 보기 A의 **Application Service**는 기존 이름이고, 보기 B가 새 레이블을 정확히 가리킵니다. 이 변경은 AI, 네트워크, 시설(Facility) 같은 비-IT 서비스 인스턴스까지 함께 다루기 위한 확장입니다."
   },
   {
     "id": 171,
