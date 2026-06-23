@@ -18,6 +18,7 @@
     var mode = 'practice';
     var timeLeft = null;
     var timerId = null;
+    var explanationVisible = false;
     var wrongQuestionIds = new Set(loadWrongQuestionIds());
 
     function normalizeQuestionId(id) {
@@ -292,11 +293,80 @@
       return base + '\n\n' + appendix;
     }
 
+    function ensureQuestionExplanationUI() {
+      var quizScreen = document.getElementById('quiz-screen');
+      var questionBox = quizScreen ? quizScreen.querySelector('.question') : null;
+      var actions = document.querySelector('#quiz-screen .actions');
+      if (!quizScreen || !questionBox || !actions) {
+        return;
+      }
+
+      var panel = document.getElementById('question-explain');
+      if (!panel) {
+        panel = document.createElement('div');
+        panel.id = 'question-explain';
+        panel.className = 'explain';
+        panel.style.display = 'none';
+        questionBox.insertAdjacentElement('afterend', panel);
+      }
+
+      var nextBtn = document.getElementById('next-btn');
+      var btn = document.getElementById('explain-toggle-btn');
+      if (!btn) {
+        btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'btn';
+        btn.id = 'explain-toggle-btn';
+        btn.style.display = 'none';
+        btn.textContent = '정답 및 해설 보기';
+        btn.addEventListener('click', toggleQuestionExplanation);
+        if (nextBtn) {
+          actions.insertBefore(btn, nextBtn);
+        } else {
+          actions.appendChild(btn);
+        }
+      }
+    }
+
+    function shouldShowQuestionExplanation() {
+      return mode === 'practice' || mode === 'all' || mode === 'all_random';
+    }
+
+    function syncQuestionExplanation() {
+      ensureQuestionExplanationUI();
+      var wrap = document.getElementById('question-explain');
+      var btn = document.getElementById('explain-toggle-btn');
+      if (!wrap || !btn) {
+        return;
+      }
+
+      var showQuestionExplanation = shouldShowQuestionExplanation();
+      btn.style.display = showQuestionExplanation ? 'inline-block' : 'none';
+      btn.textContent = explanationVisible ? '정답 및 해설 숨기기' : '정답 및 해설 보기';
+
+      if (showQuestionExplanation && explanationVisible) {
+        wrap.textContent = getExplanationText(sessionQuestions[currentIndex], currentIndex);
+        wrap.style.display = 'block';
+      } else {
+        wrap.textContent = '';
+        wrap.style.display = 'none';
+      }
+    }
+
+    function toggleQuestionExplanation() {
+      if (!shouldShowQuestionExplanation()) {
+        return;
+      }
+      explanationVisible = !explanationVisible;
+      syncQuestionExplanation();
+    }
+
     function renderQuestion() {
       var q = sessionQuestions[currentIndex];
       var picked = answers[currentIndex]; // These are IDs
       var multi = q.answer.length > 1;
       var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      explanationVisible = false;
 
       document.getElementById('q-counter').textContent = (currentIndex + 1) + ' / ' + sessionQuestions.length;
       document.getElementById('progress').style.width = (((currentIndex + 1) / sessionQuestions.length) * 100) + '%';
@@ -314,6 +384,7 @@
       document.getElementById('next-btn').style.display = currentIndex === sessionQuestions.length - 1 ? 'none' : 'inline-block';
       document.getElementById('submit-btn').style.display = currentIndex === sessionQuestions.length - 1 ? 'inline-block' : 'none';
       document.getElementById('notice').textContent = '';
+      syncQuestionExplanation();
     }
 
     function saveCurrentSelection() {
@@ -322,7 +393,7 @@
       }).sort();
 
       if (selected.length === 0) {
-        document.getElementById('notice').textContent = '답을 선택한 뒤 진행해 주세요.';
+        window.alert('답을 선택한 뒤 진행해 주세요.');
         return false;
       }
 
@@ -511,6 +582,7 @@
     window.finishQuiz = finishQuiz;
     window.clearWrongQuestions = clearWrongQuestions;
     window.restartCurrentMode = restartCurrentMode;
+    window.toggleQuestionExplanation = toggleQuestionExplanation;
 
     document.getElementById('pool-info').textContent = '문제 풀: ' + allQuestions.length + '문항';
     updateWrongModeUI();

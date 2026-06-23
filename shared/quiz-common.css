@@ -305,6 +305,11 @@ body {
   justify-content: flex-end;
 }
 
+.actions #explain-toggle-btn {
+  order: -1;
+  margin-right: auto;
+}
+
 .btn {
   border: 1px solid var(--border);
   background: var(--surface2);
@@ -455,13 +460,16 @@ body {
 
 .explain {
   display: none;
-  margin-top: 8px;
+  margin: 16px 0 18px;
   font-size: 13px;
   line-height: 1.5;
   white-space: pre-line;
   color: #d5deea;
-  border-top: 1px dashed var(--border);
-  padding-top: 8px;
+  padding: 10px 0 0;
+}
+
+#question-explain {
+  box-shadow: none;
 }
 
 @media (max-width: 640px) {
@@ -471,6 +479,11 @@ body {
 
   .actions {
     justify-content: space-between;
+  }
+
+  .actions #explain-toggle-btn {
+    order: -1;
+    margin-right: 0;
   }
 
   .actions.result-actions {
