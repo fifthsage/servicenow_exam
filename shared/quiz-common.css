@@ -306,8 +306,16 @@ body {
 }
 
 .actions #explain-toggle-btn {
-  order: -1;
+  width: auto;
+  max-width: none;
+  white-space: nowrap;
   margin-right: auto;
+}
+
+.quiz-nav-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .btn {
@@ -482,8 +490,15 @@ body {
   }
 
   .actions #explain-toggle-btn {
-    order: -1;
+    width: auto;
+    max-width: none;
+    white-space: nowrap;
     margin-right: 0;
+  }
+
+  .quiz-nav-group {
+    width: 100%;
+    justify-content: flex-end;
   }
 
   .actions.result-actions {

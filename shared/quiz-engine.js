@@ -310,7 +310,25 @@
         questionBox.insertAdjacentElement('afterend', panel);
       }
 
+      var navGroup = document.getElementById('quiz-nav-group');
+      if (!navGroup) {
+        navGroup = document.createElement('div');
+        navGroup.id = 'quiz-nav-group';
+        navGroup.className = 'quiz-nav-group';
+      }
+
+      var prevBtn = document.getElementById('prev-btn');
       var nextBtn = document.getElementById('next-btn');
+      if (prevBtn && prevBtn.parentNode !== navGroup) {
+        navGroup.appendChild(prevBtn);
+      }
+      if (nextBtn && nextBtn.parentNode !== navGroup) {
+        navGroup.appendChild(nextBtn);
+      }
+      if (navGroup.parentNode !== actions) {
+        actions.appendChild(navGroup);
+      }
+
       var btn = document.getElementById('explain-toggle-btn');
       if (!btn) {
         btn = document.createElement('button');
@@ -320,11 +338,9 @@
         btn.style.display = 'none';
         btn.textContent = '정답 및 해설 보기';
         btn.addEventListener('click', toggleQuestionExplanation);
-        if (nextBtn) {
-          actions.insertBefore(btn, nextBtn);
-        } else {
-          actions.appendChild(btn);
-        }
+      }
+      if (btn.parentNode !== actions || btn !== actions.firstChild) {
+        actions.insertBefore(btn, actions.firstChild);
       }
     }
 
