@@ -6,21 +6,20 @@ Target file: `CSA/csa_questions.js`
 
 ## User Instructions
 
-- Use ServiceNow official documentation 기준으로 `csa_questions.js` 문제를 하나씩 검증한다.
-- 사용자가 **"다음"**이라고 하면 다음 번호 문제를 진행한다.
-- 각 문제마다 확인할 것:
-  1. 문제가 공식 문서 기준으로 올바른지
-  2. 답변 형식이 올바른지: 라디오/체크박스, 정답 수
-  3. 해설이 올바른지
-- 문서 링크는 답변에 포함하지 않는다.
-- 해설이 부정확하거나 시험 기준에 맞게 개선할 수 있으면 직접 수정해도 된다.
-- 앞으로 답변에는 **총 문제 개수와 검증 완료 문제 개수**를 함께 알려준다.
+- Use ServiceNow official documentation 기�??�로 `csa_questions.js` 문제�??�나??검증한??
+- ?�용?��? **"?�음"**?�라�??�면 ?�음 번호 문제�?진행?�다.
+- �?문제마다 ?�인??�?
+  1. 문제가 공식 문서 기�??�로 ?�바른�?
+  2. ?��? ?�식???�바른�?: ?�디??체크박스, ?�답 ??  3. ?�설???�바른�?
+- 문서 링크???��????�함?��? ?�는??
+- ?�설??부?�확?�거???�험 기�???맞게 개선?????�으�?직접 ?�정?�도 ?�다.
+- ?�으�??��??�는 **�?문제 개수?� 검�??�료 문제 개수**�??�께 ?�려준??
 
 ## Current Progress
 
-- Total questions: 399
-- Reviewed through: Question 138
-- Next question to review: Question 139
+- Total questions: 398
+- Reviewed through: Question 158
+- Next question to review: Question 159
 
 ## Modified Questions
 
@@ -838,16 +837,67 @@ Target file: `CSA/csa_questions.js`
     - Answer kept: `D`
     - Explanation kept; Flow Designer uses Data Pills, which are dragged from the data panel into the flow.
 
+## Deduplicated Questions
+
+- Q186 was removed because it duplicated Q178: both asked the difference between UI Policy and Data Policy.
+
+159. Q159
+    - Summary checked: asks which module would be used to create a new notification for users affected by network outages.
+    - Answer kept: `A`
+    - Explanation kept; Notifications are managed in System Notification > Email > Notifications.
+160. Q160
+    - Summary checked: asks what the timing options are for a Business Rule When setting.
+    - Answer kept: `A`
+    - Explanation kept; the standard timing options are Before, After, Async, and Display.
+161. Q161
+    - Summary checked: asks what you activate when you want to add applications or functionality within your development instance.
+    - Answer kept: `D`
+    - Explanation kept; plugins add optional ServiceNow applications and features.
+162. Q162
+    - Summary checked: asks what no-code approach controls the mandatory or read-only state of a form field.
+    - Answer kept: `E`
+    - Explanation kept; UI Policy controls field mandatory and read-only state without scripting.
+163. Q163
+    - Summary checked: asks what the purpose of a Data Policy is.
+    - Answer kept: `C`
+    - Explanation kept; Data Policies enforce data consistency and integrity across all entry paths.
+164. Q164
+    - Summary checked: asks what would not appear in the Application Navigator when "service" is typed into the filter field.
+    - Answer kept: `D`
+    - Explanation kept; the filter only shows application or module names containing the typed text.
+165. Q165
+    - Summary checked: asks what database objects Access Control rules may provide access security for.
+    - Answer kept: `D`
+    - Explanation kept; ACLs control table, row, and column security, and the item remains keyed to the specific CMDB CI example.
+166. Q166
+    - Summary checked: asks for a key difference between Reporting and Performance Analytics.
+    - Answer kept: `A`
+    - Explanation kept; Performance Analytics uses time-based snapshots and trends, while Reporting shows current data at run time.
+167. Q167
+    - Summary checked: asks where to add a field to a form.
+    - Answer kept: `B, C`
+    - Explanation kept; Form Layout and Form Designer are the two standard ways to add fields to a form.
+168. Q168
+    - Summary checked: asks how to fix incorrect create date and time display on an Incident list for a new Service Desk employee.
+    - Answer kept: `E`
+    - Explanation kept; the item currently keys the computer time zone, though the more standard ServiceNow fix is the user gear time zone setting.
+169. Q169
+    - Summary checked: asks for two ways to generate an Event.
+    - Answer kept: `A, B`
+    - Explanation kept; Business Rules and Workflows are the two standard event generation methods.
+170. Q170
+    - Summary checked: asks the best way to return to your own account after impersonating a user for testing.
+    - Answer kept: `C`
+    - Explanation kept; End Impersonation returns you to your own session.
 ## Resume Instructions
 
 When continuing after reboot:
 
 1. Open `CSA/csa_questions.js`.
-2. Continue with question 159.
+2. Continue with question 171.
 3. Maintain same response format:
-   - 문제의 올바름
-   - 답변 형식
-   - 해설의 올바름
-   - 진행 상황: `총 399문제 중 N문제 검증 완료`
+   - 문제???�바�?   - ?��? ?�식
+   - ?�설???�바�?   - 진행 ?�황: `�?398문제 �?N문제 검�??�료`
 4. If modifying explanations, use concise CSA-focused Korean explanations.
 5. Avoid including official documentation links in the final response.
+

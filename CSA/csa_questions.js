@@ -5133,32 +5133,6 @@
     "explanation": "**CSDM (Common Services Data Model)**은 ServiceNow 애플리케이션이 요구하는 서비스 데이터가 적절한 CMDB 테이블에 정확히 매핑되도록 보장하는 **표준 데이터 프레임워크**입니다.\n*   **역할**: IT 자산(CI)과 비즈니스 가치 사이의 연결 고리를 정의하며, 플랫폼 전반의 데이터 사일로를 제거합니다.\n*   **가치**: 이를 준수함으로써 기업은 제품 간 시너지를 극대화하고, 신뢰할 수 있는 서비스 레벨 리포팅과 영향도 분석을 수행할 수 있습니다."
   },
   {
-    "id": 186,
-    "title": "What is the difference between a UI Policy and Data Policy?",
-    "options": [
-      {
-        "text": "Data Policies run when data is entered through the form, by an Import Set, or by web services, while UI Policies run only on the form UI",
-        "id": "A"
-      },
-      {
-        "text": "Data Policies can be converted into UI Policies, but UI Policies cannot be converted into Data Policies",
-        "id": "B"
-      },
-      {
-        "text": "Data Policies run regardless of how data is entered into ServiceNow, while UI Policies are used for form UI",
-        "id": "C"
-      },
-      {
-        "text": "Data Policies run only after UI Policies run successfully",
-        "id": "D"
-      }
-    ],
-    "answer": [
-      "C"
-    ],
-    "explanation": "ServiceNow에서 데이터의 품질과 일관성을 유지하기 위해 **데이터 정책(Data Policy)**은 UI 정책(UI Policy)보다 더 근본적인 계층에서 작동합니다.\n*   **서버 측 강제성**: 데이터 정책은 데이터베이스 수준에서 규칙을 집행하므로, 브라우저 폼 입력뿐만 아니라 **웹 서비스 API** 호출이나 **데이터 임포트(Import Sets)** 등 모든 유입 경로에 대해 규칙을 강제합니다.\n*   **UI 정책과의 차이**: UI 정책은 브라우저에서 사용자 경험(UX)을 제어하는 데 중점을 두는 반면, 데이터 정책은 데이터의 물리적 무결성을 보장하는 보안 가드레일 역할을 합니다."
-  },
-  {
     "id": 187,
     "title": "Group records are stored in which table?",
     "options": [
