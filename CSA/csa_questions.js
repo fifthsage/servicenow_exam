@@ -618,7 +618,7 @@
   },
   {
     "id": 24,
-    "title": "Which are valid Service Now User Authentication Methods? (Choose three.)",
+    "title": "Which are valid ServiceNow User Authentication Methods? (Choose three.)",
     "options": [
       {
         "text": "XML feed",
@@ -2712,7 +2712,7 @@
         "id": "A"
       },
       {
-        "text": "Verity",
+        "text": "Verify",
         "id": "B"
       },
       {
@@ -3531,7 +3531,7 @@
         "id": "C"
       },
       {
-        "text": "Changes made to: tables. forms groups, and configuration items (Cls)",
+        "text": "Changes made to: tables, forms, groups, and configuration items (CIs)",
         "id": "D"
       }
     ],
@@ -4231,7 +4231,7 @@
   },
   {
     "id": 154,
-    "title": "New records, new groups, and modified configuration Items (Cls): what do they have in common?",
+    "title": "New records, new groups, and modified configuration Items (CIs): what do they have in common?",
     "options": [
       {
         "text": "They are included in an Update Set",
@@ -5328,11 +5328,11 @@
         "id": "B"
       },
       {
-        "text": "To set files to mandatory, hidden, and read-only",
+        "text": "To set fields to mandatory, hidden, and read-only",
         "id": "C"
       },
       {
-        "text": "To define what happens on a form, when a particular fled changes",
+        "text": "To define what happens on a form, when a particular field changes",
         "id": "D"
       }
     ],
@@ -5458,7 +5458,7 @@
         "id": "A"
       },
       {
-        "text": "Click Funnel ten, type Hardware and click enter",
+        "text": "Click Funnel icon, type Hardware and click enter",
         "id": "B"
       },
       {
@@ -5466,7 +5466,7 @@
         "id": "C"
       },
       {
-        "text": "Right dick on magnifier, type Hardware and click enter",
+        "text": "Right click on magnifier, type Hardware and click enter",
         "id": "D"
       },
       {
@@ -5727,7 +5727,7 @@
         "id": "B"
       },
       {
-        "text": "Identify source; Import transform map: Run transformer; Verity import",
+        "text": "Identify source; Import transform map; Run transform; Verify import",
         "id": "C"
       },
       {
@@ -5908,7 +5908,7 @@
   },
   {
     "id": 214,
-    "title": "Which type of scripts nun in the browser?",
+    "title": "Which type of scripts run in the browser?",
     "options": [
       {
         "text": "Script include Scripts",
@@ -5919,7 +5919,7 @@
         "id": "B"
       },
       {
-        "text": "Access Contra! Scripts",
+        "text": "Access Control Scripts",
         "id": "C"
       },
       {
@@ -6358,7 +6358,7 @@
   },
   {
     "id": 230,
-    "title": "You have heard about a new application released by SericeNow, You want to try it out, to- see if it might be useful for your company's ServiceNow implementation. What would be the best way to get hands-on experience with the new application?",
+    "title": "You have heard about a new application released by ServiceNow. You want to try it out, to see if it might be useful for your company's ServiceNow implementation. What would be the best way to get hands-on experience with the new application?",
     "options": [
       {
         "text": "Check the latest release notes at docs.servicenow.com.",
@@ -7364,7 +7364,7 @@
   },
   {
     "id": 264,
-    "title": "Farm a form, what would you click, to modify the order of the fields on the form? Choose 2 answers",
+    "title": "From a form, what would you click, to modify the order of the fields on the form? Choose 2 answers",
     "options": [
       {
         "text": "Context Menu > Configure > Form Layout",
@@ -7680,14 +7680,14 @@
   },
   {
     "id": 275,
-    "title": "What access does a user need to be able to import anicies to a knowledge base?",
+    "title": "What access does a user need to be able to import articles to a knowledge base?",
     "options": [
       {
         "text": "Can contribute",
         "id": "A"
       },
       {
-        "text": "sn_knowledge_contripute",
+        "text": "sn_knowledge_contribute",
         "id": "B"
       },
       {
@@ -8581,18 +8581,18 @@
   },
   {
     "id": 307,
-    "title": "What framework can be used to manage the tables and Cis associated with a use case?",
+    "title": "What framework can be used to manage the tables and CIs associated with a use case?",
     "options": [
       {
         "text": "Common Service Data Model (CSDM) product view",
         "id": "A"
       },
       {
-        "text": "Scename Dashboard",
+        "text": "Schema Dashboard",
         "id": "B"
       },
       {
-        "text": "CMDB Use Case Modelar",
+        "text": "CMDB Use Case Modeler",
         "id": "C"
       },
       {
@@ -8685,7 +8685,7 @@
   },
   {
     "id": 311,
-    "title": "Which one of the following describes the primary operations performed against tables in the Service Now platform?",
+    "title": "Which one of the following describes the primary operations performed against tables in the ServiceNow platform?",
     "options": [
       {
         "text": "Create, Rate, Update, Delete",
@@ -9085,14 +9085,14 @@
   },
   {
     "id": 325,
-    "title": "Which SericeNow utility gives a Service Desk agent the ability to trace from a Service having an issue, to see which Cis supporing that service have active issues?",
+    "title": "Which ServiceNow utility gives a Service Desk agent the ability to trace from a Service having an issue, to see which CIs supporting that service have active issues?",
     "options": [
       {
-        "text": "AL Service Dashboard",
+        "text": "AI Service Dashboard",
         "id": "A"
       },
       {
-        "text": "Cl Health Dashboard",
+        "text": "CI Health Dashboard",
         "id": "B"
       },
       {
@@ -9245,7 +9245,7 @@
   },
   {
     "id": 331,
-    "title": "What process allows users to create, categorize, review approve and browse important information in a centralized location that is shared oy the entire organization?",
+    "title": "What process allows users to create, categorize, review, approve and browse important information in a centralized location that is shared by the entire organization?",
     "options": [
       {
         "text": "Self Service Management",
@@ -9971,10 +9971,10 @@
   },
   {
     "id": 357,
-    "title": "What options can you see, when you fight click on a Cl, from the Cl dependency view map? Choose 3 answers",
+    "title": "What options can you see when you right-click on a CI from the CI dependency view map? Choose 3 answers",
     "options": [
       {
-        "text": "View Affected Cis",
+        "text": "View Affected CIs",
         "id": "A"
       },
       {
@@ -10333,7 +10333,7 @@
         "id": "A"
       },
       {
-        "text": "Select the column to be personalized > Click Edit icon (Penal) > Choose me options to personage",
+        "text": "Select the column to be personalized > Click Edit icon (Pencil) > Choose the options to personalize",
         "id": "B"
       },
       {
@@ -10341,7 +10341,7 @@
         "id": "C"
       },
       {
-        "text": "Select the column to be personalized and right at the header > Choose the options to personalize",
+        "text": "Select the column to be personalized and right-click the header > Choose the options to personalize",
         "id": "D"
       }
     ],
@@ -10378,14 +10378,14 @@
   },
   {
     "id": 371,
-    "title": "What do you click when you have made modification to your report, and your want to see the results without saving?",
+    "title": "What do you click when you have made modifications to your report, and you want to see the results without saving?",
     "options": [
       {
         "text": "Execute",
         "id": "A"
       },
       {
-        "text": "Try ir",
+        "text": "Try it",
         "id": "B"
       },
       {
