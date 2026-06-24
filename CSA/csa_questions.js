@@ -8550,11 +8550,11 @@
     "title": "Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that applies to the entire Incident table (all rows and fields)?",
     "options": [
       {
-        "text": "incident .* B. incident.all",
+        "text": "incident.*",
         "id": "A"
       },
       {
-        "text": "incident .!",
+        "text": "incident.major_incident",
         "id": "C"
       },
       {
@@ -8794,32 +8794,6 @@
       "D"
     ],
     "explanation": "지식 기반(Knowledge Base)의 보안 설정을 관리하기 위해 폼 하단의 관련 리스트 중 **`Can Read`** 탭을 사용합니다.\n*   **사용자 기준 연결**: 이 탭에서 **사용자 기준(User Criteria)** 레코드를 추가하여, 어떤 부서, 위치, 또는 역할을 가진 사용자들이 이 지식 기반 내의 문서들을 검색하고 열람할 수 있는지 정의합니다.\n*   **거버넌스**: 반대로 문서를 작성하거나 편집할 수 있는 권한은 **`Can Contribute`** 탭에서 별도로 관리하여 조회 권한과 편집 권한을 엄격히 분리합니다."
-  },
-  {
-    "id": 317,
-    "title": "When looking at a long list of records, you want to quickly filler, to show only those which have Shon Description containing email How might you do that?",
-    "options": [
-      {
-        "text": "Click List Magnifier to expand column search, on Short Description, type \"email\", click enter",
-        "id": "A"
-      },
-      {
-        "text": "Click List Magnifier to expand column search, on Short Description, lype *email, click enter",
-        "id": "B"
-      },
-      {
-        "text": "Click List Magnifier to expand column search, on Short Description, type email, click enter",
-        "id": "C"
-      },
-      {
-        "text": "On Search box, select text, type email, click enter",
-        "id": "D"
-      }
-    ],
-    "answer": [
-      "A"
-    ],
-    "explanation": "(제공된 정답 키를 따르며 와일드카드 규칙을 보강함) 리스트 뷰에서 특정 문자열을 포함하는 레코드를 검색할 때는 와일드카드 연산자인 별표(**`*`**)를 사용해야 합니다.\n*   **작동 원리**: Short Description 검색창에 **`*email`**을 입력하면 시스템은 이를 **'contains' (포함)** 조건으로 인식하여, 텍스트의 어느 위치에든 'email'이 들어간 모든 레코드를 반환합니다.\n*   **비교**: 별표 없이 'email'만 입력하면 기본적으로 **'starts with' (시작 문자열)** 조건으로 작동하므로 검색 결과가 달라질 수 있습니다."
   },
   {
     "id": 318,
@@ -9118,7 +9092,7 @@
   },
   {
     "id": 328,
-    "title": "When would you use the following steps? *1, Homepage Admin > Pages* 2. Right click on Homepage record * 3. Select Unioad Portal Page",
+    "title": "When would you use the following steps? *1, Homepage Admin > Pages* 2. Right click on Homepage record * 3. Select Unload Portal Page",
     "options": [
       {
         "text": "To publish a Homepage to the Portal",
@@ -9133,7 +9107,7 @@
         "id": "C"
       },
       {
-        "text": "o To add a Homepage to an update set",
+        "text": "To add a Homepage to an update set",
         "id": "D"
       }
     ],
@@ -9342,7 +9316,7 @@
   },
   {
     "id": 336,
-    "title": "What icon do you use to change the boon and color on a Favorite?",
+    "title": "What icon do you use to change the icon and color on a Favorite?",
     "options": [
       {
         "text": "Pencil",
@@ -9417,41 +9391,6 @@
       "A"
     ],
     "explanation": "**데이터 정책(Data Policy)**은 데이터의 무결성을 보장하기 위해 모든 데이터 유입 경로에 대해 서버 측에서 규칙을 강제하는 강력한 가드레일입니다.\n*   **강제 범위**: 웹 브라우저를 통한 직접 입력(UI)뿐만 아니라, **임포트 세트(Import Sets)**나 **웹 서비스(API)**를 통해 들어오는 모든 데이터에 동일한 필수/읽기전용 규칙을 적용합니다.\n*   **UI 정책과의 차이**: UI 정책은 브라우저에서 사용자 경험을 위해 작동하는 반면, 데이터 정책은 데이터베이스 수준에서 물리적인 일관성을 지키는 마지막 방어선 역할을 합니다."
-  },
-  {
-    "id": 339,
-    "title": "What are the three key tables in an enterprise CMDO? Choose 3 angwers",
-    "options": [
-      {
-        "text": "sn_cmdt_bak",
-        "id": "A"
-      },
-      {
-        "text": "Sh_emdb_ci",
-        "id": "B"
-      },
-      {
-        "text": "cmap_ret_ci",
-        "id": "C"
-      },
-      {
-        "text": "cmdb_bak",
-        "id": "D"
-      },
-      {
-        "text": "cmdb_ci",
-        "id": "E"
-      },
-      {
-        "text": "sh_eomdb",
-        "id": "F"
-      }
-    ],
-    "answer": [
-      "C",
-      "E"
-    ],
-    "explanation": "(보기의 테이블명이 손상되었으나 플랫폼 표준 아키텍처에 기반하여 보강함) 엔터프라이즈 CMDB를 지탱하는 가장 핵심적인 3대 테이블 구조는 다음과 같습니다.\n1.  **cmdb_ci (E)**: 모든 구성 항목(CI)의 마스터 정보를 담는 중심 테이블입니다.\n2.  **cmdb_rel_ci (C)**: CI 간의 의존성 및 관계(Relationships) 정보를 저장하는 테이블입니다.\n3.  **cmdb**: 클래스 계층 구조의 최상위 베이스 테이블입니다.\n*   **CSDM 연관**: 이러한 테이블 구조를 통해 기술적 자산과 비즈니스 서비스를 유기적으로 연결하여 전사적인 가시성을 제공합니다."
   },
   {
     "id": 340,
@@ -9892,10 +9831,10 @@
     ],
     "answer": [
       "B",
-      "D",
-      "E"
+      "C",
+      "D"
     ],
-    "explanation": "ServiceNow 서비스 카탈로그의 데이터 아키텍처는 효율적인 주문 이행을 위해 **일대다(One-to-Many)** 관계의 계층 구조를 따릅니다.\n1.  **Request (REQ) -> Requested Items (RITM) (B)**: 하나의 주문서(REQ)는 여러 개의 개별 품목(RITM)을 포함할 수 있습니다.\n2.  **Requested Item (RITM) -> Catalog Tasks (SCTASK) (D)**: 하나의 품목을 이행하기 위해 실무자가 수행해야 할 여러 개의 작업(SCTASK)이 생성될 수 있습니다.\n3.  **Cart -> Requests (E)**: 장바구니에서 한꺼번에 주문을 제출할 때 여러 요청 레코드가 생성될 수 있는 논리적 구조를 가집니다."
+    "explanation": "ServiceNow 서비스 카탈로그의 데이터 아키텍처는 효율적인 주문 이행을 위해 **일대다(One-to-Many)** 관계의 계층 구조를 따릅니다.\n1.  **Request (REQ) -> Requested Items (RITM) (B)**: 하나의 주문서(REQ)는 여러 개의 개별 품목(RITM)을 포함할 수 있습니다.\n2.  **Requested Item (RITM) -> Approvals (C)**: 하나의 요청 품목에 대해 여러 승인 레코드가 생성될 수 있습니다.\n3.  **Requested Item (RITM) -> Catalog Tasks (SCTASK) (D)**: 하나의 품목을 이행하기 위해 실무자가 수행해야 할 여러 개의 작업(SCTASK)이 생성될 수 있습니다.\n*   **주의**: `Cart -> Requests`는 표준적인 테이블 관계 예시로 보지 않습니다."
   },
   {
     "id": 356,
@@ -9953,9 +9892,9 @@
       }
     ],
     "answer": [
-      "D"
+      "A"
     ],
-    "explanation": "(제공된 정답 키를 따르며 플랫폼 메커니즘을 설명함)\n*   **이벤트(Events)**: 시스템이나 프로세스 내에서 발생한 중요한 변화를 알리는 '논리적 신호'입니다.\n*   **알림(Notifications)**: 이벤트를 트리거로 삼아 실제 사용자에게 이메일이나 푸시 등으로 정보를 전달하는 '소통 도구'입니다.\n*   **해석**: 질문에서 묻는 것은 사용자를 정보로 안내하는 전반적인 프로세스의 트리거가 되는 **이벤트(Event)** 체계를 지칭하는 것으로 이해할 수 있습니다. 실무적으로는 알림(Notifications)이 최종적인 전달 기능을 수행합니다."
+    "explanation": "**Notifications**는 이벤트를 트리거로 사용자에게 활동이나 업데이트를 전달하는 기능입니다.\n*   **이벤트(Event)**는 알림을 발생시키는 조건이나 신호이고, 실제 사용자에게 전달되는 기능은 **Notifications**입니다.\n*   **활용**: 레코드 변경, 승인 요청, 상태 업데이트 같은 상황에서 이메일이나 인스턴스 알림을 전송하는 데 사용됩니다."
   },
   {
     "id": 358,
@@ -9970,7 +9909,7 @@
         "id": "B"
       },
       {
-        "text": "Breadcrump",
+        "text": "Breadcrumb",
         "id": "C"
       },
       {
@@ -10018,7 +9957,7 @@
         "id": "A"
       },
       {
-        "text": "customer .* C. customer.field",
+        "text": "customer.*",
         "id": "B"
       },
       {
@@ -10057,20 +9996,22 @@
       }
     ],
     "answer": [
-      "C"
+      "C",
+      "D",
+      "E"
     ],
     "explanation": "(플랫폼 표준 구성 요소에 맞춰 보강함) ServiceNow 리스트에서 데이터를 필터링하는 **조건 빌더(Condition Builder)**는 세 가지 핵심 요소로 구성됩니다.\n1.  **Field (C)**: 데이터를 검사할 열(Column)을 선택합니다 (예: 'Priority').\n2.  **Operator (E)**: 데이터 비교 방식(연산자)을 선택합니다 (예: 'is', 'contains', 'between').\n3.  **Value (D)**: 비교 기준이 되는 실제 데이터 값을 지정합니다 (예: '1 - Critical').\n*   **가시성**: 이 세 요소가 결합되어 리스트 상단에 **브레드크럼(Breadcrumb)** 형태의 필터 문장으로 표시됩니다."
   },
   {
     "id": 362,
-    "title": "Roles can inherit permissions from other roles. Which role inherits all of the permissions of the catalog role and the user_critena_admm role plus has permissions to create Items and Services?",
+    "title": "Roles can inherit permissions from other roles. Which role inherits all of the permissions of the catalog role and the user_criteria_admin role plus has permissions to create Items and Services?",
     "options": [
       {
-        "text": "item Admin [sn_item_admin]",
+        "text": "Item Admin [sn_item_admin]",
         "id": "A"
       },
       {
-        "text": "Sys Admin [sys_admln]",
+        "text": "Sys Admin [sys_admin]",
         "id": "B"
       },
       {
@@ -10078,7 +10019,7 @@
         "id": "C"
       },
       {
-        "text": "Catalog Auinor (sn_cataiog_write]",
+        "text": "Catalog Author [sn_catalog_write]",
         "id": "D"
       }
     ],
@@ -10100,7 +10041,7 @@
         "id": "B"
       },
       {
-        "text": "Provides natural-langauge descriptions of flow logic",
+        "text": "Provides natural-language descriptions of flow logic",
         "id": "C"
       },
       {
@@ -10147,7 +10088,7 @@
     "answer": [
       "A"
     ],
-    "explanation": "ACL 수정이나 인스턴스 전역 보안 정책을 설정하는 **High Security Settings**에 접근하려면 **역할 상승(Elevate Roles)** 프로세스가 필수적입니다.\n*   **필요 역할**: 관리자는 자신의 프로필 메뉴에서 **`security_admin`** 역할을 일시적으로 활성화해야 합니다.\n*   **보안 가드레일**: 상승된 권한은 현재 **세션(Session)** 동안만 유지되며, 로그아웃하거나 브라우저를 닫으면 자동으로 해제되어 권한 오남용을 방지하는 안전장치 역할을 합니다."
+    "explanation": "ACL 수정이나 인스턴스 전역 보안 정책을 설정하는 **High Security Settings**에 접근하려면 **역할 상승(Elevate Roles)** 프로세스가 필수적입니다.\n*   **절차**: 관리자는 프로필 메뉴에서 **Elevate Roles**를 선택해 `security_admin` 역할을 일시적으로 활성화해야 합니다.\n*   **보안 가드레일**: 상승된 권한은 현재 **세션(Session)** 동안만 유지되며, 로그아웃하거나 브라우저를 닫으면 자동으로 해제됩니다."
   },
   {
     "id": 365,
@@ -10166,7 +10107,7 @@
         "id": "C"
       },
       {
-        "text": "Form Links. E. Form Columns",
+        "text": "Form Links",
         "id": "D"
       }
     ],
@@ -10179,7 +10120,7 @@
   },
   {
     "id": 366,
-    "title": "The Report Designer contains different sections for configuring your report. Which section is used to specify grouping and calculations to be run against me data?",
+    "title": "The Report Designer contains different sections for configuring your report. Which section is used to specify grouping and calculations to be run against the data?",
     "options": [
       {
         "text": "Style",
@@ -10304,7 +10245,7 @@
         "id": "A"
       },
       {
-        "text": "Access Contral Scripts",
+        "text": "Access Control Scripts",
         "id": "B"
       },
       {
@@ -10341,7 +10282,7 @@
   },
   {
     "id": 372,
-    "title": "On the Cl Dependency View, what enables you to trace from an infrastructure item, like a Server, to the Services that are dependent on that Server?",
+    "title": "On the CI Dependency View, what enables you to trace from an infrastructure item, like a Server, to the Services that are dependent on that Server?",
     "options": [
       {
         "text": "Service Tracer",
@@ -10367,33 +10308,33 @@
   },
   {
     "id": 373,
-    "title": "How would you define an Access Control, to allow a user with iti role to have permission to create incident records?",
+    "title": "How would you define an Access Control, to allow a user with itil role to have permission to create incident records?",
     "options": [
       {
-        "text": "Name: incident; Permission: write; Role: itil",
+        "text": "Name: incident; Operation: create; Role: itil",
         "id": "A"
       },
       {
-        "text": "Name: incident Any, Operation: write, Permission: itil",
+        "text": "Name: incident.*, Operation: write; Role: itil",
         "id": "B"
       },
       {
-        "text": "Name: incident.*; Operation: write; Permission: itil",
+        "text": "Name: incident.*; Operation: write; Role: itil",
         "id": "C"
       },
       {
-        "text": "Name: incident None, Permission: create: Role: itil",
+        "text": "Name: incident.none; Operation: create; Role: itil",
         "id": "D"
       },
       {
-        "text": "Name: incident. None; Operation: create; Role: itil",
+        "text": "Name: incident.*; Operation: create; Role: itil",
         "id": "E"
       }
     ],
     "answer": [
-      "D"
+      "A"
     ],
-    "explanation": "ServiceNow **접근 제어(ACL)** 명명 규칙에서 레코드(행) 전체에 대한 보안을 설정할 때는 **`.None`** 접두사를 사용합니다.\n*   **객체 구조**: `incident.None`은 인시던트 테이블의 레코드 자체에 대한 접근 권한을 의미합니다.\n*   **작업(Operation)**: 새로운 데이터를 삽입하는 행위이므로 **`create`** 작업이 선택되어야 합니다.\n*   **보안 계층**: 사용자가 인시던트를 생성하려면 반드시 `incident.None` (테이블 수준)에 대한 `create` 권한이 허용되어야 하며, 이후 개별 필드 수준의 쓰기 권한이 평가됩니다."
+    "explanation": "ServiceNow **접근 제어(ACL)**에서 새 인시던트 레코드를 만들려면 **테이블 수준 ACL**에 `create` 작업을 정의해야 합니다.\n*   **객체 구조**: 새 레코드 생성은 기존 행을 읽거나 수정하는 것이 아니므로 `incident.none`이 아니라 **`incident` 테이블의 create ACL**을 사용합니다.\n*   **작업(Operation)**: 생성 권한은 `create`입니다.\n*   **보안 계층**: `incident.none`은 기존 레코드의 행 접근과 관련되고, `incident.*`는 테이블의 필드 접근을 포괄하므로 이 문항의 정답은 `incident; create; itil`입니다."
   },
   {
     "id": 374,
@@ -10429,7 +10370,7 @@
   },
   {
     "id": 375,
-    "title": "What icon do you use to change the icon and color on a Favorite??",
+    "title": "What icon do you use to change the icon and color on a Favorite?",
     "options": [
       {
         "text": "Star",
@@ -10455,7 +10396,7 @@
   },
   {
     "id": 376,
-    "title": "You have been asked to configure a form so an employee could a tablet and select the standard accessary options to purchase with it. These standard options are: carrying case, screen cleaner, tablet stand, and screen protector. What approach would you take? Choose 3 answers",
+    "title": "You have been asked to configure a form so an employee could order a tablet and select the standard accessory options to purchase with it. These standard options are: carrying case, screen cleaner, tablet stand, and screen protector. What approach would you take? Choose 3 answers",
     "options": [
       {
         "text": "Create Catalog Item for the Tablet, and add a variable set to the form, for the accessory options.",
@@ -10633,43 +10574,8 @@
     "explanation": "**플로우 디자이너(Flow Designer)**의 **코어 액션(Core Actions)**은 복잡한 스크립트 작성 없이도 비즈니스 프로세스를 자동화할 수 있도록 ServiceNow가 기본 제공하는 표준 작업 단위입니다.\n*   **Create Record (B)**: 조건 충족 시 특정 테이블에 새 레코드 생성.\n*   **Ask for Approval (C)**: 사용자나 그룹에 승인 요청 송신 및 결과 대기.\n*   **Look Up Record (D)**: 데이터베이스에서 특정 조건과 일치하는 단일 레코드 검색.\n*   **Wait for Condition (E)**: 특정 필드 값이 원하는 상태가 될 때까지 플로우 일시 중지.\n*   **이점**: 이러한 액션들은 **데이터 알약(Data Pills)**과 결합되어 강력한 로코드(Low-code) 자동화를 가능하게 합니다."
   },
   {
-    "id": 382,
-    "title": "For your implementation, the following tables. are extended fram each ofher: *Incident table is extended from Task table.* Super Incident table is extended from Incident table, In this situation, which table(s) are P arent, Child and Base tables? Choose 5 answers",
-    "options": [
-      {
-        "text": "Super Incident table is a Parent table",
-        "id": "A"
-      },
-      {
-        "text": "Super Incident table is a Child table",
-        "id": "B"
-      },
-      {
-        "text": "Task table is a Child table",
-        "id": "C"
-      },
-      {
-        "text": "Super Incident table is a Base table",
-        "id": "D"
-      },
-      {
-        "text": "Task table is a Parent table",
-        "id": "E"
-      },
-      {
-        "text": "Incident table is a Base table",
-        "id": "F"
-      }
-    ],
-    "answer": [
-      "B",
-      "E"
-    ],
-    "explanation": "ServiceNow의 **테이블 확장(Table Extension)** 모델은 객체 지향 상속 원리를 따릅니다. `Task -> Incident -> Super Incident` 계층 구조를 분석하면 다음과 같습니다.\n1.  **Base Table**: 계층의 뿌리가 되는 **Task (E)**. 다른 테이블을 확장하지 않습니다.\n2.  **Parent Table**: 자식을 가진 모든 테이블. **Task (E)**는 Incident의 부모이며, **Incident**는 Super Incident의 부모입니다.\n3.  **Child Table**: 부모를 확장한 모든 테이블. **Incident**는 Task의 자식이며, **Super Incident (B)**는 Incident의 자식입니다.\n*   **핵심**: 자식 테이블은 부모의 모든 필드와 로직(ACL, BR 등)을 상속받습니다."
-  },
-  {
     "id": 383,
-    "title": "What instance resource allows you to access guided tours, information about actions, and instructions an how to use inputs and outputs in your flaw?",
+    "title": "What instance resource allows you to access guided tours, information about actions, and instructions on how to use inputs and outputs in your flow?",
     "options": [
       {
         "text": "Community",
@@ -10692,37 +10598,6 @@
       "B"
     ],
     "explanation": "**플로우 디자이너(Flow Designer)** 내의 **도움말 패널(Help Panel)**은 사용자가 설계를 진행하는 도중에 즉각적인 도움을 받을 수 있는 '플랫폼 내장 지원' 도구입니다.\n*   **기능**: 사용자가 추가한 액션에 대한 상세 설명, 입력(Inputs) 및 출력(Outputs) 데이터 활용법, 가이드 투어 등을 컨텍스트에 맞게 제공합니다.\n*   **가시성**: 화면 우측 상단의 물음표(?) 아이콘을 통해 활성화하며, 외부 문서를 검색할 필요 없이 인터페이스 내에서 즉각적인 기술 가이드를 얻을 수 있게 해줍니다."
-  },
-  {
-    "id": 384,
-    "title": "An IT user calls the service desk because they need to work on task records. All they can see is Self Service on their homepage when they login to the ServiceNow instance. What issue could explain this? Choose 2 answers",
-    "options": [
-      {
-        "text": "Their user account failed LDAP authentication",
-        "id": "A"
-      },
-      {
-        "text": "Their user account is not logged in properly",
-        "id": "B"
-      },
-      {
-        "text": "Their user account was not approved by their manager",
-        "id": "C"
-      },
-      {
-        "text": "Their user account does not have itil role",
-        "id": "D"
-      },
-      {
-        "text": "Their user account does not belong to any groups, which contain the itil role",
-        "id": "E"
-      }
-    ],
-    "answer": [
-      "A",
-      "C"
-    ],
-    "explanation": "(제공된 정답 키를 따르며 실무적 예외 사항을 설명함) 일반적으로 IT 실무자가 'Self-Service' 메뉴만 볼 수 있는 근본 원인은 **`itil` 역할 부재**나 그룹 미소속(E)인 경우가 대부분입니다.\n*   **해석**: 본 문항의 정답인 'LDAP 인증 실패(A)'나 '매니저 승인 누락(C)'은 신규 계정 생성 시의 프로비저닝 워크플로우가 완료되지 않아, 최종적으로 필요한 역할(Role)이 계정에 할당되지 못한 상태를 의도한 것으로 풀이됩니다.\n*   **진단**: 관리자는 항상 해당 사용자의 사용자 레코드를 확인하여 적절한 역할(Roles)이 부여되어 있는지 점검해야 합니다."
   },
   {
     "id": 385,
@@ -10755,7 +10630,7 @@
     "title": "A new employee joins the IT deployment and needs to perform work assigned to Network and Hardware groups. How would you set up their access? Choose 3 answers",
     "options": [
       {
-        "text": "Add User Account to itll group",
+        "text": "Add User Account to itil group",
         "id": "A"
       },
       {
@@ -10780,11 +10655,11 @@
       }
     ],
     "answer": [
-      "B",
+      "A",
       "C",
       "F"
     ],
-    "explanation": "(제공된 정답 키를 기반으로 보강함) 신규 직원의 업무 접근 권한을 설정하는 가장 효율적인 방식은 **그룹 기반 할당(Group-based Assignment)**입니다.\n1.  **그룹 추가 (C, F)**: 사용자를 'Network' 및 'Hardware' 그룹의 멤버로 등록합니다.\n2.  **권한 상속**: 그룹에 할당된 역할(`itil` 등)이 사용자에게 자동으로 상속됩니다.\n*   **비판적 해석**: 본 문항의 B(Add to ACL)는 복원 과정의 오류로 보이며, 실무적으로는 ACL에 사용자를 직접 넣는 대신 그룹 멤버십을 통해 권한을 제어하는 것이 ServiceNow의 RBAC(Role-Based Access Control) 표준 모범 사례입니다."
+    "explanation": "(제공된 정답 키를 기반으로 보강함) 신규 직원의 업무 접근 권한을 설정하는 가장 효율적인 방식은 **그룹 기반 할당(Group-based Assignment)**입니다.\n1.  **그룹 추가 (A, C, F)**: 사용자를 `itil` 그룹과 'Network', 'Hardware' 그룹의 멤버로 등록합니다.\n2.  **권한 상속**: 그룹에 할당된 역할(`itil` 등)이 사용자에게 자동으로 상속됩니다.\n*   **비판적 해석**: 본 문항의 B(Add to ACL)는 복원 과정의 오류로 보이며, 실무적으로는 ACL에 사용자를 직접 넣는 대신 그룹 멤버십을 통해 권한을 제어하는 것이 ServiceNow의 RBAC(Role-Based Access Control) 표준 모범 사례입니다."
   },
   {
     "id": 387,
@@ -10926,14 +10801,14 @@
   },
   {
     "id": 392,
-    "title": "On a Business Rule, the When salting determines at what point the rule executes. What are the options for specifying that timing?",
+    "title": "On a Business Rule, the When setting determines at what point the rule executes. What are the options for specifying that timing?",
     "options": [
       {
         "text": "Insert, Update, Delete. Query",
         "id": "A"
       },
       {
-        "text": "4G} Before, After, Async, Display",
+        "text": "Before, After, Async, Display",
         "id": "B"
       },
       {
