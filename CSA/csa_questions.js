@@ -4904,6 +4904,7 @@
     ],
     "answer": [
       "A",
+      "C",
       "E"
     ],
     "explanation": "(제공된 정답 키를 바탕으로 보강함) ServiceNow 관리자가 인스턴스 보안을 강화하기 위해 상시 사용하는 3대 핵심 모듈은 다음과 같습니다.\n1.  **System Properties > Security (A)**: 세션 타임아웃, 비밀번호 복잡도 등 전역적인 보안 정책을 설정합니다.\n2.  **System Security > Access Control (ACL) (E)**: 데이터베이스 수준에서 테이블과 필드에 대한 CRUD 접근 권한을 엄격히 통제합니다.\n3.  **System Security > Security (C)**: 인스턴스의 전반적인 보안 상태를 진단하고 강화할 수 있는 대시보드와 도구를 제공합니다.\n*   **가드레일**: 특히 ACL을 수정하려면 반드시 `security_admin` 역할을 상승(Elevate)시켜야 합니다."
@@ -5290,9 +5291,9 @@
       }
     ],
     "answer": [
-      "D"
+      "C"
     ],
-    "explanation": "(제공된 정답 키에 따라 보강함)\n*   **플랫폼 브랜딩**: 인스턴스의 전반적인 룩앤필(로고, 색상, 배너 등)을 설정하는 표준 모듈은 **Basic Configuration UI16**입니다.\n*   **서비스 포털 브랜딩**: 본 문항의 정답인 **Service Portal > Portals** 내의 브랜딩 설정은 일반 관리 화면이 아닌, 사용자가 대면하는 '포털' 인터페이스에 특화된 디자인(테마, 로고)을 별도로 관리할 때 사용됩니다."
+    "explanation": "인스턴스의 배너 이미지, 텍스트, 색상처럼 일반 UI16의 전체 브랜딩을 바꾸려면 **System Properties > Basic Configuration UI16**를 사용합니다.\n*   **범위**: 이 설정은 서비스 포털 전용이 아니라 인스턴스의 기본 사용자 인터페이스에 적용됩니다.\n*   **구분**: **Service Portal > Portals > Branding**은 포털 화면의 브랜딩을 조정할 때 쓰는 별도 모듈입니다."
   },
   {
     "id": 193,

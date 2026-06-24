@@ -889,12 +889,128 @@ Target file: `CSA/csa_questions.js`
     - Summary checked: asks the best way to return to your own account after impersonating a user for testing.
     - Answer kept: `C`
     - Explanation kept; End Impersonation returns you to your own session.
+171. Q171
+    - Summary checked: asks which sections on the Reports page let you see reports visible to different audiences.
+    - Answer changed: `A, E, F` -> `A, C, D, F`
+    - Explanation revised; the audience sections are My reports, Group, Team, and Global. Dashboards is not one of the audience sections.
+172. Q172
+    - Summary checked: asks which core base table provides standard fields to tables that extend it, including Incident and Problem.
+    - Answer kept: `A`
+    - Explanation kept; `task` is the base table that supplies common task fields to its extensions.
+173. Q173
+    - Summary checked: asks how local flow variables appear in the Flow Designer Data panel.
+    - Answer kept: D
+    - Explanation kept; local flow variables are accessed as data pills.
+174. Q174
+    - Summary checked: asks what an Event means in ServiceNow.
+    - Answer kept: B
+    - Explanation kept; an Event is a signal that something has occurred in ServiceNow processes.
+175. Q175
+    - Summary checked: asks which primary application is used to load data into ServiceNow.
+    - Answer kept: C
+    - Explanation kept; System Import Sets is the standard app for loading external data into ServiceNow.
+176. Q176
+    - Summary checked: asks which role besides admin allows a user to add or remove fields from a list.
+    - Answer kept: A
+    - Explanation kept; personalize.control is the role tied to list field personalization.
+177. Q177
+    - Summary checked: asks which three security modules are often used by the System Administrator.
+    - Answer changed: A, E -> A, C, E
+    - Explanation kept; the security modules listed are System Properties > Security, System Security > Security, and System Security > Access Control (ACL).
+178. Q178
+    - Summary checked: asks the difference between a UI Policy and a Data Policy.
+    - Answer kept: D
+    - Explanation kept; UI Policies run only on the form UI, while Data Policies enforce rules across form, import set, and web service inputs.
+179. Q179
+    - Summary checked: asks what is used frequently to move customizations from one instance to another.
+    - Answer kept: A
+    - Explanation kept; Update Sets are the standard way to move customizations between instances.
+180. Q180
+    - Summary checked: asks how a group is defined in ServiceNow.
+    - Answer kept: B
+    - Explanation kept; a group is stored as a record in sys_user_group.
+181. Q181
+    - Summary checked: asks the automatically assigned table name for a global custom table named abc.
+    - Answer kept: C
+    - Explanation kept; global custom tables get the u_ prefix.
+182. Q182
+    - Summary checked: asks which mechanism protects applications by restricting access to available files and data.
+    - Answer kept: D
+    - Explanation kept; Application Scope isolates app resources and controls cross-app access.
+183. Q183
+    - Summary checked: asks what to do to see which modules are visible to a user who cannot see modules in the application navigator.
+    - Answer kept: D
+    - Explanation kept; impersonating the user reproduces their exact visibility and role context.
+184. Q184
+    - Summary checked: asks which option is not a Visual Task Board type.
+    - Answer kept: A
+    - Explanation kept; Feature is not a standard VTB type.
+185. Q185
+    - Summary checked: asks which framework ensures application data maps correctly to CMDB tables.
+    - Answer kept: A
+    - Explanation kept; CSDM is the framework for aligning service data with CMDB structure.
+187. Q187
+    - Summary checked: asks which table stores group records.
+    - Answer kept: B
+    - Explanation kept; group records are stored in sys_user_group.
+188. Q188
+    - Summary checked: asks what a Notification is in ServiceNow.
+    - Answer kept: B
+    - Explanation kept; notifications alert users when relevant events occur.
+189. Q189
+    - Summary checked: asks for examples of core tables in the ServiceNow platform.
+    - Answer kept: C
+    - Explanation kept; user, task, and incident are standard core tables.
+190. Q190
+    - Summary checked: asks which data consistency settings can be achieved using a UI Policy.
+    - Answer kept: B, D, E
+    - Explanation kept; UI Policies can hide, make read-only, and make fields mandatory.
+191. Q191
+    - Summary checked: asks the most efficient way to move large amounts of data between instances.
+    - Answer kept: B
+    - Explanation kept; Export to XML is used for moving record data between instances.
+192. Q192
+    - Summary checked: asks which module customizes the instance banner image, text, and colors.
+    - Answer changed: D -> C
+    - Explanation revised; Basic Configuration UI16 is the general UI16 branding module, while Service Portal branding is portal-specific.
+193. Q193
+    - Summary checked: asks which feature limits who can contribute or read knowledge within a knowledge base.
+    - Answer kept: C
+    - Explanation kept; User Criteria controls knowledge base access.
+194. Q194
+    - Summary checked: asks how to view the list of requests after a Service Catalog order is placed.
+    - Answer kept: A
+    - Explanation kept; Open Records > Items is the path used to review requested items after ordering.
+195. Q195
+    - Summary checked: asks which icon on a form header opens Template features.
+    - Answer kept: B
+    - Explanation kept; the More options menu exposes template features on the form header.
+196. Q196
+    - Summary checked: asks what component causes a flow to run after a record is created or updated.
+    - Answer kept: B
+    - Explanation kept; record-based triggers start flows from record create or update events.
+197. Q197
+    - Summary checked: asks the primary objective of a Display Business Rule.
+    - Answer kept: B
+    - Explanation kept; Display Business Rules use g_scratchpad to pass data to the client.
+198. Q198
+    - Summary checked: asks which module you use to access reports available to you.
+    - Answer kept: A
+    - Explanation kept; Reports > View / Run is the central report access module.
+199. Q199
+    - Summary checked: asks how to monitor updates occurring to records assigned to a task worker.
+    - Answer kept: D
+    - Explanation kept; Activity Stream shows live updates for records in My Work.
+200. Q200
+    - Summary checked: asks the name of the runtime value generated when a flow runs an action.
+    - Answer kept: D
+    - Explanation kept; runtime values in Flow Designer are exposed as data pills.
 ## Resume Instructions
 
 When continuing after reboot:
 
 1. Open `CSA/csa_questions.js`.
-2. Continue with question 171.
+2. Continue with question 200.
 3. Maintain same response format:
    - Î¨∏Ï†ú???¨Î∞îÎ¶?   - ?µÎ? ?ïÏãù
    - ?¥ÏÑ§???¨Î∞îÎ¶?   - ÏßÑÌñâ ?ÅÌô©: `Ï¥?398Î¨∏Ï†ú Ï§?NÎ¨∏Ï†ú Í≤ÄÏ¶??ÑÎ£å`
