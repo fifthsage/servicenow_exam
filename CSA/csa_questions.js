@@ -6104,8 +6104,12 @@
     "title": "A Service Catalog project will involve building 80 catalog items. For each of the catalog items, the following fields will be mandatory on the forms: *Requested for*Requested by *Approving manager* Delivery instructions All of the other variables will be specific to the individual catalog item. What features would you use when designing the catalog item form?",
     "options": [
       {
-        "text": "Create one Variable Set for the four variables; then add that variable set to each of the 80 catalog items. B. Create a Record Producer that contains the four fields: then add to the record producer related list on the",
+        "text": "Create one Variable Set for the four variables; then add that variable set to each of the 80 catalog items.",
         "id": "A"
+      },
+      {
+        "text": "Create a Record Producer that contains the four fields; then add it to the record producer related list on the catalog item.",
+        "id": "B"
       }
     ],
     "answer": [
@@ -6139,9 +6143,9 @@
       }
     ],
     "answer": [
-      "C"
+      "D"
     ],
-    "explanation": "(제공된 정답 키를 따르며 플랫폼 표준 역할을 보강함) ServiceNow 플랫폼의 모든 기능, 애플리케이션 및 데이터에 제약 없이 접근할 수 있는 최상위 권한 역할은 **`admin` (System Administrator)**입니다.\n*   **권한 범위**: 인스턴스 전역 설정을 변경하고, 스크립트를 작성하며, 모든 레코드를 관리할 수 있는 강력한 권한입니다.\n*   **참고**: `security_admin` 역할은 `admin`이라 할지라도 ACL 수정과 같은 민감한 보안 작업을 위해 추가로 **역할 상승(Elevate Roles)** 과정을 거쳐야 획득할 수 있는 별도의 고권한 역할입니다."
+    "explanation": "ServiceNow에서 거의 모든 플랫폼 기능, 애플리케이션, 데이터에 접근할 수 있는 표준 최상위 역할은 **`admin` (System Administrator)**입니다.\n*   **권한 범위**: 인스턴스 전역 설정 변경, 스크립트 작성, 모든 레코드 관리가 가능합니다.\n*   **참고**: `security_admin`은 ACL 수정 같은 민감한 보안 작업을 위해 별도로 역할 상승이 필요한 권한입니다."
   },
   {
     "id": 224,
@@ -6580,11 +6584,11 @@
     ],
     "answer": [
       "A",
-      "B",
       "C",
+      "D",
       "F"
     ],
-    "explanation": "(제공된 정답 키에 따라 보강함) 리스트 인터페이스에서 사용자의 상호작용을 돕는 **리스트 UI 액션(UI Actions)**의 대표적인 예시는 다음과 같습니다.\n1.  **List Buttons (C)**: 리스트 상단이나 하단에 배치된 버튼.\n2.  **List Links (A)**: 리스트 하단에 위치한 관련 하이퍼링크.\n3.  **List Choices (F)**: 체크박스로 여러 레코드를 선택한 후 하단 드롭다운에서 적용하는 일괄 작업.\n*   **List Control (B)**: 특정 UI 액션 버튼의 노출 여부나 필터링 동작을 전반적으로 제어하는 설정 모듈입니다."
+    "explanation": "리스트 관련 UI Actions의 대표적인 예시는 **List Links (A)**, **List Buttons (C)**, **List Context Menu (D)**, **List Choices (F)**입니다.\n*   **List Links**: 리스트에서 관련 작업으로 연결되는 링크.\n*   **List Buttons**: 리스트 상단 또는 하단에 배치된 버튼.\n*   **List Context Menu**: 우클릭이나 메뉴에서 접근하는 리스트 작업.\n*   **List Choices**: 여러 레코드를 선택한 뒤 일괄 작업에 사용하는 선택 항목.\n*   **List Control (B)**와 **List Override (E)**는 UI Action 예시로 보기 어렵습니다."
   },
   {
     "id": 239,
@@ -6625,7 +6629,7 @@
         "id": "B"
       },
       {
-        "text": "glide sys log_jmpersonabon",
+        "text": "glide.sys.log_impersonation",
         "id": "C"
       },
       {
@@ -6794,10 +6798,10 @@
   },
   {
     "id": 246,
-    "title": "On a form, which type of Geld has this icon which can be clicked, 10 S00 a preview of the associated record?",
+    "title": "On a form, which type of field has this icon which can be clicked to see a preview of the associated record?",
     "options": [
       {
-        "text": "Drilkdown",
+        "text": "Drilldown",
         "id": "A"
       },
       {
@@ -6817,7 +6821,7 @@
         "id": "E"
       },
       {
-        "text": "Reference:",
+        "text": "Reference",
         "id": "F"
       }
     ],
@@ -6831,7 +6835,7 @@
     "title": "Which admin role is required to make changes to High Security Settings?",
     "options": [
       {
-        "text": "security _admin",
+        "text": "security_admin",
         "id": "A"
       },
       {
@@ -6896,7 +6900,7 @@
         "id": "B"
       },
       {
-        "text": "CC Click frowning icon",
+        "text": "Click frowning icon",
         "id": "C"
       },
       {
@@ -7045,7 +7049,7 @@
         "id": "B"
       },
       {
-        "text": "Specify which Roles are able ta see the Module",
+        "text": "Specify which Roles are able to see the Module",
         "id": "C"
       },
       {
@@ -7062,10 +7066,10 @@
       }
     ],
     "answer": [
-      "C",
-      "D"
+      "E",
+      "F"
     ],
-    "explanation": "새로운 커스텀 테이블을 생성한 후 사용자가 이를 사용할 수 있도록 구성할 때 따르는 **베스트 프랙티스**입니다.\n1.  **애플리케이션 메뉴 역할 지정 (D)**: 내비게이터의 최상위 카테고리인 애플리케이션 메뉴 수준에서 접근 가능한 역할을 설정합니다.\n2.  **모듈 역할 지정 (C)**: 실제 테이블 리스트나 생성 폼으로 연결되는 개별 모듈 수준에서도 역할을 명시합니다.\n*   **이점**: 인스턴스 탐색의 혼란을 방지하고, 직무에 필요한 사용자에게만 메뉴를 노출함으로써 플랫폼의 보안성과 가독성을 높입니다."
+    "explanation": "새로운 커스텀 테이블을 생성한 후 내비게이션을 정리할 때는 이름 규칙을 맞추는 것이 일반적인 베스트 프랙티스입니다.\n1.  **Application Menu (E)**: 애플리케이션 메뉴 이름은 테이블 레이블과 동일하게 맞춰, 사용자가 기능 범위를 바로 인지할 수 있게 합니다.\n2.  **Module (F)**: 모듈 이름은 보통 테이블 레이블의 복수형을 사용해, 해당 테이블의 레코드 목록임을 분명히 합니다.\n*   **이점**: 내비게이터에서 테이블과 메뉴의 대응 관계가 명확해져 검색성과 유지보수성이 좋아집니다."
   },
   {
     "id": 255,
@@ -7355,9 +7359,9 @@
       }
     ],
     "answer": [
-      "D"
+      "A"
     ],
-    "explanation": "ServiceNow 데이터 임포트 아키텍처에서 데이터가 최종 운영 테이블로 물리적으로 이동하고 저장되는 단계는 **Execute Transform (변환 실행)**입니다.\n*   **단계별 구분**:\n    1. **Load Data**: 외부 파일을 **임포트 세트 테이블(Staging Table)**에 적재.\n    2. **Transform Map 정의**: 소스와 타겟 간의 매핑 규칙 설정.\n    3. **Run Transform**: 설정된 맵에 따라 데이터를 가공하여 최종 목적지 테이블에 쓰기(Write) 수행."
+    "explanation": "ServiceNow 데이터 임포트 흐름에서 데이터가 최종 **받는 테이블(receiving table)**에 기록되는 단계는 **Run Transform**입니다.\n*   **단계별 구분**:\n    1. **Load Data**: 외부 파일을 **임포트 세트 테이블(Staging Table)**에 적재합니다.\n    2. **Transform Map**: 소스와 타겟 필드 간 매핑 규칙을 정의합니다.\n    3. **Run Transform**: 설정된 맵을 실행하여 스테이징 데이터가 최종 목적지 테이블에 쓰입니다.\n*   **정리**: 보기 중 실제 ServiceNow 용어와 맞는 것은 **A**입니다."
   },
   {
     "id": 265,
@@ -7385,9 +7389,9 @@
       }
     ],
     "answer": [
-      "A"
+      "C"
     ],
-    "explanation": "(제공된 정답 키에 따라 보강함) 특정 사용자에게서만 비즈니스 로직(승인 등)이 의도치 않게 작동하지 않는다면, 해당 조건에서 예외 처리를 수행하는 **비즈니스 규칙(Business Rule)**이 있는지 가장 먼저 점검해야 합니다.\n*   **진단**: 관리자는 'Debug Business Rules' 도구를 사용하여 플로우 실행 중 어떤 스크립트나 조건이 승인 생성을 방해하거나 강제로 건너뛰게 했는지 확인할 수 있습니다.\n*   **데이터 무결성**: 사용자의 매니저 정보 누락(C) 등 기반 데이터의 문제일 가능성도 실무적으로는 높으나, 문항의 정답 키는 로직 수준의 제어를 묻고 있습니다."
+    "explanation": "관리자 승인 흐름에서 특정 요청자에게만 승인이 생략된다면, 가장 먼저 해당 사용자의 **매니저 정보가 올바르게 설정되어 있는지** 확인해야 합니다.\n*   **핵심 원인**: 요청자 사용자 레코드에 매니저가 없으면, 매니저 승인 라우팅이 정상적으로 생성되지 않을 수 있습니다.\n*   **비교**: 다른 요청자에게는 승인 절차가 정상 동작한다면, 전역 로직 문제보다 **개별 사용자 데이터** 문제를 먼저 의심하는 것이 맞습니다.\n*   **정리**: 이 문항의 출제 의도는 승인 예외 처리보다 **사용자 레코드의 manager 필드 누락**을 식별하는 것입니다."
   },
   {
     "id": 266,
@@ -7411,9 +7415,9 @@
       }
     ],
     "answer": [
-      "D"
+      "C"
     ],
-    "explanation": "(제공된 정답 키를 따르며 플랫폼 표준 용어로 보강함) CMDB 내에서 구성 항목(CI)들의 계층 구조와 그들 간의 복잡한 의존 관계를 시각화하는 핵심 도구는 **Dependency View** (또는 CI Class Manager 내의 시각화 도구)입니다.\n*   **가시성**: 특정 서버에 장애가 발생했을 때 어떤 비즈니스 서비스가 영향을 받는지, 혹은 특정 서비스가 어떤 하드웨어에 종속되어 있는지 그래픽 인터페이스를 통해 한눈에 파악할 수 있게 해줍니다."
+    "explanation": "CMDB 내 구성 항목(CI)과 그 관계를 시각적으로 보여주는 ServiceNow 유틸리티는 **Dependency View**입니다.\n*   **출제 의도**: 특정 CI가 어떤 다른 CI에 의존하는지, 그리고 장애가 상위 서비스에 어떤 영향을 주는지 파악할 수 있는지 확인합니다.\n*   **정리**: 보기 중 `Dependency View`가 실제 플랫폼 용어와 가장 정확히 맞습니다."
   },
   {
     "id": 267,
@@ -7637,9 +7641,9 @@
       }
     ],
     "answer": [
-      "A"
+      "C"
     ],
-    "explanation": "인스턴스의 보안 근간을 다루는 **High Security Settings** 작업을 마친 후 보안 상승 상태를 해제하려면 **Normal Security** 모듈을 호출하거나 세션을 초기화해야 합니다.\n*   **역할 상승(Elevate Roles)**: `security_admin`과 같은 고권한은 세션 기반으로 작동하며, 일반적인 `admin` 권한보다 높은 수준의 작업을 수행할 때만 일시적으로 활성화합니다.\n*   **복구**: 명시적으로 해제하거나 로그아웃 후 다시 로그인하면 원래의 기본 권한 수준으로 안전하게 복귀합니다."
+    "explanation": "High Security Settings 작업 후 일반 관리자 수준으로 돌아가려면 세션을 새로 시작하는 것이 표준입니다.\n*   **역할 상승(Elevate Roles)**: `security_admin` 같은 고권한은 현재 세션에만 적용됩니다.\n*   **복구**: 해당 세션을 종료하고 **로그아웃 후 다시 로그인**하면 정상 권한 수준으로 돌아갑니다.\n*   **정리**: 보기 중 실제로 이를 수행하는 것은 **Log out and back in (C)**입니다."
   },
   {
     "id": 275,
@@ -7948,9 +7952,9 @@
       }
     ],
     "answer": [
-      "A"
+      "D"
     ],
-    "explanation": "(제공된 정답 키를 따름) 서비스 카탈로그에서 여러 항목에 걸쳐 공통적으로 반복되는 질문이나 설정 항목들을 효율적으로 묶어 관리할 때는 **가변 세트(Variable Sets)**를 사용합니다.\n*   **관리 가치**: '이름', '부서', '연락처'와 같은 공통 변수들을 하나의 세트로 묶어 수십 개의 카탈로그 항목에 재사용함으로써 유지보수 리소스를 대폭 절감하고 데이터 입력의 일관성을 확보합니다.\n*   **참고**: 항목들을 주제별 폴더 구조로 묶는 기능적 단위는 **카테고리(Categories)**입니다."
+    "explanation": "Service Catalog에서 항목들을 주제별로 묶어 논리적 그룹을 만들 때는 **Categories**를 사용합니다.\n*   **출제 의도**: 카탈로그 항목을 사용자가 찾기 쉽게 분류하는 기능을 묻는 문항입니다.\n*   **구분**: `Variable Sets`는 여러 카탈로그 항목에서 재사용하는 공통 변수 묶음이고, 항목 분류 자체를 담당하는 기능은 아닙니다.\n*   **정리**: 따라서 정답은 **D**입니다."
   },
   {
     "id": 286,
@@ -8030,9 +8034,9 @@
       }
     ],
     "answer": [
-      "A"
+      "D"
     ],
-    "explanation": "(제공된 정답 키를 따름) ServiceNow 플랫폼 아키텍처에서 사용자의 개별적인 UI 취향이나 시스템 동작 설정을 저장하는 시스템 테이블은 **`sys_user_preference`**입니다.\n*   **개인화**: 리스트 표시 건수, 마지막으로 열어본 탭, 템플릿 바 활성화 여부 등 사용자 세션과 관련된 개인 설정 데이터가 여기에 담깁니다.\n*   **주의**: 사용자의 기본 프로필(이름, 이메일, 직책 등) 마스터 정보는 항상 **`sys_user`** 테이블에 저장되는 것이 플랫폼 표준입니다."
+    "explanation": "ServiceNow에서 사용자는 **`sys_user`** 테이블의 레코드로 정의됩니다.\n*   **표준 사용자 레코드**: 이름, 이메일, 부서, 위치 같은 사용자 마스터 데이터가 들어 있습니다.\n*   **구분**: `sys_user_preference`는 개별 사용자 환경설정, `sys_user_profile`은 표준 사용자 정의 테이블로 보지 않습니다.\n*   **정리**: 이 문항의 정답은 **D**입니다."
   },
   {
     "id": 289,
@@ -8062,7 +8066,7 @@
   },
   {
     "id": 290,
-    "title": "Which testing framework is used to test ServerNew Applications?",
+    "title": "Which testing framework is used to test ServiceNow Applications?",
     "options": [
       {
         "text": "Selenium",
@@ -8227,9 +8231,9 @@
       }
     ],
     "answer": [
-      "C"
+      "A"
     ],
-    "explanation": "(제공된 정답 키를 따름) 기술적인 데이터베이스 정의 관점에서 **필드(Field)**는 테이블의 '열(Column)'에 해당하며, 레코드의 개별 속성 데이터를 저장하는 최소 단위입니다.\n*   **참고**: 본 문항의 보기 C는 플랫폼 운영 관점에서 '메뉴 리스트에 나타나는 항목'으로 묘사하고 있으나, 이는 아키텍처적 정의와 다소 거리가 있습니다. 실제 시험에서는 필드를 '데이터가 저장되는 셀(Cell)' 또는 '열(Column)'로 정의하는 것이 정설입니다."
+    "explanation": "ServiceNow에서 **필드(Field)**는 테이블의 **열(Column)**에 해당하며, 각 레코드의 개별 속성 값을 저장하는 기본 단위입니다.\n*   **비교**: 행(Row)은 레코드(record)이고, 필드(Column)는 그 레코드의 속성입니다.\n*   **정리**: 문항의 보기 중 가장 가까운 것은 **A**입니다."
   },
   {
     "id": 296,
@@ -8256,36 +8260,6 @@
       "D"
     ],
     "explanation": "**사용자 가장(User Impersonation)** 기능은 UI 상단의 배너 프레임(Banner Frame) 우측에 위치한 **사용자 메뉴(User Menu)**를 통해 접근할 수 있습니다.\n*   **활용**: 자신의 계정 프로필 이름을 클릭하면 드롭다운 메뉴에 'Impersonate user' 옵션이 나타납니다.\n*   **역할**: 이 기능은 `admin`이나 `impersonator` 역할을 가진 사용자에게만 노출되며, 다른 사용자의 관점에서 인스턴스를 테스트하는 데 사용됩니다."
-  },
-  {
-    "id": 297,
-    "title": "Which helps to visualize configuration items and their relationships?",
-    "options": [
-      {
-        "text": "Transform Map",
-        "id": "A"
-      },
-      {
-        "text": "Schema Map",
-        "id": "B"
-      },
-      {
-        "text": "Tables",
-        "id": "C"
-      },
-      {
-        "text": "Flow Design",
-        "id": "D"
-      },
-      {
-        "text": "Dependency View",
-        "id": "E"
-      }
-    ],
-    "answer": [
-      "E"
-    ],
-    "explanation": "**디펜던시 뷰(Dependency View)**는 CMDB 내의 구성 항목(CI)들 사이의 복잡한 의존 관계를 그래픽 인터페이스로 시각화해주는 플랫폼 도구입니다.\n*   **가치**: 특정 서버나 네트워크 장비에 이슈가 발생했을 때, 어떤 상위 비즈니스 서비스들이 영향을 받는지 파악하는 **영향도 분석(Impact Analysis)**에 핵심적인 역할을 합니다.\n*   **CSDM 연관**: 하부 인프라(Technology Management Service (구Technical Service))와 상부 비즈니스 가치(Business Service) 사이의 연결 고리를 명확히 보여줍니다."
   },
   {
     "id": 298,
@@ -8369,9 +8343,9 @@
       }
     ],
     "answer": [
-      "D"
+      "C"
     ],
-    "explanation": "(제공된 정답 키 D는 논리적으로 오류가 있으며, 플랫폼 표준은 C에 가깝습니다.) ServiceNow의 **접근 제어(ACL)** 평가 순서는 보안의 무결성을 보장하기 위해 다음과 같은 계층 구조를 따릅니다.\n1.  **테이블 수준(Table-level)**: 사용자가 해당 테이블 전체에 접근할 수 있는지 먼저 확인합니다.\n2.  **필드 수준(Field-level)**: 테이블 접근이 승인된 경우에만 개별 필드에 대한 접근 권한을 평가합니다.\n*   **평가 논리**: 각 수준 내에서는 **가장 구체적인 규칙(Specific)**에서 **가장 일반적인 규칙(General)** 순으로 탐색합니다. 사용자가 데이터에 접근하려면 테이블 수준과 필드 수준의 ACL을 **모두(Both)** 통과해야 합니다."
+    "explanation": "ServiceNow의 ACL 평가는 **테이블 수준**을 먼저 확인하고, 그 다음 **필드 수준**을 확인하는 순서로 진행됩니다.\n*   **레벨 순서**: 테이블 ACL을 통과해야만 필드 ACL을 평가할 수 있습니다.\n*   **정리**: 보기 중 이 순서를 가장 잘 표현한 것은 **C**입니다.\n*   **보완**: 각 레벨 내부에서는 더 구체적인 규칙에서 더 일반적인 규칙으로 탐색합니다."
   },
   {
     "id": 301,
