@@ -20,9 +20,102 @@
     var timerId = null;
     var explanationVisible = false;
     var wrongQuestionIds = new Set(loadWrongQuestionIds());
+    var questionBankIssues = validateQuestionBank(allQuestions);
+
+    if (questionBankIssues.length > 0) {
+      console.warn('Question bank validation issues:', questionBankIssues);
+      window.alert('문제 데이터 검증 경고가 있습니다. 개발자 콘솔에서 상세 내용을 확인해 주세요.');
+    }
 
     function normalizeQuestionId(id) {
       return String(id);
+    }
+
+    function parseChooseCount(title) {
+      var match = String(title || '').match(/choose\s+(two|three|four|five|2|3|4|5)\b/i);
+      if (!match) {
+        return null;
+      }
+      var wordMap = {
+        two: 2,
+        three: 3,
+        four: 4,
+        five: 5
+      };
+      var raw = match[1].toLowerCase();
+      return wordMap[raw] || Number(raw);
+    }
+
+    function validateQuestionBank(questions) {
+      var issues = [];
+      var seenIds = new Set();
+
+      questions.forEach(function (q, index) {
+        var label = q && q.id !== undefined ? q.id : ('index:' + index);
+
+        if (!q || typeof q !== 'object') {
+          issues.push({ id: label, issue: 'question is not an object' });
+          return;
+        }
+        if (seenIds.has(q.id)) {
+          issues.push({ id: label, issue: 'duplicate question id' });
+        }
+        seenIds.add(q.id);
+
+        if (!Array.isArray(q.options) || q.options.length < 2) {
+          issues.push({ id: label, issue: 'question must have at least two options' });
+          return;
+        }
+        if (!Array.isArray(q.answer) || q.answer.length === 0) {
+          issues.push({ id: label, issue: 'answer must be a non-empty array' });
+          return;
+        }
+
+        var optionIds = new Set();
+        var optionTexts = new Set();
+        q.options.forEach(function (option, optionIndex) {
+          var optionId = option && (option.id || option.letter);
+          if (!optionId) {
+            issues.push({ id: label, issue: 'option is missing id', optionIndex: optionIndex });
+            return;
+          }
+          if (optionIds.has(optionId)) {
+            issues.push({ id: label, issue: 'duplicate option id', optionId: optionId });
+          }
+          optionIds.add(optionId);
+
+          var text = String(option.text || '').trim().toLowerCase();
+          if (!text) {
+            issues.push({ id: label, issue: 'option text is empty', optionId: optionId });
+          } else if (optionTexts.has(text)) {
+            issues.push({ id: label, issue: 'duplicate option text', optionId: optionId });
+          }
+          optionTexts.add(text);
+        });
+
+        var answerIds = new Set();
+        q.answer.forEach(function (answerId) {
+          if (answerIds.has(answerId)) {
+            issues.push({ id: label, issue: 'duplicate answer id', answerId: answerId });
+          }
+          answerIds.add(answerId);
+          if (!optionIds.has(answerId)) {
+            issues.push({ id: label, issue: 'answer id is not present in options', answerId: answerId });
+          }
+        });
+
+        var chooseCount = parseChooseCount(q.title);
+        if (chooseCount !== null && chooseCount !== q.answer.length) {
+          issues.push({
+            id: label,
+            issue: 'Choose count does not match answer length',
+            chooseCount: chooseCount,
+            answerLength: q.answer.length
+          });
+        }
+      });
+
+      return issues;
     }
 
     function readWrongIdsFromKey(storageKey) {

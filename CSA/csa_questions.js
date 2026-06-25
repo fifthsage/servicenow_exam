@@ -448,7 +448,7 @@
       "C",
       "D"
     ],
-    "explanation": "Basic Configuration UI16 is a classic platform branding configuration area used for instance-level look and feel settings.\n*   Correct answers (A, C, D): Banner image, browser tab title, and system date format are examples of settings managed from this area.\n*   Distractors: Record number format is managed separately through number maintenance, and form header sizing is not a standard Basic Configuration UI16 setting.\n*   Currency note: The UI16 name is legacy/classic UI terminology, but the concept remains useful for CSA because it distinguishes instance-level platform branding from Service Portal branding."
+    "explanation": "**Basic Configuration UI16**은 Classic UI 기준의 인스턴스 전역 브랜딩과 기본 표시 설정을 조정하는 영역입니다.\n*   **정답 이유 (A, C, D)**: 배너 이미지, 브라우저 탭 제목, 시스템 날짜 형식은 이 설정 영역에서 다룰 수 있는 대표 항목입니다.\n*   **오답 구분**: 레코드 번호 형식은 Number Maintenance 계열 설정에서 관리하며, 폼 헤더 크기는 Basic Configuration UI16의 표준 설정 항목으로 보기 어렵습니다.\n*   **시험 포인트**: UI16이라는 명칭은 Classic UI 용어이지만, CSA에서는 플랫폼 전역 브랜딩과 Service Portal 브랜딩을 구분하는 문제로 여전히 출제 가치가 있습니다."
   },
   {
     "id": 18,
@@ -1750,7 +1750,7 @@
       "D",
       "F"
     ],
-    "explanation": "In the classic platform UI, the main areas are Banner Frame, Application Navigator, and Content Frame.\n1.  Banner Frame (B): Top-level controls such as logo, global search, user menu, and settings.\n2.  Application Navigator (D): The left navigation area used to access applications, modules, favorites, and history.\n3.  Content Frame (F): The main work area where lists, forms, reports, dashboards, and other pages render.\n*   Currency note: This is classic/UI16 terminology. It is retained because CSA questions often use these names, but the title now makes the UI context explicit."
+    "explanation": "Classic ServiceNow 플랫폼 UI는 크게 **Banner Frame**, **Application Navigator**, **Content Frame**으로 구분됩니다.\n*   **정답 이유 (B, D, F)**: Banner Frame은 상단 제어 영역, Application Navigator는 좌측 앱/모듈 탐색 영역, Content Frame은 리스트와 폼이 표시되는 작업 영역입니다.\n*   **오답 구분**: Banner Navigator, Application Frame, Content Menu는 이 3대 UI 구성 요소를 지칭하는 표준 명칭이 아닙니다.\n*   **시험 포인트**: 최신 UI에서도 내비게이션과 콘텐츠 영역의 개념은 이어지지만, 이 문항은 Classic/UI16 용어를 명시적으로 묻는 문제입니다."
   },
   {
     "id": 66,
@@ -2166,7 +2166,7 @@
     "answer": [
       "D"
     ],
-    "explanation": "서비스 카탈로그의 **변수(Variables)**는 사용자가 카탈로그 항목을 주문할 때 필요한 정보를 입력하거나 선택하게 하는 필드입니다.\n*   **적용 범위**: 변수는 Record Producer나 Order Guide에만 제한되지 않고 Catalog Item에서도 사용됩니다.\n*   **기본 특성**: 이 문항의 정답 키 기준으로 변수는 기본적으로 전역(Global) 특성을 갖는 것으로 다룹니다. 여러 항목에서 공통 질문을 재사용해야 할 때는 Variable Set을 활용합니다.\n*   **가격 영향**: 변수 선택값은 항목 가격이나 옵션 가격에 영향을 줄 수 있으므로, '가격에 영향을 줄 수 없다'는 설명은 틀립니다."
+    "explanation": "서비스 카탈로그의 **변수(Variables)**는 사용자가 카탈로그 항목을 주문할 때 필요한 정보를 입력하거나 선택하게 하는 필드입니다.\n*   **정답 이유 (D)**: 변수는 Catalog Item에서 사용할 수 있으며, 기본적으로 항목 내에서 질문 값을 수집하는 입력 필드로 동작합니다. 여러 항목에서 같은 질문을 재사용해야 할 때는 Variable Set을 활용합니다.\n*   **오답 구분**: 변수는 Record Producer나 Order Guide에만 제한되지 않습니다. 또한 선택값은 항목 가격이나 옵션 가격에 영향을 줄 수 있으므로, 가격과 무관하다는 설명은 틀립니다.\n*   **시험 포인트**: Catalog Item, Record Producer, Order Guide 모두 사용자 입력을 받기 위해 변수를 활용할 수 있다는 점을 기억해야 합니다."
   },
   {
     "id": 82,
@@ -2623,7 +2623,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "The three-bar icon on a form header opens the form context menu, commonly labeled Additional Actions or Context Menu.\n*   Correct answer (B): This menu contains record-level actions such as save, configure, templates, and related form actions.\n*   Distractors: Application Navigator is the left navigation panel, Form Designer is a configuration tool, and Navigation menu is too generic.\n*   Note: Hamburger icon is a colloquial visual description, not the best exam answer when the official function name is available."
+    "explanation": "폼 헤더의 세 줄 아이콘은 현재 레코드에 대한 **Additional Actions / Context Menu**를 여는 버튼입니다.\n*   **정답 이유 (B)**: 이 메뉴에는 Save, Configure, Template 적용 등 현재 폼/레코드와 관련된 작업이 모여 있습니다.\n*   **오답 구분**: Application Navigator는 좌측 탐색 영역이고, Form Designer는 폼을 설계하는 관리자 도구입니다. Navigation menu는 기능을 너무 포괄적으로 표현한 보기입니다.\n*   **시험 포인트**: Hamburger icon은 모양을 설명하는 비공식 표현에 가깝고, 시험에서는 기능명인 Additional Actions 또는 Context Menu를 우선 기억하는 것이 좋습니다."
   },
   {
     "id": 98,
@@ -2878,7 +2878,7 @@
   },
   {
     "id": 107,
-    "title": "What icon do you use to change the label on a Favorite?",
+    "title": "What icon do you use to change the label, icon, or color on a Favorite?",
     "options": [
       {
         "text": "Clock",
@@ -2908,7 +2908,7 @@
     "answer": [
       "C"
     ],
-    "explanation": "**즐겨찾기(Favorites)** 탭에서 이미 등록된 항목의 이름이나 외형을 변경하려면 **Pencil (연필)** 아이콘을 사용합니다.\n*   **편집 가능 항목**: 즐겨찾기의 레이블(이름), 아이콘 모양, 그리고 표시 색상을 사용자의 취향에 맞게 개인화할 수 있습니다.\n*   **개인화**: 이는 사용자 세션에 귀속되는 개인 설정으로, 다른 사용자의 내비게이터 메뉴에는 영향을 주지 않습니다."
+    "explanation": "**Favorites**에서 이미 등록된 즐겨찾기의 레이블, 아이콘, 색상을 변경하려면 **Pencil (연필)** 아이콘을 사용합니다.\n*   **정답 이유 (C)**: Pencil 아이콘은 즐겨찾기 항목을 편집하는 기능입니다.\n*   **오답 구분**: Star는 즐겨찾기 영역, Clock은 History, Hamburger는 추가 작업 메뉴를 의미할 수 있지만 즐겨찾기 편집 아이콘은 아닙니다.\n*   **시험 포인트**: 즐겨찾기를 추가하는 동작과 이미 등록된 즐겨찾기를 편집하는 동작을 구분해야 합니다."
   },
   {
     "id": 108,
@@ -3400,7 +3400,7 @@
       "B",
       "C"
     ],
-    "explanation": "Administrators commonly add or arrange fields on a form through Form Layout or Form Designer.\n*   Correct answers (B, C): Form Layout uses the slushbucket-style layout tool, while Form Designer provides a visual designer for sections and fields.\n*   Distractors: The other paths either use incorrect menu names or point to unrelated UX/dashboard configuration."
+    "explanation": "관리자는 폼에 필드를 추가하거나 배치할 때 **Form Layout** 또는 **Form Designer**를 사용할 수 있습니다.\n*   **정답 이유 (B, C)**: Form Layout은 슬러시버킷 방식으로 필드를 배치하고, Form Designer는 섹션과 필드를 시각적으로 설계하는 도구입니다.\n*   **오답 구분**: 다른 보기는 메뉴 경로가 부정확하거나 UX Dashboard처럼 폼 필드 추가와 관련 없는 설정을 가리킵니다.\n*   **시험 포인트**: 폼 구성 문제에서는 `Configure > Form Layout`과 `Configure > Form Designer`가 자주 함께 정답으로 등장합니다."
   },
   {
     "id": 125,
@@ -4029,7 +4029,7 @@
     "answer": [
       "E"
     ],
-    "explanation": "ACL object names use table and field names in dot-walk style.\n*   Correct answer (E): A field-level ACL on the Major incident field of the Incident table is written as incident.major_incident.\n*   Distractors: Spaces, arrows, pipes, or other separators are not valid ACL object-name syntax."
+    "explanation": "ACL의 객체 이름은 테이블 이름과 필드 이름을 **점(.) 표기법**으로 연결해 작성합니다.\n*   **정답 이유 (E)**: Incident 테이블의 Major incident 필드에 대한 필드 수준 ACL은 `incident.major_incident` 형식으로 표현합니다.\n*   **오답 구분**: 공백, 화살표, 파이프 기호 같은 구분자는 ACL 객체 이름 표기법에 사용하지 않습니다.\n*   **시험 포인트**: 테이블 전체 ACL과 특정 필드 ACL을 구분할 때 `table.field` 형태의 점 표기법을 정확히 기억해야 합니다."
   },
   {
     "id": 147,
@@ -4145,7 +4145,7 @@
   },
   {
     "id": 151,
-    "title": "What field contains a record's 32-character, unique identifier?",
+    "title": "What field contains every record's 32-character unique identifier?",
     "options": [
       {
         "text": "sn_rec_id",
@@ -4175,7 +4175,7 @@
     "answer": [
       "D"
     ],
-    "explanation": "ServiceNow의 모든 테이블 레코드는 **`sys_id`**라는 고유한 32자의 16진수 GUID(Globally Unique Identifier)를 가집니다.\n*   **기본 키(Primary Key)**: 이 값은 레코드가 생성되는 시점에 시스템에 의해 자동으로 부여되며, 인스턴스 전체에서 해당 레코드를 유일하게 식별하는 기준이 됩니다.\n*   **활용**: URL 주소 구성, 참조(Reference) 필드에서의 연결, 그리고 스크립팅 및 API 통신 시 특정 객체를 정확히 지칭하기 위해 사용됩니다.\n*   **불변성**: 한 번 생성된 `sys_id`는 레코드의 수명이 다할 때까지 절대 변하지 않습니다."
+    "explanation": "ServiceNow의 모든 레코드는 **`sys_id`**라는 32자의 고유 식별자를 가집니다.\n*   **정답 이유 (D)**: `sys_id`는 레코드가 생성될 때 시스템이 부여하는 고유한 기본 식별자입니다.\n*   **활용 맥락**: URL, Reference 필드, API 호출, 스크립트에서 특정 레코드를 정확히 식별할 때 사용됩니다.\n*   **시험 포인트**: `number` 필드는 사람이 읽기 쉬운 업무 번호이고, `sys_id`는 플랫폼이 레코드를 유일하게 식별하는 내부 키입니다."
   },
   {
     "id": 152,
@@ -4253,7 +4253,7 @@
     "answer": [
       "A"
     ],
-    "explanation": "(주의: 일반적인 모범 사례와 달리 본 문항의 정답 키는 A로 되어 있습니다.)\n*   **플랫폼 원칙**: 원래 **업데이트 세트(Update Sets)**는 시스템의 '동작 방식'을 결정하는 **구성(Configuration)** 변경 사항을 캡처하며, 인시던트나 사용자 같은 **데이터(Data)** 레코드는 캡처하지 않습니다.\n*   **해석**: 본 문항은 시스템 관리자가 새 그룹을 정의하거나 CI 구조를 변경하는 작업을 '플랫폼 커스터마이징' 활동의 일환으로 보고, 이를 업데이트 세트로 이동시킬 수 있다는 맥락에서 정답을 제시한 것으로 풀이됩니다.\n*   **실무 팁**: 일반적인 업무 데이터와 구성 데이터를 명확히 구분하는 것이 중요합니다."
+    "explanation": "**업데이트 세트(Update Sets)**는 인스턴스 간에 구성 변경을 묶어 이동시키는 메커니즘입니다.\n*   **정답 이유 (A)**: 이 문항은 새 그룹 정의나 CI 관련 구성 변경처럼 시스템 설정에 영향을 주는 변경 사항을 업데이트 세트에 포함되는 구성 변경으로 묶어 보는 의도입니다.\n*   **오답 구분**: 모든 레코드가 업데이트 세트에 자동으로 포함되는 것은 아닙니다. 인시던트, 사용자, 실제 운영 데이터처럼 업무 데이터에 해당하는 레코드는 일반적으로 업데이트 세트 대상이 아닙니다.\n*   **시험 포인트**: 업데이트 세트 문제에서는 **Configuration 변경**과 **Data 레코드**를 구분해야 합니다. 표현이 애매할 때는 문항이 시스템 설정 변경을 묻는지, 업무 데이터 이동을 묻는지 먼저 판단해야 합니다."
   },
   {
     "id": 155,
@@ -4809,7 +4809,7 @@
       "C",
       "E"
     ],
-    "explanation": "(제공된 정답 키를 바탕으로 보강함) ServiceNow 관리자가 인스턴스 보안을 강화하기 위해 상시 사용하는 3대 핵심 모듈은 다음과 같습니다.\n1.  **System Properties > Security (A)**: 세션 타임아웃, 비밀번호 복잡도 등 전역적인 보안 정책을 설정합니다.\n2.  **System Security > Access Control (ACL) (E)**: 데이터베이스 수준에서 테이블과 필드에 대한 CRUD 접근 권한을 엄격히 통제합니다.\n3.  **System Security > Security (C)**: 인스턴스의 전반적인 보안 상태를 진단하고 강화할 수 있는 대시보드와 도구를 제공합니다.\n*   **가드레일**: 특히 ACL을 수정하려면 반드시 `security_admin` 역할을 상승(Elevate)시켜야 합니다."
+    "explanation": "시스템 관리자는 인스턴스 보안을 설정하고 점검하기 위해 보안 관련 속성, 보안 진단 영역, ACL 관리 영역을 함께 사용합니다.\n*   **정답 이유 (A, C, E)**: System Properties > Security는 전역 보안 속성을 관리하고, System Security > Security는 보안 관련 설정/진단 영역이며, System Security > Access Control (ACL)은 테이블과 필드 수준 접근 제어를 관리합니다.\n*   **오답 구분**: Self-Service > My Access는 일반 사용자 요청 흐름에 가깝고, Password Management > Security Questions는 보안 전체를 관리하는 핵심 관리자 모듈로 보기 어렵습니다.\n*   **시험 포인트**: ACL을 수정할 때는 일반 admin 권한만으로 충분하지 않을 수 있으며, `security_admin` 역할 상승이 필요한 경우가 있다는 점을 함께 기억해야 합니다."
   },
   {
     "id": 175,
@@ -5169,7 +5169,7 @@
     "answer": [
       "C"
     ],
-    "explanation": "For the classic platform UI, instance-level banner image, text, and color settings are managed through System Properties > Basic Configuration UI16.\n*   Correct answer (C): This is the platform UI branding area, not Service Portal branding.\n*   Distinction: Service Portal > Portals > Branding is used for portal-specific branding.\n*   Currency note: UI16 is classic UI terminology. The question is kept because it tests the distinction between platform branding and portal branding."
+    "explanation": "Classic 플랫폼 UI의 배너 이미지, 텍스트, 색상 같은 전역 브랜딩은 **System Properties > Basic Configuration UI16**에서 관리합니다.\n*   **정답 이유 (C)**: 이 모듈은 ServiceNow 기본 플랫폼 UI의 룩앤필을 조정하는 영역입니다.\n*   **오답 구분**: Service Portal > Portals > Branding은 포털 화면 전용 브랜딩 설정이며, 플랫폼 기본 UI 브랜딩과는 범위가 다릅니다.\n*   **시험 포인트**: UI16은 Classic UI 용어이므로, 최신 화면에서도 문제 의도는 '플랫폼 전역 브랜딩'과 '포털 브랜딩'의 차이를 묻는 것으로 이해해야 합니다."
   },
   {
     "id": 188,
@@ -6148,7 +6148,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "A quick list-level way to filter by a value in a specific column is to expand the column search row with the list magnifier and type the value in the target column.\n*   Correct answer (B): Entering email in the Short Description column search filters records by that column.\n*   Distractors: The percent syntax and generic search box wording are not the clearest list-column search procedure, and Show Matching is used from an existing cell value rather than free text."
+    "explanation": "긴 리스트에서 특정 컬럼 값을 기준으로 빠르게 필터링하려면 리스트의 **컬럼 검색 행**을 펼친 뒤 대상 컬럼에 검색어를 입력합니다.\n*   **정답 이유 (B)**: List Magnifier로 컬럼 검색을 확장하고 Short Description 컬럼에 `email`을 입력하면 해당 컬럼 기준으로 레코드가 필터링됩니다.\n*   **오답 구분**: `%email` 같은 표현은 이 문항의 기본 컬럼 검색 절차로 보기 어렵고, Show Matching은 이미 표시된 셀 값을 기준으로 필터링할 때 사용하는 방식입니다.\n*   **시험 포인트**: 리스트 검색 문제에서는 전체 검색창, 컬럼 검색, 셀 값 기반 Show Matching/Filter Out을 구분해야 합니다."
   },
   {
     "id": 223,
@@ -6412,32 +6412,6 @@
   },
   {
     "id": 232,
-    "title": "Which field on every record contains a unique identifier for that record?",
-    "options": [
-      {
-        "text": "sys_number",
-        "id": "A"
-      },
-      {
-        "text": "sc_req_item",
-        "id": "B"
-      },
-      {
-        "text": "sys_id",
-        "id": "C"
-      },
-      {
-        "text": "sys_number_id",
-        "id": "D"
-      }
-    ],
-    "answer": [
-      "C"
-    ],
-    "explanation": "**`sys_id`**는 ServiceNow 데이터베이스의 모든 레코드가 생성되는 순간 부여받는 고유한 식별자(Primary Key)입니다.\n*   **물리적 구조**: 32자의 16진수 문자열로 구성된 GUID(Globally Unique Identifier)입니다.\n*   **플랫폼 가치**: 테이블 간 참조(Reference) 관계를 형성할 때 내부적으로 이 값을 저장하며, API 호출이나 URL 주소 구성 시 특정 객체를 정확하게 지칭하는 근간이 됩니다.\n*   **불변성**: 레코드의 내용이 바뀌어도 해당 레코드의 `sys_id`는 절대 변하지 않습니다."
-  },
-  {
-    "id": 233,
     "title": "Which system property is added and set to true in order to see impersonation events in the System Log?",
     "options": [
       {
@@ -6467,7 +6441,7 @@
     "explanation": "관리자가 수행하는 **사용자 가장(Impersonation)** 활동을 시스템 로그에 기록하여 투명성을 확보하기 위해 사용하는 시스템 속성은 **`glide.sys.log_impersonation`**입니다.\n*   **보안 감사**: 이 속성을 `true`로 설정하면 누가 누구를 가장했는지, 언제 가장을 시작하고 마쳤는지가 `sys_log` 테이블에 명확히 기록됩니다.\n*   **거버넌스**: 고권한 계정의 대리 수행 활동을 추적해야 하는 엔터프라이즈 보안 환경에서 매우 중요한 감사 설정입니다."
   },
   {
-    "id": 234,
+    "id": 233,
     "title": "When importing spreadsheet data into ServiceNow, what is the first step in the process?",
     "options": [
       {
@@ -6497,7 +6471,7 @@
     "explanation": "ServiceNow에서 스프레드시트 데이터를 가져오는 전체 프로세스의 기술적 시작점은 **임포트 세트(Import Set) 생성**입니다.\n*   **상세 단계**: 사용자가 **Load Data** 모듈을 통해 파일을 업로드하면, 시스템은 내부적으로 데이터를 임시 적재할 임포트 세트 테이블(Staging Table)을 생성하고 레코드를 로드합니다.\n*   **프로세스 흐름**: 1. 데이터 로드(임포트 세트 생성) -> 2. 변환 맵(Transform Map) 생성/선택 -> 3. 변환 실행(Transform).\n*   **주의**: '데이터 소스 정의'가 논리적으로 먼저일 수 있으나, 단순 파일 업로드 방식에서는 데이터 로드 시점에 세트 생성이 동시에 이루어집니다."
   },
   {
-    "id": 235,
+    "id": 234,
     "title": "What are the three key tables in an enterprise CMDB? Choose 3 answers.",
     "options": [
       {
@@ -6533,7 +6507,7 @@
     "explanation": "엔터프라이즈급 CMDB 아키텍처를 구성하는 3대 핵심 테이블은 다음과 같습니다.\n1.  **cmdb (A)**: CMDB 계층 구조의 최상위 베이스 테이블입니다.\n2.  **cmdb_ci (F)**: 실제 구성 항목(CI)들의 개별 속성 정보가 담기는 마스터 테이블입니다.\n3.  **cmdb_rel_ci (C)**: CI와 CI 간의 의존 관계(Relationship) 정보를 전문적으로 저장하는 테이블입니다.\n*   **CSDM 연관**: 이 테이블들은 공통 서비스 데이터 모델(CSDM)의 기술적 근간이 되어 서비스 영향도 분석과 자산 관리를 지원합니다."
   },
   {
-    "id": 236,
+    "id": 235,
     "title": "On what part of the ServiceNow instance, would you find the option to access applications, like Incident Management?",
     "options": [
       {
@@ -6559,7 +6533,7 @@
     "explanation": "**애플리케이션 내비게이터(Application Navigator)**는 ServiceNow Classic UI의 좌측 패널에 위치하며, 사용자가 권한을 가진 모든 애플리케이션과 모듈에 접근할 수 있는 메인 내비게이션 도구입니다.\n*   **구성 요소**: 필터 내비게이터(검색), 즐겨찾기(Favorites), 최근 기록(History) 탭을 포함합니다.\n*   **역할 기반 가시성**: 사용자가 가진 역할(Role)에 따라 탐색창에 나타나는 메뉴가 동적으로 필터링됩니다."
   },
   {
-    "id": 237,
+    "id": 236,
     "title": "When creating a new notification, what must you define? Choose 3 answers",
     "options": [
       {
@@ -6591,7 +6565,7 @@
     "explanation": "효과적인 **알림(Notification)** 구성을 위해 관리자는 소위 '3W'라고 불리는 핵심 요소를 반드시 정의해야 합니다.\n1.  **When to send (C)**: 어떤 레코드의 변화나 시스템 이벤트가 발생했을 때 발송할 것인가? (조건).\n2.  **Who receives (D)**: 누가 이 정보를 받아야 하는가? (수신자).\n3.  **What it says (A)**: 어떤 제목과 본문 내용을 전달할 것인가? (콘텐츠).\n*   **참고**: 이메일 템플릿을 활용하여 'What it says' 부분을 표준화할 수 있습니다."
   },
   {
-    "id": 238,
+    "id": 237,
     "title": "What table acts as a staging area for records imported from a data source?",
     "options": [
       {
@@ -6617,7 +6591,7 @@
     "explanation": "**임포트 세트 테이블(Import Set Row Table)**은 외부에서 유입된 데이터를 최종 타겟 테이블로 옮기기 전에 보관하는 **임시 스테이징 영역(Staging Area)**입니다.\n*   **역할**: 원본 데이터의 형태를 그대로 유지하면서, 변환 맵(Transform Map)을 통해 데이터 정제 및 매핑 작업을 수행할 수 있는 안전한 작업 공간을 제공합니다.\n*   **특징**: 데이터 로드 작업마다 고유한 임포트 세트 번호가 부여되어 관리됩니다."
   },
   {
-    "id": 239,
+    "id": 238,
     "title": "On a form, which type of field has this icon which can be clicked to see a preview of the associated record?",
     "options": [
       {
@@ -6651,7 +6625,7 @@
     "explanation": "**참조(Reference)** 필드 옆에 표시되는 'i' 모양의 아이콘을 클릭하면, 화면을 이동하지 않고도 연결된 대상 레코드의 핵심 정보를 팝업 형태로 미리 볼 수 있습니다.\n*   **기능**: 이를 **Reference Icon Preview**라고 하며, 클릭 시 대상 레코드의 뷰(View) 중 'sys_popup' 뷰에 설정된 필드들이 나타납니다.\n*   **장점**: 사용자가 문맥을 유지하면서 연관된 데이터(예: 요청자의 상세 연락처)를 신속하게 확인하게 해줍니다."
   },
   {
-    "id": 240,
+    "id": 239,
     "title": "Which admin role is required to make changes to High Security Settings?",
     "options": [
       {
@@ -6677,7 +6651,7 @@
     "explanation": "ACL(Access Control List) 수정 등 인스턴스의 보안 근간을 설정하는 **High Security Settings**에 접근하려면 **`security_admin`** 역할이 필수적입니다.\n*   **역할 상승 (Elevated Role)**: 이 역할은 로그인 시 자동으로 활성화되지 않으며, 사용자가 명시적으로 'Elevate Roles' 메뉴를 통해 활성화해야 사용할 수 있습니다.\n*   **보안 가드레일**: 세션 기반으로 작동하며, 브라우저를 닫거나 로그아웃하면 자동으로 해제되어 권한 오남용을 방지합니다."
   },
   {
-    "id": 241,
+    "id": 240,
     "title": "What action would an administrator perform on a list if they wanted to show the records in groups, based on the Category column? (Choose 2 answers)",
     "options": [
       {
@@ -6708,7 +6682,7 @@
     "explanation": "리스트 뷰에서 특정 필드를 기준으로 레코드들을 시각적으로 묶어주는 **그룹화(Group By)** 기능은 다음 두 경로를 통해 수행할 수 있습니다.\n1.  **Context Menu (A)**: 컬럼 헤더의 햄버거 아이콘이나 우클릭 메뉴에서 'Group By [필드명]'을 선택합니다.\n2.  **Group 아이콘 (D)**: 리스트 상단 제어 바에 있는 그룹화 아이콘을 클릭하여 기준 필드를 선택합니다.\n*   **특징**: 그룹화는 데이터의 물리적 위치를 바꾸는 것이 아니라, 현재 뷰에서만 데이터를 논리적으로 분류하여 가독성을 높이는 개인화 도구입니다."
   },
   {
-    "id": 242,
+    "id": 241,
     "title": "What features are available in Knowledge Management, to support continuous improvement on the knowledge articles? Choose 4 answers",
     "options": [
       {
@@ -6745,7 +6719,7 @@
     "explanation": "지식 관리(Knowledge Management)의 품질을 지속적으로 개선하기 위해 ServiceNow는 다양한 사용자 피드백 메커니즘을 제공합니다.\n1.  **Flag Article (E)**: 문서 내용에 오류가 있음을 알리고 검토를 요청합니다.\n2.  **Add Comments (B)**: 특정 정보에 대한 추가 질문이나 의견을 남깁니다.\n3.  **Rate with Stars (F)**: 1~5점 척도로 문서의 전반적인 만족도를 평가합니다.\n4.  **Tag as Helpful (D)**: 'Helpful? Yes/No' 버튼을 통해 문서가 실질적인 문제 해결에 도움이 되었는지 투표합니다.\n*   **거버넌스**: 이러한 데이터는 지식 관리자에게 전달되어 지식 자산의 수명 주기를 관리하는 중요한 인사이트가 됩니다."
   },
   {
-    "id": 243,
+    "id": 242,
     "title": "A form displays information about one record at the top, for example a User, Additional records, which are associated with that User, are displayed on tabs at the bottom of the form. What are those tabs called?",
     "options": [
       {
@@ -6771,7 +6745,7 @@
     "explanation": "**관련 리스트(Related Lists)**는 현재 보고 있는 레코드와 참조 관계(Relationship)를 맺고 있는 다른 테이블의 레코드들을 폼 하단에 목록으로 표시하는 기능입니다.\n*   **데이터 연결**: 예를 들어, 사용자(User) 폼 하단에 해당 사용자가 보유한 '자산(Assets)'이나 '할당된 인시던트' 목록을 탭 형태로 보여줍니다.\n*   **기능**: 사용자는 관련 리스트에서 레코드를 조회, 추가하거나 편집할 수 있으며, 폼을 벗어나지 않고도 연관된 데이터를 관리할 수 있어 업무 효율성을 높입니다.\n*   **구분**: **Related Links**는 실행 가능한 액션이나 특정 페이지로 이동하는 링크인 반면, **Related Lists**는 실제 데이터 레코드의 집합입니다."
   },
   {
-    "id": 244,
+    "id": 243,
     "title": "A user is complaining that they are seeing a blank page, when they click Create New, from your custom Inventory application. You have confirmed that they can see the Inventory application, and the Create New module on the application navigator. What could be the cause of this issue?",
     "options": [
       {
@@ -6801,7 +6775,7 @@
     "explanation": "ServiceNow 보안 모델인 **ACL(Access Control List)**은 테이블 및 필드 수준에서 매우 엄격한 권한 제어를 수행합니다.\n*   **가시성 vs 편집 권한**: 사용자가 내비게이터에서 모듈을 볼 수 있는 것은 '역할(Role)' 기반의 UI 제어 덕분이지만, 실제 레코드 생성 폼을 열었을 때 내용이 보이지 않거나 오류가 발생하는 것은 데이터베이스 수준의 **Create** 또는 **Write** ACL 권한이 없기 때문입니다.\n*   **진단**: 관리자는 해당 테이블의 ACL 설정을 확인하여 사용자가 적절한 역할을 가지고 있는지, 혹은 특정 조건에 의해 쓰기 권한이 제한되고 있는지 점검해야 합니다."
   },
   {
-    "id": 245,
+    "id": 244,
     "title": "You are looking at a list of Active incidents. You want to exclude incidents with the state of Resolved. How might you do that?",
     "options": [
       {
@@ -6831,7 +6805,7 @@
     "explanation": "리스트 뷰에서 불필요한 데이터를 빠르게 걸러내기 위해 사용하는 가장 효율적인 방법은 **Filter Out (필터링 제외)** 기능입니다.\n*   **사용법**: 리스트 상의 특정 값(예: 'Resolved') 위에서 마우스 우클릭 후 해당 옵션을 선택합니다.\n*   **브레드크럼**: 이 작업을 수행하면 리스트 상단의 필터 경로(Breadcrumb)에 'State != Resolved'와 같은 조건이 즉시 추가됩니다.\n*   **생산성**: 복잡한 조건 빌더를 수동으로 조작하는 대신, 눈에 보이는 데이터를 기준으로 즉각적인 데이터 정제가 가능합니다."
   },
   {
-    "id": 246,
+    "id": 245,
     "title": "After you create a new table, what is the best practice regarding the navigation pane? Choose 2 answers",
     "options": [
       {
@@ -6866,7 +6840,7 @@
     "explanation": "새로운 커스텀 테이블을 생성한 후 내비게이션을 정리할 때는 이름 규칙을 맞추는 것이 일반적인 베스트 프랙티스입니다.\n1.  **Application Menu (E)**: 애플리케이션 메뉴 이름은 테이블 레이블과 동일하게 맞춰, 사용자가 기능 범위를 바로 인지할 수 있게 합니다.\n2.  **Module (F)**: 모듈 이름은 보통 테이블 레이블의 복수형을 사용해, 해당 테이블의 레코드 목록임을 분명히 합니다.\n*   **이점**: 내비게이터에서 테이블과 메뉴의 대응 관계가 명확해져 검색성과 유지보수성이 좋아집니다."
   },
   {
-    "id": 247,
+    "id": 246,
     "title": "What are advantages of using Flow Designer? (Choose three.)",
     "options": [
       {
@@ -6898,7 +6872,7 @@
     "explanation": "**플로우 디자이너(Flow Designer)**는 기존 워크플로우 엔진을 대체하는 차세대 프로세스 자동화 도구로 다음과 같은 명확한 이점을 제공합니다.\n*   **기술 부채 감소 (C)**: 로코드(Low-code) 기반의 구성을 통해 복잡한 스크립트 의존도를 낮춰 업그레이드와 유지보수를 용이하게 합니다.\n*   **수작업 스크립트 최소화 (D)**: 드래그 앤 드롭 방식의 직관적인 인터페이스와 자연어 문장 구성을 통해 비개발자도 자동화 로직을 이해하고 구축할 수 있습니다.\n*   **통합 용이성 (E)**: **Spoke**를 활용하여 외부 서드파티 시스템(Slack, Jira 등)과의 연동을 표준화된 방식으로 신속하게 구현할 수 있습니다."
   },
   {
-    "id": 248,
+    "id": 247,
     "title": "Which tables are available by default in a ServiceNow instance? Choose 3 answers",
     "options": [
       {
@@ -6934,7 +6908,7 @@
     "explanation": "ServiceNow 플랫폼 설치 시 기본으로 제공되는 핵심 **코어 테이블(Core Tables)**입니다.\n*   **User (A)**: 모든 사용자 계정 정보가 담기는 `sys_user` 테이블.\n*   **Task (F)**: 플랫폼 전반의 모든 작업(Task) 프로세스의 근간이 되는 `task` 테이블.\n*   **Incident (B)**: IT 서비스 관리의 핵심인 인시던트 정보를 처리하는 `incident` 테이블.\n*   **아키텍처**: 이러한 테이블들은 플랫폼의 기반 데이터(Foundational Data)와 핵심 워크플로우를 구성하며, 다른 모든 커스텀 기능의 시작점이 됩니다."
   },
   {
-    "id": 249,
+    "id": 248,
     "title": "When using Flow Designer what is the Flow Execution initiated by?",
     "options": [
       {
@@ -6960,7 +6934,7 @@
     "explanation": "**플로우 디자이너(Flow Designer)** 아키텍처에서 자동화 로직의 실행을 촉발하는 첫 번째 단계를 **트리거(Trigger)**라고 합니다.\n*   **유형**:\n    1. **레코드 기반**: 레코드의 생성, 업데이트, 삭제 시 실행.\n    2. **일정 기반**: 특정 시간이나 주기에 따라 실행.\n    3. **애플리케이션 기반**: 인스턴스 외부나 앱의 특정 이벤트 발생 시 실행.\n*   **구조**: 트리거가 만족되면 이후 정의된 일련의 **액션(Actions)**들이 순차적으로 수행됩니다."
   },
   {
-    "id": 250,
+    "id": 249,
     "title": "A colleague wants to rearrange the columns on their My Work list. Once the user has navigated to the list where should they navigate to select and arrange the columns?",
     "options": [
       {
@@ -6986,7 +6960,7 @@
     "explanation": "ServiceNow 리스트 뷰에서 컬럼의 구성(추가, 제거, 순서 변경)을 시스템 수준에서 영구적으로 수정하려면 **List Layout** 설정을 사용합니다.\n*   **접근 경로**: 리스트의 컬럼 헤더(컬럼명 영역)를 우클릭 -> **Configure > List Layout** 선택.\n*   **UI 도구**: 슬러시버킷(Slushbucket) 인터페이스를 통해 사용 가능한 필드를 선택하고 상하 이동 버튼으로 표시 순서를 조정합니다.\n*   **개인화와의 차이**: 톱니바퀴(Gear) 아이콘을 통한 개인화는 '본인'에게만 적용되지만, `Configure` 메뉴를 통한 변경은 해당 뷰를 사용하는 **모든 사용자**에게 영향을 미칩니다."
   },
   {
-    "id": 251,
+    "id": 250,
     "title": "A manager wants to view a snapshot of month-end Sales performance data, as compared to Sales targets. In addition, the manager wants to be able to see those monthly numbers trended over time, and forecasted into the future. What capability do you suggest for this manager?",
     "options": [
       {
@@ -7016,7 +6990,7 @@
     "explanation": "**성능 분석(Performance Analytics, PA)**은 단순한 시점 보고(Reporting)를 넘어 비즈니스 가치를 도출하는 고도화된 분석 도구입니다.\n*   **주요 기능**: 데이터의 장기적인 **추세(Trending)** 파악, 목표치(Targets) 대비 실적 비교, 그리고 과거 데이터를 바탕으로 한 **미래 예측(Forecasting)**을 지원합니다.\n*   **비교**: 보고서가 '현재 인시던트가 몇 개인가?'를 묻는다면, PA는 '우리의 해결 속도가 지난 6개월간 개선되었는가?'에 대한 답을 제공합니다."
   },
   {
-    "id": 252,
+    "id": 251,
     "title": "What component of the ServiceNow infrastructure defines every table and field in the system?",
     "options": [
       {
@@ -7046,7 +7020,7 @@
     "explanation": "**시스템 딕셔너리(System Dictionary)**는 ServiceNow 데이터베이스의 설계도와 같은 역할을 하는 마스터 테이블(`sys_dictionary`)입니다.\n*   **메타데이터 관리**: 인스턴스 내 모든 테이블과 필드의 데이터 타입, 길이, 기본값, 참조 관계, 종속성 등을 정의합니다.\n*   **플랫폼 영향**: 여기서 설정된 속성은 폼(Form)의 표시 방식, API 통신, 그리고 데이터 무결성 검증의 기준이 됩니다."
   },
   {
-    "id": 253,
+    "id": 252,
     "title": "A manager is complaining that they can't get the data they need on a report because the data resides in two different tables. This data is used for many different reports in their department. You have checked to see if dot-walking will meet the requirement, and it is not possible. What else might you try to help this manager?",
     "options": [
       {
@@ -7076,7 +7050,7 @@
     "explanation": "**데이터베이스 뷰(Database View)**는 여러 테이블에 분산된 데이터를 논리적으로 결합하여 하나의 가상 테이블처럼 조회할 수 있게 해주는 기능입니다.\n*   **활용 시나리오**: 참조(Reference) 관계가 아니어서 **닷워킹(Dot-Walking)**이 불가능한 테이블 간의 데이터를 결합하거나, 복잡한 SQL 'JOIN' 연산이 필요한 보고서를 생성할 때 필수적입니다.\n*   **특징**: 읽기 전용(Read-only) 인터페이스를 제공하며, 표준 보고서 디자이너에서 데이터 소스로 선택하여 사용할 수 있습니다."
   },
   {
-    "id": 254,
+    "id": 253,
     "title": "Which storefront is a single location for accessing pre-built spokes to quickly integrate with third-party services to build and share content?",
     "options": [
       {
@@ -7102,7 +7076,7 @@
     "explanation": "**ServiceNow Store**는 ServiceNow와 서드파티 파트너사들이 개발한 애플리케이션, 통합 솔루션, 그리고 **Spoke**를 배포하고 구매할 수 있는 공식 엔터프라이즈 마켓플레이스입니다.\n*   **생태계**: 검증된 사전 빌드된 Spoke를 통해 Jira, Slack, Microsoft Teams 등과의 연동을 복잡한 코딩 없이 신속하게 인스턴스에 추가할 수 있습니다.\n*   **이점**: 개발 시간을 단축하고 업계 표준의 모범 사례가 반영된 기능을 즉시 도입할 수 있게 돕습니다."
   },
   {
-    "id": 255,
+    "id": 254,
     "title": "When importing spreadsheet data into ServiceNow, in which step does the data get written to the receiving table?",
     "options": [
       {
@@ -7132,7 +7106,7 @@
     "explanation": "ServiceNow 데이터 임포트 흐름에서 데이터가 최종 **받는 테이블(receiving table)**에 기록되는 단계는 **Run Transform**입니다.\n*   **단계별 구분**:\n    1. **Load Data**: 외부 파일을 **임포트 세트 테이블(Staging Table)**에 적재합니다.\n    2. **Transform Map**: 소스와 타겟 필드 간 매핑 규칙을 정의합니다.\n    3. **Run Transform**: 설정된 맵을 실행하여 스테이징 데이터가 최종 목적지 테이블에 쓰입니다.\n*   **정리**: 보기 중 실제 ServiceNow 용어와 맞는 것은 **A**입니다."
   },
   {
-    "id": 256,
+    "id": 255,
     "title": "While testing a Catalog Item for ordering an expensive computer, the mandatory approval is being skipped for requester Bob, Smith, but not for any of the other requesters. What could explain the issue?",
     "options": [
       {
@@ -7162,7 +7136,7 @@
     "explanation": "관리자 승인 흐름에서 특정 요청자에게만 승인이 생략된다면, 가장 먼저 해당 사용자의 **매니저 정보가 올바르게 설정되어 있는지** 확인해야 합니다.\n*   **핵심 원인**: 요청자 사용자 레코드에 매니저가 없으면, 매니저 승인 라우팅이 정상적으로 생성되지 않을 수 있습니다.\n*   **비교**: 다른 요청자에게는 승인 절차가 정상 동작한다면, 전역 로직 문제보다 **개별 사용자 데이터** 문제를 먼저 의심하는 것이 맞습니다.\n*   **정리**: 이 문항의 출제 의도는 승인 예외 처리보다 **사용자 레코드의 manager 필드 누락**을 식별하는 것입니다."
   },
   {
-    "id": 257,
+    "id": 256,
     "title": "Which ServiceNow utility provides a modern interactive graphical interface to visualize configuration items and their relationship?",
     "options": [
       {
@@ -7188,7 +7162,7 @@
     "explanation": "CMDB 내 구성 항목(CI)과 그 관계를 시각적으로 보여주는 ServiceNow 유틸리티는 **Dependency View**입니다.\n*   **출제 의도**: 특정 CI가 어떤 다른 CI에 의존하는지, 그리고 장애가 상위 서비스에 어떤 영향을 주는지 파악할 수 있는지 확인합니다.\n*   **정리**: 보기 중 `Dependency View`가 실제 플랫폼 용어와 가장 정확히 맞습니다."
   },
   {
-    "id": 258,
+    "id": 257,
     "title": "Which low components allow you to specify when a flow should be run?",
     "options": [
       {
@@ -7218,7 +7192,7 @@
     "explanation": "**플로우 디자이너(Flow Designer)**에서 자동화 로직의 실행 여부를 결정하는 두 핵심 요소는 **트리거(Trigger)**와 **조건(Condition)**입니다.\n*   **Trigger**: '언제(When)' 실행할 것인가를 정의합니다 (예: 레코드 생성, 특정 시간).\n*   **Condition**: 트리거가 발생한 후 실제 액션들을 수행하기 위해 만족해야 하는 '세부 필드 상태'를 정의합니다.\n*   **구조**: 트리거가 감지되어도 내부 조건이 '거짓(False)'이면 플로우는 중단됩니다."
   },
   {
-    "id": 259,
+    "id": 258,
     "title": "What section on a task record is used to see the most recent updates made to a record?",
     "options": [
       {
@@ -7244,7 +7218,7 @@
     "explanation": "ServiceNow 태스크 레코드의 폼에서 변경 사항을 실시간으로 추적하는 가장 강력한 UI 요소는 **활동 스트림(Activity Stream / Activity Formatter)**입니다.\n*   **통합 뷰**: 작업 메모(Work notes), 고객 댓글(Additional comments), 그리고 필드 값의 변화 이력(Audit)을 시간순으로 정렬하여 대화형 피드 형태로 보여줍니다.\n*   **협업**: 담당자들은 이 스트림을 통해 과거의 맥락을 빠르게 파악하고 팀원 및 고객과 소통할 수 있습니다."
   },
   {
-    "id": 260,
+    "id": 259,
     "title": "What types of entities can receive task assignments, in ServiceNow? Choose 2 answers",
     "options": [
       {
@@ -7271,7 +7245,7 @@
     "explanation": "ServiceNow 플랫폼 아키텍처에서 태스크(Task)를 할당받아 이행할 수 있는 주체는 **사용자(Users)**와 **그룹(Groups)**입니다.\n1.  **Assignment Group (A)**: 작업의 책임을 공유하는 논리적 단위입니다. 일반적으로 팀 단위로 일을 먼저 배정합니다.\n2.  **Assigned to (B)**: 그룹 내에서 실제 업무를 수행할 개별 실무자입니다.\n*   **베스트 프랙티스**: 모든 작업은 먼저 적절한 '그룹'에 배정되어야 하며, 이후 그룹 멤버 중 한 명에게 세부 할당되는 프로세스가 권장됩니다."
   },
   {
-    "id": 261,
+    "id": 260,
     "title": "You have been asked to create a way for users to order a new iPhone, but only if they get two levels of approval. The approvers and users should be automatically notified at each approval level. What feature would you use to manage the approvals and notifications?",
     "options": [
       {
@@ -7301,7 +7275,7 @@
     "explanation": "**승인 기준(Approval Criteria)**은 특정 조건에 따라 승인 프로세스를 트리거하고 제어하는 정책 세트입니다.\n*   **복합 승인**: 문제와 같이 다단계(Two levels) 승인이 필요한 경우, 각 단계별 승인자 그룹과 조건을 정의하여 프로세스를 자동화합니다.\n*   **알림 연동**: 승인 요청이 생성되거나 상태가 변경될 때 관련 사용자에게 자동으로 이메일이나 푸시 알림을 보내는 비즈니스 로직을 포함합니다.\n*   **참고**: 현대적인 ServiceNow 아키텍처에서는 이러한 로직을 **플로우 디자이너(Flow Designer)**를 통해 구현하는 것이 표준입니다."
   },
   {
-    "id": 262,
+    "id": 261,
     "title": "You are editing a new incident record and would like the Save button to be located on the Form header. Which action would need to be taken for that button to appear?",
     "options": [
       {
@@ -7327,7 +7301,7 @@
     "explanation": "ServiceNow 폼에서 'Save' 버튼의 가시성은 인스턴스 전역의 **UI 속성(UI Properties)** 설정을 통해 제어됩니다.\n*   **설정 경로**: `System Properties > UI Properties` 모듈에서 관련 속성(예: 'Show the Save button on the form header')을 활성화합니다.\n*   **Submit vs Save**: 'Submit'은 레코드를 생성/업데이트하고 목록으로 돌아가지만, 'Save'는 변경사항을 저장하면서 현재 폼에 계속 머물게 합니다. 이는 대규모 데이터 입력 작업 시 생산성을 높여줍니다."
   },
   {
-    "id": 263,
+    "id": 262,
     "title": "From a form, what would you click to modify the order of the fields on the form? Choose 2 answers",
     "options": [
       {
@@ -7355,10 +7329,10 @@
       "A",
       "D"
     ],
-    "explanation": "Field order on a form can be changed with Form Layout or Form Designer.\n*   Correct answers (A, D): Both are valid configuration paths for arranging fields on a form.\n*   Distractors: The other options use incorrect menu paths or point to UX Dashboard configuration, which is unrelated to form field ordering."
+    "explanation": "폼에서 필드의 표시 순서를 변경할 때는 **Form Layout** 또는 **Form Designer**를 사용할 수 있습니다.\n*   **정답 이유 (A, D)**: `Configure > Form Layout`은 슬러시버킷 방식으로 필드 순서를 조정하고, `Configure > Form Designer`는 시각적 편집 화면에서 필드와 섹션을 배치합니다.\n*   **오답 구분**: `Form > Layout`처럼 부정확한 경로나 List Layout은 폼 필드 순서 변경과 직접 관련이 없습니다.\n*   **시험 포인트**: List Layout은 리스트 컬럼, Form Layout/Form Designer는 폼 필드 배치에 사용된다는 구분이 핵심입니다."
   },
   {
-    "id": 264,
+    "id": 263,
     "title": "The testing team needs to be able to perform activities in the test instance, as though they are a member of the Service Desk group. What role would they need to be able to switch between user accounts, without logging out and back in?",
     "options": [
       {
@@ -7384,7 +7358,7 @@
     "explanation": "**사용자 가장(User Impersonation)** 기능은 지원팀이나 개발자가 로그아웃 없이 다른 사용자의 권한과 UI 환경을 대리 수행할 수 있게 해주는 도구입니다.\n*   **필요 역할**: 이 기능을 사용하기 위해서는 **`impersonator`** 역할이나 `admin` 역할이 부여되어야 합니다.\n*   **테스트 최적화**: 특정 그룹(예: Service Desk) 멤버의 시각에서 ACL이나 UI Policy가 의도대로 작동하는지 검증할 때 필수적입니다.\n*   **감사**: 모든 가장 활동은 시스템 로그에 기록되어 보안 투명성을 유지합니다."
   },
   {
-    "id": 265,
+    "id": 264,
     "title": "When you are viewing a record, like an incident, how can you detect if someone else is also actively working on the Incident? (Choose 2 answers)",
     "options": [
       {
@@ -7415,7 +7389,7 @@
     "explanation": "ServiceNow는 다수의 사용자가 동시에 동일한 레코드를 작업할 때 발생할 수 있는 충돌을 방지하고 협업을 돕기 위해 **사용자 존재(User Presence)** 기능을 제공합니다.\n1.  **Presence Icon (E)**: 폼 헤더 우측에 현재 해당 레코드를 열람 중인 사용자들의 이니셜 아이콘이 표시됩니다.\n2.  **Field Indicator (B)**: 다른 사용자가 특정 필드 값을 수정하고 있으면 해당 필드 옆에 표시가 나타나 실시간 변경 사항을 알려줍니다.\n*   **가치**: 이를 통해 데이터 덮어쓰기 위험을 줄이고 팀 간 실시간 협업(Form Collaboration)을 촉진합니다."
   },
   {
-    "id": 266,
+    "id": 265,
     "title": "Groups are stored in what table?",
     "options": [
       {
@@ -7445,7 +7419,7 @@
     "explanation": "ServiceNow 플랫폼의 기반 데이터(Foundational Data) 아키텍처에서 **그룹(Group)** 정보는 **`sys_user_group`** 테이블에 물리적으로 저장됩니다.\n*   **그룹의 역할**: 역할(Roles)을 부여받는 논리적 단위이며, 태스크 할당 및 알림 수신의 대상이 됩니다.\n*   **명명 규칙**: 시스템 테이블은 `sys_` 접두사를 가지며, 사용자(`sys_user`), 역할(`sys_user_role`)과 함께 권한 체계의 핵심 트리오를 형성합니다."
   },
   {
-    "id": 267,
+    "id": 266,
     "title": "A customer has asked for the following updates to a form: *Make Resolution code mandatory, admin state is changed to Resolved.* Hide major incident check box, unless logged in user has Major incident Manager role What type of rules (s) would you use to implement this requirement?",
     "options": [
       {
@@ -7475,7 +7449,7 @@
     "explanation": "**UI 정책(UI Policy)**은 폼 수준에서 조건에 따라 필드의 동작을 동적으로 제어하는 가장 효율적인 **노코드(No-code)** 도구입니다.\n*   **동적 제어**: '상태가 Resolved로 바뀔 때 해결 코드 필수(Mandatory) 지정', '특정 역할이 없을 때 필드 숨김(Hidden)'과 같은 복잡한 UI 로직을 스크립트 없이 구현할 수 있습니다.\n*   **클라이언트 측 실행**: 브라우저에서 즉각 실행되어 사용자에게 실시간 피드백을 제공하므로 사용자 경험(UX) 향상에 최적화되어 있습니다."
   },
   {
-    "id": 268,
+    "id": 267,
     "title": "Access controls are evaluated in this order: *1. Match object against table ACL* 2, Match the object against field ACL Within step 1 above, what order are the table ACLs evaluated?",
     "options": [
       {
@@ -7505,7 +7479,7 @@
     "explanation": "ServiceNow의 **접근 제어(ACL)** 평가 엔진은 보안을 위해 **가장 구체적인 규칙에서 가장 일반적인 규칙으로(Most Specific to Most General)** 순차 탐색합니다.\n*   **평가 순서**: \n    1. **Table ACL**: 해당 테이블에 명시된 규칙.\n    2. **Parent Table ACL**: 부모 테이블로부터 상속받은 규칙.\n    3. **Wildcard (*) ACL**: 모든 테이블에 적용되는 전역 규칙.\n*   **가드레일**: 시스템은 상위 계층인 테이블 수준 ACL을 통과한 경우에만 하위 계층인 필드 수준 ACL을 평가하여 최종 접근 허용 여부를 결정합니다."
   },
   {
-    "id": 269,
+    "id": 268,
     "title": "When importing data from a spreadsheet, which step defines where the incoming data columns will be written in the receiving table?",
     "options": [
       {
@@ -7535,7 +7509,7 @@
     "explanation": "**변환 맵(Transform Map)**은 임포트 세트(Import Set)의 소스 데이터와 ServiceNow의 타겟 테이블 간의 연결 고리를 정의하는 핵심 매핑 도구입니다.\n*   **필드 매핑**: 소스의 'Column A'가 타겟 테이블의 'Field B'에 저장되도록 데이터의 이동 경로를 명시합니다.\n*   **데이터 변환**: 단순히 데이터를 옮기는 것을 넘어, 스크립트나 매핑 규칙을 통해 소스 데이터를 타겟 환경에 맞는 형식으로 가공(Transformation)하는 역할을 수행합니다."
   },
   {
-    "id": 270,
+    "id": 269,
     "title": "What tool is used to import data from various data sources, and map that data into ServiceMow tables?",
     "options": [
       {
@@ -7561,7 +7535,7 @@
     "explanation": "**임포트 세트(Import Set)**는 다양한 외부 데이터 소스(Excel, CSV, XML, JDBC 등)로부터 데이터를 가져와 ServiceNow 테이블에 매핑하고 적재하기 위한 플랫폼의 표준 프레임워크입니다.\n*   **스테이징 영역**: 데이터는 최종 목적지 테이블로 들어가기 전, 임포트 세트 테이블(Staging Table)에 임시로 적재됩니다.\n*   **데이터 소스**: 데이터가 어디서 오는지(파일, 외부 DB 등)를 정의하며, 변환 맵(Transform Map)을 통해 데이터 정제 및 필드 연결을 수행합니다."
   },
   {
-    "id": 271,
+    "id": 270,
     "title": "Which field (or fields) is used as a unique key during imports?",
     "options": [
       {
@@ -7587,7 +7561,7 @@
     "explanation": "**병합 필드(Coalesce Fields)**는 데이터 임포트 시 중복을 방지하기 위해 사용되는 '고유 식별자' 역할을 합니다.\n*   **매칭 성공**: 임입 데이터의 병합 필드 값이 타겟 테이블의 기존 레코드와 일치하면, 시스템은 새 레코드를 만들지 않고 기존 레코드를 **업데이트(Update)**합니다.\n*   **매칭 실패**: 일치하는 값이 없으면 시스템은 이를 새로운 항목으로 간주하여 **신규 생성(Insert)**합니다.\n*   **데이터 무결성**: 데이터 정합성을 유지하기 위해 사번, 이메일, 자산 번호 등 고유한 비즈니스 키를 병합 필드로 지정하는 것이 필수적입니다."
   },
   {
-    "id": 272,
+    "id": 271,
     "title": "What is the definition of a group?",
     "options": [
       {
@@ -7617,7 +7591,7 @@
     "explanation": "ServiceNow 플랫폼에서 **그룹(Groups)**은 **`sys_user_group`** 테이블에 저장되는 레코드이며, 공통의 역할이나 업무 맥락을 공유하는 사용자들의 논리적 집합입니다.\n*   **역할**: 그룹은 권한 관리(Roles 부여), 태스크 배정(Assignment Rules), 그리고 알림 수신의 기본 단위가 됩니다.\n*   **베스트 프랙티스**: 권한 관리를 효율화하기 위해 개별 사용자에게 역할을 직접 주기보다, 역할을 그룹에 부여하고 사용자를 해당 그룹의 멤버로 포함시키는 방식(RBAC)이 권장됩니다."
   },
   {
-    "id": 273,
+    "id": 272,
     "title": "Tables may be set up with Many to Many relationships. What is a classic example of a scenario where the tables would have many to many relationships?",
     "options": [
       {
@@ -7643,7 +7617,7 @@
     "explanation": "**다대다(Many-to-Many, M2M)** 관계는 한 테이블의 여러 레코드가 다른 테이블의 여러 레코드와 동시에 연결될 수 있는 관계형 데이터 모델입니다.\n*   **실례**: 본 문항의 예시처럼 한 업체(Vendor)는 여러 제품을 판매할 수 있고, 하나의 동일한 제품은 여러 업체에 의해 공급될 수 있습니다.\n*   **플랫폼 구현**: 시스템은 내부적으로 교차 테이블(Junction Table)을 생성하여 두 테이블 간의 관계 정보를 별도로 관리하며, 사용자에게는 양쪽 폼에서 서로를 **관련 리스트(Related List)**로 보여줍니다."
   },
   {
-    "id": 274,
+    "id": 273,
     "title": "What access does a user need to be able to import articles to a knowledge base?",
     "options": [
       {
@@ -7669,7 +7643,7 @@
     "explanation": "지식 관리(Knowledge Management)에서 문서를 생성하거나 대량으로 가져오기(Import) 위해서는 해당 지식 기반(Knowledge Base) 수준에서 정의된 **기여 권한(`Can contribute`)**이 반드시 필요합니다.\n*   **보안 제어**: 지식 접근 권한은 **사용자 기준(User Criteria)**을 통해 설정됩니다.\n*   **권한 계층**: 'Can Read' 권한만 가진 사용자는 문서 검색과 열람만 가능하며, 지식 자산의 수명 주기(작성, 수정, 은퇴)에 참여하려면 기여(Contribute) 권한이 명시되어 있어야 합니다."
   },
   {
-    "id": 275,
+    "id": 274,
     "title": "What Service Catalog feature do you use to organize items into logical groups?",
     "options": [
       {
@@ -7695,7 +7669,7 @@
     "explanation": "Service Catalog에서 항목들을 주제별로 묶어 논리적 그룹을 만들 때는 **Categories**를 사용합니다.\n*   **출제 의도**: 카탈로그 항목을 사용자가 찾기 쉽게 분류하는 기능을 묻는 문항입니다.\n*   **구분**: `Variable Sets`는 여러 카탈로그 항목에서 재사용하는 공통 변수 묶음이고, 항목 분류 자체를 담당하는 기능은 아닙니다.\n*   **정리**: 따라서 정답은 **D**입니다."
   },
   {
-    "id": 276,
+    "id": 275,
     "title": "The Report Designer contains different sections for configuring your report. Which section is used to adjust the look of your report, including colors, files, and legend layout?",
     "options": [
       {
@@ -7721,7 +7695,7 @@
     "explanation": "보고서 디자이너(Report Designer)는 4단계의 설정 과정을 거치며, 마지막 단계인 **Style** 탭에서 보고서의 '룩앤필(Look and Feel)'을 조정합니다.\n*   **설정 항목**: 차트의 색상 팔레트 지정, 범례(Legend)의 표시 여부 및 위치, 데이터 레이블 추가, 소수점 자리수 등 시각화의 세부 속성을 정의합니다.\n*   **기타 단계**: Data(원본 선택) -> Type(시각화 유형 선택) -> Configure(데이터 그룹화 및 계산 설정) 순으로 진행됩니다."
   },
   {
-    "id": 277,
+    "id": 276,
     "title": "A department manager asks an analyst to build some reports. Where do you recommend the analyst start?",
     "options": [
       {
@@ -7751,7 +7725,7 @@
     "explanation": "분석가나 관리자가 인스턴스 데이터를 바탕으로 새로운 데이터 통찰을 생성하기 위해 가장 먼저 방문해야 할 모듈은 **Reports > Create New**입니다.\n*   **보고서 디자이너**: 이 모듈을 클릭하면 단계별 보고서 작성 도구가 열리며, 사용자는 코딩 없이도 드래그 앤 드롭 방식으로 원하는 데이터를 시각화할 수 있습니다.\n*   **공유**: 작성된 보고서는 대시보드에 게시하거나 특정 그룹 또는 전체 사용자에게 공유하여 협업에 활용할 수 있습니다."
   },
   {
-    "id": 278,
+    "id": 277,
     "title": "How is a user defined in ServiceNow?",
     "options": [
       {
@@ -7777,7 +7751,7 @@
     "explanation": "ServiceNow에서 사용자는 **`sys_user`** 테이블의 레코드로 정의됩니다.\n*   **표준 사용자 레코드**: 이름, 이메일, 부서, 위치 같은 사용자 마스터 데이터가 들어 있습니다.\n*   **구분**: `sys_user_preference`는 개별 사용자 환경설정, `sys_user_profile`은 표준 사용자 정의 테이블로 보지 않습니다.\n*   **정리**: 이 문항의 정답은 **D**입니다."
   },
   {
-    "id": 279,
+    "id": 278,
     "title": "To apply a UI Policy to all views, which field should be set to true in its definition record?",
     "options": [
       {
@@ -7803,7 +7777,7 @@
     "explanation": "**상속(`Inherit`)** 필드는 UI 정책(UI Policy)이나 데이터 정책의 규칙을 해당 테이블뿐만 아니라 이를 확장(Extend)한 하위 테이블이나 다양한 폼 뷰(Views)에 공통으로 적용하고자 할 때 사용됩니다.\n*   **일관성 유지**: 예를 들어 `task` 테이블에 설정된 정책을 `Inherit=true`로 설정하면, 인시던트나 변경 요청 등 모든 하위 업무 폼에서도 동일한 데이터 가드레일이 작동하도록 보장합니다.\n*   **참고**: 'Global' 체크박스는 특정 뷰에 국한되지 않고 모든 폼 뷰에서 정책이 실행되도록 하는 역할을 합니다."
   },
   {
-    "id": 280,
+    "id": 279,
     "title": "Which testing framework is used to test ServiceNow Applications?",
     "options": [
       {
@@ -7829,7 +7803,7 @@
     "explanation": "**자동화 테스트 프레임워크(ATF, Automated Test Framework)**는 수동 테스트의 번거로움을 줄이고 애플리케이션의 품질을 보장하기 위한 플랫폼 내장 도구입니다.\n*   **주요 용도**: 특히 인스턴스 **업그레이드** 시 기존 커스터마이징이 의도대로 작동하는지 확인하는 회귀 테스트(Regression Testing)에 필수적입니다.\n*   **기능**: 폼의 필드 값 입력, 버튼 클릭, 서버 측 로직 검증 등 사용자의 동작을 시나리오화하여 자동으로 수행합니다.\n*   **장점**: 테스트 환경을 자동으로 설정(Set up)하고 종료 후 데이터를 복구(Roll back)하여 인스턴스 데이터의 무결성을 유지합니다."
   },
   {
-    "id": 281,
+    "id": 280,
     "title": "Which actions would you take to edit the title on an application menu? (Choose 2 answers)",
     "options": [
       {
@@ -7860,7 +7834,7 @@
     "explanation": "애플리케이션 메뉴의 제목(Title)을 편집하는 방법은 관리의 편의성에 따라 두 가지 경로가 있습니다.\n1.  **Pencil 아이콘 (C)**: 애플리케이션 내비게이터에서 특정 앱 이름 옆의 연필 모양 아이콘을 클릭하여 UI 상에서 즉시 수정합니다.\n2.  **Application Menus 모듈 (D)**: `System Definition > Application Menus` 레코드를 직접 열어 상세 속성과 함께 타이틀을 변경합니다.\n*   **주의**: 이러한 변경은 시스템 전역의 설정이므로 해당 앱을 사용하는 모든 사용자의 내비게이터에 반영됩니다."
   },
   {
-    "id": 282,
+    "id": 281,
     "title": "One related list, which buttons are commonly used for managing the records on the list? Choose 3 answers",
     "options": [
       {
@@ -7892,7 +7866,7 @@
     "explanation": "**관련 리스트(Related Lists)** 하단에 위치한 표준 버튼들은 연관된 데이터를 관리하는 핵심 도구입니다.\n1.  **New (B)**: 현재 레코드와 연결된 **새로운 자식 레코드**를 즉시 생성합니다.\n2.  **Add/Edit (C, E)**: 시스템에 이미 존재하는 기존 레코드를 현재 레코드와 연결하거나 해제(Relationship)할 때 사용합니다.\n*   **구성**: 이 버튼들의 노출 여부는 'List Control' 설정을 통해 관리자가 조정할 수 있습니다."
   },
   {
-    "id": 283,
+    "id": 282,
     "title": "Which script can run when a record is displayed, inserted, updated, deleted, or when a table is queried?",
     "options": [
       {
@@ -7922,8 +7896,8 @@
     "explanation": "**비즈니스 규칙(Business Rules)**은 데이터베이스의 변화가 발생할 때 실행되는 가장 강력한 **서버 측(Server-side)** 로직입니다.\n*   **트리거 시점**: 레코드가 조회(Query), 표시(Display), 삽입(Insert), 수정(Update), 삭제(Delete)될 때 실행되도록 설정할 수 있습니다.\n*   **실행 가이드**: 폼 레이아웃의 실시간 변화보다는, 데이터의 물리적 정합성을 맞추거나 연관된 다른 테이블을 업데이트하는 등의 백엔드 처리에 주로 사용됩니다."
   },
   {
-    "id": 284,
-    "title": "What is the result of the order in which access controls are evaluated?",
+    "id": 283,
+    "title": "What is the result of the order in which Access Controls are evaluated?",
     "options": [
       {
         "text": "Ensures user has access to the fields in a table, before considering their access to the table",
@@ -7945,11 +7919,11 @@
     "answer": [
       "D"
     ],
-    "explanation": "ServiceNow의 **접근 제어(ACL)** 평가 엔진은 보안의 극대화를 위해 '가장 넓은 범위에서 좁은 범위로' 단계별 검증을 수행합니다.\n*   **평가 순서**: 항상 **테이블(Table) 수준**의 규칙을 가장 먼저 확인하며, 여기서 승인된 경우에만 개별 **필드(Field) 수준**의 규칙을 평가합니다.\n*   **보안 가드레일**: 만약 사용자가 테이블에 대한 접근 권한(None 또는 *)이 없다면, 필드 수준 ACL은 평가조차 되지 않고 모든 데이터 접근이 차단됩니다."
+    "explanation": "ServiceNow의 ACL 평가는 넓은 범위에서 좁은 범위로 진행되며, 테이블 접근이 먼저 확인된 뒤 필드 접근이 평가됩니다.\n*   **정답 이유 (D)**: 사용자가 테이블 수준 접근을 통과해야 그 테이블의 특정 필드 접근 여부를 평가할 수 있습니다.\n*   **오답 구분**: 필드 권한을 테이블 권한보다 먼저 평가한다는 설명은 순서가 반대입니다. 애플리케이션/모듈 접근은 메뉴 가시성과 관련된 별도 주제입니다.\n*   **시험 포인트**: 테이블 ACL이 거부되면 필드 ACL을 통과하더라도 데이터에 접근할 수 없습니다. 따라서 ACL 문제에서는 table-level과 field-level의 평가 순서를 정확히 구분해야 합니다."
   },
   {
-    "id": 285,
-    "title": "Which best describes a field in a SeniceNow table?",
+    "id": 284,
+    "title": "Which best describes a field in a ServiceNow table?",
     "options": [
       {
         "text": "A field is a table cell that stores data",
@@ -7974,7 +7948,7 @@
     "explanation": "ServiceNow에서 **필드(Field)**는 테이블의 **열(Column)**에 해당하며, 각 레코드의 개별 속성 값을 저장하는 기본 단위입니다.\n*   **비교**: 행(Row)은 레코드(record)이고, 필드(Column)는 그 레코드의 속성입니다.\n*   **정리**: 문항의 보기 중 가장 가까운 것은 **A**입니다."
   },
   {
-    "id": 286,
+    "id": 285,
     "title": "On what part of the ServiceNow instance, would you find the option to Impersonate User?",
     "options": [
       {
@@ -8000,7 +7974,7 @@
     "explanation": "**사용자 가장(User Impersonation)** 기능은 UI 상단의 배너 프레임(Banner Frame) 우측에 위치한 **사용자 메뉴(User Menu)**를 통해 접근할 수 있습니다.\n*   **활용**: 자신의 계정 프로필 이름을 클릭하면 드롭다운 메뉴에 'Impersonate user' 옵션이 나타납니다.\n*   **역할**: 이 기능은 `admin`이나 `impersonator` 역할을 가진 사용자에게만 노출되며, 다른 사용자의 관점에서 인스턴스를 테스트하는 데 사용됩니다."
   },
   {
-    "id": 287,
+    "id": 286,
     "title": "Your customer requires that they be able to monitor which users are performing impersonations in their instance. What would you do to meet that requirement?",
     "options": [
       {
@@ -8030,7 +8004,7 @@
     "explanation": "ServiceNow 인스턴스 보안 거버넌스를 위해 관리자의 가장 활동을 추적하는 방법은 **시스템 속성**을 활용하는 것입니다.\n*   **속성명**: **`glide.sys.log_impersonation`**을 `true`로 설정하면 모든 가장 이벤트가 `sys_log` 테이블에 명확히 기록됩니다.\n*   **보안 감사**: 누가 누구를 언제 가장했는지에 대한 감사 추적(Audit Trail)을 가능하게 하여 고권한 계정의 남용을 방지하고 투명성을 확보합니다."
   },
   {
-    "id": 288,
+    "id": 287,
     "title": "Which allows the creation of a task-based record from Service Catalog?",
     "options": [
       {
@@ -8060,33 +8034,7 @@
     "explanation": "**레코드 프로듀서(Record Producer)**는 서비스 카탈로그를 사용자 친화적인 인터페이스로 활용하여 백엔드 테이블에 데이터를 직접 생성하는 강력한 도구입니다.\n*   **사용자 경험**: 사용자는 복잡한 데이터베이스 폼 대신 직관적인 질문(Variables)에 답함으로써 Incident나 Change Request 같은 태스크 레코드를 손쉽게 생성할 수 있습니다.\n*   **비교**: 일반 카탈로그 항목(Catalog Item)이 'Requested Item(RITM)'을 생성하는 것과 달리, 레코드 프로듀서는 지정된 특정 테이블로 데이터를 직접 삽입합니다."
   },
   {
-    "id": 289,
-    "title": "In what order are Access Controls evaluated?",
-    "options": [
-      {
-        "text": "Field-level - mast general to most specific: then Row-level - most specific to most general",
-        "id": "A"
-      },
-      {
-        "text": "Table-level - most specific to most general; then Row-level - most specific to most general",
-        "id": "B"
-      },
-      {
-        "text": "Table-level - most specific to most general; then Field-level « most specific to mast general",
-        "id": "C"
-      },
-      {
-        "text": "Field-level - most specific to most general: then Table-level - most specific to most general",
-        "id": "D"
-      }
-    ],
-    "answer": [
-      "C"
-    ],
-    "explanation": "ServiceNow의 ACL 평가는 **테이블 수준**을 먼저 확인하고, 그 다음 **필드 수준**을 확인하는 순서로 진행됩니다.\n*   **레벨 순서**: 테이블 ACL을 통과해야만 필드 ACL을 평가할 수 있습니다.\n*   **정리**: 보기 중 이 순서를 가장 잘 표현한 것은 **C**입니다.\n*   **보완**: 각 레벨 내부에서는 더 구체적인 규칙에서 더 일반적인 규칙으로 탐색합니다."
-  },
-  {
-    "id": 290,
+    "id": 288,
     "title": "Which feature ensures data consistency white importing data using import sets and web services?",
     "options": [
       {
@@ -8116,7 +8064,7 @@
     "explanation": "**데이터 정책(Data Policy)**은 인스턴스로 유입되는 모든 데이터의 무결성을 서버 측에서 강제하는 강력한 보안 가드레일입니다.\n*   **서버 측 실행**: UI 정책(UI Policy)이 브라우저에서만 작동하는 것과 달리, 데이터 정책은 서버에서 실행되므로 **데이터 임포트(Import Sets)**나 **웹 서비스(API)** 호출 시에도 데이터 규칙(필수, 읽기 전용)을 동일하게 적용합니다.\n*   **이점**: 데이터 유입 경로에 상관없이 시스템 전반의 데이터 품질과 일관성을 보장합니다."
   },
   {
-    "id": 291,
+    "id": 289,
     "title": "The wait time for end users is based on the round-trip between the client and the server. What activities are included in the round-trips?",
     "options": [
       {
@@ -8146,7 +8094,7 @@
     "explanation": "ServiceNow 아키텍처에서 **라운드 트립(Round-trip)**은 사용자의 브라우저(Client)와 인스턴스(Server) 간의 한 번의 완전한 통신 주기를 의미합니다.\n*   **구성**: 사용자가 데이터를 요청하거나 저장 버튼을 누르는 활동인 **Request(요청)**와, 서버가 이를 처리하여 결과를 돌려주는 **Response(응답)** 과정으로 이루어집니다.\n*   **사용자 경험**: 네트워크 지연이나 서버 처리 시간이 길어질수록 이 라운드 트립 시간이 늘어나며, 이는 사용자가 체감하는 시스템 성능에 직접적인 영향을 미칩니다."
   },
   {
-    "id": 292,
+    "id": 290,
     "title": "Which action enables personalization in a form for the admin role, only?",
     "options": [
       {
@@ -8172,7 +8120,7 @@
     "explanation": "ServiceNow에서 특정 기능을 특정 역할에게만 제한하거나 허용할 때는 전역 **시스템 속성(System Properties)**을 수정합니다.\n*   **속성명**: `glide.ui.personalize_form.role` 속성은 폼 개인화(톱니바퀴 아이콘 옆의 폼 레이아웃 도구 등)를 수행할 수 있는 최소 역할을 정의합니다.\n*   **제어**: 이 값을 `admin`으로 설정하면, 다른 역할을 가진 일반 사용자나 실무자(itil)는 폼의 필드 배치를 개인화하는 기능에 접근할 수 없게 됩니다."
   },
   {
-    "id": 293,
+    "id": 291,
     "title": "If you have the Impersonate role, what type of user are you not able to impersonate?",
     "options": [
       {
@@ -8202,7 +8150,7 @@
     "explanation": "**사용자 가장(User Impersonation)** 기능은 강력한 권한이므로 보안 가드레일이 적용됩니다.\n*   **보안 원칙**: `impersonator` 역할을 가진 사용자는 자신보다 권한이 높거나 민감한 시스템 설정을 변경할 수 있는 **시스템 관리자(System Administrator)**를 가장할 수 없습니다.\n*   **보안**: `admin` 역할을 가진 사용자는 다른 사용자를 가장할 수 있지만, `security_admin`과 같은 특정 고권한 세션은 가장 상태에서 활성화할 수 없는 등 추가적인 제약이 존재합니다."
   },
   {
-    "id": 294,
+    "id": 292,
     "title": "When using the Data Pill Picker, use which keys to dot-walk (6 fields in other tables?",
     "options": [
       {
@@ -8232,7 +8180,7 @@
     "explanation": "**플로우 디자이너(Flow Designer)**의 **데이터 알약 선택기(Data Pill Picker)** 인터페이스에서 참조(Reference) 필드를 따라 연결된 다른 테이블로 이동하는 기술인 **닷워킹(Dot-Walking)**을 수행할 때는 **방향키(Arrows)**를 사용합니다.\n*   **작동 방식**: 참조 필드 옆의 화살표 버튼을 클릭하거나 키보드의 오른쪽 방향키를 눌러 해당 참조 테이블의 하위 필드 리스트를 확장하여 선택할 수 있습니다."
   },
   {
-    "id": 295,
+    "id": 293,
     "title": "Here is an example of the criteria set for a knowledge base: *Companies: ACME North America* Department: HR *Groups: ACME Manager* Match All: Yes In this example, what users would have access to this knowledge base?",
     "options": [
       {
@@ -8258,7 +8206,7 @@
     "explanation": "**사용자 기준(User Criteria)** 설정에서 **'Match All'** 옵션은 논리적 **AND** 연산자로 작동합니다.\n*   **조건 분석**: 회사(ACME North America), 부서(HR), 그룹(ACME Manager)이 지정되어 있고 `Match All: Yes`인 경우, 사용자가 이 **세 가지 속성을 모두** 가지고 있어야만 해당 지식 기반에 접근할 수 있습니다.\n*   **거버넌스**: 만약 `Match All: No` (기본값)라면 논리적 **OR**로 작동하여 세 조건 중 하나만 만족해도 접근이 허용됩니다."
   },
   {
-    "id": 296,
+    "id": 294,
     "title": "Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that applies to the entire Incident table (all rows and fields)?",
     "options": [
       {
@@ -8277,10 +8225,10 @@
     "answer": [
       "A"
     ],
-    "explanation": "(제공된 정답 키에 따라 보강함) ServiceNow에서 특정 테이블 전체에 대해 와일드카드 방식으로 보안을 적용할 때 사용하는 객체 이름은 **`[테이블명].*`** 입니다.\n*   **의미**: `incident.*`는 인시던트 테이블의 모든 필드에 대해 공통적인 보안 규칙을 적용함을 의미합니다.\n*   **참고**: `incident.None`은 레코드(행) 자체에 대한 접근 권한을 의미하며, `incident.[필드명]`은 특정 필드에 대한 전용 규칙을 의미합니다. 통상적으로 테이블 접근을 위해 `None`이 먼저 평가됩니다."
+    "explanation": "ServiceNow ACL 객체 이름에서 와일드카드 `*`는 특정 테이블의 모든 필드를 대상으로 하는 필드 수준 규칙을 표현할 때 사용합니다.\n*   **정답 이유 (A)**: `incident.*`는 Incident 테이블의 모든 필드에 공통으로 적용되는 ACL 객체 이름입니다.\n*   **오답 구분**: `incident.major_incident`는 특정 필드 하나에 대한 ACL이고, `incident.None`은 레코드/행 수준 접근을 의미합니다.\n*   **시험 포인트**: ACL 표기에서 `table.None`, `table.*`, `table.field`의 차이를 구분해야 합니다. 테이블 접근은 먼저 평가되고, 이후 필드 수준 규칙이 적용됩니다."
   },
   {
-    "id": 297,
+    "id": 295,
     "title": "What are benefits of assigning work tasks to a group, rather than to an individual? (Choose four.)",
     "options": [
       {
@@ -8317,7 +8265,7 @@
     "explanation": "업무를 개인이 아닌 **그룹(Groups)**에 할당하는 방식은 리소스 관리와 프로세스 효율성 측면에서 명확한 이점을 제공합니다.\n*   **가용성 및 일정 (B, F)**: 온콜(On-call) 당번 체계나 실시간 업무 부하(Availability)를 고려하여 최적의 담당자를 동적으로 선택할 수 있습니다.\n*   **기술 및 위치 (C, D)**: 특정 작업에 필요한 전문 기술(Skills)이나 현장 지원이 필요한 지리적 위치(Location)를 기반으로 지능적인 배정이 가능해집니다.\n*   **베스트 프랙티스**: 모든 태스크는 먼저 그룹에 배정(Assignment Group)되어야 하며, 이후 그룹 내 가용 인원에게 상세 할당(Assigned to)되는 구조가 권장됩니다."
   },
   {
-    "id": 298,
+    "id": 296,
     "title": "Which ServiceNow framework helps standardize how tables and configuration items (CIs) are modeled for service-related use cases?",
     "options": [
       {
@@ -8343,7 +8291,7 @@
     "explanation": "**CSDM (Common Service Data Model)**은 ServiceNow에서 서비스, 애플리케이션, 인프라 CI, 비즈니스 역량을 일관된 방식으로 모델링하기 위한 표준 데이터 모델입니다.\n*   **출제 의도**: 특정 유스케이스를 지원할 때 어떤 ServiceNow 데이터와 CI 관계를 갖춰야 하는지 CSDM 관점으로 이해하는지를 묻습니다.\n*   **학습 포인트**: CSDM은 단순한 대시보드가 아니라 CMDB와 서비스 데이터를 표준화해 운영, 보고, 영향도 분석의 기반을 만드는 프레임워크입니다."
   },
   {
-    "id": 299,
+    "id": 297,
     "title": "Which framework can automatically populate values for the priority and Category field based on the Short description field value?",
     "options": [
       {
@@ -8373,7 +8321,7 @@
     "explanation": "**Predictive Intelligence**는 머신러닝을 사용해 Short description 같은 텍스트 입력을 분석하고, 카테고리나 우선순위 같은 필드 값을 예측하거나 자동 분류하는 데 사용할 수 있습니다.\n*   **정답 (D)**: Short description 기반의 값 예측/분류는 Predictive Intelligence의 대표적인 사용 사례입니다.\n*   **오답 구분**: Assignment Rule은 주로 assignment group 또는 assigned to 같은 작업 배정 필드를 조건 기반으로 자동 지정할 때 사용합니다. UI Policy는 폼 동작 제어, Action은 Flow Designer 동작 단위, CSDM은 데이터 모델 표준화 프레임워크입니다."
   },
   {
-    "id": 300,
+    "id": 298,
     "title": "What is used to determine user access to knowledge bases or a knowledge article?",
     "options": [
       {
@@ -8399,7 +8347,7 @@
     "explanation": "**사용자 기준(User Criteria)**은 지식 관리(KM)와 서비스 카탈로그에서 보안 접근 권한을 정의하는 핵심 메커니즘입니다.\n*   **접근 제어**: 사용자의 역할, 부서, 위치, 그룹 등 사용자 레코드의 속성을 조합하여 조건을 생성합니다.\n*   **유연성**: 단순 ACL보다 비즈니스 중심적인 권한 설정이 가능하며, 지식 기반(Knowledge Base) 수준이나 개별 문서 수준에서 '누가 읽을 수 있는지(Can Read)'와 '누가 기여할 수 있는지(Can Contribute)'를 명확히 구분하여 적용합니다."
   },
   {
-    "id": 301,
+    "id": 299,
     "title": "From a related list, what would a user click for personalize the layout of the columns?",
     "options": [
       {
@@ -8425,7 +8373,7 @@
     "explanation": "관련 리스트(Related List) 상단에 위치한 **톱니바퀴(Gear) 아이콘**은 사용자가 자신의 뷰(View)에 표시되는 컬럼의 종류와 순서를 직접 조정할 수 있게 해주는 **개인화(Personalization)** 도구입니다.\n*   **개인화 vs 구성**: 톱니바퀴 아이콘을 통한 변경은 '현재 로그인한 사용자'에게만 적용됩니다. 시스템 전체의 기본 레이아웃을 바꾸려면 관리자가 `Configure > List Layout` 기능을 사용해야 합니다.\n*   **생산성**: 사용자는 본인의 업무 문맥에 가장 중요한 필드만 리스트 전면에 배치하여 효율적으로 정보를 확인할 수 있습니다."
   },
   {
-    "id": 302,
+    "id": 300,
     "title": "An IT user calls the service desk because his work needs to be completed on task records. All he can see is Self Service on his homepage when he logs in to the ServiceNow instance. What issue could explain this? Choose 2 answers",
     "options": [
       {
@@ -8456,7 +8404,7 @@
     "explanation": "ServiceNow의 메뉴와 작업 가능 범위는 사용자의 **역할(Role)**에 의해 제어됩니다.\n*   **정답 (B, D)**: IT 실무자가 task/incident 같은 작업 레코드를 처리하려면 일반적으로 **itil** 역할이 필요합니다. 사용자가 itil 역할을 직접 갖고 있지 않거나, itil 역할이 포함된 그룹에 속하지 않으면 Self Service 중심 메뉴만 보일 수 있습니다.\n*   **오답 구분**: LDAP 인증 실패라면 로그인 자체가 어렵고, 관리자 승인이나 \"로그인이 제대로 되지 않음\"은 ServiceNow의 표준 역할 기반 메뉴 가시성 원인을 설명하기에는 모호합니다."
   },
   {
-    "id": 303,
+    "id": 301,
     "title": "Which statement correctly describes the differences between a Client Script and a Business Rule?",
     "options": [
       {
@@ -8482,7 +8430,7 @@
     "explanation": "ServiceNow 플랫폼에서 로직의 실행 위치를 구분하는 것은 아키텍처 이해의 가장 기본입니다.\n*   **클라이언트 스크립트 (Client Script)**: 사용자의 **웹 브라우저(Client)** 환경에서 실행됩니다. 폼이 로드될 때, 필드 값이 바뀔 때 등 사용자의 즉각적인 UI 조작에 반응합니다.\n*   **비즈니스 규칙 (Business Rule)**: 인스턴스의 **서버(Server)** 환경에서 실행됩니다. 데이터베이스에 레코드가 조회되거나 저장(Insert/Update)되는 시점에 강력한 비즈니스 로직을 집행합니다.\n*   **핵심 차이**: 클라이언트 측은 사용자 경험(UX) 제어에, 서버 측은 데이터 무결성 및 시스템 자동화에 초점이 맞춰져 있습니다."
   },
   {
-    "id": 304,
+    "id": 302,
     "title": "Which tab on the knowledge base record, would you use to identify the sets of users who are able to read articles in that knowledge base?",
     "options": [
       {
@@ -8508,7 +8456,7 @@
     "explanation": "지식 기반(Knowledge Base)의 보안 설정을 관리하기 위해 폼 하단의 관련 리스트 중 **`Can Read`** 탭을 사용합니다.\n*   **사용자 기준 연결**: 이 탭에서 **사용자 기준(User Criteria)** 레코드를 추가하여, 어떤 부서, 위치, 또는 역할을 가진 사용자들이 이 지식 기반 내의 문서들을 검색하고 열람할 수 있는지 정의합니다.\n*   **거버넌스**: 반대로 문서를 작성하거나 편집할 수 있는 권한은 **`Can Contribute`** 탭에서 별도로 관리하여 조회 권한과 편집 권한을 엄격히 분리합니다."
   },
   {
-    "id": 305,
+    "id": 303,
     "title": "Which type of ServiceNow script runs on the web browser?",
     "options": [
       {
@@ -8534,7 +8482,7 @@
     "explanation": "ServiceNow 플랫폼에서 사용자의 **웹 브라우저(Client)** 상에서 직접 실행되는 로직은 **클라이언트 스크립트(Client Scripts)**입니다.\n*   **실행 시점**: 폼 로드 시(`onLoad`), 필드 값 변경 시(`onChange`), 폼 제출 시(`onSubmit`) 트리거됩니다.\n*   **사용자 경험**: 서버와의 통신(Round-trip) 없이 즉각적으로 UI를 제어하거나 입력값의 유효성을 검사하여 사용자에게 빠른 피드백을 제공함으로써 업무 효율성을 높입니다."
   },
   {
-    "id": 306,
+    "id": 304,
     "title": "The Employee On-boarding team has asked for a way for managers to order computers, monitors, business Cards, and cell phones for new employees. How would you proceed to meet this requirement?",
     "options": [
       {
@@ -8560,7 +8508,7 @@
     "explanation": "서로 연관된 여러 서비스 카탈로그 항목들을 비즈니스 시나리오에 맞춰 하나의 통합된 주문 흐름으로 묶어주는 도구는 **오더 가이드(Order Guide)**입니다.\n*   **비즈니스 가치**: '신규 입사자 온보딩'과 같은 복합적인 요청 상황에서 사용자에게 몇 가지 질문을 던지고, 그 답변에 따라 노트북, 이메일 계정, 보안 카드 등 필요한 품목들을 자동으로 장바구니에 담아줍니다.\n*   **사용자 경험**: 사용자가 개별 항목을 일일이 찾아 주문할 필요 없이, 최적화된 질문 답변 과정을 통해 한 번에 요청을 완료할 수 있게 합니다."
   },
   {
-    "id": 307,
+    "id": 305,
     "title": "Which role can manage multiple knowledge bases?",
     "options": [
       {
@@ -8586,7 +8534,7 @@
     "explanation": "인스턴스 내에 존재하는 여러 개의 독립적인 지식 기반(Knowledge Base)들을 총괄하여 관리할 수 있는 상위 권한 역할은 **`knowledge_admin`**입니다.\n*   **권한 범위**: 각 지식 기반의 소유자나 관리자가 아니더라도 전역적으로 지식 기사를 조회, 생성, 수정할 수 있으며 지식 관리의 전반적인 거버넌스를 설정할 수 있습니다.\n*   **최소 권한**: 특정 지식 기반만 관리하는 경우에는 해당 레코드에 지정된 'Owner'나 'Managers' 설정만으로도 충분하지만, 전사적인 지식 관리를 위해서는 `knowledge_admin` 역할이 부여됩니다."
   },
   {
-    "id": 308,
+    "id": 306,
     "title": "Which one of the following describes the primary operations performed against tables in the ServiceNow platform?",
     "options": [
       {
@@ -8612,7 +8560,7 @@
     "explanation": "ServiceNow 데이터베이스 보안의 핵심인 **접근 제어(ACL)**에서 정의하는 데이터 조작의 4대 표준 작업은 **Create, Read, Write, Delete (CRUD)**입니다.\n*   **기능적 정의**: 레코드의 생성(C), 조회(R), 수정(W), 삭제(D)에 대한 권한을 테이블 및 필드 수준에서 각각 정교하게 제어합니다.\n*   **보안 원칙**: 플랫폼은 사용자가 특정 데이터에 접근하려고 할 때, 해당 작업(Operation)에 명시된 ACL 규칙을 순차적으로 평가하여 허용 여부를 결정합니다."
   },
   {
-    "id": 309,
+    "id": 307,
     "title": "The ServiceNow platform supports a wide variety of plus-and-play application. You can choose from the included workflow or build your own workflow. Which of following these workflows are included in the platform?",
     "options": [
       {
@@ -8648,7 +8596,7 @@
     "explanation": "ServiceNow 플랫폼은 기업의 모든 부서에서 발생하는 업무 흐름을 자동화하기 위해 세 가지 핵심 비즈니스 영역(Pillars)의 워크플로우 제품군을 제공합니다.\n1.  **IT Workflows (F)**: IT 인프라와 서비스 관리를 위한 워크플로우 (ITSM, ITOM 등).\n2.  **Employee Workflows (A)**: 직원 경험과 인사 서비스를 위한 워크플로우 (HRSD 등).\n3.  **Customer Workflows (E)**: 고객 지원과 외부 서비스 요청 처리를 위한 워크플로우 (CSM 등).\n*   **플랫폼 가치**: 이를 통해 '업무를 위한 업무(The way work works)'를 전사적으로 디지털화합니다."
   },
   {
-    "id": 310,
+    "id": 308,
     "title": "Which tables are children of the Task table and come with the base system? Choose 3 answers",
     "options": [
       {
@@ -8684,7 +8632,7 @@
     "explanation": "ServiceNow 플랫폼 아키텍처의 정수인 **테이블 확장(Table Extension)** 모델에서, 업무 흐름을 담는 대표적인 테이블들은 모두 **`task`** 테이블을 상속받습니다.\n*   **상속 관계**: `incident`, `problem`, `change_request`는 `task` 테이블의 자식(Child) 테이블입니다.\n*   **이점**: 번호, 상태, 짧은 설명, 할당 대상 등 공통 필드를 `task` 테이블로부터 물려받아 데이터 일관성을 유지하며, 모든 종류의 업무를 '태스크'라는 하나의 공통 관점에서 보고하고 관리할 수 있게 해줍니다."
   },
   {
-    "id": 311,
+    "id": 309,
     "title": "On a list, what does each row show?",
     "options": [
       {
@@ -8710,7 +8658,7 @@
     "explanation": "ServiceNow 리스트 인터페이스에서 가로 방향의 한 줄(Row)은 데이터베이스 테이블의 개별 **레코드(Record)**를 의미합니다.\n*   **데이터 매핑**: 각 레코드는 특정 엔티티(예: 특정 사용자 한 명, 특정 장애 한 건)에 대한 고유한 정보를 담고 있습니다.\n*   **비교**: 세로 방향의 열(Column)은 각 레코드가 가진 속성인 **필드(Field)**에 해당합니다. 즉, 리스트는 여러 레코드의 필드 값들을 행과 열로 정렬하여 보여주는 시각적 도구입니다."
   },
   {
-    "id": 312,
+    "id": 310,
     "title": "A Role is defined as what?",
     "options": [
       {
@@ -8736,7 +8684,7 @@
     "explanation": "ServiceNow 아키텍처에서 **역할(Role)**은 특정 기능이나 데이터에 접근할 수 있는 **권한의 집합(Collection of Permissions)**을 정의하는 엔티티입니다.\n*   **테이블**: 모든 역할 레코드는 **`sys_user_role`** 테이블에 저장됩니다.\n*   **역할 포함(Containment)**: 역할은 다른 역할을 포함할 수 있어 권한 계층 구조를 효율적으로 설계할 수 있게 합니다.\n*   **할당 방식**: 보안 거버넌스를 위해 개별 사용자보다는 **그룹(Group)**에 역할을 부여하고 사용자를 멤버로 추가하는 방식(RBAC)이 강력히 권장됩니다."
   },
   {
-    "id": 313,
+    "id": 311,
     "title": "While on an Incident record, how would you add a Tag for \"Special Handling\" to the record?",
     "options": [
       {
@@ -8762,7 +8710,7 @@
     "explanation": "레코드를 논리적으로 분류하고 신속하게 탐색하기 위해 **태그(Tags)**를 추가하는 가장 표준적인 UI 경로는 폼 헤더의 **More Options (점 세 개 아이콘)** 메뉴입니다.\n*   **절차**: 'More Options' 클릭 -> **'Add Tag'** 선택 -> 태그 이름 입력 후 Enter.\n*   **가시성**: 사용자는 태그를 자신만 볼 수 있게(Private) 하거나, 특정 그룹 또는 전체(Everyone)와 공유하도록 설정하여 협업에 활용할 수 있습니다."
   },
   {
-    "id": 314,
+    "id": 312,
     "title": "While showing a customer their incident form, they ask to change the Priority field title to display their internal terminology PValue. How would you do that? Choose 2 answers",
     "options": [
       {
@@ -8789,7 +8737,7 @@
     "explanation": "ServiceNow에서 필드의 제목(Label)을 변경하여 기업 고유의 용어를 반영하는 방법은 두 가지 관리자 경로가 있습니다.\n1.  **Configure Label (C)**: 해당 필드를 우클릭하여 레이블 레코드를 직접 수정합니다. 이는 특정 테이블에 국한된 명칭 변경에 유용합니다.\n2.  **Configure Dictionary (A)**: 필드의 근본적인 메타데이터 정의로 들어가 'Column label'을 수정합니다.\n*   **주의**: Dictionary 수준에서 레이블을 변경하면, 해당 필드를 상속받아 사용하는 하위 테이블의 모든 폼에서도 명칭이 일치하게 변경될 수 있습니다."
   },
   {
-    "id": 315,
+    "id": 313,
     "title": "Which component of a table contains a piece of data for one record?",
     "options": [
       {
@@ -8819,7 +8767,7 @@
     "explanation": "ServiceNow 데이터 모델에서 **필드(Field)**는 테이블의 행(Record)과 열(Column)이 교차하는 지점으로, 특정 객체에 대한 개별적인 속성 데이터 값을 담고 있습니다.\n*   **구조**: 리스트 뷰에서 세로 방향의 한 칸(Cell)에 해당하며, 각 필드는 데이터 타입(문자열, 숫자, 참조 등)에 따라 시스템 딕셔너리에 의해 정의됩니다.\n*   **데이터 저장**: 레코드는 이러한 여러 필드들의 값들이 모여 구성된 하나의 완전한 데이터 단위입니다."
   },
   {
-    "id": 316,
+    "id": 314,
     "title": "Which tool graphically displays an infrastructure view for a configuration item (CI) and its relationship with other CIs?",
     "options": [
       {
@@ -8845,33 +8793,7 @@
     "explanation": "**디펜던시 뷰(Dependency View)**는 CMDB 내의 구성 항목(CI)들 간의 의존 관계와 연결 구조를 그래픽 인터페이스로 시각화해주는 플랫폼 도구입니다.\n*   **가치**: 특정 서버나 서비스에 장애가 발생했을 때 상위 비즈니스 서비스에 미치는 영향을 분석하는 **영향도 분석(Impact Analysis)**에 핵심적입니다.\n*   **가시성**: 기술적 구성 항목(Technical CIs)들이 비즈니스 가치(Service Offerings)와 어떻게 연결되는지 CSDM 관점의 명확한 통찰을 제공합니다."
   },
   {
-    "id": 317,
-    "title": "What icon do you use to change the icon and color on a Favorite?",
-    "options": [
-      {
-        "text": "Pencil",
-        "id": "A"
-      },
-      {
-        "text": "Star",
-        "id": "B"
-      },
-      {
-        "text": "Clock",
-        "id": "C"
-      },
-      {
-        "text": "Triangle",
-        "id": "D"
-      }
-    ],
-    "answer": [
-      "A"
-    ],
-    "explanation": "애플리케이션 내비게이터의 **Favorites**에서 이미 등록된 즐겨찾기 항목을 개인화할 때는 **Pencil (연필)** 아이콘을 사용합니다.\n*   **편집 가능 항목**: 사용자는 즐겨찾기 항목의 이름(Label), 아이콘, 색상을 자신의 선호도에 맞게 변경할 수 있습니다.\n*   **개인화 범위**: 이 설정은 사용자 개인 설정이며, 시스템 전역이나 다른 사용자의 내비게이터 구성에는 영향을 주지 않습니다."
-  },
-  {
-    "id": 318,
+    "id": 315,
     "title": "What type of table has a name starting with u_or x_?",
     "options": [
       {
@@ -8897,7 +8819,7 @@
     "explanation": "ServiceNow 플랫폼은 테이블의 출처를 명확히 하기 위해 **커스텀 테이블(Custom Tables)**에 대해 강제적인 명명 규칙을 적용합니다.\n*   **u_**: 전역 스코프(Global Scope)에서 사용자가 직접 생성한 커스텀 테이블의 접두사입니다.\n*   **x_**: 특정 애플리케이션 스코프(Scoped Application) 내에서 생성된 테이블로, 뒤이어 조직 코드와 앱 ID가 포함된 형태를 가집니다.\n*   **비교**: `sys_`나 `cmdb_`와 같이 고유한 접두사를 가진 테이블들은 플랫폼에서 기본 제공하는 **코어/시스템 테이블**입니다."
   },
   {
-    "id": 319,
+    "id": 316,
     "title": "What policies are applied to all data entered into the platform (i.e., through a record form (UI), Import Sets, or Web Services)?",
     "options": [
       {
@@ -8923,7 +8845,7 @@
     "explanation": "**데이터 정책(Data Policy)**은 데이터의 무결성을 보장하기 위해 모든 데이터 유입 경로에 대해 서버 측에서 규칙을 강제하는 강력한 가드레일입니다.\n*   **강제 범위**: 웹 브라우저를 통한 직접 입력(UI)뿐만 아니라, **임포트 세트(Import Sets)**나 **웹 서비스(API)**를 통해 들어오는 모든 데이터에 동일한 필수/읽기전용 규칙을 적용합니다.\n*   **UI 정책과의 차이**: UI 정책은 브라우저에서 사용자 경험을 위해 작동하는 반면, 데이터 정책은 데이터베이스 수준에서 물리적인 일관성을 지키는 마지막 방어선 역할을 합니다."
   },
   {
-    "id": 320,
+    "id": 317,
     "title": "Which ServiceNow utility gives a Service Desk agent the ability to trace from a Service having an issue, to see which CIs supporting that service have active issues?",
     "options": [
       {
@@ -8949,7 +8871,7 @@
     "explanation": "**Dependency View**는 서비스와 이를 지원하는 CI 사이의 관계를 시각적으로 추적하는 데 사용하는 도구입니다.\n*   **정답 (C)**: 지문이 \"Service에서 supporting CIs로 trace\"하는 능력을 묻고 있으므로, CI 관계와 의존성을 따라 내려가며 영향을 확인하는 Dependency View가 가장 적합합니다.\n*   **오답 구분**: CI Health Dashboard는 CMDB 데이터의 완전성, 정확성, 관계 건전성 같은 데이터 품질 상태를 보는 데 초점이 있습니다. Event Management Homepage는 이벤트/알림 운영 관점이며, AI Service Dashboard는 이 지문의 기본 CSA 의도와 거리가 있습니다."
   },
   {
-    "id": 321,
+    "id": 318,
     "title": "You are asked to create an option in the Service Catalog, which will allow a user to click Get Help and describe the issue they are having. These forms should create incident records, which are automatically routed to the Service Desk. Which method would you use?",
     "options": [
       {
@@ -8975,7 +8897,7 @@
     "explanation": "**레코드 프로듀서(Record Producer)**는 서비스 카탈로그의 인터페이스를 활용하여 백엔드 테이블(예: `incident`)에 데이터를 직접 생성하는 강력한 도구입니다.\n*   **사용자 경험(UX)**: 복잡한 폼 대신 사용자 친화적인 질문(Variables)을 제공하여 장애 상황을 쉽게 설명할 수 있게 합니다.\n*   **자동화**: 제출된 데이터는 미리 정의된 매핑 규칙에 따라 인시던트 레코드로 변환되어 즉시 서비스 데스크의 작업 대기열(Queue)로 인입됩니다."
   },
   {
-    "id": 322,
+    "id": 319,
     "title": "Which ServiceNow capability allows you to provide knowledge articles, via a conversational messaging interface?",
     "options": [
       {
@@ -9001,7 +8923,7 @@
     "explanation": "**가상 에이전트(Virtual Agent)**는 대화형 인터페이스(채팅)를 통해 사용자에게 24/7 셀프 서비스 지원을 제공하는 플랫폼입니다.\n*   **지식 연동**: 자연어 이해(NLU)를 기반으로 사용자의 질문 의도를 파악하여 연관된 지식 기사(Knowledge Articles)를 대화창 내에서 즉시 제안합니다.\n*   **가치**: 실시간 상담원의 개입 없이 문제를 해결(Deflection)함으로써 상담원의 업무 부하를 줄이고 고객 만족도를 높이는 'Shift-left' 전략의 핵심입니다."
   },
   {
-    "id": 323,
+    "id": 320,
     "title": "What are the steps for applying an update set to an instance?",
     "options": [
       {
@@ -9031,7 +8953,7 @@
     "explanation": "**업데이트 세트(Update Sets)**를 대상 인스턴스(Test 또는 Production)에 반영하는 표준 거버넌스 프로세스는 다음과 같습니다.\n1.  **Retrieve**: 원격 인스턴스로부터 'Complete' 상태의 업데이트 세트를 가져옵니다.\n2.  **Preview**: 반영 전 기존 구성과의 충돌이나 오류를 미리 점검합니다. (가장 중요한 검증 단계).\n3.  **Commit**: 오류가 해결된 변경 사항을 인스턴스 데이터베이스에 최종적으로 적용합니다.\n*   **핵심**: 이 단계를 통해 개발 환경에서 검증된 구성(Configuration)을 안전하게 운영 환경으로 이동시킵니다."
   },
   {
-    "id": 324,
+    "id": 321,
     "title": "Your customer has a Human Resources knowledge base, which is only accessible to members of the Human Resources department. A new procedure regarding employee quarterly reviews needs to be published to the quarterly review category of the HR knowledge base, but should only be visible for HR managers. How would you meet this requirement?",
     "options": [
       {
@@ -9053,7 +8975,7 @@
     "explanation": "ServiceNow 지식 관리 아키텍처는 **사용자 기준(User Criteria)**을 통해 세분화된 보안 제어를 지원합니다.\n*   **계층적 접근**: 지식 기반(Knowledge Base) 전체에 대한 권한뿐만 아니라, 특정 **카테고리(Category)** 수준에서도 `Can Read` 관련 리스트를 설정하여 가시성을 제한할 수 있습니다.\n*   **비즈니스 가치**: 이를 통해 하나의 지식 기반 안에서도 일반 직원용 정보와 매니저 전용 민감 정보를 안전하게 분리하여 운영할 수 있습니다."
   },
   {
-    "id": 325,
+    "id": 322,
     "title": "How would you describe the relationship between the incident and Task table?",
     "options": [
       {
@@ -9083,7 +9005,7 @@
     "explanation": "ServiceNow 데이터 모델링의 핵심인 **테이블 확장(Table Extension)** 관계입니다.\n*   **상속**: `incident` 테이블은 `task` 테이블의 자식(Child) 테이블입니다.\n*   **이점**: 번호, 상태, 할당 그룹 등 모든 업무에 공통적으로 필요한 필드와 비즈니스 로직을 `task`로부터 물려받습니다.\n*   **데이터 통합**: 이를 통해 인시던트, 문제, 변경 등 서로 다른 유형의 업무를 '태스크'라는 하나의 통합된 관점에서 보고하고 관리할 수 있습니다."
   },
   {
-    "id": 326,
+    "id": 323,
     "title": "What process allows users to create, categorize, review, approve and browse important information in a centralized location that is shared by the entire organization?",
     "options": [
       {
@@ -9113,7 +9035,7 @@
     "explanation": "**지식 관리(Knowledge Management)**는 기업의 지적 자산을 체계적으로 수집, 저장, 공유하기 위한 전사적 프로세스입니다.\n*   **수명 주기**: 문서 작성(Create) -> 검토(Review) -> 승인 및 게시(Publish) -> 은퇴(Retire)의 표준 단계를 거칩니다.\n*   **셀프 서비스**: 중앙 집중화된 지식 창구를 제공함으로써 사용자가 직접 해답을 찾게 유도하여 IT 지원 비용을 절감하고 업무 생산성을 높입니다."
   },
   {
-    "id": 327,
+    "id": 324,
     "title": "You have an existing customer, who is using workflows for their catalog items. Their existing purchasing policy is to require approval for any request that totals over 31000. However, management wants to change the approval threshold to 31500. Which workflow would you update to make this change?",
     "options": [
       {
@@ -9139,7 +9061,7 @@
     "explanation": "서비스 카탈로그 주문은 보통 **요청(Request, REQ)** 레코드 수준에서 전반적인 승인 로직이 작동합니다.\n*   **프로세스 계층**: 주문 총액에 따른 승인 임계값(Approval Threshold)은 개별 품목(RITM)이 아닌 전체 주문서(REQ)를 처리하는 **`Service Catalog Request`** 워크플로우나 플로우에서 정의되는 것이 일반적입니다.\n*   **관리**: 정책 변경 시 해당 워크플로우의 'Approval - User' 또는 'Approval - Group' 액티비티 내의 조건을 수정하여 반영합니다."
   },
   {
-    "id": 328,
+    "id": 325,
     "title": "What contains the configuration changes made in an instance (i.e. changes in a form) and helps to implement the changes from the Dev environment to another environment?",
     "options": [
       {
@@ -9165,7 +9087,7 @@
     "explanation": "**업데이트 세트(Update Sets)**는 인스턴스 간에 **구성(Configuration)** 데이터의 변경 사항을 캡처하고 전송하기 위한 표준 이동 수단입니다.\n*   **캡처 범위**: 테이블 정의, 폼 레이아웃, 비즈니스 규칙, 클라이언트 스크립트 등 시스템의 동작을 결정하는 데이터입니다.\n*   **제외 대상**: 인시던트나 사용자 레코드와 같은 실제 **업무 데이터(Data)**는 캡처되지 않으므로 주의가 필요합니다.\n*   **이점**: 개발-테스트-운영 인스턴스 간의 체계적인 배포 거버넌스를 지원합니다."
   },
   {
-    "id": 329,
+    "id": 326,
     "title": "What feature do you use to specify which users are able to access a Service Catalog Item?",
     "options": [
       {
@@ -9191,7 +9113,7 @@
     "explanation": "서비스 카탈로그 항목(Catalog Item)의 보안 및 접근 제어를 위한 최우선 도구는 **사용자 기준(User Criteria)**입니다.\n*   **적용**: `Available For` 및 `Not Available For` 관련 리스트에 사용자 기준을 설정하여 특정 역할, 부서, 위치 기반으로 접근 범위를 정교하게 통제합니다.\n*   **베스트 프랙티스**: 복잡한 ACL이나 스크립팅 대신 UI 상의 설정만으로 접근 권한을 관리할 수 있어 유지보수성과 보안 투명성을 높여줍니다."
   },
   {
-    "id": 330,
+    "id": 327,
     "title": "Security rules are defined to restrict the permission of users from viewing and interacting with data. What are these security rules called?",
     "options": [
       {
@@ -9221,7 +9143,7 @@
     "explanation": "**접근 제어 규칙(ACL, Access Control Rules)**은 ServiceNow 플랫폼 보안의 핵심 가이드라인으로, 사용자가 데이터에 접근하거나 조작하기 위해 통과해야 하는 '보안 관문'입니다.\n*   **보안 계층**: 테이블(Table), 레코드(Row), 개별 필드(Column) 수준에서 각각 보안을 적용할 수 있습니다.\n*   **평가 요소**: 사용자가 가진 **역할(Role)**, 필드의 특정 **조건(Condition)**, 그리고 복잡한 로직을 수행하는 **스크립트**를 종합적으로 평가하여 허용 여부를 결정합니다.\n*   **보안 원칙**: 명시적으로 허용된 규칙이 없는 경우 모든 접근을 기본적으로 차단하는 '최소 권한 접근' 방식을 따릅니다."
   },
   {
-    "id": 331,
+    "id": 328,
     "title": "A subject matter expert routinely receives tasks which have been worked by first level support, before receiving the assignment What could you suggest. to make it easier for the expert to read only the work notes in the Activity log?",
     "options": [
       {
@@ -9251,7 +9173,7 @@
     "explanation": "**활동 스트림(Activity Stream)**은 레코드의 변경 이력과 협업 내역을 시간순으로 보여주는 강력한 UI 요소입니다.\n*   **생산성 도구**: 수많은 업데이트 내용 중 특정 정보만 빠르게 확인하고 싶을 때, 활동 스트림 상단의 **깔때기(Funnel) 아이콘**을 사용하여 'Work notes'만 필터링할 수 있습니다.\n*   **협업 구분**: 외부 고객과 소통하는 'Additional comments'와 내부 전문가들끼리 공유하는 기술적 메모인 'Work notes'를 구분하여 검토함으로써 업무 문맥을 신속하게 파악할 수 있게 돕습니다."
   },
   {
-    "id": 332,
+    "id": 329,
     "title": "Which feature enables business process owners to organize Flow Designer content into unified and digitized cross-enterprise processes via a digitized task board Interface?",
     "options": [
       {
@@ -9277,7 +9199,7 @@
     "explanation": "**프로세스 자동화 디자이너(PAD, Process Automation Designer)**는 개별적인 플로우(Flows)와 액션들을 묶어 전사적인 엔드투엔드(End-to-End) 비즈니스 프로세스로 오케스트레이션하는 도구입니다.\n*   **시각화**: 비즈니스 프로세스 소유자는 복잡한 로직을 칸반 보드와 유사한 단계별 인터페이스를 통해 직관적으로 설계하고 관리할 수 있습니다.\n*   **플레이북 연동**: PAD에서 설계된 프로세스는 사용자에게 **플레이북(Playbooks)** 형태로 제공되어, 실무자가 복잡한 업무 라이프사이클을 안내에 따라 정확하게 수행할 수 있도록 지원합니다."
   },
   {
-    "id": 333,
+    "id": 330,
     "title": "What are advantages of using spokes for integrations? Choose 3 answers",
     "options": [
       {
@@ -9309,7 +9231,7 @@
     "explanation": "**Spoke**는 ServiceNow **IntegrationHub**에서 특정 외부 시스템이나 서비스와 연동하기 위해 제공되는 재사용 가능한 액션과 플로우 구성 요소의 묶음입니다.\n*   **코드 최소화 (A)**: API 호출이나 인증 로직을 직접 스크립트로 작성하는 부담을 줄입니다.\n*   **확장 및 제어 (B)**: 표준화된 액션을 통해 통합을 더 일관되게 관리하고 운영 통제를 적용하기 쉽습니다.\n*   **발견성과 재사용성 (D)**: 한 번 구성된 Spoke 액션은 여러 플로우에서 찾아 재사용할 수 있어 통합 구현의 중복을 줄입니다.\n*   **오답 구분**: 모든 Spoke가 무료라는 보장은 없으며, Automated event management는 Spoke 자체의 일반 장점이라기보다 특정 솔루션/이벤트 관리 영역의 기능에 가깝습니다."
   },
   {
-    "id": 334,
+    "id": 331,
     "title": "What module enables an administrator to define destinations for imported data on any ServiceNow table?",
     "options": [
       {
@@ -9335,7 +9257,7 @@
     "explanation": "**변환 맵(Transform Map)**은 임포트 세트(Import Set)의 소스 데이터와 ServiceNow 내부의 타겟 테이블 사이를 연결하는 '데이터 설계도' 역할을 합니다.\n*   **필드 매핑**: 소스의 특정 컬럼이 타겟 테이블의 어떤 필드로 들어갈지 명시하며, 필요시 스크립트를 통해 데이터를 변환(Transformation)하거나 정제합니다.\n*   **데이터 무결성**: **Coalesce** 설정을 통해 기존 레코드 업데이트 여부를 결정함으로써 시스템 내 데이터 중복을 방지하고 정합성을 유지합니다."
   },
   {
-    "id": 335,
+    "id": 332,
     "title": "Tables may have a One to Many relationships. From the Service Catalog, what are examples of tables having a one to many relationships? (Choose three.)",
     "options": [
       {
@@ -9367,7 +9289,7 @@
     "explanation": "ServiceNow 서비스 카탈로그의 데이터 아키텍처는 효율적인 주문 이행을 위해 **일대다(One-to-Many)** 관계의 계층 구조를 따릅니다.\n1.  **Request (REQ) -> Requested Items (RITM) (B)**: 하나의 주문서(REQ)는 여러 개의 개별 품목(RITM)을 포함할 수 있습니다.\n2.  **Requested Item (RITM) -> Approvals (C)**: 하나의 요청 품목에 대해 여러 승인 레코드가 생성될 수 있습니다.\n3.  **Requested Item (RITM) -> Catalog Tasks (SCTASK) (D)**: 하나의 품목을 이행하기 위해 실무자가 수행해야 할 여러 개의 작업(SCTASK)이 생성될 수 있습니다.\n*   **주의**: `Cart -> Requests`는 표준적인 테이블 관계 예시로 보지 않습니다."
   },
   {
-    "id": 336,
+    "id": 333,
     "title": "What section on the notes tab, shows the history of the work documented on the record?",
     "options": [
       {
@@ -9397,7 +9319,7 @@
     "explanation": "레코드 폼의 'Notes' 탭에 위치한 **활동(Activity)** 섹션은 해당 데이터의 전체 수명 주기 동안 발생한 모든 상호작용과 변경 사항을 기록하는 중앙 로그입니다.\n*   **포함 데이터**: 담당자의 작업 노트(Work notes), 사용자와의 대화(Additional comments), 그리고 시스템에 의해 기록된 필드 값의 변화(Audit trail)를 모두 포함합니다.\n*   **협업 허브**: 에이전트들이 과거 기록을 빠르게 검토하고 현재 상태를 파악하여 업무 연속성을 유지하는 데 핵심적인 역할을 합니다."
   },
   {
-    "id": 337,
+    "id": 334,
     "title": "What ServiceNow feature can be triggered by events, and is used to inform users about activities or updates in ServiceNow?",
     "options": [
       {
@@ -9427,7 +9349,7 @@
     "explanation": "**Notifications**는 이벤트를 트리거로 사용자에게 활동이나 업데이트를 전달하는 기능입니다.\n*   **이벤트(Event)**는 알림을 발생시키는 조건이나 신호이고, 실제 사용자에게 전달되는 기능은 **Notifications**입니다.\n*   **활용**: 레코드 변경, 승인 요청, 상태 업데이트 같은 상황에서 이메일이나 인스턴스 알림을 전송하는 데 사용됩니다."
   },
   {
-    "id": 338,
+    "id": 335,
     "title": "What is the name of the string that display filter criteria?",
     "options": [
       {
@@ -9453,7 +9375,7 @@
     "explanation": "**브레드크럼(Breadcrumb)**은 리스트 뷰 상단에 위치하며, 현재 리스트에 적용된 모든 필터 조건을 계층적인 텍스트 경로 형태로 시각화합니다.\n*   **기능**: 사용자는 브레드크럼의 특정 조건을 클릭하여 이전 필터 단계로 빠르게 돌아가거나(Drill back), 개별 조건을 제거하여 조회 범위를 신속하게 조정할 수 있습니다.\n*   **개인화**: 자주 사용하는 복잡한 브레드크럼 필터는 즐겨찾기(Favorites)로 저장하거나 다른 사용자에게 링크로 공유하여 데이터 탐색 효율을 높일 수 있습니다."
   },
   {
-    "id": 339,
+    "id": 336,
     "title": "A customer requests the following data quality measures be added: *1. Incident numbers should be read-only on all lists and forms, for all users.* 2. Short Description field should be mandatory, on all records, across all applications, on insert. Which type of policy would you use to meet this requirement?",
     "options": [
       {
@@ -9479,7 +9401,7 @@
     "explanation": "**데이터 정책(Data Policy)**은 인스턴스 전반의 데이터 품질과 일관성을 보장하기 위해 **서버(Server)** 측에서 실행되는 강력한 가드레일입니다.\n*   **강제 범위**: 웹 브라우저(UI)를 통한 입력뿐만 아니라, **데이터 임포트(Import Sets)**나 **웹 서비스(API)**를 통해 유입되는 모든 데이터에 동일한 필수/읽기전용 규칙을 강제합니다.\n*   **UI 정책과의 차이**: UI 정책은 브라우저에서 사용자 경험(UX) 개선에 집중하는 반면, 데이터 정책은 데이터베이스 수준에서 물리적인 데이터 무결성을 지키는 마지막 방어선 역할을 합니다."
   },
   {
-    "id": 340,
+    "id": 337,
     "title": "An administrator creates \"customer_table_admin\" and \"customer_table_user\" roles for the newly created \"Customer Table\". Which ACL rule would grant access to all rows and all fields to both the customer_table_admin and customer_table_user roles?",
     "options": [
       {
@@ -9501,7 +9423,7 @@
     "explanation": "ServiceNow의 **접근 제어(ACL)**에서 테이블 전체에 대한 보안을 적용할 때는 와일드카드 기호인 별표(**`*`**)를 사용합니다.\n*   **객체 식별**: `customer.*`는 해당 테이블의 모든 필드(Column)에 대해 공통적으로 적용되는 규칙을 의미합니다.\n*   **상속 및 권한**: `customer_table_admin`과 `customer_table_user` 두 역할 모두에게 이 규칙을 부여하면, 테이블 내의 어떤 필드에 대해서도 별도의 거부 규칙이 없는 한 접근이 허용됩니다.\n*   **참고**: `customer.None`은 레코드(행) 자체에 대한 접근 권한을 평가할 때 사용되는 특수 객체 이름입니다."
   },
   {
-    "id": 341,
+    "id": 338,
     "title": "Roles can inherit permissions from other roles. Which role inherits all of the permissions of the catalog role and the user_criteria_admin role plus has permissions to create Items and Services?",
     "options": [
       {
@@ -9527,7 +9449,7 @@
     "explanation": "**`catalog_admin`** 역할은 서비스 카탈로그의 전체적인 수명 주기를 관리하기 위해 설계된 관리 권한입니다.\n*   **역할 상속(Inheritance)**: 이 역할은 하위의 `catalog` 역할과 **`user_criteria_admin`** 역할을 포함(Contain)하고 있어, 별도의 할당 없이도 해당 권한들을 모두 상속받습니다.\n*   **권한 범위**: 카탈로그 아이템과 서비스를 생성 및 수정할 수 있을 뿐만 아니라, 사용자 기준(User Criteria)을 정의하여 카탈로그의 접근 제어 거버넌스를 수립할 수 있습니다."
   },
   {
-    "id": 342,
+    "id": 339,
     "title": "What are the benefits of building flows using Flow Designer? Choose 3 answers",
     "options": [
       {
@@ -9563,7 +9485,7 @@
     "explanation": "**플로우 디자이너(Flow Designer)**는 복잡한 스크립팅 없이 비즈니스 프로세스를 자동화하는 차세대 도구로 다음과 같은 이점을 제공합니다.\n1.  **No-Code 개발 (D)**: 시각적인 인터페이스를 통해 비개발자도 비즈니스 로직을 쉽게 구축할 수 있습니다.\n2.  **자연어 설명 (C)**: 자동화 흐름이 기계적인 코드가 아닌 인간이 이해하기 쉬운 문장 형태로 표시되어 가독성이 뛰어납니다.\n3.  **통합 용이성 (A)**: **Spoke**를 활용하여 외부 서드파티 시스템(Slack, Jira 등)과의 연동을 표준화된 방식으로 신속하게 구현할 수 있습니다."
   },
   {
-    "id": 343,
+    "id": 340,
     "title": "As administrator, what must you do to access feature of High Security Settings?",
     "options": [
       {
@@ -9589,7 +9511,7 @@
     "explanation": "ACL 수정이나 인스턴스 전역 보안 정책을 설정하는 **High Security Settings**에 접근하려면 **역할 상승(Elevate Roles)** 프로세스가 필수적입니다.\n*   **절차**: 관리자는 프로필 메뉴에서 **Elevate Roles**를 선택해 `security_admin` 역할을 일시적으로 활성화해야 합니다.\n*   **보안 가드레일**: 상승된 권한은 현재 **세션(Session)** 동안만 유지되며, 로그아웃하거나 브라우저를 닫으면 자동으로 해제됩니다."
   },
   {
-    "id": 344,
+    "id": 341,
     "title": "What are examples of UI Actions relating to forms? Choose 3 answers",
     "options": [
       {
@@ -9617,7 +9539,7 @@
     "explanation": "ServiceNow **UI 액션(UI Actions)**은 사용자가 시스템과 상호작용할 수 있는 시각적 트리거를 제공합니다. 폼(Form) 인터페이스에서 흔히 볼 수 있는 예시는 다음과 같습니다.\n1.  **Form Buttons (C)**: 폼 상단이나 하단에 위치한 실행 버튼 (예: Save, Update).\n2.  **Form Links (D)**: 폼 하단의 'Related Links' 섹션에 표시되는 텍스트 기반 하이퍼링크.\n3.  **Form Context Menu (A)**: 폼 헤더를 우클릭하거나 햄버거 아이콘을 눌렀을 때 나타나는 실행 메뉴.\n*   **기능**: 이러한 요소들은 클릭 시 서버 측 비즈니스 로직이나 클라이언트 측 JavaScript를 실행하여 레코드를 처리합니다."
   },
   {
-    "id": 345,
+    "id": 342,
     "title": "The Report Designer contains different sections for configuring your report. Which section is used to specify grouping and calculations to be run against the data?",
     "options": [
       {
@@ -9647,7 +9569,7 @@
     "explanation": "보고서 디자이너(Report Designer)는 4가지 구성 탭을 통해 단계적으로 보고서를 완성합니다. \n*   **Configure (구성)** 탭의 역할: 데이터의 **그룹화(Group by)** 기준을 지정하고, 누적 계산이나 함수 필드를 사용한 복잡한 연산 로직을 정의합니다.\n*   **기타 단계**: Data(원본 선택) -> Type(시각화 유형 선택) -> **Configure(그룹핑 및 연산)** -> Style(룩앤필 조정) 순으로 진행됩니다."
   },
   {
-    "id": 346,
+    "id": 343,
     "title": "A customer wants to be able to identify and track components of their infrastructure that support their ecommerce service. What ServiceNow products could support this requirement? Choose 3 answers",
     "options": [
       {
@@ -9679,7 +9601,7 @@
     "explanation": "비즈니스 서비스(예: 전자상거래)를 지탱하는 하부 인프라를 체계적으로 추적하려면 다음 제품군의 유기적 연동이 필수적입니다.\n1.  **CMDB (B)**: 모든 구성 항목(CI)과 그들 간의 관계 정보를 저장하는 중앙 데이터베이스입니다.\n2.  **Discovery (D)**: 네트워크를 스캔하여 서버, 장비, 소프트웨어 등 기술적 CI를 자동으로 식별하고 CMDB를 채웁니다 (Bottom-up).\n3.  **Service Mapping (E)**: 비즈니스 서비스 관점에서 어떤 기술적 CI들이 유기적으로 연결되어 있는지 하향식으로 가시화합니다 (Top-down).\n*   **CSDM 연관**: 이는 CSDM의 **Service Delivery (구 Manage Technical Services)**와 **Service Consumption (구 Sell/Consume)** 도메인을 연결하는 핵심 아키텍처 활동입니다."
   },
   {
-    "id": 347,
+    "id": 344,
     "title": "On the knowledge base record, which tab would you use to define which users are able to write articles to the knowledge base?",
     "options": [
       {
@@ -9709,7 +9631,7 @@
     "explanation": "지식 관리(Knowledge Management) 거버넌스에서 지식 문서를 작성, 수정 및 관리할 수 있는 권한은 지식 기반(Knowledge Base)의 **`Can Contribute`** 관련 리스트를 통해 제어합니다.\n*   **보안 계층**: 사용자가 특정 지식 기반에 글을 올리려면 해당 레코드에 지정된 **사용자 기준(User Criteria)**에 부합해야 합니다.\n*   **조회 권한과의 차이**: 문서를 검색하고 읽는 권한은 **`Can Read`** 탭에서 별도로 관리하여 조회자와 기여자를 엄격히 구분합니다."
   },
   {
-    "id": 348,
+    "id": 345,
     "title": "What is the best practice related to using the Default Update Set for moving customizations between instances?",
     "options": [
       {
@@ -9735,7 +9657,7 @@
     "explanation": "**업데이트 세트(Update Sets)** 관리에서 가장 중요한 거버넌스 원칙은 **Default 업데이트 세트를 사용하여 배포하지 않는 것**입니다.\n*   **이유**: Default 세트는 시스템의 모든 자잘한 변경사항을 무차별적으로 캡처하므로, 다른 인스턴스로 내보낼 때 불필요하거나 위험한 설정이 포함될 수 있습니다.\n*   **모범 사례**: 작업 목적에 맞는 **이름이 지정된(Named) 업데이트 세트**를 새로 생성하여 필요한 변경사항만 명확하게 관리하고 이동시켜야 합니다.\n*   **추적성**: 명시적 세트를 사용해야 개발-테스트-운영으로 이어지는 배포 이력을 정확히 추적하고 오류 발생 시 롤백(Rollback)하기 용이합니다."
   },
   {
-    "id": 349,
+    "id": 346,
     "title": "How would you distinguish between a Base Class table and a Parent Class table?",
     "options": [
       {
@@ -9753,7 +9675,7 @@
     "explanation": "ServiceNow 데이터 모델의 계층 구조를 정의하는 아키텍처 용어입니다.\n*   **기본 클래스 (Base Class)**: 테이블 계층 구조의 최상위에 위치하며 다른 테이블을 확장(Extend)하지 않는 테이블입니다 (예: `task`, `cmdb`). 모든 확장의 '뿌리' 역할을 합니다.\n*   **부모 클래스 (Parent Class)**: 특정 테이블의 바로 위 단계에 있는 테이블을 뜻합니다. 자신도 상위 테이블을 상속받았을 수 있는 상대적인 개념입니다.\n*   **자식 클래스 (Child Class)**: 상위 테이블로부터 필드와 로직을 물려받은 하위 테이블입니다."
   },
   {
-    "id": 350,
+    "id": 347,
     "title": "On the CI Dependency View, what enables you to trace from an infrastructure item, like a Server, to the Services that are dependent on that Server?",
     "options": [
       {
@@ -9779,7 +9701,7 @@
     "explanation": "**디펜던시 뷰(Dependency View)**가 기술적 구성 항목(CI)들 사이의 연결 고리를 시각화할 수 있는 데이터 근거는 **관계(Relationships)** 정보입니다.\n*   **데이터 테이블**: CI 간의 의존 관계는 **`cmdb_rel_ci`** 테이블에 정의되어 저장됩니다.\n*   **가시성**: '호스팅함(Runs on)', '종속됨(Depends on)' 등의 관계 유형을 통해 서버 장애가 어떤 애플리케이션 서비스에 영향을 주는지 하향식(Top-down) 또는 상향식(Bottom-up)으로 추적할 수 있게 해줍니다.\n*   **CSDM 연관**: 이는 CSDM의 **Service Delivery (구 Manage Technical Services)** 도메인에서 인프라의 가동 상태를 서비스 가치와 연결하는 핵심 메커니즘입니다."
   },
   {
-    "id": 351,
+    "id": 348,
     "title": "How would you define an Access Control, to allow a user with itil role to have permission to create incident records?",
     "options": [
       {
@@ -9809,7 +9731,7 @@
     "explanation": "ServiceNow **접근 제어(ACL)**에서 새 인시던트 레코드를 만들려면 **테이블 수준 ACL**에 `create` 작업을 정의해야 합니다.\n*   **객체 구조**: 새 레코드 생성은 기존 행을 읽거나 수정하는 것이 아니므로 `incident.none`이 아니라 **`incident` 테이블의 create ACL**을 사용합니다.\n*   **작업(Operation)**: 생성 권한은 `create`입니다.\n*   **보안 계층**: `incident.none`은 기존 레코드의 행 접근과 관련되고, `incident.*`는 테이블의 필드 접근을 포괄하므로 이 문항의 정답은 `incident; create; itil`입니다."
   },
   {
-    "id": 352,
+    "id": 349,
     "title": "What options can you see when you right-click on a CI from the CI dependency view map? Choose 3 answers",
     "options": [
       {
@@ -9841,7 +9763,7 @@
     "explanation": "**디펜던시 뷰(Dependency View)** 맵은 단순한 시각화를 넘어 운영 효율을 높이는 대화형 인터페이스를 제공합니다.\n*   **운영 인사이트**: 특정 CI를 우클릭하면 나타나는 메뉴를 통해 다음과 같은 비즈니스 문맥을 즉시 확인할 수 있습니다.\n    1. **View Affected CIs (A)**: 해당 장비 장애 시 영향을 받는 다른 구성 항목들을 파악합니다.\n    2. **View Related Tasks (B)**: 현재 이 CI와 연관되어 진행 중인 인시던트, 변경 요청 목록을 확인합니다.\n    3. **View Recent Outages (C)**: 과거의 장애 이력을 검토하여 문제 패턴을 분석합니다."
   },
   {
-    "id": 353,
+    "id": 350,
     "title": "You have been asked to configure a form so an employee could order a tablet and select the standard accessory options to purchase with it. These standard options are: carrying case, screen cleaner, tablet stand, and screen protector. What approach would you take? Choose 3 answers",
     "options": [
       {
@@ -9873,7 +9795,7 @@
     "explanation": "서비스 카탈로그 설계 시 비즈니스 요구사항에 따라 다양한 설계 전략을 취할 수 있습니다.\n1.  **가변 세트 활용 (A)**: 여러 항목에서 공통으로 쓰이는 부속품 옵션을 **Variable Set**으로 묶어 재사용함으로써 관리 효율을 높입니다.\n2.  **개별 항목 관리 (D)**: 각 부속품을 독립적인 **Catalog Item**으로 정의하여 재고 관리와 가격 정책을 세부적으로 운영합니다.\n3.  **체크박스 변수 (E)**: 주 항목(태블릿)의 폼 내에 체크박스 변수들을 배치하여 사용자가 주문 시 간편하게 선택하도록 구성합니다.\n*   **참고**: **레코드 프로듀서(B)**는 태스크 생성이 목적이므로 단순 주문 옵션 구성에는 적합하지 않습니다."
   },
   {
-    "id": 354,
+    "id": 351,
     "title": "Which feature helps to automatically allocate a critical, high priority, service request to the appropriate assignment group or team member?",
     "options": [
       {
@@ -9899,7 +9821,7 @@
     "explanation": "**할당 규칙(Assignment Rules)**은 특정 조건(예: 중요도 P1, 서비스 유형)을 만족하는 작업 레코드가 생성될 때, 이를 처리할 최적의 주체에게 자동으로 배정하는 자동화 도구입니다.\n*   **자동화 대상**: **할당 그룹(Assignment group)**과 **담당자(Assigned to)** 필드를 시스템이 자동으로 채워줍니다.\n*   **비즈니스 가치**: 수동 배정에 소요되는 시간을 단축하고, 서비스 수준 계약(SLA) 준수를 위해 작업을 신속하게 실무자에게 전달하는 핵심 트리거 역할을 합니다.\n*   **참고**: 더 고도화된 지능형 배정이 필요한 경우 **Predictive Intelligence**나 **Advanced Work Assignment (AWA)**를 사용하기도 합니다."
   },
   {
-    "id": 355,
+    "id": 352,
     "title": "A customer wants to use a client script to validate things on a form m order to make sure the submission makes sense. What type of client script would you recommend to meet this requirement?",
     "options": [
       {
@@ -9925,7 +9847,7 @@
     "explanation": "**`onSubmit()` 클라이언트 스크립트**는 데이터가 서버로 전송되기 전, 사용자의 브라우저에서 실행되는 마지막 데이터 검증 관문입니다.\n*   **데이터 무결성**: 사용자가 입력한 값들이 비즈니스 규칙에 부합하는지 최종 확인합니다.\n*   **제출 제어**: 스크립트 내에서 `false`를 반환하면 폼 제출이 중단되고 오류 메시지를 표시하여 사용자가 잘못된 데이터를 저장하는 것을 방지합니다.\n*   **활용 예시**: 시작일이 종료일보다 늦은지 검사하거나, 특정 조건에서 첨부 파일 여부를 확인하는 등의 로직에 사용됩니다."
   },
   {
-    "id": 356,
+    "id": 353,
     "title": "What type of field has a drop down list, from which you can pick from pre-defined options?",
     "options": [
       {
@@ -9951,7 +9873,7 @@
     "explanation": "**선택(Choice)** 필드 유형은 사용자에게 미리 정의된 옵션 리스트를 드롭다운 형태로 제공하여 데이터의 표준화를 유도하는 도구입니다.\n*   **메커니즘**: 개별 옵션 값들은 **`sys_choice`** 테이블에 저장되어 관리됩니다.\n*   **장점**: 자유로운 텍스트 입력으로 인한 데이터 오염을 방지하고, 보고서 작성 시 일관된 그룹화 기준을 제공합니다.\n*   **참고**: 특정 필드의 선택 항목을 테이블마다 다르게 가져가고 싶을 때는 'Dictionary Override'를 사용합니다."
   },
   {
-    "id": 357,
+    "id": 354,
     "title": "What are the main components of the Form Design interface? (Choose three.)",
     "options": [
       {
@@ -9983,7 +9905,7 @@
     "explanation": "**폼 디자인(Form Design)** 인터페이스는 드래그 앤 드롭 방식으로 폼의 레이아웃을 시각적으로 설계하는 도구이며, 세 가지 핵심 영역으로 구성됩니다.\n1.  **Page Header (B)**: 현재 편집 중인 테이블과 뷰(View) 정보를 표시하며, 저장 및 미리보기 기능을 제공합니다.\n2.  **Field Navigator (C)**: 왼쪽 패널에 위치하며, 기존 필드를 검색하거나 새로운 필드 유형을 폼으로 끌어올 수 있는 라이브러리 역할을 합니다.\n3.  **Form Layout (Canvas) (E)**: 중앙 작업 영역으로, 필드의 배치, 섹션(Sections) 생성, 그리고 주석(Annotations) 추가를 실시간 레이아웃 형태로 수행합니다."
   },
   {
-    "id": 358,
+    "id": 355,
     "title": "Many actions are included with flow designer, what are some frequently used core actions? Choose 4 answers.",
     "options": [
       {
@@ -10020,7 +9942,7 @@
     "explanation": "**플로우 디자이너(Flow Designer)**의 **코어 액션(Core Actions)**은 복잡한 스크립트 작성 없이도 비즈니스 프로세스를 자동화할 수 있도록 ServiceNow가 기본 제공하는 표준 작업 단위입니다.\n*   **Create Record (B)**: 조건 충족 시 특정 테이블에 새 레코드 생성.\n*   **Ask for Approval (C)**: 사용자나 그룹에 승인 요청 송신 및 결과 대기.\n*   **Look Up Record (D)**: 데이터베이스에서 특정 조건과 일치하는 단일 레코드 검색.\n*   **Wait for Condition (E)**: 특정 필드 값이 원하는 상태가 될 때까지 플로우 일시 중지.\n*   **이점**: 이러한 액션들은 **데이터 알약(Data Pills)**과 결합되어 강력한 로코드(Low-code) 자동화를 가능하게 합니다."
   },
   {
-    "id": 359,
+    "id": 356,
     "title": "What instance resource allows you to access guided tours, information about actions, and instructions on how to use inputs and outputs in your flow?",
     "options": [
       {
@@ -10046,7 +9968,7 @@
     "explanation": "**플로우 디자이너(Flow Designer)** 내의 **도움말 패널(Help Panel)**은 사용자가 설계를 진행하는 도중에 즉각적인 도움을 받을 수 있는 '플랫폼 내장 지원' 도구입니다.\n*   **기능**: 사용자가 추가한 액션에 대한 상세 설명, 입력(Inputs) 및 출력(Outputs) 데이터 활용법, 가이드 투어 등을 컨텍스트에 맞게 제공합니다.\n*   **가시성**: 화면 우측 상단의 물음표(?) 아이콘을 통해 활성화하며, 외부 문서를 검색할 필요 없이 인터페이스 내에서 즉각적인 기술 가이드를 얻을 수 있게 해줍니다."
   },
   {
-    "id": 360,
+    "id": 357,
     "title": "When importing data, what happens to imported rows, if no coalesce field is specified?",
     "options": [
       {
@@ -10072,7 +9994,7 @@
     "explanation": "ServiceNow 데이터 임포트 아키텍처에서 **병합(Coalesce)** 필드는 기존 데이터와 대조할 '고유 식별자' 역할을 합니다.\n*   **병합 필드 부재 시**: 시스템은 기존 레코드와의 일치 여부를 판단할 수 없으므로, 임포트 세트 테이블의 모든 행을 고유한 항목으로 간주하여 **항상 새로운 레코드로 생성(Insert-only)**합니다.\n*   **리스크**: 이는 데이터 중복(Duplicates)의 주요 원인이 되므로, 업데이트가 필요한 데이터 적재 시에는 반드시 사번이나 이메일 같은 고유 키를 병합 필드로 지정해야 합니다."
   },
   {
-    "id": 361,
+    "id": 358,
     "title": "A new employee joins the IT deployment and needs to perform work assigned to Network and Hardware groups. How would you set up their access? Choose 3 answers",
     "options": [
       {
@@ -10105,10 +10027,10 @@
       "C",
       "F"
     ],
-    "explanation": "(제공된 정답 키를 기반으로 보강함) 신규 직원의 업무 접근 권한을 설정하는 가장 효율적인 방식은 **그룹 기반 할당(Group-based Assignment)**입니다.\n1.  **그룹 추가 (A, C, F)**: 사용자를 `itil` 그룹과 'Network', 'Hardware' 그룹의 멤버로 등록합니다.\n2.  **권한 상속**: 그룹에 할당된 역할(`itil` 등)이 사용자에게 자동으로 상속됩니다.\n*   **비판적 해석**: 본 문항의 B(Add to ACL)는 복원 과정의 오류로 보이며, 실무적으로는 ACL에 사용자를 직접 넣는 대신 그룹 멤버십을 통해 권한을 제어하는 것이 ServiceNow의 RBAC(Role-Based Access Control) 표준 모범 사례입니다."
+    "explanation": "ServiceNow에서 업무 접근 권한은 개별 사용자에게 직접 권한을 흩뿌리기보다 **그룹 멤버십**을 통해 관리하는 것이 표준적입니다.\n*   **정답 이유 (A, C, F)**: 사용자를 `itil` 역할이 포함된 그룹과 실제 업무가 배정되는 Network, Hardware 그룹에 추가하면 필요한 역할과 업무 큐 접근을 함께 부여할 수 있습니다.\n*   **오답 구분**: 사용자를 ACL에 직접 추가하는 방식은 유지보수성과 보안 거버넌스 측면에서 적절하지 않습니다. IT Knowledgebase 추가는 이 지문의 업무 배정 요구와 직접 관련이 없습니다.\n*   **시험 포인트**: ServiceNow 권한 관리는 RBAC 원칙에 따라 사용자 -> 그룹 -> 역할 흐름으로 이해하는 것이 안전합니다."
   },
   {
-    "id": 362,
+    "id": 359,
     "title": "Which path would you take to access the table configuration page from a form?",
     "options": [
       {
@@ -10134,7 +10056,7 @@
     "explanation": "ServiceNow에서 현재 보고 있는 레코드가 속한 테이블의 전반적인 기술 설정을 관리하려면 **Form Context Menu (햄버거 아이콘)**의 **`Configure > Table`** 경로를 통해 진입합니다.\n*   **관리 가능 항목**: 테이블의 레이블, 필드 정의(Columns), 데이터 제어 규칙(Controls), 비즈니스 규칙(Business Rules), ACL 리스트 등을 한눈에 확인하고 통합 관리할 수 있는 테이블 관리자 허브로 연결됩니다."
   },
   {
-    "id": 363,
+    "id": 360,
     "title": "What type of query allows you to filter list data using normal words, instead of the condition builder?",
     "options": [
       {
@@ -10164,7 +10086,7 @@
     "explanation": "**자연어 쿼리(NLQ, Natural Language Query)**는 복잡한 조건 빌더(Condition Builder) 사용법을 모르는 일반 사용자도 일상적인 언어로 데이터를 조회할 수 있게 돕는 지능형 인터페이스입니다.\n*   **작동 방식**: 리스트 상단의 검색창에 \"Incidents opened this week by ITIL user\"와 같이 입력하면 시스템이 의도를 파악하여 해당하는 필터 조건을 자동으로 생성하고 적용합니다.\n*   **가치**: 데이터 분석의 장벽을 낮추고 필요한 정보를 더 신속하게 탐색할 수 있는 사용자 경험을 제공합니다."
   },
   {
-    "id": 364,
+    "id": 361,
     "title": "What action will allow you to personalize layouts of columns in a list?",
     "options": [
       {
@@ -10190,7 +10112,7 @@
     "explanation": "**리스트 메카닉(Gear 아이콘)** 기능을 통해 개별 사용자는 시스템의 기본 설정을 변경하지 않고 자신만의 리스트 뷰를 구성할 수 있습니다.\n*   **개인화(Personalization)**: 표시할 컬럼을 선택하고 순서를 조정하며, 이는 '현재 로그인한 사용자'에게만 적용되는 개인 설정(User Preference)입니다.\n*   **구분**: 시스템 전역의 기본 레이아웃을 영구적으로 바꾸려면 관리자가 `Configure > List Layout` 기능을 사용해야 합니다."
   },
   {
-    "id": 365,
+    "id": 362,
     "title": "What capability allows users to create dashboards with widgets to visualize data over time in order to identify areas of improvement?",
     "options": [
       {
@@ -10216,7 +10138,7 @@
     "explanation": "**성능 분석(Performance Analytics, PA)**은 단순한 시점 보고(Reporting)를 넘어 비즈니스 가치를 도출하는 고도화된 분석 도구입니다.\n*   **주요 기능**: 데이터의 장기적인 **추세(Trending)** 파악, 목표치(Targets) 대비 실적 비교, 그리고 과거 데이터를 바탕으로 한 미래 예측을 지원합니다.\n*   **가치**: 리포팅이 '현재 무엇이 일어나고 있는가'를 알려준다면, PA는 '우리가 개선되고 있는가'라는 인사이트를 제공하여 지속적인 서비스 개선(CSI)을 가능하게 합니다."
   },
   {
-    "id": 366,
+    "id": 363,
     "title": "What do you click when you have made modifications to your report, and you want to see the results without saving?",
     "options": [
       {
@@ -10246,7 +10168,7 @@
     "explanation": "보고서 디자이너(Report Designer)에서 **Run (실행)** 버튼은 현재까지 설정된 조건들을 바탕으로 데이터베이스를 쿼리하여 결과물을 즉시 미리보기 할 때 사용합니다.\n*   **검증**: 보고서를 최종 저장(Save)하거나 공유(Share)하기 전에, 필터링이 의도대로 되었는지와 시각화 결과가 적절한지를 실시간으로 확인하는 필수 단계입니다.\n*   **성능**: 대규모 데이터를 다룰 때는 실행 시마다 서버 리소스가 소모되므로, 필터 조건을 먼저 정교하게 설정한 후 실행하는 것이 좋습니다."
   },
   {
-    "id": 367,
+    "id": 364,
     "title": "On a filter condition, there is an element, which is based on the table, the user access rights, and columns on the table. What is this element called?",
     "options": [
       {
@@ -10276,7 +10198,7 @@
     "explanation": "리스트나 보고서에서 데이터를 정밀하게 추출하는 **조건 빌더(Condition Builder)**는 세 가지 핵심 요소로 구성됩니다.\n1.  **Field (C)**: 데이터를 검사할 열(Column)을 선택합니다 (예: 'Priority').\n2.  **Operator**: 데이터 비교 방식(연산자)을 선택합니다 (예: 'is', 'contains').\n3.  **Value**: 비교 기준이 되는 실제 데이터 값을 지정합니다.\n*   **가시성**: 선택 가능한 필드 리스트는 사용자의 역할(Roles)과 해당 테이블의 ACL 설정에 따라 동적으로 결정됩니다."
   },
   {
-    "id": 368,
+    "id": 365,
     "title": "The customer has asked that your change the default layout of the task list. *Number* Task Type *Parent* Short Description *Assignment Group* Assignment * Updated After navigation to the list, where would you click, to meet this requirement?",
     "options": [
       {
@@ -10302,7 +10224,7 @@
     "explanation": "ServiceNow 리스트 뷰에서 컬럼 구성(추가, 제거, 순서)을 시스템 수준에서 영구적으로 수정하려면 **List Layout** 설정을 사용합니다.\n*   **접근 경로**: 컬럼 헤더 우클릭 -> **Configure > List Layout** 선택.\n*   **UI 도구**: 슬러시버킷(Slushbucket) 인터페이스를 통해 표시 필드를 조정합니다.\n*   **영향 범위**: 톱니바퀴(Gear) 아이콘을 통한 개인화와 달리, 이 설정은 해당 뷰를 사용하는 **모든 사용자**에게 공통 적용됩니다."
   },
   {
-    "id": 369,
+    "id": 366,
     "title": "On a filter condition, which component is always a choice list?",
     "options": [
       {
@@ -10328,7 +10250,7 @@
     "explanation": "(문항의 답변 키에 따라 보강함) 리스트 필터의 **연산자(Operator / Operation)** 영역은 사용자가 직접 입력하는 대신 시스템이 제공하는 옵션 중 하나를 선택하는 **드롭다운(Choice list)** 형태입니다.\n*   **동적 제공**: 필드의 데이터 타입에 따라 적절한 연산자 리스트(예: 문자열은 'contains', 날짜는 'between')가 자동으로 필터링되어 나타납니다.\n*   **기능**: 기술적인 쿼리 문법을 모르더라도 논리적인 데이터 조회를 가능하게 하는 플랫폼의 핵심 UI 편의 기능입니다."
   },
   {
-    "id": 370,
+    "id": 367,
     "title": "Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities' assignment group. For HR, the item will be used primarily for the Onboarding coordinators, for employee orientation sessions. For Facilities, the item will be used for anyone in the company who needs room set up services. However, both departments have their own service catalogs. What do you do, to support these requirements?",
     "options": [
       {
@@ -10354,7 +10276,7 @@
     "explanation": "ServiceNow 서비스 카탈로그 아키텍처는 중복을 최소화하도록 설계되었습니다.\n*   **효율적 관리**: 서로 다른 부서라도 요청 폼의 구성과 이행(Fulfillment) 프로세스가 동일하다면, 하나의 **Catalog Item**만 생성하여 관리하는 것이 유지보수 측면에서 유리합니다.\n*   **다중 게시**: 생성된 하나의 항목을 여러 개의 서로 다른 **카탈로그(Catalogs)**에 동시에 연결하여 노출시킬 수 있으므로, 각 부서의 사용자는 자신의 카탈로그 내에서 해당 서비스를 이용할 수 있습니다."
   },
   {
-    "id": 371,
+    "id": 368,
     "title": "Which ServiceNow products can be used to discover and populate the CMDB? (Choose two.)",
     "options": [
       {
