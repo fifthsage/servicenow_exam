@@ -476,6 +476,18 @@ body {
   padding: 10px 0 0;
 }
 
+.explain-section-title {
+  display: inline-block;
+  margin: 12px 0 4px;
+  color: var(--yellow);
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.explain-section-title:first-child {
+  margin-top: 0;
+}
+
 #question-explain {
   box-shadow: none;
 }

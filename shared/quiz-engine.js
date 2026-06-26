@@ -347,6 +347,60 @@
       return expected.slice().sort().join(',') === actual.slice().sort().join(',');
     }
 
+    function escapeRegExp(value) {
+      return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function stripExplanationOptionLabels(text, question) {
+      var cleaned = String(text || '')
+        .replace(/(?:^|\n)[^\n]*\uC815\uB2F5\uC740\s+\*\*[A-F](?:\s*,\s*[A-F])*\*\*[^\n]*(?=\n|$)/g, '')
+        .replace(/\b(\uBCF4\uAE30|\uC120\uD0DD\uC9C0|\uC635\uC158)\s+[A-F](?:\s*,\s*[A-F])*\b/g, '$1');
+
+      if (question && Array.isArray(question.options)) {
+        question.options.forEach(function (option) {
+          var id = option && (option.id || option.letter);
+          var optionText = option && option.text ? String(option.text).trim() : '';
+          if (!id || !optionText) {
+            return;
+          }
+          var pattern = new RegExp('(' + escapeRegExp(optionText) + ')\\s*\\(' + escapeRegExp(id) + '\\)', 'g');
+          cleaned = cleaned.replace(pattern, '$1');
+        });
+      }
+
+      return cleaned
+        .replace(/\*\*([^*\n]*?)\s*\(([A-F](?:\s*,\s*[A-F])*)\)\*\*/g, '**$1**')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+    }
+
+    function escapeHtml(value) {
+      return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function renderInlineMarkdown(text) {
+      return escapeHtml(text)
+        .replace(/`([^`\n]+)`/g, '<code>$1</code>')
+        .replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>');
+    }
+
+    function renderExplanation(text) {
+      return renderInlineMarkdown(text).split('\n').map(function (line) {
+        if (/^<strong>\[[^\]]+\]<\/strong>$/.test(line.trim())) {
+          return '<span class="explain-section-title">' + line.trim() + '</span>';
+        }
+        return line;
+      }).join('\n');
+    }
+
+    function setExplanationContent(element, text) {
+      element.innerHTML = renderExplanation(text);
+    }
     function getExplanationText(question, index) {
       var base = question && question.explanation ? String(question.explanation) : noExplanationText;
       
@@ -360,6 +414,8 @@
           // Keep original explanation when formatter fails.
         }
       }
+
+      base = stripExplanationOptionLabels(base, question);
 
       // Prepend dynamic answer labels
       var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -458,10 +514,10 @@
       btn.textContent = explanationVisible ? '정답 및 해설 숨기기' : '정답 및 해설 보기';
 
       if (showQuestionExplanation && explanationVisible) {
-        wrap.textContent = getExplanationText(sessionQuestions[currentIndex], currentIndex);
+        setExplanationContent(wrap, getExplanationText(sessionQuestions[currentIndex], currentIndex));
         wrap.style.display = 'block';
       } else {
-        wrap.textContent = '';
+        wrap.innerHTML = '';
         wrap.style.display = 'none';
       }
     }
@@ -541,7 +597,7 @@
 
         var btn = card.querySelector('.explain-btn');
         var ex = card.querySelector('.explain');
-        ex.textContent = getExplanationText(q, i);
+        setExplanationContent(ex, getExplanationText(q, i));
         btn.addEventListener('click', function () {
           var showing = ex.style.display === 'block';
           ex.style.display = showing ? 'none' : 'block';
