@@ -412,11 +412,15 @@
 
       var prevBtn = document.getElementById('prev-btn');
       var nextBtn = document.getElementById('next-btn');
+      var submitBtn = document.getElementById('submit-btn');
       if (prevBtn && prevBtn.parentNode !== navGroup) {
         navGroup.appendChild(prevBtn);
       }
       if (nextBtn && nextBtn.parentNode !== navGroup) {
         navGroup.appendChild(nextBtn);
+      }
+      if (submitBtn && submitBtn.parentNode !== navGroup) {
+        navGroup.appendChild(submitBtn);
       }
       if (navGroup.parentNode !== actions) {
         actions.appendChild(navGroup);
