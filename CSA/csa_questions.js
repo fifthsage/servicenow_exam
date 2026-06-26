@@ -1385,7 +1385,7 @@ window.CSA_QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow 기본 인스턴스에는 지식 문서 게시와 은퇴를 통제하기 위한 표준 **Knowledge workflows**가 포함됩니다.\n*   **Approval Publish**: 문서를 게시 상태로 옮기기 전에 Knowledge Base 관리자 승인을 요청합니다.\n*   **Instant Publish**: 승인 없이 초안 문서를 즉시 게시합니다.\n*   **Instant Retire**: 승인 없이 게시된 문서를 즉시 은퇴 처리합니다.\n*   **Retire Knowledge**: 지식 문서를 retired 상태로 이동하는 은퇴 워크플로우입니다.\n*   따라서 이 문항은 네 가지 기본 Knowledge workflow를 모두 고르는 문제입니다.\n\n**[Exam Keywords]**\nApproval Publish, Instant Publish, Instant Retire, Retire Knowledge, Knowledge workflows, IRE, Knowledge Base"
+    "explanation": "**[핵심 근거]**\nServiceNow 기본 인스턴스에는 지식 문서 게시와 은퇴를 통제하기 위한 표준 **Knowledge workflows**가 포함됩니다.\n*   **Approval Publish**: 문서를 게시 상태로 옮기기 전에 Knowledge Base 관리자 승인을 요청합니다.\n*   **Instant Publish**: 승인 없이 초안 문서를 즉시 게시합니다.\n*   **Instant Retire**: 승인 없이 게시된 문서를 즉시 은퇴 처리합니다.\n*   **Retire Knowledge**: 지식 문서를 retired 상태로 이동하는 은퇴 워크플로우입니다.\n*   따라서 이 문항은 네 가지 기본 Knowledge workflow를 모두 고르는 문제입니다.\n\n**[Exam Keywords]**\nKnowledge workflows, Approval Publish, Instant Publish, Instant Retire, Retire Knowledge, Knowledge Base"
   },
   {
     "id": 53,
