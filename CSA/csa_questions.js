@@ -1525,7 +1525,7 @@ window.CSA_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "**[핵심 근거]**\n**Maintain Items** 모듈은 서비스 카탈로그 관리자가 개별 품목(Catalog Items)의 전체 수명 주기를 관리하는 중앙 허브입니다.\n*   **주요 설정**: 항목의 이름, 설명, 소속 카테고리, 가격, 가시성(User Criteria), 그리고 요청 이행을 위한 워크플로우나 플로우를 여기서 연결합니다.\n*   **비교**: 'Categories'는 항목을 논리적으로 분류하는 폴더 구조를 관리하며, 'Items'는 사용자가 보는 실제 리스트에 가깝습니다.\n\n**[Exam Keywords]**\nMaintain Items"
+    "explanation": "**[핵심 근거]**\nService Catalog에서 새 요청 항목을 만들기 시작할 때 관리자가 사용하는 모듈은 **Maintain Items**입니다. 이 모듈은 사용자가 포털에서 신청할 수 있는 개별 **Catalog Item** 레코드를 생성하고 관리하는 관리자용 진입점입니다.\n*   **Maintain Items**: 노트북 신청, 계정 생성, 권한 요청처럼 사용자가 주문하거나 요청할 수 있는 개별 Catalog Item을 만들고 수정합니다. 항목 이름, 설명, 카탈로그/카테고리, 변수(Variables), 가격, 가시성(User Criteria), 이행 Flow/Workflow 등을 연결합니다.\n*   **Catalog Item**: 실제 요청 가능한 서비스 단위입니다. 사용자가 제출하면 보통 Request(REQ), Requested Item(RITM), Catalog Task(SCTASK) 같은 이행 레코드로 이어집니다.\n*   **Maintain Categories**: 항목 자체를 만드는 곳이 아니라 Catalog Item을 분류하는 카테고리 구조를 관리합니다. 예를 들어 Hardware, Software, Access 같은 묶음을 정리합니다.\n*   **Content Items**: 주문/이행 대상이라기보다 카탈로그에 표시되는 정보성 콘텐츠나 외부 링크 성격의 항목에 가깝습니다.\n*   **Items**: 일반적인 표현이라 관리자용 생성 모듈명으로는 부정확합니다. 시험에서는 정확한 모듈명인 **Maintain Items**를 구분해야 합니다.\n\n**[Exam Keywords]**\nMaintain Items, Catalog Item, Service Catalog, Maintain Categories, Content Items, Variables, User Criteria, Flow, Workflow, REQ, RITM, SCTASK"
   },
   {
     "id": 58,
@@ -1603,7 +1603,7 @@ window.CSA_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\n**병합(Coalesce)**은 데이터 임포트 시 중복을 방지하기 위한 'Upsert(Update + Insert)' 로직의 핵심입니다.\n*   **매칭 성공(Match)**: `Coalesce`로 지정된 필드 값이 타겟 테이블의 기존 레코드와 일치하면, 시스템은 기존 레코드를 소스 데이터로 **업데이트(Update)**합니다.\n*   **매칭 실패(No Match)**: 일치하는 레코드가 없으면 **신규 레코드(Insert)**를 생성합니다.\n*   **주의**: 만약 여러 필드를 Coalesce로 지정하면, 지정된 **모든** 필드가 일치해야만 업데이트가 발생합니다.\n\n**[Exam Keywords]**\n병합(Coalesce), 매칭 성공(Match), 업데이트(Update), 매칭 실패(No Match), 신규 레코드(Insert), 주의, 모든, Coalesce"
+    "explanation": "**[핵심 근거]**\nImport Set을 Transform할 때 **Coalesce**로 지정한 필드는 타겟 테이블의 기존 레코드를 찾는 매칭 기준입니다. Coalesce 필드 값으로 기존 레코드가 발견되면 새 레코드를 만들지 않고, 가져온 데이터로 해당 기존 레코드를 업데이트합니다.\n*   **Match found**: Coalesce 필드 값이 기존 레코드와 일치하면 기존 레코드를 업데이트합니다.\n*   **No match found**: 일치하는 기존 레코드가 없으면 새 레코드를 생성합니다.\n*   여러 필드를 Coalesce로 지정한 경우, 그 필드 조합이 레코드 매칭 기준으로 사용됩니다.\n*   Transform Map은 이 매칭 결과로 생성되는 것이 아니라, 가져온 데이터를 타겟 테이블로 변환하기 위해 미리 정의하는 설정입니다.\n\n**[Exam Keywords]**\nCoalesce, Import Set, Transform Map, Match found, Update existing record, No match found, Insert new record"
   },
   {
     "id": 61,
@@ -2446,12 +2446,12 @@ window.CSA_QUESTIONS = [
       }
     ],
     "answer": [
-      "A",
       "B",
+      "C",
       "E",
       "F"
     ],
-    "explanation": "**[핵심 근거]**\n**비즈니스 규칙(Business Rules)**은 데이터베이스 작업 시 서버 측에서 실행되는 로직으로, 생성 시 다음 핵심 요소들을 정의해야 합니다.\n*   **Table**: 규칙이 적용될 대상 테이블.\n*   **When to run**: 로직이 실행될 시점(Before, After, Async, Display).\n*   **Condition**: 로직이 트리거되기 위해 만족해야 할 필드 조건.\n*   **Script**: 실행될 JavaScript 비즈니스 로직.\n*   **Scope**: 규칙이 속한 애플리케이션의 경계.\n*   **참고**: UI Action은 보통 버튼이나 링크를 뜻하지만, 여기서는 비즈니스 규칙 내에서 수행되는 '작업'의 의미로 포함된 것으로 보입니다.\n\n**[Exam Keywords]**\nUI action, Table, Script to run, Application scope"
+    "explanation": "**[핵심 근거]**\nBusiness Rule을 만들 때는 어떤 애플리케이션 범위에서, 어떤 테이블의 레코드에 대해, 어떤 필드 변경 또는 스크립트 로직을 실행할지 지정해야 합니다. 이 문항의 보기 중 Business Rule 생성과 직접 관련되는 항목은 **Table**, **Fields to update**, **Script to run**, **Application scope**입니다.\n*   **Table**: Business Rule이 실행될 대상 테이블입니다.\n*   **Fields to update**: Business Rule의 Actions 설정에서 조건 충족 시 업데이트할 필드 값을 지정할 수 있습니다.\n*   **Script to run**: Advanced 설정을 사용하는 경우 서버 측 JavaScript 로직을 작성합니다.\n*   **Application scope**: 해당 Business Rule이 속한 애플리케이션 범위입니다.\n*   **UI action**은 버튼/링크/컨텍스트 메뉴 동작을 정의하는 별도 기능이고, **Who can run**은 ACL이나 실행 권한 제어와 더 가까워 Business Rule 생성 필수 항목으로 보기 어렵습니다.\n\n**[Exam Keywords]**\nBusiness Rule, Table, Fields to update, Script to run, Application scope, UI Action, ACL"
   },
   {
     "id": 92,
@@ -2484,7 +2484,7 @@ window.CSA_QUESTIONS = [
     "title": "What are the three permission requirements that must evaluate to true for an access control rule to apply? Choose 3 answers",
     "options": [
       {
-        "text": "Conditions",
+        "text": "Condition",
         "id": "A"
       },
       {
@@ -2500,7 +2500,7 @@ window.CSA_QUESTIONS = [
         "id": "D"
       },
       {
-        "text": "Conditional Expression",
+        "text": "Operation",
         "id": "E"
       },
       {
@@ -2513,7 +2513,7 @@ window.CSA_QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "**[핵심 근거]**\n**접근 제어(ACL, Access Control List)** 보안 가이드라인은 사용자가 데이터에 접근하기 위해 통과해야 하는 세 가지 '체크포인트'를 제공합니다.\n1.  **Roles (역할)**: 특정 권한 보유 여부 확인.\n2.  **Conditional Expressions (조건)**: 레코드 필드 값의 상태 확인.\n3.  **Scripts (스크립트)**: 복잡한 동적 권한 판별.\n*   **보안 원칙**: 이 세 가지 요소는 **논리적 AND** 관계로 작동합니다. 즉, 설정된 모든 관문이 '참(True)'을 반환해야만 최종적으로 접근이 승인됩니다.\n\n**[Exam Keywords]**\nConditions, Roles, Script"
+    "explanation": "**[핵심 근거]**\nACL(Access Control)에서 사용자의 접근이 허용되려면 설정된 권한 조건이 모두 true로 평가되어야 합니다. 이때 실제로 평가되는 핵심 요소는 **Roles**, **Condition**, **Script**입니다.\n*   **Roles**: 사용자가 필요한 역할을 가지고 있는지 확인합니다.\n*   **Condition**: 레코드 필드 값이 조건 빌더에 정의된 조건을 만족하는지 확인합니다.\n*   **Script**: 추가 서버 측 스크립트가 true를 반환하는지 확인합니다.\n*   **Table**, **table.none**, **Operation**은 ACL이 어떤 대상과 동작에 적용되는지를 정의하는 범위/식별 항목이지, 세 가지 permission requirement로 묶이는 평가 조건은 아닙니다.\n*   기존 보기의 **Conditional Expression**은 **Condition**과 의미가 겹쳐 정답 후보를 불필요하게 중복시키므로 제거하고, ACL 범위 항목인 **Operation**으로 정리했습니다.\n\n**[Exam Keywords]**\nACL, Roles, Condition, Script, Table, Operation, table.none"
   },
   {
     "id": 94,
