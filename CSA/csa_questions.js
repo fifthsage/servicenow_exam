@@ -842,7 +842,7 @@ window.CSA_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "**[핵심 근거]**\n**Service Catalog workflow**는 요청된 항목의 복잡한 이행(Fulfillment) 프로세스를 자동화합니다.\n*   승인 요청, fulfillment task 생성, 사용자 또는 그룹에 대한 알림 전송 등을 처리할 수 있습니다.\n*   알림을 보낼 수 없다는 설명은 틀리며, item variable type을 생성하는 것이 workflow의 목적도 아닙니다.\n*   따라서 복잡한 이행 프로세스를 구동하고 정의된 사용자나 그룹에 알림을 보낸다는 **C**가 맞습니다.\n\n**[Exam Keywords]**\nService Catalog workflow, Service Catalog, Group, Groups"
+    "explanation": "**[핵심 근거]**\n**Service Catalog workflow**는 요청된 항목의 복잡한 이행(Fulfillment) 프로세스를 자동화합니다.\n*   승인 요청, fulfillment task 생성, 사용자 또는 그룹에 대한 알림 전송 등을 처리할 수 있습니다.\n*   알림을 보낼 수 없다는 설명은 틀리며, item variable type을 생성하는 것이 workflow의 목적도 아닙니다.\n*   따라서 복잡한 이행 프로세스를 구동하고 정의된 사용자나 그룹에 알림을 보낸다는 설명이 맞습니다.\n\n**[Exam Keywords]**\nService Catalog workflow, Service Catalog, Group, Groups"
   },
   {
     "id": 33,
@@ -894,7 +894,7 @@ window.CSA_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "**[핵심 근거]**\n기존 **Transform Map**은 같은 Import Set 데이터에 여러 번 실행하여 재사용할 수 있습니다.\n*   Transform Map은 소스 필드와 대상 필드의 매핑 규칙을 저장하므로 반복 임포트에 사용할 수 있습니다.\n*   **Coalesce**는 Transform 실행 중 기존 대상 레코드와의 일치 여부를 판단하며, 실행 후에만 사용하는 기능이 아닙니다.\n*   Import Set 구성과 관리는 필요한 권한을 가진 사용자가 수행하므로 모든 사용자가 할 수 있는 것도 아닙니다.\n*   따라서 올바른 특성은 **D**입니다.\n\n**[Exam Keywords]**\nTransform Map, Coalesce, Import Set"
+    "explanation": "**[핵심 근거]**\n기존 **Transform Map**은 같은 Import Set 데이터에 여러 번 실행하여 재사용할 수 있습니다.\n*   Transform Map은 소스 필드와 대상 필드의 매핑 규칙을 저장하므로 반복 임포트에 사용할 수 있습니다.\n*   **Coalesce**는 Transform 실행 중 기존 대상 레코드와의 일치 여부를 판단하며, 실행 후에만 사용하는 기능이 아닙니다.\n*   Import Set 구성과 관리는 필요한 권한을 가진 사용자가 수행하므로 모든 사용자가 할 수 있는 것도 아닙니다.\n*   따라서 Transform Map을 같은 Import Set에 여러 번 사용할 수 있다는 특성이 올바릅니다.\n\n**[Exam Keywords]**\nTransform Map, Coalesce, Import Set"
   },
   {
     "id": 35,
@@ -6750,10 +6750,10 @@ window.CSA_QUESTIONS = [
       }
     ],
     "answer": [
-      "E",
+      "C",
       "F"
     ],
-    "explanation": "**[핵심 근거]**\n새로운 커스텀 테이블을 생성한 후 내비게이션을 정리할 때는 이름 규칙을 맞추는 것이 일반적인 베스트 프랙티스입니다.\n1.  **Application Menu**: 애플리케이션 메뉴 이름은 테이블 레이블과 동일하게 맞춰, 사용자가 기능 범위를 바로 인지할 수 있게 합니다.\n2.  **Module**: 모듈 이름은 보통 테이블 레이블의 복수형을 사용해, 해당 테이블의 레코드 목록임을 분명히 합니다.\n*   **이점**: 내비게이터에서 테이블과 메뉴의 대응 관계가 명확해져 검색성과 유지보수성이 좋아집니다.\n\n**[Exam Keywords]**\nApplication Menu, Module, 이점"
+    "explanation": "**[핵심 근거]**\n새로운 테이블 생성 후 내비게이션 패널에 대한 베스트 프랙티스는 다음 두 가지입니다.\n1.  **Module 명명 규칙 (F)**: 모듈 이름은 테이블 레이블의 **복수형**을 사용합니다. 예를 들어 테이블 레이블이 'Request'라면 모듈 이름은 'Requests'로 지정합니다. 이는 해당 모듈이 해당 테이블의 레코드 목록임을 명확히 나타내는 표준 명명 규칙입니다.\n2.  **Module 역할 지정 (C)**: 모듈 생성 후 반드시 **어떤 역할(Role)을 가진 사용자가 해당 모듈을 볼 수 있는지** 지정해야 합니다. 역할 없이 방치하면 불필요한 사용자에게 노출될 수 있습니다.\n*   **오답 근거 (E)**: 새 테이블을 추가할 때마다 Application Menu를 새로 생성할 필요는 없습니다. 기존 Application Menu에 Module만 추가하는 경우가 일반적이며, 'Application Menu를 테이블 레이블과 동일하게 생성'하는 것은 완전히 새로운 애플리케이션을 구축할 때의 이야기입니다.\n\n**[Exam Keywords]**\nModule, plural, Roles, Application Menu"
   },
   {
     "id": 243,
@@ -7019,7 +7019,7 @@ window.CSA_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow 데이터 임포트 흐름에서 데이터가 최종 **받는 테이블(receiving table)**에 기록되는 단계는 **Run Transform**입니다.\n*   **단계별 구분**:\n    1. **Load Data**: 외부 파일을 **임포트 세트 테이블(Staging Table)**에 적재합니다.\n    2. **Transform Map**: 소스와 타겟 필드 간 매핑 규칙을 정의합니다.\n    3. **Run Transform**: 설정된 맵을 실행하여 스테이징 데이터가 최종 목적지 테이블에 쓰입니다.\n*   **정리**: 보기 중 실제 ServiceNow 용어와 맞는 것은 **A**입니다.\n\n**[Exam Keywords]**\nRun Transform"
+    "explanation": "**[핵심 근거]**\nServiceNow 데이터 임포트 흐름에서 데이터가 최종 **받는 테이블(receiving table)**에 기록되는 단계는 **Run Transform**입니다.\n*   **단계별 구분**:\n    1. **Load Data**: 외부 파일을 **임포트 세트 테이블(Staging Table)**에 적재합니다.\n    2. **Transform Map**: 소스와 타겟 필드 간 매핑 규칙을 정의합니다.\n    3. **Run Transform**: 설정된 맵을 실행하여 스테이징 데이터가 최종 목적지 테이블에 쓰입니다.\n*   **정리**: 보기 중 실제 ServiceNow 용어와 맞는 것은 **Run Transform**입니다.\n\n**[Exam Keywords]**\nRun Transform"
   },
   {
     "id": 252,
@@ -7861,7 +7861,7 @@ window.CSA_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow에서 **필드(Field)**는 테이블의 **열(Column)**에 해당하며, 각 레코드의 개별 속성 값을 저장하는 기본 단위입니다.\n*   **비교**: 행(Row)은 레코드(record)이고, 필드(Column)는 그 레코드의 속성입니다.\n*   **정리**: 문항의 보기 중 가장 가까운 것은 **A**입니다.\n\n**[Exam Keywords]**\n필드(Field), 열(Column), 비교, 정리"
+    "explanation": "**[핵심 근거]**\nServiceNow에서 **필드(Field)**는 테이블의 **열(Column)**에 해당하며, 각 레코드의 개별 속성 값을 저장하는 기본 단위입니다.\n*   **비교**: 행(Row)은 레코드(record)이고, 필드(Column)는 그 레코드의 속성입니다.\n*   **정리**: 문항의 보기 중 필드(Field)의 정의로 가장 가까운 것은 **데이터를 저장하는 테이블 셀(table cell)**입니다.\n\n**[Exam Keywords]**\n필드(Field), 열(Column), 비교, 정리"
   },
   {
     "id": 282,
