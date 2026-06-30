@@ -2820,29 +2820,29 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 105,
-    "title": "Your company is giving all first line workers a special T-shirt as a recognition for their hard work. Management team wants a way for employees to order the T-shirt, with the ability to specify the preferred size and color. How would you ensure that only first line workers (non- managers) can submit the order?",
+    "title": "Your company is giving all first-line workers a special T-shirt in recognition of their hard work. Management wants a way for employees to order the T-shirt and specify the preferred size and color. How would you ensure that only first-line workers can submit the order?",
     "options": [
       {
-        "text": "Create Record Producer and use the Available For list to specify First Line [sn_first_line] role",
+        "text": "Create a Record Producer and use the Available For list to specify the First Line [sn_first_line] role",
         "id": "A"
       },
       {
-        "text": "Create Catalog Item and use the Not Available list to specify the Manager Group",
+        "text": "Create a Catalog Item and use the Available For list to specify first-line worker user criteria",
         "id": "B"
       },
       {
-        "text": "Create Catalog Item and use the Available For list to specify ITIL [itil] role",
+        "text": "Create a Catalog Item and use the Available For list to specify the ITIL [itil] role",
         "id": "C"
       },
       {
-        "text": "Create Order Guide and use the User Criteria list to specify First Line [sn_first_line] role",
+        "text": "Create an Order Guide and use the User Criteria list to specify the First Line [sn_first_line] role",
         "id": "D"
       }
     ],
     "answer": [
       "B"
     ],
-    "explanation": "**[핵심 근거]**\n서비스 카탈로그 항목의 가시성을 정교하게 제어하기 위해 ServiceNow는 **사용자 기준(User Criteria)**을 사용합니다.\n*   **Not Available For**: 특정 그룹(예: 관리자 그룹)을 '사용 불가' 리스트에 추가하여 접근을 명시적으로 차단할 수 있습니다.\n*   **Available For**: 특정 역할이나 부서, 위치를 가진 사용자에게만 카탈로그 항목이 노출되도록 허용할 때 사용합니다.\n*   **거버넌스**: 복잡한 ACL이나 스크립팅 대신 User Criteria를 활용하는 것이 유지보수와 보안 관리 측면에서 권장되는 베스트 프랙티스입니다.\n\n**[Exam Keywords]**\n사용자 기준(User Criteria), Not Available For, Available For, 거버넌스, Catalog Item, ACL, Group, User Criteria"
+    "explanation": "**[핵심 근거]**\n서비스 카탈로그 항목의 가시성을 특정 사용자 집합으로 제한할 때는 **사용자 기준(User Criteria)**을 사용합니다.\n*   이 요구사항은 T-shirt를 주문하는 일반 Catalog Item을 만들고, 해당 항목의 **Available For**에 first-line worker 조건을 가진 User Criteria를 지정하는 방식이 가장 적절합니다.\n*   Record Producer는 Incident 같은 task-based record를 생성할 때 쓰는 유형이므로 단순 상품 주문에는 적합하지 않습니다.\n*   ITIL 역할이나 Order Guide는 이 지문의 first-line worker 대상 제한을 직접 만족하지 않습니다.\n\n**[Exam Keywords]**\nCatalog Item, User Criteria, Available For, first-line workers"
   },
   {
     "id": 106,
@@ -3818,7 +3818,7 @@ window.CSA_QUESTIONS = [
         "id": "A"
       },
       {
-        "text": "Add the Department Manager group to the catalog item's user criteria",
+        "text": "Add user criteria for HR department managers to the catalog item's Available For list",
         "id": "B"
       },
       {
@@ -3837,7 +3837,7 @@ window.CSA_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "**[핵심 근거]**\n서비스 카탈로그 항목(Catalog Item)의 가시성을 특정 부서나 직책으로 제한할 때 사용하는 가장 표준적인 방법은 **사용자 기준(User Criteria)**입니다.\n*   **HR 부서 매니저만 허용**: 'HR 부서'와 '매니저 역할'을 포함하는 그룹을 생성하거나 조건을 정의하여 해당 항목의 `Available For` 관련 리스트에 추가합니다.\n*   **보안 및 거버넌스**: User Criteria는 별도의 스크립팅 없이도 복잡한 접근 제어 로직을 구현할 수 있게 하며, 카탈로그뿐만 아니라 지식 문서(Knowledge) 접근 제어에도 동일하게 사용되는 핵심 보안 메커니즘입니다.\n\n**[Exam Keywords]**\n사용자 기준(User Criteria), HR 부서 매니저만 허용, 보안 및 거버넌스, Available For, Service Catalog, Catalog Item, Group, User Criteria"
+    "explanation": "**[핵심 근거]**\n서비스 카탈로그 항목(Catalog Item)의 가시성을 특정 부서나 직책으로 제한할 때 사용하는 표준 기능은 **사용자 기준(User Criteria)**입니다.\n*   **HR 부서 매니저만 허용**: HR 부서 매니저 조건을 가진 User Criteria를 만들고 해당 Catalog Item의 **Available For**에 지정합니다.\n*   **오답 구분**: ACL은 테이블/레코드/필드 데이터 접근 제어에 가깝고, 특정 카탈로그 항목의 노출 대상 관리는 User Criteria가 적합합니다. HR catalog에만 게시하는 방식도 'HR 부서 매니저만'이라는 세부 조건을 보장하지 않습니다.\n\n**[Exam Keywords]**\nUser Criteria, Available For, Service Catalog, Catalog Item, HR department managers"
   },
   {
     "id": 140,
@@ -5867,21 +5867,21 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 213,
-    "title": "A Service Catalog project will involve building 80 catalog items. For each of the catalog items, the following fields will be mandatory on the forms: *Requested for*Requested by *Approving manager* Delivery instructions All of the other variables will be specific to the individual catalog item. What features would you use when designing the catalog item form?",
+    "title": "A Service Catalog project will involve building 80 catalog items. For each catalog item, the following fields will be mandatory on the form: Requested for, Requested by, Approving manager, and Delivery instructions. All other variables will be specific to the individual catalog item. What feature would you use when designing the catalog item form?",
     "options": [
       {
         "text": "Create one Variable Set for the four variables; then add that variable set to each of the 80 catalog items.",
         "id": "A"
       },
       {
-        "text": "Create a Record Producer that contains the four fields; then add it to the record producer related list on the catalog item.",
+        "text": "Create a Record Producer that contains the four fields; then add it to the catalog item.",
         "id": "B"
       }
     ],
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\n다수의 서비스 카탈로그 항목에서 공통적으로 사용하는 변수(필드)들은 **가변 세트(Variable Sets)**로 묶어 관리하는 것이 ServiceNow의 핵심 모범 사례입니다.\n*   **재사용성**: 한 번 정의한 가변 세트를 수십 개의 카탈로그 항목에 드래그 앤 드롭으로 추가할 수 있습니다.\n*   **유지보수 효율성**: 공통 필드의 라벨이나 로직을 변경해야 할 때, 각 항목을 수정할 필요 없이 가변 세트 하나만 수정하면 연결된 모든 항목에 즉시 반영됩니다.\n*   **일관성**: 사용자에게 전사적으로 통일된 데이터 입력 경험을 제공합니다.\n\n**[Exam Keywords]**\n가변 세트(Variable Sets), 재사용성, 유지보수 효율성, 일관성, Service Catalog, Catalog Item, Catalog Items, Variable Set"
+    "explanation": "**[핵심 근거]**\n다수의 서비스 카탈로그 항목에서 공통적으로 사용하는 변수들은 **Variable Set**으로 묶어 재사용하는 것이 적절합니다.\n*   **재사용성**: 한 번 정의한 Variable Set을 여러 Catalog Item에 추가할 수 있습니다.\n*   **유지보수 효율성**: 공통 변수의 라벨이나 로직을 변경해야 할 때 각 항목을 따로 수정하지 않아도 됩니다.\n*   Record Producer는 카탈로그 화면을 통해 task-based record를 생성하는 항목 유형이며, 여러 Catalog Item의 공통 변수를 재사용하기 위한 기능이 아닙니다.\n\n**[Exam Keywords]**\nVariable Set, Catalog Item, reusable variables"
   },
   {
     "id": 214,
@@ -9680,26 +9680,26 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 347,
-    "title": "You have been asked to configure a form so an employee could order a tablet and select the standard accessory options to purchase with it. These standard options are: carrying case, screen cleaner, tablet stand, and screen protector. What approach would you take? Choose 3 answers",
+    "title": "You have been asked to configure a form so an employee can order a tablet and select the standard accessory options to purchase with it. These standard options are: carrying case, screen cleaner, tablet stand, and screen protector. Which approaches could you take? Choose 3 answers",
     "options": [
       {
-        "text": "Create Catalog Item for the Tablet, and add a variable set to the form, for the accessory options.",
+        "text": "Create a Catalog Item for the tablet and add a variable set to the form for the accessory options.",
         "id": "A"
       },
       {
-        "text": "Create a Record Producer, and on the form, add a check box variable for each accessory option.",
+        "text": "Create a Record Producer and add a checkbox variable for each accessory option.",
         "id": "B"
       },
       {
-        "text": "On Shopping Cart configuration, select option to show the Add Accessories button.",
+        "text": "In Shopping Cart configuration, select the option to show the Add Accessories button.",
         "id": "C"
       },
       {
-        "text": "Create one Catalog item for each: tablet, carrying case, screen cleaner, tablet stand, and screen protector.",
+        "text": "Create one Catalog Item for each item: tablet, carrying case, screen cleaner, tablet stand, and screen protector.",
         "id": "D"
       },
       {
-        "text": "Create Catalog Item for the tablet, and on the form, add a check box variable for each accessory option.",
+        "text": "Create a Catalog Item for the tablet and add a checkbox variable for each accessory option.",
         "id": "E"
       }
     ],
@@ -9708,7 +9708,7 @@ window.CSA_QUESTIONS = [
       "D",
       "E"
     ],
-    "explanation": "**[핵심 근거]**\n서비스 카탈로그 설계 시 비즈니스 요구사항에 따라 다양한 설계 전략을 취할 수 있습니다.\n1.  **가변 세트 활용**: 여러 항목에서 공통으로 쓰이는 부속품 옵션을 **Variable Set**으로 묶어 재사용함으로써 관리 효율을 높입니다.\n2.  **개별 항목 관리**: 각 부속품을 독립적인 **Catalog Item**으로 정의하여 재고 관리와 가격 정책을 세부적으로 운영합니다.\n3.  **체크박스 변수**: 주 항목(태블릿)의 폼 내에 체크박스 변수들을 배치하여 사용자가 주문 시 간편하게 선택하도록 구성합니다.\n*   **참고**: **레코드 프로듀서**는 태스크 생성이 목적이므로 단순 주문 옵션 구성에는 적합하지 않습니다.\n\n**[Exam Keywords]**\nCreate one Catalog item for each, 가변 세트 활용, Variable Set, 개별 항목 관리, Catalog Item, 체크박스 변수, 참고, 레코드 프로듀서"
+    "explanation": "**[핵심 근거]**\n서비스 카탈로그에서 태블릿과 표준 액세서리 옵션을 주문하게 할 때는 Catalog Item과 변수를 사용해 주문 경험을 구성합니다.\n1.  **Variable Set 활용**: 액세서리 옵션을 공통 변수 묶음으로 관리하면 재사용과 유지보수가 쉽습니다.\n2.  **개별 Catalog Item 관리**: 태블릿과 각 액세서리를 별도 Catalog Item으로 정의하면 품목별 가격, 재고, 이행 흐름을 관리할 수 있습니다.\n3.  **Checkbox 변수**: 태블릿 Catalog Item 안에 액세서리별 checkbox 변수를 두면 사용자가 주문 시 필요한 옵션을 선택할 수 있습니다.\n*   Record Producer는 Incident 같은 task-based record를 생성하는 데 쓰이므로 단순 상품 주문 옵션 구성에는 적합하지 않습니다.\n\n**[Exam Keywords]**\nCatalog Item, Variable Set, checkbox variable, accessory options"
   },
   {
     "id": 348,
