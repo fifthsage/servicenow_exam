@@ -114,6 +114,24 @@ body {
   flex-wrap: wrap;
 }
 
+.result-retry-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.result-wrong-review {
+  border-color: rgba(255, 107, 107, 0.55);
+  background: rgba(255, 107, 107, 0.18);
+  color: #ffd6d6;
+}
+
+.result-wrong-review:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
 .top {
   display: flex;
   align-items: center;
@@ -521,6 +539,15 @@ body {
   .result-home-group {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .result-retry-group {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .result-retry-group .btn {
+    width: 100%;
   }
 
   .top-home-inner {

@@ -112,7 +112,10 @@
             <button class="btn" onclick="location.href='../index.html'">홈</button>
             <button class="btn primary" onclick="location.href='index.html'">CIS-DF 홈</button>
           </div>
-          <button class="btn" onclick="restartCurrentMode()">다시 시작</button>
+          <div class="result-retry-group">
+            <button class="btn result-wrong-review" id="result-wrong-review-btn" onclick="startWrongReview()" disabled>오답 없음</button>
+            <button class="btn" onclick="restartCurrentMode()">다시 시작</button>
+          </div>
         </div>
       </div>
     </div>

@@ -199,6 +199,7 @@
 
     function updateWrongModeUI() {
       var wrongBtn = document.getElementById('wrong-mode-btn');
+      var resultWrongBtn = document.getElementById('result-wrong-review-btn');
       var wrongInfo = document.getElementById('wrong-info');
       var resetBtn = document.getElementById('wrong-reset-btn');
       var count = getWrongQuestionCount();
@@ -210,6 +211,11 @@
       if (wrongBtn) {
         wrongBtn.disabled = count === 0;
         wrongBtn.textContent = count === 0 ? '오답 없음' : '오답 시작';
+      }
+
+      if (resultWrongBtn) {
+        resultWrongBtn.disabled = count === 0;
+        resultWrongBtn.textContent = count === 0 ? '오답 없음' : '오답 풀이';
       }
 
       if (resetBtn) {
@@ -746,11 +752,16 @@
       startSession(mode);
     }
 
+    function startWrongReview() {
+      startSession('wrong');
+    }
+
     window.startSession = startSession;
     window.moveQuestion = moveQuestion;
     window.finishQuiz = finishQuiz;
     window.clearWrongQuestions = clearWrongQuestions;
     window.restartCurrentMode = restartCurrentMode;
+    window.startWrongReview = startWrongReview;
     window.toggleQuestionExplanation = toggleQuestionExplanation;
 
     document.getElementById('pool-info').textContent = '문제 풀: ' + allQuestions.length + '문항';
