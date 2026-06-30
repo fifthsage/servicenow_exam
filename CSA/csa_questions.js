@@ -5674,10 +5674,10 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 206,
-    "title": "When adding a related list to a form, you choose the related list from the list callector, What is an example of a related list you might see on the list collector? Choose 3 answers",
+    "title": "When adding a related list to a form, you choose the related list from the list collector. Which are examples of related lists you might see in the list collector? Choose 3 answers",
     "options": [
       {
-        "text": "Release Phase==Parent",
+        "text": "Release Phase->Name",
         "id": "A"
       },
       {
@@ -5685,11 +5685,11 @@ window.CSA_QUESTIONS = [
         "id": "B"
       },
       {
-        "text": "HR Case-=Parent",
+        "text": "HR Case->Parent",
         "id": "C"
       },
       {
-        "text": "Problem==Parent",
+        "text": "Problem->Short description",
         "id": "D"
       },
       {
@@ -5702,7 +5702,7 @@ window.CSA_QUESTIONS = [
       "C",
       "E"
     ],
-    "explanation": "**[핵심 근거]**\n**관련 리스트(Related Lists)**는 현재 보고 있는 레코드와 참조 관계(Relationship)를 맺고 있는 다른 테이블의 레코드들을 폼 하단에 표시합니다.\n*   **리스트 컬렉터(List Collector)**: 관리자가 폼에 관련 리스트를 추가할 때 사용하는 설정 창으로, 현재 테이블을 참조(Reference)하고 있는 모든 하위 테이블들을 보여줍니다.\n*   **관계 표현**: 'Catalog Task -> Parent', 'HR Case -> Parent' 등은 화살표 앞의 테이블이 화살표 뒤의 필드를 통해 현재 레코드를 가리키고 있음을 나타내는 플랫폼의 표준 관계 명명 방식입니다.\n\n**[Exam Keywords]**\nCatalog Task->Parent, HR Case-=Parent, Outage->Task number"
+    "explanation": "**[핵심 근거]**\n**관련 리스트(Related Lists)**는 현재 보고 있는 레코드를 참조하는 다른 테이블의 레코드들을 폼 하단에 표시합니다.\n*   관련 리스트 선택기에는 일반적으로 **`테이블 -> 참조 필드`** 형식의 항목이 표시됩니다.\n*   **Catalog Task->Parent**, **HR Case->Parent**, **Outage->Task number**는 앞의 테이블이 뒤의 참조 필드를 통해 현재 레코드를 가리키는 관련 리스트 예시입니다.\n*   **Name**이나 **Short description**은 일반 텍스트 필드이므로 관련 리스트를 구성하는 참조 필드 예시로 보기 어렵습니다.\n\n**[Exam Keywords]**\nCatalog Task->Parent, HR Case->Parent, Outage->Task number"
   },
   {
     "id": 207,
@@ -6045,7 +6045,7 @@ window.CSA_QUESTIONS = [
     "title": "What actions are taken to filter a long list of records to show only those which have \"email\" in Short Description?",
     "options": [
       {
-        "text": "Click List Magnifier to expand column search, on Short Description type %email, click Enter",
+        "text": "Click List Magnifier to expand column search, on Number type email, click Enter",
         "id": "A"
       },
       {
@@ -6064,7 +6064,7 @@ window.CSA_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "**[핵심 근거]**\n긴 리스트에서 특정 컬럼 값을 기준으로 빠르게 필터링하려면 리스트의 **컬럼 검색 행**을 펼친 뒤 대상 컬럼에 검색어를 입력합니다.\nList Magnifier로 컬럼 검색을 확장하고 Short Description 컬럼에 `email`을 입력하면 해당 컬럼 기준으로 레코드가 필터링됩니다.\n\n**[오답 구분]**\n`%email` 같은 표현은 이 문항의 기본 컬럼 검색 절차로 보기 어렵고, Show Matching은 이미 표시된 셀 값을 기준으로 필터링할 때 사용하는 방식입니다.\n\n**[Exam Keywords]**\n컬럼 검색 행, email, %email"
+    "explanation": "**[핵심 근거]**\n긴 리스트에서 특정 컬럼 값을 기준으로 빠르게 필터링하려면 리스트의 **컬럼 검색 행**을 펼친 뒤 대상 컬럼에 검색어를 입력합니다.\n*   문제는 Short Description 필드에 `email`이 있는 레코드를 찾으라고 했으므로, List Magnifier로 컬럼 검색을 확장한 뒤 **Short Description** 컬럼 검색 칸에 `email`을 입력해야 합니다.\n*   Number 같은 다른 컬럼에 입력하면 Short Description 기준 필터가 아니므로 요구사항을 만족하지 않습니다.\n*   Show Matching은 이미 화면에 보이는 특정 셀 값을 기준으로 필터링할 때 사용하는 기능입니다.\n\n**[Exam Keywords]**\nList Magnifier, column search, Short Description, email"
   },
   {
     "id": 220,
@@ -7313,7 +7313,7 @@ window.CSA_QUESTIONS = [
         "id": "A"
       },
       {
-        "text": "Group [sn_sys_user_group]}",
+        "text": "Group [sn_sys_user_group]",
         "id": "B"
       },
       {
@@ -7332,7 +7332,7 @@ window.CSA_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow 플랫폼의 기반 데이터(Foundational Data) 아키텍처에서 **그룹(Group)** 정보는 **`sys_user_group`** 테이블에 물리적으로 저장됩니다.\n*   **그룹의 역할**: 역할(Roles)을 부여받는 논리적 단위이며, 태스크 할당 및 알림 수신의 대상이 됩니다.\n*   **명명 규칙**: 시스템 테이블은 `sys_` 접두사를 가지며, 사용자(`sys_user`), 역할(`sys_user_role`)과 함께 권한 체계의 핵심 트리오를 형성합니다.\n\n**[Exam Keywords]**\nGroup [sys_user_group]"
+    "explanation": "**[핵심 근거]**\nServiceNow에서 **Group** 레코드는 **`sys_user_group`** 테이블에 저장됩니다.\n*   그룹은 역할 부여, 작업 배정, 알림 수신 등을 위해 사용자를 논리적으로 묶는 단위입니다.\n*   **`sys_user`**는 사용자 레코드 테이블이고, **`sys_user_grmember`**는 사용자와 그룹의 멤버십 관계를 저장하는 테이블입니다.\n*   따라서 그룹 자체가 저장되는 테이블은 **Group [sys_user_group]**입니다.\n\n**[Exam Keywords]**\nGroup [sys_user_group]"
   },
   {
     "id": 263,
@@ -10141,29 +10141,29 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 363,
-    "title": "Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities' assignment group. For HR, the item will be used primarily for the Onboarding coordinators, for employee orientation sessions. For Facilities, the item will be used for anyone in the company who needs room set up services. However, both departments have their own service catalogs. What do you do, to support these requirements?",
+    "title": "Two departments, HR Onboarding and Facilities, have come to you asking for a way for employees to request event room setup services. The requirements are the same for the form and task routing to the Facilities assignment group. For HR, the item will be used primarily by onboarding coordinators for employee orientation sessions. For Facilities, the item will be used by anyone in the company who needs room setup services. However, both departments have their own service catalogs. What do you do to support these requirements?",
     "options": [
       {
-        "text": "Create one Catalog Item for HR Event Room Set Up and one for Facilities Event Room Set Up; then publish each to the appropriate Catalog.",
+        "text": "Create one Catalog Item for HR Event Room Setup and one for Facilities Event Room Setup; then publish each to the appropriate catalog.",
         "id": "A"
       },
       {
-        "text": "Create one Catalog Item for Event Room Set Up; then publish to both Catalogs.",
+        "text": "Create one Catalog Item for Event Room Setup; then publish it to both catalogs.",
         "id": "B"
       },
       {
-        "text": "Create one Catalog Item for Event Room Set Up; then publish to the Parent Catalog, which is accessible to both HR and Facilities.",
+        "text": "Create one Catalog Item for Event Room Setup; then publish it to the parent catalog, which is accessible to both HR and Facilities.",
         "id": "C"
       },
       {
-        "text": "Create one Catalog Item for Event Room Set Up; then use ACLs to control access.",
+        "text": "Create one Catalog Item for Event Room Setup; then use ACLs to control access.",
         "id": "D"
       }
     ],
     "answer": [
       "B"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow 서비스 카탈로그 아키텍처는 중복을 최소화하도록 설계되었습니다.\n*   **효율적 관리**: 서로 다른 부서라도 요청 폼의 구성과 이행(Fulfillment) 프로세스가 동일하다면, 하나의 **Catalog Item**만 생성하여 관리하는 것이 유지보수 측면에서 유리합니다.\n*   **다중 게시**: 생성된 하나의 항목을 여러 개의 서로 다른 **카탈로그(Catalogs)**에 동시에 연결하여 노출시킬 수 있으므로, 각 부서의 사용자는 자신의 카탈로그 내에서 해당 서비스를 이용할 수 있습니다.\n\n**[Exam Keywords]**\n효율적 관리, Catalog Item, 다중 게시, 카탈로그(Catalogs), Service Catalog, Group, IRE, HR"
+    "explanation": "**[핵심 근거]**\nServiceNow 서비스 카탈로그에서는 같은 요청 폼과 같은 이행 라우팅을 사용하는 경우 중복 Catalog Item을 만들 필요가 없습니다.\n*   **효율적 관리**: 요구사항이 동일하므로 하나의 **Catalog Item**만 생성하면 폼, 변수, 이행 흐름을 한 곳에서 유지보수할 수 있습니다.\n*   **다중 카탈로그 노출**: 하나의 Catalog Item을 여러 카탈로그에 연결하여 각 부서의 카탈로그에서 동일한 서비스를 제공할 수 있습니다.\n*   **오답 구분**: 부서별로 별도 Catalog Item을 만들면 중복 관리가 발생하고, ACL은 카탈로그 노출 제어를 위한 기본 설계 수단이 아닙니다.\n\n**[Exam Keywords]**\nCatalog Item, Service Catalog, multiple catalogs, reuse"
   },
   {
     "id": 364,
