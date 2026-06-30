@@ -220,7 +220,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\n최신 CSDM 5.0 프레임워크에 따르면, Walk(걷기) 단계는 'Service Delivery (구 Manage Technology Management Services (구Technical Services))' 도메인을 확립하는 단계입니다. 이 단계의 핵심은 기술 지원 팀의 구조를 OLA(Operational Level Agreements) 및 약속(Commitments)에 따라 체계적으로 계층화(stratification)하는 것입니다. 반면 Business Service에 대한 영향도 분석은 'Service Consumption(구 Run)' 단계의 이점이며, APM 연동은 'Fly' 단계의 이점입니다.\n\n**[Exam Keywords]**\nCMDB, CSDM, Service Delivery, Service Consumption, OLA, APM"
+    "explanation": "**[핵심 근거]**\nCSDM Data Foundations Dashboard의 성숙도 관점에서 **Walk** 단계는 Technology Management Services와 Technology Management Offerings(구 Technical Services/Technical Service Offerings)의 정합성을 다룹니다. 이 단계에서 CMDB는 기술 지원 조직과 운영 약속을 더 세분화하여 모델링할 수 있게 하므로, OLA와 commitments 기준으로 기술팀 지원 구조를 계층화하는 이점이 있습니다.\n\n**[오답 구분]**\nAPM Foundation 및 Business Application rationalization은 Business Application 중심의 Design & Planning/APM 영역과 더 관련이 있으므로 Walk 단계의 직접적인 이점으로 보기 어렵습니다. Business Services에 대한 incident, problem, change 영향도 평가는 Service Consumption 및 비즈니스 서비스/서비스 오퍼링까지 연결된 더 성숙한 단계의 효과입니다.\n\n**[Exam Keywords]**\nCSDM, Walk, Technology Management Service, Technology Management Offering, Service Delivery, OLA, commitments"
   },
   {
     "id": 10,
