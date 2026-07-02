@@ -2809,14 +2809,14 @@ window.CSA_QUESTIONS = [
         "id": "D"
       },
       {
-        "text": "Flow Diagrams",
+        "text": "Flow Designer",
         "id": "E"
       }
     ],
     "answer": [
       "E"
     ],
-    "explanation": "**[핵심 근거]**\n(보기가 실제 제품 용어인 **플로우 디자이너(Flow Designer)**의 시각적 로직 흐름을 묘사한 것으로 보입니다.)\n*   **Flow Designer**: 승인(Approvals), 작업(Tasks), 알림(Notifications) 및 레코드 작업(CRUD)을 코드 없이 자연어 문장 형태로 연결하여 자동화하는 강력한 플랫폼 도구입니다.\n*   **장점**: 복잡한 워크플로우 엔진보다 직관적인 인터페이스를 제공하며, 로코드(Low-code) 기반으로 기술 부채를 줄이고 비즈니스 로직을 빠르게 구현할 수 있게 합니다.\n\n**[Exam Keywords]**\nFlow Diagrams"
+    "explanation": "**[핵심 근거]**\n*   **Flow Designer**: 승인(Approvals), 작업(Tasks), 알림(Notifications) 및 레코드 작업(CRUD)을 코드 없이 자연어 문장 형태로 연결하여 자동화하는 강력한 플랫폼 도구입니다.\n*   **장점**: 복잡한 워크플로우 엔진보다 직관적인 인터페이스를 제공하며, 로코드(Low-code) 기반으로 기술 부채를 줄이고 비즈니스 로직을 빠르게 구현할 수 있게 합니다.\n\n**[Exam Keywords]**\nFlow Designer"
   },
   {
     "id": 105,
@@ -5651,11 +5651,11 @@ window.CSA_QUESTIONS = [
     "title": "What is the platform name for the Group table?",
     "options": [
       {
-        "text": "SyS_USer_group",
+        "text": "sys_user_group",
         "id": "A"
       },
       {
-        "text": "Sys_group",
+        "text": "sys_group",
         "id": "B"
       },
       {
@@ -5670,7 +5670,7 @@ window.CSA_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\n(표기상 혼란이 있으나 `sys_user_group`을 의미함)\n*   **테이블 정의**: ServiceNow에서 사용자들의 논리적 집합인 **그룹(Groups)** 정보가 저장되는 시스템 마스터 테이블의 이름은 **`sys_user_group`**입니다.\n*   **용도**: 역할 할당(RBAC), 작업 배정, 이메일 통지 수신 등을 위해 사용자들을 묶어 관리하는 핵심 기반 데이터입니다.\n*   **관계**: 사용자와 그룹 간의 연결 정보(Membership)는 별도의 교차 테이블인 `sys_user_grmember`에 저장됩니다.\n\n**[Exam Keywords]**\nSyS_USer_group"
+    "explanation": "**[핵심 근거]**\n*   **테이블 정의**: ServiceNow에서 사용자들의 논리적 집합인 **그룹(Groups)** 정보가 저장되는 시스템 마스터 테이블의 이름은 **`sys_user_group`**입니다.\n*   **용도**: 역할 할당(RBAC), 작업 배정, 이메일 통지 수신 등을 위해 사용자들을 묶어 관리하는 핵심 기반 데이터입니다.\n*   **관계**: 사용자와 그룹 간의 연결 정보(Membership)는 별도의 교차 테이블인 `sys_user_grmember`에 저장됩니다.\n\n**[Exam Keywords]**\nsys_user_group"
   },
   {
     "id": 206,
