@@ -316,6 +316,16 @@ body {
   margin-right: 10px;
 }
 
+.option.option-correct label {
+  border-color: rgba(63, 185, 80, 0.9);
+  box-shadow: 0 0 0 1px rgba(63, 185, 80, 0.28);
+}
+
+.option.option-incorrect label {
+  border-color: rgba(255, 107, 107, 0.95);
+  box-shadow: 0 0 0 1px rgba(255, 107, 107, 0.3);
+}
+
 .actions {
   margin-top: 12px;
   display: flex;
@@ -323,10 +333,14 @@ body {
   justify-content: flex-end;
 }
 
-.actions #explain-toggle-btn {
+.actions #explain-toggle-btn,
+.actions #answer-check-btn {
   width: auto;
   max-width: none;
   white-space: nowrap;
+}
+
+.actions #answer-check-btn {
   margin-right: auto;
 }
 
@@ -519,7 +533,8 @@ body {
     justify-content: space-between;
   }
 
-  .actions #explain-toggle-btn {
+  .actions #explain-toggle-btn,
+  .actions #answer-check-btn {
     width: auto;
     max-width: none;
     white-space: nowrap;

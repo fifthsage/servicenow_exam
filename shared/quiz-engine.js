@@ -19,6 +19,7 @@
     var timeLeft = null;
     var timerId = null;
     var explanationVisible = false;
+    var answerFeedbackVisible = false;
     var wrongQuestionIds = new Set(loadWrongQuestionIds());
     var questionBankIssues = validateQuestionBank(allQuestions);
 
@@ -501,6 +502,20 @@
       if (btn.parentNode !== actions || btn !== actions.firstChild) {
         actions.insertBefore(btn, actions.firstChild);
       }
+
+      var checkBtn = document.getElementById('answer-check-btn');
+      if (!checkBtn) {
+        checkBtn = document.createElement('button');
+        checkBtn.type = 'button';
+        checkBtn.className = 'btn';
+        checkBtn.id = 'answer-check-btn';
+        checkBtn.style.display = 'none';
+        checkBtn.textContent = '정답 확인';
+        checkBtn.addEventListener('click', checkCurrentAnswer);
+      }
+      if (btn.nextSibling !== checkBtn) {
+        actions.insertBefore(checkBtn, btn.nextSibling);
+      }
     }
 
     function shouldShowQuestionExplanation() {
@@ -511,12 +526,14 @@
       ensureQuestionExplanationUI();
       var wrap = document.getElementById('question-explain');
       var btn = document.getElementById('explain-toggle-btn');
-      if (!wrap || !btn) {
+      var checkBtn = document.getElementById('answer-check-btn');
+      if (!wrap || !btn || !checkBtn) {
         return;
       }
 
       var showQuestionExplanation = shouldShowQuestionExplanation();
       btn.style.display = showQuestionExplanation ? 'inline-block' : 'none';
+      checkBtn.style.display = showQuestionExplanation ? 'inline-block' : 'none';
       btn.textContent = explanationVisible ? '정답 및 해설 숨기기' : '정답 및 해설 보기';
 
       if (showQuestionExplanation && explanationVisible) {
@@ -536,12 +553,61 @@
       syncQuestionExplanation();
     }
 
+    function getCurrentSelection() {
+      return Array.from(document.querySelectorAll('#options input:checked')).map(function (el) {
+        return el.value;
+      }).sort();
+    }
+
+    function clearAnswerFeedback() {
+      Array.from(document.querySelectorAll('#options .option')).forEach(function (option) {
+        option.classList.remove('option-correct', 'option-incorrect');
+      });
+    }
+
+    function syncAnswerFeedback() {
+      var q = sessionQuestions[currentIndex];
+      if (!q || !answerFeedbackVisible) {
+        clearAnswerFeedback();
+        return;
+      }
+
+      var correctIds = new Set(q.answer || []);
+      Array.from(document.querySelectorAll('#options .option')).forEach(function (option) {
+        var input = option.querySelector('input[name="answer"]');
+        if (!input) {
+          return;
+        }
+        var isCorrect = correctIds.has(input.value);
+        var isSelected = input.checked;
+        option.classList.toggle('option-correct', isCorrect);
+        option.classList.toggle('option-incorrect', isSelected && !isCorrect);
+      });
+    }
+
+    function checkCurrentAnswer() {
+      if (!shouldShowQuestionExplanation()) {
+        return;
+      }
+
+      var selected = getCurrentSelection();
+      if (selected.length === 0) {
+        window.alert('답을 선택한 뒤 확인해 주세요.');
+        return;
+      }
+
+      answers[currentIndex] = selected;
+      answerFeedbackVisible = true;
+      syncAnswerFeedback();
+    }
+
     function renderQuestion() {
       var q = sessionQuestions[currentIndex];
       var picked = answers[currentIndex]; // These are IDs
       var multi = q.answer.length > 1;
       var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
       explanationVisible = false;
+      answerFeedbackVisible = false;
 
       document.getElementById('q-counter').textContent = (currentIndex + 1) + ' / ' + sessionQuestions.length;
       document.getElementById('progress').style.width = (((currentIndex + 1) / sessionQuestions.length) * 100) + '%';
@@ -554,6 +620,12 @@
         var checked = picked.includes(id) ? 'checked' : '';
         return '<div class="option"><label><input type="' + inputType + '" name="answer" value="' + id + '" ' + checked + '> ' + label + '. ' + o.text + '</label></div>';
       }).join('');
+      document.getElementById('options').onchange = function () {
+        if (answerFeedbackVisible) {
+          answers[currentIndex] = getCurrentSelection();
+          syncAnswerFeedback();
+        }
+      };
 
       document.getElementById('prev-btn').disabled = currentIndex === 0;
       document.getElementById('next-btn').style.display = currentIndex === sessionQuestions.length - 1 ? 'none' : 'inline-block';
@@ -563,9 +635,7 @@
     }
 
     function saveCurrentSelection() {
-      var selected = Array.from(document.querySelectorAll('#options input:checked')).map(function (el) {
-        return el.value;
-      }).sort();
+      var selected = getCurrentSelection();
 
       if (selected.length === 0) {
         window.alert('답을 선택한 뒤 진행해 주세요.');
