@@ -2932,7 +2932,7 @@ window.CSA_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "**[핵심 근거]**\n**역할 상승(Elevated Roles)**(예: `security_admin`)은 보안이 민감한 작업을 위해 일시적으로 고권한을 활성화하는 기능입니다.\n*   **세션 기반**: 상승된 권한은 현재 로그인된 **세션(Session)** 동안만 유효합니다.\n*   **복구**: 작업을 마친 후 일반 관리자 수준으로 돌아가려면 **로그아웃 후 다시 로그인**하여 세션을 새로 시작하는 것이 표준 절차입니다. 브라우저를 닫거나 세션이 만료되어도 자동으로 해제됩니다.\n\n**[Exam Keywords]**\nLog out and back in"
+    "explanation": "**[핵심 근거]**\n**역할 상승(Elevated Roles)**(예: `security_admin`)은 보안이 민감한 작업을 위해 일시적으로 고권한을 활성화하는 기능입니다.\n*   **세션 기반**: 상승된 권한은 현재 로그인된 **세션(Session)** 동안만 유효합니다.\n*   **복구**: 작업을 마친 후 일반 관리자 수준으로 돌아가려면 **로그아웃 후 다시 로그인**하여 세션을 새로 시작하는 것이 표준 절차입니다. 브라우저를 닫거나 세션이 만료되어도 자동으로 해제됩니다.\n\n**[오답 구분]**\n`End Impersonation`은 다른 사용자로 가장한 상태를 끝내고 원래 사용자로 돌아오는 기능입니다. High Security Settings 작업을 위해 활성화한 `security_admin` 같은 상승된 역할을 해제하는 표준 답은 아닙니다.\n\n**[Exam Keywords]**\nLog out and back in"
   },
   {
     "id": 109,
