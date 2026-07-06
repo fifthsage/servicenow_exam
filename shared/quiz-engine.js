@@ -1,5 +1,6 @@
 (function () {
   function initIntegratedQuiz(config) {
+    var policy = window.QuizPolicy || {};
     var allQuestions = Array.isArray(config.questions) ? config.questions : [];
     var questionPrefix = config.questionPrefix || 'Q';
     var noExplanationText = config.noExplanationText || '해설 정보가 없습니다.';
@@ -30,7 +31,7 @@
     }
 
     function normalizeQuestionId(id) {
-      return String(id);
+      return policy.normalizeQuestionId ? policy.normalizeQuestionId(id) : String(id);
     }
 
     function parseChooseCount(title) {
@@ -280,12 +281,12 @@
     }
 
     function normalizeRandomCount(value) {
-      if (value === 'all') {
-        return 'all';
+      if (policy.normalizeRandomCount) {
+        return policy.normalizeRandomCount(value);
       }
+      if (value === 'all') return 'all';
       var count = Number(value);
-      var allowed = [10, 20, 30, 50, 100];
-      return allowed.includes(count) ? count : 10;
+      return [10, 20, 30, 50, 100].includes(count) ? count : 10;
     }
 
     function getRandomCountFromQuery() {
@@ -294,18 +295,21 @@
     }
 
     function isSequentialFullStudyMode() {
-      return mode === 'all';
+      return policy.isSequentialFullStudyMode ? policy.isSequentialFullStudyMode(mode) : mode === 'all';
     }
 
     function isRandomMode() {
-      return mode === 'random';
+      return policy.isRandomMode ? policy.isRandomMode(mode) : mode === 'random';
     }
 
     function isAnswered(index) {
-      return !!(answers[index] && answers[index].length > 0);
+      return policy.isAnswered ? policy.isAnswered(answers[index]) : !!(answers[index] && answers[index].length > 0);
     }
 
     function getAnsweredIndexes() {
+      if (policy.getAnsweredIndexes) {
+        return policy.getAnsweredIndexes(answers);
+      }
       return answers.map(function (_, index) {
         return index;
       }).filter(isAnswered);
@@ -717,9 +721,11 @@
       var wrap = document.getElementById('practice-review');
       var list = document.getElementById('review-list');
       var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-      var reviewIndexes = isSequentialFullStudyMode()
-        ? getAnsweredIndexes()
-        : sessionQuestions.map(function (_, index) { return index; });
+      var reviewIndexes = policy.getReviewIndexes
+        ? policy.getReviewIndexes(mode, answers, sessionQuestions.length)
+        : (isSequentialFullStudyMode()
+          ? getAnsweredIndexes()
+          : sessionQuestions.map(function (_, index) { return index; }));
       list.innerHTML = '';
 
       reviewIndexes.forEach(function (i) {
@@ -776,7 +782,13 @@
     }
 
     function startSession(selectedMode, selectedCount) {
-      if (selectedMode === 'practice') {
+      var request = policy.normalizeSessionRequest
+        ? policy.normalizeSessionRequest(selectedMode, selectedCount)
+        : null;
+      if (request) {
+        selectedMode = request.mode;
+        selectedCount = request.count;
+      } else if (selectedMode === 'practice') {
         selectedMode = 'random';
         selectedCount = 10;
       } else if (selectedMode === 'all_random') {
@@ -789,13 +801,15 @@
         randomQuestionCount = normalizeRandomCount(selectedCount || randomQuestionCount);
       }
       setWrongModeFlag(mode === 'wrong');
-      var limit = mode === 'exam'
-        ? 75
-        : (isSequentialFullStudyMode()
-          ? allQuestions.length
-          : (isRandomMode()
-            ? (randomQuestionCount === 'all' ? allQuestions.length : randomQuestionCount)
-            : 10));
+      var limit = policy.getSessionLimit
+        ? policy.getSessionLimit(mode, randomQuestionCount, allQuestions.length)
+        : (mode === 'exam'
+          ? 75
+          : (isSequentialFullStudyMode()
+            ? allQuestions.length
+            : (isRandomMode()
+              ? (randomQuestionCount === 'all' ? allQuestions.length : randomQuestionCount)
+              : 10)));
       var duration = mode === 'exam' ? 90 * 60 : null;
 
       if (mode === 'wrong') {
@@ -828,11 +842,15 @@
       document.getElementById('quiz-screen').style.display = 'block';
       document.getElementById('practice-review').style.display = 'none';
 
-      var label = '연습';
-      if (mode === 'exam') label = '실전';
-      else if (mode === 'wrong') label = '오답';
-      else if (mode === 'all') label = '전체';
-      else if (isRandomMode()) label = randomQuestionCount === 'all' ? '랜덤(전체)' : '랜덤(' + randomQuestionCount + ')';
+      var label = policy.getModeLabel
+        ? policy.getModeLabel(mode, randomQuestionCount)
+        : '연습';
+      if (!policy.getModeLabel) {
+        if (mode === 'exam') label = '실전';
+        else if (mode === 'wrong') label = '오답';
+        else if (mode === 'all') label = '전체';
+        else if (isRandomMode()) label = randomQuestionCount === 'all' ? '랜덤(전체)' : '랜덤(' + randomQuestionCount + ')';
+      }
 
       document.getElementById('mode-label').textContent = label;
       if (mode === 'exam') {
@@ -904,27 +922,47 @@
       }
 
       stopTimer();
-      var correct = 0;
-      var wrongInSession = [];
-      var gradedIndexes = isSequentialFullStudyMode()
-        ? getAnsweredIndexes()
-        : sessionQuestions.map(function (_, index) { return index; });
+      var gradedIndexes = policy.getGradedIndexes
+        ? policy.getGradedIndexes(mode, answers, sessionQuestions.length)
+        : (isSequentialFullStudyMode()
+          ? getAnsweredIndexes()
+          : sessionQuestions.map(function (_, index) { return index; }));
+      var gradeResult = policy.gradeSession
+        ? policy.gradeSession(sessionQuestions, answers, gradedIndexes)
+        : null;
+      var correct = gradeResult ? gradeResult.correct : 0;
+      var wrongInSession = gradeResult ? gradeResult.wrongIds : [];
 
-      gradedIndexes.forEach(function (i) {
-        var q = sessionQuestions[i];
-        if (equalAnswers(q.answer, answers[i] || [])) {
-          correct += 1;
-          if (mode === 'wrong') {
-            wrongQuestionIds.delete(normalizeQuestionId(q.id));
-          }
+      if (gradeResult) {
+        if (policy.updateWrongQuestionIds) {
+          wrongQuestionIds = new Set(policy.updateWrongQuestionIds(mode, Array.from(wrongQuestionIds), gradeResult));
         } else {
-          wrongInSession.push(q.id);
+          if (mode === 'wrong') {
+            gradeResult.correctIds.forEach(function (id) {
+              wrongQuestionIds.delete(normalizeQuestionId(id));
+            });
+          }
+          wrongInSession.forEach(function (id) {
+            wrongQuestionIds.add(normalizeQuestionId(id));
+          });
         }
-      });
+      } else {
+        gradedIndexes.forEach(function (i) {
+          var q = sessionQuestions[i];
+          if (equalAnswers(q.answer, answers[i] || [])) {
+            correct += 1;
+            if (mode === 'wrong') {
+              wrongQuestionIds.delete(normalizeQuestionId(q.id));
+            }
+          } else {
+            wrongInSession.push(q.id);
+          }
+        });
 
-      wrongInSession.forEach(function (id) {
-        wrongQuestionIds.add(normalizeQuestionId(id));
-      });
+        wrongInSession.forEach(function (id) {
+          wrongQuestionIds.add(normalizeQuestionId(id));
+        });
+      }
       saveWrongQuestionIds();
       updateWrongModeUI();
 
