@@ -185,10 +185,17 @@ body {
 
 .practice button,
 .all button,
+.random button,
 .all-random button {
   background: rgba(88, 166, 255, 0.2);
   color: #ddebff;
   border-color: rgba(88, 166, 255, 0.5);
+}
+
+.random-counts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
 }
 
 .exam button {
@@ -330,24 +337,30 @@ body {
   margin-top: 12px;
   display: flex;
   gap: 8px;
-  justify-content: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .actions #explain-toggle-btn,
-.actions #answer-check-btn {
+.actions #answer-check-btn,
+.actions #question-jump {
   width: auto;
   max-width: none;
   white-space: nowrap;
 }
 
-.actions #answer-check-btn {
-  margin-right: auto;
+.quiz-help-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .quiz-nav-group {
   display: flex;
   gap: 8px;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .btn {
@@ -530,20 +543,32 @@ body {
   }
 
   .actions {
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
   }
 
   .actions #explain-toggle-btn,
-  .actions #answer-check-btn {
-    width: auto;
+  .actions #answer-check-btn,
+  .actions #question-jump,
+  .actions .btn {
+    width: 100%;
     max-width: none;
     white-space: nowrap;
-    margin-right: 0;
   }
 
   .quiz-nav-group {
     width: 100%;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  .quiz-help-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
   }
 
   .actions.result-actions {

@@ -25,7 +25,7 @@
       <div class="kpi">
         <span>Study Guide</span>
         <span>Exam How-to</span>
-        <span>Practice: Random 10</span>
+        <span>Random Practice: 10-100 or All</span>
         <span>Mock Exam: Random 75 / 90m</span>
         <span id="question-pool-count">Question Pool: -</span>
       </div>
@@ -48,19 +48,23 @@
 
       <article class="card">
         <span class="badge practice">Practice</span>
-        <h2>연습 문제 풀기</h2>
-        <p>랜덤 10문항 출제. 모든 문항 응답 후 채점되며, 오답 또는 버튼으로 해설을 확인할 수 있습니다.</p>
-        <a class="btn practice" href="CSA_Integrated_Quiz.html?mode=practice">연습 풀기</a>
+        <h2>랜덤 문제 풀기</h2>
+        <p>10, 20, 30, 50, 100문항 또는 전체 문항을 무작위로 골라 풉니다.</p>
+        <div class="card-actions random-actions">
+          <a class="btn practice" href="CSA_Integrated_Quiz.html?mode=random&count=10">10</a>
+          <a class="btn practice" href="CSA_Integrated_Quiz.html?mode=random&count=20">20</a>
+          <a class="btn practice" href="CSA_Integrated_Quiz.html?mode=random&count=30">30</a>
+          <a class="btn practice" href="CSA_Integrated_Quiz.html?mode=random&count=50">50</a>
+          <a class="btn practice" href="CSA_Integrated_Quiz.html?mode=random&count=100">100</a>
+          <a class="btn practice" href="CSA_Integrated_Quiz.html?mode=random&count=all">전체</a>
+        </div>
       </article>
 
       <article class="card">
         <span class="badge practice">All Questions</span>
         <h2>전체 문제 풀기</h2>
-        <p>문제 풀에 있는 모든 문항을 학습합니다. 순차 또는 랜덤 방식을 선택할 수 있습니다.</p>
-        <div class="card-actions">
-          <a class="btn practice" href="CSA_Integrated_Quiz.html?mode=all">순차 풀기</a>
-          <a class="btn practice" href="CSA_Integrated_Quiz.html?mode=all_random">랜덤 풀기</a>
-        </div>
+        <p>문제 풀에 있는 모든 문항을 번호 순서대로 학습합니다. 문항 번호로 바로 이동할 수 있습니다.</p>
+        <a class="btn practice" href="CSA_Integrated_Quiz.html?mode=all">전체 풀기</a>
       </article>
 
       <article class="card">
@@ -79,7 +83,7 @@
       </article>
     </section>
 
-    <p class="meta">권장 순서: 스터디 가이드 → 시험 응시 방법 확인 → 연습 모드 반복 → 실전 모드 → 오답 노트 재학습.</p>
+    <p class="meta">권장 순서: 스터디 가이드 → 시험 응시 방법 확인 → 랜덤 문제 풀이 반복 → 실전 모드 → 오답 노트 재학습.</p>
   </div>
 
   <script>

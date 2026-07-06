@@ -28,7 +28,7 @@
 
       <div id="invalid-screen" class="invalid-wrap">
         <h2>잘못된 접근입니다</h2>
-        <p>유효한 모드 파라미터가 필요합니다.<br>예: ?mode=practice, ?mode=exam, ?mode=wrong, ?mode=all</p>
+        <p>유효한 모드 파라미터가 필요합니다.<br>예: ?mode=all, ?mode=random&count=50, ?mode=exam, ?mode=wrong</p>
         <div class="actions result-actions">
           <button class="btn primary" onclick="location.href='index.html'">CSA 홈으로 이동</button>
           <button class="btn" onclick="location.href='../index.html'">메인 홈</button>
@@ -36,27 +36,29 @@
       </div>
 
       <div id="start-screen">
-        <p class="start-note">문제 풀에서 랜덤 출제합니다. 채점은 전체 완료 시 진행됩니다.</p>
+        <p class="start-note">전체 문제는 번호 순서로 학습하고, 랜덤 문제는 원하는 개수만 골라 풉니다.</p>
         <div class="mode-grid">
-          <div class="mode practice">
-            <h2>연습 모드</h2>
-            <p>랜덤 10문항. 시간 제한 없음. 전부 응답 후 채점. 해설 확인 가능.</p>
-            <button onclick="startSession('practice')">연습 시작</button>
+          <div class="mode all">
+            <h2>전체 문제 풀이</h2>
+            <p>1번부터 마지막 문항까지 순서대로 학습합니다. 문항 번호로 바로 이동할 수 있습니다.</p>
+            <button onclick="startSession('all')">전체 시작</button>
+          </div>
+          <div class="mode random">
+            <h2>랜덤 문제 풀이</h2>
+            <p>문제 풀에서 원하는 개수만 무작위로 출제합니다.</p>
+            <div class="random-counts">
+              <button onclick="startSession('random', 10)">10</button>
+              <button onclick="startSession('random', 20)">20</button>
+              <button onclick="startSession('random', 30)">30</button>
+              <button onclick="startSession('random', 50)">50</button>
+              <button onclick="startSession('random', 100)">100</button>
+              <button onclick="startSession('random', 'all')">전체</button>
+            </div>
           </div>
           <div class="mode exam">
             <h2>실전 모드</h2>
             <p>랜덤 75문항. 90분 제한. 전부 응답 또는 시간 종료 시 채점.</p>
             <button onclick="startSession('exam')">실전 시작</button>
-          </div>
-          <div class="mode all">
-            <h2>전체 모드 (순차)</h2>
-            <p>1번부터 마지막 문항까지 순서대로 학습합니다.</p>
-            <button onclick="startSession('all')">순차 시작</button>
-          </div>
-          <div class="mode all-random">
-            <h2>전체 모드 (랜덤)</h2>
-            <p>전체 문항을 무작위로 섞어서 학습합니다.</p>
-            <button onclick="startSession('all_random')">랜덤 시작</button>
           </div>
           <div class="mode wrong">
             <h2>오답 모드</h2>
@@ -109,7 +111,7 @@
         </div>
         <p class="summary" id="result-summary"></p>
         <div id="practice-review" class="review-wrap">
-          <h3>연습 모드 해설</h3>
+          <h3>풀이 해설</h3>
           <div id="review-list"></div>
         </div>
         <div class="actions result-actions">

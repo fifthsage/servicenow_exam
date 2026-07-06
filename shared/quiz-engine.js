@@ -16,6 +16,7 @@
     var answers = [];
     var currentIndex = 0;
     var mode = 'practice';
+    var randomQuestionCount = 10;
     var timeLeft = null;
     var timerId = null;
     var explanationVisible = false;
@@ -275,7 +276,45 @@
     function getModeFromQuery() {
       var q = new URLSearchParams(window.location.search);
       var m = q.get('mode');
-      return (m === 'exam' || m === 'practice' || m === 'wrong' || m === 'all' || m === 'all_random') ? m : null;
+      return (m === 'exam' || m === 'practice' || m === 'wrong' || m === 'all' || m === 'all_random' || m === 'random') ? m : null;
+    }
+
+    function normalizeRandomCount(value) {
+      if (value === 'all') {
+        return 'all';
+      }
+      var count = Number(value);
+      var allowed = [10, 20, 30, 50, 100];
+      return allowed.includes(count) ? count : 10;
+    }
+
+    function getRandomCountFromQuery() {
+      var q = new URLSearchParams(window.location.search);
+      return normalizeRandomCount(q.get('count') || 10);
+    }
+
+    function isSequentialFullStudyMode() {
+      return mode === 'all';
+    }
+
+    function isRandomMode() {
+      return mode === 'random';
+    }
+
+    function isAnswered(index) {
+      return !!(answers[index] && answers[index].length > 0);
+    }
+
+    function getAnsweredIndexes() {
+      return answers.map(function (_, index) {
+        return index;
+      }).filter(isAnswered);
+    }
+
+    function saveCurrentSelectionIfAny() {
+      var selected = getCurrentSelection();
+      answers[currentIndex] = selected;
+      return selected.length > 0;
     }
 
     function showInvalidAccess() {
@@ -489,6 +528,16 @@
         actions.appendChild(navGroup);
       }
 
+      var helpGroup = document.getElementById('quiz-help-group');
+      if (!helpGroup) {
+        helpGroup = document.createElement('div');
+        helpGroup.id = 'quiz-help-group';
+        helpGroup.className = 'quiz-help-group';
+      }
+      if (helpGroup.parentNode !== actions) {
+        actions.insertBefore(helpGroup, navGroup);
+      }
+
       var btn = document.getElementById('explain-toggle-btn');
       if (!btn) {
         btn = document.createElement('button');
@@ -499,8 +548,8 @@
         btn.textContent = '정답 및 해설 보기';
         btn.addEventListener('click', toggleQuestionExplanation);
       }
-      if (btn.parentNode !== actions || btn !== actions.firstChild) {
-        actions.insertBefore(btn, actions.firstChild);
+      if (btn.parentNode !== helpGroup) {
+        helpGroup.appendChild(btn);
       }
 
       var checkBtn = document.getElementById('answer-check-btn');
@@ -513,13 +562,27 @@
         checkBtn.textContent = '정답 확인';
         checkBtn.addEventListener('click', checkCurrentAnswer);
       }
-      if (btn.nextSibling !== checkBtn) {
-        actions.insertBefore(checkBtn, btn.nextSibling);
+      if (checkBtn.parentNode !== helpGroup) {
+        helpGroup.appendChild(checkBtn);
+      }
+
+      var jump = document.getElementById('question-jump');
+      if (!jump) {
+        jump = document.createElement('button');
+        jump.type = 'button';
+        jump.id = 'question-jump';
+        jump.className = 'btn';
+        jump.style.display = 'none';
+        jump.textContent = '문항 이동';
+        jump.addEventListener('click', jumpToQuestionId);
+      }
+      if (jump.parentNode !== helpGroup) {
+        helpGroup.appendChild(jump);
       }
     }
 
     function shouldShowQuestionExplanation() {
-      return mode === 'practice' || mode === 'all' || mode === 'all_random';
+      return mode === 'practice' || isRandomMode() || mode === 'all' || mode === 'all_random';
     }
 
     function syncQuestionExplanation() {
@@ -527,6 +590,7 @@
       var wrap = document.getElementById('question-explain');
       var btn = document.getElementById('explain-toggle-btn');
       var checkBtn = document.getElementById('answer-check-btn');
+      var jump = document.getElementById('question-jump');
       if (!wrap || !btn || !checkBtn) {
         return;
       }
@@ -534,6 +598,9 @@
       var showQuestionExplanation = shouldShowQuestionExplanation();
       btn.style.display = showQuestionExplanation ? 'inline-block' : 'none';
       checkBtn.style.display = showQuestionExplanation ? 'inline-block' : 'none';
+      if (jump) {
+        jump.style.display = isSequentialFullStudyMode() ? 'inline-block' : 'none';
+      }
       btn.textContent = explanationVisible ? '정답 및 해설 숨기기' : '정답 및 해설 보기';
 
       if (showQuestionExplanation && explanationVisible) {
@@ -629,7 +696,7 @@
 
       document.getElementById('prev-btn').disabled = currentIndex === 0;
       document.getElementById('next-btn').style.display = currentIndex === sessionQuestions.length - 1 ? 'none' : 'inline-block';
-      document.getElementById('submit-btn').style.display = currentIndex === sessionQuestions.length - 1 ? 'inline-block' : 'none';
+      document.getElementById('submit-btn').style.display = (isSequentialFullStudyMode() || currentIndex === sessionQuestions.length - 1) ? 'inline-block' : 'none';
       document.getElementById('notice').textContent = '';
       syncQuestionExplanation();
     }
@@ -650,9 +717,13 @@
       var wrap = document.getElementById('practice-review');
       var list = document.getElementById('review-list');
       var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      var reviewIndexes = isSequentialFullStudyMode()
+        ? getAnsweredIndexes()
+        : sessionQuestions.map(function (_, index) { return index; });
       list.innerHTML = '';
 
-      sessionQuestions.forEach(function (q, i) {
+      reviewIndexes.forEach(function (i) {
+        var q = sessionQuestions[i];
         var user = answers[i] || [];
         var ok = equalAnswers(q.answer, user);
         var isInWrongSet = wrongQuestionIds.has(normalizeQuestionId(q.id));
@@ -704,10 +775,27 @@
       return wrongList;
     }
 
-    function startSession(selectedMode) {
+    function startSession(selectedMode, selectedCount) {
+      if (selectedMode === 'practice') {
+        selectedMode = 'random';
+        selectedCount = 10;
+      } else if (selectedMode === 'all_random') {
+        selectedMode = 'random';
+        selectedCount = 'all';
+      }
+
       mode = selectedMode;
+      if (isRandomMode()) {
+        randomQuestionCount = normalizeRandomCount(selectedCount || randomQuestionCount);
+      }
       setWrongModeFlag(mode === 'wrong');
-      var limit = mode === 'exam' ? 75 : ((mode === 'all' || mode === 'all_random') ? allQuestions.length : 10);
+      var limit = mode === 'exam'
+        ? 75
+        : (isSequentialFullStudyMode()
+          ? allQuestions.length
+          : (isRandomMode()
+            ? (randomQuestionCount === 'all' ? allQuestions.length : randomQuestionCount)
+            : 10));
       var duration = mode === 'exam' ? 90 * 60 : null;
 
       if (mode === 'wrong') {
@@ -719,8 +807,8 @@
         }
       } else if (mode === 'all') {
         sessionQuestions = allQuestions.map(deepCloneQuestion);
-      } else if (mode === 'all_random') {
-        sessionQuestions = shuffle(allQuestions.map(deepCloneQuestion));
+      } else if (isRandomMode()) {
+        sessionQuestions = shuffle(allQuestions.map(deepCloneQuestion)).slice(0, Math.min(limit, allQuestions.length));
       } else {
         sessionQuestions = shuffle(allQuestions.map(deepCloneQuestion)).slice(0, Math.min(limit, allQuestions.length));
       }
@@ -743,8 +831,8 @@
       var label = '연습';
       if (mode === 'exam') label = '실전';
       else if (mode === 'wrong') label = '오답';
-      else if (mode === 'all') label = '전체(순차)';
-      else if (mode === 'all_random') label = '전체(랜덤)';
+      else if (mode === 'all') label = '전체';
+      else if (isRandomMode()) label = randomQuestionCount === 'all' ? '랜덤(전체)' : '랜덤(' + randomQuestionCount + ')';
 
       document.getElementById('mode-label').textContent = label;
       if (mode === 'exam') {
@@ -758,7 +846,9 @@
     }
 
     function moveQuestion(delta) {
-      if (!saveCurrentSelection()) {
+      if (isSequentialFullStudyMode()) {
+        saveCurrentSelectionIfAny();
+      } else if (!saveCurrentSelection()) {
         return;
       }
       currentIndex += delta;
@@ -771,18 +861,57 @@
       renderQuestion();
     }
 
+    function jumpToQuestionId() {
+      if (!isSequentialFullStudyMode()) {
+        return;
+      }
+
+      var value = window.prompt('이동할 문항 번호를 입력해 주세요.');
+      if (value === null) {
+        return;
+      }
+      var raw = Number(String(value).trim());
+      if (!Number.isInteger(raw) || raw < 1) {
+        window.alert('이동할 문항 번호를 입력해 주세요.');
+        return;
+      }
+
+      var targetIndex = sessionQuestions.findIndex(function (question) {
+        return Number(question.id) === raw;
+      });
+      if (targetIndex < 0) {
+        window.alert('해당 문항을 찾을 수 없습니다.');
+        return;
+      }
+
+      saveCurrentSelectionIfAny();
+      currentIndex = targetIndex;
+      renderQuestion();
+    }
+
     function finishQuiz(isTimeOver) {
       if (isTimeOver === void 0) {
         isTimeOver = false;
       }
-      if (!isTimeOver && !saveCurrentSelection()) {
+      if (isSequentialFullStudyMode()) {
+        saveCurrentSelectionIfAny();
+        if (getAnsweredIndexes().length === 0) {
+          window.alert('채점할 문항이 없습니다. 답을 선택한 뒤 채점해 주세요.');
+          return;
+        }
+      } else if (!isTimeOver && !saveCurrentSelection()) {
         return;
       }
 
       stopTimer();
       var correct = 0;
       var wrongInSession = [];
-      sessionQuestions.forEach(function (q, i) {
+      var gradedIndexes = isSequentialFullStudyMode()
+        ? getAnsweredIndexes()
+        : sessionQuestions.map(function (_, index) { return index; });
+
+      gradedIndexes.forEach(function (i) {
+        var q = sessionQuestions[i];
         if (equalAnswers(q.answer, answers[i] || [])) {
           correct += 1;
           if (mode === 'wrong') {
@@ -799,7 +928,7 @@
       saveWrongQuestionIds();
       updateWrongModeUI();
 
-      var total = sessionQuestions.length;
+      var total = gradedIndexes.length;
       var percent = total === 0 ? 0 : Math.round((correct / total) * 100);
 
       document.getElementById('quiz-screen').style.display = 'none';
@@ -808,10 +937,14 @@
       document.getElementById('result-score').textContent = correct + ' / ' + total;
       document.getElementById('result-percent').textContent = '정답률 ' + percent + '%';
 
-      var modeText = mode === 'exam' ? '실전 모드' : (mode === 'wrong' ? '오답 모드' : (mode === 'all' ? '전체 모드' : '연습 모드'));
-      document.getElementById('result-summary').textContent = modeText + '를 완료했습니다. ' + total + '문항 중 ' + correct + '문항 정답입니다.';
+      var modeText = mode === 'exam' ? '실전 모드' : (mode === 'wrong' ? '오답 모드' : (mode === 'all' ? '전체 문제 풀이' : (isRandomMode() ? '랜덤 문제 풀이' : '문제 풀이')));
+      var summaryText = modeText + '를 완료했습니다. ' + total + '문항 중 ' + correct + '문항 정답입니다.';
+      if (isSequentialFullStudyMode()) {
+        summaryText = modeText + '를 종료했습니다. 풀이한 ' + total + '문항 중 ' + correct + '문항 정답입니다.';
+      }
+      document.getElementById('result-summary').textContent = summaryText;
 
-      if (mode === 'practice' || mode === 'wrong' || mode === 'all' || mode === 'all_random') {
+      if (mode === 'practice' || isRandomMode() || mode === 'wrong' || mode === 'all' || mode === 'all_random') {
         renderPracticeReview();
       } else {
         document.getElementById('practice-review').style.display = 'none';
@@ -819,7 +952,7 @@
     }
 
     function restartCurrentMode() {
-      startSession(mode);
+      startSession(mode, randomQuestionCount);
     }
 
     function startWrongReview() {
@@ -838,10 +971,13 @@
     updateWrongModeUI();
     var autoMode = getModeFromQuery();
     if (!autoMode) {
-      showInvalidAccess();
+      var query = new URLSearchParams(window.location.search);
+      if (query.has('mode')) {
+        showInvalidAccess();
+      }
       return;
     }
-    startSession(autoMode);
+    startSession(autoMode, getRandomCountFromQuery());
   }
 
   window.initIntegratedQuiz = initIntegratedQuiz;

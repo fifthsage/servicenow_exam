@@ -205,6 +205,15 @@ header {
   flex: 1;
 }
 
+.random-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.random-actions .btn {
+  min-width: 0;
+}
+
 a.btn {
   text-decoration: none;
   border: 1px solid transparent;
