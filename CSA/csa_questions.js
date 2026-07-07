@@ -3253,9 +3253,9 @@ window.CSA_QUESTIONS = [
       }
     ],
     "answer": [
-      "D"
+      "B"
     ],
-    "explanation": "**[핵심 근거]**\n스프레드시트(Excel 등)로부터 데이터를 가져오는 표준 워크플로우는 다음과 같습니다.\n1.  **Load Data**: 파일을 업로드하여 **임포트 세트(Import Set)** 테이블을 생성하고 데이터를 적재합니다.\n2.  **Create/Select Transform Map**: 데이터가 들어갈 목적지와 변환 규칙을 정의합니다.\n3.  **Run Transform**: 정의된 맵을 실행하여 실제 운영 테이블로 데이터를 이동시킵니다.\n*   **데이터 무결성**: 이 과정에서 **Coalesce** 필드를 지정하여 데이터의 중복 생성을 방지(Update vs Insert)하는 것이 핵심입니다.\n\n**[Exam Keywords]**\nSelect Import Set, Select Transform Map, Run Transform"
+    "explanation": "**[핵심 근거]**\n스프레드시트(Excel 등)로부터 데이터를 가져오는 표준 워크플로우는 다음과 같습니다.\n1.  **Load Data**: 파일을 업로드하여 **임포트 세트(Import Set)** 테이블을 생성하고 데이터를 적재합니다.\n2.  **Create/Select Transform Map**: 데이터가 들어갈 목적지와 변환 규칙을 정의합니다.\n3.  **Run Transform**: 정의된 맵을 실행하여 실제 운영 테이블로 데이터를 이동시킵니다.\n*   **데이터 무결성**: 이 과정에서 **Coalesce** 필드를 지정하여 데이터의 중복 생성을 방지(Update vs Insert)하는 것이 핵심입니다.\n\n**[Exam Keywords]**\nLoad Data, Create Transform Map, Run Transform"
   },
   {
     "id": 120,
