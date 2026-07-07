@@ -3652,14 +3652,14 @@ window.CSA_QUESTIONS = [
         "id": "C"
       },
       {
-        "text": "When an Incident form is saved, the Additional Comments field text is cleared and recorded to the Work",
+        "text": "When an Incident form is saved, the Additional Comments field text is cleared and recorded to the Work Notes field",
         "id": "D"
       }
     ],
     "answer": [
-      "D"
+      "A"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow에서 **저널 필드(Journal Fields)**인 'Additional Comments'와 'Work Notes'는 일반 텍스트 필드와 다르게 작동합니다.\n*   **데이터 처리**: 사용자가 내용을 입력하고 레코드를 저장(Save/Update)하면, 입력된 텍스트는 즉시 **활동 로그(Activity Log)**로 이동하여 영구 기록됩니다.\n*   **UI 동작**: 저장이 완료됨과 동시에 입력 창은 다음 입력을 위해 깨끗이 비워집니다.\n*   **보관**: 이 데이터들은 실제로는 `sys_journal_field` 테이블에 저장되어 관리됩니다.\n\n**[Exam Keywords]**\n저널 필드(Journal Fields), 데이터 처리, 활동 로그(Activity Log), UI 동작, 보관, sys_journal_field, UI"
+    "explanation": "**[핵심 근거]**\nServiceNow에서 **Work Notes**와 **Additional Comments**는 저널 필드(Journal Fields)입니다. 사용자가 Work Notes에 입력한 내용은 레코드를 저장하면 활동 로그(Activity Log/Activity stream)에 기록되고, 입력 영역은 다음 입력을 위해 비워집니다.\n\n**[오답 구분]**\n* B: Work Notes는 매번 덮어쓰는 일반 텍스트 필드가 아니라 누적 기록되는 저널 필드입니다.\n* C: Impact는 Priority와 Urgency를 더해서 계산되는 값이 아닙니다. 일반적으로 Priority가 Impact와 Urgency 조합으로 산정됩니다.\n* D: Additional Comments도 저장 후 활동 로그에 기록되는 저널 필드이며, Work Notes 필드로 기록되는 것이 아닙니다.\n\n**[Exam Keywords]**\nWork Notes, Additional Comments, Journal Fields, Activity Log, Activity stream"
   },
   {
     "id": 134,
