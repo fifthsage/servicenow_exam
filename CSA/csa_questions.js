@@ -3020,9 +3020,9 @@ window.CSA_QUESTIONS = [
       }
     ],
     "answer": [
-      "D"
+      "E"
     ],
-    "explanation": "**[핵심 근거]**\nPriority처럼 드롭다운 선택값을 바꾸려면 필드의 **Choices**를 구성해야 합니다.\n`Configure Choices`는 선택 목록에 표시되는 값과 레이블을 관리하는 작업입니다. Task 수준에서 Priority choice를 조정하면 이를 확장한 Incident, Problem, Change 등 하위 task 테이블에도 일관된 용어를 적용할 수 있습니다.\n\n**[오답 구분]**\nList Layout이나 Form Layout은 화면 배치 변경이고, Dictionary는 필드 속성 자체를 관리하는 영역입니다. UI Policy는 조건에 따라 필드 표시/필수/읽기 전용 상태를 제어할 때 사용합니다.\n\n**[Exam Keywords]**\nConfigure Choices, Choices, UI Policy, Form Layout, List Layout, P1, P2, P3"
+    "explanation": "**[핵심 근거]**\n지문의 핵심은 Incident 한 테이블의 Priority 선택지만 바꾸는 것이 아니라, **all Tasks**에 걸쳐 P1, P2, P3, P4 용어를 일관되게 표시하는 것입니다. Incident, Problem, Change 등은 상위 **Task [task]** 테이블을 확장하므로, 공통 필드인 Priority를 전체 Task 계열에 적용하려면 상위 필드 정의를 다루는 **Configure Dictionary**에서 조정하는 것이 가장 적절합니다.\n\n**[오답 구분]**\n* D: **Configure Choices**는 선택 목록 값을 관리하는 기능이지만, Incident 폼에서 접근하면 특정 테이블의 선택지 조정으로 해석될 수 있습니다. 지문이 단순히 현재 task/incident의 선택값 변경을 묻는 경우라면 D가 맞을 수 있으나, **across all Tasks** 조건 때문에 E가 더 정확합니다.\n* A/C: List Layout과 Form Layout은 화면 배치 변경입니다.\n* F: UI Policy는 조건에 따라 필드 표시/필수/읽기 전용 상태를 제어할 때 사용합니다.\n\n**[Exam Keywords]**\nall Tasks, Task [task], Priority, Configure Dictionary, Configure Choices, P1, P2, P3, P4"
   },
   {
     "id": 112,
