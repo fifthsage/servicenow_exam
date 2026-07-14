@@ -896,7 +896,7 @@ window.CISDF_QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow의 식별 및 조정 엔진(IRE)에서 조정 우선순위는 숫자가 작을수록 권한이 높습니다(100 > 200 > 300). 따라서 Altiris(200)는 하위 등급인 SCCM(300)이 작성한 데이터를 덮어쓸 수 있으므로 은 참입니다. 또한, 조정 규칙은 기존 필드의 업데이트 권한을 통제할 뿐 신규 CI 레코드의 삽입(Insert) 자체를 거부하지 않으므로 SCCM이 새 데이터를 인서트할 수 있다는 역시 참입니다. SCCM은 우선순위 '숫자'만 클 뿐 실제 권한은 가장 낮으므로 A는 거짓입니다.\n\n**[Exam Keywords]**\nIRE, Reconciliation Rule, Reconciliation Rules, Discovery, SCCM, CI"
+    "explanation": "**[핵심 근거]**\nServiceNow의 식별 및 조정 엔진(IRE)에서 조정 우선순위는 숫자가 작을수록 권한이 높습니다(100 > 200 > 300). 따라서 Altiris(200)는 하위 등급인 SCCM(300)이 작성한 데이터를 덮어쓸 수 있습니다. 또한 조정 규칙은 기존 필드의 업데이트 권한을 통제할 뿐, 신규 CI 레코드의 삽입(Insert) 자체를 거부하지 않으므로 SCCM이 새 데이터를 삽입할 수도 있습니다. 반면 'SCCM의 우선순위 숫자가 가장 크므로 가장 높은 권한을 가진다'는 설명은 거짓입니다.\n\n**[Exam Keywords]**\nIRE, Reconciliation Rule, Reconciliation Rules, Discovery, SCCM, CI"
   },
   {
     "id": 37,
@@ -1321,7 +1321,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow의 식별 및 조정 엔진(IRE) 및 조정 규칙(Reconciliation Rules)은 플랫폼의 내장된 코어 기능(Core Platform Capability)입니다. 따라서 유료 고급 모니터링 레이어인 'CMDB 360(Multisource CMDB)'의 라이선스가 없거나 비활성화된 상태라 하더라도, 여러 외부 데이터 소스 간의 우선순위를 정의하고 속성 덮어쓰기를 통제하는 핵심 조정 로직은 완벽하게 작동합니다. CMDB 360은 유료 애드온이므로 A는 거짓이며, 라이선스 구매가 규칙 사용의 필수 조건이 아니므로 B 역시 거짓입니다.\n\n**[Exam Keywords]**\nCMDB, IRE, CMDB 360, Multisource CMDB, Reconciliation Rule, Reconciliation Rules, Discovery, ITOM"
+    "explanation": "**[핵심 근거]**\nServiceNow의 식별 및 조정 엔진(IRE) 및 조정 규칙(Reconciliation Rules)은 플랫폼의 내장된 코어 기능(Core Platform Capability)입니다. 따라서 유료 고급 모니터링 레이어인 'CMDB 360(Multisource CMDB)'의 라이선스가 없거나 비활성화된 상태라 하더라도, 여러 외부 데이터 소스 간의 우선순위를 정의하고 속성 덮어쓰기를 통제하는 핵심 조정 로직은 완벽하게 작동합니다. CMDB 360은 추가 라이선스가 필요한 제품이지만, 표준 IRE 조정 규칙 사용에 CMDB 360이나 ITOM Discovery 구매가 필수인 것은 아닙니다.\n\n**[Exam Keywords]**\nCMDB, IRE, CMDB 360, Multisource CMDB, Reconciliation Rule, Reconciliation Rules, Discovery, ITOM"
   },
   {
     "id": 54,
@@ -1607,7 +1607,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow CSDM 5.0 프레임워크에서 'Information Object(정보 객체)'는 비즈니스 애플리케이션이 다루는 논리적 데이터 유형(PII, PCI, 금융 정보 등)을 정의하는 엔티티입니다. SecOps나 GRC 팀이 애플리케이션 컨텍스트 내에서 데이터 민감도에 따른 '운영 리스크(Operational Risk)'를 평가하고 패치 우선순위를 산정하기 위해서는 이 정보 객체 레이어의 매핑이 반드시 필요하므로 C가 참입니다. 이벤트 자동화는 Run 도메인, 자산 관리는 Foundation 도메인, 고객 포털 및 케이스 관리는 Sell or Consume 도메인의 영역이므로 오답입니다.\n\n**[Exam Keywords]**\nCMDB, CSDM, IRE, Business Application, Information Object, PII, PCI, GRC"
+    "explanation": "**[핵심 근거]**\nServiceNow CSDM 5.0 프레임워크에서 'Information Object(정보 객체)'는 비즈니스 애플리케이션이 다루는 논리적 데이터 유형(PII, PCI, 금융 정보 등)을 정의하는 엔티티입니다. SecOps나 GRC 팀이 애플리케이션 컨텍스트 내에서 데이터 민감도에 따른 '운영 리스크(Operational Risk)'를 평가하고 패치 우선순위를 산정하기 위해서는 이 정보 객체 레이어의 매핑이 반드시 필요합니다. 이벤트 자동화는 Run 도메인, 자산 관리는 Foundation 도메인, 고객 포털 및 케이스 관리는 Sell or Consume 도메인의 영역이므로 정답 사례와 다릅니다.\n\n**[Exam Keywords]**\nCMDB, CSDM, IRE, Business Application, Information Object, PII, PCI, GRC"
   },
   {
     "id": 65,
@@ -1983,7 +1983,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\n이 문제는 다중 소스 환경에서 클래스 상속에 따른 동적 조정 규칙(Dynamic Reconciliation Rules)의 적용 대상을 정확히 구별할 수 있는지 검증합니다. 질문에서 최종 수정을 요청한 대상은 'Windows Server'가 아닌 일반 'Server' 레코드이므로, 부모 클래스에 설정된 'Largest Value(가장 큰 값)' 규칙이 발동합니다. 유입된 모든 페이로드 값(2048, 4096, 6020) 중 수학적으로 가장 큰 값은 6020이므로 A가 최종 반영됩니다. 자식 클래스의 규칙인 'Most Reported(최빈값)'를 오인하여 적용할 경우 4096이라는 함정에 빠지게 되므로 오답입니다.\n\n**[Exam Keywords]**\n6020"
+    "explanation": "**[핵심 근거]**\n이 문제는 다중 소스 환경에서 클래스 상속에 따른 동적 조정 규칙(Dynamic Reconciliation Rules)의 적용 대상을 정확히 구별할 수 있는지 검증합니다. 질문에서 최종 수정을 요청한 대상은 'Windows Server'가 아닌 일반 'Server' 레코드이므로, 부모 클래스에 설정된 'Largest Value(가장 큰 값)' 규칙이 발동합니다. 유입된 모든 페이로드 값(2048, 4096, 6020) 중 수학적으로 가장 큰 6020이 최종 반영됩니다. 자식 클래스의 규칙인 'Most Reported(최빈값)'를 오인하여 적용할 경우 4096이라는 함정에 빠지게 됩니다.\n\n**[Exam Keywords]**\n6020"
   },
   {
     "id": 79,
@@ -2009,7 +2009,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "**[핵심 근거]**\n이 문제는 다중 데이터 소스 환경에서 자식 클래스의 규칙 오버라이드(Class Override) 메커니즘을 정확히 이해하고 있는지 검증합니다. 질문의 대상이 'Windows Server' 레코드이므로 부모의 규칙(Largest) 대신 자식 클래스 고유의 동적 조정 규칙인 'Most Reported Value(가장 많이 보고된 값)'가 우선 적용됩니다. 유입된 페이로드 데이터 중 4096이 총 2회(Tivoli, ServiceNow)로 가장 많이 보고되었으므로 C가 최종 승인되어 작성됩니다. 부모의 규칙을 잘못 대입하여 최대값인 6020을 선택하지 않도록 주의해야 합니다.\n\n**[Exam Keywords]**\n4096"
+    "explanation": "**[핵심 근거]**\n이 문제는 다중 데이터 소스 환경에서 자식 클래스의 규칙 오버라이드(Class Override) 메커니즘을 정확히 이해하고 있는지 검증합니다. 질문의 대상이 'Windows Server' 레코드이므로 부모의 규칙(Largest) 대신 자식 클래스 고유의 동적 조정 규칙인 'Most Reported Value(가장 많이 보고된 값)'가 우선 적용됩니다. 유입된 페이로드 데이터 중 4096이 총 2회(Tivoli, ServiceNow)로 가장 많이 보고되었으므로 최종 승인되어 작성됩니다. 부모의 규칙을 잘못 대입하여 최대값인 6020을 선택하지 않도록 주의해야 합니다.\n\n**[Exam Keywords]**\n4096"
   },
   {
     "id": 80,
@@ -2035,7 +2035,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow IRE(식별 및 조정 엔진) 가이드라인에 따라, 조정 규칙(Reconciliation Rule)은 특정 자산 필드를 업데이트할 수 있는 '공식 권한 소스'를 지정합니다. 지문에서 'ServiceNow'가 해당 클래스의 허용 소스로 정의되어 있으므로, ServiceNow 소스로부터 유입된 기존 자산 업데이트 시도는 안전하게 수용(Allow Update)됩니다. 조정 규칙은 신규 삽입(Insert) 단계에는 관여하지 않고 오직 수정(Update) 단계에만 작동하므로 C와 D는 오답이며, 등록된 소스이므로 B 역시 오답입니다.\n\n**[Exam Keywords]**\nCMDB, IRE, Reconciliation Rule, Discovery, CI"
+    "explanation": "**[핵심 근거]**\nServiceNow IRE(식별 및 조정 엔진) 가이드라인에 따라, 조정 규칙(Reconciliation Rule)은 특정 자산 필드를 업데이트할 수 있는 '공식 권한 소스'를 지정합니다. 지문에서 'ServiceNow'가 해당 클래스의 허용 소스로 정의되어 있으므로, ServiceNow 소스로부터 유입된 기존 자산 업데이트 시도는 안전하게 수용(Allow Update)됩니다. 조정 규칙은 신규 삽입(Insert) 단계에는 관여하지 않고 오직 수정(Update) 단계에만 작동합니다. 따라서 등록된 소스의 업데이트를 차단하거나, 삽입 허용 여부로 해석하는 선택지는 오답입니다.\n\n**[Exam Keywords]**\nCMDB, IRE, Reconciliation Rule, Discovery, CI"
   },
   {
     "id": 81,
@@ -2061,7 +2061,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow IRE(식별 및 조정 엔진)에서 특정 클래스나 필드에 조정 규칙(Reconciliation Rule)이 정의되면, 지정된 소스들만 데이터를 수정할 수 있는 화이트리스트 보안 정책이 수립됩니다. 허용 소스가 ServiceNow와 SCCM으로 국한된 상황에서 리스트에 없는 Altiris 소스가 기존 자산의 업데이트를 시도하면, IRE는 데이터의 신뢰성을 보호하기 위해 업데이트를 차단(Do Not Allow Update)합니다. 조정 규칙은 신규 생성(Insert) 단계에는 개입하지 않으므로 C와 D는 논외 오답입니다.\n\n**[Exam Keywords]**\nCMDB, IRE, Reconciliation Rule, Discovery, SCCM, CI"
+    "explanation": "**[핵심 근거]**\nServiceNow IRE(식별 및 조정 엔진)에서 특정 클래스나 필드에 조정 규칙(Reconciliation Rule)이 정의되면, 지정된 소스들만 데이터를 수정할 수 있는 화이트리스트 보안 정책이 수립됩니다. 허용 소스가 ServiceNow와 SCCM으로 국한된 상황에서 리스트에 없는 Altiris 소스가 기존 자산의 업데이트를 시도하면, IRE는 데이터의 신뢰성을 보호하기 위해 업데이트를 차단(Do Not Allow Update)합니다. 조정 규칙은 신규 생성(Insert) 단계에는 개입하지 않으므로, 삽입 허용 여부를 답으로 보는 선택지들은 논외입니다.\n\n**[Exam Keywords]**\nCMDB, IRE, Reconciliation Rule, Discovery, SCCM, CI"
   },
   {
     "id": 82,
@@ -2113,7 +2113,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow 아키텍처 표준 가이드라인에 따라, CMDB는 자산(CI) 데이터와 그 관계 정보를 전체 수명 주기 동안 통합 관리하는 데이터베이스 컨테이너 총체를 의미하므로 A가 정답입니다. 선지 B는 CI Attributes(속성), 선지 C는 Foundation Data(기초 데이터), 선지 D는 CI Class(클래스/테이블)의 표준 정의이므로 CMDB 전체를 설명하는 보기가 아닙니다.\n\n**[Exam Keywords]**\nCMDB, IRE, CI"
+    "explanation": "**[핵심 근거]**\nServiceNow 아키텍처 표준 가이드라인에 따라, CMDB는 자산(CI) 데이터와 그 관계 정보를 전체 수명 주기 동안 통합 관리하는 중앙 데이터베이스입니다. 반면 이름·일련번호·운영체제는 CI를 설명하는 Attributes(속성), 사용자·그룹·위치는 Foundation Data(기초 데이터), 공통 속성을 공유하는 CI 유형별 테이블은 CI Class를 설명합니다.\n\n**[Exam Keywords]**\nCMDB, IRE, CI"
   },
   {
     "id": 84,
@@ -2139,7 +2139,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow CMDB 데이터 모델 표준 가이드라인에 따라, Attributes(속성)는 개별 자산(CI)의 구체적인 스펙과 메타데이터를 나타내는 개별 데이터 필드(Column)를 의미하므로 B가 정답입니다. 선지 A는 CMDB 자체, 선지 C는 Foundation Data(기초 데이터), 선지 D는 CI Class(클래스)의 표준 정의이므로 오답입니다.\n\n**[Exam Keywords]**\nCMDB, CI"
+    "explanation": "**[핵심 근거]**\nServiceNow CMDB 데이터 모델 표준 가이드라인에 따라, Attributes(속성)는 개별 자산(CI)의 구체적인 스펙과 메타데이터를 나타내는 데이터 필드(Column)입니다. 이름·일련번호·운영체제가 대표적인 예입니다. 중앙 데이터베이스 전체는 CMDB, 사용자·그룹·위치는 Foundation Data, 공통 속성을 공유하는 CI 유형별 테이블은 CI Class입니다.\n\n**[Exam Keywords]**\nCMDB, CI"
   },
   {
     "id": 85,
@@ -2165,7 +2165,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow 프레임워크 가이드라인에 따라, Foundational Data(기초 데이터)는 인프라 자산 데이터는 아니지만 CMDB 자산 및 ITSM 프로세스 전반에서 소유권, 지원 담당, 물리적 위치를 매핑하기 위해 참조하는 사용자, 그룹, 위치 등의 공통 마스터 데이터를 의미하므로 C가 정답입니다. 선지 A는 CMDB, 선지 B는 Attributes, 선지 D는 CI Class의 정의이므로 오답입니다.\n\n**[Exam Keywords]**\nGroup, Groups, CMDB, ITSM, CI"
+    "explanation": "**[핵심 근거]**\nServiceNow 프레임워크 가이드라인에 따라, Foundational Data(기초 데이터)는 인프라 자산 데이터는 아니지만 CMDB 자산 및 ITSM 프로세스 전반에서 소유권, 지원 담당, 물리적 위치를 매핑하기 위해 참조하는 사용자, 그룹, 위치 등의 공통 마스터 데이터를 의미합니다. 중앙 구성 데이터베이스는 CMDB, CI의 개별 필드는 Attributes, CI 유형별 테이블은 CI Class입니다.\n\n**[Exam Keywords]**\nGroup, Groups, CMDB, ITSM, CI"
   },
   {
     "id": 86,
@@ -2191,7 +2191,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow CMDB 아키텍처 표준 가이드라인에 따라, Class(클래스)는 공통된 스펙 데이터와 필드 구조를 공유하는 특정 유형의 자산(CI) 집합을 분류하여 격리 보관하는 '독립 데이터베이스 테이블'을 의미하므로 D가 정답입니다. 선지 A는 CMDB 컨테이너 전체, 선지 B는 Attributes(속성), 선지 C는 Foundational Data(기초 데이터)의 표준 정의문이므로 오답입니다.\n\n**[Exam Keywords]**\nGroup, CMDB, CI"
+    "explanation": "**[핵심 근거]**\nServiceNow CMDB 아키텍처 표준 가이드라인에 따라, Class(클래스)는 공통된 스펙 데이터와 필드 구조를 공유하는 특정 유형의 자산(CI) 집합을 분류하여 보관하는 독립 데이터베이스 테이블입니다. 중앙 컨테이너 전체는 CMDB, CI의 개별 필드는 Attributes(속성), 사용자·그룹·위치 등의 공통 마스터 레코드는 Foundational Data(기초 데이터)입니다.\n\n**[Exam Keywords]**\nGroup, CMDB, CI"
   },
   {
     "id": 87,
@@ -2217,7 +2217,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow IRE 엔진은 식별 엔트리의 우선순위와 속성의 고유성 가치를 엄격히 따집니다. CI 1은 최우선 고유 식별자인 'Name' 매칭에 성공했으므로 기존 레코드를 정확히 찾아내어 업데이트(Update)합니다. 반면, CI 2는 유동적 필드인 'IP Address'만 매치되었을 뿐 복합 식별 가드레일을 충족하지 못하므로, 기존 자산의 무결성 오염을 방지하기 위해 매칭 실패로 판정하고 시스템에 신규 삽입(Insert) 처리하므로 A가 완벽한 정답입니다.\n\n**[Exam Keywords]**\nCMDB, IRE, Identification Rule, CI, IP, MAC"
+    "explanation": "**[핵심 근거]**\nServiceNow IRE 엔진은 식별 엔트리의 우선순위와 속성의 고유성 가치를 엄격히 따집니다. CI 1은 최우선 고유 식별자인 'Name' 매칭에 성공했으므로 기존 레코드를 정확히 찾아내어 업데이트(Update)합니다. 반면, CI 2는 유동적 필드인 'IP Address'만 매치되었을 뿐 복합 식별 가드레일을 충족하지 못하므로, 기존 자산의 무결성 오염을 방지하기 위해 매칭 실패로 판정하고 신규 삽입(Insert) 처리합니다. 따라서 CI 1은 기존 CI를 업데이트하고 CI 2는 새 CI로 삽입됩니다.\n\n**[Exam Keywords]**\nCMDB, IRE, Identification Rule, CI, IP, MAC"
   },
   {
     "id": 88,
@@ -2265,7 +2265,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow IRE 엔진에서 데이터 소스 간의 고정 우선순위를 세팅하는 것은 Reconciliation Rules이지만, 상위 소스가 '일정 기간 비활성화(Period of inactivity)' 되었을 때 하위 소스가 가드레일을 깨고 임시 업데이트할 수 있도록 기간 기반 권한 양도 규칙을 정의하는 독립 모듈은 'Data Refresh Rule'이므로 A가 정답입니다. 일반 조정 규칙은 기간 소멸에 따른 동적 권한 이양을 수행하지 못하므로 오답입니다.\n\n**[Exam Keywords]**\nData Refresh Rule"
+    "explanation": "**[핵심 근거]**\nServiceNow IRE 엔진에서 데이터 소스 간의 고정 우선순위를 세팅하는 것은 Reconciliation Rules이지만, 상위 소스가 '일정 기간 비활성화(Period of inactivity)' 되었을 때 하위 소스가 가드레일을 깨고 임시 업데이트할 수 있도록 기간 기반 권한 양도 규칙을 정의하는 독립 모듈은 'Data Refresh Rule'입니다. 일반 조정 규칙은 기간 소멸에 따른 동적 권한 이양을 수행하지 못합니다.\n\n**[Exam Keywords]**\nData Refresh Rule"
   },
   {
     "id": 90,
@@ -2363,7 +2363,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow 공식 문서에 따르면, IRE가 감지한 중복 제거 작업(De-duplication tasks)과 같은 핵심 CMDB Health 관련 조치 항목은 관리자가 가장 먼저 인지하고 실행할 수 있도록 CMDB Workspace 랜딩 페이지인 'Home 탭'의 'Important Actions' 타일에 전면 배치됩니다. (지문에 'Import Action'으로 오타가 존재하나 위치상 A가 정답입니다.) 반면 'My Work' 탭은 CMDB Data Manager가 정책 기반으로 자동 생성하는 데이터 인증(Attestation) 등 수명 주기 작업을 관리하는 곳이므로 오답입니다.\n\n**[Exam Keywords]**\nCMDB, IRE, CMDB Data Manager, Attestation, CMDB Workspace"
+    "explanation": "**[핵심 근거]**\nServiceNow 공식 문서에 따르면, IRE가 감지한 중복 제거 작업(De-duplication tasks)과 같은 핵심 CMDB Health 관련 조치 항목은 관리자가 가장 먼저 인지하고 실행할 수 있도록 CMDB Workspace 랜딩 페이지인 'Home 탭'의 'Important Actions' 타일에 전면 배치됩니다. 지문의 'Import Action'은 'Important Action'의 오타로 보아야 합니다. 반면 'My Work' 탭은 CMDB Data Manager가 정책 기반으로 자동 생성하는 데이터 인증(Attestation) 등 수명 주기 작업을 관리하는 곳입니다.\n\n**[Exam Keywords]**\nCMDB, IRE, CMDB Data Manager, Attestation, CMDB Workspace"
   },
   {
     "id": 94,
@@ -2590,7 +2590,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow CI Class Manager 아키텍처 환경에서 자주 관리하고 모니터링하는 클래스로 신속하게 복귀할 수 있도록 돕는 즐겨찾기 숏컷 기능의 명칭은 'Pinned Classes'입니다. 압정(Pin) 아이콘을 눌러 좌측 상단에 고정해 두면 수천 개의 클래스 트리 사이에서 스크롤 낭비 없이 1초 만에 진입이 가능합니다. 선지 A, B, C는 특정 클래스 진입 후에 개별 규칙을 세팅하는 편집용 '설정 탭'에 해당하므로 탐색 도구를 묻는 지문의 정답이 될 수 없습니다.\n\n**[Exam Keywords]**\nPinned Classes list"
+    "explanation": "**[핵심 근거]**\nServiceNow CI Class Manager 아키텍처 환경에서 자주 관리하고 모니터링하는 클래스로 신속하게 복귀할 수 있도록 돕는 즐겨찾기 숏컷 기능의 명칭은 'Pinned Classes'입니다. 압정(Pin) 아이콘을 눌러 좌측 상단에 고정해 두면 수천 개의 클래스 트리 사이에서 스크롤 낭비 없이 빠르게 진입할 수 있습니다. Identification Rule, Reconciliation Rules, Basic Info는 특정 클래스 진입 후 개별 규칙을 편집하는 설정 탭이므로 탐색 도구가 아닙니다.\n\n**[Exam Keywords]**\nPinned Classes list"
   },
   {
     "id": 103,
@@ -2616,7 +2616,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow CMDB 다중 소스(Multi-source) 거버넌스 아키텍처에 따라, 다양한 외부 수집 도구들이 유입될 때 자산 속성(Attributes) 필드 데이터를 오염시키지 못하도록 데이터 소스별 업데이트 권한과 우선순위를 관리하는 독립 설정 영역은 'Reconciliation Rules' 탭이 유일하므로 B가 완벽한 정답입니다. 중복 차단 식별을 다루는 Identification Rule, 기본 스키마 표지인 Basic Info, 내비게이션 숏컷인 Pinned Classes는 소스 우선순위 제어권을 제공하지 않으므로 오답입니다.\n\n**[Exam Keywords]**\nReconciliation Rules tab"
+    "explanation": "**[핵심 근거]**\nServiceNow CMDB 다중 소스(Multi-source) 거버넌스 아키텍처에 따라, 다양한 외부 수집 도구들이 유입될 때 자산 속성(Attributes) 필드 데이터를 오염시키지 못하도록 데이터 소스별 업데이트 권한과 우선순위를 관리하는 독립 설정 영역은 'Reconciliation Rules' 탭입니다. 중복 차단 식별을 다루는 Identification Rule, 기본 스키마 표지인 Basic Info, 내비게이션 숏컷인 Pinned Classes는 소스 우선순위 제어권을 제공하지 않습니다.\n\n**[Exam Keywords]**\nReconciliation Rules tab"
   },
   {
     "id": 104,
@@ -2642,7 +2642,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow CMDB 메타데이터 표준에 따라, 특정 클래스의 물리적 테이블 속성이나 의존성 관계 도면(Dependency Views) 등 플랫폼 전역에서 시각적 식별성을 높이기 위해 사용되는 '클래스 고유 아이콘(Class Icon)' 설정 기능은 'CI Class Manager'의 가장 첫 번째 화면인 'Basic Info' 탭에서 제어하므로 C가 완벽한 정답입니다. 식별 규칙을 정하는 Identification, 소스 우선순위를 정하는 Reconciliation, 즐겨찾기 도구인 Pinned Classes는 시각적 아이콘 편집 인터페이스를 제공하지 않으므로 오답입니다.\n\n**[Exam Keywords]**\nBasic Info tab"
+    "explanation": "**[핵심 근거]**\nServiceNow CMDB 메타데이터 표준에 따라, 특정 클래스의 물리적 테이블 속성이나 의존성 관계 도면(Dependency Views) 등 플랫폼 전역에서 시각적 식별성을 높이기 위해 사용되는 '클래스 고유 아이콘(Class Icon)' 설정 기능은 'CI Class Manager'의 가장 첫 화면인 'Basic Info' 탭에서 제어합니다. 식별 규칙을 정하는 Identification, 소스 우선순위를 정하는 Reconciliation, 즐겨찾기 도구인 Pinned Classes는 시각적 아이콘 편집 인터페이스를 제공하지 않습니다.\n\n**[Exam Keywords]**\nBasic Info tab"
   },
   {
     "id": 105,
@@ -2668,7 +2668,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow CMDB 아키텍처 가이드라인에 따라, IRE가 데이터를 식별하는 도중 2개 이상의 동일 자산 레코드가 매치되는 '다중 매칭(Multi-match)' 오류가 발생하면 시스템은 기존 데이터 오염을 막기 위해 자동 업데이트를 차단하고, 관리자가 수동으로 병합 조치할 수 있도록 'De-duplication Task(중복 제거 태스크)' 티켓을 자동으로 발행하므로 B가 완벽한 정답입니다. 선지 A, C, D는 관리자가 사전에 구축하는 '정적 규칙 설정' 항목들이므로 오답입니다.\n\n**[Exam Keywords]**\nDe-duplication Task"
+    "explanation": "**[핵심 근거]**\nServiceNow CMDB 아키텍처 가이드라인에 따라, IRE가 데이터를 식별하는 도중 2개 이상의 동일 자산 레코드가 매치되는 '다중 매칭(Multi-match)' 오류가 발생하면 시스템은 기존 데이터 오염을 막기 위해 자동 업데이트를 차단하고, 관리자가 수동으로 병합 조치할 수 있도록 'De-duplication Task(중복 제거 태스크)' 티켓을 자동으로 발행합니다. Identification Rules, Reconciliation Rule, IRE Data Source Rule은 관리자가 사전에 구축하는 정적 규칙 설정이므로 자동 생성되는 조치 태스크가 아닙니다.\n\n**[Exam Keywords]**\nDe-duplication Task"
   },
   {
     "id": 106,
@@ -2695,7 +2695,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "C"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow CMDB 보정 가이드라인에 따라, 중복 병합 시 시스템 무결성을 지키기 위해 '가장 먼저 생성되어 기존 참조 키를 안정적으로 유지하고 있는 레코드(Oldest Created)'와 '현재 매핑된 인프라 관계 및 티켓 링크가 가장 많아 이관 부하를 최소화할 수 있는 레코드(Most Related Items)'를 메인 자산(Main CI)으로 선정하는 것이 표준 아키텍처 규칙입니다. 반대 성격인 B와 D는 데이터 단절 및 유실 리스크를 높이므로 오답입니다.\n\n**[Exam Keywords]**\nOldest Created timestamp, Most Related Items count"
+    "explanation": "**[핵심 근거]**\nServiceNow CMDB 보정 가이드라인에 따라, 중복 병합 시 시스템 무결성을 지키기 위해 '가장 먼저 생성되어 기존 참조 키를 안정적으로 유지하고 있는 레코드(Oldest Created)'와 '현재 매핑된 인프라 관계 및 티켓 링크가 가장 많아 이관 부하를 최소화할 수 있는 레코드(Most Related Items)'를 메인 자산(Main CI)으로 선정하는 것이 표준 아키텍처 규칙입니다. 반대로 관련 항목이 가장 적거나 가장 최근에 생성된 레코드를 메인 CI로 선정하면 데이터 단절과 유실 리스크가 커집니다.\n\n**[Exam Keywords]**\nOldest Created timestamp, Most Related Items count"
   },
   {
     "id": 107,
@@ -3017,7 +3017,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow CMDB 거버넌스 표준 아키텍처에 따라, Attestation(존재 증명)은 특정 자산의 데이터 수명 주기 상 생존 여부(Existence)를 확인 및 승인하는 가벼운 프로세스인 반면, Data Certification(데이터 인증)은 자산의 세부 필드 속성(Specific Attributes)들의 정합성을 일일이 대조하고 필요 시 수정 보정하는 정밀 데이터 감사 프로세스이므로 C가 완벽한 정답입니다. 두 기능 모두 스케줄링이 가능하며 그룹 배정을 지원하므로 A, D는 오답이며, B는 두 개념의 정의를 정반대로 서술했으므로 오답입니다.\n\n**[Exam Keywords]**\nCMDB, IRE, Certification, Attestation, CI"
+    "explanation": "**[핵심 근거]**\nServiceNow CMDB 거버넌스 표준 아키텍처에 따라, Attestation(존재 증명)은 특정 자산의 데이터 수명 주기 상 생존 여부(Existence)를 확인 및 승인하는 가벼운 프로세스인 반면, Data Certification(데이터 인증)은 자산의 세부 필드 속성(Specific Attributes)들의 정합성을 일일이 대조하고 필요 시 수정 보정하는 정밀 데이터 감사 프로세스입니다. 두 기능 모두 스케줄링과 그룹 배정을 지원하므로, 한쪽만 수동 실행되거나 개인에게만 배정된다는 설명은 잘못입니다. 또한 두 개념의 역할을 서로 바꾸어 설명해서도 안 됩니다.\n\n**[Exam Keywords]**\nCMDB, IRE, Certification, Attestation, CI"
   },
   {
     "id": 119,
@@ -3043,7 +3043,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow SecOps 아키텍처 가이드라인에 따라, 인프라 자산의 보안 취약점이 비즈니스에 미치는 위험도(Risk)와 우선순위(Priority)를 지능적으로 연산하려면, 발견된 기술 컴포넌트 환경(Service Instance (구Application Service))이 전사의 상위 논리적 기획 뼈대(Business Application)와 유기적으로 관계를 맺고 있어야 합니다. 대시보드에서 이 결합 품질을 진단하고 안내하는 플레이북은 'Service Instances (구 Application Services) with Business Application Relations'가 유일하므로 C가 완벽한 정답입니다.\n\n**[Exam Keywords]**\nService Instances (구 Application Services) with Business Application Relations alignment"
+    "explanation": "**[핵심 근거]**\nServiceNow SecOps 아키텍처 가이드라인에 따라, 인프라 자산의 보안 취약점이 비즈니스에 미치는 위험도(Risk)와 우선순위(Priority)를 지능적으로 연산하려면, 발견된 기술 컴포넌트 환경(Service Instance (구Application Service))이 전사의 상위 논리적 기획 뼈대(Business Application)와 유기적으로 관계를 맺고 있어야 합니다. 대시보드에서 이 결합 품질을 진단하고 안내하는 플레이북은 'Service Instances (구 Application Services) with Business Application Relations'입니다.\n\n**[Exam Keywords]**\nService Instances (구 Application Services) with Business Application Relations alignment"
   },
   {
     "id": 120,
@@ -3117,7 +3117,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "D"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow IRE(식별 및 조정 Engine) 가이드라인에 따라, 데이터 소스의 우선순위를 실시간 수집 컨텍스트에 의거해 가변적으로 제어하는 'Dynamic Reconciliation Rules'는 각 서드파티 소스별 입력 히스토리와 원시 데이터를 모두 보존하는 백엔드 공간을 요구합니다. 이 다중 소스 이력 보존 아키텍처를 지원하는 코어 기술이 바로 'CMDB 360 (Multisource CMDB)'이므로 D가 완벽한 전제 조건 정답입니다. 일반 정적 룰이나 데이터 매니저는 소스별 로우 데이터 추적 능력이 없어 동적 규칙을 구동하지 못하므로 오답입니다.\n\n**[Exam Keywords]**\nCMDB 360 / Multisource CMDB Framework"
+    "explanation": "**[핵심 근거]**\nServiceNow IRE(식별 및 조정 Engine) 가이드라인에 따라, 데이터 소스의 우선순위를 실시간 수집 컨텍스트에 의거해 가변적으로 제어하는 'Dynamic Reconciliation Rules'는 각 서드파티 소스별 입력 히스토리와 원시 데이터를 모두 보존하는 백엔드 공간을 요구합니다. 이 다중 소스 이력 보존 아키텍처를 지원하는 코어 기술은 'CMDB 360 (Multisource CMDB)'입니다. 일반 정적 룰이나 데이터 매니저는 소스별 로우 데이터 추적 능력이 없어 동적 규칙을 구동하지 못합니다.\n\n**[Exam Keywords]**\nCMDB 360 / Multisource CMDB Framework"
   },
   {
     "id": 123,
@@ -3165,7 +3165,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "C"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow CSDM 거버넌스 표준 명세에 따라, 하드웨어, 네트워크, 서버 등 내부 인프라 자산군과 이를 관리하는 기술 프로세스의 소유권은 'Technology Service Owner'에게 귀속됩니다. 따라서 인프라 업그레이드 카탈로그 아이템 생성을 주도하고 요구사항을 정의하는 역할은 C가 정확합니다. 특정 비즈니스 소프트웨어 인스턴스의 가용성을 관리하는 Service Instance (구Application Service) Owner나 상위 아키텍처 청사진만 그리는 Enterprise Architect는 인프라 실무 요청 프로세스의 소유자가 아니므로 오답입니다.\n\n**[Exam Keywords]**\nTechnology Service Owner (Technology Management Service (구 Technology Management Service (구Technical Service)) Owner)"
+    "explanation": "**[핵심 근거]**\nServiceNow CSDM 거버넌스 표준 명세에 따라, 하드웨어, 네트워크, 서버 등 내부 인프라 자산군과 이를 관리하는 기술 프로세스의 소유권은 'Technology Service Owner'에게 귀속됩니다. 따라서 인프라 업그레이드 카탈로그 아이템 생성을 주도하고 요구사항을 정의하는 역할은 Technology Service Owner입니다. 특정 비즈니스 소프트웨어 인스턴스의 가용성을 관리하는 Service Instance (구Application Service) Owner나 상위 아키텍처 청사진을 그리는 Enterprise Architect는 인프라 실무 요청 프로세스의 소유자가 아닙니다.\n\n**[Exam Keywords]**\nTechnology Service Owner (Technology Management Service (구 Technology Management Service (구Technical Service)) Owner)"
   },
   {
     "id": 125,
@@ -3187,7 +3187,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow 플랫폼 업그레이드 거버넌스 사상에 따라, 관리자가 OOTB 구성 요소를 수정한 경우 시스템은 고객의 커스터마이징 자산을 보호하기 위해 새 코드로 덮어쓰지 않습니다. 대신 'Skipped Change' 로그를 생성하여 추후 어드민이 수동 검토(Review/Merge)할 수 있도록 격리 조치하므로 B가 완벽한 정답입니다. 프로세스가 중단되거나 시작 전 거부되는 현상은 플랫폼 가드레일 디자인에 위배되는 오답입니다.\n\n**[Exam Keywords]**\nCMDB, Service Graph Connector, OOTB"
+    "explanation": "**[핵심 근거]**\nServiceNow 플랫폼 업그레이드 거버넌스 사상에 따라, 관리자가 OOTB 구성 요소를 수정한 경우 시스템은 고객의 커스터마이징 자산을 보호하기 위해 새 코드로 덮어쓰지 않습니다. 대신 'Skipped Change' 로그를 생성하여 추후 어드민이 수동 검토(Review/Merge)할 수 있도록 격리 조치합니다. 프로세스가 중단되거나 시작 전에 거부되는 현상은 플랫폼 가드레일 디자인과 다릅니다.\n\n**[Exam Keywords]**\nCMDB, Service Graph Connector, OOTB"
   },
   {
     "id": 126,
@@ -3214,7 +3214,7 @@ window.CISDF_QUESTIONS = [
       "A",
       "D"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow CMDB 360(Multisource CMDB) 아키텍처 명세에 따라, 플랫폼 마법사 UI에서 공식적으로 제공하는 동적 화해 규칙 유형(Dynamic Rule Types)은 오직 'First Reported', 'Most Reported', 'Last Reported', 'Largest Value', 'Smallest Value' 총 5가지만 존재합니다. 시간 및 빈도 기준의 유형은 모두 'Reported'라는 용어를 사용하므로, 출제자가 임의로 변형한 'Last Created'와 'Last Updated'는 플랫폼 인터페이스에 존재하지 않는 허구의 오답 선지입니다. 따라서 제공된 보기 중 올바른 동적 규칙 유형은 과 뿐입니다.\n\n**[Exam Keywords]**\nMost Reported, Smallest Value"
+    "explanation": "**[핵심 근거]**\nServiceNow CMDB 360(Multisource CMDB) 아키텍처 명세에 따라, 플랫폼 마법사 UI에서 공식적으로 제공하는 동적 화해 규칙 유형(Dynamic Rule Types)은 오직 'First Reported', 'Most Reported', 'Last Reported', 'Largest Value', 'Smallest Value' 총 5가지만 존재합니다. 시간 및 빈도 기준의 유형은 모두 'Reported'라는 용어를 사용하므로, 출제자가 임의로 변형한 'Last Created'와 'Last Updated'는 플랫폼 인터페이스에 존재하지 않는 허구의 오답 선지입니다. 따라서 제공된 보기 중 올바른 동적 규칙 유형은 'Most Reported'와 'Smallest Value'입니다.\n\n**[Exam Keywords]**\nMost Reported, Smallest Value"
   },
   {
     "id": 127,
@@ -3258,7 +3258,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow ITOM 및 CSDM 가이드라인에 따라, Service Instance (구Application Service) 매핑은 하부 인프라 구성 항목(CI)들과 최상위 비즈니스 서비스 간의 탑다운 의존성(Dependency)을 증명하는 기술입니다. 따라서 이를 변경 관리에 결합하면 특정 인프라를 건드렸을 때 마비되는 전사적 '비즈니스 영향도(Business Impact)'를 정확히 계산해 주므로 A가 완벽한 정답입니다. 단순 물리적 주소 확인이나 장비 오프라인 순서 계산은 서비스 매핑의 아키텍처적 목적이 아니므로 오답입니다.\n\n**[Exam Keywords]**\nCSDM, Service Instance, Application Service, ITOM, CI"
+    "explanation": "**[핵심 근거]**\nServiceNow ITOM 및 CSDM 가이드라인에 따라, Service Instance (구Application Service) 매핑은 하부 인프라 구성 항목(CI)들과 최상위 비즈니스 서비스 간의 탑다운 의존성(Dependency)을 증명하는 기술입니다. 따라서 이를 변경 관리에 결합하면 특정 인프라를 건드렸을 때 마비되는 전사적 '비즈니스 영향도(Business Impact)'와 서비스 의존 범위를 정확히 계산할 수 있습니다. 단순 물리적 주소 확인이나 장비 오프라인 순서 계산은 서비스 매핑의 아키텍처적 목적이 아닙니다.\n\n**[Exam Keywords]**\nCSDM, Service Instance, Application Service, ITOM, CI"
   },
   {
     "id": 129,
@@ -3306,7 +3306,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "B"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow 하드웨어 자산 및 구성 관리 통합 베스트 프랙티스에 따라, CI와 Asset 레코드 간의 실시간 필드 동기화는 무한 루프 위험성이 높은 비즈니스 룰 코딩 대신 순정 엔진인 'AssetCI Field Mapping' 모듈을 통해 제어하는 것이 표준입니다. 이 맵을 통해 한쪽의 데이터 변화가 상대 테이블의 상호 매핑된 필드로 코딩 없이 안전하게 전파되므로 B가 정답입니다. 닷워크 UI 제어는 백엔드 물리 필드 값을 직접 적재하지 못하므로 오답입니다.\n\n**[Exam Keywords]**\nCMDB, IRE, CI, UI"
+    "explanation": "**[핵심 근거]**\nServiceNow 하드웨어 자산 및 구성 관리 통합 베스트 프랙티스에 따라, CI와 Asset 레코드 간의 실시간 필드 동기화는 무한 루프 위험성이 높은 비즈니스 룰 코딩 대신 순정 엔진인 'AssetCI Field Mapping' 모듈을 통해 제어하는 것이 표준입니다. 이 맵을 통해 한쪽의 데이터 변화가 상대 테이블의 상호 매핑된 필드로 코딩 없이 안전하게 전파됩니다. UI Policy와 닷워킹은 백엔드 물리 필드 값을 직접 적재하지 못합니다.\n\n**[Exam Keywords]**\nCMDB, IRE, CI, UI"
   },
   {
     "id": 131,
@@ -4299,7 +4299,7 @@ window.CISDF_QUESTIONS = [
     "answer": [
       "A"
     ],
-    "explanation": "**[핵심 근거]**\nCSDM 5.0 버전은 기존 4.0의 5개 도메인 체계에서 'Ideation & Strategy(아이디어 및 전략)'와 'Manage Portfolios(포트폴리오 관리)' 도메인이 추가되어 총 7개 도메인으로 확장되었습니다. 이는 디지털 제품(Digital Product)의 전 수명 주기를 '기획(Plan)'부터 '거버넌스(Govern)'까지 아우르기 위함입니다. B, C 도메인은 기존 명칭이 변경된 것이며, D의 Architecture는 공식 도메인이 아니므로 오답입니다.\n\n**[Exam Keywords]**\nIdeation & Strategy and Manage Portfolios"
+    "explanation": "**[핵심 근거]**\nCSDM 5.0 버전은 기존 4.0의 5개 도메인 체계에서 'Ideation & Strategy(아이디어 및 전략)'와 'Manage Portfolios(포트폴리오 관리)' 도메인이 추가되어 총 7개 도메인으로 확장되었습니다. 이는 디지털 제품(Digital Product)의 전 수명 주기를 '기획(Plan)'부터 '거버넌스(Govern)'까지 아우르기 위함입니다. Design & Planning, Build & Integration, Service Delivery, Service Consumption은 기존 체계에서 명칭이 변경된 도메인이며, Architecture는 공식 도메인이 아닙니다.\n\n**[Exam Keywords]**\nIdeation & Strategy and Manage Portfolios"
   },
   {
     "id": 168,
