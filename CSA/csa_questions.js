@@ -5969,9 +5969,9 @@ window.CSA_QUESTIONS = [
       }
     ],
     "answer": [
-      "A"
+      "B"
     ],
-    "explanation": "**[핵심 근거]**\n**자연어 쿼리(NLQ, Natural Language Query)**는 복잡한 조건 빌더 사용법을 모르는 일반 사용자도 일상적인 언어로 데이터를 조회할 수 있게 돕는 지능형 인터페이스입니다.\n*   **작동 방식**: 리스트 상단의 검색창에 \"Incidents opened this week by ITIL user\"와 같이 입력하면 시스템이 의도를 파악하여 해당하는 필터 조건을 자동으로 생성하고 적용합니다.\n*   **가치**: 데이터 분석의 장벽을 낮추고 필요한 정보를 더 신속하게 탐색할 수 있는 사용자 경험을 제공합니다.\n\n**[Exam Keywords]**\nAutomatically select a filter, based on keywords"
+    "explanation": "**[핵심 근거]**\n**자연어 쿼리(NLQ, Natural Language Query)**는 사용자가 리스트에서 일상적인 자연어 문구를 입력해 데이터를 필터링할 수 있게 합니다.\n*   **작동 방식**: 자연어 필터에 \"show me active hardware tickets\"와 같은 문구를 입력하면 NLQ가 요청을 해석하여 구조화된 조건을 만들고, 해당 결과만 리스트에 표시합니다.\n*   **오답 구분**: 단순히 키워드를 기반으로 기존 필터를 자동 선택하는 기능이 아니라, 입력한 자연어 문구를 쿼리 조건으로 변환하는 기능입니다.\n\n**[Exam Keywords]**\nFilter list by typing in a phrase, Natural Language Query, plain language, structured query"
   },
   {
     "id": 217,

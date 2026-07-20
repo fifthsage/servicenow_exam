@@ -57,7 +57,7 @@
           </div>
           <div class="mode exam">
             <h2>실전 모드</h2>
-            <p>랜덤 75문항. 90분 제한. 전부 응답 또는 시간 종료 시 채점.</p>
+            <p><span id="exam-summary"></span>. 전부 응답 또는 시간 종료 시 채점.</p>
             <button onclick="startSession('exam')">실전 시작</button>
           </div>
           <div class="mode wrong">
@@ -128,6 +128,7 @@
     </div>
   </div>
 
+  <script src="../shared/exam-config.js"></script>
   <script src="../shared/quiz-policy.js"></script>
   <script src="../shared/quiz-engine.js"></script>
   <script src="cisdf_questions.js"></script>
@@ -135,9 +136,11 @@
     window.initIntegratedQuiz({
       questions: window.CISDF_QUESTIONS,
       questionPrefix: 'Q',
+      examKey: 'CIS-DF',
       wrongStorageKey: 'sn_quiz_wrong_cisdf',
       wrongModeFlagKey: 'sn_quiz_mode_wrong_cisdf'
     });
+    document.getElementById('exam-summary').textContent = window.ExamConfig.formatSummary('CIS-DF', '. ');
   </script>
 </body>
 

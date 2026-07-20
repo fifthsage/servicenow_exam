@@ -34,7 +34,8 @@ function testIndexes() {
 }
 
 function testSessionLimitAndLabels() {
-  assert.strictEqual(policy.getSessionLimit('exam', 10, 364), 75);
+  assert.strictEqual(policy.getSessionLimit('exam', 10, 364, 60), 60);
+  assert.throws(() => policy.getSessionLimit('exam', 10, 364), /문항 수 설정/);
   assert.strictEqual(policy.getSessionLimit('all', 10, 364), 364);
   assert.strictEqual(policy.getSessionLimit('random', 50, 364), 50);
   assert.strictEqual(policy.getSessionLimit('random', 'all', 364), 364);

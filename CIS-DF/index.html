@@ -9,6 +9,7 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../shared/hub-common.css">
+  <script src="../shared/exam-config.js"></script>
   <script src="cisdf_questions.js"></script>
 </head>
 
@@ -21,11 +22,11 @@
   <div class="container">
     <header>
       <h1 class="title">CIS-DF 통합 학습 허브</h1>
-      <p class="subtitle">스터디 가이드, 연습 10문항, 실전 75문항(90분), 시험 전 최종 정리를 한 흐름으로 제공합니다.</p>
+      <p class="subtitle">스터디 가이드, 연습 문제, 실전 모드, 시험 전 최종 정리를 한 흐름으로 제공합니다.</p>
       <div class="kpi">
         <span>Exam How-to</span>
         <span>Random Practice: 10-100 or All</span>
-        <span>Mock Exam: Random 75 / 90m</span>
+        <span id="exam-kpi"></span>
         <span id="question-pool-count">Question Pool: -</span>
       </div>
     </header>
@@ -81,7 +82,7 @@
       <article class="card">
         <span class="badge exam">Mock Exam</span>
         <h2>실전 문제 풀기</h2>
-        <p>랜덤 75문항, 제한 시간 90분으로 구성된 모드입니다. 종료 시 전체 점수를 확인합니다.</p>
+        <p><span id="exam-summary"></span>으로 구성된 모드입니다. 종료 시 전체 점수를 확인합니다.</p>
         <a class="btn exam" href="CIS-DF_Integrated_Quiz.html?mode=exam">실전 풀기</a>
       </article>
 
@@ -127,6 +128,9 @@
 
     // Update dynamic question count
     (function () {
+      var exam = window.ExamConfig.get('CIS-DF');
+      document.getElementById('exam-kpi').textContent = 'Mock Exam: Random ' + exam.questionCount + ' / ' + exam.durationMinutes + 'm';
+      document.getElementById('exam-summary').textContent = window.ExamConfig.formatSummary('CIS-DF');
       var countSpan = document.getElementById('question-pool-count');
       if (countSpan && window.CISDF_QUESTIONS) {
         countSpan.textContent = 'Question Pool: ' + window.CISDF_QUESTIONS.length;

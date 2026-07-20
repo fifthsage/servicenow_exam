@@ -3,6 +3,11 @@
     var policy = window.QuizPolicy || {};
     var allQuestions = Array.isArray(config.questions) ? config.questions : [];
     var questionPrefix = config.questionPrefix || 'Q';
+    var examConfig = window.ExamConfig && window.ExamConfig.get
+      ? window.ExamConfig.get(config.examKey)
+      : null;
+    var examQuestionCount = examConfig ? examConfig.questionCount : null;
+    var examDurationMinutes = examConfig ? examConfig.durationMinutes : null;
     var noExplanationText = config.noExplanationText || '해설 정보가 없습니다.';
     var formatExplanation = typeof config.formatExplanation === 'function'
       ? config.formatExplanation
@@ -797,20 +802,25 @@
       }
 
       mode = selectedMode;
+      if (mode === 'exam' && (!Number.isInteger(examQuestionCount) || examQuestionCount <= 0 ||
+        !Number.isFinite(examDurationMinutes) || examDurationMinutes <= 0)) {
+        window.alert('실전 모드 시험 설정을 확인해 주세요.');
+        return;
+      }
       if (isRandomMode()) {
         randomQuestionCount = normalizeRandomCount(selectedCount || randomQuestionCount);
       }
       setWrongModeFlag(mode === 'wrong');
       var limit = policy.getSessionLimit
-        ? policy.getSessionLimit(mode, randomQuestionCount, allQuestions.length)
+        ? policy.getSessionLimit(mode, randomQuestionCount, allQuestions.length, examQuestionCount)
         : (mode === 'exam'
-          ? 75
+          ? examQuestionCount
           : (isSequentialFullStudyMode()
             ? allQuestions.length
             : (isRandomMode()
               ? (randomQuestionCount === 'all' ? allQuestions.length : randomQuestionCount)
               : 10)));
-      var duration = mode === 'exam' ? 90 * 60 : null;
+      var duration = mode === 'exam' ? examDurationMinutes * 60 : null;
 
       if (mode === 'wrong') {
         sessionQuestions = getWrongSessionQuestions().map(deepCloneQuestion);

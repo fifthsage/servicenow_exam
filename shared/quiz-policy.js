@@ -72,9 +72,12 @@
     return getGradedIndexes(mode, answers, questionCount);
   }
 
-  function getSessionLimit(mode, randomCount, questionCount) {
+  function getSessionLimit(mode, randomCount, questionCount, examQuestionCount) {
     if (mode === 'exam') {
-      return 75;
+      if (!Number.isInteger(examQuestionCount) || examQuestionCount <= 0) {
+        throw new Error('실전 모드 문항 수 설정이 필요합니다.');
+      }
+      return examQuestionCount;
     }
     if (isSequentialFullStudyMode(mode)) {
       return questionCount;

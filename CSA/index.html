@@ -9,6 +9,7 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../shared/hub-common.css">
+  <script src="../shared/exam-config.js"></script>
   <script src="csa_questions.js"></script>
 </head>
 
@@ -26,7 +27,7 @@
         <span>Study Guide</span>
         <span>Exam How-to</span>
         <span>Random Practice: 10-100 or All</span>
-        <span>Mock Exam: Random 75 / 90m</span>
+        <span id="exam-kpi"></span>
         <span id="question-pool-count">Question Pool: -</span>
       </div>
     </header>
@@ -70,7 +71,7 @@
       <article class="card">
         <span class="badge exam">Mock Exam</span>
         <h2>실전 문제 풀기</h2>
-        <p>랜덤 75문항 / 90분 제한. 전체 완료 또는 시간 종료 시 채점.</p>
+        <p><span id="exam-summary"></span>. 전체 완료 또는 시간 종료 시 채점.</p>
         <a class="btn exam" href="CSA_Integrated_Quiz.html?mode=exam">실전 풀기</a>
       </article>
 
@@ -116,6 +117,9 @@
 
     // Update dynamic question count
     (function () {
+      var exam = window.ExamConfig.get('CSA');
+      document.getElementById('exam-kpi').textContent = 'Mock Exam: Random ' + exam.questionCount + ' / ' + exam.durationMinutes + 'm';
+      document.getElementById('exam-summary').textContent = window.ExamConfig.formatSummary('CSA');
       var countSpan = document.getElementById('question-pool-count');
       if (countSpan && window.CSA_QUESTIONS) {
         countSpan.textContent = 'Question Pool: ' + window.CSA_QUESTIONS.length;
