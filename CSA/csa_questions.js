@@ -6098,7 +6098,7 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 221,
-    "title": "When managing tags, you can adjust who is able to see iL What are the visibility options? Choose 3 answers",
+    "title": "When managing tags, you can adjust who is able to see it. What are the visibility options? Choose 3 answers",
     "options": [
       {
         "text": "Admins",
@@ -6126,7 +6126,7 @@ window.CSA_QUESTIONS = [
       "C",
       "E"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow에서 레코드 관리를 위해 사용자가 생성하는 **태그(Tags)**는 협업과 개인화를 위해 세 가지 가시성 수준을 제공합니다.\n1.  **Me**: 본인만 볼 수 있는 개인용 태그.\n2.  **Groups and Users**: 특정 그룹 멤버나 지정된 특정 사용자와 공유하는 태그.\n3.  **Everyone**: 인스턴스의 모든 사용자가 볼 수 있는 전역 공유 태그.\n*   **관리**: 'My Tags' 모듈이나 리스트 뷰에서 태그 설정을 변경하여 정보 공유 범위를 유연하게 통제할 수 있습니다.\n\n**[Exam Keywords]**\nEveryone, Groups and Users, Me"
+    "explanation": "**[오탈자 주의]**\n원문의 `see iL` 표기는 의미 있는 ServiceNow 용어가 아니라, **`see it.`이 OCR/덤프 변환 과정에서 잘못 인식된 오탈자**입니다. 정상 문장은 `you can adjust who is able to see it.`입니다.\n\n**[핵심 근거]**\nServiceNow 공식 문서의 Tag **Viewable by** 설정은 다음 세 가지이므로 정답은 **B·C·E**입니다.\n1.  **E — Me (Private)**: 태그 소유자만 볼 수 있으며 기본값입니다.\n2.  **C — Groups and Users (Shared)**: 소유자와 지정한 그룹 또는 사용자가 볼 수 있습니다.\n3.  **B — Everyone (Global)**: 모든 사용자에게 보이는 전역 태그입니다. 단, 이 가시성을 새로 설정하는 옵션은 **admin 또는 tags_admin 역할**을 가진 사용자에게만 제공됩니다.\n\n**[오답 구분]**\n**Admins**와 **Roles and Permissions**는 Tag의 Viewable by 선택값이 아닙니다. `Everyone`을 설정할 수 있는 권한과 태그의 가시성 선택지를 혼동하지 않도록 주의합니다.\n\n**[암기 포인트]**\n`Private = Me / Shared = Groups and Users / Global = Everyone`\n\n**[Exam Keywords]**\nTags, Viewable by, Me, Groups and Users, Everyone, private, shared, global"
   },
   {
     "id": 222,
@@ -9144,7 +9144,7 @@ window.CSA_QUESTIONS = [
       "B",
       "D"
     ],
-    "explanation": "**[핵심 근거]**\n**Spoke**는 ServiceNow **IntegrationHub**에서 특정 외부 시스템이나 서비스와 연동하기 위해 제공되는 재사용 가능한 액션과 플로우 구성 요소의 묶음입니다.\n*   **코드 최소화**: API 호출이나 인증 로직을 직접 스크립트로 작성하는 부담을 줄입니다.\n*   **확장 및 제어**: 표준화된 액션을 통해 통합을 더 일관되게 관리하고 운영 통제를 적용하기 쉽습니다.\n*   **발견성과 재사용성**: 한 번 구성된 Spoke 액션은 여러 플로우에서 찾아 재사용할 수 있어 통합 구현의 중복을 줄입니다.\n\n**[오답 구분]**\n모든 Spoke가 무료라는 보장은 없으며, Automated event management는 Spoke 자체의 일반 장점이라기보다 특정 솔루션/이벤트 관리 영역의 기능에 가깝습니다.\n\n**[Exam Keywords]**\nSpoke, IntegrationHub, Reuse, Discoverability, Scale and Control"
+    "explanation": "**[핵심 근거]**\n**Spoke**는 ServiceNow **IntegrationHub**에서 특정 외부 시스템이나 서비스와 연동하기 위해 제공되는 재사용 가능한 액션과 플로우 구성 요소의 묶음입니다.\n*   **A — 코드 최소화**: API 호출이나 인증 로직을 직접 스크립트로 작성하는 부담을 줄입니다.\n*   **B — 확장 및 제어**: 표준화된 액션과 IntegrationHub의 관리 기능을 통해 통합을 일관되게 확장하고 운영 통제를 적용하기 쉽습니다.\n*   **D — 발견성과 재사용성**: 패키지화된 Spoke Action을 여러 Flow에서 찾아 재사용할 수 있어 통합 구현의 중복을 줄입니다.\n\n**[헷갈리는 보기]**\n*   **C — Free spokes are available in the ServiceNow Store**: Store에 가격이 없는 것처럼 표시되거나 특정 제품 구독에 포함된 Spoke가 있을 수는 있습니다. 그러나 **Store에서 다운로드 가능/가격 0 = 생산 환경에서 무료 사용**을 뜻하지는 않습니다. 공식 문서상 ServiceNow 개발 Spoke의 사용 권한에는 Integration Hub 또는 해당 Spoke를 포함한 제품 구독이 필요하며, 트랜잭션 비용도 발생할 수 있습니다. 따라서 이 문항의 **Spoke 자체의 일반적 이점**으로는 선택하지 않습니다.\n*   **E — Automated event management**: Spoke 자체의 일반 장점이 아니라 특정 솔루션이나 Event Management 영역의 기능입니다.\n\n**[암기 포인트]**\n`Spoke의 설계상 이점 = Code ↓ + Scale/Control + Discover/Reuse`\n\n**[Exam Keywords]**\nSpoke, Integration Hub, Reuse, Discoverability, Scale and Control, subscription, entitlement"
   },
   {
     "id": 328,
