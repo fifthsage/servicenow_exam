@@ -2171,7 +2171,7 @@ window.CSA_QUESTIONS = [
       "C",
       "D"
     ],
-    "explanation": "**[핵심 근거]**\nClassic UI의 **애플리케이션 내비게이터 검색(Filter Navigator)**은 사용자가 접근할 수 있는 내비게이션 항목을 빠르게 찾는 기능입니다.\n*   **검색 대상**: 애플리케이션 이름, 모듈 이름, 그리고 즐겨찾기(Favorites)를 검색할 수 있습니다. 애플리케이션과 모듈을 함께 표현한 선택지도 맞고, 이를 각각 나누어 표현한 선택지도 모두 검색 대상에 해당합니다.\n*   **제외 항목**: History Records는 최근 방문 기록 영역의 항목이지 일반적인 App Navigator 검색 결과 유형으로 보지 않습니다. Dashboard Gauge 제목도 이 검색의 주요 반환 대상이 아닙니다.\n\n**[Exam Keywords]**\nFilter Navigator, Application Navigator, Applications, Modules, Favorites"
+    "explanation": "**[주의: 중복 보기]**\n이 문항에서 실제 검색 대상은 **Applications, Modules, Favorites의 3가지 범주**입니다. 다만 **A(Names of Applications and Modules)**가 B(Modules)와 C(Applications)를 합쳐 다시 표현한 중복 보기입니다. 따라서 문항이 `Choose four`를 요구하면 **A·B·C·D**를 모두 선택합니다.\n\n**[핵심 근거]**\nServiceNow 공식 Core UI 문서는 Navigation Filter에 텍스트를 입력하면 일치하는 **applications, modules, favorites**가 표시된다고 명시합니다. 최신 공개 CSA 문제 자료들도 이 보기 구성의 정답을 **A·B·C·D**로 제시합니다.\n\n**[오답 구분]**\n*   **E (History Records)**: History는 최근에 접근한 항목을 보여 주는 **별도 탭/메뉴**입니다. Navigator의 구성 요소이지만, 이 문항이 묻는 검색 필드의 반환 대상은 아닙니다. Next Experience의 메뉴 필터링에서도 History 메뉴는 기본 교차 검색 범위에서 제외됩니다.\n*   **F (Titles of Dashboard Gauges)**: Navigation Filter가 검색하는 독립 결과 범주가 아닙니다.\n\n**[암기 포인트]**\n`실제 범주 3개 = App + Module + Favorite` / `시험 보기 4개 = A + B + C + D`\n\n**[Exam Keywords]**\nNavigation Filter, Application Navigator, Applications, Modules, Favorites, History tab"
   },
   {
     "id": 82,
@@ -6593,9 +6593,9 @@ window.CSA_QUESTIONS = [
     ],
     "answer": [
       "A",
-      "D"
+      "B"
     ],
-    "explanation": "**[핵심 근거]**\n리스트 뷰에서 특정 필드를 기준으로 레코드들을 시각적으로 묶어주는 **그룹화(Group By)** 기능은 다음 두 경로를 통해 수행할 수 있습니다.\n1.  **Context Menu**: 컬럼 헤더의 햄버거 아이콘이나 우클릭 메뉴에서 'Group By [필드명]'을 선택합니다.\n2.  **Group 아이콘**: 리스트 상단 제어 바에 있는 그룹화 아이콘을 클릭하여 기준 필드를 선택합니다.\n*   **특징**: 그룹화는 데이터의 물리적 위치를 바꾸는 것이 아니라, 현재 뷰에서만 데이터를 논리적으로 분류하여 가독성을 높이는 개인화 도구입니다.\n\n**[Exam Keywords]**\n그룹화(Group By), Context Menu, Group 아이콘, 특징, Group, Groups"
+    "explanation": "**[검증 주의: 덤프와 공식 문서의 차이]**\n일부 최신 공개 CSA 덤프는 **A·D**를 정답으로 표기하지만, ServiceNow 공식 Core UI 문서가 안내하는 표준 그룹화 경로는 **A·B**입니다. 따라서 이 문제의 정답은 공식 문서를 우선하여 **A·B**로 판정합니다.\n\n**[핵심 근거]**\nServiceNow의 **Grouped lists** 공식 절차는 리스트를 특정 필드로 그룹화하는 방법을 다음 두 가지로 명시합니다.\n1.  **A — List Context Menu**: 리스트 제목 표시줄의 Context Menu에서 **Group By > Category**를 선택합니다.\n2.  **B — Column Context Menu**: **Category 열 이름을 우클릭**하고 **Group By**를 선택합니다. 열 메뉴에서 실행하므로 그룹 기준은 Category가 됩니다.\n\n**[오답 구분]**\n*   **C**: `group.category`는 Application Navigator의 테이블 바로가기 문법이 아니며 리스트를 그룹화하지 않습니다.\n*   **D**: 공식 Classic/Core UI 그룹 절차에는 필드를 선택하는 독립적인 **Group icon** 경로가 없습니다. 덤프 정답이 이 보기를 선택하는 것은 공식 절차와 충돌합니다.\n*   **E**: Filter Builder는 조건을 정의해 표시 레코드를 줄이는 도구이며, 표준 **Group By** 진입점이 아닙니다.\n\n**[암기 포인트]**\n`List title menu > Group By` 또는 `Column name right-click > Group By`\n\n**[Exam Keywords]**\nGrouped lists, Group By, List Context Menu, Column Context Menu, Category"
   },
   {
     "id": 238,
@@ -6785,7 +6785,7 @@ window.CSA_QUESTIONS = [
       "D",
       "E"
     ],
-    "explanation": "**[핵심 근거]**\n**플로우 디자이너(Flow Designer)**는 기존 워크플로우 엔진을 대체하는 차세대 프로세스 자동화 도구로 다음과 같은 명확한 이점을 제공합니다.\n*   **기술 부채 감소**: 로코드(Low-code) 기반의 구성을 통해 복잡한 스크립트 의존도를 낮춰 업그레이드와 유지보수를 용이하게 합니다.\n*   **수작업 스크립트 최소화**: 드래그 앤 드롭 방식의 직관적인 인터페이스와 자연어 문장 구성을 통해 비개발자도 자동화 로직을 이해하고 구축할 수 있습니다.\n*   **통합 용이성**: **Spoke**를 활용하여 외부 서드파티 시스템(Slack, Jira 등)과의 연동을 표준화된 방식으로 신속하게 구현할 수 있습니다.\n\n**[Exam Keywords]**\nReduces technical debt, Less manual scripting, Smooth integration with 3rd party systems"
+    "explanation": "**[검증 결과]**\n최신 공개 CSA 문제 자료의 정답과 ServiceNow 공식 Flow Designer 자료의 핵심 이점을 대조하면 **C·D·E**가 적절합니다.\n\n**[핵심 근거]**\n*   **C — Reduces technical debt**: 재사용 가능한 OOTB Action과 Subflow, 업그레이드에 안전한 플랫폼 로직을 활용하면 복잡한 커스텀 스크립트와 중복 코드를 줄여 유지보수성을 높일 수 있습니다. 단, 과도한 커스텀 스크립트나 잘못 설계한 플로우는 오히려 기술 부채를 만들 수 있으므로 '조건 없는 보장'은 아닙니다.\n*   **D — Less manual scripting**: 자연어 기반의 로코드/노코드 디자인과 재사용 컴포넌트로 승인, 작업, 알림, 레코드 작업을 직접 코딩하지 않고 자동화할 수 있습니다.\n*   **E — Smooth integration with 3rd party systems**: **IntegrationHub와 Spoke**를 통해 외부 인스턴스와 서드파티 시스템을 Flow에 연결할 수 있습니다. IntegrationHub 및 일부 Spoke는 별도 구독/라이선스가 필요할 수 있습니다.\n\n**[오답 구분]**\n*   **A — Supports advanced developers**: Flow Designer는 고급 개발자의 Inline Script와 Custom Action도 지원하지만, 이는 기능의 사용 대상/확장성에 가깝습니다. 이 문항이 요구하는 대표적 운영 이점 3개에는 해당하지 않습니다.\n*   **B — Enables complicated scripting**: Flow Designer의 주요 이점은 복잡한 스크립트를 장려하는 것이 아니라 **필요한 수작업 스크립트를 줄이는 것**입니다.\n\n**[암기 포인트]**\n`Reuse로 부채 ↓ / Low-code로 스크립트 ↓ / IntegrationHub로 외부 연동`\n\n**[Exam Keywords]**\nReduces technical debt, Less manual scripting, IntegrationHub, Spokes, third-party systems"
   },
   {
     "id": 244,
