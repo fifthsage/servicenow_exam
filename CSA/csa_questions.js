@@ -4744,14 +4744,18 @@ window.CSA_QUESTIONS = [
       {
         "text": "Password Management > Security Questions",
         "id": "F"
+      },
+      {
+        "text": "System Security > High Security Settings",
+        "id": "G"
       }
     ],
     "answer": [
       "A",
-      "C",
-      "E"
+      "E",
+      "G"
     ],
-    "explanation": "**[핵심 근거]**\n시스템 관리자는 인스턴스 보안을 설정하고 점검하기 위해 보안 관련 속성, 보안 진단 영역, ACL 관리 영역을 함께 사용합니다.\nSystem Properties > Security는 전역 보안 속성을 관리하고, System Security > Security는 보안 관련 설정/진단 영역이며, System Security > Access Control (ACL)은 테이블과 필드 수준 접근 제어를 관리합니다.\n\n**[오답 구분]**\nSelf-Service > My Access는 일반 사용자 요청 흐름에 가깝고, Password Management > Security Questions는 보안 전체를 관리하는 핵심 관리자 모듈로 보기 어렵습니다.\n\n**[Exam Keywords]**\nSystem Properties > Security, System Security > Security, Access Control (ACL)"
+    "explanation": "**[핵심 근거]**\n시스템 관리자가 자주 사용하는 주요 보안 모듈은 다음 세 가지입니다.\n1. **System Properties > Security**: 인스턴스의 전역 보안 관련 속성을 설정합니다.\n2. **System Security > Access Control (ACL)**: 테이블, 레코드 및 필드에 대한 접근 권한을 관리합니다.\n3. **System Security > High Security Settings**: 고급 보안 설정을 관리하며, 접근하려면 일반적으로 `security_admin` 역할을 상승시켜야 합니다.\n\n**[오답 구분]**\n`System Security > Security`는 이 문항에서 요구하는 실제 핵심 관리자 모듈이 아닙니다. `Self-Service > My Access`와 `Password Management > Security Questions`도 일반적인 시스템 보안 관리의 세 가지 핵심 모듈에 해당하지 않습니다.\n\n**[Exam Keywords]**\nSystem Properties > Security, Access Control (ACL), High Security Settings"
   },
   {
     "id": 173,
@@ -7212,9 +7216,9 @@ window.CSA_QUESTIONS = [
       }
     ],
     "answer": [
-      "C"
+      "A"
     ],
-    "explanation": "**[핵심 근거]**\nServiceNow 폼에서 'Save' 버튼의 가시성은 인스턴스 전역의 **UI 속성(UI Properties)** 설정을 통해 제어됩니다.\n*   **설정 경로**: `System Properties > UI Properties` 모듈에서 관련 속성(예: 'Show the Save button on the form header')을 활성화합니다.\n*   **Submit vs Save**: 'Submit'은 레코드를 생성/업데이트하고 목록으로 돌아가지만, 'Save'는 변경사항을 저장하면서 현재 폼에 계속 머물게 합니다. 이는 대규모 데이터 입력 작업 시 생산성을 높여줍니다.\n\n**[Exam Keywords]**\nUI 속성(UI Properties), 설정 경로, Submit vs Save, System Properties > UI Properties, UI"
+    "explanation": "**[핵심 근거]**\nServiceNow 폼 헤더에 **Save** 버튼을 표시하려면 `System Properties > UI Properties`에서 **`glide.ui.advanced`** 속성을 활성화해야 합니다.\n*   **설정 경로**: `All > System Properties > UI Properties`에서 `glide.ui.advanced`를 켭니다.\n*   **오답 구분**: UI Properties에 별도의 'Turn on the Save button' 설정이 있는 것이 아니며, Form Design이나 Form Layout에서는 폼 헤더의 Save UI Action을 추가하지 않습니다.\n*   **Submit vs Save**: Submit은 레코드를 저장한 뒤 폼을 벗어나지만, Save는 변경 사항을 저장하면서 현재 폼에 머무르게 합니다.\n\n**[Exam Keywords]**\nglide.ui.advanced, System Properties > UI Properties, Save button"
   },
   {
     "id": 259,
