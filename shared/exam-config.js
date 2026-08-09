@@ -6,12 +6,20 @@
   root.ExamConfig = api;
 })(typeof window !== 'undefined' ? window : globalThis, function () {
   var exams = Object.freeze({
+    CAD: Object.freeze({
+      questionCount: 60,
+      durationMinutes: 90
+    }),
     CSA: Object.freeze({
       questionCount: 60,
       durationMinutes: 90
     }),
     'CIS-DF': Object.freeze({
       questionCount: 75,
+      durationMinutes: 90
+    }),
+    'CIS-DISCO': Object.freeze({
+      questionCount: 60,
       durationMinutes: 90
     })
   });
