@@ -116,7 +116,7 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 5,
-    "title": "Which of the following are the three main ServiceNow user types?",
+    "title": "Which of the following are the three main ServiceNow user types? (Choose three.)",
     "options": [
       {
         "text": "System Administrator: The admin role provides access to all platform features, applications, functions and data.",
@@ -236,7 +236,7 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 10,
-    "title": "What are the two aspects to LDAP Integration?",
+    "title": "What are the two aspects to LDAP Integration? (Choose two.)",
     "options": [
       {
         "text": "Data Population",
@@ -618,7 +618,7 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 24,
-    "title": "What are the three components of a filter condition?",
+    "title": "What are the three components of a filter condition? (Choose three.)",
     "options": [
       {
         "text": "Table",
@@ -2365,7 +2365,7 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 89,
-    "title": "What are the two pathways to view feedback left on a published article?",
+    "title": "What are the two pathways to view feedback left on a published article? (Choose two.)",
     "options": [
       {
         "text": "Knowledge > articles > My Flagged",
@@ -2733,7 +2733,7 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 102,
-    "title": "Which certificate-based authentication methods can be enabled so that users can log into the Service Portal? (Select all that apply) Select 2 Answers from the below options",
+    "title": "Which certificate-based authentication methods can be enabled so that users can log into the Service Portal? (Choose two.)",
     "options": [
       {
         "text": "Extended Validation Access (EVA)",
@@ -8481,7 +8481,7 @@ window.CSA_QUESTIONS = [
   },
   {
     "id": 304,
-    "title": "The ServiceNow platform supports a wide variety of plus-and-play application. You can choose from the included workflow or build your own workflow. Which of following these workflows are included in the platform?",
+    "title": "The ServiceNow platform supports a wide variety of plus-and-play application. You can choose from the included workflow or build your own workflow. Which of following these workflows are included in the platform? (Choose three.)",
     "options": [
       {
         "text": "Employee Workflows",
@@ -10199,5 +10199,27 @@ window.CSA_QUESTIONS = [
       "B"
     ],
     "explanation": "**[핵심 근거]**\nServiceNow CMDB를 정확하고 최신 상태로 유지하기 위한 두 가지 핵심 데이터 수집 도구입니다.\n1.  **Discovery**: 네트워크를 직접 스캔하여 서버, 네트워크 장비, 소프트웨어 등 기술적 구성 항목(CI)을 자동으로 식별하고 CMDB에 등록합니다.\n2.  **IntegrationHub ETL**: 외부 데이터 소스(예: SCCM, Jamf)로부터 유입되는 데이터를 시각적인 매핑을 통해 CMDB 구조에 맞게 변환하고, **IRE(식별 및 조정 엔진)**를 경유시켜 중복 없이 안전하게 적재합니다.\n\n**[Exam Keywords]**\nDiscovery, IntegrationHub ETL"
+  },
+  {
+    "id": 365,
+    "title": "What encryption feature is included in ServiceNow by default?",
+    "options": [
+      {
+        "text": "Data in use",
+        "id": "A"
+      },
+      {
+        "text": "Data in transit",
+        "id": "B"
+      },
+      {
+        "text": "Data at rest",
+        "id": "C"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": "**[핵심 근거]**\nServiceNow는 기본적으로 전송 중인 데이터(**Data in transit**)를 업계 표준 **TLS(Transport Layer Security)**로 암호화합니다.\n*   **Data in transit**: 사용자 브라우저와 ServiceNow 인스턴스 사이 또는 시스템 간 연동 과정에서 이동하는 데이터입니다. 기본 TLS가 도청과 변조 위험을 줄입니다.\n*   **Data at rest**: 데이터베이스나 저장소에 보관된 데이터입니다. ServiceNow에서 별도의 저장 데이터 암호화 기능을 제공할 수 있지만, 이 문항이 묻는 기본 포함 암호화는 아닙니다.\n*   **Data in use**: 메모리에서 처리 중인 데이터를 뜻하며 이 문항의 정답이 아닙니다.\n\n**[암기 포인트]**\n`기본 암호화 = Data in transit (TLS)` / `저장 중 = Data at rest`\n\n**[Exam Keywords]**\nData in transit, Data at rest, TLS, encryption"
   }
 ];
