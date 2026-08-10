@@ -21,6 +21,18 @@
     'CIS-DISCO': Object.freeze({
       questionCount: 60,
       durationMinutes: 90
+    }),
+    'CIS-SM': Object.freeze({
+      questionCount: 60,
+      durationMinutes: 90
+    }),
+    'CIS-EM': Object.freeze({
+      questionCount: 60,
+      durationMinutes: 90
+    }),
+    'CIS-ITSM': Object.freeze({
+      questionCount: 60,
+      durationMinutes: 90
     })
   });
 
