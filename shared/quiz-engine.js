@@ -30,6 +30,50 @@
     var wrongQuestionIds = new Set(loadWrongQuestionIds());
     var questionBankIssues = validateQuestionBank(allQuestions);
 
+    function normalizeQuizShell() {
+      if (!document || typeof document.querySelector !== 'function') {
+        return;
+      }
+
+      document.title = String(document.title || '').replace(/\s*·\s*초안\s*$/, '');
+      var heading = document.querySelector('.top h1');
+      if (heading) {
+        heading.textContent = String(heading.textContent || '').replace(/\s*·\s*초안\s*$/, '');
+      }
+
+      var randomCounts = document.querySelector('.random-counts');
+      if (!randomCounts) {
+        return;
+      }
+
+      while (randomCounts.firstChild) {
+        randomCounts.removeChild(randomCounts.firstChild);
+      }
+
+      [10, 20, 30, 50, 100].forEach(function (count) {
+        if (count > allQuestions.length) {
+          return;
+        }
+        var button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = String(count);
+        button.addEventListener('click', function () {
+          startSession('random', count);
+        });
+        randomCounts.appendChild(button);
+      });
+
+      var allButton = document.createElement('button');
+      allButton.type = 'button';
+      allButton.textContent = '전체';
+      allButton.addEventListener('click', function () {
+        startSession('random', 'all');
+      });
+      randomCounts.appendChild(allButton);
+    }
+
+    normalizeQuizShell();
+
     if (questionBankIssues.length > 0) {
       console.warn('Question bank validation issues:', questionBankIssues);
       window.alert('문제 데이터 검증 경고가 있습니다. 개발자 콘솔에서 상세 내용을 확인해 주세요.');

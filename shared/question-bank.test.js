@@ -29,9 +29,9 @@ function validate(path, globalKey, expectedCount, expectedDistribution) {
 validate('../CSA/csa_questions.js', 'CSA_QUESTIONS', 365);
 validate('../CIS-DF/cisdf_questions.js', 'CISDF_QUESTIONS', 230);
 validate('../CAD/cad_questions.js', 'CAD_QUESTIONS', 60);
-validate('../CIS-DISCO/cisdisco_questions.js', 'CISDISCO_QUESTIONS', 60);
+validate('../CIS-DISCO/cisdisco_questions.js', 'CISDISCO_QUESTIONS', 240);
 validate('../CIS-SM/cissm_questions.js', 'CISSM_QUESTIONS', 60, { A: 15, B: 15, C: 15, D: 15 });
 validate('../CIS-EM/cisem_questions.js', 'CISEM_QUESTIONS', 60, { A: 15, B: 15, C: 15, D: 15 });
-validate('../CIS-ITSM/cisitsm_questions.js', 'CISITSM_QUESTIONS', 30);
+validate('../CIS-ITSM/cisitsm_questions.js', 'CISITSM_QUESTIONS', 60, { A: 15, B: 15, C: 15, D: 15 });
 
 console.log('question-bank tests passed');

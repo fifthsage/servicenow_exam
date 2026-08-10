@@ -1,14 +1,135 @@
 <!DOCTYPE html>
-<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>CIS-DISCO 통합 학습 허브 · 초안</title><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../shared/hub-common.css"><script src="../shared/exam-config.js"></script><script src="cisdisco_questions.js"></script></head>
-<body><div class="top-home-bar"><div class="top-home-inner"><a class="top-home-link" href="../index.html">홈으로 이동</a></div></div><div class="container">
-<header><h1 class="title">CIS-DISCO 통합 학습 허브 · 초안</h1><p class="subtitle">Certified Implementation Specialist – Discovery 대비용 초안 허브입니다.</p><div class="kpi"><span>Official name: CIS-DISCO</span><span id="exam-kpi"></span><span id="question-pool-count"></span></div></header>
-<div class="info-box" style="background:#eefbff;border:1px solid #b3e5fc;padding:15px;border-radius:8px;margin-bottom:20px;color:#0277bd;font-size:.95rem"><strong>초안 안내:</strong> 공식 Blueprint의 4개 영역과 공개 샘플을 기준으로 구성했습니다. 비공식 덤프의 문구·정답은 공식 문서로 재검증 후 확장하세요.</div>
-<section class="grid grid-4">
-<article class="card"><span class="badge guide">Study Guide</span><h2>스터디 가이드</h2><p>Pattern Design, Discovery Configuration, CMDB, Engagement Readiness 핵심을 정리합니다.</p><a class="btn guide" href="CIS-DISCO_Study_Guide.html">가이드 열기</a></article>
-<article class="card"><span class="badge guide">Exam How-to</span><h2>시험 및 출처 안내</h2><p>공식 명칭, Blueprint, 준비 자료와 최신 정보 확인 경로를 제공합니다.</p><a class="btn guide" href="CIS-DISCO_Exam_Guide.html">안내 보기</a></article>
-<article class="card"><span class="badge practice">Practice</span><h2>랜덤 문제 풀기</h2><p>10, 20, 30 또는 전체 문항을 무작위로 풉니다.</p><div class="card-actions random-actions"><a class="btn practice" href="CIS-DISCO_Integrated_Quiz.html?mode=random&count=10">10</a><a class="btn practice" href="CIS-DISCO_Integrated_Quiz.html?mode=random&count=20">20</a><a class="btn practice" href="CIS-DISCO_Integrated_Quiz.html?mode=random&count=30">30</a><a class="btn practice" href="CIS-DISCO_Integrated_Quiz.html?mode=random&count=all">전체</a></div></article>
-<article class="card"><span class="badge practice">All Questions</span><h2>전체 문제 풀기</h2><p>초안 문제 풀 전체를 순서대로 학습합니다.</p><a class="btn practice" href="CIS-DISCO_Integrated_Quiz.html?mode=all">전체 풀기</a></article>
-<article class="card"><span class="badge exam">Mock Exam</span><h2>실전 문제 풀기</h2><p><span id="exam-summary"></span> 모드입니다. 현재 풀이 풀 크기에 맞춰 자동 조정됩니다.</p><a class="btn exam" href="CIS-DISCO_Integrated_Quiz.html?mode=exam">실전 풀기</a></article>
-<article class="card"><span class="badge wrong">Wrong Note</span><h2>오답 노트</h2><p>저장된 오답만 반복 학습합니다.</p><a class="btn wrong" href="CIS-DISCO_Integrated_Quiz.html?mode=wrong" onclick="return startWrong(event)">오답 풀기</a></article>
-</section><p class="meta">권장 순서: 공식 Blueprint 확인 → 가이드 → 전체 문제 → 랜덤 반복 → 실전 모드.</p></div>
-<script>function startWrong(e){e.preventDefault();var a=[];try{a=JSON.parse(localStorage.getItem('sn_quiz_wrong_cisdisco')||'[]')}catch(x){}if(!Array.isArray(a)||!a.length){alert('저장된 오답이 없습니다.');return false}location.href='CIS-DISCO_Integrated_Quiz.html?mode=wrong';return false}(function(){var e=ExamConfig.get('CIS-DISCO');document.getElementById('exam-kpi').textContent='Mock Exam: Random '+e.questionCount+' / '+e.durationMinutes+'m';document.getElementById('exam-summary').textContent=ExamConfig.formatSummary('CIS-DISCO');document.getElementById('question-pool-count').textContent='Question Pool: '+CISDISCO_QUESTIONS.length})()</script></body></html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIS-DISCO 통합 학습 허브</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../shared/hub-common.css">
+  <script src="../shared/exam-config.js"></script>
+  <script src="cisdisco_questions.js"></script>
+</head>
+
+<body>
+  <div class="top-home-bar">
+    <div class="top-home-inner">
+      <a class="top-home-link" href="../index.html">홈으로 이동</a>
+    </div>
+  </div>
+  <div class="container">
+    <header>
+      <h1 class="title">CIS-DISCO 통합 학습 허브</h1>
+      <p class="subtitle">스터디 가이드, 실무형 연습 문제, 실전 모드, 오답 노트를 한 흐름으로 제공합니다.</p>
+      <div class="kpi">
+        <span>Study Guide</span>
+        <span>Exam How-to</span>
+        <span>Random Practice: 10-100 or All</span>
+        <span id="exam-kpi"></span>
+        <span id="question-pool-count">Question Pool: -</span>
+      </div>
+    </header>
+
+    <div class="info-box"
+      style="background-color: #eefbff; border: 1px solid #b3e5fc; padding: 15px; border-radius: 8px; margin-bottom: 20px; color: #0277bd; font-size: 0.95rem;">
+      <strong>학습 안내:</strong> 공식 Blueprint와 Product Documentation을 기준으로 Pattern, MID Server, Discovery 운영, CMDB·IRE 및 Cloud Discovery를 실무 시나리오와 함께 학습합니다.
+    </div>
+
+    <section class="grid grid-2">
+      <article class="card">
+        <span class="badge guide">Study Guide</span>
+        <h2>스터디 가이드</h2>
+        <p>Pattern Design, Discovery Configuration, CMDB·IRE, Engagement Readiness의 핵심 개념과 실무 점검 순서를 정리합니다.</p>
+        <a class="btn guide" href="CIS-DISCO_Study_Guide.html">가이드 열기</a>
+      </article>
+
+      <article class="card">
+        <span class="badge guide">Exam How-to</span>
+        <h2>시험 및 출처 안내</h2>
+        <p>공식 시험 명칭, Blueprint, 준비 자료, 문제 출처 정책과 최신 정보 확인 경로를 제공합니다.</p>
+        <a class="btn guide" href="CIS-DISCO_Exam_Guide.html">안내 보기</a>
+      </article>
+
+      <article class="card">
+        <span class="badge practice">Practice</span>
+        <h2>랜덤 문제 풀기</h2>
+        <p>10, 20, 30, 50, 100문항 또는 전체 문항을 무작위로 골라 풉니다.</p>
+        <div class="card-actions random-actions">
+          <a class="btn practice" href="CIS-DISCO_Integrated_Quiz.html?mode=random&count=10">10</a>
+          <a class="btn practice" href="CIS-DISCO_Integrated_Quiz.html?mode=random&count=20">20</a>
+          <a class="btn practice" href="CIS-DISCO_Integrated_Quiz.html?mode=random&count=30">30</a>
+          <a class="btn practice" href="CIS-DISCO_Integrated_Quiz.html?mode=random&count=50">50</a>
+          <a class="btn practice" href="CIS-DISCO_Integrated_Quiz.html?mode=random&count=100">100</a>
+          <a class="btn practice" href="CIS-DISCO_Integrated_Quiz.html?mode=random&count=all">전체</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="badge practice">All Questions</span>
+        <h2>전체 문제 풀기</h2>
+        <p>문제 풀의 모든 문항을 번호 순서대로 학습합니다. 문항 번호로 바로 이동하고 상세 해설을 확인할 수 있습니다.</p>
+        <a class="btn practice" href="CIS-DISCO_Integrated_Quiz.html?mode=all">전체 풀기</a>
+      </article>
+
+      <article class="card">
+        <span class="badge exam">Mock Exam</span>
+        <h2>실전 문제 풀기</h2>
+        <p><span id="exam-summary"></span>으로 구성된 모드입니다. 전체 완료 또는 시간 종료 시 채점합니다.</p>
+        <a class="btn exam" href="CIS-DISCO_Integrated_Quiz.html?mode=exam">실전 풀기</a>
+      </article>
+
+      <article class="card">
+        <span class="badge wrong">Wrong Note</span>
+        <h2>오답 노트 풀기</h2>
+        <p>저장된 오답만 다시 풉니다. 연습·실전 이후 핵심 근거와 실무 적용 해설을 반복 점검할 수 있습니다.</p>
+        <a class="btn wrong" href="CIS-DISCO_Integrated_Quiz.html?mode=wrong"
+          onclick="return startWrongNoteCisdisco(event)">오답 노트 풀기</a>
+      </article>
+    </section>
+
+    <p class="meta">권장 순서: 스터디 가이드 → 시험 및 출처 확인 → 랜덤 문제 반복(해설 학습) → 실전 모드 → 오답 노트 재학습.</p>
+  </div>
+
+  <script>
+    function startWrongNoteCisdisco(event) {
+      event.preventDefault();
+
+      var wrongKey = 'sn_quiz_wrong_cisdisco';
+      var raw = window.localStorage.getItem(wrongKey);
+      var list = [];
+
+      if (raw) {
+        try {
+          var parsed = JSON.parse(raw);
+          if (Array.isArray(parsed)) {
+            list = parsed;
+          }
+        } catch (e) {
+          list = [];
+        }
+      }
+
+      if (list.length === 0) {
+        window.alert('저장된 오답이 없습니다.');
+        return false;
+      }
+
+      window.location.href = 'CIS-DISCO_Integrated_Quiz.html?mode=wrong';
+      return false;
+    }
+
+    (function () {
+      var exam = window.ExamConfig.get('CIS-DISCO');
+      document.getElementById('exam-kpi').textContent = 'Mock Exam: Random ' + exam.questionCount + ' / ' + exam.durationMinutes + 'm';
+      document.getElementById('exam-summary').textContent = window.ExamConfig.formatSummary('CIS-DISCO');
+      var countSpan = document.getElementById('question-pool-count');
+      if (countSpan && window.CISDISCO_QUESTIONS) {
+        countSpan.textContent = 'Question Pool: ' + window.CISDISCO_QUESTIONS.length;
+      }
+    })();
+  </script>
+</body>
+
+</html>

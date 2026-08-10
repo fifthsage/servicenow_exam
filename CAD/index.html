@@ -1,12 +1,36 @@
 <!DOCTYPE html>
-<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CAD 통합 학습 허브 · 초안</title><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../shared/hub-common.css"><script src="../shared/exam-config.js"></script><script src="cad_questions.js"></script></head>
-<body><div class="top-home-bar"><div class="top-home-inner"><a class="top-home-link" href="../index.html">홈으로 이동</a></div></div><div class="container"><header><h1 class="title">CAD 통합 학습 허브 · 초안</h1><p class="subtitle">Certified Application Developer 대비용 초안 허브입니다.</p><div class="kpi"><span>Official name: CAD</span><span id="exam-kpi"></span><span id="question-pool-count"></span></div></header>
-<div class="info-box" style="background:#fff8e6;border:1px solid #d29922;padding:15px;border-radius:8px;margin-bottom:20px;color:#8a5a00;font-size:.95rem"><strong>초안 안내:</strong> 공식 Blueprint와 공개 샘플, 최신 Product Documentation에서 확인한 주제로 구성했습니다.</div>
-<section class="grid grid-4">
-<article class="card"><span class="badge guide">Study Guide</span><h2>스터디 가이드</h2><p>설계, UI, 보안, 자동화, 외부 데이터, 애플리케이션 관리 영역을 정리합니다.</p><a class="btn guide" href="CAD_Study_Guide.html">가이드 열기</a></article>
-<article class="card"><span class="badge guide">Exam How-to</span><h2>시험 및 출처 안내</h2><p>공식 명칭, Blueprint, 공개 샘플과 초안 범위를 확인합니다.</p><a class="btn guide" href="CAD_Exam_Guide.html">안내 보기</a></article>
-<article class="card"><span class="badge practice">Practice</span><h2>랜덤 문제 풀기</h2><p>10, 20, 30 또는 전체 문항을 무작위로 풉니다.</p><div class="card-actions random-actions"><a class="btn practice" href="CAD_Integrated_Quiz.html?mode=random&count=10">10</a><a class="btn practice" href="CAD_Integrated_Quiz.html?mode=random&count=20">20</a><a class="btn practice" href="CAD_Integrated_Quiz.html?mode=random&count=30">30</a><a class="btn practice" href="CAD_Integrated_Quiz.html?mode=random&count=all">전체</a></div></article>
-<article class="card"><span class="badge practice">All Questions</span><h2>전체 문제 풀기</h2><p>초안 문제 풀 전체를 순서대로 학습합니다.</p><a class="btn practice" href="CAD_Integrated_Quiz.html?mode=all">전체 풀기</a></article>
-<article class="card"><span class="badge exam">Mock Exam</span><h2>실전 문제 풀기</h2><p><span id="exam-summary"></span> 모드입니다. 현재 문제 풀 크기에 맞춰 자동 조정됩니다.</p><a class="btn exam" href="CAD_Integrated_Quiz.html?mode=exam">실전 풀기</a></article>
-<article class="card"><span class="badge wrong">Wrong Note</span><h2>오답 노트</h2><p>저장된 오답만 반복 학습합니다.</p><a class="btn wrong" href="CAD_Integrated_Quiz.html?mode=wrong" onclick="return startWrong(event)">오답 풀기</a></article></section><p class="meta">권장 순서: Blueprint 확인 → 가이드 → 전체 문제 → 랜덤 반복 → 실전 모드.</p></div>
-<script>function startWrong(e){e.preventDefault();var a=[];try{a=JSON.parse(localStorage.getItem('sn_quiz_wrong_cad')||'[]')}catch(x){}if(!Array.isArray(a)||!a.length){alert('저장된 오답이 없습니다.');return false}location.href='CAD_Integrated_Quiz.html?mode=wrong';return false}(function(){var e=ExamConfig.get('CAD');document.getElementById('exam-kpi').textContent='Mock Exam: Random '+e.questionCount+' / '+e.durationMinutes+'m';document.getElementById('exam-summary').textContent=ExamConfig.formatSummary('CAD');document.getElementById('question-pool-count').textContent='Question Pool: '+CAD_QUESTIONS.length})()</script></body></html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAD 통합 학습 허브</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared/hub-common.css">
+  <script src="../shared/exam-config.js"></script>
+  <script src="cad_questions.js"></script>
+</head>
+<body>
+  <div class="top-home-bar"><div class="top-home-inner"><a class="top-home-link" href="../index.html">홈으로 이동</a></div></div>
+  <div class="container">
+    <header>
+      <h1 class="title">CAD 통합 학습 허브</h1>
+      <p class="subtitle">스터디 가이드, 연습 문제, 실전 모드, 오답 노트를 한 흐름으로 제공합니다.</p>
+      <div class="kpi"><span>Study Guide</span><span>Exam How-to</span><span>Random Practice: 10-50 or All</span><span id="exam-kpi"></span><span id="question-pool-count">Question Pool: -</span></div>
+    </header>
+    <div class="info-box" style="background:#eefbff;border:1px solid #b3e5fc;padding:15px;border-radius:8px;margin-bottom:20px;color:#0277bd;font-size:.95rem"><strong>학습 안내:</strong> 공식 Blueprint, 공개 샘플과 Product Documentation에서 확인한 범위를 기준으로 학습합니다.</div>
+    <section class="grid grid-2">
+      <article class="card"><span class="badge guide">Study Guide</span><h2>스터디 가이드</h2><p>설계, UI, 보안, 자동화, 외부 데이터와 애플리케이션 관리 영역을 정리합니다.</p><a class="btn guide" href="CAD_Study_Guide.html">가이드 열기</a></article>
+      <article class="card"><span class="badge guide">Exam How-to</span><h2>시험 및 출처 안내</h2><p>공식 명칭, Blueprint, 공개 샘플과 문제 출처 정책을 확인합니다.</p><a class="btn guide" href="CAD_Exam_Guide.html">안내 보기</a></article>
+      <article class="card"><span class="badge practice">Practice</span><h2>랜덤 문제 풀기</h2><p>10, 20, 30, 50문항 또는 전체 문항을 무작위로 풉니다.</p><div class="card-actions random-actions"><a class="btn practice" href="CAD_Integrated_Quiz.html?mode=random&count=10">10</a><a class="btn practice" href="CAD_Integrated_Quiz.html?mode=random&count=20">20</a><a class="btn practice" href="CAD_Integrated_Quiz.html?mode=random&count=30">30</a><a class="btn practice" href="CAD_Integrated_Quiz.html?mode=random&count=50">50</a><a class="btn practice" href="CAD_Integrated_Quiz.html?mode=random&count=all">전체</a></div></article>
+      <article class="card"><span class="badge practice">All Questions</span><h2>전체 문제 풀기</h2><p>문제 풀의 모든 문항을 번호 순서대로 학습하고 해설을 확인합니다.</p><a class="btn practice" href="CAD_Integrated_Quiz.html?mode=all">전체 풀기</a></article>
+      <article class="card"><span class="badge exam">Mock Exam</span><h2>실전 문제 풀기</h2><p><span id="exam-summary"></span>으로 구성되며 종료 시 전체 점수를 확인합니다.</p><a class="btn exam" href="CAD_Integrated_Quiz.html?mode=exam">실전 풀기</a></article>
+      <article class="card"><span class="badge wrong">Wrong Note</span><h2>오답 노트 풀기</h2><p>저장된 오답만 다시 풀어 취약한 개념과 해설을 반복 학습합니다.</p><a class="btn wrong" href="CAD_Integrated_Quiz.html?mode=wrong" onclick="return startWrongNote(event)">오답 노트 풀기</a></article>
+    </section>
+    <p class="meta">권장 순서: 스터디 가이드 → 시험 및 출처 확인 → 랜덤 문제 반복 → 실전 모드 → 오답 노트 재학습.</p>
+  </div>
+  <script>
+    function startWrongNote(event){event.preventDefault();var list=[];try{list=JSON.parse(localStorage.getItem('sn_quiz_wrong_cad')||'[]')}catch(e){}if(!Array.isArray(list)||!list.length){alert('저장된 오답이 없습니다.');return false}location.href='CAD_Integrated_Quiz.html?mode=wrong';return false}
+    (function(){var exam=ExamConfig.get('CAD');document.getElementById('exam-kpi').textContent='Mock Exam: Random '+exam.questionCount+' / '+exam.durationMinutes+'m';document.getElementById('exam-summary').textContent=ExamConfig.formatSummary('CAD');document.getElementById('question-pool-count').textContent='Question Pool: '+CAD_QUESTIONS.length})()
+  </script>
+</body>
+</html>
