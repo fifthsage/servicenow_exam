@@ -26,12 +26,39 @@ function validate(path, globalKey, expectedCount, expectedDistribution) {
   }
 }
 
+function validateExamReady(globalKey) {
+  const questions = global[globalKey];
+  const reconstructed = questions.filter((question) => question.id >= 61);
+  assert.strictEqual(reconstructed.length, 180, `${globalKey}: reconstructed question count`);
+  assert.strictEqual(
+    new Set(reconstructed.map((question) => question.options.map((option) => option.text.trim().toLowerCase()).sort().join('||'))).size,
+    reconstructed.length,
+    `${globalKey}: repeated reconstructed option set`
+  );
+  reconstructed.forEach((question) => {
+    assert.ok(question.domain, `${globalKey} Q${question.id}: missing domain`);
+    assert.ok(['foundation', 'applied', 'advanced'].includes(question.difficulty), `${globalKey} Q${question.id}: invalid difficulty`);
+    assert.strictEqual(question.sourceType, 'official-docs-reconstructed', `${globalKey} Q${question.id}: source type`);
+    assert.ok(question.objective, `${globalKey} Q${question.id}: missing objective`);
+    assert.ok(!/^(Scenario|Troubleshooting|Governance check|Operational review|Code\/design review|Security and governance check) \(/.test(question.title), `${globalKey} Q${question.id}: generic title`);
+  });
+  assert.ok(reconstructed.filter((question) => question.difficulty === 'advanced').length >= 80, `${globalKey}: insufficient advanced questions`);
+  const multiSelect = reconstructed.filter((question) => question.answer.length > 1);
+  assert.ok(multiSelect.length >= 10, `${globalKey}: insufficient multi-select questions`);
+  multiSelect.forEach((question) => {
+    assert.ok(/\(Choose 2\)/.test(question.title), `${globalKey} Q${question.id}: missing Choose 2 instruction`);
+    assert.strictEqual(question.answer.length, 2, `${globalKey} Q${question.id}: multi-select answer count`);
+  });
+}
+
 validate('../CSA/csa_questions.js', 'CSA_QUESTIONS', 365);
 validate('../CIS-DF/cisdf_questions.js', 'CISDF_QUESTIONS', 230);
-validate('../CAD/cad_questions.js', 'CAD_QUESTIONS', 60);
+validate('../CAD/cad_questions.js', 'CAD_QUESTIONS', 240);
 validate('../CIS-DISCO/cisdisco_questions.js', 'CISDISCO_QUESTIONS', 240);
-validate('../CIS-SM/cissm_questions.js', 'CISSM_QUESTIONS', 60, { A: 15, B: 15, C: 15, D: 15 });
-validate('../CIS-EM/cisem_questions.js', 'CISEM_QUESTIONS', 60, { A: 15, B: 15, C: 15, D: 15 });
-validate('../CIS-ITSM/cisitsm_questions.js', 'CISITSM_QUESTIONS', 60, { A: 15, B: 15, C: 15, D: 15 });
+validate('../CIS-SM/cissm_questions.js', 'CISSM_QUESTIONS', 240);
+validate('../CIS-EM/cisem_questions.js', 'CISEM_QUESTIONS', 240);
+validate('../CIS-ITSM/cisitsm_questions.js', 'CISITSM_QUESTIONS', 240);
+
+['CAD_QUESTIONS', 'CISSM_QUESTIONS', 'CISEM_QUESTIONS', 'CISITSM_QUESTIONS'].forEach(validateExamReady);
 
 console.log('question-bank tests passed');
