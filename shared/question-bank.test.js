@@ -38,11 +38,16 @@ function validateExamReady(globalKey) {
   reconstructed.forEach((question) => {
     assert.ok(question.domain, `${globalKey} Q${question.id}: missing domain`);
     assert.ok(['foundation', 'applied', 'advanced'].includes(question.difficulty), `${globalKey} Q${question.id}: invalid difficulty`);
-    assert.strictEqual(question.sourceType, 'official-docs-reconstructed', `${globalKey} Q${question.id}: source type`);
+    assert.ok(['official-docs-reconstructed', 'community-recall-reconstructed'].includes(question.sourceType), `${globalKey} Q${question.id}: source type`);
     assert.ok(question.objective, `${globalKey} Q${question.id}: missing objective`);
     assert.ok(!/^(Scenario|Troubleshooting|Governance check|Operational review|Code\/design review|Security and governance check) \(/.test(question.title), `${globalKey} Q${question.id}: generic title`);
   });
   assert.ok(reconstructed.filter((question) => question.difficulty === 'advanced').length >= 80, `${globalKey}: insufficient advanced questions`);
+  reconstructed.filter((question) => question.sourceType === 'community-recall-reconstructed').forEach((question) => {
+    assert.ok(['medium', 'high'].includes(question.confidence), `${globalKey} Q${question.id}: recall confidence`);
+    assert.strictEqual(question.verifiedAgainst, 'official-docs', `${globalKey} Q${question.id}: recall verification`);
+    assert.ok(['low', 'medium', 'high'].includes(question.releaseRisk), `${globalKey} Q${question.id}: release risk`);
+  });
   const multiSelect = reconstructed.filter((question) => question.answer.length > 1);
   assert.ok(multiSelect.length >= 10, `${globalKey}: insufficient multi-select questions`);
   multiSelect.forEach((question) => {
@@ -60,5 +65,46 @@ validate('../CIS-EM/cisem_questions.js', 'CISEM_QUESTIONS', 240);
 validate('../CIS-ITSM/cisitsm_questions.js', 'CISITSM_QUESTIONS', 240);
 
 ['CAD_QUESTIONS', 'CISSM_QUESTIONS', 'CISEM_QUESTIONS', 'CISITSM_QUESTIONS'].forEach(validateExamReady);
+
+assert.strictEqual(
+  CAD_QUESTIONS.filter((question) => question.id >= 61 && question.sourceType === 'community-recall-reconstructed').length,
+  180,
+  'CAD_QUESTIONS: recall reconstruction coverage'
+);
+assert.strictEqual(
+  new Set(CAD_QUESTIONS.map((question) => question.options.map((option) => option.text.trim().toLowerCase()).sort().join('||'))).size,
+  CAD_QUESTIONS.length,
+  'CAD_QUESTIONS: duplicate option set across full bank'
+);
+assert.strictEqual(
+  CISITSM_QUESTIONS.filter((question) => question.id >= 61 && question.sourceType === 'community-recall-reconstructed').length,
+  180,
+  'CISITSM_QUESTIONS: recall reconstruction coverage'
+);
+assert.strictEqual(
+  new Set(CISITSM_QUESTIONS.map((question) => question.options.map((option) => option.text.trim().toLowerCase()).sort().join('||'))).size,
+  CISITSM_QUESTIONS.length,
+  'CISITSM_QUESTIONS: duplicate option set across full bank'
+);
+assert.strictEqual(
+  CISSM_QUESTIONS.filter((question) => question.id >= 61 && question.sourceType === 'community-recall-reconstructed').length,
+  180,
+  'CISSM_QUESTIONS: recall reconstruction coverage'
+);
+assert.strictEqual(
+  new Set(CISSM_QUESTIONS.map((question) => question.options.map((option) => option.text.trim().toLowerCase()).sort().join('||'))).size,
+  CISSM_QUESTIONS.length,
+  'CISSM_QUESTIONS: duplicate option set across full bank'
+);
+assert.strictEqual(
+  CISEM_QUESTIONS.filter((question) => question.id >= 61 && question.sourceType === 'community-recall-reconstructed').length,
+  180,
+  'CISEM_QUESTIONS: recall reconstruction coverage'
+);
+assert.strictEqual(
+  new Set(CISEM_QUESTIONS.map((question) => question.options.map((option) => option.text.trim().toLowerCase()).sort().join('||'))).size,
+  CISEM_QUESTIONS.length,
+  'CISEM_QUESTIONS: duplicate option set across full bank'
+);
 
 console.log('question-bank tests passed');
