@@ -66,6 +66,21 @@ validate('../CIS-ITSM/cisitsm_questions.js', 'CISITSM_QUESTIONS', 240);
 
 ['CAD_QUESTIONS', 'CISSM_QUESTIONS', 'CISEM_QUESTIONS', 'CISITSM_QUESTIONS'].forEach(validateExamReady);
 
+assert.ok(CISITSM_QUESTIONS.every((question) => question.domain), 'CISITSM_QUESTIONS: missing full-bank domain');
+assert.strictEqual(CISITSM_QUESTIONS.filter((question) => question.domain === 'General').length, 0, 'CISITSM_QUESTIONS: General domain remains');
+assert.ok(CISSM_QUESTIONS.every((question) => question.domain), 'CISSM_QUESTIONS: missing full-bank domain');
+assert.strictEqual(CISSM_QUESTIONS.filter((question) => question.domain === 'General').length, 0, 'CISSM_QUESTIONS: General domain remains');
+assert.ok(CISEM_QUESTIONS.every((question) => question.domain), 'CISEM_QUESTIONS: missing full-bank domain');
+assert.strictEqual(CISEM_QUESTIONS.filter((question) => question.domain === 'General').length, 0, 'CISEM_QUESTIONS: General domain remains');
+assert.ok(CISDISCO_QUESTIONS.every((question) => question.domain), 'CISDISCO_QUESTIONS: missing full-bank domain');
+assert.ok(CISDISCO_QUESTIONS.every((question) => ['foundation', 'applied', 'advanced'].includes(question.difficulty)), 'CISDISCO_QUESTIONS: invalid difficulty');
+assert.ok(CISDISCO_QUESTIONS.every((question) => question.sourceType === 'official-docs-reconstructed'), 'CISDISCO_QUESTIONS: invalid source type');
+assert.ok(CISDISCO_QUESTIONS.every((question) => question.objective && question.confidence && question.verifiedAgainst === 'official-docs' && question.releaseRisk), 'CISDISCO_QUESTIONS: incomplete provenance');
+const smCoverageText = CISSM_QUESTIONS.map((question) => `${question.title} ${question.options.map((option) => option.text).join(' ')}`).join(' ');
+['ITOM Content Service', 'ML-powered', 'Service Mapping Plus version 1.16.3', 'Service Mapping workspace'].forEach((term) => {
+  assert.ok(smCoverageText.includes(term), `CISSM_QUESTIONS: missing current coverage for ${term}`);
+});
+
 assert.strictEqual(
   CAD_QUESTIONS.filter((question) => question.id >= 61 && question.sourceType === 'community-recall-reconstructed').length,
   180,

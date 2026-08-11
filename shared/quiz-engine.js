@@ -875,6 +875,8 @@
         }
       } else if (mode === 'all') {
         sessionQuestions = allQuestions.map(deepCloneQuestion);
+      } else if (mode === 'exam' && policy.proportionalDomainSample) {
+        sessionQuestions = policy.proportionalDomainSample(allQuestions.map(deepCloneQuestion), limit);
       } else if (isRandomMode()) {
         sessionQuestions = shuffle(allQuestions.map(deepCloneQuestion)).slice(0, Math.min(limit, allQuestions.length));
       } else {

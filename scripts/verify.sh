@@ -8,4 +8,5 @@ node shared/exam-config.test.js
 node shared/quiz-policy.test.js
 node shared/quiz-engine.smoke.test.js
 node shared/question-bank.test.js
+node scripts/audit-question-banks.js
 git diff --check

@@ -104,6 +104,36 @@
     return '연습';
   }
 
+  function proportionalDomainSample(questions, limit, random) {
+    var source = Array.isArray(questions) ? questions.slice() : [];
+    var target = Math.min(Math.max(0, Number(limit) || 0), source.length);
+    var rng = typeof random === 'function' ? random : Math.random;
+    if (target === 0) return [];
+
+    var groups = {};
+    source.forEach(function (question) {
+      var domain = String(question.domain || 'General');
+      (groups[domain] = groups[domain] || []).push(question);
+    });
+    Object.keys(groups).forEach(function (domain) {
+      groups[domain].sort(function () { return rng() - 0.5; });
+    });
+
+    var quotas = Object.keys(groups).map(function (domain) {
+      var exact = groups[domain].length * target / source.length;
+      return { domain: domain, count: Math.floor(exact), remainder: exact - Math.floor(exact) };
+    });
+    var assigned = quotas.reduce(function (sum, quota) { return sum + quota.count; }, 0);
+    quotas.sort(function (a, b) { return b.remainder - a.remainder || a.domain.localeCompare(b.domain); });
+    for (var i = 0; i < target - assigned; i += 1) quotas[i % quotas.length].count += 1;
+
+    var selected = [];
+    quotas.forEach(function (quota) {
+      selected = selected.concat(groups[quota.domain].slice(0, quota.count));
+    });
+    return selected.sort(function () { return rng() - 0.5; });
+  }
+
   function equalAnswers(expected, actual) {
     return (expected || []).slice().sort().join(',') === (actual || []).slice().sort().join(',');
   }
@@ -164,6 +194,7 @@
     getReviewIndexes: getReviewIndexes,
     getSessionLimit: getSessionLimit,
     getModeLabel: getModeLabel,
+    proportionalDomainSample: proportionalDomainSample,
     equalAnswers: equalAnswers,
     gradeSession: gradeSession,
     updateWrongQuestionIds: updateWrongQuestionIds

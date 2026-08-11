@@ -74,11 +74,22 @@ function testWrongQuestionUpdates() {
   assert.deepStrictEqual(policy.updateWrongQuestionIds('all', [4], result).sort(), ['3', '4']);
 }
 
+function testProportionalDomainSample() {
+  const pool = [];
+  for (let i = 0; i < 8; i += 1) pool.push({ id: `a${i}`, domain: 'A' });
+  for (let i = 0; i < 2; i += 1) pool.push({ id: `b${i}`, domain: 'B' });
+  const selected = policy.proportionalDomainSample(pool, 5, () => 0.5);
+  assert.strictEqual(selected.length, 5);
+  assert.strictEqual(selected.filter((question) => question.domain === 'A').length, 4);
+  assert.strictEqual(selected.filter((question) => question.domain === 'B').length, 1);
+}
+
 testNormalizeRandomCount();
 testNormalizeSessionRequest();
 testIndexes();
 testSessionLimitAndLabels();
 testGradeSession();
 testWrongQuestionUpdates();
+testProportionalDomainSample();
 
 console.log('quiz-policy tests passed');
