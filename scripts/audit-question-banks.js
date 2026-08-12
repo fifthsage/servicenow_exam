@@ -5,11 +5,11 @@ const vm = require('vm');
 
 const root = path.resolve(__dirname, '..');
 const banks = [
-  ['CAD', 'CAD/cad_questions.js', 'CAD_QUESTIONS', { lengthBias: 113, weakDistractors: 0 }],
-  ['CIS-ITSM', 'CIS-ITSM/cisitsm_questions.js', 'CISITSM_QUESTIONS', { lengthBias: 143, weakDistractors: 0 }],
-  ['CIS-SM', 'CIS-SM/cissm_questions.js', 'CISSM_QUESTIONS', { lengthBias: 171, weakDistractors: 0 }],
-  ['CIS-EM', 'CIS-EM/cisem_questions.js', 'CISEM_QUESTIONS', { lengthBias: 166, weakDistractors: 0 }],
-  ['CIS-DISCO', 'CIS-DISCO/cisdisco_questions.js', 'CISDISCO_QUESTIONS', { lengthBias: 187, weakDistractors: 0 }],
+  ['CAD', 'CAD/cad_questions.js', 'CAD_QUESTIONS', { lengthBias: 113, weakDistractors: 0, maxAnswerPosition: 70 }],
+  ['CIS-ITSM', 'CIS-ITSM/cisitsm_questions.js', 'CISITSM_QUESTIONS', { lengthBias: 116, weakDistractors: 0, maxAnswerPosition: 70 }],
+  ['CIS-SM', 'CIS-SM/cissm_questions.js', 'CISSM_QUESTIONS', { lengthBias: 150, weakDistractors: 0, maxAnswerPosition: 70 }],
+  ['CIS-EM', 'CIS-EM/cisem_questions.js', 'CISEM_QUESTIONS', { lengthBias: 144, weakDistractors: 0, maxAnswerPosition: 70 }],
+  ['CIS-DISCO', 'CIS-DISCO/cisdisco_questions.js', 'CISDISCO_QUESTIONS', { lengthBias: 166, weakDistractors: 0, maxAnswerPosition: 70 }],
 ];
 
 const weakDistractor = /\b(random|every user has admin|grant all users admin|portal theme|map color|catalog price|browser history|dashboard color|delete the cmdb|empty cmdb|user password)\b/i;
@@ -30,8 +30,13 @@ function audit(name, questions, limits) {
   let weakDistractorQuestions = 0;
   const weakDistractorIds = [];
   let recallCount = 0;
+  const answerPositions = { A: 0, B: 0, C: 0, D: 0 };
 
   questions.forEach((question) => {
+    question.answer.forEach((answer) => {
+      assert.ok(Object.prototype.hasOwnProperty.call(answerPositions, answer), `${name} Q${question.id}: invalid answer position`);
+      answerPositions[answer] += 1;
+    });
     const answers = question.options.filter((option) => question.answer.includes(option.id));
     const distractors = question.options.filter((option) => !question.answer.includes(option.id));
     const longest = Math.max(...question.options.map((option) => option.text.length));
@@ -74,6 +79,9 @@ function audit(name, questions, limits) {
   assert.strictEqual(recallCount, name === 'CIS-DISCO' ? 0 : 180, `${name}: recall reconstruction coverage`);
   assert.ok(longAnswerRatio <= limits.lengthBias, `${name}: answer-length bias regressed (${longAnswerRatio} > ${limits.lengthBias})`);
   assert.ok(weakDistractorQuestions <= limits.weakDistractors, `${name}: weak distractors regressed (${weakDistractorQuestions} > ${limits.weakDistractors})`);
+  Object.keys(answerPositions).forEach((position) => {
+    assert.ok(answerPositions[position] <= limits.maxAnswerPosition, `${name}: answer position ${position} is over-concentrated (${answerPositions[position]} > ${limits.maxAnswerPosition})`);
+  });
   return {
     name,
     total: questions.length,
@@ -82,6 +90,7 @@ function audit(name, questions, limits) {
     longAnswerRatio,
     weakDistractorQuestions,
     weakDistractorIds,
+    answerPositions,
     domainCounts,
     difficultyCounts,
     highestRisk: findings.filter((item) => item.type === 'answer-length').sort((a, b) => b.ratio - a.ratio).slice(0, 10),
@@ -90,7 +99,7 @@ function audit(name, questions, limits) {
 
 const reports = banks.map(([name, file, globalKey, limits]) => audit(name, load(file, globalKey), limits));
 reports.forEach((report) => {
-  console.log(`${report.name}: ${report.total} questions, ${report.recallCount} recall-reconstructed, ${report.longAnswerRatio} length-biased, ${report.weakDistractorQuestions} weak-distractor flags`);
+  console.log(`${report.name}: ${report.total} questions, ${report.recallCount} recall-reconstructed, ${report.longAnswerRatio} length-biased, ${report.weakDistractorQuestions} weak-distractor flags, answer-positions=${JSON.stringify(report.answerPositions)}`);
   console.log(`  difficulty=${JSON.stringify(report.difficultyCounts)} domains=${JSON.stringify(report.domainCounts)}`);
   console.log(`  highest-risk=${report.highestRisk.map((item) => `Q${item.id}:${item.ratio}`).join(', ')}`);
   console.log(`  weak-distractor-ids=${report.weakDistractorIds.join(', ') || 'none'}`);

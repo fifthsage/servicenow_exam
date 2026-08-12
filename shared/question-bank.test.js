@@ -76,6 +76,7 @@ assert.ok(CISDISCO_QUESTIONS.every((question) => question.domain), 'CISDISCO_QUE
 assert.ok(CISDISCO_QUESTIONS.every((question) => ['foundation', 'applied', 'advanced'].includes(question.difficulty)), 'CISDISCO_QUESTIONS: invalid difficulty');
 assert.ok(CISDISCO_QUESTIONS.every((question) => question.sourceType === 'official-docs-reconstructed'), 'CISDISCO_QUESTIONS: invalid source type');
 assert.ok(CISDISCO_QUESTIONS.every((question) => question.objective && question.confidence && question.verifiedAgainst === 'official-docs' && question.releaseRisk), 'CISDISCO_QUESTIONS: incomplete provenance');
+assert.ok(CISDISCO_QUESTIONS.filter((question) => question.domain === 'Cloud Discovery').length >= 15, 'CISDISCO_QUESTIONS: insufficient Cloud Discovery coverage');
 const smCoverageText = CISSM_QUESTIONS.map((question) => `${question.title} ${question.options.map((option) => option.text).join(' ')}`).join(' ');
 ['ITOM Content Service', 'ML-powered', 'Service Mapping Plus version 1.16.3', 'Service Mapping workspace'].forEach((term) => {
   assert.ok(smCoverageText.includes(term), `CISSM_QUESTIONS: missing current coverage for ${term}`);
